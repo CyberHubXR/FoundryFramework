@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Services.ISceneNavigationEntry
+  commentId: T:Foundry.Services.ISceneNavigationEntry
+  id: ISceneNavigationEntry
+  parent: Foundry.Services
+  children:
+  - Foundry.Services.ISceneNavigationEntry.BuildIndex
+  - Foundry.Services.ISceneNavigationEntry.Name
+  langs:
+  - csharp
+  - vb
+  name: ISceneNavigationEntry
+  nameWithType: ISceneNavigationEntry
+  fullName: Foundry.Services.ISceneNavigationEntry
+  type: Interface
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ISceneNavigationEntry
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Represents a single entry in scene navigation history.
+  example: []
+  syntax:
+    content: public interface ISceneNavigationEntry
+    content.vb: Public Interface ISceneNavigationEntry
+- uid: Foundry.Services.ISceneNavigationEntry.Name
+  commentId: P:Foundry.Services.ISceneNavigationEntry.Name
+  id: Name
+  parent: Foundry.Services.ISceneNavigationEntry
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ISceneNavigationEntry.Name
+  fullName: Foundry.Services.ISceneNavigationEntry.Name
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Name
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets a name for the scene.
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Foundry.Services.ISceneNavigationEntry.Name*
+- uid: Foundry.Services.ISceneNavigationEntry.BuildIndex
+  commentId: P:Foundry.Services.ISceneNavigationEntry.BuildIndex
+  id: BuildIndex
+  parent: Foundry.Services.ISceneNavigationEntry
+  langs:
+  - csharp
+  - vb
+  name: BuildIndex
+  nameWithType: ISceneNavigationEntry.BuildIndex
+  fullName: Foundry.Services.ISceneNavigationEntry.BuildIndex
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: BuildIndex
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
+    startLine: 24
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets the build index of the scene.
+  remarks: >-
+    Note that this number is not always reliable. For example, if the scene was not 
+
+    included in the build window, this number will be one higher than the last built scene 
+
+    and if the scene was loaded from an asset bundle this number will be -1.
+  example: []
+  syntax:
+    content: int BuildIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property BuildIndex As Integer
+  overload: Foundry.Services.ISceneNavigationEntry.BuildIndex*
+references:
+- uid: Foundry.Services
+  commentId: N:Foundry.Services
+  href: Foundry.html
+  name: Foundry.Services
+  nameWithType: Foundry.Services
+  fullName: Foundry.Services
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html
+- uid: Foundry.Services.ISceneNavigationEntry.Name*
+  commentId: Overload:Foundry.Services.ISceneNavigationEntry.Name
+  href: Foundry.Services.ISceneNavigationEntry.html#Foundry.Services.ISceneNavigationEntry.Name
+  name: Name
+  nameWithType: ISceneNavigationEntry.Name
+  fullName: Foundry.Services.ISceneNavigationEntry.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Services.ISceneNavigationEntry.BuildIndex*
+  commentId: Overload:Foundry.Services.ISceneNavigationEntry.BuildIndex
+  href: Foundry.Services.ISceneNavigationEntry.html#Foundry.Services.ISceneNavigationEntry.BuildIndex
+  name: BuildIndex
+  nameWithType: ISceneNavigationEntry.BuildIndex
+  fullName: Foundry.Services.ISceneNavigationEntry.BuildIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

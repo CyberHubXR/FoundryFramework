@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.InteractionType
+  commentId: T:Foundry.InteractionType
+  id: InteractionType
+  parent: Foundry
+  children:
+  - Foundry.InteractionType.kinematic
+  - Foundry.InteractionType.parent
+  - Foundry.InteractionType.velocitytracked
+  langs:
+  - csharp
+  - vb
+  name: InteractionType
+  nameWithType: InteractionType
+  fullName: Foundry.InteractionType
+  type: Enum
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialGrabbable.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: InteractionType
+    path: ../Interaction/Grabbable/SpatialGrabbable.cs
+    startLine: 8
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum InteractionType
+    content.vb: >-
+      <Serializable>
+
+      Public Enum InteractionType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.InteractionType.parent
+  commentId: F:Foundry.InteractionType.parent
+  id: parent
+  parent: Foundry.InteractionType
+  langs:
+  - csharp
+  - vb
+  name: parent
+  nameWithType: InteractionType.parent
+  fullName: Foundry.InteractionType.parent
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialGrabbable.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: parent
+    path: ../Interaction/Grabbable/SpatialGrabbable.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: parent = 0
+    return:
+      type: Foundry.InteractionType
+- uid: Foundry.InteractionType.velocitytracked
+  commentId: F:Foundry.InteractionType.velocitytracked
+  id: velocitytracked
+  parent: Foundry.InteractionType
+  langs:
+  - csharp
+  - vb
+  name: velocitytracked
+  nameWithType: InteractionType.velocitytracked
+  fullName: Foundry.InteractionType.velocitytracked
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialGrabbable.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: velocitytracked
+    path: ../Interaction/Grabbable/SpatialGrabbable.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: velocitytracked = 1
+    return:
+      type: Foundry.InteractionType
+- uid: Foundry.InteractionType.kinematic
+  commentId: F:Foundry.InteractionType.kinematic
+  id: kinematic
+  parent: Foundry.InteractionType
+  langs:
+  - csharp
+  - vb
+  name: kinematic
+  nameWithType: InteractionType.kinematic
+  fullName: Foundry.InteractionType.kinematic
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialGrabbable.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: kinematic
+    path: ../Interaction/Grabbable/SpatialGrabbable.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: kinematic = 2
+    return:
+      type: Foundry.InteractionType
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.InteractionType
+  commentId: T:Foundry.InteractionType
+  parent: Foundry
+  href: Foundry.InteractionType.html
+  name: InteractionType
+  nameWithType: InteractionType
+  fullName: Foundry.InteractionType

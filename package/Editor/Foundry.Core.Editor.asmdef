@@ -1,0 +1,21 @@
+{
+    "name": "Foundry.Core.Editor",
+    "rootNamespace": "Foundry.Core.Editor",
+    "references": [
+        "GUID:9e080be906bfc1c4bb2683d498c53669",
+        "GUID:695fc961570e58f4293948619467a6f4",
+        "GUID:0b611528461e48e48973c1472b20956f",
+        "GUID:20735550ecf96884bbf675ab446511d0"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.NetworkEventHandler
+  commentId: T:Foundry.Networking.NetworkEventHandler
+  id: NetworkEventHandler
+  parent: Foundry.Networking
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: NetworkEventHandler
+  nameWithType: NetworkEventHandler
+  fullName: Foundry.Networking.NetworkEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetworkEventHandler
+    path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Delegate for events handling network events with no arguments
+  example: []
+  syntax:
+    content: public delegate void NetworkEventHandler()
+    content.vb: Public Delegate Sub NetworkEventHandler()
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html

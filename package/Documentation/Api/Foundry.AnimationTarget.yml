@@ -1,0 +1,853 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.AnimationTarget
+  commentId: T:Foundry.AnimationTarget
+  id: AnimationTarget
+  parent: Foundry
+  children:
+  - Foundry.AnimationTarget.SetColor(UnityEngine.Color)
+  - Foundry.AnimationTarget.SetStartValues
+  - Foundry.AnimationTarget.StartPosition
+  - Foundry.AnimationTarget.StartRotation
+  - Foundry.AnimationTarget.StartScale
+  - Foundry.AnimationTarget.Transform
+  - Foundry.AnimationTarget.colorDampener
+  - Foundry.AnimationTarget.ignoreColor
+  - Foundry.AnimationTarget.ignorePosition
+  - Foundry.AnimationTarget.ignoreRotation
+  - Foundry.AnimationTarget.ignoreScale
+  - Foundry.AnimationTarget.positionDampener
+  - Foundry.AnimationTarget.renderer
+  - Foundry.AnimationTarget.rotationDampener
+  - Foundry.AnimationTarget.scaleDampener
+  - Foundry.AnimationTarget.spriteRenderer
+  - Foundry.AnimationTarget.waveOffset
+  langs:
+  - csharp
+  - vb
+  name: AnimationTarget
+  nameWithType: AnimationTarget
+  fullName: Foundry.AnimationTarget
+  type: Struct
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: AnimationTarget
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 8
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct AnimationTarget
+    content.vb: >-
+      <Serializable>
+
+      Public Structure AnimationTarget
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.AnimationTarget.renderer
+  commentId: F:Foundry.AnimationTarget.renderer
+  id: renderer
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: renderer
+  nameWithType: AnimationTarget.renderer
+  fullName: Foundry.AnimationTarget.renderer
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: renderer
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public MeshRenderer renderer
+    return:
+      type: UnityEngine.MeshRenderer
+    content.vb: Public renderer As MeshRenderer
+- uid: Foundry.AnimationTarget.spriteRenderer
+  commentId: F:Foundry.AnimationTarget.spriteRenderer
+  id: spriteRenderer
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: spriteRenderer
+  nameWithType: AnimationTarget.spriteRenderer
+  fullName: Foundry.AnimationTarget.spriteRenderer
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: spriteRenderer
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public SpriteRenderer spriteRenderer
+    return:
+      type: UnityEngine.SpriteRenderer
+    content.vb: Public spriteRenderer As SpriteRenderer
+- uid: Foundry.AnimationTarget.ignoreColor
+  commentId: F:Foundry.AnimationTarget.ignoreColor
+  id: ignoreColor
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: ignoreColor
+  nameWithType: AnimationTarget.ignoreColor
+  fullName: Foundry.AnimationTarget.ignoreColor
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ignoreColor
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public bool ignoreColor
+    return:
+      type: System.Boolean
+    content.vb: Public ignoreColor As Boolean
+- uid: Foundry.AnimationTarget.ignorePosition
+  commentId: F:Foundry.AnimationTarget.ignorePosition
+  id: ignorePosition
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: ignorePosition
+  nameWithType: AnimationTarget.ignorePosition
+  fullName: Foundry.AnimationTarget.ignorePosition
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ignorePosition
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public bool ignorePosition
+    return:
+      type: System.Boolean
+    content.vb: Public ignorePosition As Boolean
+- uid: Foundry.AnimationTarget.ignoreScale
+  commentId: F:Foundry.AnimationTarget.ignoreScale
+  id: ignoreScale
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: ignoreScale
+  nameWithType: AnimationTarget.ignoreScale
+  fullName: Foundry.AnimationTarget.ignoreScale
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ignoreScale
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public bool ignoreScale
+    return:
+      type: System.Boolean
+    content.vb: Public ignoreScale As Boolean
+- uid: Foundry.AnimationTarget.ignoreRotation
+  commentId: F:Foundry.AnimationTarget.ignoreRotation
+  id: ignoreRotation
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: ignoreRotation
+  nameWithType: AnimationTarget.ignoreRotation
+  fullName: Foundry.AnimationTarget.ignoreRotation
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ignoreRotation
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public bool ignoreRotation
+    return:
+      type: System.Boolean
+    content.vb: Public ignoreRotation As Boolean
+- uid: Foundry.AnimationTarget.colorDampener
+  commentId: F:Foundry.AnimationTarget.colorDampener
+  id: colorDampener
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: colorDampener
+  nameWithType: AnimationTarget.colorDampener
+  fullName: Foundry.AnimationTarget.colorDampener
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: colorDampener
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float colorDampener
+    return:
+      type: System.Single
+    content.vb: Public colorDampener As Single
+- uid: Foundry.AnimationTarget.positionDampener
+  commentId: F:Foundry.AnimationTarget.positionDampener
+  id: positionDampener
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: positionDampener
+  nameWithType: AnimationTarget.positionDampener
+  fullName: Foundry.AnimationTarget.positionDampener
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: positionDampener
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 19
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float positionDampener
+    return:
+      type: System.Single
+    content.vb: Public positionDampener As Single
+- uid: Foundry.AnimationTarget.scaleDampener
+  commentId: F:Foundry.AnimationTarget.scaleDampener
+  id: scaleDampener
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: scaleDampener
+  nameWithType: AnimationTarget.scaleDampener
+  fullName: Foundry.AnimationTarget.scaleDampener
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: scaleDampener
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 20
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float scaleDampener
+    return:
+      type: System.Single
+    content.vb: Public scaleDampener As Single
+- uid: Foundry.AnimationTarget.rotationDampener
+  commentId: F:Foundry.AnimationTarget.rotationDampener
+  id: rotationDampener
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: rotationDampener
+  nameWithType: AnimationTarget.rotationDampener
+  fullName: Foundry.AnimationTarget.rotationDampener
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rotationDampener
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 21
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float rotationDampener
+    return:
+      type: System.Single
+    content.vb: Public rotationDampener As Single
+- uid: Foundry.AnimationTarget.waveOffset
+  commentId: F:Foundry.AnimationTarget.waveOffset
+  id: waveOffset
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: waveOffset
+  nameWithType: AnimationTarget.waveOffset
+  fullName: Foundry.AnimationTarget.waveOffset
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: waveOffset
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 22
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float waveOffset
+    return:
+      type: System.Single
+    content.vb: Public waveOffset As Single
+- uid: Foundry.AnimationTarget.StartPosition
+  commentId: P:Foundry.AnimationTarget.StartPosition
+  id: StartPosition
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: StartPosition
+  nameWithType: AnimationTarget.StartPosition
+  fullName: Foundry.AnimationTarget.StartPosition
+  type: Property
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: StartPosition
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 29
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 StartPosition { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property StartPosition As Vector3
+  overload: Foundry.AnimationTarget.StartPosition*
+- uid: Foundry.AnimationTarget.StartRotation
+  commentId: P:Foundry.AnimationTarget.StartRotation
+  id: StartRotation
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: StartRotation
+  nameWithType: AnimationTarget.StartRotation
+  fullName: Foundry.AnimationTarget.StartRotation
+  type: Property
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: StartRotation
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 30
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 StartRotation { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property StartRotation As Vector3
+  overload: Foundry.AnimationTarget.StartRotation*
+- uid: Foundry.AnimationTarget.StartScale
+  commentId: P:Foundry.AnimationTarget.StartScale
+  id: StartScale
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: StartScale
+  nameWithType: AnimationTarget.StartScale
+  fullName: Foundry.AnimationTarget.StartScale
+  type: Property
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: StartScale
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 31
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 StartScale { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property StartScale As Vector3
+  overload: Foundry.AnimationTarget.StartScale*
+- uid: Foundry.AnimationTarget.Transform
+  commentId: P:Foundry.AnimationTarget.Transform
+  id: Transform
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: AnimationTarget.Transform
+  fullName: Foundry.AnimationTarget.Transform
+  type: Property
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Transform
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 32
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Transform Transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public ReadOnly Property Transform As Transform
+  overload: Foundry.AnimationTarget.Transform*
+- uid: Foundry.AnimationTarget.SetStartValues
+  commentId: M:Foundry.AnimationTarget.SetStartValues
+  id: SetStartValues
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: SetStartValues()
+  nameWithType: AnimationTarget.SetStartValues()
+  fullName: Foundry.AnimationTarget.SetStartValues()
+  type: Method
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetStartValues
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 34
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public void SetStartValues()
+    content.vb: Public Sub SetStartValues()
+  overload: Foundry.AnimationTarget.SetStartValues*
+- uid: Foundry.AnimationTarget.SetColor(UnityEngine.Color)
+  commentId: M:Foundry.AnimationTarget.SetColor(UnityEngine.Color)
+  id: SetColor(UnityEngine.Color)
+  parent: Foundry.AnimationTarget
+  langs:
+  - csharp
+  - vb
+  name: SetColor(Color)
+  nameWithType: AnimationTarget.SetColor(Color)
+  fullName: Foundry.AnimationTarget.SetColor(UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: package/Interaction/Animations/InteractionAnimations.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetColor
+    path: ../Interaction/Animations/InteractionAnimations.cs
+    startLine: 50
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public void SetColor(Color color)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Sub SetColor(color As Color)
+  overload: Foundry.AnimationTarget.SetColor*
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.MeshRenderer
+  commentId: T:UnityEngine.MeshRenderer
+  parent: UnityEngine
+  isExternal: true
+  name: MeshRenderer
+  nameWithType: MeshRenderer
+  fullName: UnityEngine.MeshRenderer
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.SpriteRenderer
+  commentId: T:UnityEngine.SpriteRenderer
+  parent: UnityEngine
+  isExternal: true
+  name: SpriteRenderer
+  nameWithType: SpriteRenderer
+  fullName: UnityEngine.SpriteRenderer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Foundry.AnimationTarget.StartPosition*
+  commentId: Overload:Foundry.AnimationTarget.StartPosition
+  href: Foundry.AnimationTarget.html#Foundry.AnimationTarget.StartPosition
+  name: StartPosition
+  nameWithType: AnimationTarget.StartPosition
+  fullName: Foundry.AnimationTarget.StartPosition
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: Foundry.AnimationTarget.StartRotation*
+  commentId: Overload:Foundry.AnimationTarget.StartRotation
+  href: Foundry.AnimationTarget.html#Foundry.AnimationTarget.StartRotation
+  name: StartRotation
+  nameWithType: AnimationTarget.StartRotation
+  fullName: Foundry.AnimationTarget.StartRotation
+- uid: Foundry.AnimationTarget.StartScale*
+  commentId: Overload:Foundry.AnimationTarget.StartScale
+  href: Foundry.AnimationTarget.html#Foundry.AnimationTarget.StartScale
+  name: StartScale
+  nameWithType: AnimationTarget.StartScale
+  fullName: Foundry.AnimationTarget.StartScale
+- uid: Foundry.AnimationTarget.Transform*
+  commentId: Overload:Foundry.AnimationTarget.Transform
+  href: Foundry.AnimationTarget.html#Foundry.AnimationTarget.Transform
+  name: Transform
+  nameWithType: AnimationTarget.Transform
+  fullName: Foundry.AnimationTarget.Transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: Foundry.AnimationTarget.SetStartValues*
+  commentId: Overload:Foundry.AnimationTarget.SetStartValues
+  href: Foundry.AnimationTarget.html#Foundry.AnimationTarget.SetStartValues
+  name: SetStartValues
+  nameWithType: AnimationTarget.SetStartValues
+  fullName: Foundry.AnimationTarget.SetStartValues
+- uid: Foundry.AnimationTarget.SetColor*
+  commentId: Overload:Foundry.AnimationTarget.SetColor
+  href: Foundry.AnimationTarget.html#Foundry.AnimationTarget.SetColor(UnityEngine.Color)
+  name: SetColor
+  nameWithType: AnimationTarget.SetColor
+  fullName: Foundry.AnimationTarget.SetColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color

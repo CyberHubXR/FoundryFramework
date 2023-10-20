@@ -1,0 +1,395 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.IKTwoBoneConstraint.Calibration
+  commentId: T:Foundry.IKTwoBoneConstraint.Calibration
+  id: IKTwoBoneConstraint.Calibration
+  parent: Foundry
+  children:
+  - Foundry.IKTwoBoneConstraint.Calibration.lowerLength
+  - Foundry.IKTwoBoneConstraint.Calibration.lowerOffset
+  - Foundry.IKTwoBoneConstraint.Calibration.upperLength
+  - Foundry.IKTwoBoneConstraint.Calibration.upperOffset
+  langs:
+  - csharp
+  - vb
+  name: IKTwoBoneConstraint.Calibration
+  nameWithType: IKTwoBoneConstraint.Calibration
+  fullName: Foundry.IKTwoBoneConstraint.Calibration
+  type: Struct
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Calibration
+    path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public struct IKTwoBoneConstraint.Calibration
+    content.vb: Public Structure IKTwoBoneConstraint.Calibration
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Foundry.IKTwoBoneConstraint.Calibration.upperLength
+  commentId: F:Foundry.IKTwoBoneConstraint.Calibration.upperLength
+  id: upperLength
+  parent: Foundry.IKTwoBoneConstraint.Calibration
+  langs:
+  - csharp
+  - vb
+  name: upperLength
+  nameWithType: IKTwoBoneConstraint.Calibration.upperLength
+  fullName: Foundry.IKTwoBoneConstraint.Calibration.upperLength
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: upperLength
+    path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float upperLength
+    return:
+      type: System.Single
+    content.vb: Public upperLength As Single
+- uid: Foundry.IKTwoBoneConstraint.Calibration.lowerLength
+  commentId: F:Foundry.IKTwoBoneConstraint.Calibration.lowerLength
+  id: lowerLength
+  parent: Foundry.IKTwoBoneConstraint.Calibration
+  langs:
+  - csharp
+  - vb
+  name: lowerLength
+  nameWithType: IKTwoBoneConstraint.Calibration.lowerLength
+  fullName: Foundry.IKTwoBoneConstraint.Calibration.lowerLength
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: lowerLength
+    path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+    startLine: 19
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float lowerLength
+    return:
+      type: System.Single
+    content.vb: Public lowerLength As Single
+- uid: Foundry.IKTwoBoneConstraint.Calibration.upperOffset
+  commentId: F:Foundry.IKTwoBoneConstraint.Calibration.upperOffset
+  id: upperOffset
+  parent: Foundry.IKTwoBoneConstraint.Calibration
+  langs:
+  - csharp
+  - vb
+  name: upperOffset
+  nameWithType: IKTwoBoneConstraint.Calibration.upperOffset
+  fullName: Foundry.IKTwoBoneConstraint.Calibration.upperOffset
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: upperOffset
+    path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+    startLine: 20
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Quaternion upperOffset
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public upperOffset As Quaternion
+- uid: Foundry.IKTwoBoneConstraint.Calibration.lowerOffset
+  commentId: F:Foundry.IKTwoBoneConstraint.Calibration.lowerOffset
+  id: lowerOffset
+  parent: Foundry.IKTwoBoneConstraint.Calibration
+  langs:
+  - csharp
+  - vb
+  name: lowerOffset
+  nameWithType: IKTwoBoneConstraint.Calibration.lowerOffset
+  fullName: Foundry.IKTwoBoneConstraint.Calibration.lowerOffset
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: lowerOffset
+    path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
+    startLine: 21
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Quaternion lowerOffset
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public lowerOffset As Quaternion
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

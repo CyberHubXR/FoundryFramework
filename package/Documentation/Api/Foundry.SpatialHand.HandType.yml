@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.SpatialHand.HandType
+  commentId: T:Foundry.SpatialHand.HandType
+  id: SpatialHand.HandType
+  parent: Foundry
+  children:
+  - Foundry.SpatialHand.HandType.Both
+  - Foundry.SpatialHand.HandType.Left
+  - Foundry.SpatialHand.HandType.Right
+  langs:
+  - csharp
+  - vb
+  name: SpatialHand.HandType
+  nameWithType: SpatialHand.HandType
+  fullName: Foundry.SpatialHand.HandType
+  type: Enum
+  source:
+    remote:
+      path: package/Interaction/Hand/SpatialHand.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: HandType
+    path: ../Interaction/Hand/SpatialHand.cs
+    startLine: 27
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum SpatialHand.HandType
+    content.vb: Public Enum SpatialHand.HandType
+- uid: Foundry.SpatialHand.HandType.Right
+  commentId: F:Foundry.SpatialHand.HandType.Right
+  id: Right
+  parent: Foundry.SpatialHand.HandType
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: SpatialHand.HandType.Right
+  fullName: Foundry.SpatialHand.HandType.Right
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Hand/SpatialHand.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Right
+    path: ../Interaction/Hand/SpatialHand.cs
+    startLine: 29
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Right = 0
+    return:
+      type: Foundry.SpatialHand.HandType
+- uid: Foundry.SpatialHand.HandType.Left
+  commentId: F:Foundry.SpatialHand.HandType.Left
+  id: Left
+  parent: Foundry.SpatialHand.HandType
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: SpatialHand.HandType.Left
+  fullName: Foundry.SpatialHand.HandType.Left
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Hand/SpatialHand.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Left
+    path: ../Interaction/Hand/SpatialHand.cs
+    startLine: 30
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Left = 1
+    return:
+      type: Foundry.SpatialHand.HandType
+- uid: Foundry.SpatialHand.HandType.Both
+  commentId: F:Foundry.SpatialHand.HandType.Both
+  id: Both
+  parent: Foundry.SpatialHand.HandType
+  langs:
+  - csharp
+  - vb
+  name: Both
+  nameWithType: SpatialHand.HandType.Both
+  fullName: Foundry.SpatialHand.HandType.Both
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Hand/SpatialHand.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Both
+    path: ../Interaction/Hand/SpatialHand.cs
+    startLine: 31
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Both = 2
+    return:
+      type: Foundry.SpatialHand.HandType
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.SpatialHand.HandType
+  commentId: T:Foundry.SpatialHand.HandType
+  parent: Foundry
+  href: Foundry.SpatialHand.html
+  name: SpatialHand.HandType
+  nameWithType: SpatialHand.HandType
+  fullName: Foundry.SpatialHand.HandType
+  spec.csharp:
+  - uid: Foundry.SpatialHand
+    name: SpatialHand
+    href: Foundry.SpatialHand.html
+  - name: .
+  - uid: Foundry.SpatialHand.HandType
+    name: HandType
+    href: Foundry.SpatialHand.HandType.html
+  spec.vb:
+  - uid: Foundry.SpatialHand
+    name: SpatialHand
+    href: Foundry.SpatialHand.html
+  - name: .
+  - uid: Foundry.SpatialHand.HandType
+    name: HandType
+    href: Foundry.SpatialHand.HandType.html

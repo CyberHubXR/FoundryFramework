@@ -1,0 +1,18 @@
+{
+    "name": "Foundry.Core.DesignTools.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b03b62deca0376e4f9f10b1a0dab7a7c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

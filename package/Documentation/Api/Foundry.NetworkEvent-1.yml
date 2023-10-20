@@ -1,0 +1,1077 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.NetworkEvent`1
+  commentId: T:Foundry.NetworkEvent`1
+  id: NetworkEvent`1
+  parent: Foundry
+  children:
+  - Foundry.NetworkEvent`1.AddListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  - Foundry.NetworkEvent`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - Foundry.NetworkEvent`1.Dirty
+  - Foundry.NetworkEvent`1.Invoke(`0)
+  - Foundry.NetworkEvent`1.InvokeLocal(`0)
+  - Foundry.NetworkEvent`1.InvokeRemote(`0)
+  - Foundry.NetworkEvent`1.OnChanged
+  - Foundry.NetworkEvent`1.RemoveListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  - Foundry.NetworkEvent`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  - Foundry.NetworkEvent`1.SetClean
+  - Foundry.NetworkEvent`1.SetDirty
+  langs:
+  - csharp
+  - vb
+  name: NetworkEvent<T>
+  nameWithType: NetworkEvent<T>
+  fullName: Foundry.NetworkEvent<T>
+  type: Class
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetworkEvent
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 31
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: >-
+    This event is synced across the network. In most ways it functions identically to UnityEvents, but it is even less
+
+    performant because of the serialization and network overhead. Use only for events that need to be synced across the network.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class NetworkEvent<T> : NetworkEventBase, INetworkProperty
+    typeParameters:
+    - id: T
+      description: T must be a commonly serializable type or implement IFoundrySerializable
+    content.vb: >-
+      <Serializable>
+
+      Public Class NetworkEvent(Of T) Inherits NetworkEventBase Implements INetworkProperty
+  inheritance:
+  - System.Object
+  - Foundry.NetworkEventBase
+  implements:
+  - Foundry.Networking.INetworkProperty
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: NetworkEvent(Of T)
+  fullName.vb: Foundry.NetworkEvent(Of T)
+  name.vb: NetworkEvent(Of T)
+- uid: Foundry.NetworkEvent`1.Dirty
+  commentId: P:Foundry.NetworkEvent`1.Dirty
+  id: Dirty
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Dirty
+  nameWithType: NetworkEvent<T>.Dirty
+  fullName: Foundry.NetworkEvent<T>.Dirty
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Dirty
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 38
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: If dirty, this property will be synced across the network.
+  example: []
+  syntax:
+    content: public bool Dirty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Dirty As Boolean
+  overload: Foundry.NetworkEvent`1.Dirty*
+  implements:
+  - Foundry.Networking.INetworkProperty.Dirty
+  nameWithType.vb: NetworkEvent(Of T).Dirty
+  fullName.vb: Foundry.NetworkEvent(Of T).Dirty
+- uid: Foundry.NetworkEvent`1.SetDirty
+  commentId: M:Foundry.NetworkEvent`1.SetDirty
+  id: SetDirty
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: SetDirty()
+  nameWithType: NetworkEvent<T>.SetDirty()
+  fullName: Foundry.NetworkEvent<T>.SetDirty()
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetDirty
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 39
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Set this property dirty, useful for when a property is synced incrementally and we need to send the whole object.
+  example: []
+  syntax:
+    content: public void SetDirty()
+    content.vb: Public Sub SetDirty()
+  overload: Foundry.NetworkEvent`1.SetDirty*
+  implements:
+  - Foundry.Networking.INetworkProperty.SetDirty
+  nameWithType.vb: NetworkEvent(Of T).SetDirty()
+  fullName.vb: Foundry.NetworkEvent(Of T).SetDirty()
+- uid: Foundry.NetworkEvent`1.SetClean
+  commentId: M:Foundry.NetworkEvent`1.SetClean
+  id: SetClean
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: SetClean()
+  nameWithType: NetworkEvent<T>.SetClean()
+  fullName: Foundry.NetworkEvent<T>.SetClean()
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetClean
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 44
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Called after variable has been serialized and sent across the network to reset state.
+  example: []
+  syntax:
+    content: public void SetClean()
+    content.vb: Public Sub SetClean()
+  overload: Foundry.NetworkEvent`1.SetClean*
+  implements:
+  - Foundry.Networking.INetworkProperty.SetClean
+  nameWithType.vb: NetworkEvent(Of T).SetClean()
+  fullName.vb: Foundry.NetworkEvent(Of T).SetClean()
+- uid: Foundry.NetworkEvent`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  commentId: M:Foundry.NetworkEvent`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  id: Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Serialize(FoundrySerializer)
+  nameWithType: NetworkEvent<T>.Serialize(FoundrySerializer)
+  fullName: Foundry.NetworkEvent<T>.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Serialize
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 49
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Write contained data out to the stream to be synced across the network.
+  example: []
+  syntax:
+    content: public void Serialize(FoundrySerializer serializer)
+    parameters:
+    - id: serializer
+      type: Foundry.Core.Serialization.FoundrySerializer
+      description: ''
+    content.vb: Public Sub Serialize(serializer As FoundrySerializer)
+  overload: Foundry.NetworkEvent`1.Serialize*
+  implements:
+  - Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  nameWithType.vb: NetworkEvent(Of T).Serialize(FoundrySerializer)
+  fullName.vb: Foundry.NetworkEvent(Of T).Serialize(Foundry.Core.Serialization.FoundrySerializer)
+- uid: Foundry.NetworkEvent`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.NetworkEvent`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  id: Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: NetworkEvent<T>.Deserialize(FoundryDeserializer)
+  fullName: Foundry.NetworkEvent<T>.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Deserialize
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 61
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Read data received from the network into this property.
+  example: []
+  syntax:
+    content: public void Deserialize(FoundryDeserializer deserializer)
+    parameters:
+    - id: deserializer
+      type: Foundry.Core.Serialization.FoundryDeserializer
+      description: ''
+    content.vb: Public Sub Deserialize(deserializer As FoundryDeserializer)
+  overload: Foundry.NetworkEvent`1.Deserialize*
+  implements:
+  - Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  nameWithType.vb: NetworkEvent(Of T).Deserialize(FoundryDeserializer)
+  fullName.vb: Foundry.NetworkEvent(Of T).Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+- uid: Foundry.NetworkEvent`1.OnChanged
+  commentId: P:Foundry.NetworkEvent`1.OnChanged
+  id: OnChanged
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: OnChanged
+  nameWithType: NetworkEvent<T>.OnChanged
+  fullName: Foundry.NetworkEvent<T>.OnChanged
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: OnChanged
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 81
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Never is called for NetworkEvent
+  example: []
+  syntax:
+    content: public Action OnChanged { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public Property OnChanged As Action
+  overload: Foundry.NetworkEvent`1.OnChanged*
+  implements:
+  - Foundry.Networking.INetworkProperty.OnChanged
+  nameWithType.vb: NetworkEvent(Of T).OnChanged
+  fullName.vb: Foundry.NetworkEvent(Of T).OnChanged
+- uid: Foundry.NetworkEvent`1.AddListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  commentId: M:Foundry.NetworkEvent`1.AddListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  id: AddListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: AddListener(UnityAction<NetEventSource, T>)
+  nameWithType: NetworkEvent<T>.AddListener(UnityAction<NetEventSource, T>)
+  fullName: Foundry.NetworkEvent<T>.AddListener(UnityEngine.Events.UnityAction<Foundry.NetEventSource, T>)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: AddListener
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 95
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Add a listener to this event. This is called when the event is invoked. Use NetEventSource to filter between local and remote calls.
+  example: []
+  syntax:
+    content: public void AddListener(UnityAction<NetEventSource, T> call)
+    parameters:
+    - id: call
+      type: UnityEngine.Events.UnityAction{Foundry.NetEventSource,{T}}
+      description: ''
+    content.vb: Public Sub AddListener([call] As UnityAction(Of NetEventSource, T))
+  overload: Foundry.NetworkEvent`1.AddListener*
+  nameWithType.vb: NetworkEvent(Of T).AddListener(UnityAction(Of NetEventSource, T))
+  fullName.vb: Foundry.NetworkEvent(Of T).AddListener(UnityEngine.Events.UnityAction(Of Foundry.NetEventSource, T))
+  name.vb: AddListener(UnityAction(Of NetEventSource, T))
+- uid: Foundry.NetworkEvent`1.RemoveListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  commentId: M:Foundry.NetworkEvent`1.RemoveListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  id: RemoveListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveListener(UnityAction<NetEventSource, T>)
+  nameWithType: NetworkEvent<T>.RemoveListener(UnityAction<NetEventSource, T>)
+  fullName: Foundry.NetworkEvent<T>.RemoveListener(UnityEngine.Events.UnityAction<Foundry.NetEventSource, T>)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: RemoveListener
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 100
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public void RemoveListener(UnityAction<NetEventSource, T> call)
+    parameters:
+    - id: call
+      type: UnityEngine.Events.UnityAction{Foundry.NetEventSource,{T}}
+    content.vb: Public Sub RemoveListener([call] As UnityAction(Of NetEventSource, T))
+  overload: Foundry.NetworkEvent`1.RemoveListener*
+  nameWithType.vb: NetworkEvent(Of T).RemoveListener(UnityAction(Of NetEventSource, T))
+  fullName.vb: Foundry.NetworkEvent(Of T).RemoveListener(UnityEngine.Events.UnityAction(Of Foundry.NetEventSource, T))
+  name.vb: RemoveListener(UnityAction(Of NetEventSource, T))
+- uid: Foundry.NetworkEvent`1.Invoke(`0)
+  commentId: M:Foundry.NetworkEvent`1.Invoke(`0)
+  id: Invoke(`0)
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: Invoke(T)
+  nameWithType: NetworkEvent<T>.Invoke(T)
+  fullName: Foundry.NetworkEvent<T>.Invoke(T)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Invoke
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 110
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Invoke this event. This will call all listeners on all clients.
+  example: []
+  syntax:
+    content: public void Invoke(T arg)
+    parameters:
+    - id: arg
+      type: '{T}'
+      description: ''
+    content.vb: Public Sub Invoke(arg As T)
+  overload: Foundry.NetworkEvent`1.Invoke*
+  nameWithType.vb: NetworkEvent(Of T).Invoke(T)
+  fullName.vb: Foundry.NetworkEvent(Of T).Invoke(T)
+- uid: Foundry.NetworkEvent`1.InvokeLocal(`0)
+  commentId: M:Foundry.NetworkEvent`1.InvokeLocal(`0)
+  id: InvokeLocal(`0)
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: InvokeLocal(T)
+  nameWithType: NetworkEvent<T>.InvokeLocal(T)
+  fullName: Foundry.NetworkEvent<T>.InvokeLocal(T)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: InvokeLocal
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 120
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Invoke this event locally. This will only call listeners on the local client.
+  example: []
+  syntax:
+    content: public void InvokeLocal(T arg)
+    parameters:
+    - id: arg
+      type: '{T}'
+      description: ''
+    content.vb: Public Sub InvokeLocal(arg As T)
+  overload: Foundry.NetworkEvent`1.InvokeLocal*
+  nameWithType.vb: NetworkEvent(Of T).InvokeLocal(T)
+  fullName.vb: Foundry.NetworkEvent(Of T).InvokeLocal(T)
+- uid: Foundry.NetworkEvent`1.InvokeRemote(`0)
+  commentId: M:Foundry.NetworkEvent`1.InvokeRemote(`0)
+  id: InvokeRemote(`0)
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: InvokeRemote(T)
+  nameWithType: NetworkEvent<T>.InvokeRemote(T)
+  fullName: Foundry.NetworkEvent<T>.InvokeRemote(T)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: InvokeRemote
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 129
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Invoke this event remotely. This will only call listeners on remote clients.
+  example: []
+  syntax:
+    content: public void InvokeRemote(T arg)
+    parameters:
+    - id: arg
+      type: '{T}'
+      description: ''
+    content.vb: Public Sub InvokeRemote(arg As T)
+  overload: Foundry.NetworkEvent`1.InvokeRemote*
+  nameWithType.vb: NetworkEvent(Of T).InvokeRemote(T)
+  fullName.vb: Foundry.NetworkEvent(Of T).InvokeRemote(T)
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Foundry.NetworkEventBase
+  commentId: T:Foundry.NetworkEventBase
+  parent: Foundry
+  href: Foundry.NetworkEventBase.html
+  name: NetworkEventBase
+  nameWithType: NetworkEventBase
+  fullName: Foundry.NetworkEventBase
+- uid: Foundry.Networking.INetworkProperty
+  commentId: T:Foundry.Networking.INetworkProperty
+  parent: Foundry.Networking
+  href: Foundry.Networking.INetworkProperty.html
+  name: INetworkProperty
+  nameWithType: INetworkProperty
+  fullName: Foundry.Networking.INetworkProperty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: Foundry.NetworkEvent`1.Dirty*
+  commentId: Overload:Foundry.NetworkEvent`1.Dirty
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.Dirty
+  name: Dirty
+  nameWithType: NetworkEvent<T>.Dirty
+  fullName: Foundry.NetworkEvent<T>.Dirty
+  nameWithType.vb: NetworkEvent(Of T).Dirty
+  fullName.vb: Foundry.NetworkEvent(Of T).Dirty
+- uid: Foundry.Networking.INetworkProperty.Dirty
+  commentId: P:Foundry.Networking.INetworkProperty.Dirty
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Dirty
+  name: Dirty
+  nameWithType: INetworkProperty.Dirty
+  fullName: Foundry.Networking.INetworkProperty.Dirty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Foundry.NetworkEvent`1.SetDirty*
+  commentId: Overload:Foundry.NetworkEvent`1.SetDirty
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.SetDirty
+  name: SetDirty
+  nameWithType: NetworkEvent<T>.SetDirty
+  fullName: Foundry.NetworkEvent<T>.SetDirty
+  nameWithType.vb: NetworkEvent(Of T).SetDirty
+  fullName.vb: Foundry.NetworkEvent(Of T).SetDirty
+- uid: Foundry.Networking.INetworkProperty.SetDirty
+  commentId: M:Foundry.Networking.INetworkProperty.SetDirty
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetDirty
+  name: SetDirty()
+  nameWithType: INetworkProperty.SetDirty()
+  fullName: Foundry.Networking.INetworkProperty.SetDirty()
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.SetDirty
+    name: SetDirty
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetDirty
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.SetDirty
+    name: SetDirty
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetDirty
+  - name: (
+  - name: )
+- uid: Foundry.NetworkEvent`1.SetClean*
+  commentId: Overload:Foundry.NetworkEvent`1.SetClean
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.SetClean
+  name: SetClean
+  nameWithType: NetworkEvent<T>.SetClean
+  fullName: Foundry.NetworkEvent<T>.SetClean
+  nameWithType.vb: NetworkEvent(Of T).SetClean
+  fullName.vb: Foundry.NetworkEvent(Of T).SetClean
+- uid: Foundry.Networking.INetworkProperty.SetClean
+  commentId: M:Foundry.Networking.INetworkProperty.SetClean
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetClean
+  name: SetClean()
+  nameWithType: INetworkProperty.SetClean()
+  fullName: Foundry.Networking.INetworkProperty.SetClean()
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.SetClean
+    name: SetClean
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetClean
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.SetClean
+    name: SetClean
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetClean
+  - name: (
+  - name: )
+- uid: Foundry.NetworkEvent`1.Serialize*
+  commentId: Overload:Foundry.NetworkEvent`1.Serialize
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  name: Serialize
+  nameWithType: NetworkEvent<T>.Serialize
+  fullName: Foundry.NetworkEvent<T>.Serialize
+  nameWithType.vb: NetworkEvent(Of T).Serialize
+  fullName.vb: Foundry.NetworkEvent(Of T).Serialize
+- uid: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  commentId: M:Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  name: Serialize(FoundrySerializer)
+  nameWithType: INetworkProperty.Serialize(FoundrySerializer)
+  fullName: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+    name: Serialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundrySerializer
+    name: FoundrySerializer
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+    name: Serialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundrySerializer
+    name: FoundrySerializer
+  - name: )
+- uid: Foundry.Core.Serialization.FoundrySerializer
+  commentId: T:Foundry.Core.Serialization.FoundrySerializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundrySerializer.html
+  name: FoundrySerializer
+  nameWithType: FoundrySerializer
+  fullName: Foundry.Core.Serialization.FoundrySerializer
+- uid: Foundry.Core.Serialization
+  commentId: N:Foundry.Core.Serialization
+  href: Foundry.html
+  name: Foundry.Core.Serialization
+  nameWithType: Foundry.Core.Serialization
+  fullName: Foundry.Core.Serialization
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+- uid: Foundry.NetworkEvent`1.Deserialize*
+  commentId: Overload:Foundry.NetworkEvent`1.Deserialize
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Deserialize
+  nameWithType: NetworkEvent<T>.Deserialize
+  fullName: Foundry.NetworkEvent<T>.Deserialize
+  nameWithType.vb: NetworkEvent(Of T).Deserialize
+  fullName.vb: Foundry.NetworkEvent(Of T).Deserialize
+- uid: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: INetworkProperty.Deserialize(FoundryDeserializer)
+  fullName: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+    name: Deserialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundryDeserializer
+    name: FoundryDeserializer
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+    name: Deserialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundryDeserializer
+    name: FoundryDeserializer
+  - name: )
+- uid: Foundry.Core.Serialization.FoundryDeserializer
+  commentId: T:Foundry.Core.Serialization.FoundryDeserializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundryDeserializer.html
+  name: FoundryDeserializer
+  nameWithType: FoundryDeserializer
+  fullName: Foundry.Core.Serialization.FoundryDeserializer
+- uid: Foundry.NetworkEvent`1.OnChanged*
+  commentId: Overload:Foundry.NetworkEvent`1.OnChanged
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.OnChanged
+  name: OnChanged
+  nameWithType: NetworkEvent<T>.OnChanged
+  fullName: Foundry.NetworkEvent<T>.OnChanged
+  nameWithType.vb: NetworkEvent(Of T).OnChanged
+  fullName.vb: Foundry.NetworkEvent(Of T).OnChanged
+- uid: Foundry.Networking.INetworkProperty.OnChanged
+  commentId: P:Foundry.Networking.INetworkProperty.OnChanged
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.OnChanged
+  name: OnChanged
+  nameWithType: INetworkProperty.OnChanged
+  fullName: Foundry.Networking.INetworkProperty.OnChanged
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Foundry.NetworkEvent`1.AddListener*
+  commentId: Overload:Foundry.NetworkEvent`1.AddListener
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.AddListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  name: AddListener
+  nameWithType: NetworkEvent<T>.AddListener
+  fullName: Foundry.NetworkEvent<T>.AddListener
+  nameWithType.vb: NetworkEvent(Of T).AddListener
+  fullName.vb: Foundry.NetworkEvent(Of T).AddListener
+- uid: UnityEngine.Events.UnityAction{Foundry.NetEventSource,{T}}
+  commentId: T:UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityAction`2
+  href: Foundry.NetEventSource.html
+  name: UnityAction<NetEventSource, T>
+  nameWithType: UnityAction<NetEventSource, T>
+  fullName: UnityEngine.Events.UnityAction<Foundry.NetEventSource, T>
+  nameWithType.vb: UnityAction(Of NetEventSource, T)
+  fullName.vb: UnityEngine.Events.UnityAction(Of Foundry.NetEventSource, T)
+  name.vb: UnityAction(Of NetEventSource, T)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`2
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - uid: Foundry.NetEventSource
+    name: NetEventSource
+    href: Foundry.NetEventSource.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`2
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.NetEventSource
+    name: NetEventSource
+    href: Foundry.NetEventSource.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: UnityEngine.Events.UnityAction`2
+  commentId: T:UnityEngine.Events.UnityAction`2
+  isExternal: true
+  name: UnityAction<T0, T1>
+  nameWithType: UnityAction<T0, T1>
+  fullName: UnityEngine.Events.UnityAction<T0, T1>
+  nameWithType.vb: UnityAction(Of T0, T1)
+  fullName.vb: UnityEngine.Events.UnityAction(Of T0, T1)
+  name.vb: UnityAction(Of T0, T1)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`2
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`2
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: ','
+  - name: " "
+  - name: T1
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: Foundry.NetworkEvent`1.RemoveListener*
+  commentId: Overload:Foundry.NetworkEvent`1.RemoveListener
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.RemoveListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
+  name: RemoveListener
+  nameWithType: NetworkEvent<T>.RemoveListener
+  fullName: Foundry.NetworkEvent<T>.RemoveListener
+  nameWithType.vb: NetworkEvent(Of T).RemoveListener
+  fullName.vb: Foundry.NetworkEvent(Of T).RemoveListener
+- uid: Foundry.NetworkEvent`1.Invoke*
+  commentId: Overload:Foundry.NetworkEvent`1.Invoke
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.Invoke(`0)
+  name: Invoke
+  nameWithType: NetworkEvent<T>.Invoke
+  fullName: Foundry.NetworkEvent<T>.Invoke
+  nameWithType.vb: NetworkEvent(Of T).Invoke
+  fullName.vb: Foundry.NetworkEvent(Of T).Invoke
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Foundry.NetworkEvent`1.InvokeLocal*
+  commentId: Overload:Foundry.NetworkEvent`1.InvokeLocal
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.InvokeLocal(`0)
+  name: InvokeLocal
+  nameWithType: NetworkEvent<T>.InvokeLocal
+  fullName: Foundry.NetworkEvent<T>.InvokeLocal
+  nameWithType.vb: NetworkEvent(Of T).InvokeLocal
+  fullName.vb: Foundry.NetworkEvent(Of T).InvokeLocal
+- uid: Foundry.NetworkEvent`1.InvokeRemote*
+  commentId: Overload:Foundry.NetworkEvent`1.InvokeRemote
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.InvokeRemote(`0)
+  name: InvokeRemote
+  nameWithType: NetworkEvent<T>.InvokeRemote
+  fullName: Foundry.NetworkEvent<T>.InvokeRemote
+  nameWithType.vb: NetworkEvent(Of T).InvokeRemote
+  fullName.vb: Foundry.NetworkEvent(Of T).InvokeRemote

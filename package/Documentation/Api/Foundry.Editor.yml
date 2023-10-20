@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Editor
+  commentId: N:Foundry.Editor
+  id: Foundry.Editor
+  children:
+  - Foundry.Editor.PlayerRigManagerDefinition
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Editor
+  nameWithType: Foundry.Editor
+  fullName: Foundry.Editor
+  type: Namespace
+  assemblies:
+  - Foundry.Player.Editor
+references:
+- uid: Foundry.Editor.PlayerRigManagerDefinition
+  commentId: T:Foundry.Editor.PlayerRigManagerDefinition
+  href: Foundry.Editor.PlayerRigManagerDefinition.html
+  name: PlayerRigManagerDefinition
+  nameWithType: PlayerRigManagerDefinition
+  fullName: Foundry.Editor.PlayerRigManagerDefinition

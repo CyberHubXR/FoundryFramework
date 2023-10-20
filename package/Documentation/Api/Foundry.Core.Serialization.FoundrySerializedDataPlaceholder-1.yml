@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1
+  commentId: T:Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1
+  id: FoundrySerializedDataPlaceholder`1
+  parent: Foundry.Core.Serialization
+  children:
+  - Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.#ctor(Foundry.Core.Serialization.FoundrySerializer,`0)
+  - Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.WriteValue(`0)
+  - Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.streamPos
+  langs:
+  - csharp
+  - vb
+  name: FoundrySerializedDataPlaceholder<T>
+  nameWithType: FoundrySerializedDataPlaceholder<T>
+  fullName: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder<T>
+  type: Struct
+  source:
+    remote:
+      path: package/Serialization/FoundrySerializer.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: FoundrySerializedDataPlaceholder
+    path: ../Serialization/FoundrySerializer.cs
+    startLine: 17
+  assemblies:
+  - Foundry.Core.Serialization
+  namespace: Foundry.Core.Serialization
+  summary: Struct for reserving a spot in a stream for data that will be written later.
+  example: []
+  syntax:
+    content: 'public struct FoundrySerializedDataPlaceholder<T> where T : unmanaged'
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Structure FoundrySerializedDataPlaceholder(Of T As Structure)
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: FoundrySerializedDataPlaceholder(Of T)
+  fullName.vb: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder(Of T)
+  name.vb: FoundrySerializedDataPlaceholder(Of T)
+- uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.streamPos
+  commentId: P:Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.streamPos
+  id: streamPos
+  parent: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1
+  langs:
+  - csharp
+  - vb
+  name: streamPos
+  nameWithType: FoundrySerializedDataPlaceholder<T>.streamPos
+  fullName: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder<T>.streamPos
+  type: Property
+  source:
+    remote:
+      path: package/Serialization/FoundrySerializer.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: streamPos
+    path: ../Serialization/FoundrySerializer.cs
+    startLine: 20
+  assemblies:
+  - Foundry.Core.Serialization
+  namespace: Foundry.Core.Serialization
+  syntax:
+    content: public readonly long streamPos { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property streamPos As Long
+  overload: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.streamPos*
+  nameWithType.vb: FoundrySerializedDataPlaceholder(Of T).streamPos
+  fullName.vb: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder(Of T).streamPos
+- uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.#ctor(Foundry.Core.Serialization.FoundrySerializer,`0)
+  commentId: M:Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.#ctor(Foundry.Core.Serialization.FoundrySerializer,`0)
+  id: '#ctor(Foundry.Core.Serialization.FoundrySerializer,`0)'
+  parent: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1
+  langs:
+  - csharp
+  - vb
+  name: FoundrySerializedDataPlaceholder(FoundrySerializer, T)
+  nameWithType: FoundrySerializedDataPlaceholder<T>.FoundrySerializedDataPlaceholder(FoundrySerializer, T)
+  fullName: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder<T>.FoundrySerializedDataPlaceholder(Foundry.Core.Serialization.FoundrySerializer, T)
+  type: Constructor
+  source:
+    remote:
+      path: package/Serialization/FoundrySerializer.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: .ctor
+    path: ../Serialization/FoundrySerializer.cs
+    startLine: 25
+  assemblies:
+  - Foundry.Core.Serialization
+  namespace: Foundry.Core.Serialization
+  syntax:
+    content: public FoundrySerializedDataPlaceholder(FoundrySerializer serializer, T placeholder)
+    parameters:
+    - id: serializer
+      type: Foundry.Core.Serialization.FoundrySerializer
+    - id: placeholder
+      type: '{T}'
+    content.vb: Public Sub New(serializer As FoundrySerializer, placeholder As T)
+  overload: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.#ctor*
+  nameWithType.vb: FoundrySerializedDataPlaceholder(Of T).New(FoundrySerializer, T)
+  fullName.vb: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder(Of T).New(Foundry.Core.Serialization.FoundrySerializer, T)
+  name.vb: New(FoundrySerializer, T)
+- uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.WriteValue(`0)
+  commentId: M:Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.WriteValue(`0)
+  id: WriteValue(`0)
+  parent: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1
+  langs:
+  - csharp
+  - vb
+  name: WriteValue(T)
+  nameWithType: FoundrySerializedDataPlaceholder<T>.WriteValue(T)
+  fullName: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder<T>.WriteValue(T)
+  type: Method
+  source:
+    remote:
+      path: package/Serialization/FoundrySerializer.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: WriteValue
+    path: ../Serialization/FoundrySerializer.cs
+    startLine: 46
+  assemblies:
+  - Foundry.Core.Serialization
+  namespace: Foundry.Core.Serialization
+  summary: Moves the stream position to the placeholder and writes the value, before moving the stream position back to where it was.
+  example: []
+  syntax:
+    content: public void WriteValue(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: ''
+    content.vb: Public Sub WriteValue(value As T)
+  overload: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.WriteValue*
+  nameWithType.vb: FoundrySerializedDataPlaceholder(Of T).WriteValue(T)
+  fullName.vb: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder(Of T).WriteValue(T)
+references:
+- uid: Foundry.Core.Serialization
+  commentId: N:Foundry.Core.Serialization
+  href: Foundry.html
+  name: Foundry.Core.Serialization
+  nameWithType: Foundry.Core.Serialization
+  fullName: Foundry.Core.Serialization
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.streamPos*
+  commentId: Overload:Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.streamPos
+  href: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder-1.html#Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.streamPos
+  name: streamPos
+  nameWithType: FoundrySerializedDataPlaceholder<T>.streamPos
+  fullName: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder<T>.streamPos
+  nameWithType.vb: FoundrySerializedDataPlaceholder(Of T).streamPos
+  fullName.vb: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder(Of T).streamPos
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.#ctor*
+  commentId: Overload:Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.#ctor
+  href: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder-1.html#Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.#ctor(Foundry.Core.Serialization.FoundrySerializer,`0)
+  name: FoundrySerializedDataPlaceholder
+  nameWithType: FoundrySerializedDataPlaceholder<T>.FoundrySerializedDataPlaceholder
+  fullName: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder<T>.FoundrySerializedDataPlaceholder
+  nameWithType.vb: FoundrySerializedDataPlaceholder(Of T).New
+  fullName.vb: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder(Of T).New
+  name.vb: New
+- uid: Foundry.Core.Serialization.FoundrySerializer
+  commentId: T:Foundry.Core.Serialization.FoundrySerializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundrySerializer.html
+  name: FoundrySerializer
+  nameWithType: FoundrySerializer
+  fullName: Foundry.Core.Serialization.FoundrySerializer
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.WriteValue*
+  commentId: Overload:Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.WriteValue
+  href: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder-1.html#Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1.WriteValue(`0)
+  name: WriteValue
+  nameWithType: FoundrySerializedDataPlaceholder<T>.WriteValue
+  fullName: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder<T>.WriteValue
+  nameWithType.vb: FoundrySerializedDataPlaceholder(Of T).WriteValue
+  fullName.vb: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder(Of T).WriteValue

@@ -1,0 +1,212 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.INetworkedGraphId
+  commentId: T:Foundry.Networking.INetworkedGraphId
+  id: INetworkedGraphId
+  parent: Foundry.Networking
+  children:
+  - Foundry.Networking.INetworkedGraphId.OnIdAssigned(System.Action{Foundry.Networking.NetworkId})
+  - Foundry.Networking.INetworkedGraphId.Value
+  langs:
+  - csharp
+  - vb
+  name: INetworkedGraphId
+  nameWithType: INetworkedGraphId
+  fullName: Foundry.Networking.INetworkedGraphId
+  type: Interface
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkObject.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: INetworkedGraphId
+    path: ../Networking/Scripts/NetworkObject.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: >-
+    Interface for associating graph nodes with networked objects.
+
+    This must be synced outside of the network graph, as it is required to construct it.
+  example: []
+  syntax:
+    content: public interface INetworkedGraphId
+    content.vb: Public Interface INetworkedGraphId
+- uid: Foundry.Networking.INetworkedGraphId.Value
+  commentId: P:Foundry.Networking.INetworkedGraphId.Value
+  id: Value
+  parent: Foundry.Networking.INetworkedGraphId
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: INetworkedGraphId.Value
+  fullName: Foundry.Networking.INetworkedGraphId.Value
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkObject.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Value
+    path: ../Networking/Scripts/NetworkObject.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: NetworkId Value { get; set; }
+    parameters: []
+    return:
+      type: Foundry.Networking.NetworkId
+    content.vb: Property Value As NetworkId
+  overload: Foundry.Networking.INetworkedGraphId.Value*
+- uid: Foundry.Networking.INetworkedGraphId.OnIdAssigned(System.Action{Foundry.Networking.NetworkId})
+  commentId: M:Foundry.Networking.INetworkedGraphId.OnIdAssigned(System.Action{Foundry.Networking.NetworkId})
+  id: OnIdAssigned(System.Action{Foundry.Networking.NetworkId})
+  parent: Foundry.Networking.INetworkedGraphId
+  langs:
+  - csharp
+  - vb
+  name: OnIdAssigned(Action<NetworkId>)
+  nameWithType: INetworkedGraphId.OnIdAssigned(Action<NetworkId>)
+  fullName: Foundry.Networking.INetworkedGraphId.OnIdAssigned(System.Action<Foundry.Networking.NetworkId>)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkObject.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: OnIdAssigned
+    path: ../Networking/Scripts/NetworkObject.cs
+    startLine: 25
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: >-
+    Called when the graph id is assigned. This may happen multiple times during the lifetime of the object.
+
+    If the ID is already assigned, the callback will be called immediately once.
+  example: []
+  syntax:
+    content: void OnIdAssigned(Action<NetworkId> callback)
+    parameters:
+    - id: callback
+      type: System.Action{Foundry.Networking.NetworkId}
+      description: ''
+    content.vb: Sub OnIdAssigned(callback As Action(Of NetworkId))
+  overload: Foundry.Networking.INetworkedGraphId.OnIdAssigned*
+  nameWithType.vb: INetworkedGraphId.OnIdAssigned(Action(Of NetworkId))
+  fullName.vb: Foundry.Networking.INetworkedGraphId.OnIdAssigned(System.Action(Of Foundry.Networking.NetworkId))
+  name.vb: OnIdAssigned(Action(Of NetworkId))
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: Foundry.Networking.INetworkedGraphId.Value*
+  commentId: Overload:Foundry.Networking.INetworkedGraphId.Value
+  href: Foundry.Networking.INetworkedGraphId.html#Foundry.Networking.INetworkedGraphId.Value
+  name: Value
+  nameWithType: INetworkedGraphId.Value
+  fullName: Foundry.Networking.INetworkedGraphId.Value
+- uid: Foundry.Networking.NetworkId
+  commentId: T:Foundry.Networking.NetworkId
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkId.html
+  name: NetworkId
+  nameWithType: NetworkId
+  fullName: Foundry.Networking.NetworkId
+- uid: Foundry.Networking.INetworkedGraphId.OnIdAssigned*
+  commentId: Overload:Foundry.Networking.INetworkedGraphId.OnIdAssigned
+  href: Foundry.Networking.INetworkedGraphId.html#Foundry.Networking.INetworkedGraphId.OnIdAssigned(System.Action{Foundry.Networking.NetworkId})
+  name: OnIdAssigned
+  nameWithType: INetworkedGraphId.OnIdAssigned
+  fullName: Foundry.Networking.INetworkedGraphId.OnIdAssigned
+- uid: System.Action{Foundry.Networking.NetworkId}
+  commentId: T:System.Action{Foundry.Networking.NetworkId}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<NetworkId>
+  nameWithType: Action<NetworkId>
+  fullName: System.Action<Foundry.Networking.NetworkId>
+  nameWithType.vb: Action(Of NetworkId)
+  fullName.vb: System.Action(Of Foundry.Networking.NetworkId)
+  name.vb: Action(Of NetworkId)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Foundry.Networking.NetworkId
+    name: NetworkId
+    href: Foundry.Networking.NetworkId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Networking.NetworkId
+    name: NetworkId
+    href: Foundry.Networking.NetworkId.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

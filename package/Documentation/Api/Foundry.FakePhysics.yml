@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.FakePhysics
+  commentId: N:Foundry.FakePhysics
+  id: Foundry.FakePhysics
+  children:
+  - Foundry.FakePhysics.HingeJointSimulation
+  - Foundry.FakePhysics.SpringJointSimulation
+  - Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
+  langs:
+  - csharp
+  - vb
+  name: Foundry.FakePhysics
+  nameWithType: Foundry.FakePhysics
+  fullName: Foundry.FakePhysics
+  type: Namespace
+  assemblies:
+  - Foundry.Core
+references:
+- uid: Foundry.FakePhysics.SpringJointSimulation
+  commentId: T:Foundry.FakePhysics.SpringJointSimulation
+  href: Foundry.FakePhysics.SpringJointSimulation.html
+  name: SpringJointSimulation
+  nameWithType: SpringJointSimulation
+  fullName: Foundry.FakePhysics.SpringJointSimulation
+- uid: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
+  commentId: T:Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
+  parent: Foundry.FakePhysics
+  href: Foundry.FakePhysics.SpringJointSimulation.html
+  name: SpringJointSimulation.LinearSpringOptions
+  nameWithType: SpringJointSimulation.LinearSpringOptions
+  fullName: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
+  spec.csharp:
+  - uid: Foundry.FakePhysics.SpringJointSimulation
+    name: SpringJointSimulation
+    href: Foundry.FakePhysics.SpringJointSimulation.html
+  - name: .
+  - uid: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
+    name: LinearSpringOptions
+    href: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions.html
+  spec.vb:
+  - uid: Foundry.FakePhysics.SpringJointSimulation
+    name: SpringJointSimulation
+    href: Foundry.FakePhysics.SpringJointSimulation.html
+  - name: .
+  - uid: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
+    name: LinearSpringOptions
+    href: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions.html
+- uid: Foundry.FakePhysics.HingeJointSimulation
+  commentId: T:Foundry.FakePhysics.HingeJointSimulation
+  href: Foundry.FakePhysics.HingeJointSimulation.html
+  name: HingeJointSimulation
+  nameWithType: HingeJointSimulation
+  fullName: Foundry.FakePhysics.HingeJointSimulation
+- uid: Foundry.FakePhysics
+  commentId: N:Foundry.FakePhysics
+  href: Foundry.html
+  name: Foundry.FakePhysics
+  nameWithType: Foundry.FakePhysics
+  fullName: Foundry.FakePhysics
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.FakePhysics
+    name: FakePhysics
+    href: Foundry.FakePhysics.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.FakePhysics
+    name: FakePhysics
+    href: Foundry.FakePhysics.html

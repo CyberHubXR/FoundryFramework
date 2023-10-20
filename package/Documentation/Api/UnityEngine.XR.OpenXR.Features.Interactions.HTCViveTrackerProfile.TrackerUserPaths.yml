@@ -1,0 +1,695 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  id: HTCViveTrackerProfile.TrackerUserPaths
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  children:
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.camera
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.chest
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.keyboard
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftElbow
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftFoot
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftKnee
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftShoulder
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightElbow
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightFoot
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightKnee
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightShoulder
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.waist
+  langs:
+  - csharp
+  - vb
+  name: HTCViveTrackerProfile.TrackerUserPaths
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  type: Class
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerUserPaths
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 55
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: OpenXR user path definitions for the tracker.
+  example: []
+  syntax:
+    content: public static class HTCViveTrackerProfile.TrackerUserPaths
+    content.vb: Public Module HTCViveTrackerProfile.TrackerUserPaths
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftFoot
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftFoot
+  id: leftFoot
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: leftFoot
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.leftFoot
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftFoot
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftFoot
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 60
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user left foot
+  example: []
+  syntax:
+    content: public const string leftFoot = "/user/vive_tracker_htcx/role/left_foot"
+    return:
+      type: System.String
+    content.vb: Public Const leftFoot As String = "/user/vive_tracker_htcx/role/left_foot"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightFoot
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightFoot
+  id: rightFoot
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: rightFoot
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.rightFoot
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightFoot
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightFoot
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 65
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user roght foot
+  example: []
+  syntax:
+    content: public const string rightFoot = "/user/vive_tracker_htcx/role/right_foot"
+    return:
+      type: System.String
+    content.vb: Public Const rightFoot As String = "/user/vive_tracker_htcx/role/right_foot"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftShoulder
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftShoulder
+  id: leftShoulder
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: leftShoulder
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.leftShoulder
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftShoulder
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftShoulder
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 70
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user left shoulder
+  example: []
+  syntax:
+    content: public const string leftShoulder = "/user/vive_tracker_htcx/role/left_shoulder"
+    return:
+      type: System.String
+    content.vb: Public Const leftShoulder As String = "/user/vive_tracker_htcx/role/left_shoulder"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightShoulder
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightShoulder
+  id: rightShoulder
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: rightShoulder
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.rightShoulder
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightShoulder
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightShoulder
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 75
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user right shoulder
+  example: []
+  syntax:
+    content: public const string rightShoulder = "/user/vive_tracker_htcx/role/right_shoulder"
+    return:
+      type: System.String
+    content.vb: Public Const rightShoulder As String = "/user/vive_tracker_htcx/role/right_shoulder"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftElbow
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftElbow
+  id: leftElbow
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: leftElbow
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.leftElbow
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftElbow
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftElbow
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 80
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user left elbow
+  example: []
+  syntax:
+    content: public const string leftElbow = "/user/vive_tracker_htcx/role/left_elbow"
+    return:
+      type: System.String
+    content.vb: Public Const leftElbow As String = "/user/vive_tracker_htcx/role/left_elbow"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightElbow
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightElbow
+  id: rightElbow
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: rightElbow
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.rightElbow
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightElbow
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightElbow
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 85
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user right elbow
+  example: []
+  syntax:
+    content: public const string rightElbow = "/user/vive_tracker_htcx/role/right_elbow"
+    return:
+      type: System.String
+    content.vb: Public Const rightElbow As String = "/user/vive_tracker_htcx/role/right_elbow"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftKnee
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftKnee
+  id: leftKnee
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: leftKnee
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.leftKnee
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.leftKnee
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftKnee
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 90
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user left knee
+  example: []
+  syntax:
+    content: public const string leftKnee = "/user/vive_tracker_htcx/role/left_knee"
+    return:
+      type: System.String
+    content.vb: Public Const leftKnee As String = "/user/vive_tracker_htcx/role/left_knee"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightKnee
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightKnee
+  id: rightKnee
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: rightKnee
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.rightKnee
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.rightKnee
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightKnee
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 95
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user right knee
+  example: []
+  syntax:
+    content: public const string rightKnee = "/user/vive_tracker_htcx/role/right_knee"
+    return:
+      type: System.String
+    content.vb: Public Const rightKnee As String = "/user/vive_tracker_htcx/role/right_knee"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.waist
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.waist
+  id: waist
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: waist
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.waist
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.waist
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: waist
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 100
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user waist
+  example: []
+  syntax:
+    content: public const string waist = "/user/vive_tracker_htcx/role/waist"
+    return:
+      type: System.String
+    content.vb: Public Const waist As String = "/user/vive_tracker_htcx/role/waist"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.chest
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.chest
+  id: chest
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: chest
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.chest
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.chest
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: chest
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 105
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user chest
+  example: []
+  syntax:
+    content: public const string chest = "/user/vive_tracker_htcx/role/chest"
+    return:
+      type: System.String
+    content.vb: Public Const chest As String = "/user/vive_tracker_htcx/role/chest"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.camera
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.camera
+  id: camera
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: camera
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.camera
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.camera
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: camera
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 110
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user custom camera
+  example: []
+  syntax:
+    content: public const string camera = "/user/vive_tracker_htcx/role/camera"
+    return:
+      type: System.String
+    content.vb: Public Const camera As String = "/user/vive_tracker_htcx/role/camera"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.keyboard
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.keyboard
+  id: keyboard
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  langs:
+  - csharp
+  - vb
+  name: keyboard
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths.keyboard
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.keyboard
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: keyboard
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 115
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Path for user keyboard
+  example: []
+  syntax:
+    content: public const string keyboard = "/user/vive_tracker_htcx/role/keyboard"
+    return:
+      type: System.String
+    content.vb: Public Const keyboard As String = "/user/vive_tracker_htcx/role/keyboard"
+references:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions
+  commentId: N:UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.html
+  name: UnityEngine.XR.OpenXR.Features.Interactions
+  nameWithType: UnityEngine.XR.OpenXR.Features.Interactions
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

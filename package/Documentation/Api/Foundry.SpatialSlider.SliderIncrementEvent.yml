@@ -1,0 +1,424 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.SpatialSlider.SliderIncrementEvent
+  commentId: T:Foundry.SpatialSlider.SliderIncrementEvent
+  id: SpatialSlider.SliderIncrementEvent
+  parent: Foundry
+  children:
+  - Foundry.SpatialSlider.SliderIncrementEvent.incrementPointOnLine
+  - Foundry.SpatialSlider.SliderIncrementEvent.onIncrementEnter
+  - Foundry.SpatialSlider.SliderIncrementEvent.onIncrementExit
+  langs:
+  - csharp
+  - vb
+  name: SpatialSlider.SliderIncrementEvent
+  nameWithType: SpatialSlider.SliderIncrementEvent
+  fullName: Foundry.SpatialSlider.SliderIncrementEvent
+  type: Struct
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialSlider.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SliderIncrementEvent
+    path: ../Interaction/Grabbable/SpatialSlider.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct SpatialSlider.SliderIncrementEvent
+    content.vb: >-
+      <Serializable>
+
+      Public Structure SpatialSlider.SliderIncrementEvent
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.SpatialSlider.SliderIncrementEvent.onIncrementEnter
+  commentId: F:Foundry.SpatialSlider.SliderIncrementEvent.onIncrementEnter
+  id: onIncrementEnter
+  parent: Foundry.SpatialSlider.SliderIncrementEvent
+  langs:
+  - csharp
+  - vb
+  name: onIncrementEnter
+  nameWithType: SpatialSlider.SliderIncrementEvent.onIncrementEnter
+  fullName: Foundry.SpatialSlider.SliderIncrementEvent.onIncrementEnter
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialSlider.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: onIncrementEnter
+    path: ../Interaction/Grabbable/SpatialSlider.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkEvent<int> onIncrementEnter
+    return:
+      type: Foundry.NetworkEvent{System.Int32}
+    content.vb: Public onIncrementEnter As NetworkEvent(Of Integer)
+- uid: Foundry.SpatialSlider.SliderIncrementEvent.onIncrementExit
+  commentId: F:Foundry.SpatialSlider.SliderIncrementEvent.onIncrementExit
+  id: onIncrementExit
+  parent: Foundry.SpatialSlider.SliderIncrementEvent
+  langs:
+  - csharp
+  - vb
+  name: onIncrementExit
+  nameWithType: SpatialSlider.SliderIncrementEvent.onIncrementExit
+  fullName: Foundry.SpatialSlider.SliderIncrementEvent.onIncrementExit
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialSlider.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: onIncrementExit
+    path: ../Interaction/Grabbable/SpatialSlider.cs
+    startLine: 19
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkEvent<int> onIncrementExit
+    return:
+      type: Foundry.NetworkEvent{System.Int32}
+    content.vb: Public onIncrementExit As NetworkEvent(Of Integer)
+- uid: Foundry.SpatialSlider.SliderIncrementEvent.incrementPointOnLine
+  commentId: F:Foundry.SpatialSlider.SliderIncrementEvent.incrementPointOnLine
+  id: incrementPointOnLine
+  parent: Foundry.SpatialSlider.SliderIncrementEvent
+  langs:
+  - csharp
+  - vb
+  name: incrementPointOnLine
+  nameWithType: SpatialSlider.SliderIncrementEvent.incrementPointOnLine
+  fullName: Foundry.SpatialSlider.SliderIncrementEvent.incrementPointOnLine
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Grabbable/SpatialSlider.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: incrementPointOnLine
+    path: ../Interaction/Grabbable/SpatialSlider.cs
+    startLine: 21
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Transform incrementPointOnLine
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public incrementPointOnLine As Transform
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.NetworkEvent{System.Int32}
+  commentId: T:Foundry.NetworkEvent{System.Int32}
+  parent: Foundry
+  definition: Foundry.NetworkEvent`1
+  href: Foundry.NetworkEvent-1.html
+  name: NetworkEvent<int>
+  nameWithType: NetworkEvent<int>
+  fullName: Foundry.NetworkEvent<int>
+  nameWithType.vb: NetworkEvent(Of Integer)
+  fullName.vb: Foundry.NetworkEvent(Of Integer)
+  name.vb: NetworkEvent(Of Integer)
+  spec.csharp:
+  - uid: Foundry.NetworkEvent`1
+    name: NetworkEvent
+    href: Foundry.NetworkEvent-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.NetworkEvent`1
+    name: NetworkEvent
+    href: Foundry.NetworkEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Foundry.NetworkEvent`1
+  commentId: T:Foundry.NetworkEvent`1
+  href: Foundry.NetworkEvent-1.html
+  name: NetworkEvent<T>
+  nameWithType: NetworkEvent<T>
+  fullName: Foundry.NetworkEvent<T>
+  nameWithType.vb: NetworkEvent(Of T)
+  fullName.vb: Foundry.NetworkEvent(Of T)
+  name.vb: NetworkEvent(Of T)
+  spec.csharp:
+  - uid: Foundry.NetworkEvent`1
+    name: NetworkEvent
+    href: Foundry.NetworkEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.NetworkEvent`1
+    name: NetworkEvent
+    href: Foundry.NetworkEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

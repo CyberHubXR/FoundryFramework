@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Docgen
+  commentId: N:Foundry.Docgen
+  id: Foundry.Docgen
+  children:
+  - Foundry.Docgen.FoundryDocgenConfig
+  - Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+  - Foundry.Docgen.FoundryDocgenWindow
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Docgen
+  nameWithType: Foundry.Docgen
+  fullName: Foundry.Docgen
+  type: Namespace
+  assemblies:
+  - Foundry.Docgen
+references:
+- uid: Foundry.Docgen.FoundryDocgenWindow
+  commentId: T:Foundry.Docgen.FoundryDocgenWindow
+  href: Foundry.Docgen.FoundryDocgenWindow.html
+  name: FoundryDocgenWindow
+  nameWithType: FoundryDocgenWindow
+  fullName: Foundry.Docgen.FoundryDocgenWindow
+- uid: Foundry.Docgen.FoundryDocgenConfig
+  commentId: T:Foundry.Docgen.FoundryDocgenConfig
+  parent: Foundry.Docgen
+  href: Foundry.Docgen.FoundryDocgenConfig.html
+  name: FoundryDocgenConfig
+  nameWithType: FoundryDocgenConfig
+  fullName: Foundry.Docgen.FoundryDocgenConfig
+- uid: Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+  commentId: T:Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+  href: Foundry.Docgen.FoundryDocgenConfig.html
+  name: FoundryDocgenConfig.MetadataPair
+  nameWithType: FoundryDocgenConfig.MetadataPair
+  fullName: Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+  spec.csharp:
+  - uid: Foundry.Docgen.FoundryDocgenConfig
+    name: FoundryDocgenConfig
+    href: Foundry.Docgen.FoundryDocgenConfig.html
+  - name: .
+  - uid: Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+    name: MetadataPair
+    href: Foundry.Docgen.FoundryDocgenConfig.MetadataPair.html
+  spec.vb:
+  - uid: Foundry.Docgen.FoundryDocgenConfig
+    name: FoundryDocgenConfig
+    href: Foundry.Docgen.FoundryDocgenConfig.html
+  - name: .
+  - uid: Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+    name: MetadataPair
+    href: Foundry.Docgen.FoundryDocgenConfig.MetadataPair.html
+- uid: Foundry.Docgen
+  commentId: N:Foundry.Docgen
+  href: Foundry.html
+  name: Foundry.Docgen
+  nameWithType: Foundry.Docgen
+  fullName: Foundry.Docgen
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Docgen
+    name: Docgen
+    href: Foundry.Docgen.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Docgen
+    name: Docgen
+    href: Foundry.Docgen.html

@@ -1,0 +1,55 @@
+{
+    "metadata": [
+       {
+           "src": [
+               {
+                   "src" : "temp",
+                   "files": [
+                       "**.csproj"
+                   ]
+               }
+           ],
+           "dest": "Api"
+       }
+    ],
+    "build": {
+       "content": [
+         {
+           "files": [
+             "toc.yml",
+             "index.md"
+           ]
+         },
+         {
+           "files": [
+             "Api/toc.yml",
+             "Api/**/*.yml",
+             "Api/**/*.md"
+           ]
+         },
+         {
+           "files": [
+             "Manual/**/*.md",
+             "Manual/**/*.yml"
+           ]
+         }
+       ],
+       "resource": [
+           {
+               "files": [
+                   "Media/**"
+               ]
+           }
+       ],
+       "overwrite": "",
+       "dest": "",
+       "globalMetadataFiles": [],
+       "template": [
+         "default", 
+         "modern"
+       ],
+      "postProcessors": [],
+      "keepFileLink": false,
+      "disableGitFeatures": false
+    }
+}

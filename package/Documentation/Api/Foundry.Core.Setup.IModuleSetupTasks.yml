@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Setup.IModuleSetupTasks
+  commentId: T:Foundry.Core.Setup.IModuleSetupTasks
+  id: IModuleSetupTasks
+  parent: Foundry.Core.Setup
+  children:
+  - Foundry.Core.Setup.IModuleSetupTasks.GetTaskState
+  - Foundry.Core.Setup.IModuleSetupTasks.GetTasks
+  - Foundry.Core.Setup.IModuleSetupTasks.ModuleName
+  - Foundry.Core.Setup.IModuleSetupTasks.ModuleSource
+  langs:
+  - csharp
+  - vb
+  name: IModuleSetupTasks
+  nameWithType: IModuleSetupTasks
+  fullName: Foundry.Core.Setup.IModuleSetupTasks
+  type: Interface
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IModuleSetupTasks
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  summary: A module can provide an implementation of this class to register setup tasks. It will automatically be detected and added to the FoundrySetupWizard.
+  example: []
+  syntax:
+    content: public interface IModuleSetupTasks
+    content.vb: Public Interface IModuleSetupTasks
+- uid: Foundry.Core.Setup.IModuleSetupTasks.GetTaskState
+  commentId: M:Foundry.Core.Setup.IModuleSetupTasks.GetTaskState
+  id: GetTaskState
+  parent: Foundry.Core.Setup.IModuleSetupTasks
+  langs:
+  - csharp
+  - vb
+  name: GetTaskState()
+  nameWithType: IModuleSetupTasks.GetTaskState()
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.GetTaskState()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetTaskState
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 23
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  remarks: This is used by the FoundrySetupWizard to decide whether to pop-up and prompt the user to take action or not.
+  example: []
+  syntax:
+    content: IModuleSetupTasks.State GetTaskState()
+    return:
+      type: Foundry.Core.Setup.IModuleSetupTasks.State
+      description: Current state of this module's setup tasks
+    content.vb: Function GetTaskState() As IModuleSetupTasks.State
+  overload: Foundry.Core.Setup.IModuleSetupTasks.GetTaskState*
+- uid: Foundry.Core.Setup.IModuleSetupTasks.GetTasks
+  commentId: M:Foundry.Core.Setup.IModuleSetupTasks.GetTasks
+  id: GetTasks
+  parent: Foundry.Core.Setup.IModuleSetupTasks
+  langs:
+  - csharp
+  - vb
+  name: GetTasks()
+  nameWithType: IModuleSetupTasks.GetTasks()
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.GetTasks()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetTasks
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 26
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  example: []
+  syntax:
+    content: List<SetupTaskList> GetTasks()
+    return:
+      type: System.Collections.Generic.List{Foundry.Core.Setup.SetupTaskList}
+      description: Uncompleted tasks that should be displayed in the FoundrySetupWizard, grouped by lists
+    content.vb: Function GetTasks() As List(Of SetupTaskList)
+  overload: Foundry.Core.Setup.IModuleSetupTasks.GetTasks*
+- uid: Foundry.Core.Setup.IModuleSetupTasks.ModuleName
+  commentId: M:Foundry.Core.Setup.IModuleSetupTasks.ModuleName
+  id: ModuleName
+  parent: Foundry.Core.Setup.IModuleSetupTasks
+  langs:
+  - csharp
+  - vb
+  name: ModuleName()
+  nameWithType: IModuleSetupTasks.ModuleName()
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.ModuleName()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ModuleName
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 29
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  example: []
+  syntax:
+    content: string ModuleName()
+    return:
+      type: System.String
+      description: The name of the module these tasks are for.
+    content.vb: Function ModuleName() As String
+  overload: Foundry.Core.Setup.IModuleSetupTasks.ModuleName*
+- uid: Foundry.Core.Setup.IModuleSetupTasks.ModuleSource
+  commentId: M:Foundry.Core.Setup.IModuleSetupTasks.ModuleSource
+  id: ModuleSource
+  parent: Foundry.Core.Setup.IModuleSetupTasks
+  langs:
+  - csharp
+  - vb
+  name: ModuleSource()
+  nameWithType: IModuleSetupTasks.ModuleSource()
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.ModuleSource()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ModuleSource
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 32
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  example: []
+  syntax:
+    content: string ModuleSource()
+    return:
+      type: System.String
+      description: The location of this module (com.example.package)
+    content.vb: Function ModuleSource() As String
+  overload: Foundry.Core.Setup.IModuleSetupTasks.ModuleSource*
+references:
+- uid: Foundry.Core.Setup
+  commentId: N:Foundry.Core.Setup
+  href: Foundry.html
+  name: Foundry.Core.Setup
+  nameWithType: Foundry.Core.Setup
+  fullName: Foundry.Core.Setup
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+- uid: Foundry.Core.Setup.IModuleSetupTasks.GetTaskState*
+  commentId: Overload:Foundry.Core.Setup.IModuleSetupTasks.GetTaskState
+  href: Foundry.Core.Setup.IModuleSetupTasks.html#Foundry.Core.Setup.IModuleSetupTasks.GetTaskState
+  name: GetTaskState
+  nameWithType: IModuleSetupTasks.GetTaskState
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.GetTaskState
+- uid: Foundry.Core.Setup.IModuleSetupTasks.State
+  commentId: T:Foundry.Core.Setup.IModuleSetupTasks.State
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.IModuleSetupTasks.html
+  name: IModuleSetupTasks.State
+  nameWithType: IModuleSetupTasks.State
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.State
+  spec.csharp:
+  - uid: Foundry.Core.Setup.IModuleSetupTasks
+    name: IModuleSetupTasks
+    href: Foundry.Core.Setup.IModuleSetupTasks.html
+  - name: .
+  - uid: Foundry.Core.Setup.IModuleSetupTasks.State
+    name: State
+    href: Foundry.Core.Setup.IModuleSetupTasks.State.html
+  spec.vb:
+  - uid: Foundry.Core.Setup.IModuleSetupTasks
+    name: IModuleSetupTasks
+    href: Foundry.Core.Setup.IModuleSetupTasks.html
+  - name: .
+  - uid: Foundry.Core.Setup.IModuleSetupTasks.State
+    name: State
+    href: Foundry.Core.Setup.IModuleSetupTasks.State.html
+- uid: Foundry.Core.Setup.IModuleSetupTasks.GetTasks*
+  commentId: Overload:Foundry.Core.Setup.IModuleSetupTasks.GetTasks
+  href: Foundry.Core.Setup.IModuleSetupTasks.html#Foundry.Core.Setup.IModuleSetupTasks.GetTasks
+  name: GetTasks
+  nameWithType: IModuleSetupTasks.GetTasks
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.GetTasks
+- uid: System.Collections.Generic.List{Foundry.Core.Setup.SetupTaskList}
+  commentId: T:System.Collections.Generic.List{Foundry.Core.Setup.SetupTaskList}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SetupTaskList>
+  nameWithType: List<SetupTaskList>
+  fullName: System.Collections.Generic.List<Foundry.Core.Setup.SetupTaskList>
+  nameWithType.vb: List(Of SetupTaskList)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.Core.Setup.SetupTaskList)
+  name.vb: List(Of SetupTaskList)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Core.Setup.SetupTaskList
+    name: SetupTaskList
+    href: Foundry.Core.Setup.SetupTaskList.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Core.Setup.SetupTaskList
+    name: SetupTaskList
+    href: Foundry.Core.Setup.SetupTaskList.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Foundry.Core.Setup.IModuleSetupTasks.ModuleName*
+  commentId: Overload:Foundry.Core.Setup.IModuleSetupTasks.ModuleName
+  href: Foundry.Core.Setup.IModuleSetupTasks.html#Foundry.Core.Setup.IModuleSetupTasks.ModuleName
+  name: ModuleName
+  nameWithType: IModuleSetupTasks.ModuleName
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.ModuleName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Core.Setup.IModuleSetupTasks.ModuleSource*
+  commentId: Overload:Foundry.Core.Setup.IModuleSetupTasks.ModuleSource
+  href: Foundry.Core.Setup.IModuleSetupTasks.html#Foundry.Core.Setup.IModuleSetupTasks.ModuleSource
+  name: ModuleSource
+  nameWithType: IModuleSetupTasks.ModuleSource
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.ModuleSource

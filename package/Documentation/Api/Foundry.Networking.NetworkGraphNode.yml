@@ -1,0 +1,966 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.NetworkGraphNode
+  commentId: T:Foundry.Networking.NetworkGraphNode
+  id: NetworkGraphNode
+  parent: Foundry.Networking
+  children:
+  - Foundry.Networking.NetworkGraphNode.AssociatedObject
+  - Foundry.Networking.NetworkGraphNode.Children
+  - Foundry.Networking.NetworkGraphNode.ConsumeCachedProps
+  - Foundry.Networking.NetworkGraphNode.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - Foundry.Networking.NetworkGraphNode.DeserializeProps(Foundry.Core.Serialization.FoundryDeserializer)
+  - Foundry.Networking.NetworkGraphNode.ID
+  - Foundry.Networking.NetworkGraphNode.IsAlive
+  - Foundry.Networking.NetworkGraphNode.Parent
+  - Foundry.Networking.NetworkGraphNode.Properties
+  - Foundry.Networking.NetworkGraphNode.Skip(Foundry.Core.Serialization.FoundryDeserializer)
+  - Foundry.Networking.NetworkGraphNode.allowOwnershipTransfer
+  - Foundry.Networking.NetworkGraphNode.op_Implicit(Foundry.Networking.NetworkGraphNode)~System.Boolean
+  - Foundry.Networking.NetworkGraphNode.propsData
+  langs:
+  - csharp
+  - vb
+  name: NetworkGraphNode
+  nameWithType: NetworkGraphNode
+  fullName: Foundry.Networking.NetworkGraphNode
+  type: Class
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetworkGraphNode
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 116
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public class NetworkGraphNode
+    content.vb: Public Class NetworkGraphNode
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Foundry.Networking.NetworkGraphNode.ID
+  commentId: F:Foundry.Networking.NetworkGraphNode.ID
+  id: ID
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: NetworkGraphNode.ID
+  fullName: Foundry.Networking.NetworkGraphNode.ID
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ID
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 118
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public NetworkId ID
+    return:
+      type: Foundry.Networking.NetworkId
+    content.vb: Public ID As NetworkId
+- uid: Foundry.Networking.NetworkGraphNode.AssociatedObject
+  commentId: F:Foundry.Networking.NetworkGraphNode.AssociatedObject
+  id: AssociatedObject
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: AssociatedObject
+  nameWithType: NetworkGraphNode.AssociatedObject
+  fullName: Foundry.Networking.NetworkGraphNode.AssociatedObject
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: AssociatedObject
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 123
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: The object in the scene associated with this node. This may be null if this node does not represent a scene object.
+  example: []
+  syntax:
+    content: public NetworkObject AssociatedObject
+    return:
+      type: Foundry.Networking.NetworkObject
+    content.vb: Public AssociatedObject As NetworkObject
+- uid: Foundry.Networking.NetworkGraphNode.allowOwnershipTransfer
+  commentId: F:Foundry.Networking.NetworkGraphNode.allowOwnershipTransfer
+  id: allowOwnershipTransfer
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: allowOwnershipTransfer
+  nameWithType: NetworkGraphNode.allowOwnershipTransfer
+  fullName: Foundry.Networking.NetworkGraphNode.allowOwnershipTransfer
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: allowOwnershipTransfer
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 128
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Used to check if incoming ownership transfer requests are valid.
+  example: []
+  syntax:
+    content: public bool allowOwnershipTransfer
+    return:
+      type: System.Boolean
+    content.vb: Public allowOwnershipTransfer As Boolean
+- uid: Foundry.Networking.NetworkGraphNode.Properties
+  commentId: F:Foundry.Networking.NetworkGraphNode.Properties
+  id: Properties
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: NetworkGraphNode.Properties
+  fullName: Foundry.Networking.NetworkGraphNode.Properties
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Properties
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 133
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: All the networked properties of this node. Is null if they have not been set yet.
+  example: []
+  syntax:
+    content: public List<INetworkProperty> Properties
+    return:
+      type: System.Collections.Generic.List{Foundry.Networking.INetworkProperty}
+    content.vb: Public Properties As List(Of INetworkProperty)
+- uid: Foundry.Networking.NetworkGraphNode.propsData
+  commentId: F:Foundry.Networking.NetworkGraphNode.propsData
+  id: propsData
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: propsData
+  nameWithType: NetworkGraphNode.propsData
+  fullName: Foundry.Networking.NetworkGraphNode.propsData
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: propsData
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 138
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: If props have not been set up yet, we cache the data here to be applied later.
+  example: []
+  syntax:
+    content: public MemoryStream propsData
+    return:
+      type: System.IO.MemoryStream
+    content.vb: Public propsData As MemoryStream
+- uid: Foundry.Networking.NetworkGraphNode.Parent
+  commentId: F:Foundry.Networking.NetworkGraphNode.Parent
+  id: Parent
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: NetworkGraphNode.Parent
+  fullName: Foundry.Networking.NetworkGraphNode.Parent
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Parent
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 140
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public NetworkGraphNode Parent
+    return:
+      type: Foundry.Networking.NetworkGraphNode
+    content.vb: Public Parent As NetworkGraphNode
+- uid: Foundry.Networking.NetworkGraphNode.Children
+  commentId: F:Foundry.Networking.NetworkGraphNode.Children
+  id: Children
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: Children
+  nameWithType: NetworkGraphNode.Children
+  fullName: Foundry.Networking.NetworkGraphNode.Children
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Children
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 141
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public List<NetworkGraphNode> Children
+    return:
+      type: System.Collections.Generic.List{Foundry.Networking.NetworkGraphNode}
+    content.vb: Public Children As List(Of NetworkGraphNode)
+- uid: Foundry.Networking.NetworkGraphNode.IsAlive
+  commentId: F:Foundry.Networking.NetworkGraphNode.IsAlive
+  id: IsAlive
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: IsAlive
+  nameWithType: NetworkGraphNode.IsAlive
+  fullName: Foundry.Networking.NetworkGraphNode.IsAlive
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IsAlive
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 146
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: If this node is still alive in the graph
+  example: []
+  syntax:
+    content: public bool IsAlive
+    return:
+      type: System.Boolean
+    content.vb: Public IsAlive As Boolean
+- uid: Foundry.Networking.NetworkGraphNode.op_Implicit(Foundry.Networking.NetworkGraphNode)~System.Boolean
+  commentId: M:Foundry.Networking.NetworkGraphNode.op_Implicit(Foundry.Networking.NetworkGraphNode)~System.Boolean
+  id: op_Implicit(Foundry.Networking.NetworkGraphNode)~System.Boolean
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: implicit operator bool(NetworkGraphNode)
+  nameWithType: NetworkGraphNode.implicit operator bool(NetworkGraphNode)
+  fullName: Foundry.Networking.NetworkGraphNode.implicit operator bool(Foundry.Networking.NetworkGraphNode)
+  type: Operator
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Implicit
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 148
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public static implicit operator bool(NetworkGraphNode node)
+    parameters:
+    - id: node
+      type: Foundry.Networking.NetworkGraphNode
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Widening Operator CType(node As NetworkGraphNode) As Boolean
+  overload: Foundry.Networking.NetworkGraphNode.op_Implicit*
+  nameWithType.vb: NetworkGraphNode.CType(NetworkGraphNode)
+  fullName.vb: Foundry.Networking.NetworkGraphNode.CType(Foundry.Networking.NetworkGraphNode)
+  name.vb: CType(NetworkGraphNode)
+- uid: Foundry.Networking.NetworkGraphNode.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Networking.NetworkGraphNode.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  id: Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: NetworkGraphNode.Deserialize(FoundryDeserializer)
+  fullName: Foundry.Networking.NetworkGraphNode.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Deserialize
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 154
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Deserialize this node's data from a stream
+  example: []
+  syntax:
+    content: public void Deserialize(FoundryDeserializer deserializer)
+    parameters:
+    - id: deserializer
+      type: Foundry.Core.Serialization.FoundryDeserializer
+      description: ''
+    content.vb: Public Sub Deserialize(deserializer As FoundryDeserializer)
+  overload: Foundry.Networking.NetworkGraphNode.Deserialize*
+- uid: Foundry.Networking.NetworkGraphNode.Skip(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Networking.NetworkGraphNode.Skip(Foundry.Core.Serialization.FoundryDeserializer)
+  id: Skip(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: Skip(FoundryDeserializer)
+  nameWithType: NetworkGraphNode.Skip(FoundryDeserializer)
+  fullName: Foundry.Networking.NetworkGraphNode.Skip(Foundry.Core.Serialization.FoundryDeserializer)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Skip
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 191
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Skip deserializing this node's data from a stream, used when we want to ignore an update to this node.
+  example: []
+  syntax:
+    content: public static void Skip(FoundryDeserializer deserializer)
+    parameters:
+    - id: deserializer
+      type: Foundry.Core.Serialization.FoundryDeserializer
+      description: ''
+    content.vb: Public Shared Sub Skip(deserializer As FoundryDeserializer)
+  overload: Foundry.Networking.NetworkGraphNode.Skip*
+- uid: Foundry.Networking.NetworkGraphNode.DeserializeProps(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Networking.NetworkGraphNode.DeserializeProps(Foundry.Core.Serialization.FoundryDeserializer)
+  id: DeserializeProps(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: DeserializeProps(FoundryDeserializer)
+  nameWithType: NetworkGraphNode.DeserializeProps(FoundryDeserializer)
+  fullName: Foundry.Networking.NetworkGraphNode.DeserializeProps(Foundry.Core.Serialization.FoundryDeserializer)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: DeserializeProps
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 206
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Deserialize this node's properties from a stream
+  example: []
+  syntax:
+    content: public void DeserializeProps(FoundryDeserializer deserializer)
+    parameters:
+    - id: deserializer
+      type: Foundry.Core.Serialization.FoundryDeserializer
+      description: ''
+    content.vb: Public Sub DeserializeProps(deserializer As FoundryDeserializer)
+  overload: Foundry.Networking.NetworkGraphNode.DeserializeProps*
+- uid: Foundry.Networking.NetworkGraphNode.ConsumeCachedProps
+  commentId: M:Foundry.Networking.NetworkGraphNode.ConsumeCachedProps
+  id: ConsumeCachedProps
+  parent: Foundry.Networking.NetworkGraphNode
+  langs:
+  - csharp
+  - vb
+  name: ConsumeCachedProps()
+  nameWithType: NetworkGraphNode.ConsumeCachedProps()
+  fullName: Foundry.Networking.NetworkGraphNode.ConsumeCachedProps()
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ConsumeCachedProps
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 227
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Deserialized properties that have been cached on this node.
+  example: []
+  syntax:
+    content: public void ConsumeCachedProps()
+    content.vb: Public Sub ConsumeCachedProps()
+  overload: Foundry.Networking.NetworkGraphNode.ConsumeCachedProps*
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Networking.NetworkId
+  commentId: T:Foundry.Networking.NetworkId
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkId.html
+  name: NetworkId
+  nameWithType: NetworkId
+  fullName: Foundry.Networking.NetworkId
+- uid: Foundry.Networking.NetworkObject
+  commentId: T:Foundry.Networking.NetworkObject
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkObject.html
+  name: NetworkObject
+  nameWithType: NetworkObject
+  fullName: Foundry.Networking.NetworkObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{Foundry.Networking.INetworkProperty}
+  commentId: T:System.Collections.Generic.List{Foundry.Networking.INetworkProperty}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<INetworkProperty>
+  nameWithType: List<INetworkProperty>
+  fullName: System.Collections.Generic.List<Foundry.Networking.INetworkProperty>
+  nameWithType.vb: List(Of INetworkProperty)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.Networking.INetworkProperty)
+  name.vb: List(Of INetworkProperty)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Networking.INetworkProperty
+    name: INetworkProperty
+    href: Foundry.Networking.INetworkProperty.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Networking.INetworkProperty
+    name: INetworkProperty
+    href: Foundry.Networking.INetworkProperty.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.IO.MemoryStream
+  commentId: T:System.IO.MemoryStream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.memorystream
+  name: MemoryStream
+  nameWithType: MemoryStream
+  fullName: System.IO.MemoryStream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Foundry.Networking.NetworkGraphNode
+  commentId: T:Foundry.Networking.NetworkGraphNode
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkGraphNode.html
+  name: NetworkGraphNode
+  nameWithType: NetworkGraphNode
+  fullName: Foundry.Networking.NetworkGraphNode
+- uid: System.Collections.Generic.List{Foundry.Networking.NetworkGraphNode}
+  commentId: T:System.Collections.Generic.List{Foundry.Networking.NetworkGraphNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<NetworkGraphNode>
+  nameWithType: List<NetworkGraphNode>
+  fullName: System.Collections.Generic.List<Foundry.Networking.NetworkGraphNode>
+  nameWithType.vb: List(Of NetworkGraphNode)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.Networking.NetworkGraphNode)
+  name.vb: List(Of NetworkGraphNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Networking.NetworkGraphNode
+    name: NetworkGraphNode
+    href: Foundry.Networking.NetworkGraphNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Networking.NetworkGraphNode
+    name: NetworkGraphNode
+    href: Foundry.Networking.NetworkGraphNode.html
+  - name: )
+- uid: Foundry.Networking.NetworkGraphNode.op_Implicit*
+  commentId: Overload:Foundry.Networking.NetworkGraphNode.op_Implicit
+  name: implicit operator
+  nameWithType: NetworkGraphNode.implicit operator
+  fullName: Foundry.Networking.NetworkGraphNode.implicit operator
+  nameWithType.vb: NetworkGraphNode.CType
+  fullName.vb: Foundry.Networking.NetworkGraphNode.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Foundry.Networking.NetworkGraphNode.Deserialize*
+  commentId: Overload:Foundry.Networking.NetworkGraphNode.Deserialize
+  href: Foundry.Networking.NetworkGraphNode.html#Foundry.Networking.NetworkGraphNode.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Deserialize
+  nameWithType: NetworkGraphNode.Deserialize
+  fullName: Foundry.Networking.NetworkGraphNode.Deserialize
+- uid: Foundry.Core.Serialization.FoundryDeserializer
+  commentId: T:Foundry.Core.Serialization.FoundryDeserializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundryDeserializer.html
+  name: FoundryDeserializer
+  nameWithType: FoundryDeserializer
+  fullName: Foundry.Core.Serialization.FoundryDeserializer
+- uid: Foundry.Core.Serialization
+  commentId: N:Foundry.Core.Serialization
+  href: Foundry.html
+  name: Foundry.Core.Serialization
+  nameWithType: Foundry.Core.Serialization
+  fullName: Foundry.Core.Serialization
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+- uid: Foundry.Networking.NetworkGraphNode.Skip*
+  commentId: Overload:Foundry.Networking.NetworkGraphNode.Skip
+  href: Foundry.Networking.NetworkGraphNode.html#Foundry.Networking.NetworkGraphNode.Skip(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Skip
+  nameWithType: NetworkGraphNode.Skip
+  fullName: Foundry.Networking.NetworkGraphNode.Skip
+- uid: Foundry.Networking.NetworkGraphNode.DeserializeProps*
+  commentId: Overload:Foundry.Networking.NetworkGraphNode.DeserializeProps
+  href: Foundry.Networking.NetworkGraphNode.html#Foundry.Networking.NetworkGraphNode.DeserializeProps(Foundry.Core.Serialization.FoundryDeserializer)
+  name: DeserializeProps
+  nameWithType: NetworkGraphNode.DeserializeProps
+  fullName: Foundry.Networking.NetworkGraphNode.DeserializeProps
+- uid: Foundry.Networking.NetworkGraphNode.ConsumeCachedProps*
+  commentId: Overload:Foundry.Networking.NetworkGraphNode.ConsumeCachedProps
+  href: Foundry.Networking.NetworkGraphNode.html#Foundry.Networking.NetworkGraphNode.ConsumeCachedProps
+  name: ConsumeCachedProps
+  nameWithType: NetworkGraphNode.ConsumeCachedProps
+  fullName: Foundry.Networking.NetworkGraphNode.ConsumeCachedProps

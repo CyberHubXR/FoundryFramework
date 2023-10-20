@@ -1,0 +1,19 @@
+{
+    "name": "Foundry.Core.Navigation.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9e080be906bfc1c4bb2683d498c53669",
+        "GUID:4ab533a46b17ea54e9bcabca57814e86"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

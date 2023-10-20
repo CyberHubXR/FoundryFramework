@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Rendering.Editor
+  commentId: N:Foundry.Rendering.Editor
+  id: Foundry.Rendering.Editor
+  children:
+  - Foundry.Rendering.Editor.MainCameraServiceDefinition
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Rendering.Editor
+  nameWithType: Foundry.Rendering.Editor
+  fullName: Foundry.Rendering.Editor
+  type: Namespace
+  assemblies:
+  - Foundry.Rendering.Editor
+references:
+- uid: Foundry.Rendering.Editor.MainCameraServiceDefinition
+  commentId: T:Foundry.Rendering.Editor.MainCameraServiceDefinition
+  href: Foundry.Rendering.Editor.MainCameraServiceDefinition.html
+  name: MainCameraServiceDefinition
+  nameWithType: MainCameraServiceDefinition
+  fullName: Foundry.Rendering.Editor.MainCameraServiceDefinition

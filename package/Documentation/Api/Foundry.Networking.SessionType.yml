@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.SessionType
+  commentId: T:Foundry.Networking.SessionType
+  id: SessionType
+  parent: Foundry.Networking
+  children:
+  - Foundry.Networking.SessionType.Client
+  - Foundry.Networking.SessionType.Host
+  - Foundry.Networking.SessionType.Server
+  - Foundry.Networking.SessionType.Shared
+  langs:
+  - csharp
+  - vb
+  name: SessionType
+  nameWithType: SessionType
+  fullName: Foundry.Networking.SessionType
+  type: Enum
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SessionType
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Represents the type of session that we wish to use
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum SessionType
+    content.vb: >-
+      <Flags>
+
+      Public Enum SessionType
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: Foundry.Networking.SessionType.Shared
+  commentId: F:Foundry.Networking.SessionType.Shared
+  id: Shared
+  parent: Foundry.Networking.SessionType
+  langs:
+  - csharp
+  - vb
+  name: Shared
+  nameWithType: SessionType.Shared
+  fullName: Foundry.Networking.SessionType.Shared
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Shared
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: All clients own their own data
+  example: []
+  syntax:
+    content: Shared = 1
+    return:
+      type: Foundry.Networking.SessionType
+- uid: Foundry.Networking.SessionType.Client
+  commentId: F:Foundry.Networking.SessionType.Client
+  id: Client
+  parent: Foundry.Networking.SessionType
+  langs:
+  - csharp
+  - vb
+  name: Client
+  nameWithType: SessionType.Client
+  fullName: Foundry.Networking.SessionType.Client
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Client
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 20
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Client connects to a server or host
+  example: []
+  syntax:
+    content: Client = 2
+    return:
+      type: Foundry.Networking.SessionType
+- uid: Foundry.Networking.SessionType.Server
+  commentId: F:Foundry.Networking.SessionType.Server
+  id: Server
+  parent: Foundry.Networking.SessionType
+  langs:
+  - csharp
+  - vb
+  name: Server
+  nameWithType: SessionType.Server
+  fullName: Foundry.Networking.SessionType.Server
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Server
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 24
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Server hosts a session, is not a player
+  example: []
+  syntax:
+    content: Server = 4
+    return:
+      type: Foundry.Networking.SessionType
+- uid: Foundry.Networking.SessionType.Host
+  commentId: F:Foundry.Networking.SessionType.Host
+  id: Host
+  parent: Foundry.Networking.SessionType
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: SessionType.Host
+  fullName: Foundry.Networking.SessionType.Host
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Host
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 28
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Host is a server and a player, and provides a session to clients
+  example: []
+  syntax:
+    content: Host = 8
+    return:
+      type: Foundry.Networking.SessionType
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: Foundry.Networking.SessionType
+  commentId: T:Foundry.Networking.SessionType
+  parent: Foundry.Networking
+  href: Foundry.Networking.SessionType.html
+  name: SessionType
+  nameWithType: SessionType
+  fullName: Foundry.Networking.SessionType

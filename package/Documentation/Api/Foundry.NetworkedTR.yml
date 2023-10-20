@@ -1,0 +1,544 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.NetworkedTR
+  commentId: T:Foundry.NetworkedTR
+  id: NetworkedTR
+  parent: Foundry
+  children:
+  - Foundry.NetworkedTR.angularVelocity
+  - Foundry.NetworkedTR.op_Implicit(Foundry.NetworkedTR)~Foundry.PosRot
+  - Foundry.NetworkedTR.op_Implicit(Foundry.NetworkedTR)~Foundry.TrackerPos
+  - Foundry.NetworkedTR.op_Implicit(Foundry.PosRot)~Foundry.NetworkedTR
+  - Foundry.NetworkedTR.rotation
+  - Foundry.NetworkedTR.translation
+  - Foundry.NetworkedTR.velocity
+  langs:
+  - csharp
+  - vb
+  name: NetworkedTR
+  nameWithType: NetworkedTR
+  fullName: Foundry.NetworkedTR
+  type: Struct
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetworkedTR
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: 'public struct NetworkedTR : INetworkInput'
+    content.vb: Public Structure NetworkedTR Implements INetworkInput
+  implements:
+  - Fusion.INetworkInput
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Foundry.NetworkedTR.translation
+  commentId: F:Foundry.NetworkedTR.translation
+  id: translation
+  parent: Foundry.NetworkedTR
+  langs:
+  - csharp
+  - vb
+  name: translation
+  nameWithType: NetworkedTR.translation
+  fullName: Foundry.NetworkedTR.translation
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: translation
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 translation
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public translation As Vector3
+- uid: Foundry.NetworkedTR.rotation
+  commentId: F:Foundry.NetworkedTR.rotation
+  id: rotation
+  parent: Foundry.NetworkedTR
+  langs:
+  - csharp
+  - vb
+  name: rotation
+  nameWithType: NetworkedTR.rotation
+  fullName: Foundry.NetworkedTR.rotation
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rotation
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Quaternion rotation
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public rotation As Quaternion
+- uid: Foundry.NetworkedTR.velocity
+  commentId: F:Foundry.NetworkedTR.velocity
+  id: velocity
+  parent: Foundry.NetworkedTR
+  langs:
+  - csharp
+  - vb
+  name: velocity
+  nameWithType: NetworkedTR.velocity
+  fullName: Foundry.NetworkedTR.velocity
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: velocity
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 velocity
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public velocity As Vector3
+- uid: Foundry.NetworkedTR.angularVelocity
+  commentId: F:Foundry.NetworkedTR.angularVelocity
+  id: angularVelocity
+  parent: Foundry.NetworkedTR
+  langs:
+  - csharp
+  - vb
+  name: angularVelocity
+  nameWithType: NetworkedTR.angularVelocity
+  fullName: Foundry.NetworkedTR.angularVelocity
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: angularVelocity
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 angularVelocity
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public angularVelocity As Vector3
+- uid: Foundry.NetworkedTR.op_Implicit(Foundry.NetworkedTR)~Foundry.TrackerPos
+  commentId: M:Foundry.NetworkedTR.op_Implicit(Foundry.NetworkedTR)~Foundry.TrackerPos
+  id: op_Implicit(Foundry.NetworkedTR)~Foundry.TrackerPos
+  parent: Foundry.NetworkedTR
+  langs:
+  - csharp
+  - vb
+  name: implicit operator TrackerPos(NetworkedTR)
+  nameWithType: NetworkedTR.implicit operator TrackerPos(NetworkedTR)
+  fullName: Foundry.NetworkedTR.implicit operator Foundry.TrackerPos(Foundry.NetworkedTR)
+  type: Operator
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Implicit
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static implicit operator TrackerPos(NetworkedTR v)
+    parameters:
+    - id: v
+      type: Foundry.NetworkedTR
+    return:
+      type: Foundry.TrackerPos
+    content.vb: Public Shared Widening Operator CType(v As NetworkedTR) As TrackerPos
+  overload: Foundry.NetworkedTR.op_Implicit*
+  nameWithType.vb: NetworkedTR.CType(NetworkedTR)
+  fullName.vb: Foundry.NetworkedTR.CType(Foundry.NetworkedTR)
+  name.vb: CType(NetworkedTR)
+- uid: Foundry.NetworkedTR.op_Implicit(Foundry.NetworkedTR)~Foundry.PosRot
+  commentId: M:Foundry.NetworkedTR.op_Implicit(Foundry.NetworkedTR)~Foundry.PosRot
+  id: op_Implicit(Foundry.NetworkedTR)~Foundry.PosRot
+  parent: Foundry.NetworkedTR
+  langs:
+  - csharp
+  - vb
+  name: implicit operator PosRot(NetworkedTR)
+  nameWithType: NetworkedTR.implicit operator PosRot(NetworkedTR)
+  fullName: Foundry.NetworkedTR.implicit operator Foundry.PosRot(Foundry.NetworkedTR)
+  type: Operator
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Implicit
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static implicit operator PosRot(NetworkedTR v)
+    parameters:
+    - id: v
+      type: Foundry.NetworkedTR
+    return:
+      type: Foundry.PosRot
+    content.vb: Public Shared Widening Operator CType(v As NetworkedTR) As PosRot
+  overload: Foundry.NetworkedTR.op_Implicit*
+  nameWithType.vb: NetworkedTR.CType(NetworkedTR)
+  fullName.vb: Foundry.NetworkedTR.CType(Foundry.NetworkedTR)
+  name.vb: CType(NetworkedTR)
+- uid: Foundry.NetworkedTR.op_Implicit(Foundry.PosRot)~Foundry.NetworkedTR
+  commentId: M:Foundry.NetworkedTR.op_Implicit(Foundry.PosRot)~Foundry.NetworkedTR
+  id: op_Implicit(Foundry.PosRot)~Foundry.NetworkedTR
+  parent: Foundry.NetworkedTR
+  langs:
+  - csharp
+  - vb
+  name: implicit operator NetworkedTR(PosRot)
+  nameWithType: NetworkedTR.implicit operator NetworkedTR(PosRot)
+  fullName: Foundry.NetworkedTR.implicit operator Foundry.NetworkedTR(Foundry.PosRot)
+  type: Operator
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Implicit
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 17
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static implicit operator NetworkedTR(PosRot v)
+    parameters:
+    - id: v
+      type: Foundry.PosRot
+    return:
+      type: Foundry.NetworkedTR
+    content.vb: Public Shared Widening Operator CType(v As PosRot) As NetworkedTR
+  overload: Foundry.NetworkedTR.op_Implicit*
+  nameWithType.vb: NetworkedTR.CType(PosRot)
+  fullName.vb: Foundry.NetworkedTR.CType(Foundry.PosRot)
+  name.vb: CType(PosRot)
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Fusion.INetworkInput
+  commentId: T:Fusion.INetworkInput
+  parent: Fusion
+  isExternal: true
+  name: INetworkInput
+  nameWithType: INetworkInput
+  fullName: Fusion.INetworkInput
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Fusion
+  commentId: N:Fusion
+  isExternal: true
+  name: Fusion
+  nameWithType: Fusion
+  fullName: Fusion
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: Foundry.NetworkedTR.op_Implicit*
+  commentId: Overload:Foundry.NetworkedTR.op_Implicit
+  name: implicit operator
+  nameWithType: NetworkedTR.implicit operator
+  fullName: Foundry.NetworkedTR.implicit operator
+  nameWithType.vb: NetworkedTR.CType
+  fullName.vb: Foundry.NetworkedTR.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Foundry.NetworkedTR
+  commentId: T:Foundry.NetworkedTR
+  parent: Foundry
+  href: Foundry.NetworkedTR.html
+  name: NetworkedTR
+  nameWithType: NetworkedTR
+  fullName: Foundry.NetworkedTR
+- uid: Foundry.TrackerPos
+  commentId: T:Foundry.TrackerPos
+  parent: Foundry
+  href: Foundry.TrackerPos.html
+  name: TrackerPos
+  nameWithType: TrackerPos
+  fullName: Foundry.TrackerPos
+- uid: Foundry.PosRot
+  commentId: T:Foundry.PosRot
+  parent: Foundry
+  href: Foundry.PosRot.html
+  name: PosRot
+  nameWithType: PosRot
+  fullName: Foundry.PosRot

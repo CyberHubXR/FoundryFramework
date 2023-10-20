@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.PlayerControlMode
+  commentId: T:Foundry.PlayerControlMode
+  id: PlayerControlMode
+  parent: Foundry
+  children:
+  - Foundry.PlayerControlMode.Auto
+  - Foundry.PlayerControlMode.Desktop
+  - Foundry.PlayerControlMode.XR
+  langs:
+  - csharp
+  - vb
+  name: PlayerControlMode
+  nameWithType: PlayerControlMode
+  fullName: Foundry.PlayerControlMode
+  type: Enum
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerControlMode
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum PlayerControlMode
+    content.vb: Public Enum PlayerControlMode
+- uid: Foundry.PlayerControlMode.Auto
+  commentId: F:Foundry.PlayerControlMode.Auto
+  id: Auto
+  parent: Foundry.PlayerControlMode
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: PlayerControlMode.Auto
+  fullName: Foundry.PlayerControlMode.Auto
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Auto
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Auto = 0
+    return:
+      type: Foundry.PlayerControlMode
+- uid: Foundry.PlayerControlMode.Desktop
+  commentId: F:Foundry.PlayerControlMode.Desktop
+  id: Desktop
+  parent: Foundry.PlayerControlMode
+  langs:
+  - csharp
+  - vb
+  name: Desktop
+  nameWithType: PlayerControlMode.Desktop
+  fullName: Foundry.PlayerControlMode.Desktop
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Desktop
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Desktop = 1
+    return:
+      type: Foundry.PlayerControlMode
+- uid: Foundry.PlayerControlMode.XR
+  commentId: F:Foundry.PlayerControlMode.XR
+  id: XR
+  parent: Foundry.PlayerControlMode
+  langs:
+  - csharp
+  - vb
+  name: XR
+  nameWithType: PlayerControlMode.XR
+  fullName: Foundry.PlayerControlMode.XR
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: XR
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: XR = 2
+    return:
+      type: Foundry.PlayerControlMode
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.PlayerControlMode
+  commentId: T:Foundry.PlayerControlMode
+  parent: Foundry
+  href: Foundry.PlayerControlMode.html
+  name: PlayerControlMode
+  nameWithType: PlayerControlMode
+  fullName: Foundry.PlayerControlMode

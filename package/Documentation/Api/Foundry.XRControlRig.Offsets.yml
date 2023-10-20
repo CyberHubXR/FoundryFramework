@@ -1,0 +1,444 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.XRControlRig.Offsets
+  commentId: T:Foundry.XRControlRig.Offsets
+  id: XRControlRig.Offsets
+  parent: Foundry
+  children:
+  - Foundry.XRControlRig.Offsets.head
+  - Foundry.XRControlRig.Offsets.leftFoot
+  - Foundry.XRControlRig.Offsets.leftHand
+  - Foundry.XRControlRig.Offsets.rightFoot
+  - Foundry.XRControlRig.Offsets.rightHand
+  - Foundry.XRControlRig.Offsets.waist
+  langs:
+  - csharp
+  - vb
+  name: XRControlRig.Offsets
+  nameWithType: XRControlRig.Offsets
+  fullName: Foundry.XRControlRig.Offsets
+  type: Struct
+  source:
+    remote:
+      path: package/Player/Scripts/XRControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Offsets
+    path: ../Player/Scripts/XRControlRig.cs
+    startLine: 22
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct XRControlRig.Offsets
+    content.vb: >-
+      <Serializable>
+
+      Public Structure XRControlRig.Offsets
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.XRControlRig.Offsets.head
+  commentId: F:Foundry.XRControlRig.Offsets.head
+  id: head
+  parent: Foundry.XRControlRig.Offsets
+  langs:
+  - csharp
+  - vb
+  name: head
+  nameWithType: XRControlRig.Offsets.head
+  fullName: Foundry.XRControlRig.Offsets.head
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/XRControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: head
+    path: ../Player/Scripts/XRControlRig.cs
+    startLine: 25
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot head
+    return:
+      type: Foundry.PosRot
+    content.vb: Public head As PosRot
+- uid: Foundry.XRControlRig.Offsets.leftHand
+  commentId: F:Foundry.XRControlRig.Offsets.leftHand
+  id: leftHand
+  parent: Foundry.XRControlRig.Offsets
+  langs:
+  - csharp
+  - vb
+  name: leftHand
+  nameWithType: XRControlRig.Offsets.leftHand
+  fullName: Foundry.XRControlRig.Offsets.leftHand
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/XRControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftHand
+    path: ../Player/Scripts/XRControlRig.cs
+    startLine: 26
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot leftHand
+    return:
+      type: Foundry.PosRot
+    content.vb: Public leftHand As PosRot
+- uid: Foundry.XRControlRig.Offsets.rightHand
+  commentId: F:Foundry.XRControlRig.Offsets.rightHand
+  id: rightHand
+  parent: Foundry.XRControlRig.Offsets
+  langs:
+  - csharp
+  - vb
+  name: rightHand
+  nameWithType: XRControlRig.Offsets.rightHand
+  fullName: Foundry.XRControlRig.Offsets.rightHand
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/XRControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightHand
+    path: ../Player/Scripts/XRControlRig.cs
+    startLine: 27
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot rightHand
+    return:
+      type: Foundry.PosRot
+    content.vb: Public rightHand As PosRot
+- uid: Foundry.XRControlRig.Offsets.waist
+  commentId: F:Foundry.XRControlRig.Offsets.waist
+  id: waist
+  parent: Foundry.XRControlRig.Offsets
+  langs:
+  - csharp
+  - vb
+  name: waist
+  nameWithType: XRControlRig.Offsets.waist
+  fullName: Foundry.XRControlRig.Offsets.waist
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/XRControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: waist
+    path: ../Player/Scripts/XRControlRig.cs
+    startLine: 28
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot waist
+    return:
+      type: Foundry.PosRot
+    content.vb: Public waist As PosRot
+- uid: Foundry.XRControlRig.Offsets.leftFoot
+  commentId: F:Foundry.XRControlRig.Offsets.leftFoot
+  id: leftFoot
+  parent: Foundry.XRControlRig.Offsets
+  langs:
+  - csharp
+  - vb
+  name: leftFoot
+  nameWithType: XRControlRig.Offsets.leftFoot
+  fullName: Foundry.XRControlRig.Offsets.leftFoot
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/XRControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftFoot
+    path: ../Player/Scripts/XRControlRig.cs
+    startLine: 29
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot leftFoot
+    return:
+      type: Foundry.PosRot
+    content.vb: Public leftFoot As PosRot
+- uid: Foundry.XRControlRig.Offsets.rightFoot
+  commentId: F:Foundry.XRControlRig.Offsets.rightFoot
+  id: rightFoot
+  parent: Foundry.XRControlRig.Offsets
+  langs:
+  - csharp
+  - vb
+  name: rightFoot
+  nameWithType: XRControlRig.Offsets.rightFoot
+  fullName: Foundry.XRControlRig.Offsets.rightFoot
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/XRControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightFoot
+    path: ../Player/Scripts/XRControlRig.cs
+    startLine: 30
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot rightFoot
+    return:
+      type: Foundry.PosRot
+    content.vb: Public rightFoot As PosRot
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.PosRot
+  commentId: T:Foundry.PosRot
+  parent: Foundry
+  href: Foundry.PosRot.html
+  name: PosRot
+  nameWithType: PosRot
+  fullName: Foundry.PosRot

@@ -1,0 +1,14 @@
+{
+    "name": "Foundry.Core.Editor.UIUtils",
+    "rootNamespace": "Foundry.Core.Editor.UIUtils",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

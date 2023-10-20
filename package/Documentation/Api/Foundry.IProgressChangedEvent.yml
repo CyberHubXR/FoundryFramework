@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.IProgressChangedEvent
+  commentId: T:Foundry.IProgressChangedEvent
+  id: IProgressChangedEvent
+  parent: Foundry
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IProgressChangedEvent
+  nameWithType: IProgressChangedEvent
+  fullName: Foundry.IProgressChangedEvent
+  type: Interface
+  source:
+    remote:
+      path: package/Progress/Scripts/IProgressChangedEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IProgressChangedEvent
+    path: ../Progress/Scripts/IProgressChangedEvent.cs
+    startLine: 26
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: >-
+    Interface for a class that provides a ProgressChanged event with the report type of 
+
+    <xref href="Foundry.ProgressReport" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public interface IProgressChangedEvent : IProgressChangedEvent<ProgressReport>'
+    content.vb: Public Interface IProgressChangedEvent Inherits IProgressChangedEvent(Of ProgressReport)
+  inheritedMembers:
+  - Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+references:
+- uid: Foundry.ProgressReport
+  commentId: T:Foundry.ProgressReport
+  href: Foundry.ProgressReport.html
+  name: ProgressReport
+  nameWithType: ProgressReport
+  fullName: Foundry.ProgressReport
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+  commentId: E:Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+  parent: Foundry.IProgressChangedEvent{Foundry.ProgressReport}
+  definition: Foundry.IProgressChangedEvent`1.ProgressChanged
+  href: Foundry.IProgressChangedEvent{Foundry.ProgressReport}.html#Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+  name: ProgressChanged
+  nameWithType: IProgressChangedEvent<ProgressReport>.ProgressChanged
+  fullName: Foundry.IProgressChangedEvent<Foundry.ProgressReport>.ProgressChanged
+  nameWithType.vb: IProgressChangedEvent(Of ProgressReport).ProgressChanged
+  fullName.vb: Foundry.IProgressChangedEvent(Of Foundry.ProgressReport).ProgressChanged
+- uid: Foundry.IProgressChangedEvent`1.ProgressChanged
+  commentId: E:Foundry.IProgressChangedEvent`1.ProgressChanged
+  href: Foundry.IProgressChangedEvent-1.html#Foundry.IProgressChangedEvent`1.ProgressChanged
+  name: ProgressChanged
+  nameWithType: IProgressChangedEvent<TProgress>.ProgressChanged
+  fullName: Foundry.IProgressChangedEvent<TProgress>.ProgressChanged
+  nameWithType.vb: IProgressChangedEvent(Of TProgress).ProgressChanged
+  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress).ProgressChanged
+- uid: Foundry.IProgressChangedEvent{Foundry.ProgressReport}
+  commentId: T:Foundry.IProgressChangedEvent{Foundry.ProgressReport}
+  parent: Foundry
+  definition: Foundry.IProgressChangedEvent`1
+  href: Foundry.IProgressChangedEvent-1.html
+  name: IProgressChangedEvent<ProgressReport>
+  nameWithType: IProgressChangedEvent<ProgressReport>
+  fullName: Foundry.IProgressChangedEvent<Foundry.ProgressReport>
+  nameWithType.vb: IProgressChangedEvent(Of ProgressReport)
+  fullName.vb: Foundry.IProgressChangedEvent(Of Foundry.ProgressReport)
+  name.vb: IProgressChangedEvent(Of ProgressReport)
+  spec.csharp:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: <
+  - uid: Foundry.ProgressReport
+    name: ProgressReport
+    href: Foundry.ProgressReport.html
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.ProgressReport
+    name: ProgressReport
+    href: Foundry.ProgressReport.html
+  - name: )
+- uid: Foundry.IProgressChangedEvent`1
+  commentId: T:Foundry.IProgressChangedEvent`1
+  href: Foundry.IProgressChangedEvent-1.html
+  name: IProgressChangedEvent<TProgress>
+  nameWithType: IProgressChangedEvent<TProgress>
+  fullName: Foundry.IProgressChangedEvent<TProgress>
+  nameWithType.vb: IProgressChangedEvent(Of TProgress)
+  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress)
+  name.vb: IProgressChangedEvent(Of TProgress)
+  spec.csharp:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: <
+  - name: TProgress
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProgress
+  - name: )

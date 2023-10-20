@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networked6PInput
+  commentId: T:Foundry.Networked6PInput
+  id: Networked6PInput
+  parent: Foundry
+  children:
+  - Foundry.Networked6PInput.head
+  - Foundry.Networked6PInput.input
+  - Foundry.Networked6PInput.leftFoot
+  - Foundry.Networked6PInput.leftHand
+  - Foundry.Networked6PInput.rightFoot
+  - Foundry.Networked6PInput.rightHand
+  - Foundry.Networked6PInput.waist
+  langs:
+  - csharp
+  - vb
+  name: Networked6PInput
+  nameWithType: Networked6PInput
+  fullName: Foundry.Networked6PInput
+  type: Struct
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Networked6PInput
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 60
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: 'public struct Networked6PInput : INetworkInput'
+    content.vb: Public Structure Networked6PInput Implements INetworkInput
+  implements:
+  - Fusion.INetworkInput
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Foundry.Networked6PInput.input
+  commentId: F:Foundry.Networked6PInput.input
+  id: input
+  parent: Foundry.Networked6PInput
+  langs:
+  - csharp
+  - vb
+  name: input
+  nameWithType: Networked6PInput.input
+  fullName: Foundry.Networked6PInput.input
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: input
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 62
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkedCommonInput input
+    return:
+      type: Foundry.NetworkedCommonInput
+    content.vb: Public input As NetworkedCommonInput
+- uid: Foundry.Networked6PInput.head
+  commentId: F:Foundry.Networked6PInput.head
+  id: head
+  parent: Foundry.Networked6PInput
+  langs:
+  - csharp
+  - vb
+  name: head
+  nameWithType: Networked6PInput.head
+  fullName: Foundry.Networked6PInput.head
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: head
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 64
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkedTR head
+    return:
+      type: Foundry.NetworkedTR
+    content.vb: Public head As NetworkedTR
+- uid: Foundry.Networked6PInput.leftHand
+  commentId: F:Foundry.Networked6PInput.leftHand
+  id: leftHand
+  parent: Foundry.Networked6PInput
+  langs:
+  - csharp
+  - vb
+  name: leftHand
+  nameWithType: Networked6PInput.leftHand
+  fullName: Foundry.Networked6PInput.leftHand
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftHand
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 65
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkedTR leftHand
+    return:
+      type: Foundry.NetworkedTR
+    content.vb: Public leftHand As NetworkedTR
+- uid: Foundry.Networked6PInput.rightHand
+  commentId: F:Foundry.Networked6PInput.rightHand
+  id: rightHand
+  parent: Foundry.Networked6PInput
+  langs:
+  - csharp
+  - vb
+  name: rightHand
+  nameWithType: Networked6PInput.rightHand
+  fullName: Foundry.Networked6PInput.rightHand
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightHand
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 66
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkedTR rightHand
+    return:
+      type: Foundry.NetworkedTR
+    content.vb: Public rightHand As NetworkedTR
+- uid: Foundry.Networked6PInput.waist
+  commentId: F:Foundry.Networked6PInput.waist
+  id: waist
+  parent: Foundry.Networked6PInput
+  langs:
+  - csharp
+  - vb
+  name: waist
+  nameWithType: Networked6PInput.waist
+  fullName: Foundry.Networked6PInput.waist
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: waist
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 67
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkedTR waist
+    return:
+      type: Foundry.NetworkedTR
+    content.vb: Public waist As NetworkedTR
+- uid: Foundry.Networked6PInput.leftFoot
+  commentId: F:Foundry.Networked6PInput.leftFoot
+  id: leftFoot
+  parent: Foundry.Networked6PInput
+  langs:
+  - csharp
+  - vb
+  name: leftFoot
+  nameWithType: Networked6PInput.leftFoot
+  fullName: Foundry.Networked6PInput.leftFoot
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftFoot
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 68
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkedTR leftFoot
+    return:
+      type: Foundry.NetworkedTR
+    content.vb: Public leftFoot As NetworkedTR
+- uid: Foundry.Networked6PInput.rightFoot
+  commentId: F:Foundry.Networked6PInput.rightFoot
+  id: rightFoot
+  parent: Foundry.Networked6PInput
+  langs:
+  - csharp
+  - vb
+  name: rightFoot
+  nameWithType: Networked6PInput.rightFoot
+  fullName: Foundry.Networked6PInput.rightFoot
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightFoot
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 69
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public NetworkedTR rightFoot
+    return:
+      type: Foundry.NetworkedTR
+    content.vb: Public rightFoot As NetworkedTR
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Fusion.INetworkInput
+  commentId: T:Fusion.INetworkInput
+  parent: Fusion
+  isExternal: true
+  name: INetworkInput
+  nameWithType: INetworkInput
+  fullName: Fusion.INetworkInput
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Fusion
+  commentId: N:Fusion
+  isExternal: true
+  name: Fusion
+  nameWithType: Fusion
+  fullName: Fusion
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.NetworkedCommonInput
+  commentId: T:Foundry.NetworkedCommonInput
+  parent: Foundry
+  href: Foundry.NetworkedCommonInput.html
+  name: NetworkedCommonInput
+  nameWithType: NetworkedCommonInput
+  fullName: Foundry.NetworkedCommonInput
+- uid: Foundry.NetworkedTR
+  commentId: T:Foundry.NetworkedTR
+  parent: Foundry
+  href: Foundry.NetworkedTR.html
+  name: NetworkedTR
+  nameWithType: NetworkedTR
+  fullName: Foundry.NetworkedTR

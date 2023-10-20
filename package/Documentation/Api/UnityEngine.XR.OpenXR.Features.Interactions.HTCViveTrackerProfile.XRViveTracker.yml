@@ -1,0 +1,1948 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  id: HTCViveTrackerProfile.XRViveTracker
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  children:
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState
+  langs:
+  - csharp
+  - vb
+  name: HTCViveTrackerProfile.XRViveTracker
+  nameWithType: HTCViveTrackerProfile.XRViveTracker
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  type: Class
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: XRViveTracker
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 140
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: An Input System device based off the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#_htc_vive_controller_profile">HTC Vive Tracker</a>.
+  example: []
+  syntax:
+    content: >-
+      [Preserve]
+
+      [InputControlLayout(displayName = "HTC Vive Tracker (OpenXR)", commonUsages = new string[] { "Left Foot", "Right Foot", "Left Shoulder", "Right Shoulder", "Left Elbow", "Right Elbow", "Left Knee", "Right Knee", "Waist", "Chest", "Camera", "Keyboard" })]
+
+      public class HTCViveTrackerProfile.XRViveTracker : HTCViveTrackerProfile.XRTracker
+    content.vb: >-
+      <Preserve>
+
+      <InputControlLayout(displayName:="HTC Vive Tracker (OpenXR)", commonUsages:=New String() { "Left Foot", "Right Foot", "Left Shoulder", "Right Shoulder", "Left Elbow", "Right Elbow", "Left Knee", "Right Knee", "Waist", "Chest", "Camera", "Keyboard" })>
+
+      Public Class HTCViveTrackerProfile.XRViveTracker Inherits HTCViveTrackerProfile.XRTracker
+  inheritance:
+  - System.Object
+  - UnityEngine.InputSystem.InputControl
+  - UnityEngine.InputSystem.InputDevice
+  - UnityEngine.InputSystem.TrackedDevice
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  inheritedMembers:
+  - UnityEngine.InputSystem.InputDevice.InvalidDeviceId
+  - UnityEngine.InputSystem.InputDevice.ReadValueFromBufferAsObject(System.Void*,System.Int32)
+  - UnityEngine.InputSystem.InputDevice.ReadValueFromStateAsObject(System.Void*)
+  - UnityEngine.InputSystem.InputDevice.ReadValueFromStateIntoBuffer(System.Void*,System.Void*,System.Int32)
+  - UnityEngine.InputSystem.InputDevice.CompareValue(System.Void*,System.Void*)
+  - UnityEngine.InputSystem.InputDevice.MakeCurrent
+  - UnityEngine.InputSystem.InputDevice.OnAdded
+  - UnityEngine.InputSystem.InputDevice.OnRemoved
+  - UnityEngine.InputSystem.InputDevice.OnConfigurationChanged
+  - UnityEngine.InputSystem.InputDevice.ExecuteCommand``1({TCommand}@)
+  - UnityEngine.InputSystem.InputDevice.ExecuteCommand(UnityEngine.InputSystem.LowLevel.InputDeviceCommand*)
+  - UnityEngine.InputSystem.InputDevice.description
+  - UnityEngine.InputSystem.InputDevice.enabled
+  - UnityEngine.InputSystem.InputDevice.canRunInBackground
+  - UnityEngine.InputSystem.InputDevice.added
+  - UnityEngine.InputSystem.InputDevice.remote
+  - UnityEngine.InputSystem.InputDevice.native
+  - UnityEngine.InputSystem.InputDevice.updateBeforeRender
+  - UnityEngine.InputSystem.InputDevice.deviceId
+  - UnityEngine.InputSystem.InputDevice.lastUpdateTime
+  - UnityEngine.InputSystem.InputDevice.wasUpdatedThisFrame
+  - UnityEngine.InputSystem.InputDevice.allControls
+  - UnityEngine.InputSystem.InputDevice.valueType
+  - UnityEngine.InputSystem.InputDevice.valueSizeInBytes
+  - UnityEngine.InputSystem.InputDevice.all
+  - UnityEngine.InputSystem.InputControl.m_StateBlock
+  - UnityEngine.InputSystem.InputControl.ToString
+  - UnityEngine.InputSystem.InputControl.EvaluateMagnitude
+  - UnityEngine.InputSystem.InputControl.EvaluateMagnitude(System.Void*)
+  - UnityEngine.InputSystem.InputControl.WriteValueFromBufferIntoState(System.Void*,System.Int32,System.Void*)
+  - UnityEngine.InputSystem.InputControl.WriteValueFromObjectIntoState(System.Object,System.Void*)
+  - UnityEngine.InputSystem.InputControl.TryGetChildControl(System.String)
+  - UnityEngine.InputSystem.InputControl.TryGetChildControl``1(System.String)
+  - UnityEngine.InputSystem.InputControl.GetChildControl(System.String)
+  - UnityEngine.InputSystem.InputControl.GetChildControl``1(System.String)
+  - UnityEngine.InputSystem.InputControl.RefreshConfigurationIfNeeded
+  - UnityEngine.InputSystem.InputControl.RefreshConfiguration
+  - UnityEngine.InputSystem.InputControl.CalculateOptimizedControlDataType
+  - UnityEngine.InputSystem.InputControl.ApplyParameterChanges
+  - UnityEngine.InputSystem.InputControl.name
+  - UnityEngine.InputSystem.InputControl.displayName
+  - UnityEngine.InputSystem.InputControl.shortDisplayName
+  - UnityEngine.InputSystem.InputControl.path
+  - UnityEngine.InputSystem.InputControl.layout
+  - UnityEngine.InputSystem.InputControl.variants
+  - UnityEngine.InputSystem.InputControl.device
+  - UnityEngine.InputSystem.InputControl.parent
+  - UnityEngine.InputSystem.InputControl.children
+  - UnityEngine.InputSystem.InputControl.usages
+  - UnityEngine.InputSystem.InputControl.aliases
+  - UnityEngine.InputSystem.InputControl.stateBlock
+  - UnityEngine.InputSystem.InputControl.noisy
+  - UnityEngine.InputSystem.InputControl.synthetic
+  - UnityEngine.InputSystem.InputControl.Item(System.String)
+  - UnityEngine.InputSystem.InputControl.magnitude
+  - UnityEngine.InputSystem.InputControl.currentStatePtr
+  - UnityEngine.InputSystem.InputControl.previousFrameStatePtr
+  - UnityEngine.InputSystem.InputControl.defaultStatePtr
+  - UnityEngine.InputSystem.InputControl.noiseMaskPtr
+  - UnityEngine.InputSystem.InputControl.stateOffsetRelativeToDeviceRoot
+  - UnityEngine.InputSystem.InputControl.optimizedControlDataType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: UnityEngine.Scripting.PreserveAttribute
+    ctor: UnityEngine.Scripting.PreserveAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.InputSystem.Layouts.InputControlLayoutAttribute
+    ctor: UnityEngine.InputSystem.Layouts.InputControlLayoutAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: displayName
+      type: System.String
+      value: HTC Vive Tracker (OpenXR)
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose
+  commentId: P:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose
+  id: devicePose
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  langs:
+  - csharp
+  - vb
+  name: devicePose
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.devicePose
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose
+  type: Property
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: devicePose
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 146
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: A <xref href="UnityEngine.XR.OpenXR.Input.PoseControl" data-throw-if-not-resolved="false"></xref> that represents information from the HTCViveTrackerProfile.grip OpenXR binding.
+  example: []
+  syntax:
+    content: >-
+      [Preserve]
+
+      [InputControl(offset = 0, aliases = new string[] { "device", "gripPose" }, usage = "Device", noisy = true)]
+
+      public PoseControl devicePose { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.XR.PoseControl
+    content.vb: >-
+      <Preserve>
+
+      <InputControl(offset:=0, aliases:=New String() { "device", "gripPose" }, usage:="Device", noisy:=True)>
+
+      Public Property devicePose As PoseControl
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose*
+  attributes:
+  - type: UnityEngine.Scripting.PreserveAttribute
+    ctor: UnityEngine.Scripting.PreserveAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.InputSystem.Layouts.InputControlAttribute
+    ctor: UnityEngine.InputSystem.Layouts.InputControlAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: offset
+      type: System.UInt32
+      value: "0"
+    - name: usage
+      type: System.String
+      value: Device
+    - name: noisy
+      type: System.Boolean
+      value: true
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition
+  commentId: P:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition
+  id: devicePosition
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  langs:
+  - csharp
+  - vb
+  name: devicePosition
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.devicePosition
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition
+  type: Property
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: devicePosition
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 152
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: A [Vector3Control](xref:UnityEngine.InputSystem.Controls.Vector3Control) required for back compatibility with the XRSDK layouts. This is the device position. For the Oculus Touch device, this is both the grip and the pointer position. This value is equivalent to mapping devicePose/position.
+  example: []
+  syntax:
+    content: >-
+      [Preserve]
+
+      [InputControl(offset = 8, alias = "gripPosition", noisy = true)]
+
+      public Vector3Control devicePosition { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.Controls.Vector3Control
+    content.vb: >-
+      <Preserve>
+
+      <InputControl(offset:=8, alias:="gripPosition", noisy:=True)>
+
+      Public Property devicePosition As Vector3Control
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition*
+  attributes:
+  - type: UnityEngine.Scripting.PreserveAttribute
+    ctor: UnityEngine.Scripting.PreserveAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.InputSystem.Layouts.InputControlAttribute
+    ctor: UnityEngine.InputSystem.Layouts.InputControlAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: offset
+      type: System.UInt32
+      value: "8"
+    - name: alias
+      type: System.String
+      value: gripPosition
+    - name: noisy
+      type: System.Boolean
+      value: true
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  commentId: P:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  id: deviceRotation
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  langs:
+  - csharp
+  - vb
+  name: deviceRotation
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  type: Property
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: deviceRotation
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 158
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: A [QuaternionControl](xref:UnityEngine.InputSystem.Controls.QuaternionControl) required for backwards compatibility with the XRSDK layouts. This is the device orientation. For the Oculus Touch device, this is both the grip and the pointer rotation. This value is equivalent to mapping devicePose/rotation.
+  example: []
+  syntax:
+    content: >-
+      [Preserve]
+
+      [InputControl(offset = 20, alias = "gripOrientation", noisy = true)]
+
+      public QuaternionControl deviceRotation { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.Controls.QuaternionControl
+    content.vb: >-
+      <Preserve>
+
+      <InputControl(offset:=20, alias:="gripOrientation", noisy:=True)>
+
+      Public Property deviceRotation As QuaternionControl
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation*
+  attributes:
+  - type: UnityEngine.Scripting.PreserveAttribute
+    ctor: UnityEngine.Scripting.PreserveAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.InputSystem.Layouts.InputControlAttribute
+    ctor: UnityEngine.InputSystem.Layouts.InputControlAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: offset
+      type: System.UInt32
+      value: "20"
+    - name: alias
+      type: System.String
+      value: gripOrientation
+    - name: noisy
+      type: System.Boolean
+      value: true
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked
+  commentId: P:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked
+  id: isTracked
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  langs:
+  - csharp
+  - vb
+  name: isTracked
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.isTracked
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked
+  type: Property
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: isTracked
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 161
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: >-
+      [Preserve]
+
+      [InputControl(offset = 60)]
+
+      public ButtonControl isTracked { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.Controls.ButtonControl
+    content.vb: >-
+      <Preserve>
+
+      <InputControl(offset:=60)>
+
+      Public Property isTracked As ButtonControl
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked*
+  attributes:
+  - type: UnityEngine.Scripting.PreserveAttribute
+    ctor: UnityEngine.Scripting.PreserveAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.InputSystem.Layouts.InputControlAttribute
+    ctor: UnityEngine.InputSystem.Layouts.InputControlAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: offset
+      type: System.UInt32
+      value: "60"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState
+  commentId: P:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState
+  id: trackingState
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  langs:
+  - csharp
+  - vb
+  name: trackingState
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.trackingState
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState
+  type: Property
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: trackingState
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 164
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: >-
+      [Preserve]
+
+      [InputControl(offset = 64)]
+
+      public IntegerControl trackingState { get; }
+    parameters: []
+    return:
+      type: UnityEngine.InputSystem.Controls.IntegerControl
+    content.vb: >-
+      <Preserve>
+
+      <InputControl(offset:=64)>
+
+      Public Property trackingState As IntegerControl
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState*
+  attributes:
+  - type: UnityEngine.Scripting.PreserveAttribute
+    ctor: UnityEngine.Scripting.PreserveAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.InputSystem.Layouts.InputControlAttribute
+    ctor: UnityEngine.InputSystem.Layouts.InputControlAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: offset
+      type: System.UInt32
+      value: "64"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup
+  commentId: M:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup
+  id: FinishSetup
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  langs:
+  - csharp
+  - vb
+  name: FinishSetup()
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.FinishSetup()
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup()
+  type: Method
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: FinishSetup
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 168
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  example: []
+  syntax:
+    content: protected override void FinishSetup()
+    content.vb: Protected Overrides Sub FinishSetup()
+  overridden: UnityEngine.InputSystem.TrackedDevice.FinishSetup
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup*
+references:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions
+  commentId: N:UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.html
+  name: UnityEngine.XR.OpenXR.Features.Interactions
+  nameWithType: UnityEngine.XR.OpenXR.Features.Interactions
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.InputSystem.InputControl
+  commentId: T:UnityEngine.InputSystem.InputControl
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputControl
+  nameWithType: InputControl
+  fullName: UnityEngine.InputSystem.InputControl
+- uid: UnityEngine.InputSystem.InputDevice
+  commentId: T:UnityEngine.InputSystem.InputDevice
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: InputDevice
+  nameWithType: InputDevice
+  fullName: UnityEngine.InputSystem.InputDevice
+- uid: UnityEngine.InputSystem.TrackedDevice
+  commentId: T:UnityEngine.InputSystem.TrackedDevice
+  parent: UnityEngine.InputSystem
+  isExternal: true
+  name: TrackedDevice
+  nameWithType: TrackedDevice
+  fullName: UnityEngine.InputSystem.TrackedDevice
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile.XRTracker
+  nameWithType: HTCViveTrackerProfile.XRTracker
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+    name: XRTracker
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker.html
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+    name: XRTracker
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker.html
+- uid: UnityEngine.InputSystem.InputDevice.InvalidDeviceId
+  commentId: F:UnityEngine.InputSystem.InputDevice.InvalidDeviceId
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: InvalidDeviceId
+  nameWithType: InputDevice.InvalidDeviceId
+  fullName: UnityEngine.InputSystem.InputDevice.InvalidDeviceId
+- uid: UnityEngine.InputSystem.InputDevice.ReadValueFromBufferAsObject(System.Void*,System.Int32)
+  commentId: M:UnityEngine.InputSystem.InputDevice.ReadValueFromBufferAsObject(System.Void*,System.Int32)
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: ReadValueFromBufferAsObject(void*, int)
+  nameWithType: InputDevice.ReadValueFromBufferAsObject(void*, int)
+  fullName: UnityEngine.InputSystem.InputDevice.ReadValueFromBufferAsObject(void*, int)
+  nameWithType.vb: InputDevice.ReadValueFromBufferAsObject(Void*, Integer)
+  fullName.vb: UnityEngine.InputSystem.InputDevice.ReadValueFromBufferAsObject(Void*, Integer)
+  name.vb: ReadValueFromBufferAsObject(Void*, Integer)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.ReadValueFromBufferAsObject(System.Void*,System.Int32)
+    name: ReadValueFromBufferAsObject
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.ReadValueFromBufferAsObject(System.Void*,System.Int32)
+    name: ReadValueFromBufferAsObject
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.ReadValueFromStateAsObject(System.Void*)
+  commentId: M:UnityEngine.InputSystem.InputDevice.ReadValueFromStateAsObject(System.Void*)
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: ReadValueFromStateAsObject(void*)
+  nameWithType: InputDevice.ReadValueFromStateAsObject(void*)
+  fullName: UnityEngine.InputSystem.InputDevice.ReadValueFromStateAsObject(void*)
+  nameWithType.vb: InputDevice.ReadValueFromStateAsObject(Void*)
+  fullName.vb: UnityEngine.InputSystem.InputDevice.ReadValueFromStateAsObject(Void*)
+  name.vb: ReadValueFromStateAsObject(Void*)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.ReadValueFromStateAsObject(System.Void*)
+    name: ReadValueFromStateAsObject
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.ReadValueFromStateAsObject(System.Void*)
+    name: ReadValueFromStateAsObject
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.ReadValueFromStateIntoBuffer(System.Void*,System.Void*,System.Int32)
+  commentId: M:UnityEngine.InputSystem.InputDevice.ReadValueFromStateIntoBuffer(System.Void*,System.Void*,System.Int32)
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: ReadValueFromStateIntoBuffer(void*, void*, int)
+  nameWithType: InputDevice.ReadValueFromStateIntoBuffer(void*, void*, int)
+  fullName: UnityEngine.InputSystem.InputDevice.ReadValueFromStateIntoBuffer(void*, void*, int)
+  nameWithType.vb: InputDevice.ReadValueFromStateIntoBuffer(Void*, Void*, Integer)
+  fullName.vb: UnityEngine.InputSystem.InputDevice.ReadValueFromStateIntoBuffer(Void*, Void*, Integer)
+  name.vb: ReadValueFromStateIntoBuffer(Void*, Void*, Integer)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.ReadValueFromStateIntoBuffer(System.Void*,System.Void*,System.Int32)
+    name: ReadValueFromStateIntoBuffer
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.ReadValueFromStateIntoBuffer(System.Void*,System.Void*,System.Int32)
+    name: ReadValueFromStateIntoBuffer
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.CompareValue(System.Void*,System.Void*)
+  commentId: M:UnityEngine.InputSystem.InputDevice.CompareValue(System.Void*,System.Void*)
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: CompareValue(void*, void*)
+  nameWithType: InputDevice.CompareValue(void*, void*)
+  fullName: UnityEngine.InputSystem.InputDevice.CompareValue(void*, void*)
+  nameWithType.vb: InputDevice.CompareValue(Void*, Void*)
+  fullName.vb: UnityEngine.InputSystem.InputDevice.CompareValue(Void*, Void*)
+  name.vb: CompareValue(Void*, Void*)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.CompareValue(System.Void*,System.Void*)
+    name: CompareValue
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.CompareValue(System.Void*,System.Void*)
+    name: CompareValue
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.MakeCurrent
+  commentId: M:UnityEngine.InputSystem.InputDevice.MakeCurrent
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: MakeCurrent()
+  nameWithType: InputDevice.MakeCurrent()
+  fullName: UnityEngine.InputSystem.InputDevice.MakeCurrent()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.MakeCurrent
+    name: MakeCurrent
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.MakeCurrent
+    name: MakeCurrent
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.OnAdded
+  commentId: M:UnityEngine.InputSystem.InputDevice.OnAdded
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: OnAdded()
+  nameWithType: InputDevice.OnAdded()
+  fullName: UnityEngine.InputSystem.InputDevice.OnAdded()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.OnAdded
+    name: OnAdded
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.OnAdded
+    name: OnAdded
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.OnRemoved
+  commentId: M:UnityEngine.InputSystem.InputDevice.OnRemoved
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: OnRemoved()
+  nameWithType: InputDevice.OnRemoved()
+  fullName: UnityEngine.InputSystem.InputDevice.OnRemoved()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.OnRemoved
+    name: OnRemoved
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.OnRemoved
+    name: OnRemoved
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.OnConfigurationChanged
+  commentId: M:UnityEngine.InputSystem.InputDevice.OnConfigurationChanged
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: OnConfigurationChanged()
+  nameWithType: InputDevice.OnConfigurationChanged()
+  fullName: UnityEngine.InputSystem.InputDevice.OnConfigurationChanged()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.OnConfigurationChanged
+    name: OnConfigurationChanged
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.OnConfigurationChanged
+    name: OnConfigurationChanged
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand``1({TCommand}@)
+  commentId: M:UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+  parent: UnityEngine.InputSystem.InputDevice
+  definition: UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+  name: ExecuteCommand<TCommand>(ref TCommand)
+  nameWithType: InputDevice.ExecuteCommand<TCommand>(ref TCommand)
+  fullName: UnityEngine.InputSystem.InputDevice.ExecuteCommand<TCommand>(ref TCommand)
+  nameWithType.vb: InputDevice.ExecuteCommand(Of TCommand)(TCommand)
+  fullName.vb: UnityEngine.InputSystem.InputDevice.ExecuteCommand(Of TCommand)(TCommand)
+  name.vb: ExecuteCommand(Of TCommand)(TCommand)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+    name: ExecuteCommand
+    isExternal: true
+  - name: <
+  - name: TCommand
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+    name: ExecuteCommand
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: )
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand(UnityEngine.InputSystem.LowLevel.InputDeviceCommand*)
+  commentId: M:UnityEngine.InputSystem.InputDevice.ExecuteCommand(UnityEngine.InputSystem.LowLevel.InputDeviceCommand*)
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: ExecuteCommand(InputDeviceCommand*)
+  nameWithType: InputDevice.ExecuteCommand(InputDeviceCommand*)
+  fullName: UnityEngine.InputSystem.InputDevice.ExecuteCommand(UnityEngine.InputSystem.LowLevel.InputDeviceCommand*)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand(UnityEngine.InputSystem.LowLevel.InputDeviceCommand*)
+    name: ExecuteCommand
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.InputSystem.LowLevel.InputDeviceCommand
+    name: InputDeviceCommand
+    isExternal: true
+  - name: '*'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand(UnityEngine.InputSystem.LowLevel.InputDeviceCommand*)
+    name: ExecuteCommand
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.InputSystem.LowLevel.InputDeviceCommand
+    name: InputDeviceCommand
+    isExternal: true
+  - name: '*'
+  - name: )
+- uid: UnityEngine.InputSystem.InputDevice.description
+  commentId: P:UnityEngine.InputSystem.InputDevice.description
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: description
+  nameWithType: InputDevice.description
+  fullName: UnityEngine.InputSystem.InputDevice.description
+- uid: UnityEngine.InputSystem.InputDevice.enabled
+  commentId: P:UnityEngine.InputSystem.InputDevice.enabled
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: enabled
+  nameWithType: InputDevice.enabled
+  fullName: UnityEngine.InputSystem.InputDevice.enabled
+- uid: UnityEngine.InputSystem.InputDevice.canRunInBackground
+  commentId: P:UnityEngine.InputSystem.InputDevice.canRunInBackground
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: canRunInBackground
+  nameWithType: InputDevice.canRunInBackground
+  fullName: UnityEngine.InputSystem.InputDevice.canRunInBackground
+- uid: UnityEngine.InputSystem.InputDevice.added
+  commentId: P:UnityEngine.InputSystem.InputDevice.added
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: added
+  nameWithType: InputDevice.added
+  fullName: UnityEngine.InputSystem.InputDevice.added
+- uid: UnityEngine.InputSystem.InputDevice.remote
+  commentId: P:UnityEngine.InputSystem.InputDevice.remote
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: remote
+  nameWithType: InputDevice.remote
+  fullName: UnityEngine.InputSystem.InputDevice.remote
+- uid: UnityEngine.InputSystem.InputDevice.native
+  commentId: P:UnityEngine.InputSystem.InputDevice.native
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: native
+  nameWithType: InputDevice.native
+  fullName: UnityEngine.InputSystem.InputDevice.native
+- uid: UnityEngine.InputSystem.InputDevice.updateBeforeRender
+  commentId: P:UnityEngine.InputSystem.InputDevice.updateBeforeRender
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: updateBeforeRender
+  nameWithType: InputDevice.updateBeforeRender
+  fullName: UnityEngine.InputSystem.InputDevice.updateBeforeRender
+- uid: UnityEngine.InputSystem.InputDevice.deviceId
+  commentId: P:UnityEngine.InputSystem.InputDevice.deviceId
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: deviceId
+  nameWithType: InputDevice.deviceId
+  fullName: UnityEngine.InputSystem.InputDevice.deviceId
+- uid: UnityEngine.InputSystem.InputDevice.lastUpdateTime
+  commentId: P:UnityEngine.InputSystem.InputDevice.lastUpdateTime
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: lastUpdateTime
+  nameWithType: InputDevice.lastUpdateTime
+  fullName: UnityEngine.InputSystem.InputDevice.lastUpdateTime
+- uid: UnityEngine.InputSystem.InputDevice.wasUpdatedThisFrame
+  commentId: P:UnityEngine.InputSystem.InputDevice.wasUpdatedThisFrame
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: wasUpdatedThisFrame
+  nameWithType: InputDevice.wasUpdatedThisFrame
+  fullName: UnityEngine.InputSystem.InputDevice.wasUpdatedThisFrame
+- uid: UnityEngine.InputSystem.InputDevice.allControls
+  commentId: P:UnityEngine.InputSystem.InputDevice.allControls
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: allControls
+  nameWithType: InputDevice.allControls
+  fullName: UnityEngine.InputSystem.InputDevice.allControls
+- uid: UnityEngine.InputSystem.InputDevice.valueType
+  commentId: P:UnityEngine.InputSystem.InputDevice.valueType
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: valueType
+  nameWithType: InputDevice.valueType
+  fullName: UnityEngine.InputSystem.InputDevice.valueType
+- uid: UnityEngine.InputSystem.InputDevice.valueSizeInBytes
+  commentId: P:UnityEngine.InputSystem.InputDevice.valueSizeInBytes
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: valueSizeInBytes
+  nameWithType: InputDevice.valueSizeInBytes
+  fullName: UnityEngine.InputSystem.InputDevice.valueSizeInBytes
+- uid: UnityEngine.InputSystem.InputDevice.all
+  commentId: P:UnityEngine.InputSystem.InputDevice.all
+  parent: UnityEngine.InputSystem.InputDevice
+  isExternal: true
+  name: all
+  nameWithType: InputDevice.all
+  fullName: UnityEngine.InputSystem.InputDevice.all
+- uid: UnityEngine.InputSystem.InputControl.m_StateBlock
+  commentId: F:UnityEngine.InputSystem.InputControl.m_StateBlock
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: m_StateBlock
+  nameWithType: InputControl.m_StateBlock
+  fullName: UnityEngine.InputSystem.InputControl.m_StateBlock
+- uid: UnityEngine.InputSystem.InputControl.ToString
+  commentId: M:UnityEngine.InputSystem.InputControl.ToString
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: ToString()
+  nameWithType: InputControl.ToString()
+  fullName: UnityEngine.InputSystem.InputControl.ToString()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.EvaluateMagnitude
+  commentId: M:UnityEngine.InputSystem.InputControl.EvaluateMagnitude
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: EvaluateMagnitude()
+  nameWithType: InputControl.EvaluateMagnitude()
+  fullName: UnityEngine.InputSystem.InputControl.EvaluateMagnitude()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.EvaluateMagnitude
+    name: EvaluateMagnitude
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.EvaluateMagnitude
+    name: EvaluateMagnitude
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.EvaluateMagnitude(System.Void*)
+  commentId: M:UnityEngine.InputSystem.InputControl.EvaluateMagnitude(System.Void*)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: EvaluateMagnitude(void*)
+  nameWithType: InputControl.EvaluateMagnitude(void*)
+  fullName: UnityEngine.InputSystem.InputControl.EvaluateMagnitude(void*)
+  nameWithType.vb: InputControl.EvaluateMagnitude(Void*)
+  fullName.vb: UnityEngine.InputSystem.InputControl.EvaluateMagnitude(Void*)
+  name.vb: EvaluateMagnitude(Void*)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.EvaluateMagnitude(System.Void*)
+    name: EvaluateMagnitude
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.EvaluateMagnitude(System.Void*)
+    name: EvaluateMagnitude
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.WriteValueFromBufferIntoState(System.Void*,System.Int32,System.Void*)
+  commentId: M:UnityEngine.InputSystem.InputControl.WriteValueFromBufferIntoState(System.Void*,System.Int32,System.Void*)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.void
+  name: WriteValueFromBufferIntoState(void*, int, void*)
+  nameWithType: InputControl.WriteValueFromBufferIntoState(void*, int, void*)
+  fullName: UnityEngine.InputSystem.InputControl.WriteValueFromBufferIntoState(void*, int, void*)
+  nameWithType.vb: InputControl.WriteValueFromBufferIntoState(Void*, Integer, Void*)
+  fullName.vb: UnityEngine.InputSystem.InputControl.WriteValueFromBufferIntoState(Void*, Integer, Void*)
+  name.vb: WriteValueFromBufferIntoState(Void*, Integer, Void*)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.WriteValueFromBufferIntoState(System.Void*,System.Int32,System.Void*)
+    name: WriteValueFromBufferIntoState
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.WriteValueFromBufferIntoState(System.Void*,System.Int32,System.Void*)
+    name: WriteValueFromBufferIntoState
+    isExternal: true
+  - name: (
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.WriteValueFromObjectIntoState(System.Object,System.Void*)
+  commentId: M:UnityEngine.InputSystem.InputControl.WriteValueFromObjectIntoState(System.Object,System.Void*)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: WriteValueFromObjectIntoState(object, void*)
+  nameWithType: InputControl.WriteValueFromObjectIntoState(object, void*)
+  fullName: UnityEngine.InputSystem.InputControl.WriteValueFromObjectIntoState(object, void*)
+  nameWithType.vb: InputControl.WriteValueFromObjectIntoState(Object, Void*)
+  fullName.vb: UnityEngine.InputSystem.InputControl.WriteValueFromObjectIntoState(Object, Void*)
+  name.vb: WriteValueFromObjectIntoState(Object, Void*)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.WriteValueFromObjectIntoState(System.Object,System.Void*)
+    name: WriteValueFromObjectIntoState
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.WriteValueFromObjectIntoState(System.Object,System.Void*)
+    name: WriteValueFromObjectIntoState
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: Void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '*'
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.TryGetChildControl(System.String)
+  commentId: M:UnityEngine.InputSystem.InputControl.TryGetChildControl(System.String)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: TryGetChildControl(string)
+  nameWithType: InputControl.TryGetChildControl(string)
+  fullName: UnityEngine.InputSystem.InputControl.TryGetChildControl(string)
+  nameWithType.vb: InputControl.TryGetChildControl(String)
+  fullName.vb: UnityEngine.InputSystem.InputControl.TryGetChildControl(String)
+  name.vb: TryGetChildControl(String)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.TryGetChildControl(System.String)
+    name: TryGetChildControl
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.TryGetChildControl(System.String)
+    name: TryGetChildControl
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.TryGetChildControl``1(System.String)
+  commentId: M:UnityEngine.InputSystem.InputControl.TryGetChildControl``1(System.String)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: TryGetChildControl<TControl>(string)
+  nameWithType: InputControl.TryGetChildControl<TControl>(string)
+  fullName: UnityEngine.InputSystem.InputControl.TryGetChildControl<TControl>(string)
+  nameWithType.vb: InputControl.TryGetChildControl(Of TControl)(String)
+  fullName.vb: UnityEngine.InputSystem.InputControl.TryGetChildControl(Of TControl)(String)
+  name.vb: TryGetChildControl(Of TControl)(String)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.TryGetChildControl``1(System.String)
+    name: TryGetChildControl
+    isExternal: true
+  - name: <
+  - name: TControl
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.TryGetChildControl``1(System.String)
+    name: TryGetChildControl
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TControl
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.GetChildControl(System.String)
+  commentId: M:UnityEngine.InputSystem.InputControl.GetChildControl(System.String)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetChildControl(string)
+  nameWithType: InputControl.GetChildControl(string)
+  fullName: UnityEngine.InputSystem.InputControl.GetChildControl(string)
+  nameWithType.vb: InputControl.GetChildControl(String)
+  fullName.vb: UnityEngine.InputSystem.InputControl.GetChildControl(String)
+  name.vb: GetChildControl(String)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.GetChildControl(System.String)
+    name: GetChildControl
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.GetChildControl(System.String)
+    name: GetChildControl
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.GetChildControl``1(System.String)
+  commentId: M:UnityEngine.InputSystem.InputControl.GetChildControl``1(System.String)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetChildControl<TControl>(string)
+  nameWithType: InputControl.GetChildControl<TControl>(string)
+  fullName: UnityEngine.InputSystem.InputControl.GetChildControl<TControl>(string)
+  nameWithType.vb: InputControl.GetChildControl(Of TControl)(String)
+  fullName.vb: UnityEngine.InputSystem.InputControl.GetChildControl(Of TControl)(String)
+  name.vb: GetChildControl(Of TControl)(String)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.GetChildControl``1(System.String)
+    name: GetChildControl
+    isExternal: true
+  - name: <
+  - name: TControl
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.GetChildControl``1(System.String)
+    name: GetChildControl
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TControl
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.RefreshConfigurationIfNeeded
+  commentId: M:UnityEngine.InputSystem.InputControl.RefreshConfigurationIfNeeded
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: RefreshConfigurationIfNeeded()
+  nameWithType: InputControl.RefreshConfigurationIfNeeded()
+  fullName: UnityEngine.InputSystem.InputControl.RefreshConfigurationIfNeeded()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.RefreshConfigurationIfNeeded
+    name: RefreshConfigurationIfNeeded
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.RefreshConfigurationIfNeeded
+    name: RefreshConfigurationIfNeeded
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.RefreshConfiguration
+  commentId: M:UnityEngine.InputSystem.InputControl.RefreshConfiguration
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: RefreshConfiguration()
+  nameWithType: InputControl.RefreshConfiguration()
+  fullName: UnityEngine.InputSystem.InputControl.RefreshConfiguration()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.RefreshConfiguration
+    name: RefreshConfiguration
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.RefreshConfiguration
+    name: RefreshConfiguration
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.CalculateOptimizedControlDataType
+  commentId: M:UnityEngine.InputSystem.InputControl.CalculateOptimizedControlDataType
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: CalculateOptimizedControlDataType()
+  nameWithType: InputControl.CalculateOptimizedControlDataType()
+  fullName: UnityEngine.InputSystem.InputControl.CalculateOptimizedControlDataType()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.CalculateOptimizedControlDataType
+    name: CalculateOptimizedControlDataType
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.CalculateOptimizedControlDataType
+    name: CalculateOptimizedControlDataType
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.ApplyParameterChanges
+  commentId: M:UnityEngine.InputSystem.InputControl.ApplyParameterChanges
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: ApplyParameterChanges()
+  nameWithType: InputControl.ApplyParameterChanges()
+  fullName: UnityEngine.InputSystem.InputControl.ApplyParameterChanges()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputControl.ApplyParameterChanges
+    name: ApplyParameterChanges
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.ApplyParameterChanges
+    name: ApplyParameterChanges
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.name
+  commentId: P:UnityEngine.InputSystem.InputControl.name
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: name
+  nameWithType: InputControl.name
+  fullName: UnityEngine.InputSystem.InputControl.name
+- uid: UnityEngine.InputSystem.InputControl.displayName
+  commentId: P:UnityEngine.InputSystem.InputControl.displayName
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: displayName
+  nameWithType: InputControl.displayName
+  fullName: UnityEngine.InputSystem.InputControl.displayName
+- uid: UnityEngine.InputSystem.InputControl.shortDisplayName
+  commentId: P:UnityEngine.InputSystem.InputControl.shortDisplayName
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: shortDisplayName
+  nameWithType: InputControl.shortDisplayName
+  fullName: UnityEngine.InputSystem.InputControl.shortDisplayName
+- uid: UnityEngine.InputSystem.InputControl.path
+  commentId: P:UnityEngine.InputSystem.InputControl.path
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: path
+  nameWithType: InputControl.path
+  fullName: UnityEngine.InputSystem.InputControl.path
+- uid: UnityEngine.InputSystem.InputControl.layout
+  commentId: P:UnityEngine.InputSystem.InputControl.layout
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: layout
+  nameWithType: InputControl.layout
+  fullName: UnityEngine.InputSystem.InputControl.layout
+- uid: UnityEngine.InputSystem.InputControl.variants
+  commentId: P:UnityEngine.InputSystem.InputControl.variants
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: variants
+  nameWithType: InputControl.variants
+  fullName: UnityEngine.InputSystem.InputControl.variants
+- uid: UnityEngine.InputSystem.InputControl.device
+  commentId: P:UnityEngine.InputSystem.InputControl.device
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: device
+  nameWithType: InputControl.device
+  fullName: UnityEngine.InputSystem.InputControl.device
+- uid: UnityEngine.InputSystem.InputControl.parent
+  commentId: P:UnityEngine.InputSystem.InputControl.parent
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: parent
+  nameWithType: InputControl.parent
+  fullName: UnityEngine.InputSystem.InputControl.parent
+- uid: UnityEngine.InputSystem.InputControl.children
+  commentId: P:UnityEngine.InputSystem.InputControl.children
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: children
+  nameWithType: InputControl.children
+  fullName: UnityEngine.InputSystem.InputControl.children
+- uid: UnityEngine.InputSystem.InputControl.usages
+  commentId: P:UnityEngine.InputSystem.InputControl.usages
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: usages
+  nameWithType: InputControl.usages
+  fullName: UnityEngine.InputSystem.InputControl.usages
+- uid: UnityEngine.InputSystem.InputControl.aliases
+  commentId: P:UnityEngine.InputSystem.InputControl.aliases
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: aliases
+  nameWithType: InputControl.aliases
+  fullName: UnityEngine.InputSystem.InputControl.aliases
+- uid: UnityEngine.InputSystem.InputControl.stateBlock
+  commentId: P:UnityEngine.InputSystem.InputControl.stateBlock
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: stateBlock
+  nameWithType: InputControl.stateBlock
+  fullName: UnityEngine.InputSystem.InputControl.stateBlock
+- uid: UnityEngine.InputSystem.InputControl.noisy
+  commentId: P:UnityEngine.InputSystem.InputControl.noisy
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: noisy
+  nameWithType: InputControl.noisy
+  fullName: UnityEngine.InputSystem.InputControl.noisy
+- uid: UnityEngine.InputSystem.InputControl.synthetic
+  commentId: P:UnityEngine.InputSystem.InputControl.synthetic
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: synthetic
+  nameWithType: InputControl.synthetic
+  fullName: UnityEngine.InputSystem.InputControl.synthetic
+- uid: UnityEngine.InputSystem.InputControl.Item(System.String)
+  commentId: P:UnityEngine.InputSystem.InputControl.Item(System.String)
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string]
+  nameWithType: InputControl.this[string]
+  fullName: UnityEngine.InputSystem.InputControl.this[string]
+  nameWithType.vb: InputControl.this[](String)
+  fullName.vb: UnityEngine.InputSystem.InputControl.this[](String)
+  name.vb: this[](String)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputControl.Item(System.String)
+    name: this[]
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.InputSystem.InputControl.magnitude
+  commentId: P:UnityEngine.InputSystem.InputControl.magnitude
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: magnitude
+  nameWithType: InputControl.magnitude
+  fullName: UnityEngine.InputSystem.InputControl.magnitude
+- uid: UnityEngine.InputSystem.InputControl.currentStatePtr
+  commentId: P:UnityEngine.InputSystem.InputControl.currentStatePtr
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: currentStatePtr
+  nameWithType: InputControl.currentStatePtr
+  fullName: UnityEngine.InputSystem.InputControl.currentStatePtr
+- uid: UnityEngine.InputSystem.InputControl.previousFrameStatePtr
+  commentId: P:UnityEngine.InputSystem.InputControl.previousFrameStatePtr
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: previousFrameStatePtr
+  nameWithType: InputControl.previousFrameStatePtr
+  fullName: UnityEngine.InputSystem.InputControl.previousFrameStatePtr
+- uid: UnityEngine.InputSystem.InputControl.defaultStatePtr
+  commentId: P:UnityEngine.InputSystem.InputControl.defaultStatePtr
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: defaultStatePtr
+  nameWithType: InputControl.defaultStatePtr
+  fullName: UnityEngine.InputSystem.InputControl.defaultStatePtr
+- uid: UnityEngine.InputSystem.InputControl.noiseMaskPtr
+  commentId: P:UnityEngine.InputSystem.InputControl.noiseMaskPtr
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: noiseMaskPtr
+  nameWithType: InputControl.noiseMaskPtr
+  fullName: UnityEngine.InputSystem.InputControl.noiseMaskPtr
+- uid: UnityEngine.InputSystem.InputControl.stateOffsetRelativeToDeviceRoot
+  commentId: P:UnityEngine.InputSystem.InputControl.stateOffsetRelativeToDeviceRoot
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: stateOffsetRelativeToDeviceRoot
+  nameWithType: InputControl.stateOffsetRelativeToDeviceRoot
+  fullName: UnityEngine.InputSystem.InputControl.stateOffsetRelativeToDeviceRoot
+- uid: UnityEngine.InputSystem.InputControl.optimizedControlDataType
+  commentId: P:UnityEngine.InputSystem.InputControl.optimizedControlDataType
+  parent: UnityEngine.InputSystem.InputControl
+  isExternal: true
+  name: optimizedControlDataType
+  nameWithType: InputControl.optimizedControlDataType
+  fullName: UnityEngine.InputSystem.InputControl.optimizedControlDataType
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.InputSystem
+  commentId: N:UnityEngine.InputSystem
+  isExternal: true
+  name: UnityEngine.InputSystem
+  nameWithType: UnityEngine.InputSystem
+  fullName: UnityEngine.InputSystem
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+- uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+  commentId: M:UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+  isExternal: true
+  name: ExecuteCommand<TCommand>(ref TCommand)
+  nameWithType: InputDevice.ExecuteCommand<TCommand>(ref TCommand)
+  fullName: UnityEngine.InputSystem.InputDevice.ExecuteCommand<TCommand>(ref TCommand)
+  nameWithType.vb: InputDevice.ExecuteCommand(Of TCommand)(TCommand)
+  fullName.vb: UnityEngine.InputSystem.InputDevice.ExecuteCommand(Of TCommand)(TCommand)
+  name.vb: ExecuteCommand(Of TCommand)(TCommand)
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+    name: ExecuteCommand
+    isExternal: true
+  - name: <
+  - name: TCommand
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.InputDevice.ExecuteCommand``1(``0@)
+    name: ExecuteCommand
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: )
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Input.PoseControl
+  commentId: T:UnityEngine.XR.OpenXR.Input.PoseControl
+  isExternal: true
+  name: PoseControl
+  nameWithType: PoseControl
+  fullName: UnityEngine.XR.OpenXR.Input.PoseControl
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose
+  name: devicePose
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.devicePose
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePose
+- uid: UnityEngine.InputSystem.XR.PoseControl
+  commentId: T:UnityEngine.InputSystem.XR.PoseControl
+  parent: UnityEngine.InputSystem.XR
+  isExternal: true
+  name: PoseControl
+  nameWithType: PoseControl
+  fullName: UnityEngine.InputSystem.XR.PoseControl
+- uid: UnityEngine.InputSystem.XR
+  commentId: N:UnityEngine.InputSystem.XR
+  isExternal: true
+  name: UnityEngine.InputSystem.XR
+  nameWithType: UnityEngine.InputSystem.XR
+  fullName: UnityEngine.InputSystem.XR
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.XR
+    name: XR
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.XR
+    name: XR
+    isExternal: true
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition
+  name: devicePosition
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.devicePosition
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.devicePosition
+- uid: UnityEngine.InputSystem.Controls.Vector3Control
+  commentId: T:UnityEngine.InputSystem.Controls.Vector3Control
+  parent: UnityEngine.InputSystem.Controls
+  isExternal: true
+  name: Vector3Control
+  nameWithType: Vector3Control
+  fullName: UnityEngine.InputSystem.Controls.Vector3Control
+- uid: UnityEngine.InputSystem.Controls
+  commentId: N:UnityEngine.InputSystem.Controls
+  isExternal: true
+  name: UnityEngine.InputSystem.Controls
+  nameWithType: UnityEngine.InputSystem.Controls
+  fullName: UnityEngine.InputSystem.Controls
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.Controls
+    name: Controls
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem
+    name: InputSystem
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.InputSystem.Controls
+    name: Controls
+    isExternal: true
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  name: deviceRotation
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.deviceRotation
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.deviceRotation
+- uid: UnityEngine.InputSystem.Controls.QuaternionControl
+  commentId: T:UnityEngine.InputSystem.Controls.QuaternionControl
+  parent: UnityEngine.InputSystem.Controls
+  isExternal: true
+  name: QuaternionControl
+  nameWithType: QuaternionControl
+  fullName: UnityEngine.InputSystem.Controls.QuaternionControl
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked
+  name: isTracked
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.isTracked
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.isTracked
+- uid: UnityEngine.InputSystem.Controls.ButtonControl
+  commentId: T:UnityEngine.InputSystem.Controls.ButtonControl
+  parent: UnityEngine.InputSystem.Controls
+  isExternal: true
+  name: ButtonControl
+  nameWithType: ButtonControl
+  fullName: UnityEngine.InputSystem.Controls.ButtonControl
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState
+  name: trackingState
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.trackingState
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.trackingState
+- uid: UnityEngine.InputSystem.Controls.IntegerControl
+  commentId: T:UnityEngine.InputSystem.Controls.IntegerControl
+  parent: UnityEngine.InputSystem.Controls
+  isExternal: true
+  name: IntegerControl
+  nameWithType: IntegerControl
+  fullName: UnityEngine.InputSystem.Controls.IntegerControl
+- uid: UnityEngine.InputSystem.TrackedDevice.FinishSetup
+  commentId: M:UnityEngine.InputSystem.TrackedDevice.FinishSetup
+  parent: UnityEngine.InputSystem.TrackedDevice
+  isExternal: true
+  name: FinishSetup()
+  nameWithType: TrackedDevice.FinishSetup()
+  fullName: UnityEngine.InputSystem.TrackedDevice.FinishSetup()
+  spec.csharp:
+  - uid: UnityEngine.InputSystem.TrackedDevice.FinishSetup
+    name: FinishSetup
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.InputSystem.TrackedDevice.FinishSetup
+    name: FinishSetup
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup
+  name: FinishSetup
+  nameWithType: HTCViveTrackerProfile.XRViveTracker.FinishSetup
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.FinishSetup

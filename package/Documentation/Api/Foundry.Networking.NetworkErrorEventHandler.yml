@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.NetworkErrorEventHandler
+  commentId: T:Foundry.Networking.NetworkErrorEventHandler
+  id: NetworkErrorEventHandler
+  parent: Foundry.Networking
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: NetworkErrorEventHandler
+  nameWithType: NetworkErrorEventHandler
+  fullName: Foundry.Networking.NetworkErrorEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetworkErrorEventHandler
+    path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
+    startLine: 17
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: >-
+    Delegate for handling network events to do with errors
+
+    TODO - Add error codes or enum for easier case-by-case handling
+  example: []
+  syntax:
+    content: public delegate void NetworkErrorEventHandler(string error)
+    parameters:
+    - id: error
+      type: System.String
+    content.vb: Public Delegate Sub NetworkErrorEventHandler([error] As String)
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

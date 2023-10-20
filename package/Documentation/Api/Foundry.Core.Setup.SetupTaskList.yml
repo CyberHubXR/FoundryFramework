@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Setup.SetupTaskList
+  commentId: T:Foundry.Core.Setup.SetupTaskList
+  id: SetupTaskList
+  parent: Foundry.Core.Setup
+  children:
+  - Foundry.Core.Setup.SetupTaskList.#ctor(System.String)
+  - Foundry.Core.Setup.SetupTaskList.Add(Foundry.Core.Setup.SetupTask)
+  - Foundry.Core.Setup.SetupTaskList.description
+  - Foundry.Core.Setup.SetupTaskList.name
+  - Foundry.Core.Setup.SetupTaskList.tasks
+  langs:
+  - csharp
+  - vb
+  name: SetupTaskList
+  nameWithType: SetupTaskList
+  fullName: Foundry.Core.Setup.SetupTaskList
+  type: Class
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetupTaskList
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 81
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  summary: Organizational unit for a list of tasks. (Required Dependencies, Required Settings, etc)
+  example: []
+  syntax:
+    content: public class SetupTaskList
+    content.vb: Public Class SetupTaskList
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Foundry.Core.Setup.SetupTaskList.name
+  commentId: F:Foundry.Core.Setup.SetupTaskList.name
+  id: name
+  parent: Foundry.Core.Setup.SetupTaskList
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: SetupTaskList.name
+  fullName: Foundry.Core.Setup.SetupTaskList.name
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: name
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 83
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+- uid: Foundry.Core.Setup.SetupTaskList.description
+  commentId: F:Foundry.Core.Setup.SetupTaskList.description
+  id: description
+  parent: Foundry.Core.Setup.SetupTaskList
+  langs:
+  - csharp
+  - vb
+  name: description
+  nameWithType: SetupTaskList.description
+  fullName: Foundry.Core.Setup.SetupTaskList.description
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: description
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 88
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  summary: If defined, this will be displayed under name before tasks. It is ok to have this null most of the time.
+  example: []
+  syntax:
+    content: public VisualElement description
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public description As VisualElement
+- uid: Foundry.Core.Setup.SetupTaskList.tasks
+  commentId: F:Foundry.Core.Setup.SetupTaskList.tasks
+  id: tasks
+  parent: Foundry.Core.Setup.SetupTaskList
+  langs:
+  - csharp
+  - vb
+  name: tasks
+  nameWithType: SetupTaskList.tasks
+  fullName: Foundry.Core.Setup.SetupTaskList.tasks
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: tasks
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 93
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  summary: Tasks to display in this list
+  example: []
+  syntax:
+    content: public List<SetupTask> tasks
+    return:
+      type: System.Collections.Generic.List{Foundry.Core.Setup.SetupTask}
+    content.vb: Public tasks As List(Of SetupTask)
+- uid: Foundry.Core.Setup.SetupTaskList.#ctor(System.String)
+  commentId: M:Foundry.Core.Setup.SetupTaskList.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Foundry.Core.Setup.SetupTaskList
+  langs:
+  - csharp
+  - vb
+  name: SetupTaskList(string)
+  nameWithType: SetupTaskList.SetupTaskList(string)
+  fullName: Foundry.Core.Setup.SetupTaskList.SetupTaskList(string)
+  type: Constructor
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: .ctor
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 95
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: public SetupTaskList(string name)
+    parameters:
+    - id: name
+      type: System.String
+    content.vb: Public Sub New(name As String)
+  overload: Foundry.Core.Setup.SetupTaskList.#ctor*
+  nameWithType.vb: SetupTaskList.New(String)
+  fullName.vb: Foundry.Core.Setup.SetupTaskList.New(String)
+  name.vb: New(String)
+- uid: Foundry.Core.Setup.SetupTaskList.Add(Foundry.Core.Setup.SetupTask)
+  commentId: M:Foundry.Core.Setup.SetupTaskList.Add(Foundry.Core.Setup.SetupTask)
+  id: Add(Foundry.Core.Setup.SetupTask)
+  parent: Foundry.Core.Setup.SetupTaskList
+  langs:
+  - csharp
+  - vb
+  name: Add(SetupTask)
+  nameWithType: SetupTaskList.Add(SetupTask)
+  fullName: Foundry.Core.Setup.SetupTaskList.Add(Foundry.Core.Setup.SetupTask)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Add
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 104
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  summary: Add a task to this list
+  example: []
+  syntax:
+    content: public void Add(SetupTask task)
+    parameters:
+    - id: task
+      type: Foundry.Core.Setup.SetupTask
+      description: Task to add
+    content.vb: Public Sub Add(task As SetupTask)
+  overload: Foundry.Core.Setup.SetupTaskList.Add*
+references:
+- uid: Foundry.Core.Setup
+  commentId: N:Foundry.Core.Setup
+  href: Foundry.html
+  name: Foundry.Core.Setup
+  nameWithType: Foundry.Core.Setup
+  fullName: Foundry.Core.Setup
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+- uid: System.Collections.Generic.List{Foundry.Core.Setup.SetupTask}
+  commentId: T:System.Collections.Generic.List{Foundry.Core.Setup.SetupTask}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SetupTask>
+  nameWithType: List<SetupTask>
+  fullName: System.Collections.Generic.List<Foundry.Core.Setup.SetupTask>
+  nameWithType.vb: List(Of SetupTask)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.Core.Setup.SetupTask)
+  name.vb: List(Of SetupTask)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Core.Setup.SetupTask
+    name: SetupTask
+    href: Foundry.Core.Setup.SetupTask.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Core.Setup.SetupTask
+    name: SetupTask
+    href: Foundry.Core.Setup.SetupTask.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Foundry.Core.Setup.SetupTaskList.#ctor*
+  commentId: Overload:Foundry.Core.Setup.SetupTaskList.#ctor
+  href: Foundry.Core.Setup.SetupTaskList.html#Foundry.Core.Setup.SetupTaskList.#ctor(System.String)
+  name: SetupTaskList
+  nameWithType: SetupTaskList.SetupTaskList
+  fullName: Foundry.Core.Setup.SetupTaskList.SetupTaskList
+  nameWithType.vb: SetupTaskList.New
+  fullName.vb: Foundry.Core.Setup.SetupTaskList.New
+  name.vb: New
+- uid: Foundry.Core.Setup.SetupTaskList.Add*
+  commentId: Overload:Foundry.Core.Setup.SetupTaskList.Add
+  href: Foundry.Core.Setup.SetupTaskList.html#Foundry.Core.Setup.SetupTaskList.Add(Foundry.Core.Setup.SetupTask)
+  name: Add
+  nameWithType: SetupTaskList.Add
+  fullName: Foundry.Core.Setup.SetupTaskList.Add
+- uid: Foundry.Core.Setup.SetupTask
+  commentId: T:Foundry.Core.Setup.SetupTask
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.SetupTask.html
+  name: SetupTask
+  nameWithType: SetupTask
+  fullName: Foundry.Core.Setup.SetupTask

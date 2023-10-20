@@ -1,0 +1,672 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.PlayerRigManagerService
+  commentId: T:Foundry.PlayerRigManagerService
+  id: PlayerRigManagerService
+  parent: Foundry
+  children:
+  - Foundry.PlayerRigManagerService.BorrowPlayerRig
+  - Foundry.PlayerRigManagerService.PlayerRigBorrowed
+  - Foundry.PlayerRigManagerService.PlayerRigCreated
+  - Foundry.PlayerRigManagerService.PlayerRigReturned
+  - Foundry.PlayerRigManagerService.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  - Foundry.PlayerRigManagerService.ReturnPlayerRig
+  - Foundry.PlayerRigManagerService.Rig
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigManagerService
+  nameWithType: PlayerRigManagerService
+  fullName: Foundry.PlayerRigManagerService
+  type: Class
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigManagerService
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 6
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: 'public class PlayerRigManagerService : IPlayerRigManager'
+    content.vb: Public Class PlayerRigManagerService Implements IPlayerRigManager
+  inheritance:
+  - System.Object
+  implements:
+  - Foundry.IPlayerRigManager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Foundry.PlayerRigManagerService.Rig
+  commentId: P:Foundry.PlayerRigManagerService.Rig
+  id: Rig
+  parent: Foundry.PlayerRigManagerService
+  langs:
+  - csharp
+  - vb
+  name: Rig
+  nameWithType: PlayerRigManagerService.Rig
+  fullName: Foundry.PlayerRigManagerService.Rig
+  type: Property
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Rig
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 8
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Grab the current instantiated player rig.
+  example: []
+  syntax:
+    content: public IPlayerControlRig Rig { get; }
+    parameters: []
+    return:
+      type: Foundry.IPlayerControlRig
+    content.vb: Public ReadOnly Property Rig As IPlayerControlRig
+  overload: Foundry.PlayerRigManagerService.Rig*
+  implements:
+  - Foundry.IPlayerRigManager.Rig
+- uid: Foundry.PlayerRigManagerService.PlayerRigCreated
+  commentId: E:Foundry.PlayerRigManagerService.PlayerRigCreated
+  id: PlayerRigCreated
+  parent: Foundry.PlayerRigManagerService
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigCreated
+  nameWithType: PlayerRigManagerService.PlayerRigCreated
+  fullName: Foundry.PlayerRigManagerService.PlayerRigCreated
+  type: Event
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigCreated
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Event that fires when the player rig is first created.
+  example: []
+  syntax:
+    content: public event PlayerRigEvent PlayerRigCreated
+    return:
+      type: Foundry.PlayerRigEvent
+    content.vb: Public Event PlayerRigCreated As PlayerRigEvent
+  implements:
+  - Foundry.IPlayerRigManager.PlayerRigCreated
+- uid: Foundry.PlayerRigManagerService.PlayerRigBorrowed
+  commentId: E:Foundry.PlayerRigManagerService.PlayerRigBorrowed
+  id: PlayerRigBorrowed
+  parent: Foundry.PlayerRigManagerService
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigBorrowed
+  nameWithType: PlayerRigManagerService.PlayerRigBorrowed
+  fullName: Foundry.PlayerRigManagerService.PlayerRigBorrowed
+  type: Event
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigBorrowed
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  example: []
+  syntax:
+    content: public event PlayerRigEvent PlayerRigBorrowed
+    return:
+      type: Foundry.PlayerRigEvent
+    content.vb: Public Event PlayerRigBorrowed As PlayerRigEvent
+  implements:
+  - Foundry.IPlayerRigManager.PlayerRigBorrowed
+- uid: Foundry.PlayerRigManagerService.PlayerRigReturned
+  commentId: E:Foundry.PlayerRigManagerService.PlayerRigReturned
+  id: PlayerRigReturned
+  parent: Foundry.PlayerRigManagerService
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigReturned
+  nameWithType: PlayerRigManagerService.PlayerRigReturned
+  fullName: Foundry.PlayerRigManagerService.PlayerRigReturned
+  type: Event
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigReturned
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  example: []
+  syntax:
+    content: public event PlayerRigEvent PlayerRigReturned
+    return:
+      type: Foundry.PlayerRigEvent
+    content.vb: Public Event PlayerRigReturned As PlayerRigEvent
+  implements:
+  - Foundry.IPlayerRigManager.PlayerRigReturned
+- uid: Foundry.PlayerRigManagerService.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  commentId: M:Foundry.PlayerRigManagerService.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  id: RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  parent: Foundry.PlayerRigManagerService
+  langs:
+  - csharp
+  - vb
+  name: RegisterRig(IPlayerControlRig, Transform)
+  nameWithType: PlayerRigManagerService.RegisterRig(IPlayerControlRig, Transform)
+  fullName: Foundry.PlayerRigManagerService.RegisterRig(Foundry.IPlayerControlRig, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: RegisterRig
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Return the current instantiated player rig.
+  example: []
+  syntax:
+    content: public void RegisterRig(IPlayerControlRig rig, Transform unusedRigHolder)
+    parameters:
+    - id: rig
+      type: Foundry.IPlayerControlRig
+    - id: unusedRigHolder
+      type: UnityEngine.Transform
+    content.vb: Public Sub RegisterRig(rig As IPlayerControlRig, unusedRigHolder As Transform)
+  overload: Foundry.PlayerRigManagerService.RegisterRig*
+  implements:
+  - Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+- uid: Foundry.PlayerRigManagerService.BorrowPlayerRig
+  commentId: M:Foundry.PlayerRigManagerService.BorrowPlayerRig
+  id: BorrowPlayerRig
+  parent: Foundry.PlayerRigManagerService
+  langs:
+  - csharp
+  - vb
+  name: BorrowPlayerRig()
+  nameWithType: PlayerRigManagerService.BorrowPlayerRig()
+  fullName: Foundry.PlayerRigManagerService.BorrowPlayerRig()
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: BorrowPlayerRig
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 26
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Register the rig as in use
+  example: []
+  syntax:
+    content: public IPlayerControlRig BorrowPlayerRig()
+    return:
+      type: Foundry.IPlayerControlRig
+    content.vb: Public Function BorrowPlayerRig() As IPlayerControlRig
+  overload: Foundry.PlayerRigManagerService.BorrowPlayerRig*
+  implements:
+  - Foundry.IPlayerRigManager.BorrowPlayerRig
+- uid: Foundry.PlayerRigManagerService.ReturnPlayerRig
+  commentId: M:Foundry.PlayerRigManagerService.ReturnPlayerRig
+  id: ReturnPlayerRig
+  parent: Foundry.PlayerRigManagerService
+  langs:
+  - csharp
+  - vb
+  name: ReturnPlayerRig()
+  nameWithType: PlayerRigManagerService.ReturnPlayerRig()
+  fullName: Foundry.PlayerRigManagerService.ReturnPlayerRig()
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ReturnPlayerRig
+    path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
+    startLine: 35
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Register the rig as no longer in use
+  example: []
+  syntax:
+    content: public void ReturnPlayerRig()
+    content.vb: Public Sub ReturnPlayerRig()
+  overload: Foundry.PlayerRigManagerService.ReturnPlayerRig*
+  implements:
+  - Foundry.IPlayerRigManager.ReturnPlayerRig
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Foundry.IPlayerRigManager
+  commentId: T:Foundry.IPlayerRigManager
+  parent: Foundry
+  href: Foundry.IPlayerRigManager.html
+  name: IPlayerRigManager
+  nameWithType: IPlayerRigManager
+  fullName: Foundry.IPlayerRigManager
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.PlayerRigManagerService.Rig*
+  commentId: Overload:Foundry.PlayerRigManagerService.Rig
+  href: Foundry.PlayerRigManagerService.html#Foundry.PlayerRigManagerService.Rig
+  name: Rig
+  nameWithType: PlayerRigManagerService.Rig
+  fullName: Foundry.PlayerRigManagerService.Rig
+- uid: Foundry.IPlayerRigManager.Rig
+  commentId: P:Foundry.IPlayerRigManager.Rig
+  parent: Foundry.IPlayerRigManager
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.Rig
+  name: Rig
+  nameWithType: IPlayerRigManager.Rig
+  fullName: Foundry.IPlayerRigManager.Rig
+- uid: Foundry.IPlayerControlRig
+  commentId: T:Foundry.IPlayerControlRig
+  parent: Foundry
+  href: Foundry.IPlayerControlRig.html
+  name: IPlayerControlRig
+  nameWithType: IPlayerControlRig
+  fullName: Foundry.IPlayerControlRig
+- uid: Foundry.IPlayerRigManager.PlayerRigCreated
+  commentId: E:Foundry.IPlayerRigManager.PlayerRigCreated
+  parent: Foundry.IPlayerRigManager
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.PlayerRigCreated
+  name: PlayerRigCreated
+  nameWithType: IPlayerRigManager.PlayerRigCreated
+  fullName: Foundry.IPlayerRigManager.PlayerRigCreated
+- uid: Foundry.PlayerRigEvent
+  commentId: T:Foundry.PlayerRigEvent
+  parent: Foundry
+  href: Foundry.PlayerRigEvent.html
+  name: PlayerRigEvent
+  nameWithType: PlayerRigEvent
+  fullName: Foundry.PlayerRigEvent
+- uid: Foundry.IPlayerRigManager.PlayerRigBorrowed
+  commentId: E:Foundry.IPlayerRigManager.PlayerRigBorrowed
+  parent: Foundry.IPlayerRigManager
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.PlayerRigBorrowed
+  name: PlayerRigBorrowed
+  nameWithType: IPlayerRigManager.PlayerRigBorrowed
+  fullName: Foundry.IPlayerRigManager.PlayerRigBorrowed
+- uid: Foundry.IPlayerRigManager.PlayerRigReturned
+  commentId: E:Foundry.IPlayerRigManager.PlayerRigReturned
+  parent: Foundry.IPlayerRigManager
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.PlayerRigReturned
+  name: PlayerRigReturned
+  nameWithType: IPlayerRigManager.PlayerRigReturned
+  fullName: Foundry.IPlayerRigManager.PlayerRigReturned
+- uid: Foundry.PlayerRigManagerService.RegisterRig*
+  commentId: Overload:Foundry.PlayerRigManagerService.RegisterRig
+  href: Foundry.PlayerRigManagerService.html#Foundry.PlayerRigManagerService.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  name: RegisterRig
+  nameWithType: PlayerRigManagerService.RegisterRig
+  fullName: Foundry.PlayerRigManagerService.RegisterRig
+- uid: Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  commentId: M:Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  parent: Foundry.IPlayerRigManager
+  isExternal: true
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  name: RegisterRig(IPlayerControlRig, Transform)
+  nameWithType: IPlayerRigManager.RegisterRig(IPlayerControlRig, Transform)
+  fullName: Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig, UnityEngine.Transform)
+  spec.csharp:
+  - uid: Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+    name: RegisterRig
+    href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  - name: (
+  - uid: Foundry.IPlayerControlRig
+    name: IPlayerControlRig
+    href: Foundry.IPlayerControlRig.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+    name: RegisterRig
+    href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  - name: (
+  - uid: Foundry.IPlayerControlRig
+    name: IPlayerControlRig
+    href: Foundry.IPlayerControlRig.html
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Foundry.PlayerRigManagerService.BorrowPlayerRig*
+  commentId: Overload:Foundry.PlayerRigManagerService.BorrowPlayerRig
+  href: Foundry.PlayerRigManagerService.html#Foundry.PlayerRigManagerService.BorrowPlayerRig
+  name: BorrowPlayerRig
+  nameWithType: PlayerRigManagerService.BorrowPlayerRig
+  fullName: Foundry.PlayerRigManagerService.BorrowPlayerRig
+- uid: Foundry.IPlayerRigManager.BorrowPlayerRig
+  commentId: M:Foundry.IPlayerRigManager.BorrowPlayerRig
+  parent: Foundry.IPlayerRigManager
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.BorrowPlayerRig
+  name: BorrowPlayerRig()
+  nameWithType: IPlayerRigManager.BorrowPlayerRig()
+  fullName: Foundry.IPlayerRigManager.BorrowPlayerRig()
+  spec.csharp:
+  - uid: Foundry.IPlayerRigManager.BorrowPlayerRig
+    name: BorrowPlayerRig
+    href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.BorrowPlayerRig
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.IPlayerRigManager.BorrowPlayerRig
+    name: BorrowPlayerRig
+    href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.BorrowPlayerRig
+  - name: (
+  - name: )
+- uid: Foundry.PlayerRigManagerService.ReturnPlayerRig*
+  commentId: Overload:Foundry.PlayerRigManagerService.ReturnPlayerRig
+  href: Foundry.PlayerRigManagerService.html#Foundry.PlayerRigManagerService.ReturnPlayerRig
+  name: ReturnPlayerRig
+  nameWithType: PlayerRigManagerService.ReturnPlayerRig
+  fullName: Foundry.PlayerRigManagerService.ReturnPlayerRig
+- uid: Foundry.IPlayerRigManager.ReturnPlayerRig
+  commentId: M:Foundry.IPlayerRigManager.ReturnPlayerRig
+  parent: Foundry.IPlayerRigManager
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.ReturnPlayerRig
+  name: ReturnPlayerRig()
+  nameWithType: IPlayerRigManager.ReturnPlayerRig()
+  fullName: Foundry.IPlayerRigManager.ReturnPlayerRig()
+  spec.csharp:
+  - uid: Foundry.IPlayerRigManager.ReturnPlayerRig
+    name: ReturnPlayerRig
+    href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.ReturnPlayerRig
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.IPlayerRigManager.ReturnPlayerRig
+    name: ReturnPlayerRig
+    href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.ReturnPlayerRig
+  - name: (
+  - name: )

@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3138248796877692092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8566251525637871250}
+  - component: {fileID: 7208365360271785273}
+  m_Layer: 6
+  m_Name: Input Pose Driver (Left)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8566251525637871250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3138248796877692092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7208365360271785273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3138248796877692092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70056f7fd040bc64fa93d0df7ee7b396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 0}
+  openHandPose: {fileID: 11400000, guid: 0b4cf660ab718ab43958c8793fd07518, type: 2}
+  closedHandPose: {fileID: 11400000, guid: 9c6b936011a575241bcab93ef233c330, type: 2}
+  enableGrabPose: 1
+  enableHighlightPose: 1
+  highlightPoseOffset: 0.2
+  highlightPoseTime: 0.18
+  inputPoses:
+  - input:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Input
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 30daf4ed-8be7-453b-a582-75b56db2bd8e
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 3076724040304429111, guid: 48ee4cb8e2271f9428c55700d25f84a7, type: 3}
+    pose: {fileID: 11400000, guid: 9c6b936011a575241bcab93ef233c330, type: 2}
+    indexIgnore: 1
+    middleIgnore: 0
+    ringIgnore: 0
+    pinkyIgnore: 0
+    thumbIgnore: 0.8
+  - input:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Input
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 30daf4ed-8be7-453b-a582-75b56db2bd8e
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings: []
+        m_Flags: 0
+      m_Reference: {fileID: 4646112644129367640, guid: 48ee4cb8e2271f9428c55700d25f84a7, type: 3}
+    pose: {fileID: 11400000, guid: 9c6b936011a575241bcab93ef233c330, type: 2}
+    indexIgnore: 0
+    middleIgnore: 1
+    ringIgnore: 1
+    pinkyIgnore: 1
+    thumbIgnore: 0.6
+  - input:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Input
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 30daf4ed-8be7-453b-a582-75b56db2bd8e
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings:
+        - m_Name: 
+          m_Id: b5362847-7f85-4538-82aa-7c83cd1f0dcc
+          m_Path: 
+          m_Interactions: 
+          m_Processors: 
+          m_Groups: 
+          m_Action: Input
+          m_Flags: 0
+        m_Flags: 0
+      m_Reference: {fileID: 3794915291225321239, guid: 48ee4cb8e2271f9428c55700d25f84a7, type: 3}
+    pose: {fileID: 11400000, guid: 13c33f86695b63f48a9f4ef9ee458135, type: 2}
+    indexIgnore: 0
+    middleIgnore: 0
+    ringIgnore: 0
+    pinkyIgnore: 0
+    thumbIgnore: 0
+  - input:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Input
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 30daf4ed-8be7-453b-a582-75b56db2bd8e
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings:
+        - m_Name: 
+          m_Id: b5362847-7f85-4538-82aa-7c83cd1f0dcc
+          m_Path: 
+          m_Interactions: 
+          m_Processors: 
+          m_Groups: 
+          m_Action: Input
+          m_Flags: 0
+        m_Flags: 0
+      m_Reference: {fileID: -2787836377647902119, guid: 48ee4cb8e2271f9428c55700d25f84a7, type: 3}
+    pose: {fileID: 11400000, guid: da7ddbc7800ae7c4f9cf4b2825707074, type: 2}
+    indexIgnore: 1
+    middleIgnore: 1
+    ringIgnore: 1
+    pinkyIgnore: 1
+    thumbIgnore: 0.25
+  - input:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Input
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 30daf4ed-8be7-453b-a582-75b56db2bd8e
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings:
+        - m_Name: 
+          m_Id: b5362847-7f85-4538-82aa-7c83cd1f0dcc
+          m_Path: 
+          m_Interactions: 
+          m_Processors: 
+          m_Groups: 
+          m_Action: Input
+          m_Flags: 0
+        m_Flags: 0
+      m_Reference: {fileID: -5894783438330365611, guid: 48ee4cb8e2271f9428c55700d25f84a7, type: 3}
+    pose: {fileID: 11400000, guid: 5268b749ab9a37d4493e81bcaed06d21, type: 2}
+    indexIgnore: 1
+    middleIgnore: 1
+    ringIgnore: 1
+    pinkyIgnore: 1
+    thumbIgnore: 0.5
+  - input:
+      m_UseReference: 1
+      m_Action:
+        m_Name: Input
+        m_Type: 0
+        m_ExpectedControlType: 
+        m_Id: 30daf4ed-8be7-453b-a582-75b56db2bd8e
+        m_Processors: 
+        m_Interactions: 
+        m_SingletonActionBindings:
+        - m_Name: 
+          m_Id: b5362847-7f85-4538-82aa-7c83cd1f0dcc
+          m_Path: 
+          m_Interactions: 
+          m_Processors: 
+          m_Groups: 
+          m_Action: Input
+          m_Flags: 0
+        m_Flags: 0
+      m_Reference: {fileID: -5131327333954368390, guid: 48ee4cb8e2271f9428c55700d25f84a7, type: 3}
+    pose: {fileID: 11400000, guid: dfe901e9833cb874f8b929f65a8a674b, type: 2}
+    indexIgnore: 0
+    middleIgnore: 0
+    ringIgnore: 0
+    pinkyIgnore: 0
+    thumbIgnore: 0
+  enablePoseNoise: 1
+  blendAmp1: 0.15
+  blendFreq1: 14
+  blendAmp2: 0.1
+  blendFreq2: 7
+  fingerOffsetAmp: 0.2
+  fingerOffsetFreq: 10

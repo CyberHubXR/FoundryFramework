@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Editor.IServiceDefinition
+  commentId: T:Foundry.Core.Editor.IServiceDefinition
+  id: IServiceDefinition
+  parent: Foundry.Core.Editor
+  children:
+  - Foundry.Core.Editor.IServiceDefinition.PrettyName
+  - Foundry.Core.Editor.IServiceDefinition.ServiceInterface
+  - Foundry.Core.Editor.IServiceDefinition.Source
+  langs:
+  - csharp
+  - vb
+  name: IServiceDefinition
+  nameWithType: IServiceDefinition
+  fullName: Foundry.Core.Editor.IServiceDefinition
+  type: Interface
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ServiceDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IServiceDefinition
+    path: ../Editor/FoundryConfig/ServiceDefinition.cs
+    startLine: 4
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public interface IServiceDefinition
+    content.vb: Public Interface IServiceDefinition
+- uid: Foundry.Core.Editor.IServiceDefinition.Source
+  commentId: M:Foundry.Core.Editor.IServiceDefinition.Source
+  id: Source
+  parent: Foundry.Core.Editor.IServiceDefinition
+  langs:
+  - csharp
+  - vb
+  name: Source()
+  nameWithType: IServiceDefinition.Source()
+  fullName: Foundry.Core.Editor.IServiceDefinition.Source()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ServiceDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Source
+    path: ../Editor/FoundryConfig/ServiceDefinition.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  summary: The package that defines this system
+  example: []
+  syntax:
+    content: string Source()
+    return:
+      type: System.String
+      description: A package name (com.example.name)
+    content.vb: Function Source() As String
+  overload: Foundry.Core.Editor.IServiceDefinition.Source*
+- uid: Foundry.Core.Editor.IServiceDefinition.PrettyName
+  commentId: M:Foundry.Core.Editor.IServiceDefinition.PrettyName
+  id: PrettyName
+  parent: Foundry.Core.Editor.IServiceDefinition
+  langs:
+  - csharp
+  - vb
+  name: PrettyName()
+  nameWithType: IServiceDefinition.PrettyName()
+  fullName: Foundry.Core.Editor.IServiceDefinition.PrettyName()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ServiceDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PrettyName
+    path: ../Editor/FoundryConfig/ServiceDefinition.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  summary: Name of the system, used for display purposes
+  example: []
+  syntax:
+    content: string PrettyName()
+    return:
+      type: System.String
+    content.vb: Function PrettyName() As String
+  overload: Foundry.Core.Editor.IServiceDefinition.PrettyName*
+- uid: Foundry.Core.Editor.IServiceDefinition.ServiceInterface
+  commentId: M:Foundry.Core.Editor.IServiceDefinition.ServiceInterface
+  id: ServiceInterface
+  parent: Foundry.Core.Editor.IServiceDefinition
+  langs:
+  - csharp
+  - vb
+  name: ServiceInterface()
+  nameWithType: IServiceDefinition.ServiceInterface()
+  fullName: Foundry.Core.Editor.IServiceDefinition.ServiceInterface()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ServiceDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ServiceInterface
+    path: ../Editor/FoundryConfig/ServiceDefinition.cs
+    startLine: 21
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  summary: The interface that this system should be implemented with
+  example: []
+  syntax:
+    content: Type ServiceInterface()
+    return:
+      type: System.Type
+      description: typeof(interface)
+    content.vb: Function ServiceInterface() As Type
+  overload: Foundry.Core.Editor.IServiceDefinition.ServiceInterface*
+references:
+- uid: Foundry.Core.Editor
+  commentId: N:Foundry.Core.Editor
+  href: Foundry.html
+  name: Foundry.Core.Editor
+  nameWithType: Foundry.Core.Editor
+  fullName: Foundry.Core.Editor
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+- uid: Foundry.Core.Editor.IServiceDefinition.Source*
+  commentId: Overload:Foundry.Core.Editor.IServiceDefinition.Source
+  href: Foundry.Core.Editor.IServiceDefinition.html#Foundry.Core.Editor.IServiceDefinition.Source
+  name: Source
+  nameWithType: IServiceDefinition.Source
+  fullName: Foundry.Core.Editor.IServiceDefinition.Source
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Core.Editor.IServiceDefinition.PrettyName*
+  commentId: Overload:Foundry.Core.Editor.IServiceDefinition.PrettyName
+  href: Foundry.Core.Editor.IServiceDefinition.html#Foundry.Core.Editor.IServiceDefinition.PrettyName
+  name: PrettyName
+  nameWithType: IServiceDefinition.PrettyName
+  fullName: Foundry.Core.Editor.IServiceDefinition.PrettyName
+- uid: Foundry.Core.Editor.IServiceDefinition.ServiceInterface*
+  commentId: Overload:Foundry.Core.Editor.IServiceDefinition.ServiceInterface
+  href: Foundry.Core.Editor.IServiceDefinition.html#Foundry.Core.Editor.IServiceDefinition.ServiceInterface
+  name: ServiceInterface
+  nameWithType: IServiceDefinition.ServiceInterface
+  fullName: Foundry.Core.Editor.IServiceDefinition.ServiceInterface
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

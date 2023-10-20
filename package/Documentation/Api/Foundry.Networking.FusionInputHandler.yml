@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.FusionInputHandler
+  commentId: T:Foundry.Networking.FusionInputHandler
+  id: FusionInputHandler
+  parent: Foundry.Networking
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: FusionInputHandler
+  nameWithType: FusionInputHandler
+  fullName: Foundry.Networking.FusionInputHandler
+  type: Delegate
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: FusionInputHandler
+    path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
+    startLine: 27
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: TODO delete this
+  example: []
+  syntax:
+    content: public delegate void FusionInputHandler(NetworkRunner runner, NetworkInput input)
+    parameters:
+    - id: runner
+      type: Fusion.NetworkRunner
+    - id: input
+      type: Fusion.NetworkInput
+    content.vb: Public Delegate Sub FusionInputHandler(runner As NetworkRunner, input As NetworkInput)
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: Fusion.NetworkRunner
+  commentId: T:Fusion.NetworkRunner
+  parent: Fusion
+  isExternal: true
+  name: NetworkRunner
+  nameWithType: NetworkRunner
+  fullName: Fusion.NetworkRunner
+- uid: Fusion.NetworkInput
+  commentId: T:Fusion.NetworkInput
+  parent: Fusion
+  isExternal: true
+  name: NetworkInput
+  nameWithType: NetworkInput
+  fullName: Fusion.NetworkInput
+- uid: Fusion
+  commentId: N:Fusion
+  isExternal: true
+  name: Fusion
+  nameWithType: Fusion
+  fullName: Fusion

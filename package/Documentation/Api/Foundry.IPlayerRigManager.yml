@@ -1,0 +1,300 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.IPlayerRigManager
+  commentId: T:Foundry.IPlayerRigManager
+  id: IPlayerRigManager
+  parent: Foundry
+  children:
+  - Foundry.IPlayerRigManager.BorrowPlayerRig
+  - Foundry.IPlayerRigManager.PlayerRigBorrowed
+  - Foundry.IPlayerRigManager.PlayerRigCreated
+  - Foundry.IPlayerRigManager.PlayerRigReturned
+  - Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  - Foundry.IPlayerRigManager.ReturnPlayerRig
+  - Foundry.IPlayerRigManager.Rig
+  langs:
+  - csharp
+  - vb
+  name: IPlayerRigManager
+  nameWithType: IPlayerRigManager
+  fullName: Foundry.IPlayerRigManager
+  type: Interface
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IPlayerRigManager
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Service to manage the lifecycle of the player rig.
+  example: []
+  syntax:
+    content: public interface IPlayerRigManager
+    content.vb: Public Interface IPlayerRigManager
+- uid: Foundry.IPlayerRigManager.Rig
+  commentId: P:Foundry.IPlayerRigManager.Rig
+  id: Rig
+  parent: Foundry.IPlayerRigManager
+  langs:
+  - csharp
+  - vb
+  name: Rig
+  nameWithType: IPlayerRigManager.Rig
+  fullName: Foundry.IPlayerRigManager.Rig
+  type: Property
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Rig
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Grab the current instantiated player rig.
+  example: []
+  syntax:
+    content: IPlayerControlRig Rig { get; }
+    parameters: []
+    return:
+      type: Foundry.IPlayerControlRig
+    content.vb: ReadOnly Property Rig As IPlayerControlRig
+  overload: Foundry.IPlayerRigManager.Rig*
+- uid: Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  commentId: M:Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  id: RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  parent: Foundry.IPlayerRigManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterRig(IPlayerControlRig, Transform)
+  nameWithType: IPlayerRigManager.RegisterRig(IPlayerControlRig, Transform)
+  fullName: Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig, UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: RegisterRig
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 21
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Return the current instantiated player rig.
+  example: []
+  syntax:
+    content: void RegisterRig(IPlayerControlRig rig, Transform unusedRigHolder)
+    parameters:
+    - id: rig
+      type: Foundry.IPlayerControlRig
+    - id: unusedRigHolder
+      type: UnityEngine.Transform
+    content.vb: Sub RegisterRig(rig As IPlayerControlRig, unusedRigHolder As Transform)
+  overload: Foundry.IPlayerRigManager.RegisterRig*
+- uid: Foundry.IPlayerRigManager.BorrowPlayerRig
+  commentId: M:Foundry.IPlayerRigManager.BorrowPlayerRig
+  id: BorrowPlayerRig
+  parent: Foundry.IPlayerRigManager
+  langs:
+  - csharp
+  - vb
+  name: BorrowPlayerRig()
+  nameWithType: IPlayerRigManager.BorrowPlayerRig()
+  fullName: Foundry.IPlayerRigManager.BorrowPlayerRig()
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: BorrowPlayerRig
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 26
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Register the rig as in use
+  example: []
+  syntax:
+    content: IPlayerControlRig BorrowPlayerRig()
+    return:
+      type: Foundry.IPlayerControlRig
+    content.vb: Function BorrowPlayerRig() As IPlayerControlRig
+  overload: Foundry.IPlayerRigManager.BorrowPlayerRig*
+- uid: Foundry.IPlayerRigManager.ReturnPlayerRig
+  commentId: M:Foundry.IPlayerRigManager.ReturnPlayerRig
+  id: ReturnPlayerRig
+  parent: Foundry.IPlayerRigManager
+  langs:
+  - csharp
+  - vb
+  name: ReturnPlayerRig()
+  nameWithType: IPlayerRigManager.ReturnPlayerRig()
+  fullName: Foundry.IPlayerRigManager.ReturnPlayerRig()
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ReturnPlayerRig
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 31
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Register the rig as no longer in use
+  example: []
+  syntax:
+    content: void ReturnPlayerRig()
+    content.vb: Sub ReturnPlayerRig()
+  overload: Foundry.IPlayerRigManager.ReturnPlayerRig*
+- uid: Foundry.IPlayerRigManager.PlayerRigCreated
+  commentId: E:Foundry.IPlayerRigManager.PlayerRigCreated
+  id: PlayerRigCreated
+  parent: Foundry.IPlayerRigManager
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigCreated
+  nameWithType: IPlayerRigManager.PlayerRigCreated
+  fullName: Foundry.IPlayerRigManager.PlayerRigCreated
+  type: Event
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigCreated
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 36
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Event that fires when the player rig is first created.
+  example: []
+  syntax:
+    content: event PlayerRigEvent PlayerRigCreated
+    return:
+      type: Foundry.PlayerRigEvent
+    content.vb: Event PlayerRigCreated As PlayerRigEvent
+- uid: Foundry.IPlayerRigManager.PlayerRigBorrowed
+  commentId: E:Foundry.IPlayerRigManager.PlayerRigBorrowed
+  id: PlayerRigBorrowed
+  parent: Foundry.IPlayerRigManager
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigBorrowed
+  nameWithType: IPlayerRigManager.PlayerRigBorrowed
+  fullName: Foundry.IPlayerRigManager.PlayerRigBorrowed
+  type: Event
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigBorrowed
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 38
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: event PlayerRigEvent PlayerRigBorrowed
+    return:
+      type: Foundry.PlayerRigEvent
+    content.vb: Event PlayerRigBorrowed As PlayerRigEvent
+- uid: Foundry.IPlayerRigManager.PlayerRigReturned
+  commentId: E:Foundry.IPlayerRigManager.PlayerRigReturned
+  id: PlayerRigReturned
+  parent: Foundry.IPlayerRigManager
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigReturned
+  nameWithType: IPlayerRigManager.PlayerRigReturned
+  fullName: Foundry.IPlayerRigManager.PlayerRigReturned
+  type: Event
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigReturned
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 39
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: event PlayerRigEvent PlayerRigReturned
+    return:
+      type: Foundry.PlayerRigEvent
+    content.vb: Event PlayerRigReturned As PlayerRigEvent
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.IPlayerRigManager.Rig*
+  commentId: Overload:Foundry.IPlayerRigManager.Rig
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.Rig
+  name: Rig
+  nameWithType: IPlayerRigManager.Rig
+  fullName: Foundry.IPlayerRigManager.Rig
+- uid: Foundry.IPlayerControlRig
+  commentId: T:Foundry.IPlayerControlRig
+  parent: Foundry
+  href: Foundry.IPlayerControlRig.html
+  name: IPlayerControlRig
+  nameWithType: IPlayerControlRig
+  fullName: Foundry.IPlayerControlRig
+- uid: Foundry.IPlayerRigManager.RegisterRig*
+  commentId: Overload:Foundry.IPlayerRigManager.RegisterRig
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.RegisterRig(Foundry.IPlayerControlRig,UnityEngine.Transform)
+  name: RegisterRig
+  nameWithType: IPlayerRigManager.RegisterRig
+  fullName: Foundry.IPlayerRigManager.RegisterRig
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Foundry.IPlayerRigManager.BorrowPlayerRig*
+  commentId: Overload:Foundry.IPlayerRigManager.BorrowPlayerRig
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.BorrowPlayerRig
+  name: BorrowPlayerRig
+  nameWithType: IPlayerRigManager.BorrowPlayerRig
+  fullName: Foundry.IPlayerRigManager.BorrowPlayerRig
+- uid: Foundry.IPlayerRigManager.ReturnPlayerRig*
+  commentId: Overload:Foundry.IPlayerRigManager.ReturnPlayerRig
+  href: Foundry.IPlayerRigManager.html#Foundry.IPlayerRigManager.ReturnPlayerRig
+  name: ReturnPlayerRig
+  nameWithType: IPlayerRigManager.ReturnPlayerRig
+  fullName: Foundry.IPlayerRigManager.ReturnPlayerRig
+- uid: Foundry.PlayerRigEvent
+  commentId: T:Foundry.PlayerRigEvent
+  parent: Foundry
+  href: Foundry.PlayerRigEvent.html
+  name: PlayerRigEvent
+  nameWithType: PlayerRigEvent
+  fullName: Foundry.PlayerRigEvent

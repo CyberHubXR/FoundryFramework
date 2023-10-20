@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.RotationExtensions
+  commentId: N:Foundry.RotationExtensions
+  id: Foundry.RotationExtensions
+  children:
+  - Foundry.RotationExtensions.RotationHelperExtensions
+  langs:
+  - csharp
+  - vb
+  name: Foundry.RotationExtensions
+  nameWithType: Foundry.RotationExtensions
+  fullName: Foundry.RotationExtensions
+  type: Namespace
+  assemblies:
+  - Foundry.Core
+references:
+- uid: Foundry.RotationExtensions.RotationHelperExtensions
+  commentId: T:Foundry.RotationExtensions.RotationHelperExtensions
+  href: Foundry.RotationExtensions.RotationHelperExtensions.html
+  name: RotationHelperExtensions
+  nameWithType: RotationHelperExtensions
+  fullName: Foundry.RotationExtensions.RotationHelperExtensions

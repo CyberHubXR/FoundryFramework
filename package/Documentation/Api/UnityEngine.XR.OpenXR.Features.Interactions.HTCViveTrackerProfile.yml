@@ -1,0 +1,3842 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  id: HTCViveTrackerProfile
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  children:
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.extensionName
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.featureId
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.profile
+  langs:
+  - csharp
+  - vb
+  name: HTCViveTrackerProfile
+  nameWithType: HTCViveTrackerProfile
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  type: Class
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: HTCViveTrackerProfile
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 33
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: This <xref href="UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature" data-throw-if-not-resolved="false"></xref> enables the use of HTC Vive Trackers interaction profiles in OpenXR.
+  example: []
+  syntax:
+    content: 'public class HTCViveTrackerProfile : OpenXRInteractionFeature'
+    content.vb: Public Class HTCViveTrackerProfile Inherits OpenXRInteractionFeature
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  - UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  inheritedMembers:
+  - UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.AddActionMap(UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig)
+  - UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnEnabledChange
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.HookGetInstanceProcAddr(System.IntPtr)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemCreate
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStart
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStop
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemDestroy
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSystemChange(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionCreate(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnAppSpaceChange(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionStateChange(System.Int32,System.Int32)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionBegin(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionEnd(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionExiting(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionDestroy(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceDestroy(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionLossPending(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceLossPending(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnFormFactorChange(System.Int32)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnViewConfigurationTypeChange(System.Int32)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnvironmentBlendModeChange(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.PathToString(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.StringToPath(System.String)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.UInt64)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.String)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentAppSpace
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetViewConfigurationTypeForRenderPass(System.Int32)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.SetEnvironmentBlendMode(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetEnvironmentBlendMode
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetValidationChecks(System.Collections.Generic.List{UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule},UnityEditor.BuildTargetGroup)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{{TDescriptor}},System.String)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.StartSubsystem``1
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.StopSubsystem``1
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.DestroySubsystem``1
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnable
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnDisable
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetAction(UnityEngine.InputSystem.InputAction)
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.enabled
+  - UnityEngine.XR.OpenXR.Features.OpenXRFeature.xrGetInstanceProcAddr
+  - UnityEngine.ScriptableObject.SetDirty
+  - UnityEngine.ScriptableObject.CreateInstance(System.String)
+  - UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  - UnityEngine.ScriptableObject.CreateInstance``1
+  - UnityEngine.Object.GetInstanceID
+  - UnityEngine.Object.GetHashCode
+  - UnityEngine.Object.Equals(System.Object)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  - UnityEngine.Object.Instantiate``1({T})
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform,System.Boolean)
+  - UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  - UnityEngine.Object.Destroy(UnityEngine.Object)
+  - UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  - UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  - UnityEngine.Object.FindObjectsOfType(System.Type)
+  - UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  - UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  - UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  - UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  - UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  - UnityEngine.Object.FindObjectsOfType``1
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectOfType``1
+  - UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType``1
+  - UnityEngine.Object.FindAnyObjectByType``1
+  - UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  - UnityEngine.Object.FindObjectOfType(System.Type)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type)
+  - UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.ToString
+  - UnityEngine.Object.name
+  - UnityEngine.Object.hideFlags
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.featureId
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.featureId
+  id: featureId
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  langs:
+  - csharp
+  - vb
+  name: featureId
+  nameWithType: HTCViveTrackerProfile.featureId
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.featureId
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: featureId
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 38
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: The feature id string. This is used to give the feature a well known id for reference.
+  example: []
+  syntax:
+    content: public const string featureId = "com.massive.openxr.feature.input.htcvivetracker"
+    return:
+      type: System.String
+    content.vb: Public Const featureId As String = "com.massive.openxr.feature.input.htcvivetracker"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.profile
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.profile
+  id: profile
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  langs:
+  - csharp
+  - vb
+  name: profile
+  nameWithType: HTCViveTrackerProfile.profile
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.profile
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: profile
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 43
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: The interaction profile string used to reference the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#:~:text=in%20this%20case.-,VIVE%20Tracker%20interaction%20profile,-Interaction%20profile%20path">HTC Vive Tracker</a>.
+  example: []
+  syntax:
+    content: public const string profile = "/interaction_profiles/htc/vive_tracker_htcx"
+    return:
+      type: System.String
+    content.vb: Public Const profile As String = "/interaction_profiles/htc/vive_tracker_htcx"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.extensionName
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.extensionName
+  id: extensionName
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  langs:
+  - csharp
+  - vb
+  name: extensionName
+  nameWithType: HTCViveTrackerProfile.extensionName
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.extensionName
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: extensionName
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 48
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: The name of the OpenXR extension that supports the Vive Tracker
+  example: []
+  syntax:
+    content: public const string extensionName = "XR_HTCX_vive_tracker_interaction"
+    return:
+      type: System.String
+    content.vb: Public Const extensionName As String = "XR_HTCX_vive_tracker_interaction"
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout
+  commentId: M:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout
+  id: RegisterDeviceLayout
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  langs:
+  - csharp
+  - vb
+  name: RegisterDeviceLayout()
+  nameWithType: HTCViveTrackerProfile.RegisterDeviceLayout()
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout()
+  type: Method
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: RegisterDeviceLayout
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 210
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Registers the ViveTracker layout with the Input System.
+  example: []
+  syntax:
+    content: protected override void RegisterDeviceLayout()
+    content.vb: Protected Overrides Sub RegisterDeviceLayout()
+  overridden: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterDeviceLayout
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout*
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout
+  commentId: M:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout
+  id: UnregisterDeviceLayout
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  langs:
+  - csharp
+  - vb
+  name: UnregisterDeviceLayout()
+  nameWithType: HTCViveTrackerProfile.UnregisterDeviceLayout()
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout()
+  type: Method
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: UnregisterDeviceLayout
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 223
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  summary: Removes the ViveTracker layout from the Input System.
+  example: []
+  syntax:
+    content: protected override void UnregisterDeviceLayout()
+    content.vb: Protected Overrides Sub UnregisterDeviceLayout()
+  overridden: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.UnregisterDeviceLayout
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout*
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime
+  commentId: M:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime
+  id: RegisterActionMapsWithRuntime
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  langs:
+  - csharp
+  - vb
+  name: RegisterActionMapsWithRuntime()
+  nameWithType: HTCViveTrackerProfile.RegisterActionMapsWithRuntime()
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime()
+  type: Method
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: RegisterActionMapsWithRuntime
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 251
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  example: []
+  syntax:
+    content: protected override void RegisterActionMapsWithRuntime()
+    content.vb: Protected Overrides Sub RegisterActionMapsWithRuntime()
+  overridden: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterActionMapsWithRuntime
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime*
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate(System.UInt64)
+  id: OnInstanceCreate(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  langs:
+  - csharp
+  - vb
+  name: OnInstanceCreate(ulong)
+  nameWithType: HTCViveTrackerProfile.OnInstanceCreate(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate(ulong)
+  type: Method
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: OnInstanceCreate
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 349
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  example: []
+  syntax:
+    content: protected override bool OnInstanceCreate(ulong xrInstance)
+    parameters:
+    - id: xrInstance
+      type: System.UInt64
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function OnInstanceCreate(xrInstance As ULong) As Boolean
+  overridden: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnInstanceCreate(System.UInt64)
+  overload: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate*
+  nameWithType.vb: HTCViveTrackerProfile.OnInstanceCreate(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate(ULong)
+  name.vb: OnInstanceCreate(ULong)
+references:
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  commentId: T:UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  parent: UnityEngine.XR.OpenXR.Features
+  isExternal: true
+  name: OpenXRInteractionFeature
+  nameWithType: OpenXRInteractionFeature
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+- uid: UnityEngine.XR.OpenXR.Features.Interactions
+  commentId: N:UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.html
+  name: UnityEngine.XR.OpenXR.Features.Interactions
+  nameWithType: UnityEngine.XR.OpenXR.Features.Interactions
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  commentId: T:UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  parent: UnityEngine.XR.OpenXR.Features
+  isExternal: true
+  name: OpenXRFeature
+  nameWithType: OpenXRFeature
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.AddActionMap(UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.AddActionMap(UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  isExternal: true
+  name: AddActionMap(ActionMapConfig)
+  nameWithType: OpenXRInteractionFeature.AddActionMap(OpenXRInteractionFeature.ActionMapConfig)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.AddActionMap(UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.AddActionMap(UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig)
+    name: AddActionMap
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig
+    name: ActionMapConfig
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.AddActionMap(UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig)
+    name: AddActionMap
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.ActionMapConfig
+    name: ActionMapConfig
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnEnabledChange
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnEnabledChange
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  isExternal: true
+  name: OnEnabledChange()
+  nameWithType: OpenXRInteractionFeature.OnEnabledChange()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnEnabledChange()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnEnabledChange
+    name: OnEnabledChange
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnEnabledChange
+    name: OnEnabledChange
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.HookGetInstanceProcAddr(System.IntPtr)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.HookGetInstanceProcAddr(System.IntPtr)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: HookGetInstanceProcAddr(IntPtr)
+  nameWithType: OpenXRFeature.HookGetInstanceProcAddr(IntPtr)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.HookGetInstanceProcAddr(System.IntPtr)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.HookGetInstanceProcAddr(System.IntPtr)
+    name: HookGetInstanceProcAddr
+    isExternal: true
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.HookGetInstanceProcAddr(System.IntPtr)
+    name: HookGetInstanceProcAddr
+    isExternal: true
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemCreate
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemCreate
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: OnSubsystemCreate()
+  nameWithType: OpenXRFeature.OnSubsystemCreate()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemCreate()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemCreate
+    name: OnSubsystemCreate
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemCreate
+    name: OnSubsystemCreate
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStart
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStart
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: OnSubsystemStart()
+  nameWithType: OpenXRFeature.OnSubsystemStart()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStart()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStart
+    name: OnSubsystemStart
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStart
+    name: OnSubsystemStart
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStop
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStop
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: OnSubsystemStop()
+  nameWithType: OpenXRFeature.OnSubsystemStop()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStop()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStop
+    name: OnSubsystemStop
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemStop
+    name: OnSubsystemStop
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemDestroy
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemDestroy
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: OnSubsystemDestroy()
+  nameWithType: OpenXRFeature.OnSubsystemDestroy()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemDestroy()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemDestroy
+    name: OnSubsystemDestroy
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSubsystemDestroy
+    name: OnSubsystemDestroy
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSystemChange(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSystemChange(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnSystemChange(ulong)
+  nameWithType: OpenXRFeature.OnSystemChange(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSystemChange(ulong)
+  nameWithType.vb: OpenXRFeature.OnSystemChange(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSystemChange(ULong)
+  name.vb: OnSystemChange(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSystemChange(System.UInt64)
+    name: OnSystemChange
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSystemChange(System.UInt64)
+    name: OnSystemChange
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionCreate(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionCreate(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnSessionCreate(ulong)
+  nameWithType: OpenXRFeature.OnSessionCreate(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionCreate(ulong)
+  nameWithType.vb: OpenXRFeature.OnSessionCreate(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionCreate(ULong)
+  name.vb: OnSessionCreate(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionCreate(System.UInt64)
+    name: OnSessionCreate
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionCreate(System.UInt64)
+    name: OnSessionCreate
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnAppSpaceChange(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnAppSpaceChange(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnAppSpaceChange(ulong)
+  nameWithType: OpenXRFeature.OnAppSpaceChange(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnAppSpaceChange(ulong)
+  nameWithType.vb: OpenXRFeature.OnAppSpaceChange(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnAppSpaceChange(ULong)
+  name.vb: OnAppSpaceChange(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnAppSpaceChange(System.UInt64)
+    name: OnAppSpaceChange
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnAppSpaceChange(System.UInt64)
+    name: OnAppSpaceChange
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionStateChange(System.Int32,System.Int32)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionStateChange(System.Int32,System.Int32)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnSessionStateChange(int, int)
+  nameWithType: OpenXRFeature.OnSessionStateChange(int, int)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionStateChange(int, int)
+  nameWithType.vb: OpenXRFeature.OnSessionStateChange(Integer, Integer)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionStateChange(Integer, Integer)
+  name.vb: OnSessionStateChange(Integer, Integer)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionStateChange(System.Int32,System.Int32)
+    name: OnSessionStateChange
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionStateChange(System.Int32,System.Int32)
+    name: OnSessionStateChange
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionBegin(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionBegin(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnSessionBegin(ulong)
+  nameWithType: OpenXRFeature.OnSessionBegin(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionBegin(ulong)
+  nameWithType.vb: OpenXRFeature.OnSessionBegin(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionBegin(ULong)
+  name.vb: OnSessionBegin(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionBegin(System.UInt64)
+    name: OnSessionBegin
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionBegin(System.UInt64)
+    name: OnSessionBegin
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionEnd(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionEnd(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnSessionEnd(ulong)
+  nameWithType: OpenXRFeature.OnSessionEnd(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionEnd(ulong)
+  nameWithType.vb: OpenXRFeature.OnSessionEnd(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionEnd(ULong)
+  name.vb: OnSessionEnd(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionEnd(System.UInt64)
+    name: OnSessionEnd
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionEnd(System.UInt64)
+    name: OnSessionEnd
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionExiting(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionExiting(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnSessionExiting(ulong)
+  nameWithType: OpenXRFeature.OnSessionExiting(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionExiting(ulong)
+  nameWithType.vb: OpenXRFeature.OnSessionExiting(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionExiting(ULong)
+  name.vb: OnSessionExiting(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionExiting(System.UInt64)
+    name: OnSessionExiting
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionExiting(System.UInt64)
+    name: OnSessionExiting
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionDestroy(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionDestroy(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnSessionDestroy(ulong)
+  nameWithType: OpenXRFeature.OnSessionDestroy(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionDestroy(ulong)
+  nameWithType.vb: OpenXRFeature.OnSessionDestroy(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionDestroy(ULong)
+  name.vb: OnSessionDestroy(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionDestroy(System.UInt64)
+    name: OnSessionDestroy
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionDestroy(System.UInt64)
+    name: OnSessionDestroy
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceDestroy(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceDestroy(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnInstanceDestroy(ulong)
+  nameWithType: OpenXRFeature.OnInstanceDestroy(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceDestroy(ulong)
+  nameWithType.vb: OpenXRFeature.OnInstanceDestroy(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceDestroy(ULong)
+  name.vb: OnInstanceDestroy(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceDestroy(System.UInt64)
+    name: OnInstanceDestroy
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceDestroy(System.UInt64)
+    name: OnInstanceDestroy
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionLossPending(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionLossPending(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnSessionLossPending(ulong)
+  nameWithType: OpenXRFeature.OnSessionLossPending(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionLossPending(ulong)
+  nameWithType.vb: OpenXRFeature.OnSessionLossPending(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionLossPending(ULong)
+  name.vb: OnSessionLossPending(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionLossPending(System.UInt64)
+    name: OnSessionLossPending
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnSessionLossPending(System.UInt64)
+    name: OnSessionLossPending
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceLossPending(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceLossPending(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnInstanceLossPending(ulong)
+  nameWithType: OpenXRFeature.OnInstanceLossPending(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceLossPending(ulong)
+  nameWithType.vb: OpenXRFeature.OnInstanceLossPending(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceLossPending(ULong)
+  name.vb: OnInstanceLossPending(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceLossPending(System.UInt64)
+    name: OnInstanceLossPending
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnInstanceLossPending(System.UInt64)
+    name: OnInstanceLossPending
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnFormFactorChange(System.Int32)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnFormFactorChange(System.Int32)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnFormFactorChange(int)
+  nameWithType: OpenXRFeature.OnFormFactorChange(int)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnFormFactorChange(int)
+  nameWithType.vb: OpenXRFeature.OnFormFactorChange(Integer)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnFormFactorChange(Integer)
+  name.vb: OnFormFactorChange(Integer)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnFormFactorChange(System.Int32)
+    name: OnFormFactorChange
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnFormFactorChange(System.Int32)
+    name: OnFormFactorChange
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnViewConfigurationTypeChange(System.Int32)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnViewConfigurationTypeChange(System.Int32)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnViewConfigurationTypeChange(int)
+  nameWithType: OpenXRFeature.OnViewConfigurationTypeChange(int)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnViewConfigurationTypeChange(int)
+  nameWithType.vb: OpenXRFeature.OnViewConfigurationTypeChange(Integer)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnViewConfigurationTypeChange(Integer)
+  name.vb: OnViewConfigurationTypeChange(Integer)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnViewConfigurationTypeChange(System.Int32)
+    name: OnViewConfigurationTypeChange
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnViewConfigurationTypeChange(System.Int32)
+    name: OnViewConfigurationTypeChange
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnvironmentBlendModeChange(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnvironmentBlendModeChange(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: OnEnvironmentBlendModeChange(XrEnvironmentBlendMode)
+  nameWithType: OpenXRFeature.OnEnvironmentBlendModeChange(XrEnvironmentBlendMode)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnvironmentBlendModeChange(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnvironmentBlendModeChange(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+    name: OnEnvironmentBlendModeChange
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode
+    name: XrEnvironmentBlendMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnvironmentBlendModeChange(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+    name: OnEnvironmentBlendModeChange
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode
+    name: XrEnvironmentBlendMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.PathToString(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.PathToString(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: PathToString(ulong)
+  nameWithType: OpenXRFeature.PathToString(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.PathToString(ulong)
+  nameWithType.vb: OpenXRFeature.PathToString(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.PathToString(ULong)
+  name.vb: PathToString(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.PathToString(System.UInt64)
+    name: PathToString
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.PathToString(System.UInt64)
+    name: PathToString
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StringToPath(System.String)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.StringToPath(System.String)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: StringToPath(string)
+  nameWithType: OpenXRFeature.StringToPath(string)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StringToPath(string)
+  nameWithType.vb: OpenXRFeature.StringToPath(String)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StringToPath(String)
+  name.vb: StringToPath(String)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StringToPath(System.String)
+    name: StringToPath
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StringToPath(System.String)
+    name: StringToPath
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: GetCurrentInteractionProfile(ulong)
+  nameWithType: OpenXRFeature.GetCurrentInteractionProfile(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(ulong)
+  nameWithType.vb: OpenXRFeature.GetCurrentInteractionProfile(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(ULong)
+  name.vb: GetCurrentInteractionProfile(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.UInt64)
+    name: GetCurrentInteractionProfile
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.UInt64)
+    name: GetCurrentInteractionProfile
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.String)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.String)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetCurrentInteractionProfile(string)
+  nameWithType: OpenXRFeature.GetCurrentInteractionProfile(string)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(string)
+  nameWithType.vb: OpenXRFeature.GetCurrentInteractionProfile(String)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(String)
+  name.vb: GetCurrentInteractionProfile(String)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.String)
+    name: GetCurrentInteractionProfile
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentInteractionProfile(System.String)
+    name: GetCurrentInteractionProfile
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentAppSpace
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentAppSpace
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: GetCurrentAppSpace()
+  nameWithType: OpenXRFeature.GetCurrentAppSpace()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentAppSpace()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentAppSpace
+    name: GetCurrentAppSpace
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetCurrentAppSpace
+    name: GetCurrentAppSpace
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetViewConfigurationTypeForRenderPass(System.Int32)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetViewConfigurationTypeForRenderPass(System.Int32)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: GetViewConfigurationTypeForRenderPass(int)
+  nameWithType: OpenXRFeature.GetViewConfigurationTypeForRenderPass(int)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetViewConfigurationTypeForRenderPass(int)
+  nameWithType.vb: OpenXRFeature.GetViewConfigurationTypeForRenderPass(Integer)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetViewConfigurationTypeForRenderPass(Integer)
+  name.vb: GetViewConfigurationTypeForRenderPass(Integer)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetViewConfigurationTypeForRenderPass(System.Int32)
+    name: GetViewConfigurationTypeForRenderPass
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetViewConfigurationTypeForRenderPass(System.Int32)
+    name: GetViewConfigurationTypeForRenderPass
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.SetEnvironmentBlendMode(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.SetEnvironmentBlendMode(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: SetEnvironmentBlendMode(XrEnvironmentBlendMode)
+  nameWithType: OpenXRFeature.SetEnvironmentBlendMode(XrEnvironmentBlendMode)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.SetEnvironmentBlendMode(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.SetEnvironmentBlendMode(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+    name: SetEnvironmentBlendMode
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode
+    name: XrEnvironmentBlendMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.SetEnvironmentBlendMode(UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode)
+    name: SetEnvironmentBlendMode
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.OpenXR.NativeTypes.XrEnvironmentBlendMode
+    name: XrEnvironmentBlendMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetEnvironmentBlendMode
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetEnvironmentBlendMode
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: GetEnvironmentBlendMode()
+  nameWithType: OpenXRFeature.GetEnvironmentBlendMode()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetEnvironmentBlendMode()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetEnvironmentBlendMode
+    name: GetEnvironmentBlendMode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetEnvironmentBlendMode
+    name: GetEnvironmentBlendMode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetValidationChecks(System.Collections.Generic.List{UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule},UnityEditor.BuildTargetGroup)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetValidationChecks(System.Collections.Generic.List{UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule},UnityEditor.BuildTargetGroup)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: GetValidationChecks(List<ValidationRule>, BuildTargetGroup)
+  nameWithType: OpenXRFeature.GetValidationChecks(List<OpenXRFeature.ValidationRule>, BuildTargetGroup)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetValidationChecks(System.Collections.Generic.List<UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule>, UnityEditor.BuildTargetGroup)
+  nameWithType.vb: OpenXRFeature.GetValidationChecks(List(Of OpenXRFeature.ValidationRule), BuildTargetGroup)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetValidationChecks(System.Collections.Generic.List(Of UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule), UnityEditor.BuildTargetGroup)
+  name.vb: GetValidationChecks(List(Of ValidationRule), BuildTargetGroup)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetValidationChecks(System.Collections.Generic.List{UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule},UnityEditor.BuildTargetGroup)
+    name: GetValidationChecks
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule
+    name: ValidationRule
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UnityEditor.BuildTargetGroup
+    name: BuildTargetGroup
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetValidationChecks(System.Collections.Generic.List{UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule},UnityEditor.BuildTargetGroup)
+    name: GetValidationChecks
+    isExternal: true
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.ValidationRule
+    name: ValidationRule
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UnityEditor.BuildTargetGroup
+    name: BuildTargetGroup
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{{TDescriptor}},System.String)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  definition: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: CreateSubsystem<TDescriptor, TSubsystem>(List<TDescriptor>, string)
+  nameWithType: OpenXRFeature.CreateSubsystem<TDescriptor, TSubsystem>(List<TDescriptor>, string)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem<TDescriptor, TSubsystem>(System.Collections.Generic.List<TDescriptor>, string)
+  nameWithType.vb: OpenXRFeature.CreateSubsystem(Of TDescriptor, TSubsystem)(List(Of TDescriptor), String)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem(Of TDescriptor, TSubsystem)(System.Collections.Generic.List(Of TDescriptor), String)
+  name.vb: CreateSubsystem(Of TDescriptor, TSubsystem)(List(Of TDescriptor), String)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+    name: CreateSubsystem
+    isExternal: true
+  - name: <
+  - name: TDescriptor
+  - name: ','
+  - name: " "
+  - name: TSubsystem
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TDescriptor
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+    name: CreateSubsystem
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDescriptor
+  - name: ','
+  - name: " "
+  - name: TSubsystem
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDescriptor
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StartSubsystem``1
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.StartSubsystem``1
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: StartSubsystem<T>()
+  nameWithType: OpenXRFeature.StartSubsystem<T>()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StartSubsystem<T>()
+  nameWithType.vb: OpenXRFeature.StartSubsystem(Of T)()
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StartSubsystem(Of T)()
+  name.vb: StartSubsystem(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StartSubsystem``1
+    name: StartSubsystem
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StartSubsystem``1
+    name: StartSubsystem
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StopSubsystem``1
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.StopSubsystem``1
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: StopSubsystem<T>()
+  nameWithType: OpenXRFeature.StopSubsystem<T>()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StopSubsystem<T>()
+  nameWithType.vb: OpenXRFeature.StopSubsystem(Of T)()
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StopSubsystem(Of T)()
+  name.vb: StopSubsystem(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StopSubsystem``1
+    name: StopSubsystem
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.StopSubsystem``1
+    name: StopSubsystem
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.DestroySubsystem``1
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.DestroySubsystem``1
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: DestroySubsystem<T>()
+  nameWithType: OpenXRFeature.DestroySubsystem<T>()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.DestroySubsystem<T>()
+  nameWithType.vb: OpenXRFeature.DestroySubsystem(Of T)()
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.DestroySubsystem(Of T)()
+  name.vb: DestroySubsystem(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.DestroySubsystem``1
+    name: DestroySubsystem
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.DestroySubsystem``1
+    name: DestroySubsystem
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnable
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnable
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: OnEnable()
+  nameWithType: OpenXRFeature.OnEnable()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnable()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnable
+    name: OnEnable
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnEnable
+    name: OnEnable
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnDisable
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnDisable
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: OnDisable()
+  nameWithType: OpenXRFeature.OnDisable()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnDisable()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnDisable
+    name: OnDisable
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.OnDisable
+    name: OnDisable
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetAction(UnityEngine.InputSystem.InputAction)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetAction(UnityEngine.InputSystem.InputAction)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: GetAction(InputAction)
+  nameWithType: OpenXRFeature.GetAction(InputAction)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetAction(UnityEngine.InputSystem.InputAction)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetAction(UnityEngine.InputSystem.InputAction)
+    name: GetAction
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.GetAction(UnityEngine.InputSystem.InputAction)
+    name: GetAction
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.InputSystem.InputAction
+    name: InputAction
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.enabled
+  commentId: P:UnityEngine.XR.OpenXR.Features.OpenXRFeature.enabled
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: enabled
+  nameWithType: OpenXRFeature.enabled
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.enabled
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.xrGetInstanceProcAddr
+  commentId: P:UnityEngine.XR.OpenXR.Features.OpenXRFeature.xrGetInstanceProcAddr
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRFeature
+  isExternal: true
+  name: xrGetInstanceProcAddr
+  nameWithType: OpenXRFeature.xrGetInstanceProcAddr
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.xrGetInstanceProcAddr
+- uid: UnityEngine.ScriptableObject.SetDirty
+  commentId: M:UnityEngine.ScriptableObject.SetDirty
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: SetDirty()
+  nameWithType: ScriptableObject.SetDirty()
+  fullName: UnityEngine.ScriptableObject.SetDirty()
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.SetDirty
+    name: SetDirty
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.SetDirty
+    name: SetDirty
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance(System.String)
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CreateInstance(string)
+  nameWithType: ScriptableObject.CreateInstance(string)
+  fullName: UnityEngine.ScriptableObject.CreateInstance(string)
+  nameWithType.vb: ScriptableObject.CreateInstance(String)
+  fullName.vb: UnityEngine.ScriptableObject.CreateInstance(String)
+  name.vb: CreateInstance(String)
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: CreateInstance(Type)
+  nameWithType: ScriptableObject.CreateInstance(Type)
+  fullName: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.ScriptableObject.CreateInstance``1
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance``1
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: CreateInstance<T>()
+  nameWithType: ScriptableObject.CreateInstance<T>()
+  fullName: UnityEngine.ScriptableObject.CreateInstance<T>()
+  nameWithType.vb: ScriptableObject.CreateInstance(Of T)()
+  fullName.vb: UnityEngine.ScriptableObject.CreateInstance(Of T)()
+  name.vb: CreateInstance(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance``1
+    name: CreateInstance
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance``1
+    name: CreateInstance
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.GetInstanceID
+  commentId: M:UnityEngine.Object.GetInstanceID
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetInstanceID()
+  nameWithType: Object.GetInstanceID()
+  fullName: UnityEngine.Object.GetInstanceID()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetInstanceID
+    name: GetInstanceID
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetInstanceID
+    name: GetInstanceID
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.GetHashCode
+  commentId: M:UnityEngine.Object.GetHashCode
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: UnityEngine.Object.GetHashCode()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.Equals(System.Object)
+  commentId: M:UnityEngine.Object.Equals(System.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Equals(object)
+  nameWithType: Object.Equals(object)
+  fullName: UnityEngine.Object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: UnityEngine.Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Vector3, Quaternion)
+  nameWithType: Object.Instantiate(Object, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate(Object, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object)
+  nameWithType: Object.Instantiate(Object)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Transform)
+  nameWithType: Object.Instantiate(Object, Transform)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Instantiate(Object, Transform, bool)
+  nameWithType: Object.Instantiate(Object, Transform, bool)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, bool)
+  nameWithType.vb: Object.Instantiate(Object, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, Boolean)
+  name.vb: Instantiate(Object, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T})
+  commentId: M:UnityEngine.Object.Instantiate``1(``0)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0)
+  name: Instantiate<T>(T)
+  nameWithType: Object.Instantiate<T>(T)
+  fullName: UnityEngine.Object.Instantiate<T>(T)
+  nameWithType.vb: Object.Instantiate(Of T)(T)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T)
+  name.vb: Instantiate(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  name: Instantiate<T>(T, Transform)
+  nameWithType: Object.Instantiate<T>(T, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Instantiate<T>(T, Transform, bool)
+  nameWithType: Object.Instantiate<T>(T, Transform, bool)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform, bool)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform, Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  commentId: M:UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Destroy(Object, float)
+  nameWithType: Object.Destroy(Object, float)
+  fullName: UnityEngine.Object.Destroy(UnityEngine.Object, float)
+  nameWithType.vb: Object.Destroy(Object, Single)
+  fullName.vb: UnityEngine.Object.Destroy(UnityEngine.Object, Single)
+  name.vb: Destroy(Object, Single)
+  spec.csharp:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.Destroy(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Destroy(Object)
+  nameWithType: Object.Destroy(Object)
+  fullName: UnityEngine.Object.Destroy(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+    name: Destroy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  commentId: M:UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: DestroyImmediate(Object, bool)
+  nameWithType: Object.DestroyImmediate(Object, bool)
+  fullName: UnityEngine.Object.DestroyImmediate(UnityEngine.Object, bool)
+  nameWithType.vb: Object.DestroyImmediate(Object, Boolean)
+  fullName.vb: UnityEngine.Object.DestroyImmediate(UnityEngine.Object, Boolean)
+  name.vb: DestroyImmediate(Object, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyImmediate(Object)
+  nameWithType: Object.DestroyImmediate(Object)
+  fullName: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+    name: DestroyImmediate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfType(Type)
+  nameWithType: Object.FindObjectsOfType(Type)
+  fullName: UnityEngine.Object.FindObjectsOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfType(Type, bool)
+  nameWithType: Object.FindObjectsOfType(Type, bool)
+  fullName: UnityEngine.Object.FindObjectsOfType(System.Type, bool)
+  nameWithType.vb: Object.FindObjectsOfType(Type, Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(System.Type, Boolean)
+  name.vb: FindObjectsOfType(Type, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DontDestroyOnLoad(Object)
+  nameWithType: Object.DontDestroyOnLoad(Object)
+  fullName: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+    name: DontDestroyOnLoad
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+    name: DontDestroyOnLoad
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  commentId: M:UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: DestroyObject(Object, float)
+  nameWithType: Object.DestroyObject(Object, float)
+  fullName: UnityEngine.Object.DestroyObject(UnityEngine.Object, float)
+  nameWithType.vb: Object.DestroyObject(Object, Single)
+  fullName.vb: UnityEngine.Object.DestroyObject(UnityEngine.Object, Single)
+  name.vb: DestroyObject(Object, Single)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyObject(Object)
+  nameWithType: Object.DestroyObject(Object)
+  fullName: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+    name: DestroyObject
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindSceneObjectsOfType(Type)
+  nameWithType: Object.FindSceneObjectsOfType(Type)
+  fullName: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+    name: FindSceneObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+    name: FindSceneObjectsOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfTypeIncludingAssets(Type)
+  nameWithType: Object.FindObjectsOfTypeIncludingAssets(Type)
+  fullName: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+    name: FindObjectsOfTypeIncludingAssets
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+    name: FindObjectsOfTypeIncludingAssets
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType``1
+  commentId: M:UnityEngine.Object.FindObjectsOfType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfType<T>()
+  nameWithType: Object.FindObjectsOfType<T>()
+  fullName: UnityEngine.Object.FindObjectsOfType<T>()
+  nameWithType.vb: Object.FindObjectsOfType(Of T)()
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(Of T)()
+  name.vb: FindObjectsOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType``1
+    name: FindObjectsOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType``1
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: FindObjectsOfType<T>(bool)
+  nameWithType: Object.FindObjectsOfType<T>(bool)
+  fullName: UnityEngine.Object.FindObjectsOfType<T>(bool)
+  nameWithType.vb: Object.FindObjectsOfType(Of T)(Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(Of T)(Boolean)
+  name.vb: FindObjectsOfType(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+    name: FindObjectsOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType``1
+  commentId: M:UnityEngine.Object.FindObjectOfType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectOfType<T>()
+  nameWithType: Object.FindObjectOfType<T>()
+  fullName: UnityEngine.Object.FindObjectOfType<T>()
+  nameWithType.vb: Object.FindObjectOfType(Of T)()
+  fullName.vb: UnityEngine.Object.FindObjectOfType(Of T)()
+  name.vb: FindObjectOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType``1
+    name: FindObjectOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType``1
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: FindObjectOfType<T>(bool)
+  nameWithType: Object.FindObjectOfType<T>(bool)
+  fullName: UnityEngine.Object.FindObjectOfType<T>(bool)
+  nameWithType.vb: Object.FindObjectOfType(Of T)(Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectOfType(Of T)(Boolean)
+  name.vb: FindObjectOfType(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>()
+  nameWithType: Object.FindFirstObjectByType<T>()
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>()
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)()
+  name.vb: FindFirstObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>()
+  nameWithType: Object.FindAnyObjectByType<T>()
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>()
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)()
+  name.vb: FindAnyObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindFirstObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindAnyObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsOfTypeAll(Type)
+  nameWithType: Object.FindObjectsOfTypeAll(Type)
+  fullName: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+    name: FindObjectsOfTypeAll
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+    name: FindObjectsOfTypeAll
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectOfType(Type)
+  nameWithType: Object.FindObjectOfType(Type)
+  fullName: UnityEngine.Object.FindObjectOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type)
+  nameWithType: Object.FindFirstObjectByType(Type)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type)
+  nameWithType: Object.FindAnyObjectByType(Type)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectOfType(Type, bool)
+  nameWithType: Object.FindObjectOfType(Type, bool)
+  fullName: UnityEngine.Object.FindObjectOfType(System.Type, bool)
+  nameWithType.vb: Object.FindObjectOfType(Type, Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectOfType(System.Type, Boolean)
+  name.vb: FindObjectOfType(Type, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+    name: FindObjectOfType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.ToString
+  commentId: M:UnityEngine.Object.ToString
+  parent: UnityEngine.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: UnityEngine.Object.ToString()
+  spec.csharp:
+  - uid: UnityEngine.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.name
+  commentId: P:UnityEngine.Object.name
+  parent: UnityEngine.Object
+  isExternal: true
+  name: name
+  nameWithType: Object.name
+  fullName: UnityEngine.Object.name
+- uid: UnityEngine.Object.hideFlags
+  commentId: P:UnityEngine.Object.hideFlags
+  parent: UnityEngine.Object
+  isExternal: true
+  name: hideFlags
+  nameWithType: Object.hideFlags
+  fullName: UnityEngine.Object.hideFlags
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features
+  commentId: N:UnityEngine.XR.OpenXR.Features
+  isExternal: true
+  name: UnityEngine.XR.OpenXR.Features
+  nameWithType: UnityEngine.XR.OpenXR.Features
+  fullName: UnityEngine.XR.OpenXR.Features
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: CreateSubsystem<TDescriptor, TSubsystem>(List<TDescriptor>, string)
+  nameWithType: OpenXRFeature.CreateSubsystem<TDescriptor, TSubsystem>(List<TDescriptor>, string)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem<TDescriptor, TSubsystem>(System.Collections.Generic.List<TDescriptor>, string)
+  nameWithType.vb: OpenXRFeature.CreateSubsystem(Of TDescriptor, TSubsystem)(List(Of TDescriptor), String)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem(Of TDescriptor, TSubsystem)(System.Collections.Generic.List(Of TDescriptor), String)
+  name.vb: CreateSubsystem(Of TDescriptor, TSubsystem)(List(Of TDescriptor), String)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+    name: CreateSubsystem
+    isExternal: true
+  - name: <
+  - name: TDescriptor
+  - name: ','
+  - name: " "
+  - name: TSubsystem
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TDescriptor
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRFeature.CreateSubsystem``2(System.Collections.Generic.List{``0},System.String)
+    name: CreateSubsystem
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDescriptor
+  - name: ','
+  - name: " "
+  - name: TSubsystem
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDescriptor
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0)
+  isExternal: true
+  name: Instantiate<T>(T)
+  nameWithType: Object.Instantiate<T>(T)
+  fullName: UnityEngine.Object.Instantiate<T>(T)
+  nameWithType.vb: Object.Instantiate(Of T)(T)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T)
+  name.vb: Instantiate(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  isExternal: true
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  isExternal: true
+  name: Instantiate<T>(T, Transform)
+  nameWithType: Object.Instantiate<T>(T, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Instantiate<T>(T, Transform, bool)
+  nameWithType: Object.Instantiate<T>(T, Transform, bool)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform, bool)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform, Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterDeviceLayout
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterDeviceLayout
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  isExternal: true
+  name: RegisterDeviceLayout()
+  nameWithType: OpenXRInteractionFeature.RegisterDeviceLayout()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterDeviceLayout()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterDeviceLayout
+    name: RegisterDeviceLayout
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterDeviceLayout
+    name: RegisterDeviceLayout
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout
+  name: RegisterDeviceLayout
+  nameWithType: HTCViveTrackerProfile.RegisterDeviceLayout
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterDeviceLayout
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.UnregisterDeviceLayout
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.UnregisterDeviceLayout
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  isExternal: true
+  name: UnregisterDeviceLayout()
+  nameWithType: OpenXRInteractionFeature.UnregisterDeviceLayout()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.UnregisterDeviceLayout()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.UnregisterDeviceLayout
+    name: UnregisterDeviceLayout
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.UnregisterDeviceLayout
+    name: UnregisterDeviceLayout
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout
+  name: UnregisterDeviceLayout
+  nameWithType: HTCViveTrackerProfile.UnregisterDeviceLayout
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.UnregisterDeviceLayout
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterActionMapsWithRuntime
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterActionMapsWithRuntime
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  isExternal: true
+  name: RegisterActionMapsWithRuntime()
+  nameWithType: OpenXRInteractionFeature.RegisterActionMapsWithRuntime()
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterActionMapsWithRuntime()
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterActionMapsWithRuntime
+    name: RegisterActionMapsWithRuntime
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.RegisterActionMapsWithRuntime
+    name: RegisterActionMapsWithRuntime
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime
+  name: RegisterActionMapsWithRuntime
+  nameWithType: HTCViveTrackerProfile.RegisterActionMapsWithRuntime
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.RegisterActionMapsWithRuntime
+- uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnInstanceCreate(System.UInt64)
+  commentId: M:UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnInstanceCreate(System.UInt64)
+  parent: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: OnInstanceCreate(ulong)
+  nameWithType: OpenXRInteractionFeature.OnInstanceCreate(ulong)
+  fullName: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnInstanceCreate(ulong)
+  nameWithType.vb: OpenXRInteractionFeature.OnInstanceCreate(ULong)
+  fullName.vb: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnInstanceCreate(ULong)
+  name.vb: OnInstanceCreate(ULong)
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnInstanceCreate(System.UInt64)
+    name: OnInstanceCreate
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.OpenXRInteractionFeature.OnInstanceCreate(System.UInt64)
+    name: OnInstanceCreate
+    isExternal: true
+  - name: (
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate*
+  commentId: Overload:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html#UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate(System.UInt64)
+  name: OnInstanceCreate
+  nameWithType: HTCViveTrackerProfile.OnInstanceCreate
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.OnInstanceCreate
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

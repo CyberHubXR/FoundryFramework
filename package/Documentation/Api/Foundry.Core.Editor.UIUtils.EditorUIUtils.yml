@@ -1,0 +1,569 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  commentId: T:Foundry.Core.Editor.UIUtils.EditorUIUtils
+  id: EditorUIUtils
+  parent: Foundry.Core.Editor.UIUtils
+  children:
+  - Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor(UnityEngine.UIElements.VisualElement,UnityEngine.Color)
+  - Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius(UnityEngine.UIElements.VisualElement,System.Single)
+  - Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth(UnityEngine.UIElements.VisualElement,System.Single)
+  - Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin(UnityEngine.UIElements.VisualElement,System.Single)
+  - Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding(UnityEngine.UIElements.VisualElement,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: EditorUIUtils
+  nameWithType: EditorUIUtils
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  type: Class
+  source:
+    remote:
+      path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: EditorUIUtils
+    path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+    startLine: 5
+  assemblies:
+  - Foundry.Core.Editor.UIUtils
+  namespace: Foundry.Core.Editor.UIUtils
+  syntax:
+    content: public static class EditorUIUtils
+    content.vb: Public Module EditorUIUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius(UnityEngine.UIElements.VisualElement,System.Single)
+  commentId: M:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius(UnityEngine.UIElements.VisualElement,System.Single)
+  id: SetBorderRadius(UnityEngine.UIElements.VisualElement,System.Single)
+  parent: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  langs:
+  - csharp
+  - vb
+  name: SetBorderRadius(VisualElement, float)
+  nameWithType: EditorUIUtils.SetBorderRadius(VisualElement, float)
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius(UnityEngine.UIElements.VisualElement, float)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetBorderRadius
+    path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+    startLine: 7
+  assemblies:
+  - Foundry.Core.Editor.UIUtils
+  namespace: Foundry.Core.Editor.UIUtils
+  syntax:
+    content: public static void SetBorderRadius(VisualElement element, float radius)
+    parameters:
+    - id: element
+      type: UnityEngine.UIElements.VisualElement
+    - id: radius
+      type: System.Single
+    content.vb: Public Shared Sub SetBorderRadius(element As VisualElement, radius As Single)
+  overload: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius*
+  nameWithType.vb: EditorUIUtils.SetBorderRadius(VisualElement, Single)
+  fullName.vb: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius(UnityEngine.UIElements.VisualElement, Single)
+  name.vb: SetBorderRadius(VisualElement, Single)
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding(UnityEngine.UIElements.VisualElement,System.Single)
+  commentId: M:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding(UnityEngine.UIElements.VisualElement,System.Single)
+  id: SetPadding(UnityEngine.UIElements.VisualElement,System.Single)
+  parent: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  langs:
+  - csharp
+  - vb
+  name: SetPadding(VisualElement, float)
+  nameWithType: EditorUIUtils.SetPadding(VisualElement, float)
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding(UnityEngine.UIElements.VisualElement, float)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetPadding
+    path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core.Editor.UIUtils
+  namespace: Foundry.Core.Editor.UIUtils
+  syntax:
+    content: public static void SetPadding(VisualElement element, float padding)
+    parameters:
+    - id: element
+      type: UnityEngine.UIElements.VisualElement
+    - id: padding
+      type: System.Single
+    content.vb: Public Shared Sub SetPadding(element As VisualElement, padding As Single)
+  overload: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding*
+  nameWithType.vb: EditorUIUtils.SetPadding(VisualElement, Single)
+  fullName.vb: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding(UnityEngine.UIElements.VisualElement, Single)
+  name.vb: SetPadding(VisualElement, Single)
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin(UnityEngine.UIElements.VisualElement,System.Single)
+  commentId: M:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin(UnityEngine.UIElements.VisualElement,System.Single)
+  id: SetMargin(UnityEngine.UIElements.VisualElement,System.Single)
+  parent: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  langs:
+  - csharp
+  - vb
+  name: SetMargin(VisualElement, float)
+  nameWithType: EditorUIUtils.SetMargin(VisualElement, float)
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin(UnityEngine.UIElements.VisualElement, float)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetMargin
+    path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+    startLine: 23
+  assemblies:
+  - Foundry.Core.Editor.UIUtils
+  namespace: Foundry.Core.Editor.UIUtils
+  syntax:
+    content: public static void SetMargin(VisualElement element, float margin)
+    parameters:
+    - id: element
+      type: UnityEngine.UIElements.VisualElement
+    - id: margin
+      type: System.Single
+    content.vb: Public Shared Sub SetMargin(element As VisualElement, margin As Single)
+  overload: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin*
+  nameWithType.vb: EditorUIUtils.SetMargin(VisualElement, Single)
+  fullName.vb: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin(UnityEngine.UIElements.VisualElement, Single)
+  name.vb: SetMargin(VisualElement, Single)
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth(UnityEngine.UIElements.VisualElement,System.Single)
+  commentId: M:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth(UnityEngine.UIElements.VisualElement,System.Single)
+  id: SetBorderWidth(UnityEngine.UIElements.VisualElement,System.Single)
+  parent: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  langs:
+  - csharp
+  - vb
+  name: SetBorderWidth(VisualElement, float)
+  nameWithType: EditorUIUtils.SetBorderWidth(VisualElement, float)
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth(UnityEngine.UIElements.VisualElement, float)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetBorderWidth
+    path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+    startLine: 31
+  assemblies:
+  - Foundry.Core.Editor.UIUtils
+  namespace: Foundry.Core.Editor.UIUtils
+  syntax:
+    content: public static void SetBorderWidth(VisualElement element, float width)
+    parameters:
+    - id: element
+      type: UnityEngine.UIElements.VisualElement
+    - id: width
+      type: System.Single
+    content.vb: Public Shared Sub SetBorderWidth(element As VisualElement, width As Single)
+  overload: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth*
+  nameWithType.vb: EditorUIUtils.SetBorderWidth(VisualElement, Single)
+  fullName.vb: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth(UnityEngine.UIElements.VisualElement, Single)
+  name.vb: SetBorderWidth(VisualElement, Single)
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor(UnityEngine.UIElements.VisualElement,UnityEngine.Color)
+  commentId: M:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor(UnityEngine.UIElements.VisualElement,UnityEngine.Color)
+  id: SetBorderColor(UnityEngine.UIElements.VisualElement,UnityEngine.Color)
+  parent: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  langs:
+  - csharp
+  - vb
+  name: SetBorderColor(VisualElement, Color)
+  nameWithType: EditorUIUtils.SetBorderColor(VisualElement, Color)
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor(UnityEngine.UIElements.VisualElement, UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetBorderColor
+    path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
+    startLine: 39
+  assemblies:
+  - Foundry.Core.Editor.UIUtils
+  namespace: Foundry.Core.Editor.UIUtils
+  syntax:
+    content: public static void SetBorderColor(VisualElement element, Color color)
+    parameters:
+    - id: element
+      type: UnityEngine.UIElements.VisualElement
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Shared Sub SetBorderColor(element As VisualElement, color As Color)
+  overload: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor*
+references:
+- uid: Foundry.Core.Editor.UIUtils
+  commentId: N:Foundry.Core.Editor.UIUtils
+  href: Foundry.html
+  name: Foundry.Core.Editor.UIUtils
+  nameWithType: Foundry.Core.Editor.UIUtils
+  fullName: Foundry.Core.Editor.UIUtils
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+  - name: .
+  - uid: Foundry.Core.Editor.UIUtils
+    name: UIUtils
+    href: Foundry.Core.Editor.UIUtils.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+  - name: .
+  - uid: Foundry.Core.Editor.UIUtils
+    name: UIUtils
+    href: Foundry.Core.Editor.UIUtils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius*
+  commentId: Overload:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius
+  href: Foundry.Core.Editor.UIUtils.EditorUIUtils.html#Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius(UnityEngine.UIElements.VisualElement,System.Single)
+  name: SetBorderRadius
+  nameWithType: EditorUIUtils.SetBorderRadius
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderRadius
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding*
+  commentId: Overload:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding
+  href: Foundry.Core.Editor.UIUtils.EditorUIUtils.html#Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding(UnityEngine.UIElements.VisualElement,System.Single)
+  name: SetPadding
+  nameWithType: EditorUIUtils.SetPadding
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetPadding
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin*
+  commentId: Overload:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin
+  href: Foundry.Core.Editor.UIUtils.EditorUIUtils.html#Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin(UnityEngine.UIElements.VisualElement,System.Single)
+  name: SetMargin
+  nameWithType: EditorUIUtils.SetMargin
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetMargin
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth*
+  commentId: Overload:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth
+  href: Foundry.Core.Editor.UIUtils.EditorUIUtils.html#Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth(UnityEngine.UIElements.VisualElement,System.Single)
+  name: SetBorderWidth
+  nameWithType: EditorUIUtils.SetBorderWidth
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderWidth
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor*
+  commentId: Overload:Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor
+  href: Foundry.Core.Editor.UIUtils.EditorUIUtils.html#Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor(UnityEngine.UIElements.VisualElement,UnityEngine.Color)
+  name: SetBorderColor
+  nameWithType: EditorUIUtils.SetBorderColor
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils.SetBorderColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

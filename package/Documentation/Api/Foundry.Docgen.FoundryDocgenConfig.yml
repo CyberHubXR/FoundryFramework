@@ -1,0 +1,659 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Docgen.FoundryDocgenConfig
+  commentId: T:Foundry.Docgen.FoundryDocgenConfig
+  id: FoundryDocgenConfig
+  parent: Foundry.Docgen
+  children:
+  - Foundry.Docgen.FoundryDocgenConfig.Create(System.String)
+  - Foundry.Docgen.FoundryDocgenConfig.DocfxConfigPath
+  - Foundry.Docgen.FoundryDocgenConfig.DocfxMetadata
+  - Foundry.Docgen.FoundryDocgenConfig.DocfxOutputPath
+  - Foundry.Docgen.FoundryDocgenConfig.DocfxTemplate
+  - Foundry.Docgen.FoundryDocgenConfig.Save
+  - Foundry.Docgen.FoundryDocgenConfig.load(System.String)
+  langs:
+  - csharp
+  - vb
+  name: FoundryDocgenConfig
+  nameWithType: FoundryDocgenConfig
+  fullName: Foundry.Docgen.FoundryDocgenConfig
+  type: Class
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: FoundryDocgenConfig
+    path: ../FoundryDocgenConfig.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class FoundryDocgenConfig
+    content.vb: >-
+      <Serializable>
+
+      Public Class FoundryDocgenConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.Docgen.FoundryDocgenConfig.DocfxOutputPath
+  commentId: F:Foundry.Docgen.FoundryDocgenConfig.DocfxOutputPath
+  id: DocfxOutputPath
+  parent: Foundry.Docgen.FoundryDocgenConfig
+  langs:
+  - csharp
+  - vb
+  name: DocfxOutputPath
+  nameWithType: FoundryDocgenConfig.DocfxOutputPath
+  fullName: Foundry.Docgen.FoundryDocgenConfig.DocfxOutputPath
+  type: Field
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: DocfxOutputPath
+    path: ../FoundryDocgenConfig.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: public string DocfxOutputPath
+    return:
+      type: System.String
+    content.vb: Public DocfxOutputPath As String
+- uid: Foundry.Docgen.FoundryDocgenConfig.DocfxConfigPath
+  commentId: F:Foundry.Docgen.FoundryDocgenConfig.DocfxConfigPath
+  id: DocfxConfigPath
+  parent: Foundry.Docgen.FoundryDocgenConfig
+  langs:
+  - csharp
+  - vb
+  name: DocfxConfigPath
+  nameWithType: FoundryDocgenConfig.DocfxConfigPath
+  fullName: Foundry.Docgen.FoundryDocgenConfig.DocfxConfigPath
+  type: Field
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: DocfxConfigPath
+    path: ../FoundryDocgenConfig.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: public string DocfxConfigPath
+    return:
+      type: System.String
+    content.vb: Public DocfxConfigPath As String
+- uid: Foundry.Docgen.FoundryDocgenConfig.DocfxTemplate
+  commentId: F:Foundry.Docgen.FoundryDocgenConfig.DocfxTemplate
+  id: DocfxTemplate
+  parent: Foundry.Docgen.FoundryDocgenConfig
+  langs:
+  - csharp
+  - vb
+  name: DocfxTemplate
+  nameWithType: FoundryDocgenConfig.DocfxTemplate
+  fullName: Foundry.Docgen.FoundryDocgenConfig.DocfxTemplate
+  type: Field
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: DocfxTemplate
+    path: ../FoundryDocgenConfig.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: public string DocfxTemplate
+    return:
+      type: System.String
+    content.vb: Public DocfxTemplate As String
+- uid: Foundry.Docgen.FoundryDocgenConfig.DocfxMetadata
+  commentId: F:Foundry.Docgen.FoundryDocgenConfig.DocfxMetadata
+  id: DocfxMetadata
+  parent: Foundry.Docgen.FoundryDocgenConfig
+  langs:
+  - csharp
+  - vb
+  name: DocfxMetadata
+  nameWithType: FoundryDocgenConfig.DocfxMetadata
+  fullName: Foundry.Docgen.FoundryDocgenConfig.DocfxMetadata
+  type: Field
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: DocfxMetadata
+    path: ../FoundryDocgenConfig.cs
+    startLine: 24
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: public List<FoundryDocgenConfig.MetadataPair> DocfxMetadata
+    return:
+      type: System.Collections.Generic.List{Foundry.Docgen.FoundryDocgenConfig.MetadataPair}
+    content.vb: Public DocfxMetadata As List(Of FoundryDocgenConfig.MetadataPair)
+- uid: Foundry.Docgen.FoundryDocgenConfig.load(System.String)
+  commentId: M:Foundry.Docgen.FoundryDocgenConfig.load(System.String)
+  id: load(System.String)
+  parent: Foundry.Docgen.FoundryDocgenConfig
+  langs:
+  - csharp
+  - vb
+  name: load(string)
+  nameWithType: FoundryDocgenConfig.load(string)
+  fullName: Foundry.Docgen.FoundryDocgenConfig.load(string)
+  type: Method
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: load
+    path: ../FoundryDocgenConfig.cs
+    startLine: 28
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: public static FoundryDocgenConfig load(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Foundry.Docgen.FoundryDocgenConfig
+    content.vb: Public Shared Function load(path As String) As FoundryDocgenConfig
+  overload: Foundry.Docgen.FoundryDocgenConfig.load*
+  nameWithType.vb: FoundryDocgenConfig.load(String)
+  fullName.vb: Foundry.Docgen.FoundryDocgenConfig.load(String)
+  name.vb: load(String)
+- uid: Foundry.Docgen.FoundryDocgenConfig.Create(System.String)
+  commentId: M:Foundry.Docgen.FoundryDocgenConfig.Create(System.String)
+  id: Create(System.String)
+  parent: Foundry.Docgen.FoundryDocgenConfig
+  langs:
+  - csharp
+  - vb
+  name: Create(string)
+  nameWithType: FoundryDocgenConfig.Create(string)
+  fullName: Foundry.Docgen.FoundryDocgenConfig.Create(string)
+  type: Method
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: Create
+    path: ../FoundryDocgenConfig.cs
+    startLine: 35
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: public static FoundryDocgenConfig Create(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Foundry.Docgen.FoundryDocgenConfig
+    content.vb: Public Shared Function Create(path As String) As FoundryDocgenConfig
+  overload: Foundry.Docgen.FoundryDocgenConfig.Create*
+  nameWithType.vb: FoundryDocgenConfig.Create(String)
+  fullName.vb: Foundry.Docgen.FoundryDocgenConfig.Create(String)
+  name.vb: Create(String)
+- uid: Foundry.Docgen.FoundryDocgenConfig.Save
+  commentId: M:Foundry.Docgen.FoundryDocgenConfig.Save
+  id: Save
+  parent: Foundry.Docgen.FoundryDocgenConfig
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: FoundryDocgenConfig.Save()
+  fullName: Foundry.Docgen.FoundryDocgenConfig.Save()
+  type: Method
+  source:
+    remote:
+      path: package/FoundryDocgenConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryDocgen
+    id: Save
+    path: ../FoundryDocgenConfig.cs
+    startLine: 42
+  assemblies:
+  - Foundry.Docgen
+  namespace: Foundry.Docgen
+  syntax:
+    content: public void Save()
+    content.vb: Public Sub Save()
+  overload: Foundry.Docgen.FoundryDocgenConfig.Save*
+references:
+- uid: Foundry.Docgen
+  commentId: N:Foundry.Docgen
+  href: Foundry.html
+  name: Foundry.Docgen
+  nameWithType: Foundry.Docgen
+  fullName: Foundry.Docgen
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Docgen
+    name: Docgen
+    href: Foundry.Docgen.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Docgen
+    name: Docgen
+    href: Foundry.Docgen.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{Foundry.Docgen.FoundryDocgenConfig.MetadataPair}
+  commentId: T:System.Collections.Generic.List{Foundry.Docgen.FoundryDocgenConfig.MetadataPair}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FoundryDocgenConfig.MetadataPair>
+  nameWithType: List<FoundryDocgenConfig.MetadataPair>
+  fullName: System.Collections.Generic.List<Foundry.Docgen.FoundryDocgenConfig.MetadataPair>
+  nameWithType.vb: List(Of FoundryDocgenConfig.MetadataPair)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.Docgen.FoundryDocgenConfig.MetadataPair)
+  name.vb: List(Of FoundryDocgenConfig.MetadataPair)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Docgen.FoundryDocgenConfig
+    name: FoundryDocgenConfig
+    href: Foundry.Docgen.FoundryDocgenConfig.html
+  - name: .
+  - uid: Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+    name: MetadataPair
+    href: Foundry.Docgen.FoundryDocgenConfig.MetadataPair.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Docgen.FoundryDocgenConfig
+    name: FoundryDocgenConfig
+    href: Foundry.Docgen.FoundryDocgenConfig.html
+  - name: .
+  - uid: Foundry.Docgen.FoundryDocgenConfig.MetadataPair
+    name: MetadataPair
+    href: Foundry.Docgen.FoundryDocgenConfig.MetadataPair.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Foundry.Docgen.FoundryDocgenConfig.load*
+  commentId: Overload:Foundry.Docgen.FoundryDocgenConfig.load
+  href: Foundry.Docgen.FoundryDocgenConfig.html#Foundry.Docgen.FoundryDocgenConfig.load(System.String)
+  name: load
+  nameWithType: FoundryDocgenConfig.load
+  fullName: Foundry.Docgen.FoundryDocgenConfig.load
+- uid: Foundry.Docgen.FoundryDocgenConfig
+  commentId: T:Foundry.Docgen.FoundryDocgenConfig
+  parent: Foundry.Docgen
+  href: Foundry.Docgen.FoundryDocgenConfig.html
+  name: FoundryDocgenConfig
+  nameWithType: FoundryDocgenConfig
+  fullName: Foundry.Docgen.FoundryDocgenConfig
+- uid: Foundry.Docgen.FoundryDocgenConfig.Create*
+  commentId: Overload:Foundry.Docgen.FoundryDocgenConfig.Create
+  href: Foundry.Docgen.FoundryDocgenConfig.html#Foundry.Docgen.FoundryDocgenConfig.Create(System.String)
+  name: Create
+  nameWithType: FoundryDocgenConfig.Create
+  fullName: Foundry.Docgen.FoundryDocgenConfig.Create
+- uid: Foundry.Docgen.FoundryDocgenConfig.Save*
+  commentId: Overload:Foundry.Docgen.FoundryDocgenConfig.Save
+  href: Foundry.Docgen.FoundryDocgenConfig.html#Foundry.Docgen.FoundryDocgenConfig.Save
+  name: Save
+  nameWithType: FoundryDocgenConfig.Save
+  fullName: Foundry.Docgen.FoundryDocgenConfig.Save

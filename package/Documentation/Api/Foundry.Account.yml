@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Account
+  commentId: N:Foundry.Account
+  id: Foundry.Account
+  children:
+  - Foundry.Account.AccountDisplay
+  - Foundry.Account.CorePlayerAccount
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Account
+  nameWithType: Foundry.Account
+  fullName: Foundry.Account
+  type: Namespace
+  assemblies:
+  - Foundry.Core
+references:
+- uid: Foundry.Account.CorePlayerAccount
+  commentId: T:Foundry.Account.CorePlayerAccount
+  href: Foundry.Account.CorePlayerAccount.html
+  name: CorePlayerAccount
+  nameWithType: CorePlayerAccount
+  fullName: Foundry.Account.CorePlayerAccount
+- uid: Foundry.Account.AccountDisplay
+  commentId: T:Foundry.Account.AccountDisplay
+  href: Foundry.Account.AccountDisplay.html
+  name: AccountDisplay
+  nameWithType: AccountDisplay
+  fullName: Foundry.Account.AccountDisplay

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Editor.UIUtils
+  commentId: N:Foundry.Core.Editor.UIUtils
+  id: Foundry.Core.Editor.UIUtils
+  children:
+  - Foundry.Core.Editor.UIUtils.EditorUIUtils
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Core.Editor.UIUtils
+  nameWithType: Foundry.Core.Editor.UIUtils
+  fullName: Foundry.Core.Editor.UIUtils
+  type: Namespace
+  assemblies:
+  - Foundry.Core.Editor.UIUtils
+references:
+- uid: Foundry.Core.Editor.UIUtils.EditorUIUtils
+  commentId: T:Foundry.Core.Editor.UIUtils.EditorUIUtils
+  href: Foundry.Core.Editor.UIUtils.EditorUIUtils.html
+  name: EditorUIUtils
+  nameWithType: EditorUIUtils
+  fullName: Foundry.Core.Editor.UIUtils.EditorUIUtils

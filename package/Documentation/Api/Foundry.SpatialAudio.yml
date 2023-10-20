@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.SpatialAudio
+  commentId: N:Foundry.SpatialAudio
+  id: Foundry.SpatialAudio
+  children:
+  - Foundry.SpatialAudio.SpatialAudioSource
+  langs:
+  - csharp
+  - vb
+  name: Foundry.SpatialAudio
+  nameWithType: Foundry.SpatialAudio
+  fullName: Foundry.SpatialAudio
+  type: Namespace
+  assemblies:
+  - Foundry.Core
+references:
+- uid: Foundry.SpatialAudio.SpatialAudioSource
+  commentId: T:Foundry.SpatialAudio.SpatialAudioSource
+  href: Foundry.SpatialAudio.SpatialAudioSource.html
+  name: SpatialAudioSource
+  nameWithType: SpatialAudioSource
+  fullName: Foundry.SpatialAudio.SpatialAudioSource

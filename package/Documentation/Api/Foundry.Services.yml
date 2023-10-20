@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Services
+  commentId: N:Foundry.Services
+  id: Foundry.Services
+  children:
+  - Foundry.Services.ISceneNavigationEntry
+  - Foundry.Services.ISceneNavigator
+  - Foundry.Services.NavigationEvent
+  - Foundry.Services.SceneNavigationEntry
+  - Foundry.Services.SceneNavigationExtensions
+  - Foundry.Services.SceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Services
+  nameWithType: Foundry.Services
+  fullName: Foundry.Services
+  type: Namespace
+  assemblies:
+  - Foundry.Core
+references:
+- uid: Foundry.Services.SceneNavigationExtensions
+  commentId: T:Foundry.Services.SceneNavigationExtensions
+  href: Foundry.Services.SceneNavigationExtensions.html
+  name: SceneNavigationExtensions
+  nameWithType: SceneNavigationExtensions
+  fullName: Foundry.Services.SceneNavigationExtensions
+- uid: Foundry.Services.SceneNavigationEntry
+  commentId: T:Foundry.Services.SceneNavigationEntry
+  parent: Foundry.Services
+  href: Foundry.Services.SceneNavigationEntry.html
+  name: SceneNavigationEntry
+  nameWithType: SceneNavigationEntry
+  fullName: Foundry.Services.SceneNavigationEntry
+- uid: Foundry.Services.SceneNavigator
+  commentId: T:Foundry.Services.SceneNavigator
+  href: Foundry.Services.SceneNavigator.html
+  name: SceneNavigator
+  nameWithType: SceneNavigator
+  fullName: Foundry.Services.SceneNavigator
+- uid: Foundry.Services.ISceneNavigationEntry
+  commentId: T:Foundry.Services.ISceneNavigationEntry
+  parent: Foundry.Services
+  href: Foundry.Services.ISceneNavigationEntry.html
+  name: ISceneNavigationEntry
+  nameWithType: ISceneNavigationEntry
+  fullName: Foundry.Services.ISceneNavigationEntry
+- uid: Foundry.Services.NavigationEvent
+  commentId: T:Foundry.Services.NavigationEvent
+  parent: Foundry.Services
+  href: Foundry.Services.NavigationEvent.html
+  name: NavigationEvent
+  nameWithType: NavigationEvent
+  fullName: Foundry.Services.NavigationEvent
+- uid: Foundry.Services.ISceneNavigator
+  commentId: T:Foundry.Services.ISceneNavigator
+  parent: Foundry.Services
+  href: Foundry.Services.ISceneNavigator.html
+  name: ISceneNavigator
+  nameWithType: ISceneNavigator
+  fullName: Foundry.Services.ISceneNavigator
+- uid: Foundry.Services
+  commentId: N:Foundry.Services
+  href: Foundry.html
+  name: Foundry.Services
+  nameWithType: Foundry.Services
+  fullName: Foundry.Services
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html

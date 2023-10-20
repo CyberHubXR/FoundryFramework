@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Services.Editor
+  commentId: N:Foundry.Services.Editor
+  id: Foundry.Services.Editor
+  children:
+  - Foundry.Services.Editor.SceneNavigatorDefinition
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Services.Editor
+  nameWithType: Foundry.Services.Editor
+  fullName: Foundry.Services.Editor
+  type: Namespace
+  assemblies:
+  - Foundry.Core.Navigation.Editor
+references:
+- uid: Foundry.Services.Editor.SceneNavigatorDefinition
+  commentId: T:Foundry.Services.Editor.SceneNavigatorDefinition
+  href: Foundry.Services.Editor.SceneNavigatorDefinition.html
+  name: SceneNavigatorDefinition
+  nameWithType: SceneNavigatorDefinition
+  fullName: Foundry.Services.Editor.SceneNavigatorDefinition

@@ -1,0 +1,370 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Editor.IModuleDefinition
+  commentId: T:Foundry.Core.Editor.IModuleDefinition
+  id: IModuleDefinition
+  parent: Foundry.Core.Editor
+  children:
+  - Foundry.Core.Editor.IModuleDefinition.GetModuleConfig
+  - Foundry.Core.Editor.IModuleDefinition.GetProvidedServices
+  - Foundry.Core.Editor.IModuleDefinition.GetUsedService
+  - Foundry.Core.Editor.IModuleDefinition.ModuleName
+  langs:
+  - csharp
+  - vb
+  name: IModuleDefinition
+  nameWithType: IModuleDefinition
+  fullName: Foundry.Core.Editor.IModuleDefinition
+  type: Interface
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ModuleDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IModuleDefinition
+    path: ../Editor/FoundryConfig/ModuleDefinition.cs
+    startLine: 31
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public interface IModuleDefinition
+    content.vb: Public Interface IModuleDefinition
+- uid: Foundry.Core.Editor.IModuleDefinition.ModuleName
+  commentId: M:Foundry.Core.Editor.IModuleDefinition.ModuleName
+  id: ModuleName
+  parent: Foundry.Core.Editor.IModuleDefinition
+  langs:
+  - csharp
+  - vb
+  name: ModuleName()
+  nameWithType: IModuleDefinition.ModuleName()
+  fullName: Foundry.Core.Editor.IModuleDefinition.ModuleName()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ModuleDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ModuleName
+    path: ../Editor/FoundryConfig/ModuleDefinition.cs
+    startLine: 36
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  summary: Name of the module, used for display purposes
+  example: []
+  syntax:
+    content: string ModuleName()
+    return:
+      type: System.String
+    content.vb: Function ModuleName() As String
+  overload: Foundry.Core.Editor.IModuleDefinition.ModuleName*
+- uid: Foundry.Core.Editor.IModuleDefinition.GetProvidedServices
+  commentId: M:Foundry.Core.Editor.IModuleDefinition.GetProvidedServices
+  id: GetProvidedServices
+  parent: Foundry.Core.Editor.IModuleDefinition
+  langs:
+  - csharp
+  - vb
+  name: GetProvidedServices()
+  nameWithType: IModuleDefinition.GetProvidedServices()
+  fullName: Foundry.Core.Editor.IModuleDefinition.GetProvidedServices()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ModuleDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetProvidedServices
+    path: ../Editor/FoundryConfig/ModuleDefinition.cs
+    startLine: 42
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  summary: Return a list of all the services this module provides
+  example: []
+  syntax:
+    content: List<ProvidedService> GetProvidedServices()
+    return:
+      type: System.Collections.Generic.List{Foundry.Core.Editor.ProvidedService}
+      description: ''
+    content.vb: Function GetProvidedServices() As List(Of ProvidedService)
+  overload: Foundry.Core.Editor.IModuleDefinition.GetProvidedServices*
+- uid: Foundry.Core.Editor.IModuleDefinition.GetUsedService
+  commentId: M:Foundry.Core.Editor.IModuleDefinition.GetUsedService
+  id: GetUsedService
+  parent: Foundry.Core.Editor.IModuleDefinition
+  langs:
+  - csharp
+  - vb
+  name: GetUsedService()
+  nameWithType: IModuleDefinition.GetUsedService()
+  fullName: Foundry.Core.Editor.IModuleDefinition.GetUsedService()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ModuleDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetUsedService
+    path: ../Editor/FoundryConfig/ModuleDefinition.cs
+    startLine: 47
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  summary: Returns a list of all the services used by this module, and if they are required or not
+  example: []
+  syntax:
+    content: List<UsedService> GetUsedService()
+    return:
+      type: System.Collections.Generic.List{Foundry.Core.Editor.UsedService}
+    content.vb: Function GetUsedService() As List(Of UsedService)
+  overload: Foundry.Core.Editor.IModuleDefinition.GetUsedService*
+- uid: Foundry.Core.Editor.IModuleDefinition.GetModuleConfig
+  commentId: M:Foundry.Core.Editor.IModuleDefinition.GetModuleConfig
+  id: GetModuleConfig
+  parent: Foundry.Core.Editor.IModuleDefinition
+  langs:
+  - csharp
+  - vb
+  name: GetModuleConfig()
+  nameWithType: IModuleDefinition.GetModuleConfig()
+  fullName: Foundry.Core.Editor.IModuleDefinition.GetModuleConfig()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/FoundryConfig/ModuleDefinition.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetModuleConfig
+    path: ../Editor/FoundryConfig/ModuleDefinition.cs
+    startLine: 52
+  assemblies:
+  - Foundry.Core.Editor
+  namespace: Foundry.Core.Editor
+  summary: Get or create an instance of a module's config object
+  example: []
+  syntax:
+    content: FoundryModuleConfig GetModuleConfig()
+    return:
+      type: Foundry.FoundryModuleConfig
+    content.vb: Function GetModuleConfig() As FoundryModuleConfig
+  overload: Foundry.Core.Editor.IModuleDefinition.GetModuleConfig*
+references:
+- uid: Foundry.Core.Editor
+  commentId: N:Foundry.Core.Editor
+  href: Foundry.html
+  name: Foundry.Core.Editor
+  nameWithType: Foundry.Core.Editor
+  fullName: Foundry.Core.Editor
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+- uid: Foundry.Core.Editor.IModuleDefinition.ModuleName*
+  commentId: Overload:Foundry.Core.Editor.IModuleDefinition.ModuleName
+  href: Foundry.Core.Editor.IModuleDefinition.html#Foundry.Core.Editor.IModuleDefinition.ModuleName
+  name: ModuleName
+  nameWithType: IModuleDefinition.ModuleName
+  fullName: Foundry.Core.Editor.IModuleDefinition.ModuleName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Core.Editor.IModuleDefinition.GetProvidedServices*
+  commentId: Overload:Foundry.Core.Editor.IModuleDefinition.GetProvidedServices
+  href: Foundry.Core.Editor.IModuleDefinition.html#Foundry.Core.Editor.IModuleDefinition.GetProvidedServices
+  name: GetProvidedServices
+  nameWithType: IModuleDefinition.GetProvidedServices
+  fullName: Foundry.Core.Editor.IModuleDefinition.GetProvidedServices
+- uid: System.Collections.Generic.List{Foundry.Core.Editor.ProvidedService}
+  commentId: T:System.Collections.Generic.List{Foundry.Core.Editor.ProvidedService}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ProvidedService>
+  nameWithType: List<ProvidedService>
+  fullName: System.Collections.Generic.List<Foundry.Core.Editor.ProvidedService>
+  nameWithType.vb: List(Of ProvidedService)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.Core.Editor.ProvidedService)
+  name.vb: List(Of ProvidedService)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Core.Editor.ProvidedService
+    name: ProvidedService
+    href: Foundry.Core.Editor.ProvidedService.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Core.Editor.ProvidedService
+    name: ProvidedService
+    href: Foundry.Core.Editor.ProvidedService.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Foundry.Core.Editor.IModuleDefinition.GetUsedService*
+  commentId: Overload:Foundry.Core.Editor.IModuleDefinition.GetUsedService
+  href: Foundry.Core.Editor.IModuleDefinition.html#Foundry.Core.Editor.IModuleDefinition.GetUsedService
+  name: GetUsedService
+  nameWithType: IModuleDefinition.GetUsedService
+  fullName: Foundry.Core.Editor.IModuleDefinition.GetUsedService
+- uid: System.Collections.Generic.List{Foundry.Core.Editor.UsedService}
+  commentId: T:System.Collections.Generic.List{Foundry.Core.Editor.UsedService}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<UsedService>
+  nameWithType: List<UsedService>
+  fullName: System.Collections.Generic.List<Foundry.Core.Editor.UsedService>
+  nameWithType.vb: List(Of UsedService)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.Core.Editor.UsedService)
+  name.vb: List(Of UsedService)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Core.Editor.UsedService
+    name: UsedService
+    href: Foundry.Core.Editor.UsedService.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Core.Editor.UsedService
+    name: UsedService
+    href: Foundry.Core.Editor.UsedService.html
+  - name: )
+- uid: Foundry.Core.Editor.IModuleDefinition.GetModuleConfig*
+  commentId: Overload:Foundry.Core.Editor.IModuleDefinition.GetModuleConfig
+  href: Foundry.Core.Editor.IModuleDefinition.html#Foundry.Core.Editor.IModuleDefinition.GetModuleConfig
+  name: GetModuleConfig
+  nameWithType: IModuleDefinition.GetModuleConfig
+  fullName: Foundry.Core.Editor.IModuleDefinition.GetModuleConfig
+- uid: Foundry.FoundryModuleConfig
+  commentId: T:Foundry.FoundryModuleConfig
+  parent: Foundry
+  href: Foundry.FoundryModuleConfig.html
+  name: FoundryModuleConfig
+  nameWithType: FoundryModuleConfig
+  fullName: Foundry.FoundryModuleConfig
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry

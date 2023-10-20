@@ -1,0 +1,589 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.NetworkTRPredictor
+  commentId: T:Foundry.NetworkTRPredictor
+  id: NetworkTRPredictor
+  parent: Foundry
+  children:
+  - Foundry.NetworkTRPredictor.Predict(Foundry.NetworkedTR@,System.Single)
+  - Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR@)
+  - Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR@,System.Single)
+  - Foundry.NetworkTRPredictor.RenderVelocity
+  - Foundry.NetworkTRPredictor.Teleport(Foundry.NetworkedTR)
+  - Foundry.NetworkTRPredictor.Update(Foundry.NetworkedTR,System.Single)
+  - Foundry.NetworkTRPredictor.lerpSpeed
+  langs:
+  - csharp
+  - vb
+  name: NetworkTRPredictor
+  nameWithType: NetworkTRPredictor
+  fullName: Foundry.NetworkTRPredictor
+  type: Class
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetworkTRPredictor
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 21
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class NetworkTRPredictor
+    content.vb: >-
+      <Serializable>
+
+      Public Class NetworkTRPredictor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.NetworkTRPredictor.lerpSpeed
+  commentId: F:Foundry.NetworkTRPredictor.lerpSpeed
+  id: lerpSpeed
+  parent: Foundry.NetworkTRPredictor
+  langs:
+  - csharp
+  - vb
+  name: lerpSpeed
+  nameWithType: NetworkTRPredictor.lerpSpeed
+  fullName: Foundry.NetworkTRPredictor.lerpSpeed
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: lerpSpeed
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 24
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float lerpSpeed
+    return:
+      type: System.Single
+    content.vb: Public lerpSpeed As Single
+- uid: Foundry.NetworkTRPredictor.Update(Foundry.NetworkedTR,System.Single)
+  commentId: M:Foundry.NetworkTRPredictor.Update(Foundry.NetworkedTR,System.Single)
+  id: Update(Foundry.NetworkedTR,System.Single)
+  parent: Foundry.NetworkTRPredictor
+  langs:
+  - csharp
+  - vb
+  name: Update(NetworkedTR, float)
+  nameWithType: NetworkTRPredictor.Update(NetworkedTR, float)
+  fullName: Foundry.NetworkTRPredictor.Update(Foundry.NetworkedTR, float)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Update
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 35
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public void Update(NetworkedTR latestTruth, float time)
+    parameters:
+    - id: latestTruth
+      type: Foundry.NetworkedTR
+    - id: time
+      type: System.Single
+    content.vb: Public Sub Update(latestTruth As NetworkedTR, time As Single)
+  overload: Foundry.NetworkTRPredictor.Update*
+  nameWithType.vb: NetworkTRPredictor.Update(NetworkedTR, Single)
+  fullName.vb: Foundry.NetworkTRPredictor.Update(Foundry.NetworkedTR, Single)
+  name.vb: Update(NetworkedTR, Single)
+- uid: Foundry.NetworkTRPredictor.Predict(Foundry.NetworkedTR@,System.Single)
+  commentId: M:Foundry.NetworkTRPredictor.Predict(Foundry.NetworkedTR@,System.Single)
+  id: Predict(Foundry.NetworkedTR@,System.Single)
+  parent: Foundry.NetworkTRPredictor
+  langs:
+  - csharp
+  - vb
+  name: Predict(ref NetworkedTR, float)
+  nameWithType: NetworkTRPredictor.Predict(ref NetworkedTR, float)
+  fullName: Foundry.NetworkTRPredictor.Predict(ref Foundry.NetworkedTR, float)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Predict
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 44
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public void Predict(ref NetworkedTR current, float deltaTime)
+    parameters:
+    - id: current
+      type: Foundry.NetworkedTR
+    - id: deltaTime
+      type: System.Single
+    content.vb: Public Sub Predict(current As NetworkedTR, deltaTime As Single)
+  overload: Foundry.NetworkTRPredictor.Predict*
+  nameWithType.vb: NetworkTRPredictor.Predict(NetworkedTR, Single)
+  fullName.vb: Foundry.NetworkTRPredictor.Predict(Foundry.NetworkedTR, Single)
+  name.vb: Predict(NetworkedTR, Single)
+- uid: Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR@,System.Single)
+  commentId: M:Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR@,System.Single)
+  id: Render(Foundry.NetworkedTR@,System.Single)
+  parent: Foundry.NetworkTRPredictor
+  langs:
+  - csharp
+  - vb
+  name: Render(in NetworkedTR, float)
+  nameWithType: NetworkTRPredictor.Render(in NetworkedTR, float)
+  fullName: Foundry.NetworkTRPredictor.Render(in Foundry.NetworkedTR, float)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Render
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 53
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public TrackerPos Render(in NetworkedTR current, float time)
+    parameters:
+    - id: current
+      type: Foundry.NetworkedTR
+    - id: time
+      type: System.Single
+    return:
+      type: Foundry.TrackerPos
+    content.vb: Public Function Render(current As NetworkedTR, time As Single) As TrackerPos
+  overload: Foundry.NetworkTRPredictor.Render*
+  nameWithType.vb: NetworkTRPredictor.Render(NetworkedTR, Single)
+  fullName.vb: Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR, Single)
+  name.vb: Render(NetworkedTR, Single)
+- uid: Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR@)
+  commentId: M:Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR@)
+  id: Render(Foundry.NetworkedTR@)
+  parent: Foundry.NetworkTRPredictor
+  langs:
+  - csharp
+  - vb
+  name: Render(in NetworkedTR)
+  nameWithType: NetworkTRPredictor.Render(in NetworkedTR)
+  fullName: Foundry.NetworkTRPredictor.Render(in Foundry.NetworkedTR)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Render
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 86
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public TrackerPos Render(in NetworkedTR current)
+    parameters:
+    - id: current
+      type: Foundry.NetworkedTR
+    return:
+      type: Foundry.TrackerPos
+    content.vb: Public Function Render(current As NetworkedTR) As TrackerPos
+  overload: Foundry.NetworkTRPredictor.Render*
+  nameWithType.vb: NetworkTRPredictor.Render(NetworkedTR)
+  fullName.vb: Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR)
+  name.vb: Render(NetworkedTR)
+- uid: Foundry.NetworkTRPredictor.RenderVelocity
+  commentId: M:Foundry.NetworkTRPredictor.RenderVelocity
+  id: RenderVelocity
+  parent: Foundry.NetworkTRPredictor
+  langs:
+  - csharp
+  - vb
+  name: RenderVelocity()
+  nameWithType: NetworkTRPredictor.RenderVelocity()
+  fullName: Foundry.NetworkTRPredictor.RenderVelocity()
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: RenderVelocity
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 93
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 RenderVelocity()
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Function RenderVelocity() As Vector3
+  overload: Foundry.NetworkTRPredictor.RenderVelocity*
+- uid: Foundry.NetworkTRPredictor.Teleport(Foundry.NetworkedTR)
+  commentId: M:Foundry.NetworkTRPredictor.Teleport(Foundry.NetworkedTR)
+  id: Teleport(Foundry.NetworkedTR)
+  parent: Foundry.NetworkTRPredictor
+  langs:
+  - csharp
+  - vb
+  name: Teleport(NetworkedTR)
+  nameWithType: NetworkTRPredictor.Teleport(NetworkedTR)
+  fullName: Foundry.NetworkTRPredictor.Teleport(Foundry.NetworkedTR)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkTRPredictor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Teleport
+    path: ../Networking/Scripts/NetworkTRPredictor.cs
+    startLine: 98
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public void Teleport(NetworkedTR newTruth)
+    parameters:
+    - id: newTruth
+      type: Foundry.NetworkedTR
+    content.vb: Public Sub Teleport(newTruth As NetworkedTR)
+  overload: Foundry.NetworkTRPredictor.Teleport*
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Foundry.NetworkTRPredictor.Update*
+  commentId: Overload:Foundry.NetworkTRPredictor.Update
+  href: Foundry.NetworkTRPredictor.html#Foundry.NetworkTRPredictor.Update(Foundry.NetworkedTR,System.Single)
+  name: Update
+  nameWithType: NetworkTRPredictor.Update
+  fullName: Foundry.NetworkTRPredictor.Update
+- uid: Foundry.NetworkedTR
+  commentId: T:Foundry.NetworkedTR
+  parent: Foundry
+  href: Foundry.NetworkedTR.html
+  name: NetworkedTR
+  nameWithType: NetworkedTR
+  fullName: Foundry.NetworkedTR
+- uid: Foundry.NetworkTRPredictor.Predict*
+  commentId: Overload:Foundry.NetworkTRPredictor.Predict
+  href: Foundry.NetworkTRPredictor.html#Foundry.NetworkTRPredictor.Predict(Foundry.NetworkedTR@,System.Single)
+  name: Predict
+  nameWithType: NetworkTRPredictor.Predict
+  fullName: Foundry.NetworkTRPredictor.Predict
+- uid: Foundry.NetworkTRPredictor.Render*
+  commentId: Overload:Foundry.NetworkTRPredictor.Render
+  href: Foundry.NetworkTRPredictor.html#Foundry.NetworkTRPredictor.Render(Foundry.NetworkedTR@,System.Single)
+  name: Render
+  nameWithType: NetworkTRPredictor.Render
+  fullName: Foundry.NetworkTRPredictor.Render
+- uid: Foundry.TrackerPos
+  commentId: T:Foundry.TrackerPos
+  parent: Foundry
+  href: Foundry.TrackerPos.html
+  name: TrackerPos
+  nameWithType: TrackerPos
+  fullName: Foundry.TrackerPos
+- uid: Foundry.NetworkTRPredictor.RenderVelocity*
+  commentId: Overload:Foundry.NetworkTRPredictor.RenderVelocity
+  href: Foundry.NetworkTRPredictor.html#Foundry.NetworkTRPredictor.RenderVelocity
+  name: RenderVelocity
+  nameWithType: NetworkTRPredictor.RenderVelocity
+  fullName: Foundry.NetworkTRPredictor.RenderVelocity
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Foundry.NetworkTRPredictor.Teleport*
+  commentId: Overload:Foundry.NetworkTRPredictor.Teleport
+  href: Foundry.NetworkTRPredictor.html#Foundry.NetworkTRPredictor.Teleport(Foundry.NetworkedTR)
+  name: Teleport
+  nameWithType: NetworkTRPredictor.Teleport
+  fullName: Foundry.NetworkTRPredictor.Teleport

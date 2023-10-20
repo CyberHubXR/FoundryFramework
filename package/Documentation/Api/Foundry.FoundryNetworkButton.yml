@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.FoundryNetworkButton
+  commentId: T:Foundry.FoundryNetworkButton
+  id: FoundryNetworkButton
+  parent: Foundry
+  children:
+  - Foundry.FoundryNetworkButton.leftGrab
+  - Foundry.FoundryNetworkButton.rightGrab
+  langs:
+  - csharp
+  - vb
+  name: FoundryNetworkButton
+  nameWithType: FoundryNetworkButton
+  fullName: Foundry.FoundryNetworkButton
+  type: Enum
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: FoundryNetworkButton
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum FoundryNetworkButton
+    content.vb: Public Enum FoundryNetworkButton
+- uid: Foundry.FoundryNetworkButton.leftGrab
+  commentId: F:Foundry.FoundryNetworkButton.leftGrab
+  id: leftGrab
+  parent: Foundry.FoundryNetworkButton
+  langs:
+  - csharp
+  - vb
+  name: leftGrab
+  nameWithType: FoundryNetworkButton.leftGrab
+  fullName: Foundry.FoundryNetworkButton.leftGrab
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftGrab
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: leftGrab = 0
+    return:
+      type: Foundry.FoundryNetworkButton
+- uid: Foundry.FoundryNetworkButton.rightGrab
+  commentId: F:Foundry.FoundryNetworkButton.rightGrab
+  id: rightGrab
+  parent: Foundry.FoundryNetworkButton
+  langs:
+  - csharp
+  - vb
+  name: rightGrab
+  nameWithType: FoundryNetworkButton.rightGrab
+  fullName: Foundry.FoundryNetworkButton.rightGrab
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkInputTypes.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightGrab
+    path: ../Networking/Scripts/NetworkInputTypes.cs
+    startLine: 19
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: rightGrab = 1
+    return:
+      type: Foundry.FoundryNetworkButton
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.FoundryNetworkButton
+  commentId: T:Foundry.FoundryNetworkButton
+  parent: Foundry
+  href: Foundry.FoundryNetworkButton.html
+  name: FoundryNetworkButton
+  nameWithType: FoundryNetworkButton
+  fullName: Foundry.FoundryNetworkButton

@@ -1,0 +1,677 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.FoundryModuleConfig.SerializedType
+  commentId: T:Foundry.FoundryModuleConfig.SerializedType
+  id: FoundryModuleConfig.SerializedType
+  parent: Foundry
+  children:
+  - Foundry.FoundryModuleConfig.SerializedType.ToString
+  - Foundry.FoundryModuleConfig.SerializedType.Type
+  - Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  - Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  - Foundry.FoundryModuleConfig.SerializedType.op_Implicit(Foundry.FoundryModuleConfig.SerializedType)~System.Type
+  - Foundry.FoundryModuleConfig.SerializedType.op_Implicit(System.Type)~Foundry.FoundryModuleConfig.SerializedType
+  - Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  - Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  langs:
+  - csharp
+  - vb
+  name: FoundryModuleConfig.SerializedType
+  nameWithType: FoundryModuleConfig.SerializedType
+  fullName: Foundry.FoundryModuleConfig.SerializedType
+  type: Class
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SerializedType
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class FoundryModuleConfig.SerializedType
+    content.vb: >-
+      <Serializable>
+
+      Public Class FoundryModuleConfig.SerializedType
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.FoundryModuleConfig.SerializedType.Type
+  commentId: P:Foundry.FoundryModuleConfig.SerializedType.Type
+  id: Type
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: FoundryModuleConfig.SerializedType.Type
+  fullName: Foundry.FoundryModuleConfig.SerializedType.Type
+  type: Property
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Type
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 22
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Type Type { get; set; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Property Type As Type
+  overload: Foundry.FoundryModuleConfig.SerializedType.Type*
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Implicit(Foundry.FoundryModuleConfig.SerializedType)~System.Type
+  commentId: M:Foundry.FoundryModuleConfig.SerializedType.op_Implicit(Foundry.FoundryModuleConfig.SerializedType)~System.Type
+  id: op_Implicit(Foundry.FoundryModuleConfig.SerializedType)~System.Type
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Type(SerializedType)
+  nameWithType: FoundryModuleConfig.SerializedType.implicit operator Type(FoundryModuleConfig.SerializedType)
+  fullName: Foundry.FoundryModuleConfig.SerializedType.implicit operator System.Type(Foundry.FoundryModuleConfig.SerializedType)
+  type: Operator
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Implicit
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 28
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static implicit operator Type(FoundryModuleConfig.SerializedType serializedType)
+    parameters:
+    - id: serializedType
+      type: Foundry.FoundryModuleConfig.SerializedType
+    return:
+      type: System.Type
+    content.vb: Public Shared Widening Operator CType(serializedType As FoundryModuleConfig.SerializedType) As Type
+  overload: Foundry.FoundryModuleConfig.SerializedType.op_Implicit*
+  nameWithType.vb: FoundryModuleConfig.SerializedType.CType(FoundryModuleConfig.SerializedType)
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.CType(Foundry.FoundryModuleConfig.SerializedType)
+  name.vb: CType(SerializedType)
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Implicit(System.Type)~Foundry.FoundryModuleConfig.SerializedType
+  commentId: M:Foundry.FoundryModuleConfig.SerializedType.op_Implicit(System.Type)~Foundry.FoundryModuleConfig.SerializedType
+  id: op_Implicit(System.Type)~Foundry.FoundryModuleConfig.SerializedType
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: implicit operator SerializedType(Type)
+  nameWithType: FoundryModuleConfig.SerializedType.implicit operator FoundryModuleConfig.SerializedType(Type)
+  fullName: Foundry.FoundryModuleConfig.SerializedType.implicit operator Foundry.FoundryModuleConfig.SerializedType(System.Type)
+  type: Operator
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Implicit
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 33
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static implicit operator FoundryModuleConfig.SerializedType(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+    return:
+      type: Foundry.FoundryModuleConfig.SerializedType
+    content.vb: Public Shared Widening Operator CType(type As Type) As FoundryModuleConfig.SerializedType
+  overload: Foundry.FoundryModuleConfig.SerializedType.op_Implicit*
+  nameWithType.vb: FoundryModuleConfig.SerializedType.CType(Type)
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.CType(System.Type)
+  name.vb: CType(Type)
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  commentId: M:Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  id: op_Equality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: operator ==(SerializedType, SerializedType)
+  nameWithType: FoundryModuleConfig.SerializedType.operator ==(FoundryModuleConfig.SerializedType, FoundryModuleConfig.SerializedType)
+  fullName: Foundry.FoundryModuleConfig.SerializedType.operator ==(Foundry.FoundryModuleConfig.SerializedType, Foundry.FoundryModuleConfig.SerializedType)
+  type: Operator
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Equality
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 38
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static bool operator ==(FoundryModuleConfig.SerializedType a, FoundryModuleConfig.SerializedType b)
+    parameters:
+    - id: a
+      type: Foundry.FoundryModuleConfig.SerializedType
+    - id: b
+      type: Foundry.FoundryModuleConfig.SerializedType
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As FoundryModuleConfig.SerializedType, b As FoundryModuleConfig.SerializedType) As Boolean
+  overload: Foundry.FoundryModuleConfig.SerializedType.op_Equality*
+  nameWithType.vb: FoundryModuleConfig.SerializedType.=(FoundryModuleConfig.SerializedType, FoundryModuleConfig.SerializedType)
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.=(Foundry.FoundryModuleConfig.SerializedType, Foundry.FoundryModuleConfig.SerializedType)
+  name.vb: =(SerializedType, SerializedType)
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  commentId: M:Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  id: op_Inequality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: operator !=(SerializedType, SerializedType)
+  nameWithType: FoundryModuleConfig.SerializedType.operator !=(FoundryModuleConfig.SerializedType, FoundryModuleConfig.SerializedType)
+  fullName: Foundry.FoundryModuleConfig.SerializedType.operator !=(Foundry.FoundryModuleConfig.SerializedType, Foundry.FoundryModuleConfig.SerializedType)
+  type: Operator
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Inequality
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 43
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static bool operator !=(FoundryModuleConfig.SerializedType a, FoundryModuleConfig.SerializedType b)
+    parameters:
+    - id: a
+      type: Foundry.FoundryModuleConfig.SerializedType
+    - id: b
+      type: Foundry.FoundryModuleConfig.SerializedType
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As FoundryModuleConfig.SerializedType, b As FoundryModuleConfig.SerializedType) As Boolean
+  overload: Foundry.FoundryModuleConfig.SerializedType.op_Inequality*
+  nameWithType.vb: FoundryModuleConfig.SerializedType.<>(FoundryModuleConfig.SerializedType, FoundryModuleConfig.SerializedType)
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.<>(Foundry.FoundryModuleConfig.SerializedType, Foundry.FoundryModuleConfig.SerializedType)
+  name.vb: <>(SerializedType, SerializedType)
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  commentId: M:Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  id: op_Equality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: operator ==(SerializedType, Type)
+  nameWithType: FoundryModuleConfig.SerializedType.operator ==(FoundryModuleConfig.SerializedType, Type)
+  fullName: Foundry.FoundryModuleConfig.SerializedType.operator ==(Foundry.FoundryModuleConfig.SerializedType, System.Type)
+  type: Operator
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Equality
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 48
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static bool operator ==(FoundryModuleConfig.SerializedType a, Type b)
+    parameters:
+    - id: a
+      type: Foundry.FoundryModuleConfig.SerializedType
+    - id: b
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As FoundryModuleConfig.SerializedType, b As Type) As Boolean
+  overload: Foundry.FoundryModuleConfig.SerializedType.op_Equality*
+  nameWithType.vb: FoundryModuleConfig.SerializedType.=(FoundryModuleConfig.SerializedType, Type)
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.=(Foundry.FoundryModuleConfig.SerializedType, System.Type)
+  name.vb: =(SerializedType, Type)
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  commentId: M:Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  id: op_Inequality(Foundry.FoundryModuleConfig.SerializedType,System.Type)
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: operator !=(SerializedType, Type)
+  nameWithType: FoundryModuleConfig.SerializedType.operator !=(FoundryModuleConfig.SerializedType, Type)
+  fullName: Foundry.FoundryModuleConfig.SerializedType.operator !=(Foundry.FoundryModuleConfig.SerializedType, System.Type)
+  type: Operator
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: op_Inequality
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 53
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public static bool operator !=(FoundryModuleConfig.SerializedType a, Type b)
+    parameters:
+    - id: a
+      type: Foundry.FoundryModuleConfig.SerializedType
+    - id: b
+      type: System.Type
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As FoundryModuleConfig.SerializedType, b As Type) As Boolean
+  overload: Foundry.FoundryModuleConfig.SerializedType.op_Inequality*
+  nameWithType.vb: FoundryModuleConfig.SerializedType.<>(FoundryModuleConfig.SerializedType, Type)
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.<>(Foundry.FoundryModuleConfig.SerializedType, System.Type)
+  name.vb: <>(SerializedType, Type)
+- uid: Foundry.FoundryModuleConfig.SerializedType.ToString
+  commentId: M:Foundry.FoundryModuleConfig.SerializedType.ToString
+  id: ToString
+  parent: Foundry.FoundryModuleConfig.SerializedType
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: FoundryModuleConfig.SerializedType.ToString()
+  fullName: Foundry.FoundryModuleConfig.SerializedType.ToString()
+  type: Method
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ToString
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 58
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Foundry.FoundryModuleConfig.SerializedType.ToString*
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.FoundryModuleConfig.SerializedType.Type*
+  commentId: Overload:Foundry.FoundryModuleConfig.SerializedType.Type
+  href: Foundry.FoundryModuleConfig.SerializedType.html#Foundry.FoundryModuleConfig.SerializedType.Type
+  name: Type
+  nameWithType: FoundryModuleConfig.SerializedType.Type
+  fullName: Foundry.FoundryModuleConfig.SerializedType.Type
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Implicit*
+  commentId: Overload:Foundry.FoundryModuleConfig.SerializedType.op_Implicit
+  name: implicit operator
+  nameWithType: FoundryModuleConfig.SerializedType.implicit operator
+  fullName: Foundry.FoundryModuleConfig.SerializedType.implicit operator
+  nameWithType.vb: FoundryModuleConfig.SerializedType.CType
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Foundry.FoundryModuleConfig.SerializedType
+  commentId: T:Foundry.FoundryModuleConfig.SerializedType
+  parent: Foundry
+  href: Foundry.FoundryModuleConfig.html
+  name: FoundryModuleConfig.SerializedType
+  nameWithType: FoundryModuleConfig.SerializedType
+  fullName: Foundry.FoundryModuleConfig.SerializedType
+  spec.csharp:
+  - uid: Foundry.FoundryModuleConfig
+    name: FoundryModuleConfig
+    href: Foundry.FoundryModuleConfig.html
+  - name: .
+  - uid: Foundry.FoundryModuleConfig.SerializedType
+    name: SerializedType
+    href: Foundry.FoundryModuleConfig.SerializedType.html
+  spec.vb:
+  - uid: Foundry.FoundryModuleConfig
+    name: FoundryModuleConfig
+    href: Foundry.FoundryModuleConfig.html
+  - name: .
+  - uid: Foundry.FoundryModuleConfig.SerializedType
+    name: SerializedType
+    href: Foundry.FoundryModuleConfig.SerializedType.html
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Equality*
+  commentId: Overload:Foundry.FoundryModuleConfig.SerializedType.op_Equality
+  href: Foundry.FoundryModuleConfig.SerializedType.html#Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  name: operator ==
+  nameWithType: FoundryModuleConfig.SerializedType.operator ==
+  fullName: Foundry.FoundryModuleConfig.SerializedType.operator ==
+  nameWithType.vb: FoundryModuleConfig.SerializedType.=
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Foundry.FoundryModuleConfig.SerializedType.op_Equality*
+    name: ==
+    href: Foundry.FoundryModuleConfig.SerializedType.html#Foundry.FoundryModuleConfig.SerializedType.op_Equality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Foundry.FoundryModuleConfig.SerializedType.op_Inequality*
+  commentId: Overload:Foundry.FoundryModuleConfig.SerializedType.op_Inequality
+  href: Foundry.FoundryModuleConfig.SerializedType.html#Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+  name: operator !=
+  nameWithType: FoundryModuleConfig.SerializedType.operator !=
+  fullName: Foundry.FoundryModuleConfig.SerializedType.operator !=
+  nameWithType.vb: FoundryModuleConfig.SerializedType.<>
+  fullName.vb: Foundry.FoundryModuleConfig.SerializedType.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Foundry.FoundryModuleConfig.SerializedType.op_Inequality*
+    name: '!='
+    href: Foundry.FoundryModuleConfig.SerializedType.html#Foundry.FoundryModuleConfig.SerializedType.op_Inequality(Foundry.FoundryModuleConfig.SerializedType,Foundry.FoundryModuleConfig.SerializedType)
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Foundry.FoundryModuleConfig.SerializedType.ToString*
+  commentId: Overload:Foundry.FoundryModuleConfig.SerializedType.ToString
+  href: Foundry.FoundryModuleConfig.SerializedType.html#Foundry.FoundryModuleConfig.SerializedType.ToString
+  name: ToString
+  nameWithType: FoundryModuleConfig.SerializedType.ToString
+  fullName: Foundry.FoundryModuleConfig.SerializedType.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.IFoundryCameraManager
+  commentId: T:Foundry.IFoundryCameraManager
+  id: IFoundryCameraManager
+  parent: Foundry
+  children:
+  - Foundry.IFoundryCameraManager.MainCamera
+  langs:
+  - csharp
+  - vb
+  name: IFoundryCameraManager
+  nameWithType: IFoundryCameraManager
+  fullName: Foundry.IFoundryCameraManager
+  type: Interface
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IFoundryCameraManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IFoundryCameraManager
+    path: ../Player/Scripts/Services/Definition/IFoundryCameraManager.cs
+    startLine: 4
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public interface IFoundryCameraManager
+    content.vb: Public Interface IFoundryCameraManager
+- uid: Foundry.IFoundryCameraManager.MainCamera
+  commentId: P:Foundry.IFoundryCameraManager.MainCamera
+  id: MainCamera
+  parent: Foundry.IFoundryCameraManager
+  langs:
+  - csharp
+  - vb
+  name: MainCamera
+  nameWithType: IFoundryCameraManager.MainCamera
+  fullName: Foundry.IFoundryCameraManager.MainCamera
+  type: Property
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IFoundryCameraManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: MainCamera
+    path: ../Player/Scripts/Services/Definition/IFoundryCameraManager.cs
+    startLine: 6
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Camera MainCamera { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Camera
+    content.vb: Property MainCamera As Camera
+  overload: Foundry.IFoundryCameraManager.MainCamera*
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.IFoundryCameraManager.MainCamera*
+  commentId: Overload:Foundry.IFoundryCameraManager.MainCamera
+  href: Foundry.IFoundryCameraManager.html#Foundry.IFoundryCameraManager.MainCamera
+  name: MainCamera
+  nameWithType: IFoundryCameraManager.MainCamera
+  fullName: Foundry.IFoundryCameraManager.MainCamera
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

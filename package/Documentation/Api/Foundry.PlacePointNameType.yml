@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.PlacePointNameType
+  commentId: T:Foundry.PlacePointNameType
+  id: PlacePointNameType
+  parent: Foundry
+  children:
+  - Foundry.PlacePointNameType.name
+  - Foundry.PlacePointNameType.tag
+  langs:
+  - csharp
+  - vb
+  name: PlacePointNameType
+  nameWithType: PlacePointNameType
+  fullName: Foundry.PlacePointNameType
+  type: Enum
+  source:
+    remote:
+      path: package/Interaction/PlacePoint/PlacePoint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlacePointNameType
+    path: ../Interaction/PlacePoint/PlacePoint.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum PlacePointNameType
+    content.vb: Public Enum PlacePointNameType
+- uid: Foundry.PlacePointNameType.name
+  commentId: F:Foundry.PlacePointNameType.name
+  id: name
+  parent: Foundry.PlacePointNameType
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: PlacePointNameType.name
+  fullName: Foundry.PlacePointNameType.name
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/PlacePoint/PlacePoint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: name
+    path: ../Interaction/PlacePoint/PlacePoint.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: name = 0
+    return:
+      type: Foundry.PlacePointNameType
+- uid: Foundry.PlacePointNameType.tag
+  commentId: F:Foundry.PlacePointNameType.tag
+  id: tag
+  parent: Foundry.PlacePointNameType
+  langs:
+  - csharp
+  - vb
+  name: tag
+  nameWithType: PlacePointNameType.tag
+  fullName: Foundry.PlacePointNameType.tag
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/PlacePoint/PlacePoint.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: tag
+    path: ../Interaction/PlacePoint/PlacePoint.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: tag = 1
+    return:
+      type: Foundry.PlacePointNameType
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.PlacePointNameType
+  commentId: T:Foundry.PlacePointNameType
+  parent: Foundry
+  href: Foundry.PlacePointNameType.html
+  name: PlacePointNameType
+  nameWithType: PlacePointNameType
+  fullName: Foundry.PlacePointNameType

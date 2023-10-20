@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.OrientationMatchAxis
+  commentId: T:Foundry.OrientationMatchAxis
+  id: OrientationMatchAxis
+  parent: Foundry
+  children:
+  - Foundry.OrientationMatchAxis.X
+  - Foundry.OrientationMatchAxis.Y
+  - Foundry.OrientationMatchAxis.Z
+  langs:
+  - csharp
+  - vb
+  name: OrientationMatchAxis
+  nameWithType: OrientationMatchAxis
+  fullName: Foundry.OrientationMatchAxis
+  type: Enum
+  source:
+    remote:
+      path: package/Rendering/Scripts/OrientationMatcher.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: OrientationMatchAxis
+    path: ../Rendering/Scripts/OrientationMatcher.cs
+    startLine: 8
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Specifies which axis will be matched.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum OrientationMatchAxis
+    content.vb: >-
+      <Flags>
+
+      Public Enum OrientationMatchAxis
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: Foundry.OrientationMatchAxis.X
+  commentId: F:Foundry.OrientationMatchAxis.X
+  id: X
+  parent: Foundry.OrientationMatchAxis
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: OrientationMatchAxis.X
+  fullName: Foundry.OrientationMatchAxis.X
+  type: Field
+  source:
+    remote:
+      path: package/Rendering/Scripts/OrientationMatcher.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: X
+    path: ../Rendering/Scripts/OrientationMatcher.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: X = 1
+    return:
+      type: Foundry.OrientationMatchAxis
+- uid: Foundry.OrientationMatchAxis.Y
+  commentId: F:Foundry.OrientationMatchAxis.Y
+  id: Y
+  parent: Foundry.OrientationMatchAxis
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: OrientationMatchAxis.Y
+  fullName: Foundry.OrientationMatchAxis.Y
+  type: Field
+  source:
+    remote:
+      path: package/Rendering/Scripts/OrientationMatcher.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Y
+    path: ../Rendering/Scripts/OrientationMatcher.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Y = 2
+    return:
+      type: Foundry.OrientationMatchAxis
+- uid: Foundry.OrientationMatchAxis.Z
+  commentId: F:Foundry.OrientationMatchAxis.Z
+  id: Z
+  parent: Foundry.OrientationMatchAxis
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: OrientationMatchAxis.Z
+  fullName: Foundry.OrientationMatchAxis.Z
+  type: Field
+  source:
+    remote:
+      path: package/Rendering/Scripts/OrientationMatcher.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Z
+    path: ../Rendering/Scripts/OrientationMatcher.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Z = 4
+    return:
+      type: Foundry.OrientationMatchAxis
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.OrientationMatchAxis
+  commentId: T:Foundry.OrientationMatchAxis
+  parent: Foundry
+  href: Foundry.OrientationMatchAxis.html
+  name: OrientationMatchAxis
+  nameWithType: OrientationMatchAxis
+  fullName: Foundry.OrientationMatchAxis

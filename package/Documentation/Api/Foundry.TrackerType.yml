@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.TrackerType
+  commentId: T:Foundry.TrackerType
+  id: TrackerType
+  parent: Foundry
+  children:
+  - Foundry.TrackerType.head
+  - Foundry.TrackerType.leftFoot
+  - Foundry.TrackerType.leftHand
+  - Foundry.TrackerType.rightFoot
+  - Foundry.TrackerType.rightHand
+  - Foundry.TrackerType.waist
+  langs:
+  - csharp
+  - vb
+  name: TrackerType
+  nameWithType: TrackerType
+  fullName: Foundry.TrackerType
+  type: Enum
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerType
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum TrackerType
+    content.vb: Public Enum TrackerType
+- uid: Foundry.TrackerType.head
+  commentId: F:Foundry.TrackerType.head
+  id: head
+  parent: Foundry.TrackerType
+  langs:
+  - csharp
+  - vb
+  name: head
+  nameWithType: TrackerType.head
+  fullName: Foundry.TrackerType.head
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: head
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: head = 0
+    return:
+      type: Foundry.TrackerType
+- uid: Foundry.TrackerType.leftHand
+  commentId: F:Foundry.TrackerType.leftHand
+  id: leftHand
+  parent: Foundry.TrackerType
+  langs:
+  - csharp
+  - vb
+  name: leftHand
+  nameWithType: TrackerType.leftHand
+  fullName: Foundry.TrackerType.leftHand
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftHand
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 17
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: leftHand = 1
+    return:
+      type: Foundry.TrackerType
+- uid: Foundry.TrackerType.rightHand
+  commentId: F:Foundry.TrackerType.rightHand
+  id: rightHand
+  parent: Foundry.TrackerType
+  langs:
+  - csharp
+  - vb
+  name: rightHand
+  nameWithType: TrackerType.rightHand
+  fullName: Foundry.TrackerType.rightHand
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightHand
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: rightHand = 2
+    return:
+      type: Foundry.TrackerType
+- uid: Foundry.TrackerType.waist
+  commentId: F:Foundry.TrackerType.waist
+  id: waist
+  parent: Foundry.TrackerType
+  langs:
+  - csharp
+  - vb
+  name: waist
+  nameWithType: TrackerType.waist
+  fullName: Foundry.TrackerType.waist
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: waist
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 19
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: waist = 3
+    return:
+      type: Foundry.TrackerType
+- uid: Foundry.TrackerType.leftFoot
+  commentId: F:Foundry.TrackerType.leftFoot
+  id: leftFoot
+  parent: Foundry.TrackerType
+  langs:
+  - csharp
+  - vb
+  name: leftFoot
+  nameWithType: TrackerType.leftFoot
+  fullName: Foundry.TrackerType.leftFoot
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftFoot
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 20
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: leftFoot = 4
+    return:
+      type: Foundry.TrackerType
+- uid: Foundry.TrackerType.rightFoot
+  commentId: F:Foundry.TrackerType.rightFoot
+  id: rightFoot
+  parent: Foundry.TrackerType
+  langs:
+  - csharp
+  - vb
+  name: rightFoot
+  nameWithType: TrackerType.rightFoot
+  fullName: Foundry.TrackerType.rightFoot
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightFoot
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 21
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: rightFoot = 5
+    return:
+      type: Foundry.TrackerType
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.TrackerType
+  commentId: T:Foundry.TrackerType
+  parent: Foundry
+  href: Foundry.TrackerType.html
+  name: TrackerType
+  nameWithType: TrackerType
+  fullName: Foundry.TrackerType

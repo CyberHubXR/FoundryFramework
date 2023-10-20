@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.TrackingMode
+  commentId: T:Foundry.TrackingMode
+  id: TrackingMode
+  parent: Foundry
+  children:
+  - Foundry.TrackingMode.OnePoint
+  - Foundry.TrackingMode.SixPoint
+  - Foundry.TrackingMode.ThreePoint
+  langs:
+  - csharp
+  - vb
+  name: TrackingMode
+  nameWithType: TrackingMode
+  fullName: Foundry.TrackingMode
+  type: Enum
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackingMode
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 7
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum TrackingMode
+    content.vb: Public Enum TrackingMode
+- uid: Foundry.TrackingMode.OnePoint
+  commentId: F:Foundry.TrackingMode.OnePoint
+  id: OnePoint
+  parent: Foundry.TrackingMode
+  langs:
+  - csharp
+  - vb
+  name: OnePoint
+  nameWithType: TrackingMode.OnePoint
+  fullName: Foundry.TrackingMode.OnePoint
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: OnePoint
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: OnePoint = 0
+    return:
+      type: Foundry.TrackingMode
+- uid: Foundry.TrackingMode.ThreePoint
+  commentId: F:Foundry.TrackingMode.ThreePoint
+  id: ThreePoint
+  parent: Foundry.TrackingMode
+  langs:
+  - csharp
+  - vb
+  name: ThreePoint
+  nameWithType: TrackingMode.ThreePoint
+  fullName: Foundry.TrackingMode.ThreePoint
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ThreePoint
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: ThreePoint = 1
+    return:
+      type: Foundry.TrackingMode
+- uid: Foundry.TrackingMode.SixPoint
+  commentId: F:Foundry.TrackingMode.SixPoint
+  id: SixPoint
+  parent: Foundry.TrackingMode
+  langs:
+  - csharp
+  - vb
+  name: SixPoint
+  nameWithType: TrackingMode.SixPoint
+  fullName: Foundry.TrackingMode.SixPoint
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SixPoint
+    path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: SixPoint = 2
+    return:
+      type: Foundry.TrackingMode
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.TrackingMode
+  commentId: T:Foundry.TrackingMode
+  parent: Foundry
+  href: Foundry.TrackingMode.html
+  name: TrackingMode
+  nameWithType: TrackingMode
+  fullName: Foundry.TrackingMode

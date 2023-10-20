@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.Editor
+  commentId: N:Foundry.Networking.Editor
+  id: Foundry.Networking.Editor
+  children:
+  - Foundry.Networking.Editor.NetworkSystemDefinition
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Networking.Editor
+  nameWithType: Foundry.Networking.Editor
+  fullName: Foundry.Networking.Editor
+  type: Namespace
+  assemblies:
+  - Foundry.Networking.Editor
+references:
+- uid: Foundry.Networking.Editor.NetworkSystemDefinition
+  commentId: T:Foundry.Networking.Editor.NetworkSystemDefinition
+  href: Foundry.Networking.Editor.NetworkSystemDefinition.html
+  name: NetworkSystemDefinition
+  nameWithType: NetworkSystemDefinition
+  fullName: Foundry.Networking.Editor.NetworkSystemDefinition

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.DesignTools
+  commentId: N:Foundry.DesignTools
+  id: Foundry.DesignTools
+  children:
+  - Foundry.DesignTools.RenderDebugHUD
+  langs:
+  - csharp
+  - vb
+  name: Foundry.DesignTools
+  nameWithType: Foundry.DesignTools
+  fullName: Foundry.DesignTools
+  type: Namespace
+  assemblies:
+  - Foundry.Core.DesignTools.Runtime
+references:
+- uid: Foundry.DesignTools.RenderDebugHUD
+  commentId: T:Foundry.DesignTools.RenderDebugHUD
+  href: Foundry.DesignTools.RenderDebugHUD.html
+  name: RenderDebugHUD
+  nameWithType: RenderDebugHUD
+  fullName: Foundry.DesignTools.RenderDebugHUD

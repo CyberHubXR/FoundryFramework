@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  id: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  children:
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerCamera
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerChest
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerKeyboard
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftElbow
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftFoot
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftKnee
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftShoulder
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightElbow
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightFoot
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightKnee
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightShoulder
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerWaist
+  langs:
+  - csharp
+  - vb
+  name: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  type: Enum
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: InputDeviceTrackerCharacteristics
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 233
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum HTCViveTrackerProfile.InputDeviceTrackerCharacteristics : uint
+    content.vb: >-
+      <Flags>
+
+      Public Enum HTCViveTrackerProfile.InputDeviceTrackerCharacteristics As UInteger
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftFoot
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftFoot
+  id: TrackerLeftFoot
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerLeftFoot
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftFoot
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftFoot
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerLeftFoot
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 236
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerLeftFoot = 4096
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightFoot
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightFoot
+  id: TrackerRightFoot
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerRightFoot
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightFoot
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightFoot
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerRightFoot
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 237
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerRightFoot = 8192
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftShoulder
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftShoulder
+  id: TrackerLeftShoulder
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerLeftShoulder
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftShoulder
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftShoulder
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerLeftShoulder
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 238
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerLeftShoulder = 16384
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightShoulder
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightShoulder
+  id: TrackerRightShoulder
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerRightShoulder
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightShoulder
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightShoulder
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerRightShoulder
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 239
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerRightShoulder = 32768
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftElbow
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftElbow
+  id: TrackerLeftElbow
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerLeftElbow
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftElbow
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftElbow
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerLeftElbow
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 240
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerLeftElbow = 65536
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightElbow
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightElbow
+  id: TrackerRightElbow
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerRightElbow
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightElbow
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightElbow
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerRightElbow
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 241
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerRightElbow = 131072
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftKnee
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftKnee
+  id: TrackerLeftKnee
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerLeftKnee
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftKnee
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerLeftKnee
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerLeftKnee
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 242
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerLeftKnee = 262144
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightKnee
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightKnee
+  id: TrackerRightKnee
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerRightKnee
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightKnee
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerRightKnee
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerRightKnee
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 243
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerRightKnee = 524288
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerWaist
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerWaist
+  id: TrackerWaist
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerWaist
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerWaist
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerWaist
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerWaist
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 244
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerWaist = 1048576
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerChest
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerChest
+  id: TrackerChest
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerChest
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerChest
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerChest
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerChest
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 245
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerChest = 2097152
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerCamera
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerCamera
+  id: TrackerCamera
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerCamera
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerCamera
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerCamera
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerCamera
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 246
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerCamera = 4194304
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerKeyboard
+  commentId: F:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerKeyboard
+  id: TrackerKeyboard
+  parent: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  langs:
+  - csharp
+  - vb
+  name: TrackerKeyboard
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerKeyboard
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.TrackerKeyboard
+  type: Field
+  source:
+    remote:
+      path: package/XR/Scripts/HTCViveTrackerProfile.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerKeyboard
+    path: ../XR/Scripts/HTCViveTrackerProfile.cs
+    startLine: 247
+  assemblies:
+  - Foundry.Core
+  namespace: UnityEngine.XR.OpenXR.Features.Interactions
+  syntax:
+    content: TrackerKeyboard = 8388608
+    return:
+      type: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+references:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions
+  commentId: N:UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.html
+  name: UnityEngine.XR.OpenXR.Features.Interactions
+  nameWithType: UnityEngine.XR.OpenXR.Features.Interactions
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+    name: InputDeviceTrackerCharacteristics
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.html
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+    name: InputDeviceTrackerCharacteristics
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.html

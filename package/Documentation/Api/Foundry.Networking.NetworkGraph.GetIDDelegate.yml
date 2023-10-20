@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.NetworkGraph.GetIDDelegate
+  commentId: T:Foundry.Networking.NetworkGraph.GetIDDelegate
+  id: NetworkGraph.GetIDDelegate
+  parent: Foundry.Networking
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: NetworkGraph.GetIDDelegate
+  nameWithType: NetworkGraph.GetIDDelegate
+  fullName: Foundry.Networking.NetworkGraph.GetIDDelegate
+  type: Delegate
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetIDDelegate
+    path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
+    startLine: 264
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public delegate int NetworkGraph.GetIDDelegate()
+    return:
+      type: System.Int32
+    content.vb: Public Delegate Function NetworkGraph.GetIDDelegate() As Integer
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

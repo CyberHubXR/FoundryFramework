@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Haptics
+  commentId: N:Foundry.Haptics
+  id: Foundry.Haptics
+  children:
+  - Foundry.Haptics.FoundryHaptics
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Haptics
+  nameWithType: Foundry.Haptics
+  fullName: Foundry.Haptics
+  type: Namespace
+  assemblies:
+  - Foundry.Core
+references:
+- uid: Foundry.Haptics.FoundryHaptics
+  commentId: T:Foundry.Haptics.FoundryHaptics
+  href: Foundry.Haptics.FoundryHaptics.html
+  name: FoundryHaptics
+  nameWithType: FoundryHaptics
+  fullName: Foundry.Haptics.FoundryHaptics

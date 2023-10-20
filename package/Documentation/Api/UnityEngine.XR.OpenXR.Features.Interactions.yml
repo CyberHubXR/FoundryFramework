@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions
+  commentId: N:UnityEngine.XR.OpenXR.Features.Interactions
+  id: UnityEngine.XR.OpenXR.Features.Interactions
+  children:
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  - UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  langs:
+  - csharp
+  - vb
+  name: UnityEngine.XR.OpenXR.Features.Interactions
+  nameWithType: UnityEngine.XR.OpenXR.Features.Interactions
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions
+  type: Namespace
+  assemblies:
+  - Foundry.Core
+references:
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile
+  nameWithType: HTCViveTrackerProfile
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile.TrackerUserPaths
+  nameWithType: HTCViveTrackerProfile.TrackerUserPaths
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+    name: TrackerUserPaths
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.html
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+    name: TrackerUserPaths
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.html
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile.TrackerComponentPaths
+  nameWithType: HTCViveTrackerProfile.TrackerComponentPaths
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
+    name: TrackerComponentPaths
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths.html
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
+    name: TrackerComponentPaths
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths.html
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile.XRTracker
+  nameWithType: HTCViveTrackerProfile.XRTracker
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+    name: XRTracker
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker.html
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+    name: XRTracker
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker.html
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile.XRViveTracker
+  nameWithType: HTCViveTrackerProfile.XRViveTracker
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+    name: XRViveTracker
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+    name: XRViveTracker
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html
+- uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  commentId: T:UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  parent: UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  name: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  nameWithType: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  spec.csharp:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+    name: InputDeviceTrackerCharacteristics
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.html
+  spec.vb:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+    name: InputDeviceTrackerCharacteristics
+    href: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.html
+- uid: UnityEngine.XR.OpenXR.Features.Interactions
+  commentId: N:UnityEngine.XR.OpenXR.Features.Interactions
+  href: UnityEngine.html
+  name: UnityEngine.XR.OpenXR.Features.Interactions
+  nameWithType: UnityEngine.XR.OpenXR.Features.Interactions
+  fullName: UnityEngine.XR.OpenXR.Features.Interactions
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR
+    name: OpenXR
+    href: UnityEngine.XR.OpenXR.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features
+    name: Features
+    href: UnityEngine.XR.OpenXR.Features.html
+  - name: .
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions
+    name: Interactions
+    href: UnityEngine.XR.OpenXR.Features.Interactions.html

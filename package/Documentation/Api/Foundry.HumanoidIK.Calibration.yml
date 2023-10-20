@@ -1,0 +1,641 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.HumanoidIK.Calibration
+  commentId: T:Foundry.HumanoidIK.Calibration
+  id: HumanoidIK.Calibration
+  parent: Foundry
+  children:
+  - Foundry.HumanoidIK.Calibration.autoSetFootRests
+  - Foundry.HumanoidIK.Calibration.autoSetHeadHeight
+  - Foundry.HumanoidIK.Calibration.autoSetSpinePole
+  - Foundry.HumanoidIK.Calibration.autoSetWaistDelta
+  - Foundry.HumanoidIK.Calibration.calibrated
+  - Foundry.HumanoidIK.Calibration.headHeight
+  - Foundry.HumanoidIK.Calibration.leftFootRest
+  - Foundry.HumanoidIK.Calibration.lowerSpineAxis
+  - Foundry.HumanoidIK.Calibration.rightFootRest
+  - Foundry.HumanoidIK.Calibration.spinePoleOffset
+  - Foundry.HumanoidIK.Calibration.waistDelta
+  langs:
+  - csharp
+  - vb
+  name: HumanoidIK.Calibration
+  nameWithType: HumanoidIK.Calibration
+  fullName: Foundry.HumanoidIK.Calibration
+  type: Struct
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Calibration
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 52
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct HumanoidIK.Calibration
+    content.vb: >-
+      <Serializable>
+
+      Public Structure HumanoidIK.Calibration
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.HumanoidIK.Calibration.calibrated
+  commentId: F:Foundry.HumanoidIK.Calibration.calibrated
+  id: calibrated
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: calibrated
+  nameWithType: HumanoidIK.Calibration.calibrated
+  fullName: Foundry.HumanoidIK.Calibration.calibrated
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: calibrated
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 56
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public bool calibrated
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HideInInspector>
+
+      Public calibrated As Boolean
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: Foundry.HumanoidIK.Calibration.autoSetFootRests
+  commentId: F:Foundry.HumanoidIK.Calibration.autoSetFootRests
+  id: autoSetFootRests
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: autoSetFootRests
+  nameWithType: HumanoidIK.Calibration.autoSetFootRests
+  fullName: Foundry.HumanoidIK.Calibration.autoSetFootRests
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: autoSetFootRests
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 58
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public bool autoSetFootRests
+    return:
+      type: System.Boolean
+    content.vb: Public autoSetFootRests As Boolean
+- uid: Foundry.HumanoidIK.Calibration.leftFootRest
+  commentId: F:Foundry.HumanoidIK.Calibration.leftFootRest
+  id: leftFootRest
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: leftFootRest
+  nameWithType: HumanoidIK.Calibration.leftFootRest
+  fullName: Foundry.HumanoidIK.Calibration.leftFootRest
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: leftFootRest
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 59
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot leftFootRest
+    return:
+      type: Foundry.PosRot
+    content.vb: Public leftFootRest As PosRot
+- uid: Foundry.HumanoidIK.Calibration.rightFootRest
+  commentId: F:Foundry.HumanoidIK.Calibration.rightFootRest
+  id: rightFootRest
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: rightFootRest
+  nameWithType: HumanoidIK.Calibration.rightFootRest
+  fullName: Foundry.HumanoidIK.Calibration.rightFootRest
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rightFootRest
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 60
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot rightFootRest
+    return:
+      type: Foundry.PosRot
+    content.vb: Public rightFootRest As PosRot
+- uid: Foundry.HumanoidIK.Calibration.autoSetSpinePole
+  commentId: F:Foundry.HumanoidIK.Calibration.autoSetSpinePole
+  id: autoSetSpinePole
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: autoSetSpinePole
+  nameWithType: HumanoidIK.Calibration.autoSetSpinePole
+  fullName: Foundry.HumanoidIK.Calibration.autoSetSpinePole
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: autoSetSpinePole
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 62
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [FormerlySerializedAs("autoSetSpine")]
+
+      public bool autoSetSpinePole
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <FormerlySerializedAs("autoSetSpine")>
+
+      Public autoSetSpinePole As Boolean
+  attributes:
+  - type: UnityEngine.Serialization.FormerlySerializedAsAttribute
+    ctor: UnityEngine.Serialization.FormerlySerializedAsAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: autoSetSpine
+- uid: Foundry.HumanoidIK.Calibration.spinePoleOffset
+  commentId: F:Foundry.HumanoidIK.Calibration.spinePoleOffset
+  id: spinePoleOffset
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: spinePoleOffset
+  nameWithType: HumanoidIK.Calibration.spinePoleOffset
+  fullName: Foundry.HumanoidIK.Calibration.spinePoleOffset
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: spinePoleOffset
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 63
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 spinePoleOffset
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public spinePoleOffset As Vector3
+- uid: Foundry.HumanoidIK.Calibration.lowerSpineAxis
+  commentId: F:Foundry.HumanoidIK.Calibration.lowerSpineAxis
+  id: lowerSpineAxis
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: lowerSpineAxis
+  nameWithType: HumanoidIK.Calibration.lowerSpineAxis
+  fullName: Foundry.HumanoidIK.Calibration.lowerSpineAxis
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: lowerSpineAxis
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 64
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 lowerSpineAxis
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public lowerSpineAxis As Vector3
+- uid: Foundry.HumanoidIK.Calibration.autoSetHeadHeight
+  commentId: F:Foundry.HumanoidIK.Calibration.autoSetHeadHeight
+  id: autoSetHeadHeight
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: autoSetHeadHeight
+  nameWithType: HumanoidIK.Calibration.autoSetHeadHeight
+  fullName: Foundry.HumanoidIK.Calibration.autoSetHeadHeight
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: autoSetHeadHeight
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 66
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public bool autoSetHeadHeight
+    return:
+      type: System.Boolean
+    content.vb: Public autoSetHeadHeight As Boolean
+- uid: Foundry.HumanoidIK.Calibration.headHeight
+  commentId: F:Foundry.HumanoidIK.Calibration.headHeight
+  id: headHeight
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: headHeight
+  nameWithType: HumanoidIK.Calibration.headHeight
+  fullName: Foundry.HumanoidIK.Calibration.headHeight
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: headHeight
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 67
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public float headHeight
+    return:
+      type: System.Single
+    content.vb: Public headHeight As Single
+- uid: Foundry.HumanoidIK.Calibration.autoSetWaistDelta
+  commentId: F:Foundry.HumanoidIK.Calibration.autoSetWaistDelta
+  id: autoSetWaistDelta
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: autoSetWaistDelta
+  nameWithType: HumanoidIK.Calibration.autoSetWaistDelta
+  fullName: Foundry.HumanoidIK.Calibration.autoSetWaistDelta
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: autoSetWaistDelta
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 68
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public bool autoSetWaistDelta
+    return:
+      type: System.Boolean
+    content.vb: Public autoSetWaistDelta As Boolean
+- uid: Foundry.HumanoidIK.Calibration.waistDelta
+  commentId: F:Foundry.HumanoidIK.Calibration.waistDelta
+  id: waistDelta
+  parent: Foundry.HumanoidIK.Calibration
+  langs:
+  - csharp
+  - vb
+  name: waistDelta
+  nameWithType: HumanoidIK.Calibration.waistDelta
+  fullName: Foundry.HumanoidIK.Calibration.waistDelta
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: waistDelta
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 69
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public PosRot waistDelta
+    return:
+      type: Foundry.PosRot
+    content.vb: Public waistDelta As PosRot
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Foundry.PosRot
+  commentId: T:Foundry.PosRot
+  parent: Foundry
+  href: Foundry.PosRot.html
+  name: PosRot
+  nameWithType: PosRot
+  fullName: Foundry.PosRot
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

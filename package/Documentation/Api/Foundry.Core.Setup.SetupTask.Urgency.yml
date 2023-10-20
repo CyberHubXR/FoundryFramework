@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Setup.SetupTask.Urgency
+  commentId: T:Foundry.Core.Setup.SetupTask.Urgency
+  id: SetupTask.Urgency
+  parent: Foundry.Core.Setup
+  children:
+  - Foundry.Core.Setup.SetupTask.Urgency.Required
+  - Foundry.Core.Setup.SetupTask.Urgency.Suggested
+  langs:
+  - csharp
+  - vb
+  name: SetupTask.Urgency
+  nameWithType: SetupTask.Urgency
+  fullName: Foundry.Core.Setup.SetupTask.Urgency
+  type: Enum
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Urgency
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 43
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: public enum SetupTask.Urgency
+    content.vb: Public Enum SetupTask.Urgency
+- uid: Foundry.Core.Setup.SetupTask.Urgency.Required
+  commentId: F:Foundry.Core.Setup.SetupTask.Urgency.Required
+  id: Required
+  parent: Foundry.Core.Setup.SetupTask.Urgency
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: SetupTask.Urgency.Required
+  fullName: Foundry.Core.Setup.SetupTask.Urgency.Required
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Required
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 45
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: Required = 0
+    return:
+      type: Foundry.Core.Setup.SetupTask.Urgency
+- uid: Foundry.Core.Setup.SetupTask.Urgency.Suggested
+  commentId: F:Foundry.Core.Setup.SetupTask.Urgency.Suggested
+  id: Suggested
+  parent: Foundry.Core.Setup.SetupTask.Urgency
+  langs:
+  - csharp
+  - vb
+  name: Suggested
+  nameWithType: SetupTask.Urgency.Suggested
+  fullName: Foundry.Core.Setup.SetupTask.Urgency.Suggested
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Suggested
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 46
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: Suggested = 1
+    return:
+      type: Foundry.Core.Setup.SetupTask.Urgency
+references:
+- uid: Foundry.Core.Setup
+  commentId: N:Foundry.Core.Setup
+  href: Foundry.html
+  name: Foundry.Core.Setup
+  nameWithType: Foundry.Core.Setup
+  fullName: Foundry.Core.Setup
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+- uid: Foundry.Core.Setup.SetupTask.Urgency
+  commentId: T:Foundry.Core.Setup.SetupTask.Urgency
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.SetupTask.html
+  name: SetupTask.Urgency
+  nameWithType: SetupTask.Urgency
+  fullName: Foundry.Core.Setup.SetupTask.Urgency
+  spec.csharp:
+  - uid: Foundry.Core.Setup.SetupTask
+    name: SetupTask
+    href: Foundry.Core.Setup.SetupTask.html
+  - name: .
+  - uid: Foundry.Core.Setup.SetupTask.Urgency
+    name: Urgency
+    href: Foundry.Core.Setup.SetupTask.Urgency.html
+  spec.vb:
+  - uid: Foundry.Core.Setup.SetupTask
+    name: SetupTask
+    href: Foundry.Core.Setup.SetupTask.html
+  - name: .
+  - uid: Foundry.Core.Setup.SetupTask.Urgency
+    name: Urgency
+    href: Foundry.Core.Setup.SetupTask.Urgency.html

@@ -1,0 +1,772 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Editor.PackageManagerUtil
+  commentId: T:Foundry.Core.Editor.PackageManagerUtil
+  id: PackageManagerUtil
+  parent: Foundry.Core.Editor
+  children:
+  - Foundry.Core.Editor.PackageManagerUtil.AddPackage(System.String,System.String)
+  - Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry(Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry)
+  - Foundry.Core.Editor.PackageManagerUtil.Apply
+  - Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled(System.Collections.Generic.List{System.String})
+  - Foundry.Core.Editor.PackageManagerUtil.GetPackageSource(System.String)
+  - Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined(System.String)
+  - Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled(System.String)
+  - Foundry.Core.Editor.PackageManagerUtil.ReadManifest
+  langs:
+  - csharp
+  - vb
+  name: PackageManagerUtil
+  nameWithType: PackageManagerUtil
+  fullName: Foundry.Core.Editor.PackageManagerUtil
+  type: Class
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PackageManagerUtil
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public static class PackageManagerUtil
+    content.vb: Public Module PackageManagerUtil
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Foundry.Core.Editor.PackageManagerUtil.ReadManifest
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.ReadManifest
+  id: ReadManifest
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: ReadManifest()
+  nameWithType: PackageManagerUtil.ReadManifest()
+  fullName: Foundry.Core.Editor.PackageManagerUtil.ReadManifest()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ReadManifest
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: >-
+      [InitializeOnLoadMethod]
+
+      public static void ReadManifest()
+    content.vb: >-
+      <InitializeOnLoadMethod>
+
+      Public Shared Sub ReadManifest()
+  overload: Foundry.Core.Editor.PackageManagerUtil.ReadManifest*
+  attributes:
+  - type: UnityEditor.InitializeOnLoadMethodAttribute
+    ctor: UnityEditor.InitializeOnLoadMethodAttribute.#ctor
+    arguments: []
+- uid: Foundry.Core.Editor.PackageManagerUtil.Apply
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.Apply
+  id: Apply
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: Apply()
+  nameWithType: PackageManagerUtil.Apply()
+  fullName: Foundry.Core.Editor.PackageManagerUtil.Apply()
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Apply
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 26
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public static void Apply()
+    content.vb: Public Shared Sub Apply()
+  overload: Foundry.Core.Editor.PackageManagerUtil.Apply*
+- uid: Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled(System.String)
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled(System.String)
+  id: IsPackageInstalled(System.String)
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: IsPackageInstalled(string)
+  nameWithType: PackageManagerUtil.IsPackageInstalled(string)
+  fullName: Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled(string)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IsPackageInstalled
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 35
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public static bool IsPackageInstalled(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsPackageInstalled(name As String) As Boolean
+  overload: Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled*
+  nameWithType.vb: PackageManagerUtil.IsPackageInstalled(String)
+  fullName.vb: Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled(String)
+  name.vb: IsPackageInstalled(String)
+- uid: Foundry.Core.Editor.PackageManagerUtil.GetPackageSource(System.String)
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.GetPackageSource(System.String)
+  id: GetPackageSource(System.String)
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: GetPackageSource(string)
+  nameWithType: PackageManagerUtil.GetPackageSource(string)
+  fullName: Foundry.Core.Editor.PackageManagerUtil.GetPackageSource(string)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetPackageSource
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 46
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public static string GetPackageSource(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetPackageSource(name As String) As String
+  overload: Foundry.Core.Editor.PackageManagerUtil.GetPackageSource*
+  nameWithType.vb: PackageManagerUtil.GetPackageSource(String)
+  fullName.vb: Foundry.Core.Editor.PackageManagerUtil.GetPackageSource(String)
+  name.vb: GetPackageSource(String)
+- uid: Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled(System.Collections.Generic.List{System.String})
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled(System.Collections.Generic.List{System.String})
+  id: ArePackagesInstalled(System.Collections.Generic.List{System.String})
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: ArePackagesInstalled(List<string>)
+  nameWithType: PackageManagerUtil.ArePackagesInstalled(List<string>)
+  fullName: Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled(System.Collections.Generic.List<string>)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ArePackagesInstalled
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 54
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public static bool ArePackagesInstalled(List<string> names)
+    parameters:
+    - id: names
+      type: System.Collections.Generic.List{System.String}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function ArePackagesInstalled(names As List(Of String)) As Boolean
+  overload: Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled*
+  nameWithType.vb: PackageManagerUtil.ArePackagesInstalled(List(Of String))
+  fullName.vb: Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled(System.Collections.Generic.List(Of String))
+  name.vb: ArePackagesInstalled(List(Of String))
+- uid: Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry(Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry)
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry(Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry)
+  id: AddScopedRegistry(Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry)
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: AddScopedRegistry(ScopedRegestry)
+  nameWithType: PackageManagerUtil.AddScopedRegistry(PackageManagerUtil.ScopedRegestry)
+  fullName: Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry(Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: AddScopedRegistry
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 76
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public static void AddScopedRegistry(PackageManagerUtil.ScopedRegestry regestry)
+    parameters:
+    - id: regestry
+      type: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+    content.vb: Public Shared Sub AddScopedRegistry(regestry As PackageManagerUtil.ScopedRegestry)
+  overload: Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry*
+- uid: Foundry.Core.Editor.PackageManagerUtil.AddPackage(System.String,System.String)
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.AddPackage(System.String,System.String)
+  id: AddPackage(System.String,System.String)
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: AddPackage(string, string)
+  nameWithType: PackageManagerUtil.AddPackage(string, string)
+  fullName: Foundry.Core.Editor.PackageManagerUtil.AddPackage(string, string)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: AddPackage
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 101
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  summary: Adds or updates a package in manifest.json
+  example: []
+  syntax:
+    content: public static void AddPackage(string packageName, string packageVersion)
+    parameters:
+    - id: packageName
+      type: System.String
+      description: 'Name of package: "com.example.packageName"'
+    - id: packageVersion
+      type: System.String
+      description: 'Either a version number or git repo: "0.0.1" or "https://github.com/etc..."'
+    content.vb: Public Shared Sub AddPackage(packageName As String, packageVersion As String)
+  overload: Foundry.Core.Editor.PackageManagerUtil.AddPackage*
+  nameWithType.vb: PackageManagerUtil.AddPackage(String, String)
+  fullName.vb: Foundry.Core.Editor.PackageManagerUtil.AddPackage(String, String)
+  name.vb: AddPackage(String, String)
+- uid: Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined(System.String)
+  commentId: M:Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined(System.String)
+  id: IsAssemblyDefined(System.String)
+  parent: Foundry.Core.Editor.PackageManagerUtil
+  langs:
+  - csharp
+  - vb
+  name: IsAssemblyDefined(string)
+  nameWithType: PackageManagerUtil.IsAssemblyDefined(string)
+  fullName: Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined(string)
+  type: Method
+  source:
+    remote:
+      path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IsAssemblyDefined
+    path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
+    startLine: 114
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+  namespace: Foundry.Core.Editor
+  syntax:
+    content: public static bool IsAssemblyDefined(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsAssemblyDefined(name As String) As Boolean
+  overload: Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined*
+  nameWithType.vb: PackageManagerUtil.IsAssemblyDefined(String)
+  fullName.vb: Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined(String)
+  name.vb: IsAssemblyDefined(String)
+references:
+- uid: Foundry.Core.Editor
+  commentId: N:Foundry.Core.Editor
+  href: Foundry.html
+  name: Foundry.Core.Editor
+  nameWithType: Foundry.Core.Editor
+  fullName: Foundry.Core.Editor
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Core.Editor.PackageManagerUtil.ReadManifest*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.ReadManifest
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.ReadManifest
+  name: ReadManifest
+  nameWithType: PackageManagerUtil.ReadManifest
+  fullName: Foundry.Core.Editor.PackageManagerUtil.ReadManifest
+- uid: Foundry.Core.Editor.PackageManagerUtil.Apply*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.Apply
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.Apply
+  name: Apply
+  nameWithType: PackageManagerUtil.Apply
+  fullName: Foundry.Core.Editor.PackageManagerUtil.Apply
+- uid: Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled(System.String)
+  name: IsPackageInstalled
+  nameWithType: PackageManagerUtil.IsPackageInstalled
+  fullName: Foundry.Core.Editor.PackageManagerUtil.IsPackageInstalled
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Foundry.Core.Editor.PackageManagerUtil.GetPackageSource*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.GetPackageSource
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.GetPackageSource(System.String)
+  name: GetPackageSource
+  nameWithType: PackageManagerUtil.GetPackageSource
+  fullName: Foundry.Core.Editor.PackageManagerUtil.GetPackageSource
+- uid: Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled(System.Collections.Generic.List{System.String})
+  name: ArePackagesInstalled
+  nameWithType: PackageManagerUtil.ArePackagesInstalled
+  fullName: Foundry.Core.Editor.PackageManagerUtil.ArePackagesInstalled
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry(Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry)
+  name: AddScopedRegistry
+  nameWithType: PackageManagerUtil.AddScopedRegistry
+  fullName: Foundry.Core.Editor.PackageManagerUtil.AddScopedRegistry
+- uid: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+  commentId: T:Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+  parent: Foundry.Core.Editor
+  href: Foundry.Core.Editor.PackageManagerUtil.html
+  name: PackageManagerUtil.ScopedRegestry
+  nameWithType: PackageManagerUtil.ScopedRegestry
+  fullName: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+  spec.csharp:
+  - uid: Foundry.Core.Editor.PackageManagerUtil
+    name: PackageManagerUtil
+    href: Foundry.Core.Editor.PackageManagerUtil.html
+  - name: .
+  - uid: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+    name: ScopedRegestry
+    href: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry.html
+  spec.vb:
+  - uid: Foundry.Core.Editor.PackageManagerUtil
+    name: PackageManagerUtil
+    href: Foundry.Core.Editor.PackageManagerUtil.html
+  - name: .
+  - uid: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+    name: ScopedRegestry
+    href: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry.html
+- uid: Foundry.Core.Editor.PackageManagerUtil.AddPackage*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.AddPackage
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.AddPackage(System.String,System.String)
+  name: AddPackage
+  nameWithType: PackageManagerUtil.AddPackage
+  fullName: Foundry.Core.Editor.PackageManagerUtil.AddPackage
+- uid: Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined*
+  commentId: Overload:Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined
+  href: Foundry.Core.Editor.PackageManagerUtil.html#Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined(System.String)
+  name: IsAssemblyDefined
+  nameWithType: PackageManagerUtil.IsAssemblyDefined
+  fullName: Foundry.Core.Editor.PackageManagerUtil.IsAssemblyDefined

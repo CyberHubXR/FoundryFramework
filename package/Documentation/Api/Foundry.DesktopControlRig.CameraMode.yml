@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.DesktopControlRig.CameraMode
+  commentId: T:Foundry.DesktopControlRig.CameraMode
+  id: DesktopControlRig.CameraMode
+  parent: Foundry
+  children:
+  - Foundry.DesktopControlRig.CameraMode.InteractUI
+  - Foundry.DesktopControlRig.CameraMode.Look
+  langs:
+  - csharp
+  - vb
+  name: DesktopControlRig.CameraMode
+  nameWithType: DesktopControlRig.CameraMode
+  fullName: Foundry.DesktopControlRig.CameraMode
+  type: Enum
+  source:
+    remote:
+      path: package/Player/Scripts/DesktopControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: CameraMode
+    path: ../Player/Scripts/DesktopControlRig.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum DesktopControlRig.CameraMode
+    content.vb: Public Enum DesktopControlRig.CameraMode
+- uid: Foundry.DesktopControlRig.CameraMode.Look
+  commentId: F:Foundry.DesktopControlRig.CameraMode.Look
+  id: Look
+  parent: Foundry.DesktopControlRig.CameraMode
+  langs:
+  - csharp
+  - vb
+  name: Look
+  nameWithType: DesktopControlRig.CameraMode.Look
+  fullName: Foundry.DesktopControlRig.CameraMode.Look
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/DesktopControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Look
+    path: ../Player/Scripts/DesktopControlRig.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Look = 0
+    return:
+      type: Foundry.DesktopControlRig.CameraMode
+- uid: Foundry.DesktopControlRig.CameraMode.InteractUI
+  commentId: F:Foundry.DesktopControlRig.CameraMode.InteractUI
+  id: InteractUI
+  parent: Foundry.DesktopControlRig.CameraMode
+  langs:
+  - csharp
+  - vb
+  name: InteractUI
+  nameWithType: DesktopControlRig.CameraMode.InteractUI
+  fullName: Foundry.DesktopControlRig.CameraMode.InteractUI
+  type: Field
+  source:
+    remote:
+      path: package/Player/Scripts/DesktopControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: InteractUI
+    path: ../Player/Scripts/DesktopControlRig.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: InteractUI = 1
+    return:
+      type: Foundry.DesktopControlRig.CameraMode
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.DesktopControlRig.CameraMode
+  commentId: T:Foundry.DesktopControlRig.CameraMode
+  parent: Foundry
+  href: Foundry.DesktopControlRig.html
+  name: DesktopControlRig.CameraMode
+  nameWithType: DesktopControlRig.CameraMode
+  fullName: Foundry.DesktopControlRig.CameraMode
+  spec.csharp:
+  - uid: Foundry.DesktopControlRig
+    name: DesktopControlRig
+    href: Foundry.DesktopControlRig.html
+  - name: .
+  - uid: Foundry.DesktopControlRig.CameraMode
+    name: CameraMode
+    href: Foundry.DesktopControlRig.CameraMode.html
+  spec.vb:
+  - uid: Foundry.DesktopControlRig
+    name: DesktopControlRig
+    href: Foundry.DesktopControlRig.html
+  - name: .
+  - uid: Foundry.DesktopControlRig.CameraMode
+    name: CameraMode
+    href: Foundry.DesktopControlRig.CameraMode.html

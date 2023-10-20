@@ -1,0 +1,21 @@
+### YamlMime:TableOfContent
+items:
+- name: Manual
+  href: index.md
+  items:
+  - name: Getting Started
+    href: GettingStarted.md
+  - name: Making A New Scene
+    href: MakingANewScene.md
+  - name: How the player works
+    href: HowThePlayerWorks.md
+  - name: Networking
+    href: Networking/Networking.md
+    items:
+      - name: Networked Components
+        href: Networking/NetworkComponent.md
+  - name: Advanced
+    items:
+      - name: Setup Wizard
+        href: SetupWizard.md
+memberLayout: SamePage

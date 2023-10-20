@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.PlayerRigEvent
+  commentId: T:Foundry.PlayerRigEvent
+  id: PlayerRigEvent
+  parent: Foundry
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PlayerRigEvent
+  nameWithType: PlayerRigEvent
+  fullName: Foundry.PlayerRigEvent
+  type: Delegate
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PlayerRigEvent
+    path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
+    startLine: 6
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public delegate void PlayerRigEvent(IPlayerControlRig rig)
+    parameters:
+    - id: rig
+      type: Foundry.IPlayerControlRig
+    content.vb: Public Delegate Sub PlayerRigEvent(rig As IPlayerControlRig)
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.IPlayerControlRig
+  commentId: T:Foundry.IPlayerControlRig
+  parent: Foundry
+  href: Foundry.IPlayerControlRig.html
+  name: IPlayerControlRig
+  nameWithType: IPlayerControlRig
+  fullName: Foundry.IPlayerControlRig

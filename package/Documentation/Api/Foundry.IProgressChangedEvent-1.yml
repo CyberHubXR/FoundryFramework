@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.IProgressChangedEvent`1
+  commentId: T:Foundry.IProgressChangedEvent`1
+  id: IProgressChangedEvent`1
+  parent: Foundry
+  children:
+  - Foundry.IProgressChangedEvent`1.ProgressChanged
+  langs:
+  - csharp
+  - vb
+  name: IProgressChangedEvent<TProgress>
+  nameWithType: IProgressChangedEvent<TProgress>
+  fullName: Foundry.IProgressChangedEvent<TProgress>
+  type: Interface
+  source:
+    remote:
+      path: package/Progress/Scripts/IProgressChangedEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IProgressChangedEvent
+    path: ../Progress/Scripts/IProgressChangedEvent.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Interface for a class that provides a ProgressChanged event with a custom report type.
+  example: []
+  syntax:
+    content: public interface IProgressChangedEvent<TProgress>
+    typeParameters:
+    - id: TProgress
+      description: The type of data reported by the ProgressChanged event.
+    content.vb: Public Interface IProgressChangedEvent(Of TProgress)
+  nameWithType.vb: IProgressChangedEvent(Of TProgress)
+  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress)
+  name.vb: IProgressChangedEvent(Of TProgress)
+- uid: Foundry.IProgressChangedEvent`1.ProgressChanged
+  commentId: E:Foundry.IProgressChangedEvent`1.ProgressChanged
+  id: ProgressChanged
+  parent: Foundry.IProgressChangedEvent`1
+  langs:
+  - csharp
+  - vb
+  name: ProgressChanged
+  nameWithType: IProgressChangedEvent<TProgress>.ProgressChanged
+  fullName: Foundry.IProgressChangedEvent<TProgress>.ProgressChanged
+  type: Event
+  source:
+    remote:
+      path: package/Progress/Scripts/IProgressChangedEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ProgressChanged
+    path: ../Progress/Scripts/IProgressChangedEvent.cs
+    startLine: 19
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Raised for each reported progress value.
+  example: []
+  syntax:
+    content: event EventHandler<TProgress> ProgressChanged
+    return:
+      type: System.EventHandler{{TProgress}}
+    content.vb: Event ProgressChanged As EventHandler(Of TProgress)
+  nameWithType.vb: IProgressChangedEvent(Of TProgress).ProgressChanged
+  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress).ProgressChanged
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.EventHandler{{TProgress}}
+  commentId: T:System.EventHandler{`0}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TProgress>
+  nameWithType: EventHandler<TProgress>
+  fullName: System.EventHandler<TProgress>
+  nameWithType.vb: EventHandler(Of TProgress)
+  fullName.vb: System.EventHandler(Of TProgress)
+  name.vb: EventHandler(Of TProgress)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TProgress
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProgress
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

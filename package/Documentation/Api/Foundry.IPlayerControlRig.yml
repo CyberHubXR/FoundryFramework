@@ -1,0 +1,290 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.IPlayerControlRig
+  commentId: T:Foundry.IPlayerControlRig
+  id: IPlayerControlRig
+  parent: Foundry
+  children:
+  - Foundry.IPlayerControlRig.GetTrackingMode
+  - Foundry.IPlayerControlRig.TrackerTransform(Foundry.TrackerType)
+  - Foundry.IPlayerControlRig.UpdateTrackers(Foundry.TrackerPos[])
+  - Foundry.IPlayerControlRig.enabled
+  - Foundry.IPlayerControlRig.transform
+  langs:
+  - csharp
+  - vb
+  name: IPlayerControlRig
+  nameWithType: IPlayerControlRig
+  fullName: Foundry.IPlayerControlRig
+  type: Interface
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IPlayerControlRig
+    path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Interface for for implementing player control rig, this is how we handle different control schemes such as desktop and VR.
+  example: []
+  syntax:
+    content: public interface IPlayerControlRig
+    content.vb: Public Interface IPlayerControlRig
+- uid: Foundry.IPlayerControlRig.transform
+  commentId: P:Foundry.IPlayerControlRig.transform
+  id: transform
+  parent: Foundry.IPlayerControlRig
+  langs:
+  - csharp
+  - vb
+  name: transform
+  nameWithType: IPlayerControlRig.transform
+  fullName: Foundry.IPlayerControlRig.transform
+  type: Property
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: transform
+    path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Transform transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: ReadOnly Property transform As Transform
+  overload: Foundry.IPlayerControlRig.transform*
+- uid: Foundry.IPlayerControlRig.enabled
+  commentId: P:Foundry.IPlayerControlRig.enabled
+  id: enabled
+  parent: Foundry.IPlayerControlRig
+  langs:
+  - csharp
+  - vb
+  name: enabled
+  nameWithType: IPlayerControlRig.enabled
+  fullName: Foundry.IPlayerControlRig.enabled
+  type: Property
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: enabled
+    path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: bool enabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property enabled As Boolean
+  overload: Foundry.IPlayerControlRig.enabled*
+- uid: Foundry.IPlayerControlRig.TrackerTransform(Foundry.TrackerType)
+  commentId: M:Foundry.IPlayerControlRig.TrackerTransform(Foundry.TrackerType)
+  id: TrackerTransform(Foundry.TrackerType)
+  parent: Foundry.IPlayerControlRig
+  langs:
+  - csharp
+  - vb
+  name: TrackerTransform(TrackerType)
+  nameWithType: IPlayerControlRig.TrackerTransform(TrackerType)
+  fullName: Foundry.IPlayerControlRig.TrackerTransform(Foundry.TrackerType)
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: TrackerTransform
+    path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Transform TrackerTransform(TrackerType type)
+    parameters:
+    - id: type
+      type: Foundry.TrackerType
+    return:
+      type: UnityEngine.Transform
+    content.vb: Function TrackerTransform(type As TrackerType) As Transform
+  overload: Foundry.IPlayerControlRig.TrackerTransform*
+- uid: Foundry.IPlayerControlRig.GetTrackingMode
+  commentId: M:Foundry.IPlayerControlRig.GetTrackingMode
+  id: GetTrackingMode
+  parent: Foundry.IPlayerControlRig
+  langs:
+  - csharp
+  - vb
+  name: GetTrackingMode()
+  nameWithType: IPlayerControlRig.GetTrackingMode()
+  fullName: Foundry.IPlayerControlRig.GetTrackingMode()
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GetTrackingMode
+    path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
+    startLine: 18
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: TrackingMode GetTrackingMode()
+    return:
+      type: Foundry.TrackingMode
+    content.vb: Function GetTrackingMode() As TrackingMode
+  overload: Foundry.IPlayerControlRig.GetTrackingMode*
+- uid: Foundry.IPlayerControlRig.UpdateTrackers(Foundry.TrackerPos[])
+  commentId: M:Foundry.IPlayerControlRig.UpdateTrackers(Foundry.TrackerPos[])
+  id: UpdateTrackers(Foundry.TrackerPos[])
+  parent: Foundry.IPlayerControlRig
+  langs:
+  - csharp
+  - vb
+  name: UpdateTrackers(TrackerPos[])
+  nameWithType: IPlayerControlRig.UpdateTrackers(TrackerPos[])
+  fullName: Foundry.IPlayerControlRig.UpdateTrackers(Foundry.TrackerPos[])
+  type: Method
+  source:
+    remote:
+      path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: UpdateTrackers
+    path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
+    startLine: 24
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Request the current positions of all trackers
+  example: []
+  syntax:
+    content: void UpdateTrackers(TrackerPos[] trackers)
+    parameters:
+    - id: trackers
+      type: Foundry.TrackerPos[]
+      description: Array with a length of 6 representing some trackers to be updated
+    content.vb: Sub UpdateTrackers(trackers As TrackerPos())
+  overload: Foundry.IPlayerControlRig.UpdateTrackers*
+  nameWithType.vb: IPlayerControlRig.UpdateTrackers(TrackerPos())
+  fullName.vb: Foundry.IPlayerControlRig.UpdateTrackers(Foundry.TrackerPos())
+  name.vb: UpdateTrackers(TrackerPos())
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.IPlayerControlRig.transform*
+  commentId: Overload:Foundry.IPlayerControlRig.transform
+  href: Foundry.IPlayerControlRig.html#Foundry.IPlayerControlRig.transform
+  name: transform
+  nameWithType: IPlayerControlRig.transform
+  fullName: Foundry.IPlayerControlRig.transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Foundry.IPlayerControlRig.enabled*
+  commentId: Overload:Foundry.IPlayerControlRig.enabled
+  href: Foundry.IPlayerControlRig.html#Foundry.IPlayerControlRig.enabled
+  name: enabled
+  nameWithType: IPlayerControlRig.enabled
+  fullName: Foundry.IPlayerControlRig.enabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.IPlayerControlRig.TrackerTransform*
+  commentId: Overload:Foundry.IPlayerControlRig.TrackerTransform
+  href: Foundry.IPlayerControlRig.html#Foundry.IPlayerControlRig.TrackerTransform(Foundry.TrackerType)
+  name: TrackerTransform
+  nameWithType: IPlayerControlRig.TrackerTransform
+  fullName: Foundry.IPlayerControlRig.TrackerTransform
+- uid: Foundry.TrackerType
+  commentId: T:Foundry.TrackerType
+  parent: Foundry
+  href: Foundry.TrackerType.html
+  name: TrackerType
+  nameWithType: TrackerType
+  fullName: Foundry.TrackerType
+- uid: Foundry.IPlayerControlRig.GetTrackingMode*
+  commentId: Overload:Foundry.IPlayerControlRig.GetTrackingMode
+  href: Foundry.IPlayerControlRig.html#Foundry.IPlayerControlRig.GetTrackingMode
+  name: GetTrackingMode
+  nameWithType: IPlayerControlRig.GetTrackingMode
+  fullName: Foundry.IPlayerControlRig.GetTrackingMode
+- uid: Foundry.TrackingMode
+  commentId: T:Foundry.TrackingMode
+  parent: Foundry
+  href: Foundry.TrackingMode.html
+  name: TrackingMode
+  nameWithType: TrackingMode
+  fullName: Foundry.TrackingMode
+- uid: Foundry.IPlayerControlRig.UpdateTrackers*
+  commentId: Overload:Foundry.IPlayerControlRig.UpdateTrackers
+  href: Foundry.IPlayerControlRig.html#Foundry.IPlayerControlRig.UpdateTrackers(Foundry.TrackerPos[])
+  name: UpdateTrackers
+  nameWithType: IPlayerControlRig.UpdateTrackers
+  fullName: Foundry.IPlayerControlRig.UpdateTrackers
+- uid: Foundry.TrackerPos[]
+  isExternal: true
+  href: Foundry.TrackerPos.html
+  name: TrackerPos[]
+  nameWithType: TrackerPos[]
+  fullName: Foundry.TrackerPos[]
+  nameWithType.vb: TrackerPos()
+  fullName.vb: Foundry.TrackerPos()
+  name.vb: TrackerPos()
+  spec.csharp:
+  - uid: Foundry.TrackerPos
+    name: TrackerPos
+    href: Foundry.TrackerPos.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Foundry.TrackerPos
+    name: TrackerPos
+    href: Foundry.TrackerPos.html
+  - name: (
+  - name: )

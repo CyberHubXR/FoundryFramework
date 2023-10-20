@@ -1,0 +1,516 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.PosRot
+  commentId: T:Foundry.PosRot
+  id: PosRot
+  parent: Foundry
+  children:
+  - Foundry.PosRot.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - Foundry.PosRot.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  - Foundry.PosRot.pos
+  - Foundry.PosRot.rot
+  langs:
+  - csharp
+  - vb
+  name: PosRot
+  nameWithType: PosRot
+  fullName: Foundry.PosRot
+  type: Struct
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: PosRot
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct PosRot : IFoundrySerializable
+    content.vb: >-
+      <Serializable>
+
+      Public Structure PosRot Implements IFoundrySerializable
+  implements:
+  - Foundry.Core.Serialization.IFoundrySerializable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.PosRot.pos
+  commentId: F:Foundry.PosRot.pos
+  id: pos
+  parent: Foundry.PosRot
+  langs:
+  - csharp
+  - vb
+  name: pos
+  nameWithType: PosRot.pos
+  fullName: Foundry.PosRot.pos
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: pos
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Vector3 pos
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public pos As Vector3
+- uid: Foundry.PosRot.rot
+  commentId: F:Foundry.PosRot.rot
+  id: rot
+  parent: Foundry.PosRot
+  langs:
+  - csharp
+  - vb
+  name: rot
+  nameWithType: PosRot.rot
+  fullName: Foundry.PosRot.rot
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: rot
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public Quaternion rot
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public rot As Quaternion
+- uid: Foundry.PosRot.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  commentId: M:Foundry.PosRot.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  id: Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  parent: Foundry.PosRot
+  langs:
+  - csharp
+  - vb
+  name: Serialize(FoundrySerializer)
+  nameWithType: PosRot.Serialize(FoundrySerializer)
+  fullName: Foundry.PosRot.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  type: Method
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Serialize
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  example: []
+  syntax:
+    content: public void Serialize(FoundrySerializer serializer)
+    parameters:
+    - id: serializer
+      type: Foundry.Core.Serialization.FoundrySerializer
+    content.vb: Public Sub Serialize(serializer As FoundrySerializer)
+  overload: Foundry.PosRot.Serialize*
+  implements:
+  - Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+- uid: Foundry.PosRot.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.PosRot.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  id: Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.PosRot
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: PosRot.Deserialize(FoundryDeserializer)
+  fullName: Foundry.PosRot.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  type: Method
+  source:
+    remote:
+      path: package/Avatar/Scripts/HumanoidIK.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Deserialize
+    path: ../Avatar/Scripts/HumanoidIK.cs
+    startLine: 20
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  example: []
+  syntax:
+    content: public void Deserialize(FoundryDeserializer deserializer)
+    parameters:
+    - id: deserializer
+      type: Foundry.Core.Serialization.FoundryDeserializer
+    content.vb: Public Sub Deserialize(deserializer As FoundryDeserializer)
+  overload: Foundry.PosRot.Deserialize*
+  implements:
+  - Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.Core.Serialization.IFoundrySerializable
+  commentId: T:Foundry.Core.Serialization.IFoundrySerializable
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.IFoundrySerializable.html
+  name: IFoundrySerializable
+  nameWithType: IFoundrySerializable
+  fullName: Foundry.Core.Serialization.IFoundrySerializable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Foundry.Core.Serialization
+  commentId: N:Foundry.Core.Serialization
+  href: Foundry.html
+  name: Foundry.Core.Serialization
+  nameWithType: Foundry.Core.Serialization
+  fullName: Foundry.Core.Serialization
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: Foundry.PosRot.Serialize*
+  commentId: Overload:Foundry.PosRot.Serialize
+  href: Foundry.PosRot.html#Foundry.PosRot.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  name: Serialize
+  nameWithType: PosRot.Serialize
+  fullName: Foundry.PosRot.Serialize
+- uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  commentId: M:Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  parent: Foundry.Core.Serialization.IFoundrySerializable
+  name: Serialize(FoundrySerializer)
+  nameWithType: IFoundrySerializable.Serialize(FoundrySerializer)
+  fullName: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  spec.csharp:
+  - uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+    name: Serialize
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundrySerializer
+    name: FoundrySerializer
+  - name: )
+  spec.vb:
+  - uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+    name: Serialize
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundrySerializer
+    name: FoundrySerializer
+  - name: )
+- uid: Foundry.Core.Serialization.FoundrySerializer
+  commentId: T:Foundry.Core.Serialization.FoundrySerializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundrySerializer.html
+  name: FoundrySerializer
+  nameWithType: FoundrySerializer
+  fullName: Foundry.Core.Serialization.FoundrySerializer
+- uid: Foundry.PosRot.Deserialize*
+  commentId: Overload:Foundry.PosRot.Deserialize
+  href: Foundry.PosRot.html#Foundry.PosRot.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Deserialize
+  nameWithType: PosRot.Deserialize
+  fullName: Foundry.PosRot.Deserialize
+- uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Core.Serialization.IFoundrySerializable
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: IFoundrySerializable.Deserialize(FoundryDeserializer)
+  fullName: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  spec.csharp:
+  - uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+    name: Deserialize
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundryDeserializer
+    name: FoundryDeserializer
+  - name: )
+  spec.vb:
+  - uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+    name: Deserialize
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundryDeserializer
+    name: FoundryDeserializer
+  - name: )
+- uid: Foundry.Core.Serialization.FoundryDeserializer
+  commentId: T:Foundry.Core.Serialization.FoundryDeserializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundryDeserializer.html
+  name: FoundryDeserializer
+  nameWithType: FoundryDeserializer
+  fullName: Foundry.Core.Serialization.FoundryDeserializer

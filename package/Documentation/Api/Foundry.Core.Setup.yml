@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Setup
+  commentId: N:Foundry.Core.Setup
+  id: Foundry.Core.Setup
+  children:
+  - Foundry.Core.Setup.FoundryPhysicsSetup
+  - Foundry.Core.Setup.FoundrySetupWizard
+  - Foundry.Core.Setup.IModuleSetupTasks
+  - Foundry.Core.Setup.IModuleSetupTasks.State
+  - Foundry.Core.Setup.SetupAction
+  - Foundry.Core.Setup.SetupTask
+  - Foundry.Core.Setup.SetupTask.Urgency
+  - Foundry.Core.Setup.SetupTaskList
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Core.Setup
+  nameWithType: Foundry.Core.Setup
+  fullName: Foundry.Core.Setup
+  type: Namespace
+  assemblies:
+  - Foundry.Core.Setup
+references:
+- uid: Foundry.Core.Setup.SetupAction
+  commentId: T:Foundry.Core.Setup.SetupAction
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.SetupAction.html
+  name: SetupAction
+  nameWithType: SetupAction
+  fullName: Foundry.Core.Setup.SetupAction
+- uid: Foundry.Core.Setup.SetupTask
+  commentId: T:Foundry.Core.Setup.SetupTask
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.SetupTask.html
+  name: SetupTask
+  nameWithType: SetupTask
+  fullName: Foundry.Core.Setup.SetupTask
+- uid: Foundry.Core.Setup.SetupTask.Urgency
+  commentId: T:Foundry.Core.Setup.SetupTask.Urgency
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.SetupTask.html
+  name: SetupTask.Urgency
+  nameWithType: SetupTask.Urgency
+  fullName: Foundry.Core.Setup.SetupTask.Urgency
+  spec.csharp:
+  - uid: Foundry.Core.Setup.SetupTask
+    name: SetupTask
+    href: Foundry.Core.Setup.SetupTask.html
+  - name: .
+  - uid: Foundry.Core.Setup.SetupTask.Urgency
+    name: Urgency
+    href: Foundry.Core.Setup.SetupTask.Urgency.html
+  spec.vb:
+  - uid: Foundry.Core.Setup.SetupTask
+    name: SetupTask
+    href: Foundry.Core.Setup.SetupTask.html
+  - name: .
+  - uid: Foundry.Core.Setup.SetupTask.Urgency
+    name: Urgency
+    href: Foundry.Core.Setup.SetupTask.Urgency.html
+- uid: Foundry.Core.Setup.SetupTaskList
+  commentId: T:Foundry.Core.Setup.SetupTaskList
+  href: Foundry.Core.Setup.SetupTaskList.html
+  name: SetupTaskList
+  nameWithType: SetupTaskList
+  fullName: Foundry.Core.Setup.SetupTaskList
+- uid: Foundry.Core.Setup.FoundrySetupWizard
+  commentId: T:Foundry.Core.Setup.FoundrySetupWizard
+  href: Foundry.Core.Setup.FoundrySetupWizard.html
+  name: FoundrySetupWizard
+  nameWithType: FoundrySetupWizard
+  fullName: Foundry.Core.Setup.FoundrySetupWizard
+- uid: Foundry.Core.Setup.FoundryPhysicsSetup
+  commentId: T:Foundry.Core.Setup.FoundryPhysicsSetup
+  href: Foundry.Core.Setup.FoundryPhysicsSetup.html
+  name: FoundryPhysicsSetup
+  nameWithType: FoundryPhysicsSetup
+  fullName: Foundry.Core.Setup.FoundryPhysicsSetup
+- uid: Foundry.Core.Setup.IModuleSetupTasks
+  commentId: T:Foundry.Core.Setup.IModuleSetupTasks
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.IModuleSetupTasks.html
+  name: IModuleSetupTasks
+  nameWithType: IModuleSetupTasks
+  fullName: Foundry.Core.Setup.IModuleSetupTasks
+- uid: Foundry.Core.Setup.IModuleSetupTasks.State
+  commentId: T:Foundry.Core.Setup.IModuleSetupTasks.State
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.IModuleSetupTasks.html
+  name: IModuleSetupTasks.State
+  nameWithType: IModuleSetupTasks.State
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.State
+  spec.csharp:
+  - uid: Foundry.Core.Setup.IModuleSetupTasks
+    name: IModuleSetupTasks
+    href: Foundry.Core.Setup.IModuleSetupTasks.html
+  - name: .
+  - uid: Foundry.Core.Setup.IModuleSetupTasks.State
+    name: State
+    href: Foundry.Core.Setup.IModuleSetupTasks.State.html
+  spec.vb:
+  - uid: Foundry.Core.Setup.IModuleSetupTasks
+    name: IModuleSetupTasks
+    href: Foundry.Core.Setup.IModuleSetupTasks.html
+  - name: .
+  - uid: Foundry.Core.Setup.IModuleSetupTasks.State
+    name: State
+    href: Foundry.Core.Setup.IModuleSetupTasks.State.html
+- uid: Foundry.Core.Setup
+  commentId: N:Foundry.Core.Setup
+  href: Foundry.html
+  name: Foundry.Core.Setup
+  nameWithType: Foundry.Core.Setup
+  fullName: Foundry.Core.Setup
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html

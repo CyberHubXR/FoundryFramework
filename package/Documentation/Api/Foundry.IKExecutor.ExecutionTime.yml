@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.IKExecutor.ExecutionTime
+  commentId: T:Foundry.IKExecutor.ExecutionTime
+  id: IKExecutor.ExecutionTime
+  parent: Foundry
+  children:
+  - Foundry.IKExecutor.ExecutionTime.AnimatorMove
+  - Foundry.IKExecutor.ExecutionTime.LateUpdate
+  - Foundry.IKExecutor.ExecutionTime.Manual
+  - Foundry.IKExecutor.ExecutionTime.Update
+  - Foundry.IKExecutor.ExecutionTime.UpdateAndLateUpdate
+  langs:
+  - csharp
+  - vb
+  name: IKExecutor.ExecutionTime
+  nameWithType: IKExecutor.ExecutionTime
+  fullName: Foundry.IKExecutor.ExecutionTime
+  type: Enum
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ExecutionTime
+    path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum IKExecutor.ExecutionTime
+    content.vb: Public Enum IKExecutor.ExecutionTime
+- uid: Foundry.IKExecutor.ExecutionTime.Update
+  commentId: F:Foundry.IKExecutor.ExecutionTime.Update
+  id: Update
+  parent: Foundry.IKExecutor.ExecutionTime
+  langs:
+  - csharp
+  - vb
+  name: Update
+  nameWithType: IKExecutor.ExecutionTime.Update
+  fullName: Foundry.IKExecutor.ExecutionTime.Update
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Update
+    path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Update = 0
+    return:
+      type: Foundry.IKExecutor.ExecutionTime
+- uid: Foundry.IKExecutor.ExecutionTime.LateUpdate
+  commentId: F:Foundry.IKExecutor.ExecutionTime.LateUpdate
+  id: LateUpdate
+  parent: Foundry.IKExecutor.ExecutionTime
+  langs:
+  - csharp
+  - vb
+  name: LateUpdate
+  nameWithType: IKExecutor.ExecutionTime.LateUpdate
+  fullName: Foundry.IKExecutor.ExecutionTime.LateUpdate
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: LateUpdate
+    path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: LateUpdate = 1
+    return:
+      type: Foundry.IKExecutor.ExecutionTime
+- uid: Foundry.IKExecutor.ExecutionTime.UpdateAndLateUpdate
+  commentId: F:Foundry.IKExecutor.ExecutionTime.UpdateAndLateUpdate
+  id: UpdateAndLateUpdate
+  parent: Foundry.IKExecutor.ExecutionTime
+  langs:
+  - csharp
+  - vb
+  name: UpdateAndLateUpdate
+  nameWithType: IKExecutor.ExecutionTime.UpdateAndLateUpdate
+  fullName: Foundry.IKExecutor.ExecutionTime.UpdateAndLateUpdate
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: UpdateAndLateUpdate
+    path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: UpdateAndLateUpdate = 2
+    return:
+      type: Foundry.IKExecutor.ExecutionTime
+- uid: Foundry.IKExecutor.ExecutionTime.AnimatorMove
+  commentId: F:Foundry.IKExecutor.ExecutionTime.AnimatorMove
+  id: AnimatorMove
+  parent: Foundry.IKExecutor.ExecutionTime
+  langs:
+  - csharp
+  - vb
+  name: AnimatorMove
+  nameWithType: IKExecutor.ExecutionTime.AnimatorMove
+  fullName: Foundry.IKExecutor.ExecutionTime.AnimatorMove
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: AnimatorMove
+    path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: AnimatorMove = 3
+    return:
+      type: Foundry.IKExecutor.ExecutionTime
+- uid: Foundry.IKExecutor.ExecutionTime.Manual
+  commentId: F:Foundry.IKExecutor.ExecutionTime.Manual
+  id: Manual
+  parent: Foundry.IKExecutor.ExecutionTime
+  langs:
+  - csharp
+  - vb
+  name: Manual
+  nameWithType: IKExecutor.ExecutionTime.Manual
+  fullName: Foundry.IKExecutor.ExecutionTime.Manual
+  type: Field
+  source:
+    remote:
+      path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Manual
+    path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Manual = 4
+    return:
+      type: Foundry.IKExecutor.ExecutionTime
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.IKExecutor.ExecutionTime
+  commentId: T:Foundry.IKExecutor.ExecutionTime
+  parent: Foundry
+  href: Foundry.IKExecutor.html
+  name: IKExecutor.ExecutionTime
+  nameWithType: IKExecutor.ExecutionTime
+  fullName: Foundry.IKExecutor.ExecutionTime
+  spec.csharp:
+  - uid: Foundry.IKExecutor
+    name: IKExecutor
+    href: Foundry.IKExecutor.html
+  - name: .
+  - uid: Foundry.IKExecutor.ExecutionTime
+    name: ExecutionTime
+    href: Foundry.IKExecutor.ExecutionTime.html
+  spec.vb:
+  - uid: Foundry.IKExecutor
+    name: IKExecutor
+    href: Foundry.IKExecutor.html
+  - name: .
+  - uid: Foundry.IKExecutor.ExecutionTime
+    name: ExecutionTime
+    href: Foundry.IKExecutor.ExecutionTime.html

@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.PlayerMenuSpawner.InputSource
+  commentId: T:Foundry.PlayerMenuSpawner.InputSource
+  id: PlayerMenuSpawner.InputSource
+  parent: Foundry
+  children:
+  - Foundry.PlayerMenuSpawner.InputSource.Desktop
+  - Foundry.PlayerMenuSpawner.InputSource.XR
+  langs:
+  - csharp
+  - vb
+  name: PlayerMenuSpawner.InputSource
+  nameWithType: PlayerMenuSpawner.InputSource
+  fullName: Foundry.PlayerMenuSpawner.InputSource
+  type: Enum
+  source:
+    remote:
+      path: package/Input/Common/Scripts/PlayerMenuSpawner.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: InputSource
+    path: ../Input/Common/Scripts/PlayerMenuSpawner.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum PlayerMenuSpawner.InputSource
+    content.vb: Public Enum PlayerMenuSpawner.InputSource
+- uid: Foundry.PlayerMenuSpawner.InputSource.Desktop
+  commentId: F:Foundry.PlayerMenuSpawner.InputSource.Desktop
+  id: Desktop
+  parent: Foundry.PlayerMenuSpawner.InputSource
+  langs:
+  - csharp
+  - vb
+  name: Desktop
+  nameWithType: PlayerMenuSpawner.InputSource.Desktop
+  fullName: Foundry.PlayerMenuSpawner.InputSource.Desktop
+  type: Field
+  source:
+    remote:
+      path: package/Input/Common/Scripts/PlayerMenuSpawner.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Desktop
+    path: ../Input/Common/Scripts/PlayerMenuSpawner.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Desktop = 0
+    return:
+      type: Foundry.PlayerMenuSpawner.InputSource
+- uid: Foundry.PlayerMenuSpawner.InputSource.XR
+  commentId: F:Foundry.PlayerMenuSpawner.InputSource.XR
+  id: XR
+  parent: Foundry.PlayerMenuSpawner.InputSource
+  langs:
+  - csharp
+  - vb
+  name: XR
+  nameWithType: PlayerMenuSpawner.InputSource.XR
+  fullName: Foundry.PlayerMenuSpawner.InputSource.XR
+  type: Field
+  source:
+    remote:
+      path: package/Input/Common/Scripts/PlayerMenuSpawner.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: XR
+    path: ../Input/Common/Scripts/PlayerMenuSpawner.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: XR = 1
+    return:
+      type: Foundry.PlayerMenuSpawner.InputSource
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.PlayerMenuSpawner.InputSource
+  commentId: T:Foundry.PlayerMenuSpawner.InputSource
+  parent: Foundry
+  href: Foundry.PlayerMenuSpawner.html
+  name: PlayerMenuSpawner.InputSource
+  nameWithType: PlayerMenuSpawner.InputSource
+  fullName: Foundry.PlayerMenuSpawner.InputSource
+  spec.csharp:
+  - uid: Foundry.PlayerMenuSpawner
+    name: PlayerMenuSpawner
+    href: Foundry.PlayerMenuSpawner.html
+  - name: .
+  - uid: Foundry.PlayerMenuSpawner.InputSource
+    name: InputSource
+    href: Foundry.PlayerMenuSpawner.InputSource.html
+  spec.vb:
+  - uid: Foundry.PlayerMenuSpawner
+    name: PlayerMenuSpawner
+    href: Foundry.PlayerMenuSpawner.html
+  - name: .
+  - uid: Foundry.PlayerMenuSpawner.InputSource
+    name: InputSource
+    href: Foundry.PlayerMenuSpawner.InputSource.html

@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.FoundryModuleConfig.ServiceConstructor
+  commentId: T:Foundry.FoundryModuleConfig.ServiceConstructor
+  id: FoundryModuleConfig.ServiceConstructor
+  parent: Foundry
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: FoundryModuleConfig.ServiceConstructor
+  nameWithType: FoundryModuleConfig.ServiceConstructor
+  fullName: Foundry.FoundryModuleConfig.ServiceConstructor
+  type: Delegate
+  source:
+    remote:
+      path: package/Application/Scripts/FoundryModuleConfig.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ServiceConstructor
+    path: ../Application/Scripts/FoundryModuleConfig.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public delegate object FoundryModuleConfig.ServiceConstructor()
+    return:
+      type: System.Object
+    content.vb: Public Delegate Function FoundryModuleConfig.ServiceConstructor() As Object
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

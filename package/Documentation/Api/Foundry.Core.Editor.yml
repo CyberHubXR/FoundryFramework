@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Editor
+  commentId: N:Foundry.Core.Editor
+  id: Foundry.Core.Editor
+  children:
+  - Foundry.Core.Editor.ClassFinder
+  - Foundry.Core.Editor.FoundryConfigWindow
+  - Foundry.Core.Editor.FoundryDevToolsWindow
+  - Foundry.Core.Editor.FoundryPackageRefState
+  - Foundry.Core.Editor.FoundryPackageRefState.PackageState
+  - Foundry.Core.Editor.IModuleDefinition
+  - Foundry.Core.Editor.IServiceDefinition
+  - Foundry.Core.Editor.NetworkGraphDebugger
+  - Foundry.Core.Editor.PackageManagerUtil
+  - Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+  - Foundry.Core.Editor.ProvidedService
+  - Foundry.Core.Editor.UsedService
+  langs:
+  - csharp
+  - vb
+  name: Foundry.Core.Editor
+  nameWithType: Foundry.Core.Editor
+  fullName: Foundry.Core.Editor
+  type: Namespace
+  assemblies:
+  - Foundry.Core.Editor.ClassFinder
+references:
+- uid: Foundry.Core.Editor.ClassFinder
+  commentId: T:Foundry.Core.Editor.ClassFinder
+  href: Foundry.Core.Editor.ClassFinder.html
+  name: ClassFinder
+  nameWithType: ClassFinder
+  fullName: Foundry.Core.Editor.ClassFinder
+- uid: Foundry.Core.Editor.IServiceDefinition
+  commentId: T:Foundry.Core.Editor.IServiceDefinition
+  parent: Foundry.Core.Editor
+  href: Foundry.Core.Editor.IServiceDefinition.html
+  name: IServiceDefinition
+  nameWithType: IServiceDefinition
+  fullName: Foundry.Core.Editor.IServiceDefinition
+- uid: Foundry.Core.Editor.FoundryConfigWindow
+  commentId: T:Foundry.Core.Editor.FoundryConfigWindow
+  href: Foundry.Core.Editor.FoundryConfigWindow.html
+  name: FoundryConfigWindow
+  nameWithType: FoundryConfigWindow
+  fullName: Foundry.Core.Editor.FoundryConfigWindow
+- uid: Foundry.Core.Editor.FoundryPackageRefState
+  commentId: T:Foundry.Core.Editor.FoundryPackageRefState
+  href: Foundry.Core.Editor.FoundryPackageRefState.html
+  name: FoundryPackageRefState
+  nameWithType: FoundryPackageRefState
+  fullName: Foundry.Core.Editor.FoundryPackageRefState
+- uid: Foundry.Core.Editor.FoundryPackageRefState.PackageState
+  commentId: T:Foundry.Core.Editor.FoundryPackageRefState.PackageState
+  parent: Foundry.Core.Editor
+  href: Foundry.Core.Editor.FoundryPackageRefState.html
+  name: FoundryPackageRefState.PackageState
+  nameWithType: FoundryPackageRefState.PackageState
+  fullName: Foundry.Core.Editor.FoundryPackageRefState.PackageState
+  spec.csharp:
+  - uid: Foundry.Core.Editor.FoundryPackageRefState
+    name: FoundryPackageRefState
+    href: Foundry.Core.Editor.FoundryPackageRefState.html
+  - name: .
+  - uid: Foundry.Core.Editor.FoundryPackageRefState.PackageState
+    name: PackageState
+    href: Foundry.Core.Editor.FoundryPackageRefState.PackageState.html
+  spec.vb:
+  - uid: Foundry.Core.Editor.FoundryPackageRefState
+    name: FoundryPackageRefState
+    href: Foundry.Core.Editor.FoundryPackageRefState.html
+  - name: .
+  - uid: Foundry.Core.Editor.FoundryPackageRefState.PackageState
+    name: PackageState
+    href: Foundry.Core.Editor.FoundryPackageRefState.PackageState.html
+- uid: Foundry.Core.Editor.FoundryDevToolsWindow
+  commentId: T:Foundry.Core.Editor.FoundryDevToolsWindow
+  href: Foundry.Core.Editor.FoundryDevToolsWindow.html
+  name: FoundryDevToolsWindow
+  nameWithType: FoundryDevToolsWindow
+  fullName: Foundry.Core.Editor.FoundryDevToolsWindow
+- uid: Foundry.Core.Editor.ProvidedService
+  commentId: T:Foundry.Core.Editor.ProvidedService
+  href: Foundry.Core.Editor.ProvidedService.html
+  name: ProvidedService
+  nameWithType: ProvidedService
+  fullName: Foundry.Core.Editor.ProvidedService
+- uid: Foundry.Core.Editor.UsedService
+  commentId: T:Foundry.Core.Editor.UsedService
+  href: Foundry.Core.Editor.UsedService.html
+  name: UsedService
+  nameWithType: UsedService
+  fullName: Foundry.Core.Editor.UsedService
+- uid: Foundry.Core.Editor.IModuleDefinition
+  commentId: T:Foundry.Core.Editor.IModuleDefinition
+  parent: Foundry.Core.Editor
+  href: Foundry.Core.Editor.IModuleDefinition.html
+  name: IModuleDefinition
+  nameWithType: IModuleDefinition
+  fullName: Foundry.Core.Editor.IModuleDefinition
+- uid: Foundry.Core.Editor.NetworkGraphDebugger
+  commentId: T:Foundry.Core.Editor.NetworkGraphDebugger
+  href: Foundry.Core.Editor.NetworkGraphDebugger.html
+  name: NetworkGraphDebugger
+  nameWithType: NetworkGraphDebugger
+  fullName: Foundry.Core.Editor.NetworkGraphDebugger
+- uid: Foundry.Core.Editor.PackageManagerUtil
+  commentId: T:Foundry.Core.Editor.PackageManagerUtil
+  href: Foundry.Core.Editor.PackageManagerUtil.html
+  name: PackageManagerUtil
+  nameWithType: PackageManagerUtil
+  fullName: Foundry.Core.Editor.PackageManagerUtil
+- uid: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+  commentId: T:Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+  parent: Foundry.Core.Editor
+  href: Foundry.Core.Editor.PackageManagerUtil.html
+  name: PackageManagerUtil.ScopedRegestry
+  nameWithType: PackageManagerUtil.ScopedRegestry
+  fullName: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+  spec.csharp:
+  - uid: Foundry.Core.Editor.PackageManagerUtil
+    name: PackageManagerUtil
+    href: Foundry.Core.Editor.PackageManagerUtil.html
+  - name: .
+  - uid: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+    name: ScopedRegestry
+    href: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry.html
+  spec.vb:
+  - uid: Foundry.Core.Editor.PackageManagerUtil
+    name: PackageManagerUtil
+    href: Foundry.Core.Editor.PackageManagerUtil.html
+  - name: .
+  - uid: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+    name: ScopedRegestry
+    href: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry.html
+- uid: Foundry.Core.Editor
+  commentId: N:Foundry.Core.Editor
+  href: Foundry.html
+  name: Foundry.Core.Editor
+  nameWithType: Foundry.Core.Editor
+  fullName: Foundry.Core.Editor
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Editor
+    name: Editor
+    href: Foundry.Core.Editor.html

@@ -1,0 +1,851 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Services.ISceneNavigator
+  commentId: T:Foundry.Services.ISceneNavigator
+  id: ISceneNavigator
+  parent: Foundry.Services
+  children:
+  - Foundry.Services.ISceneNavigator.CanGoBack
+  - Foundry.Services.ISceneNavigator.CanGoForward
+  - Foundry.Services.ISceneNavigator.CurrentScene
+  - Foundry.Services.ISceneNavigator.GoBackAsync
+  - Foundry.Services.ISceneNavigator.GoForwardAsync
+  - Foundry.Services.ISceneNavigator.GoToAsync(System.Int32)
+  - Foundry.Services.ISceneNavigator.GoToAsync(System.String)
+  - Foundry.Services.ISceneNavigator.History
+  - Foundry.Services.ISceneNavigator.IsNavigating
+  - Foundry.Services.ISceneNavigator.NavigationCompleted
+  - Foundry.Services.ISceneNavigator.NavigationStarted
+  - Foundry.Services.ISceneNavigator.NavigationStarting
+  - Foundry.Services.ISceneNavigator.NavigationTask
+  langs:
+  - csharp
+  - vb
+  name: ISceneNavigator
+  nameWithType: ISceneNavigator
+  fullName: Foundry.Services.ISceneNavigator
+  type: Interface
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ISceneNavigator
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: A service that allows navigation between scenes.
+  example: []
+  syntax:
+    content: 'public interface ISceneNavigator : IProgressChangedEvent, IProgressChangedEvent<ProgressReport>'
+    content.vb: Public Interface ISceneNavigator Inherits IProgressChangedEvent, IProgressChangedEvent(Of ProgressReport)
+  inheritedMembers:
+  - Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+- uid: Foundry.Services.ISceneNavigator.GoBackAsync
+  commentId: M:Foundry.Services.ISceneNavigator.GoBackAsync
+  id: GoBackAsync
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: GoBackAsync()
+  nameWithType: ISceneNavigator.GoBackAsync()
+  fullName: Foundry.Services.ISceneNavigator.GoBackAsync()
+  type: Method
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GoBackAsync
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 32
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Navigates to the last scene in the navigation history.
+  remarks: If there is no entry in the history, calling this method will result in an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Task GoBackAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that represents the operation.
+    content.vb: Function GoBackAsync() As Task
+  overload: Foundry.Services.ISceneNavigator.GoBackAsync*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: There is no history entry to go back to.
+- uid: Foundry.Services.ISceneNavigator.GoForwardAsync
+  commentId: M:Foundry.Services.ISceneNavigator.GoForwardAsync
+  id: GoForwardAsync
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: GoForwardAsync()
+  nameWithType: ISceneNavigator.GoForwardAsync()
+  fullName: Foundry.Services.ISceneNavigator.GoForwardAsync()
+  type: Method
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GoForwardAsync
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 47
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Navigates to the last scene in the navigation history.
+  remarks: If there is no entry in the history, calling this method will result in an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Task GoForwardAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that represents the operation.
+    content.vb: Function GoForwardAsync() As Task
+  overload: Foundry.Services.ISceneNavigator.GoForwardAsync*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: There is no history entry to go back to.
+- uid: Foundry.Services.ISceneNavigator.GoToAsync(System.String)
+  commentId: M:Foundry.Services.ISceneNavigator.GoToAsync(System.String)
+  id: GoToAsync(System.String)
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: GoToAsync(string)
+  nameWithType: ISceneNavigator.GoToAsync(string)
+  fullName: Foundry.Services.ISceneNavigator.GoToAsync(string)
+  type: Method
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GoToAsync
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 58
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Navigates to the specified scene in the background.
+  example: []
+  syntax:
+    content: Task GoToAsync(string sceneName)
+    parameters:
+    - id: sceneName
+      type: System.String
+      description: The name of the scene to navigate to.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that represents the operation.
+    content.vb: Function GoToAsync(sceneName As String) As Task
+  overload: Foundry.Services.ISceneNavigator.GoToAsync*
+  nameWithType.vb: ISceneNavigator.GoToAsync(String)
+  fullName.vb: Foundry.Services.ISceneNavigator.GoToAsync(String)
+  name.vb: GoToAsync(String)
+- uid: Foundry.Services.ISceneNavigator.GoToAsync(System.Int32)
+  commentId: M:Foundry.Services.ISceneNavigator.GoToAsync(System.Int32)
+  id: GoToAsync(System.Int32)
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: GoToAsync(int)
+  nameWithType: ISceneNavigator.GoToAsync(int)
+  fullName: Foundry.Services.ISceneNavigator.GoToAsync(int)
+  type: Method
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: GoToAsync
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 69
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Navigates to the specified scene in the background.
+  example: []
+  syntax:
+    content: Task GoToAsync(int sceneBuildIndex)
+    parameters:
+    - id: sceneBuildIndex
+      type: System.Int32
+      description: The index of the scene to navigate to.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that represents the operation.
+    content.vb: Function GoToAsync(sceneBuildIndex As Integer) As Task
+  overload: Foundry.Services.ISceneNavigator.GoToAsync*
+  nameWithType.vb: ISceneNavigator.GoToAsync(Integer)
+  fullName.vb: Foundry.Services.ISceneNavigator.GoToAsync(Integer)
+  name.vb: GoToAsync(Integer)
+- uid: Foundry.Services.ISceneNavigator.CanGoBack
+  commentId: P:Foundry.Services.ISceneNavigator.CanGoBack
+  id: CanGoBack
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: CanGoBack
+  nameWithType: ISceneNavigator.CanGoBack
+  fullName: Foundry.Services.ISceneNavigator.CanGoBack
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: CanGoBack
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 81
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets a value that indicates if there is a valid item in the history to navigate back to.
+  remarks: <code>true</code> if there is a valid item in the history to navigate back to; otherwise <code>false</code>.
+  example: []
+  syntax:
+    content: bool CanGoBack { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanGoBack As Boolean
+  overload: Foundry.Services.ISceneNavigator.CanGoBack*
+- uid: Foundry.Services.ISceneNavigator.CanGoForward
+  commentId: P:Foundry.Services.ISceneNavigator.CanGoForward
+  id: CanGoForward
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: CanGoForward
+  nameWithType: ISceneNavigator.CanGoForward
+  fullName: Foundry.Services.ISceneNavigator.CanGoForward
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: CanGoForward
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 89
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets a value that indicates if there is a valid item in the history to navigate forward to.
+  remarks: <code>true</code> if there is a valid item in the history to navigate forward to; otherwise <code>false</code>.
+  example: []
+  syntax:
+    content: bool CanGoForward { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanGoForward As Boolean
+  overload: Foundry.Services.ISceneNavigator.CanGoForward*
+- uid: Foundry.Services.ISceneNavigator.CurrentScene
+  commentId: P:Foundry.Services.ISceneNavigator.CurrentScene
+  id: CurrentScene
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: CurrentScene
+  nameWithType: ISceneNavigator.CurrentScene
+  fullName: Foundry.Services.ISceneNavigator.CurrentScene
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: CurrentScene
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 94
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets the current scene.
+  example: []
+  syntax:
+    content: ISceneNavigationEntry CurrentScene { get; }
+    parameters: []
+    return:
+      type: Foundry.Services.ISceneNavigationEntry
+    content.vb: ReadOnly Property CurrentScene As ISceneNavigationEntry
+  overload: Foundry.Services.ISceneNavigator.CurrentScene*
+- uid: Foundry.Services.ISceneNavigator.History
+  commentId: P:Foundry.Services.ISceneNavigator.History
+  id: History
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: History
+  nameWithType: ISceneNavigator.History
+  fullName: Foundry.Services.ISceneNavigator.History
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: History
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 99
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets the navigation history.
+  example: []
+  syntax:
+    content: IReadOnlyList<ISceneNavigationEntry> History { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Foundry.Services.ISceneNavigationEntry}
+    content.vb: ReadOnly Property History As IReadOnlyList(Of ISceneNavigationEntry)
+  overload: Foundry.Services.ISceneNavigator.History*
+- uid: Foundry.Services.ISceneNavigator.IsNavigating
+  commentId: P:Foundry.Services.ISceneNavigator.IsNavigating
+  id: IsNavigating
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: IsNavigating
+  nameWithType: ISceneNavigator.IsNavigating
+  fullName: Foundry.Services.ISceneNavigator.IsNavigating
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IsNavigating
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 104
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets a value that indicates if a navigation is in progress.
+  example: []
+  syntax:
+    content: bool IsNavigating { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsNavigating As Boolean
+  overload: Foundry.Services.ISceneNavigator.IsNavigating*
+- uid: Foundry.Services.ISceneNavigator.NavigationTask
+  commentId: P:Foundry.Services.ISceneNavigator.NavigationTask
+  id: NavigationTask
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: NavigationTask
+  nameWithType: ISceneNavigator.NavigationTask
+  fullName: Foundry.Services.ISceneNavigator.NavigationTask
+  type: Property
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NavigationTask
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 109
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Gets a task that represents the most current navigation operation.
+  example: []
+  syntax:
+    content: Task NavigationTask { get; }
+    parameters: []
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: ReadOnly Property NavigationTask As Task
+  overload: Foundry.Services.ISceneNavigator.NavigationTask*
+- uid: Foundry.Services.ISceneNavigator.NavigationCompleted
+  commentId: E:Foundry.Services.ISceneNavigator.NavigationCompleted
+  id: NavigationCompleted
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: NavigationCompleted
+  nameWithType: ISceneNavigator.NavigationCompleted
+  fullName: Foundry.Services.ISceneNavigator.NavigationCompleted
+  type: Event
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NavigationCompleted
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 118
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Raised whenever a navigation operation has completed.
+  example: []
+  syntax:
+    content: event NavigationEvent NavigationCompleted
+    return:
+      type: Foundry.Services.NavigationEvent
+    content.vb: Event NavigationCompleted As NavigationEvent
+- uid: Foundry.Services.ISceneNavigator.NavigationStarted
+  commentId: E:Foundry.Services.ISceneNavigator.NavigationStarted
+  id: NavigationStarted
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: NavigationStarted
+  nameWithType: ISceneNavigator.NavigationStarted
+  fullName: Foundry.Services.ISceneNavigator.NavigationStarted
+  type: Event
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NavigationStarted
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 127
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Raised whenever a navigation operation has started.
+  remarks: >-
+    This happens when the actual load operation begins. 
+
+    <xref href="Foundry.Services.ISceneNavigator.NavigationTask" data-throw-if-not-resolved="false"></xref> will be valid during this event.
+  example: []
+  syntax:
+    content: event NavigationEvent NavigationStarted
+    return:
+      type: Foundry.Services.NavigationEvent
+    content.vb: Event NavigationStarted As NavigationEvent
+- uid: Foundry.Services.ISceneNavigator.NavigationStarting
+  commentId: E:Foundry.Services.ISceneNavigator.NavigationStarting
+  id: NavigationStarting
+  parent: Foundry.Services.ISceneNavigator
+  langs:
+  - csharp
+  - vb
+  name: NavigationStarting
+  nameWithType: ISceneNavigator.NavigationStarting
+  fullName: Foundry.Services.ISceneNavigator.NavigationStarting
+  type: Event
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NavigationStarting
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 136
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Raised whenever a navigation operation is starting.
+  remarks: >-
+    This happens a few milliseconds before the actual load operation begins. 
+
+    <xref href="Foundry.Services.ISceneNavigator.NavigationTask" data-throw-if-not-resolved="false"></xref> will not be valid during this event.
+  example: []
+  syntax:
+    content: event NavigationEvent NavigationStarting
+    return:
+      type: Foundry.Services.NavigationEvent
+    content.vb: Event NavigationStarting As NavigationEvent
+references:
+- uid: Foundry.Services
+  commentId: N:Foundry.Services
+  href: Foundry.html
+  name: Foundry.Services
+  nameWithType: Foundry.Services
+  fullName: Foundry.Services
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html
+- uid: Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+  commentId: E:Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+  parent: Foundry.IProgressChangedEvent{Foundry.ProgressReport}
+  definition: Foundry.IProgressChangedEvent`1.ProgressChanged
+  href: Foundry.IProgressChangedEvent{Foundry.ProgressReport}.html#Foundry.IProgressChangedEvent{Foundry.ProgressReport}.ProgressChanged
+  name: ProgressChanged
+  nameWithType: IProgressChangedEvent<ProgressReport>.ProgressChanged
+  fullName: Foundry.IProgressChangedEvent<Foundry.ProgressReport>.ProgressChanged
+  nameWithType.vb: IProgressChangedEvent(Of ProgressReport).ProgressChanged
+  fullName.vb: Foundry.IProgressChangedEvent(Of Foundry.ProgressReport).ProgressChanged
+- uid: Foundry.IProgressChangedEvent`1.ProgressChanged
+  commentId: E:Foundry.IProgressChangedEvent`1.ProgressChanged
+  href: Foundry.IProgressChangedEvent-1.html#Foundry.IProgressChangedEvent`1.ProgressChanged
+  name: ProgressChanged
+  nameWithType: IProgressChangedEvent<TProgress>.ProgressChanged
+  fullName: Foundry.IProgressChangedEvent<TProgress>.ProgressChanged
+  nameWithType.vb: IProgressChangedEvent(Of TProgress).ProgressChanged
+  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress).ProgressChanged
+- uid: Foundry.IProgressChangedEvent{Foundry.ProgressReport}
+  commentId: T:Foundry.IProgressChangedEvent{Foundry.ProgressReport}
+  parent: Foundry
+  definition: Foundry.IProgressChangedEvent`1
+  href: Foundry.IProgressChangedEvent-1.html
+  name: IProgressChangedEvent<ProgressReport>
+  nameWithType: IProgressChangedEvent<ProgressReport>
+  fullName: Foundry.IProgressChangedEvent<Foundry.ProgressReport>
+  nameWithType.vb: IProgressChangedEvent(Of ProgressReport)
+  fullName.vb: Foundry.IProgressChangedEvent(Of Foundry.ProgressReport)
+  name.vb: IProgressChangedEvent(Of ProgressReport)
+  spec.csharp:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: <
+  - uid: Foundry.ProgressReport
+    name: ProgressReport
+    href: Foundry.ProgressReport.html
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.ProgressReport
+    name: ProgressReport
+    href: Foundry.ProgressReport.html
+  - name: )
+- uid: Foundry.IProgressChangedEvent`1
+  commentId: T:Foundry.IProgressChangedEvent`1
+  href: Foundry.IProgressChangedEvent-1.html
+  name: IProgressChangedEvent<TProgress>
+  nameWithType: IProgressChangedEvent<TProgress>
+  fullName: Foundry.IProgressChangedEvent<TProgress>
+  nameWithType.vb: IProgressChangedEvent(Of TProgress)
+  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress)
+  name.vb: IProgressChangedEvent(Of TProgress)
+  spec.csharp:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: <
+  - name: TProgress
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProgress
+  - name: )
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Foundry.Services.ISceneNavigator.GoBackAsync*
+  commentId: Overload:Foundry.Services.ISceneNavigator.GoBackAsync
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.GoBackAsync
+  name: GoBackAsync
+  nameWithType: ISceneNavigator.GoBackAsync
+  fullName: Foundry.Services.ISceneNavigator.GoBackAsync
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Foundry.Services.ISceneNavigator.GoForwardAsync*
+  commentId: Overload:Foundry.Services.ISceneNavigator.GoForwardAsync
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.GoForwardAsync
+  name: GoForwardAsync
+  nameWithType: ISceneNavigator.GoForwardAsync
+  fullName: Foundry.Services.ISceneNavigator.GoForwardAsync
+- uid: Foundry.Services.ISceneNavigator.GoToAsync*
+  commentId: Overload:Foundry.Services.ISceneNavigator.GoToAsync
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.GoToAsync(System.String)
+  name: GoToAsync
+  nameWithType: ISceneNavigator.GoToAsync
+  fullName: Foundry.Services.ISceneNavigator.GoToAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Foundry.Services.ISceneNavigator.CanGoBack*
+  commentId: Overload:Foundry.Services.ISceneNavigator.CanGoBack
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.CanGoBack
+  name: CanGoBack
+  nameWithType: ISceneNavigator.CanGoBack
+  fullName: Foundry.Services.ISceneNavigator.CanGoBack
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Foundry.Services.ISceneNavigator.CanGoForward*
+  commentId: Overload:Foundry.Services.ISceneNavigator.CanGoForward
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.CanGoForward
+  name: CanGoForward
+  nameWithType: ISceneNavigator.CanGoForward
+  fullName: Foundry.Services.ISceneNavigator.CanGoForward
+- uid: Foundry.Services.ISceneNavigator.CurrentScene*
+  commentId: Overload:Foundry.Services.ISceneNavigator.CurrentScene
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.CurrentScene
+  name: CurrentScene
+  nameWithType: ISceneNavigator.CurrentScene
+  fullName: Foundry.Services.ISceneNavigator.CurrentScene
+- uid: Foundry.Services.ISceneNavigationEntry
+  commentId: T:Foundry.Services.ISceneNavigationEntry
+  parent: Foundry.Services
+  href: Foundry.Services.ISceneNavigationEntry.html
+  name: ISceneNavigationEntry
+  nameWithType: ISceneNavigationEntry
+  fullName: Foundry.Services.ISceneNavigationEntry
+- uid: Foundry.Services.ISceneNavigator.History*
+  commentId: Overload:Foundry.Services.ISceneNavigator.History
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.History
+  name: History
+  nameWithType: ISceneNavigator.History
+  fullName: Foundry.Services.ISceneNavigator.History
+- uid: System.Collections.Generic.IReadOnlyList{Foundry.Services.ISceneNavigationEntry}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Foundry.Services.ISceneNavigationEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ISceneNavigationEntry>
+  nameWithType: IReadOnlyList<ISceneNavigationEntry>
+  fullName: System.Collections.Generic.IReadOnlyList<Foundry.Services.ISceneNavigationEntry>
+  nameWithType.vb: IReadOnlyList(Of ISceneNavigationEntry)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Foundry.Services.ISceneNavigationEntry)
+  name.vb: IReadOnlyList(Of ISceneNavigationEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Foundry.Services.ISceneNavigationEntry
+    name: ISceneNavigationEntry
+    href: Foundry.Services.ISceneNavigationEntry.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Services.ISceneNavigationEntry
+    name: ISceneNavigationEntry
+    href: Foundry.Services.ISceneNavigationEntry.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Foundry.Services.ISceneNavigator.IsNavigating*
+  commentId: Overload:Foundry.Services.ISceneNavigator.IsNavigating
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.IsNavigating
+  name: IsNavigating
+  nameWithType: ISceneNavigator.IsNavigating
+  fullName: Foundry.Services.ISceneNavigator.IsNavigating
+- uid: Foundry.Services.ISceneNavigator.NavigationTask*
+  commentId: Overload:Foundry.Services.ISceneNavigator.NavigationTask
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.NavigationTask
+  name: NavigationTask
+  nameWithType: ISceneNavigator.NavigationTask
+  fullName: Foundry.Services.ISceneNavigator.NavigationTask
+- uid: Foundry.Services.NavigationEvent
+  commentId: T:Foundry.Services.NavigationEvent
+  parent: Foundry.Services
+  href: Foundry.Services.NavigationEvent.html
+  name: NavigationEvent
+  nameWithType: NavigationEvent
+  fullName: Foundry.Services.NavigationEvent
+- uid: Foundry.Services.ISceneNavigator.NavigationTask
+  commentId: P:Foundry.Services.ISceneNavigator.NavigationTask
+  parent: Foundry.Services.ISceneNavigator
+  href: Foundry.Services.ISceneNavigator.html#Foundry.Services.ISceneNavigator.NavigationTask
+  name: NavigationTask
+  nameWithType: ISceneNavigator.NavigationTask
+  fullName: Foundry.Services.ISceneNavigator.NavigationTask
+- uid: Foundry.Services.ISceneNavigator
+  commentId: T:Foundry.Services.ISceneNavigator
+  parent: Foundry.Services
+  href: Foundry.Services.ISceneNavigator.html
+  name: ISceneNavigator
+  nameWithType: ISceneNavigator
+  fullName: Foundry.Services.ISceneNavigator

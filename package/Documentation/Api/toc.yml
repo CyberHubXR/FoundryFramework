@@ -1,0 +1,476 @@
+### YamlMime:TableOfContent
+items:
+- uid: Foundry
+  name: Foundry
+  items:
+  - uid: Foundry.AnimationTarget
+    name: AnimationTarget
+  - uid: Foundry.AsyncExtensions
+    name: AsyncExtensions
+  - uid: Foundry.Avatar
+    name: Avatar
+  - uid: Foundry.AvatarHandScale
+    name: AvatarHandScale
+  - uid: Foundry.BodyColorRandomiser
+    name: BodyColorRandomiser
+  - uid: Foundry.ConnectToPrefab
+    name: ConnectToPrefab
+  - uid: Foundry.ControllerConfig
+    name: ControllerConfig
+  - uid: Foundry.ControllerConfig.ControllerOffset
+    name: ControllerConfig.ControllerOffset
+  - uid: Foundry.ControllerConfig.DeviceOffset
+    name: ControllerConfig.DeviceOffset
+  - uid: Foundry.DesktopControlRig
+    name: DesktopControlRig
+  - uid: Foundry.DesktopControlRig.CameraMode
+    name: DesktopControlRig.CameraMode
+  - uid: Foundry.FoundryApp
+    name: FoundryApp
+  - uid: Foundry.FoundryAppConfig
+    name: FoundryAppConfig
+  - uid: Foundry.FoundryCameraManager
+    name: FoundryCameraManager
+  - uid: Foundry.FoundryCoreConfig
+    name: FoundryCoreConfig
+  - uid: Foundry.FoundryCoreModuleDefinition
+    name: FoundryCoreModuleDefinition
+  - uid: Foundry.FoundryMainCamera
+    name: FoundryMainCamera
+  - uid: Foundry.FoundryModuleConfig
+    name: FoundryModuleConfig
+  - uid: Foundry.FoundryModuleConfig.SerializedType
+    name: FoundryModuleConfig.SerializedType
+  - uid: Foundry.FoundryModuleConfig.ServiceConstructor
+    name: FoundryModuleConfig.ServiceConstructor
+  - uid: Foundry.FoundryNetworkButton
+    name: FoundryNetworkButton
+  - uid: Foundry.FoundryUI
+    name: FoundryUI
+  - uid: Foundry.FoundryUIInput
+    name: FoundryUIInput
+  - uid: Foundry.FoundryUIRaycaster
+    name: FoundryUIRaycaster
+  - uid: Foundry.FoundryUIRaycaster.InputSource
+    name: FoundryUIRaycaster.InputSource
+  - uid: Foundry.FullBodyAvatar
+    name: FullBodyAvatar
+  - uid: Foundry.FullBodyAvatarNetworking
+    name: FullBodyAvatarNetworking
+  - uid: Foundry.GenerateDemoShape
+    name: GenerateDemoShape
+  - uid: Foundry.HandVelocityTracker
+    name: HandVelocityTracker
+  - uid: Foundry.HighlightData
+    name: HighlightData
+  - uid: Foundry.HumanoidIK
+    name: HumanoidIK
+  - uid: Foundry.HumanoidIK.Calibration
+    name: HumanoidIK.Calibration
+  - uid: Foundry.HumanoidIK.Constraints
+    name: HumanoidIK.Constraints
+  - uid: Foundry.HumanoidIK.References
+    name: HumanoidIK.References
+  - uid: Foundry.IFoundryCameraManager
+    name: IFoundryCameraManager
+  - uid: Foundry.IKConstraint
+    name: IKConstraint
+  - uid: Foundry.IKExecutor
+    name: IKExecutor
+  - uid: Foundry.IKExecutor.ConstraintEntry
+    name: IKExecutor.ConstraintEntry
+  - uid: Foundry.IKExecutor.ExecutionTime
+    name: IKExecutor.ExecutionTime
+  - uid: Foundry.IKStretchToTarget
+    name: IKStretchToTarget
+  - uid: Foundry.IKTargetedConstraint
+    name: IKTargetedConstraint
+  - uid: Foundry.IKTransformConstraint
+    name: IKTransformConstraint
+  - uid: Foundry.IKTwoBoneConstraint
+    name: IKTwoBoneConstraint
+  - uid: Foundry.IKTwoBoneConstraint.Calibration
+    name: IKTwoBoneConstraint.Calibration
+  - uid: Foundry.IPlayerControlRig
+    name: IPlayerControlRig
+  - uid: Foundry.IPlayerRigManager
+    name: IPlayerRigManager
+  - uid: Foundry.IProgressChangedEvent
+    name: IProgressChangedEvent
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent<TProgress>
+  - uid: Foundry.InteractionAnimations
+    name: InteractionAnimations
+  - uid: Foundry.InteractionType
+    name: InteractionType
+  - uid: Foundry.LineAnimation
+    name: LineAnimation
+  - uid: Foundry.LoadingScreenManager
+    name: LoadingScreenManager
+  - uid: Foundry.MainCameraHolder
+    name: MainCameraHolder
+  - uid: Foundry.MappedProperties
+    name: MappedProperties
+  - uid: Foundry.MappedPropertyImpl
+    name: MappedPropertyImpl
+  - uid: Foundry.MenuPlayer
+    name: MenuPlayer
+  - uid: Foundry.MicrophoneControl
+    name: MicrophoneControl
+  - uid: Foundry.NetEventSource
+    name: NetEventSource
+  - uid: Foundry.NetPosRot
+    name: NetPosRot
+  - uid: Foundry.NetworkEventBase
+    name: NetworkEventBase
+  - uid: Foundry.NetworkEvent`1
+    name: NetworkEvent<T>
+  - uid: Foundry.NetworkTRPredictor
+    name: NetworkTRPredictor
+  - uid: Foundry.Networked3PInput
+    name: Networked3PInput
+  - uid: Foundry.Networked6PInput
+    name: Networked6PInput
+  - uid: Foundry.NetworkedCommonInput
+    name: NetworkedCommonInput
+  - uid: Foundry.NetworkedDesktopInput
+    name: NetworkedDesktopInput
+  - uid: Foundry.NetworkedTR
+    name: NetworkedTR
+  - uid: Foundry.ObjectLifetime
+    name: ObjectLifetime
+  - uid: Foundry.OrientationMatchAxis
+    name: OrientationMatchAxis
+  - uid: Foundry.OrientationMatcher
+    name: OrientationMatcher
+  - uid: Foundry.PlacePoint
+    name: PlacePoint
+  - uid: Foundry.PlacePointAnimations
+    name: PlacePointAnimations
+  - uid: Foundry.PlacePointNameType
+    name: PlacePointNameType
+  - uid: Foundry.PlacePointSoundEffects
+    name: PlacePointSoundEffects
+  - uid: Foundry.PlacePointTextEvents
+    name: PlacePointTextEvents
+  - uid: Foundry.Player
+    name: Player
+  - uid: Foundry.Player.MovementSettings
+    name: Player.MovementSettings
+  - uid: Foundry.PlayerControlMode
+    name: PlayerControlMode
+  - uid: Foundry.PlayerMenuAnimator
+    name: PlayerMenuAnimator
+  - uid: Foundry.PlayerMenuSpawner
+    name: PlayerMenuSpawner
+  - uid: Foundry.PlayerMenuSpawner.InputSource
+    name: PlayerMenuSpawner.InputSource
+  - uid: Foundry.PlayerRigEvent
+    name: PlayerRigEvent
+  - uid: Foundry.PlayerRigManagerService
+    name: PlayerRigManagerService
+  - uid: Foundry.PosRot
+    name: PosRot
+  - uid: Foundry.ProgressReport
+    name: ProgressReport
+  - uid: Foundry.SpatialButton
+    name: SpatialButton
+  - uid: Foundry.SpatialDistanceGrabbable
+    name: SpatialDistanceGrabbable
+  - uid: Foundry.SpatialDistanceGrabbableDebugger
+    name: SpatialDistanceGrabbableDebugger
+  - uid: Foundry.SpatialDistanceGrabber
+    name: SpatialDistanceGrabber
+  - uid: Foundry.SpatialDoor
+    name: SpatialDoor
+  - uid: Foundry.SpatialGrabbable
+    name: SpatialGrabbable
+  - uid: Foundry.SpatialGrabbableChild
+    name: SpatialGrabbableChild
+  - uid: Foundry.SpatialGrabbableDebugEvents
+    name: SpatialGrabbableDebugEvents
+  - uid: Foundry.SpatialGrabbableExtensions
+    name: SpatialGrabbableExtensions
+  - uid: Foundry.SpatialGrabbableOutlineEffect
+    name: SpatialGrabbableOutlineEffect
+  - uid: Foundry.SpatialGrabbablePose
+    name: SpatialGrabbablePose
+  - uid: Foundry.SpatialGrabbableSoundEffects
+    name: SpatialGrabbableSoundEffects
+  - uid: Foundry.SpatialHand
+    name: SpatialHand
+  - uid: Foundry.SpatialHand.HandType
+    name: SpatialHand.HandType
+  - uid: Foundry.SpatialHandDebugEvents
+    name: SpatialHandDebugEvents
+  - uid: Foundry.SpatialHandExtensions
+    name: SpatialHandExtensions
+  - uid: Foundry.SpatialHandGrabEvent
+    name: SpatialHandGrabEvent
+  - uid: Foundry.SpatialHandPoseAnimator
+    name: SpatialHandPoseAnimator
+  - uid: Foundry.SpatialLever
+    name: SpatialLever
+  - uid: Foundry.SpatialLook
+    name: SpatialLook
+  - uid: Foundry.SpatialLook.CastWidth
+    name: SpatialLook.CastWidth
+  - uid: Foundry.SpatialLookSoundEffects
+    name: SpatialLookSoundEffects
+  - uid: Foundry.SpatialLookable
+    name: SpatialLookable
+  - uid: Foundry.SpatialSlider
+    name: SpatialSlider
+  - uid: Foundry.SpatialSlider.SliderIncrementEvent
+    name: SpatialSlider.SliderIncrementEvent
+  - uid: Foundry.SpatialTouch
+    name: SpatialTouch
+  - uid: Foundry.SpatialTouchable
+    name: SpatialTouchable
+  - uid: Foundry.SpatialTouchableAnimation
+    name: SpatialTouchableAnimation
+  - uid: Foundry.SpatialTouchableSoundEffects
+    name: SpatialTouchableSoundEffects
+  - uid: Foundry.TeleportPoint
+    name: TeleportPoint
+  - uid: Foundry.TeleportPointAnimation
+    name: TeleportPointAnimation
+  - uid: Foundry.TeleportPointDebugger
+    name: TeleportPointDebugger
+  - uid: Foundry.TeleportPointSoundEffects
+    name: TeleportPointSoundEffects
+  - uid: Foundry.TeleportRaycaster
+    name: TeleportRaycaster
+  - uid: Foundry.TeleportRaycasterSounds
+    name: TeleportRaycasterSounds
+  - uid: Foundry.TrackerPos
+    name: TrackerPos
+  - uid: Foundry.TrackerRefs
+    name: TrackerRefs
+  - uid: Foundry.TrackerType
+    name: TrackerType
+  - uid: Foundry.TrackingMode
+    name: TrackingMode
+  - uid: Foundry.UnityPlacePointEvent
+    name: UnityPlacePointEvent
+  - uid: Foundry.VelocityTimePair
+    name: VelocityTimePair
+  - uid: Foundry.VideoPlayerAudioSource
+    name: VideoPlayerAudioSource
+  - uid: Foundry.VideoSync
+    name: VideoSync
+  - uid: Foundry.XRControlRig
+    name: XRControlRig
+  - uid: Foundry.XRControlRig.Offsets
+    name: XRControlRig.Offsets
+- uid: Foundry.Account
+  name: Foundry.Account
+  items:
+  - uid: Foundry.Account.AccountDisplay
+    name: AccountDisplay
+  - uid: Foundry.Account.CorePlayerAccount
+    name: CorePlayerAccount
+- uid: Foundry.Core.Editor
+  name: Foundry.Core.Editor
+  items:
+  - uid: Foundry.Core.Editor.ClassFinder
+    name: ClassFinder
+  - uid: Foundry.Core.Editor.FoundryConfigWindow
+    name: FoundryConfigWindow
+  - uid: Foundry.Core.Editor.FoundryDevToolsWindow
+    name: FoundryDevToolsWindow
+  - uid: Foundry.Core.Editor.FoundryPackageRefState
+    name: FoundryPackageRefState
+  - uid: Foundry.Core.Editor.FoundryPackageRefState.PackageState
+    name: FoundryPackageRefState.PackageState
+  - uid: Foundry.Core.Editor.IModuleDefinition
+    name: IModuleDefinition
+  - uid: Foundry.Core.Editor.IServiceDefinition
+    name: IServiceDefinition
+  - uid: Foundry.Core.Editor.NetworkGraphDebugger
+    name: NetworkGraphDebugger
+  - uid: Foundry.Core.Editor.PackageManagerUtil
+    name: PackageManagerUtil
+  - uid: Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry
+    name: PackageManagerUtil.ScopedRegestry
+  - uid: Foundry.Core.Editor.ProvidedService
+    name: ProvidedService
+  - uid: Foundry.Core.Editor.UsedService
+    name: UsedService
+- uid: Foundry.Core.Editor.UIUtils
+  name: Foundry.Core.Editor.UIUtils
+  items:
+  - uid: Foundry.Core.Editor.UIUtils.EditorUIUtils
+    name: EditorUIUtils
+- uid: Foundry.Core.Serialization
+  name: Foundry.Core.Serialization
+  items:
+  - uid: Foundry.Core.Serialization.FoundryDeserializer
+    name: FoundryDeserializer
+  - uid: Foundry.Core.Serialization.FoundrySerializedDataPlaceholder`1
+    name: FoundrySerializedDataPlaceholder<T>
+  - uid: Foundry.Core.Serialization.FoundrySerializer
+    name: FoundrySerializer
+  - uid: Foundry.Core.Serialization.IFoundrySerializable
+    name: IFoundrySerializable
+- uid: Foundry.Core.Setup
+  name: Foundry.Core.Setup
+  items:
+  - uid: Foundry.Core.Setup.FoundryPhysicsSetup
+    name: FoundryPhysicsSetup
+  - uid: Foundry.Core.Setup.FoundrySetupWizard
+    name: FoundrySetupWizard
+  - uid: Foundry.Core.Setup.IModuleSetupTasks
+    name: IModuleSetupTasks
+  - uid: Foundry.Core.Setup.IModuleSetupTasks.State
+    name: IModuleSetupTasks.State
+  - uid: Foundry.Core.Setup.SetupAction
+    name: SetupAction
+  - uid: Foundry.Core.Setup.SetupTask
+    name: SetupTask
+  - uid: Foundry.Core.Setup.SetupTask.Urgency
+    name: SetupTask.Urgency
+  - uid: Foundry.Core.Setup.SetupTaskList
+    name: SetupTaskList
+- uid: Foundry.DesignTools
+  name: Foundry.DesignTools
+  items:
+  - uid: Foundry.DesignTools.RenderDebugHUD
+    name: RenderDebugHUD
+- uid: Foundry.Editor
+  name: Foundry.Editor
+  items:
+  - uid: Foundry.Editor.PlayerRigManagerDefinition
+    name: PlayerRigManagerDefinition
+- uid: Foundry.FakePhysics
+  name: Foundry.FakePhysics
+  items:
+  - uid: Foundry.FakePhysics.HingeJointSimulation
+    name: HingeJointSimulation
+  - uid: Foundry.FakePhysics.SpringJointSimulation
+    name: SpringJointSimulation
+  - uid: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
+    name: SpringJointSimulation.LinearSpringOptions
+- uid: Foundry.Haptics
+  name: Foundry.Haptics
+  items:
+  - uid: Foundry.Haptics.FoundryHaptics
+    name: FoundryHaptics
+- uid: Foundry.Networking
+  name: Foundry.Networking
+  items:
+  - uid: Foundry.Networking.DisconnectBehaviour
+    name: DisconnectBehaviour
+  - uid: Foundry.Networking.FoundryPrefabs
+    name: FoundryPrefabs
+  - uid: Foundry.Networking.FusionInputHandler
+    name: FusionInputHandler
+  - uid: Foundry.Networking.INetworkProperty
+    name: INetworkProperty
+  - uid: Foundry.Networking.INetworkProvider
+    name: INetworkProvider
+  - uid: Foundry.Networking.INetworkedGraphId
+    name: INetworkedGraphId
+  - uid: Foundry.Networking.ISessionInfo
+    name: ISessionInfo
+  - uid: Foundry.Networking.NetworkArray`1
+    name: NetworkArray<T>
+  - uid: Foundry.Networking.NetworkComponent
+    name: NetworkComponent
+  - uid: Foundry.Networking.NetworkErrorEventHandler
+    name: NetworkErrorEventHandler
+  - uid: Foundry.Networking.NetworkEventHandler
+    name: NetworkEventHandler
+  - uid: Foundry.Networking.NetworkGraph
+    name: NetworkGraph
+  - uid: Foundry.Networking.NetworkGraph.GetIDDelegate
+    name: NetworkGraph.GetIDDelegate
+  - uid: Foundry.Networking.NetworkGraphDelta
+    name: NetworkGraphDelta
+  - uid: Foundry.Networking.NetworkGraphNode
+    name: NetworkGraphNode
+  - uid: Foundry.Networking.NetworkId
+    name: NetworkId
+  - uid: Foundry.Networking.NetworkManager
+    name: NetworkManager
+  - uid: Foundry.Networking.NetworkObject
+    name: NetworkObject
+  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
+    name: NetworkObject.IDChangeRequestCallback
+  - uid: Foundry.Networking.NetworkPlayerEventHandler
+    name: NetworkPlayerEventHandler
+  - uid: Foundry.Networking.NetworkProperty`1
+    name: NetworkProperty<T>
+  - uid: Foundry.Networking.NetworkTransform
+    name: NetworkTransform
+  - uid: Foundry.Networking.NetworkTransformAPI
+    name: NetworkTransformAPI
+  - uid: Foundry.Networking.NetworkTransformProperties
+    name: NetworkTransformProperties
+  - uid: Foundry.Networking.SessionInfo
+    name: SessionInfo
+  - uid: Foundry.Networking.SessionType
+    name: SessionType
+  - uid: Foundry.Networking.SpawnMethod
+    name: SpawnMethod
+- uid: Foundry.Networking.Editor
+  name: Foundry.Networking.Editor
+  items:
+  - uid: Foundry.Networking.Editor.NetworkSystemDefinition
+    name: NetworkSystemDefinition
+- uid: Foundry.Rendering.Editor
+  name: Foundry.Rendering.Editor
+  items:
+  - uid: Foundry.Rendering.Editor.MainCameraServiceDefinition
+    name: MainCameraServiceDefinition
+- uid: Foundry.RotationExtensions
+  name: Foundry.RotationExtensions
+  items:
+  - uid: Foundry.RotationExtensions.RotationHelperExtensions
+    name: RotationHelperExtensions
+- uid: Foundry.Services
+  name: Foundry.Services
+  items:
+  - uid: Foundry.Services.ISceneNavigationEntry
+    name: ISceneNavigationEntry
+  - uid: Foundry.Services.ISceneNavigator
+    name: ISceneNavigator
+  - uid: Foundry.Services.NavigationEvent
+    name: NavigationEvent
+  - uid: Foundry.Services.SceneNavigationEntry
+    name: SceneNavigationEntry
+  - uid: Foundry.Services.SceneNavigationExtensions
+    name: SceneNavigationExtensions
+  - uid: Foundry.Services.SceneNavigator
+    name: SceneNavigator
+- uid: Foundry.Services.Editor
+  name: Foundry.Services.Editor
+  items:
+  - uid: Foundry.Services.Editor.SceneNavigatorDefinition
+    name: SceneNavigatorDefinition
+- uid: Foundry.SpatialAudio
+  name: Foundry.SpatialAudio
+  items:
+  - uid: Foundry.SpatialAudio.SpatialAudioSource
+    name: SpatialAudioSource
+- uid: MiniJSON
+  name: MiniJSON
+  items:
+  - uid: MiniJSON.Json
+    name: Json
+- uid: UnityEngine.XR.OpenXR.Features.Interactions
+  name: UnityEngine.XR.OpenXR.Features.Interactions
+  items:
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
+    name: HTCViveTrackerProfile
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+    name: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
+    name: HTCViveTrackerProfile.TrackerComponentPaths
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
+    name: HTCViveTrackerProfile.TrackerUserPaths
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
+    name: HTCViveTrackerProfile.XRTracker
+  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
+    name: HTCViveTrackerProfile.XRViveTracker
+memberLayout: SamePage

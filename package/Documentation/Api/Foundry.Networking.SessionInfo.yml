@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.SessionInfo
+  commentId: T:Foundry.Networking.SessionInfo
+  id: SessionInfo
+  parent: Foundry.Networking
+  children:
+  - Foundry.Networking.SessionInfo.sessionName
+  - Foundry.Networking.SessionInfo.sessionType
+  langs:
+  - csharp
+  - vb
+  name: SessionInfo
+  nameWithType: SessionInfo
+  fullName: Foundry.Networking.SessionInfo
+  type: Class
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SessionInfo
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 51
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Base type for providing session info
+  example: []
+  syntax:
+    content: 'public class SessionInfo : ISessionInfo'
+    content.vb: Public Class SessionInfo Implements ISessionInfo
+  inheritance:
+  - System.Object
+  implements:
+  - Foundry.Networking.ISessionInfo
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Foundry.Networking.SessionInfo.sessionName
+  commentId: P:Foundry.Networking.SessionInfo.sessionName
+  id: sessionName
+  parent: Foundry.Networking.SessionInfo
+  langs:
+  - csharp
+  - vb
+  name: sessionName
+  nameWithType: SessionInfo.sessionName
+  fullName: Foundry.Networking.SessionInfo.sessionName
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: sessionName
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 54
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: The name of the session to join or start
+  example: []
+  syntax:
+    content: public string sessionName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property sessionName As String
+  overload: Foundry.Networking.SessionInfo.sessionName*
+  implements:
+  - Foundry.Networking.ISessionInfo.sessionName
+- uid: Foundry.Networking.SessionInfo.sessionType
+  commentId: P:Foundry.Networking.SessionInfo.sessionType
+  id: sessionType
+  parent: Foundry.Networking.SessionInfo
+  langs:
+  - csharp
+  - vb
+  name: sessionType
+  nameWithType: SessionInfo.sessionType
+  fullName: Foundry.Networking.SessionInfo.sessionType
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: sessionType
+    path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
+    startLine: 57
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: The type of session
+  example: []
+  syntax:
+    content: public SessionType sessionType { get; set; }
+    parameters: []
+    return:
+      type: Foundry.Networking.SessionType
+    content.vb: Public Property sessionType As SessionType
+  overload: Foundry.Networking.SessionInfo.sessionType*
+  implements:
+  - Foundry.Networking.ISessionInfo.sessionType
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Foundry.Networking.ISessionInfo
+  commentId: T:Foundry.Networking.ISessionInfo
+  parent: Foundry.Networking
+  href: Foundry.Networking.ISessionInfo.html
+  name: ISessionInfo
+  nameWithType: ISessionInfo
+  fullName: Foundry.Networking.ISessionInfo
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundry.Networking.SessionInfo.sessionName*
+  commentId: Overload:Foundry.Networking.SessionInfo.sessionName
+  href: Foundry.Networking.SessionInfo.html#Foundry.Networking.SessionInfo.sessionName
+  name: sessionName
+  nameWithType: SessionInfo.sessionName
+  fullName: Foundry.Networking.SessionInfo.sessionName
+- uid: Foundry.Networking.ISessionInfo.sessionName
+  commentId: P:Foundry.Networking.ISessionInfo.sessionName
+  parent: Foundry.Networking.ISessionInfo
+  href: Foundry.Networking.ISessionInfo.html#Foundry.Networking.ISessionInfo.sessionName
+  name: sessionName
+  nameWithType: ISessionInfo.sessionName
+  fullName: Foundry.Networking.ISessionInfo.sessionName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Foundry.Networking.SessionInfo.sessionType*
+  commentId: Overload:Foundry.Networking.SessionInfo.sessionType
+  href: Foundry.Networking.SessionInfo.html#Foundry.Networking.SessionInfo.sessionType
+  name: sessionType
+  nameWithType: SessionInfo.sessionType
+  fullName: Foundry.Networking.SessionInfo.sessionType
+- uid: Foundry.Networking.ISessionInfo.sessionType
+  commentId: P:Foundry.Networking.ISessionInfo.sessionType
+  parent: Foundry.Networking.ISessionInfo
+  href: Foundry.Networking.ISessionInfo.html#Foundry.Networking.ISessionInfo.sessionType
+  name: sessionType
+  nameWithType: ISessionInfo.sessionType
+  fullName: Foundry.Networking.ISessionInfo.sessionType
+- uid: Foundry.Networking.SessionType
+  commentId: T:Foundry.Networking.SessionType
+  parent: Foundry.Networking
+  href: Foundry.Networking.SessionType.html
+  name: SessionType
+  nameWithType: SessionType
+  fullName: Foundry.Networking.SessionType

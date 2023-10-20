@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: MiniJSON
+  commentId: N:MiniJSON
+  id: MiniJSON
+  children:
+  - MiniJSON.Json
+  langs:
+  - csharp
+  - vb
+  name: MiniJSON
+  nameWithType: MiniJSON
+  fullName: MiniJSON
+  type: Namespace
+  assemblies:
+  - Foundry.Core.Editor.PackageManagerUtil
+references:
+- uid: MiniJSON.Json
+  commentId: T:MiniJSON.Json
+  href: MiniJSON.Json.html
+  name: Json
+  nameWithType: Json
+  fullName: MiniJSON.Json

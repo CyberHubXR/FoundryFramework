@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Services.NavigationEvent
+  commentId: T:Foundry.Services.NavigationEvent
+  id: NavigationEvent
+  parent: Foundry.Services
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: NavigationEvent
+  nameWithType: NavigationEvent
+  fullName: Foundry.Services.NavigationEvent
+  type: Delegate
+  source:
+    remote:
+      path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NavigationEvent
+    path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Services
+  summary: Event delegate for navigation events
+  example: []
+  syntax:
+    content: public delegate void NavigationEvent(ISceneNavigationEntry scene)
+    parameters:
+    - id: scene
+      type: Foundry.Services.ISceneNavigationEntry
+    content.vb: Public Delegate Sub NavigationEvent(scene As ISceneNavigationEntry)
+references:
+- uid: Foundry.Services
+  commentId: N:Foundry.Services
+  href: Foundry.html
+  name: Foundry.Services
+  nameWithType: Foundry.Services
+  fullName: Foundry.Services
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Services
+    name: Services
+    href: Foundry.Services.html
+- uid: Foundry.Services.ISceneNavigationEntry
+  commentId: T:Foundry.Services.ISceneNavigationEntry
+  parent: Foundry.Services
+  href: Foundry.Services.ISceneNavigationEntry.html
+  name: ISceneNavigationEntry
+  nameWithType: ISceneNavigationEntry
+  fullName: Foundry.Services.ISceneNavigationEntry

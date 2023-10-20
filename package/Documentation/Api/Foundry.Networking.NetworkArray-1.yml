@@ -1,0 +1,1383 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Networking.NetworkArray`1
+  commentId: T:Foundry.Networking.NetworkArray`1
+  id: NetworkArray`1
+  parent: Foundry.Networking
+  children:
+  - Foundry.Networking.NetworkArray`1.#ctor(System.Int32)
+  - Foundry.Networking.NetworkArray`1.#ctor(`0,System.Int32)
+  - Foundry.Networking.NetworkArray`1.#ctor(`0[])
+  - Foundry.Networking.NetworkArray`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - Foundry.Networking.NetworkArray`1.Dirty
+  - Foundry.Networking.NetworkArray`1.Get(System.Int32)
+  - Foundry.Networking.NetworkArray`1.IsIndexDirty(System.Int32)
+  - Foundry.Networking.NetworkArray`1.Item(System.Int32)
+  - Foundry.Networking.NetworkArray`1.Length
+  - Foundry.Networking.NetworkArray`1.OnChanged
+  - Foundry.Networking.NetworkArray`1.OnIndexSet
+  - Foundry.Networking.NetworkArray`1.RawArray
+  - Foundry.Networking.NetworkArray`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  - Foundry.Networking.NetworkArray`1.Set(System.Int32,`0)
+  - Foundry.Networking.NetworkArray`1.SetClean
+  - Foundry.Networking.NetworkArray`1.SetDirty
+  - Foundry.Networking.NetworkArray`1.SetIndexDirty(System.Int32)
+  - Foundry.Networking.NetworkArray`1.ToString
+  langs:
+  - csharp
+  - vb
+  name: NetworkArray<T>
+  nameWithType: NetworkArray<T>
+  fullName: Foundry.Networking.NetworkArray<T>
+  type: Class
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetworkArray
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 7
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class NetworkArray<T> : INetworkProperty
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <Serializable>
+
+      Public Class NetworkArray(Of T) Implements INetworkProperty
+  inheritance:
+  - System.Object
+  implements:
+  - Foundry.Networking.INetworkProperty
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: NetworkArray(Of T)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T)
+  name.vb: NetworkArray(Of T)
+- uid: Foundry.Networking.NetworkArray`1.OnIndexSet
+  commentId: F:Foundry.Networking.NetworkArray`1.OnIndexSet
+  id: OnIndexSet
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: OnIndexSet
+  nameWithType: NetworkArray<T>.OnIndexSet
+  fullName: Foundry.Networking.NetworkArray<T>.OnIndexSet
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: OnIndexSet
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 20
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Called when a value is set on the array, both locally and over the network. The index and value are passed as parameters.
+  example: []
+  syntax:
+    content: public Action<int, T> OnIndexSet
+    return:
+      type: System.Action{System.Int32,{T}}
+    content.vb: Public OnIndexSet As Action(Of Integer, T)
+  nameWithType.vb: NetworkArray(Of T).OnIndexSet
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).OnIndexSet
+- uid: Foundry.Networking.NetworkArray`1.OnChanged
+  commentId: P:Foundry.Networking.NetworkArray`1.OnChanged
+  id: OnChanged
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: OnChanged
+  nameWithType: NetworkArray<T>.OnChanged
+  fullName: Foundry.Networking.NetworkArray<T>.OnChanged
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: OnChanged
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 22
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: >-
+    Generic change event for when the property has been changed, either locally or remotely.
+
+    We recommend using a more granular event provided directly by whatever class is implementing this property.
+  example: []
+  syntax:
+    content: public Action OnChanged { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public Property OnChanged As Action
+  overload: Foundry.Networking.NetworkArray`1.OnChanged*
+  implements:
+  - Foundry.Networking.INetworkProperty.OnChanged
+  nameWithType.vb: NetworkArray(Of T).OnChanged
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).OnChanged
+- uid: Foundry.Networking.NetworkArray`1.#ctor(System.Int32)
+  commentId: M:Foundry.Networking.NetworkArray`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: NetworkArray(int)
+  nameWithType: NetworkArray<T>.NetworkArray(int)
+  fullName: Foundry.Networking.NetworkArray<T>.NetworkArray(int)
+  type: Constructor
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: .ctor
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 28
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: To keep serialization efficient, a size is required that should be the same on all clients. The size is not networked.
+  example: []
+  syntax:
+    content: public NetworkArray(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(size As Integer)
+  overload: Foundry.Networking.NetworkArray`1.#ctor*
+  nameWithType.vb: NetworkArray(Of T).New(Integer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).New(Integer)
+  name.vb: New(Integer)
+- uid: Foundry.Networking.NetworkArray`1.#ctor(`0,System.Int32)
+  commentId: M:Foundry.Networking.NetworkArray`1.#ctor(`0,System.Int32)
+  id: '#ctor(`0,System.Int32)'
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: NetworkArray(T, int)
+  nameWithType: NetworkArray<T>.NetworkArray(T, int)
+  fullName: Foundry.Networking.NetworkArray<T>.NetworkArray(T, int)
+  type: Constructor
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: .ctor
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 42
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Initialize a NetworkArray with a default value. The size is not networked.
+  example: []
+  syntax:
+    content: public NetworkArray(T defaultValue, int size)
+    parameters:
+    - id: defaultValue
+      type: '{T}'
+      description: ''
+    - id: size
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub New(defaultValue As T, size As Integer)
+  overload: Foundry.Networking.NetworkArray`1.#ctor*
+  nameWithType.vb: NetworkArray(Of T).New(T, Integer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).New(T, Integer)
+  name.vb: New(T, Integer)
+- uid: Foundry.Networking.NetworkArray`1.#ctor(`0[])
+  commentId: M:Foundry.Networking.NetworkArray`1.#ctor(`0[])
+  id: '#ctor(`0[])'
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: NetworkArray(T[])
+  nameWithType: NetworkArray<T>.NetworkArray(T[])
+  fullName: Foundry.Networking.NetworkArray<T>.NetworkArray(T[])
+  type: Constructor
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: .ctor
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 57
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Construct a NetworkArray with a default value for each item. The size is not networked.
+  example: []
+  syntax:
+    content: public NetworkArray(T[] defaultValues)
+    parameters:
+    - id: defaultValues
+      type: '{T}[]'
+      description: ''
+    content.vb: Public Sub New(defaultValues As T())
+  overload: Foundry.Networking.NetworkArray`1.#ctor*
+  nameWithType.vb: NetworkArray(Of T).New(T())
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).New(T())
+  name.vb: New(T())
+- uid: Foundry.Networking.NetworkArray`1.Dirty
+  commentId: P:Foundry.Networking.NetworkArray`1.Dirty
+  id: Dirty
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: Dirty
+  nameWithType: NetworkArray<T>.Dirty
+  fullName: Foundry.Networking.NetworkArray<T>.Dirty
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Dirty
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 66
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: If dirty, this property will be synced across the network.
+  example: []
+  syntax:
+    content: public bool Dirty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Dirty As Boolean
+  overload: Foundry.Networking.NetworkArray`1.Dirty*
+  implements:
+  - Foundry.Networking.INetworkProperty.Dirty
+  nameWithType.vb: NetworkArray(Of T).Dirty
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Dirty
+- uid: Foundry.Networking.NetworkArray`1.Length
+  commentId: P:Foundry.Networking.NetworkArray`1.Length
+  id: Length
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: NetworkArray<T>.Length
+  fullName: Foundry.Networking.NetworkArray<T>.Length
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Length
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 68
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public int Length { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Length As Integer
+  overload: Foundry.Networking.NetworkArray`1.Length*
+  nameWithType.vb: NetworkArray(Of T).Length
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Length
+- uid: Foundry.Networking.NetworkArray`1.SetDirty
+  commentId: M:Foundry.Networking.NetworkArray`1.SetDirty
+  id: SetDirty
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: SetDirty()
+  nameWithType: NetworkArray<T>.SetDirty()
+  fullName: Foundry.Networking.NetworkArray<T>.SetDirty()
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetDirty
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 70
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Set this property dirty, useful for when a property is synced incrementally and we need to send the whole object.
+  example: []
+  syntax:
+    content: public void SetDirty()
+    content.vb: Public Sub SetDirty()
+  overload: Foundry.Networking.NetworkArray`1.SetDirty*
+  implements:
+  - Foundry.Networking.INetworkProperty.SetDirty
+  nameWithType.vb: NetworkArray(Of T).SetDirty()
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).SetDirty()
+- uid: Foundry.Networking.NetworkArray`1.SetClean
+  commentId: M:Foundry.Networking.NetworkArray`1.SetClean
+  id: SetClean
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: SetClean()
+  nameWithType: NetworkArray<T>.SetClean()
+  fullName: Foundry.Networking.NetworkArray<T>.SetClean()
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetClean
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 77
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Called after variable has been serialized and sent across the network to reset state.
+  example: []
+  syntax:
+    content: public void SetClean()
+    content.vb: Public Sub SetClean()
+  overload: Foundry.Networking.NetworkArray`1.SetClean*
+  implements:
+  - Foundry.Networking.INetworkProperty.SetClean
+  nameWithType.vb: NetworkArray(Of T).SetClean()
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).SetClean()
+- uid: Foundry.Networking.NetworkArray`1.SetIndexDirty(System.Int32)
+  commentId: M:Foundry.Networking.NetworkArray`1.SetIndexDirty(System.Int32)
+  id: SetIndexDirty(System.Int32)
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: SetIndexDirty(int)
+  nameWithType: NetworkArray<T>.SetIndexDirty(int)
+  fullName: Foundry.Networking.NetworkArray<T>.SetIndexDirty(int)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: SetIndexDirty
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 85
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public void SetIndexDirty(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub SetIndexDirty(index As Integer)
+  overload: Foundry.Networking.NetworkArray`1.SetIndexDirty*
+  nameWithType.vb: NetworkArray(Of T).SetIndexDirty(Integer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).SetIndexDirty(Integer)
+  name.vb: SetIndexDirty(Integer)
+- uid: Foundry.Networking.NetworkArray`1.IsIndexDirty(System.Int32)
+  commentId: M:Foundry.Networking.NetworkArray`1.IsIndexDirty(System.Int32)
+  id: IsIndexDirty(System.Int32)
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: IsIndexDirty(int)
+  nameWithType: NetworkArray<T>.IsIndexDirty(int)
+  fullName: Foundry.Networking.NetworkArray<T>.IsIndexDirty(int)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IsIndexDirty
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 96
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public bool IsIndexDirty(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsIndexDirty(index As Integer) As Boolean
+  overload: Foundry.Networking.NetworkArray`1.IsIndexDirty*
+  nameWithType.vb: NetworkArray(Of T).IsIndexDirty(Integer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).IsIndexDirty(Integer)
+  name.vb: IsIndexDirty(Integer)
+- uid: Foundry.Networking.NetworkArray`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  commentId: M:Foundry.Networking.NetworkArray`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  id: Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: Serialize(FoundrySerializer)
+  nameWithType: NetworkArray<T>.Serialize(FoundrySerializer)
+  fullName: Foundry.Networking.NetworkArray<T>.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Serialize
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 103
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Write contained data out to the stream to be synced across the network.
+  example: []
+  syntax:
+    content: public void Serialize(FoundrySerializer serializer)
+    parameters:
+    - id: serializer
+      type: Foundry.Core.Serialization.FoundrySerializer
+      description: ''
+    content.vb: Public Sub Serialize(serializer As FoundrySerializer)
+  overload: Foundry.Networking.NetworkArray`1.Serialize*
+  implements:
+  - Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  nameWithType.vb: NetworkArray(Of T).Serialize(FoundrySerializer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Serialize(Foundry.Core.Serialization.FoundrySerializer)
+- uid: Foundry.Networking.NetworkArray`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Networking.NetworkArray`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  id: Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: NetworkArray<T>.Deserialize(FoundryDeserializer)
+  fullName: Foundry.Networking.NetworkArray<T>.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Deserialize
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 120
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: Read data received from the network into this property.
+  example: []
+  syntax:
+    content: public void Deserialize(FoundryDeserializer deserializer)
+    parameters:
+    - id: deserializer
+      type: Foundry.Core.Serialization.FoundryDeserializer
+      description: ''
+    content.vb: Public Sub Deserialize(deserializer As FoundryDeserializer)
+  overload: Foundry.Networking.NetworkArray`1.Deserialize*
+  implements:
+  - Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  nameWithType.vb: NetworkArray(Of T).Deserialize(FoundryDeserializer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+- uid: Foundry.Networking.NetworkArray`1.Set(System.Int32,`0)
+  commentId: M:Foundry.Networking.NetworkArray`1.Set(System.Int32,`0)
+  id: Set(System.Int32,`0)
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: Set(int, T)
+  nameWithType: NetworkArray<T>.Set(int, T)
+  fullName: Foundry.Networking.NetworkArray<T>.Set(int, T)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Set
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 134
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public void Set(int index, T value)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: value
+      type: '{T}'
+    content.vb: Public Sub [Set](index As Integer, value As T)
+  overload: Foundry.Networking.NetworkArray`1.Set*
+  nameWithType.vb: NetworkArray(Of T).Set(Integer, T)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Set(Integer, T)
+  name.vb: Set(Integer, T)
+- uid: Foundry.Networking.NetworkArray`1.Get(System.Int32)
+  commentId: M:Foundry.Networking.NetworkArray`1.Get(System.Int32)
+  id: Get(System.Int32)
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: NetworkArray<T>.Get(int)
+  fullName: Foundry.Networking.NetworkArray<T>.Get(int)
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Get
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 142
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public T Get(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Function [Get](index As Integer) As T
+  overload: Foundry.Networking.NetworkArray`1.Get*
+  nameWithType.vb: NetworkArray(Of T).Get(Integer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Get(Integer)
+  name.vb: Get(Integer)
+- uid: Foundry.Networking.NetworkArray`1.Item(System.Int32)
+  commentId: P:Foundry.Networking.NetworkArray`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: NetworkArray<T>.this[int]
+  fullName: Foundry.Networking.NetworkArray<T>.this[int]
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: this[]
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 147
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  syntax:
+    content: public T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{T}'
+    content.vb: Public Default Property this[](index As Integer) As T
+  overload: Foundry.Networking.NetworkArray`1.Item*
+  nameWithType.vb: NetworkArray(Of T).this[](Integer)
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).this[](Integer)
+  name.vb: this[](Integer)
+- uid: Foundry.Networking.NetworkArray`1.RawArray
+  commentId: P:Foundry.Networking.NetworkArray`1.RawArray
+  id: RawArray
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: RawArray
+  nameWithType: NetworkArray<T>.RawArray
+  fullName: Foundry.Networking.NetworkArray<T>.RawArray
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: RawArray
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 158
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  summary: >-
+    It is advised to use the provided Set, Get, and [] methods instead of this, as they handle setting the dirty flags for you.
+
+    But if you want to edit items manually or by reference you can use this. Make sure to set the dirty flag manually
+
+    for indices you change using SetIndexDirty().
+  example: []
+  syntax:
+    content: public T[] RawArray { get; }
+    parameters: []
+    return:
+      type: '{T}[]'
+    content.vb: Public ReadOnly Property RawArray As T()
+  overload: Foundry.Networking.NetworkArray`1.RawArray*
+  nameWithType.vb: NetworkArray(Of T).RawArray
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).RawArray
+- uid: Foundry.Networking.NetworkArray`1.ToString
+  commentId: M:Foundry.Networking.NetworkArray`1.ToString
+  id: ToString
+  parent: Foundry.Networking.NetworkArray`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: NetworkArray<T>.ToString()
+  fullName: Foundry.Networking.NetworkArray<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkArray.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: ToString
+    path: ../Networking/Scripts/NetworkArray.cs
+    startLine: 161
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry.Networking
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Foundry.Networking.NetworkArray`1.ToString*
+  implements:
+  - Foundry.Networking.INetworkProperty.ToString
+  nameWithType.vb: NetworkArray(Of T).ToString()
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).ToString()
+references:
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Foundry.Networking.INetworkProperty
+  commentId: T:Foundry.Networking.INetworkProperty
+  parent: Foundry.Networking
+  href: Foundry.Networking.INetworkProperty.html
+  name: INetworkProperty
+  nameWithType: INetworkProperty
+  fullName: Foundry.Networking.INetworkProperty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{System.Int32,{T}}
+  commentId: T:System.Action{System.Int32,`0}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<int, T>
+  nameWithType: Action<int, T>
+  fullName: System.Action<int, T>
+  nameWithType.vb: Action(Of Integer, T)
+  fullName.vb: System.Action(Of Integer, T)
+  name.vb: Action(Of Integer, T)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Foundry.Networking.NetworkArray`1.OnChanged*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.OnChanged
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.OnChanged
+  name: OnChanged
+  nameWithType: NetworkArray<T>.OnChanged
+  fullName: Foundry.Networking.NetworkArray<T>.OnChanged
+  nameWithType.vb: NetworkArray(Of T).OnChanged
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).OnChanged
+- uid: Foundry.Networking.INetworkProperty.OnChanged
+  commentId: P:Foundry.Networking.INetworkProperty.OnChanged
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.OnChanged
+  name: OnChanged
+  nameWithType: INetworkProperty.OnChanged
+  fullName: Foundry.Networking.INetworkProperty.OnChanged
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Foundry.Networking.NetworkArray`1.#ctor*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.#ctor
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.#ctor(System.Int32)
+  name: NetworkArray
+  nameWithType: NetworkArray<T>.NetworkArray
+  fullName: Foundry.Networking.NetworkArray<T>.NetworkArray
+  nameWithType.vb: NetworkArray(Of T).New
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkArray`1.Dirty*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.Dirty
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.Dirty
+  name: Dirty
+  nameWithType: NetworkArray<T>.Dirty
+  fullName: Foundry.Networking.NetworkArray<T>.Dirty
+  nameWithType.vb: NetworkArray(Of T).Dirty
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Dirty
+- uid: Foundry.Networking.INetworkProperty.Dirty
+  commentId: P:Foundry.Networking.INetworkProperty.Dirty
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Dirty
+  name: Dirty
+  nameWithType: INetworkProperty.Dirty
+  fullName: Foundry.Networking.INetworkProperty.Dirty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Foundry.Networking.NetworkArray`1.Length*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.Length
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.Length
+  name: Length
+  nameWithType: NetworkArray<T>.Length
+  fullName: Foundry.Networking.NetworkArray<T>.Length
+  nameWithType.vb: NetworkArray(Of T).Length
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Length
+- uid: Foundry.Networking.NetworkArray`1.SetDirty*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.SetDirty
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.SetDirty
+  name: SetDirty
+  nameWithType: NetworkArray<T>.SetDirty
+  fullName: Foundry.Networking.NetworkArray<T>.SetDirty
+  nameWithType.vb: NetworkArray(Of T).SetDirty
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).SetDirty
+- uid: Foundry.Networking.INetworkProperty.SetDirty
+  commentId: M:Foundry.Networking.INetworkProperty.SetDirty
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetDirty
+  name: SetDirty()
+  nameWithType: INetworkProperty.SetDirty()
+  fullName: Foundry.Networking.INetworkProperty.SetDirty()
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.SetDirty
+    name: SetDirty
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetDirty
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.SetDirty
+    name: SetDirty
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetDirty
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkArray`1.SetClean*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.SetClean
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.SetClean
+  name: SetClean
+  nameWithType: NetworkArray<T>.SetClean
+  fullName: Foundry.Networking.NetworkArray<T>.SetClean
+  nameWithType.vb: NetworkArray(Of T).SetClean
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).SetClean
+- uid: Foundry.Networking.INetworkProperty.SetClean
+  commentId: M:Foundry.Networking.INetworkProperty.SetClean
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetClean
+  name: SetClean()
+  nameWithType: INetworkProperty.SetClean()
+  fullName: Foundry.Networking.INetworkProperty.SetClean()
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.SetClean
+    name: SetClean
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetClean
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.SetClean
+    name: SetClean
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.SetClean
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkArray`1.SetIndexDirty*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.SetIndexDirty
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.SetIndexDirty(System.Int32)
+  name: SetIndexDirty
+  nameWithType: NetworkArray<T>.SetIndexDirty
+  fullName: Foundry.Networking.NetworkArray<T>.SetIndexDirty
+  nameWithType.vb: NetworkArray(Of T).SetIndexDirty
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).SetIndexDirty
+- uid: Foundry.Networking.NetworkArray`1.IsIndexDirty*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.IsIndexDirty
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.IsIndexDirty(System.Int32)
+  name: IsIndexDirty
+  nameWithType: NetworkArray<T>.IsIndexDirty
+  fullName: Foundry.Networking.NetworkArray<T>.IsIndexDirty
+  nameWithType.vb: NetworkArray(Of T).IsIndexDirty
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).IsIndexDirty
+- uid: Foundry.Networking.NetworkArray`1.Serialize*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.Serialize
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  name: Serialize
+  nameWithType: NetworkArray<T>.Serialize
+  fullName: Foundry.Networking.NetworkArray<T>.Serialize
+  nameWithType.vb: NetworkArray(Of T).Serialize
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Serialize
+- uid: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  commentId: M:Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  name: Serialize(FoundrySerializer)
+  nameWithType: INetworkProperty.Serialize(FoundrySerializer)
+  fullName: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+    name: Serialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundrySerializer
+    name: FoundrySerializer
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+    name: Serialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundrySerializer
+    name: FoundrySerializer
+  - name: )
+- uid: Foundry.Core.Serialization.FoundrySerializer
+  commentId: T:Foundry.Core.Serialization.FoundrySerializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundrySerializer.html
+  name: FoundrySerializer
+  nameWithType: FoundrySerializer
+  fullName: Foundry.Core.Serialization.FoundrySerializer
+- uid: Foundry.Core.Serialization
+  commentId: N:Foundry.Core.Serialization
+  href: Foundry.html
+  name: Foundry.Core.Serialization
+  nameWithType: Foundry.Core.Serialization
+  fullName: Foundry.Core.Serialization
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+- uid: Foundry.Networking.NetworkArray`1.Deserialize*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.Deserialize
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Deserialize
+  nameWithType: NetworkArray<T>.Deserialize
+  fullName: Foundry.Networking.NetworkArray<T>.Deserialize
+  nameWithType.vb: NetworkArray(Of T).Deserialize
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Deserialize
+- uid: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: INetworkProperty.Deserialize(FoundryDeserializer)
+  fullName: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+    name: Deserialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundryDeserializer
+    name: FoundryDeserializer
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+    name: Deserialize
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - name: (
+  - uid: Foundry.Core.Serialization.FoundryDeserializer
+    name: FoundryDeserializer
+  - name: )
+- uid: Foundry.Core.Serialization.FoundryDeserializer
+  commentId: T:Foundry.Core.Serialization.FoundryDeserializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundryDeserializer.html
+  name: FoundryDeserializer
+  nameWithType: FoundryDeserializer
+  fullName: Foundry.Core.Serialization.FoundryDeserializer
+- uid: Foundry.Networking.NetworkArray`1.Set*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.Set
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.Set(System.Int32,`0)
+  name: Set
+  nameWithType: NetworkArray<T>.Set
+  fullName: Foundry.Networking.NetworkArray<T>.Set
+  nameWithType.vb: NetworkArray(Of T).Set
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Set
+- uid: Foundry.Networking.NetworkArray`1.Get*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.Get
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.Get(System.Int32)
+  name: Get
+  nameWithType: NetworkArray<T>.Get
+  fullName: Foundry.Networking.NetworkArray<T>.Get
+  nameWithType.vb: NetworkArray(Of T).Get
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).Get
+- uid: Foundry.Networking.NetworkArray`1.Item*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.Item
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.Item(System.Int32)
+  name: this
+  nameWithType: NetworkArray<T>.this
+  fullName: Foundry.Networking.NetworkArray<T>.this
+  nameWithType.vb: NetworkArray(Of T).this[]
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).this[]
+  name.vb: this[]
+- uid: Foundry.Networking.NetworkArray`1.RawArray*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.RawArray
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.RawArray
+  name: RawArray
+  nameWithType: NetworkArray<T>.RawArray
+  fullName: Foundry.Networking.NetworkArray<T>.RawArray
+  nameWithType.vb: NetworkArray(Of T).RawArray
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).RawArray
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkArray`1.ToString*
+  commentId: Overload:Foundry.Networking.NetworkArray`1.ToString
+  href: Foundry.Networking.NetworkArray-1.html#Foundry.Networking.NetworkArray`1.ToString
+  name: ToString
+  nameWithType: NetworkArray<T>.ToString
+  fullName: Foundry.Networking.NetworkArray<T>.ToString
+  nameWithType.vb: NetworkArray(Of T).ToString
+  fullName.vb: Foundry.Networking.NetworkArray(Of T).ToString
+- uid: Foundry.Networking.INetworkProperty.ToString
+  commentId: M:Foundry.Networking.INetworkProperty.ToString
+  parent: Foundry.Networking.INetworkProperty
+  href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.ToString
+  name: ToString()
+  nameWithType: INetworkProperty.ToString()
+  fullName: Foundry.Networking.INetworkProperty.ToString()
+  spec.csharp:
+  - uid: Foundry.Networking.INetworkProperty.ToString
+    name: ToString
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.INetworkProperty.ToString
+    name: ToString
+    href: Foundry.Networking.INetworkProperty.html#Foundry.Networking.INetworkProperty.ToString
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

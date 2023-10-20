@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Setup.IModuleSetupTasks.State
+  commentId: T:Foundry.Core.Setup.IModuleSetupTasks.State
+  id: IModuleSetupTasks.State
+  parent: Foundry.Core.Setup
+  children:
+  - Foundry.Core.Setup.IModuleSetupTasks.State.Completed
+  - Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedOptionalTasks
+  - Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedRequiredTasks
+  langs:
+  - csharp
+  - vb
+  name: IModuleSetupTasks.State
+  nameWithType: IModuleSetupTasks.State
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.State
+  type: Enum
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: State
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: public enum IModuleSetupTasks.State
+    content.vb: Public Enum IModuleSetupTasks.State
+- uid: Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedRequiredTasks
+  commentId: F:Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedRequiredTasks
+  id: UncompletedRequiredTasks
+  parent: Foundry.Core.Setup.IModuleSetupTasks.State
+  langs:
+  - csharp
+  - vb
+  name: UncompletedRequiredTasks
+  nameWithType: IModuleSetupTasks.State.UncompletedRequiredTasks
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedRequiredTasks
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: UncompletedRequiredTasks
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: UncompletedRequiredTasks = 0
+    return:
+      type: Foundry.Core.Setup.IModuleSetupTasks.State
+- uid: Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedOptionalTasks
+  commentId: F:Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedOptionalTasks
+  id: UncompletedOptionalTasks
+  parent: Foundry.Core.Setup.IModuleSetupTasks.State
+  langs:
+  - csharp
+  - vb
+  name: UncompletedOptionalTasks
+  nameWithType: IModuleSetupTasks.State.UncompletedOptionalTasks
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.State.UncompletedOptionalTasks
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: UncompletedOptionalTasks
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: UncompletedOptionalTasks = 1
+    return:
+      type: Foundry.Core.Setup.IModuleSetupTasks.State
+- uid: Foundry.Core.Setup.IModuleSetupTasks.State.Completed
+  commentId: F:Foundry.Core.Setup.IModuleSetupTasks.State.Completed
+  id: Completed
+  parent: Foundry.Core.Setup.IModuleSetupTasks.State
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: IModuleSetupTasks.State.Completed
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.State.Completed
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/ModuleSetupTasks.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Completed
+    path: ../Editor/SetupWizard/ModuleSetupTasks.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  syntax:
+    content: Completed = 2
+    return:
+      type: Foundry.Core.Setup.IModuleSetupTasks.State
+references:
+- uid: Foundry.Core.Setup
+  commentId: N:Foundry.Core.Setup
+  href: Foundry.html
+  name: Foundry.Core.Setup
+  nameWithType: Foundry.Core.Setup
+  fullName: Foundry.Core.Setup
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Setup
+    name: Setup
+    href: Foundry.Core.Setup.html
+- uid: Foundry.Core.Setup.IModuleSetupTasks.State
+  commentId: T:Foundry.Core.Setup.IModuleSetupTasks.State
+  parent: Foundry.Core.Setup
+  href: Foundry.Core.Setup.IModuleSetupTasks.html
+  name: IModuleSetupTasks.State
+  nameWithType: IModuleSetupTasks.State
+  fullName: Foundry.Core.Setup.IModuleSetupTasks.State
+  spec.csharp:
+  - uid: Foundry.Core.Setup.IModuleSetupTasks
+    name: IModuleSetupTasks
+    href: Foundry.Core.Setup.IModuleSetupTasks.html
+  - name: .
+  - uid: Foundry.Core.Setup.IModuleSetupTasks.State
+    name: State
+    href: Foundry.Core.Setup.IModuleSetupTasks.State.html
+  spec.vb:
+  - uid: Foundry.Core.Setup.IModuleSetupTasks
+    name: IModuleSetupTasks
+    href: Foundry.Core.Setup.IModuleSetupTasks.html
+  - name: .
+  - uid: Foundry.Core.Setup.IModuleSetupTasks.State
+    name: State
+    href: Foundry.Core.Setup.IModuleSetupTasks.State.html

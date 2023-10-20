@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.FoundryUIRaycaster.InputSource
+  commentId: T:Foundry.FoundryUIRaycaster.InputSource
+  id: FoundryUIRaycaster.InputSource
+  parent: Foundry
+  children:
+  - Foundry.FoundryUIRaycaster.InputSource.Desktop
+  - Foundry.FoundryUIRaycaster.InputSource.Left
+  - Foundry.FoundryUIRaycaster.InputSource.Right
+  langs:
+  - csharp
+  - vb
+  name: FoundryUIRaycaster.InputSource
+  nameWithType: FoundryUIRaycaster.InputSource
+  fullName: Foundry.FoundryUIRaycaster.InputSource
+  type: Enum
+  source:
+    remote:
+      path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: InputSource
+    path: ../Input/Common/Scripts/FoundryUIRaycaster.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum FoundryUIRaycaster.InputSource
+    content.vb: Public Enum FoundryUIRaycaster.InputSource
+- uid: Foundry.FoundryUIRaycaster.InputSource.Desktop
+  commentId: F:Foundry.FoundryUIRaycaster.InputSource.Desktop
+  id: Desktop
+  parent: Foundry.FoundryUIRaycaster.InputSource
+  langs:
+  - csharp
+  - vb
+  name: Desktop
+  nameWithType: FoundryUIRaycaster.InputSource.Desktop
+  fullName: Foundry.FoundryUIRaycaster.InputSource.Desktop
+  type: Field
+  source:
+    remote:
+      path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Desktop
+    path: ../Input/Common/Scripts/FoundryUIRaycaster.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Desktop = 0
+    return:
+      type: Foundry.FoundryUIRaycaster.InputSource
+- uid: Foundry.FoundryUIRaycaster.InputSource.Left
+  commentId: F:Foundry.FoundryUIRaycaster.InputSource.Left
+  id: Left
+  parent: Foundry.FoundryUIRaycaster.InputSource
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: FoundryUIRaycaster.InputSource.Left
+  fullName: Foundry.FoundryUIRaycaster.InputSource.Left
+  type: Field
+  source:
+    remote:
+      path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Left
+    path: ../Input/Common/Scripts/FoundryUIRaycaster.cs
+    startLine: 12
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Left = 1
+    return:
+      type: Foundry.FoundryUIRaycaster.InputSource
+- uid: Foundry.FoundryUIRaycaster.InputSource.Right
+  commentId: F:Foundry.FoundryUIRaycaster.InputSource.Right
+  id: Right
+  parent: Foundry.FoundryUIRaycaster.InputSource
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: FoundryUIRaycaster.InputSource.Right
+  fullName: Foundry.FoundryUIRaycaster.InputSource.Right
+  type: Field
+  source:
+    remote:
+      path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Right
+    path: ../Input/Common/Scripts/FoundryUIRaycaster.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Right = 2
+    return:
+      type: Foundry.FoundryUIRaycaster.InputSource
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.FoundryUIRaycaster.InputSource
+  commentId: T:Foundry.FoundryUIRaycaster.InputSource
+  parent: Foundry
+  href: Foundry.FoundryUIRaycaster.html
+  name: FoundryUIRaycaster.InputSource
+  nameWithType: FoundryUIRaycaster.InputSource
+  fullName: Foundry.FoundryUIRaycaster.InputSource
+  spec.csharp:
+  - uid: Foundry.FoundryUIRaycaster
+    name: FoundryUIRaycaster
+    href: Foundry.FoundryUIRaycaster.html
+  - name: .
+  - uid: Foundry.FoundryUIRaycaster.InputSource
+    name: InputSource
+    href: Foundry.FoundryUIRaycaster.InputSource.html
+  spec.vb:
+  - uid: Foundry.FoundryUIRaycaster
+    name: FoundryUIRaycaster
+    href: Foundry.FoundryUIRaycaster.html
+  - name: .
+  - uid: Foundry.FoundryUIRaycaster.InputSource
+    name: InputSource
+    href: Foundry.FoundryUIRaycaster.InputSource.html

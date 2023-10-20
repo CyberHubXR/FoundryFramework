@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.NetEventSource
+  commentId: T:Foundry.NetEventSource
+  id: NetEventSource
+  parent: Foundry
+  children:
+  - Foundry.NetEventSource.Local
+  - Foundry.NetEventSource.Remote
+  langs:
+  - csharp
+  - vb
+  name: NetEventSource
+  nameWithType: NetEventSource
+  fullName: Foundry.NetEventSource
+  type: Enum
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: NetEventSource
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 14
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public enum NetEventSource
+    content.vb: Public Enum NetEventSource
+- uid: Foundry.NetEventSource.Local
+  commentId: F:Foundry.NetEventSource.Local
+  id: Local
+  parent: Foundry.NetEventSource
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: NetEventSource.Local
+  fullName: Foundry.NetEventSource.Local
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Local
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 16
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Local = 0
+    return:
+      type: Foundry.NetEventSource
+- uid: Foundry.NetEventSource.Remote
+  commentId: F:Foundry.NetEventSource.Remote
+  id: Remote
+  parent: Foundry.NetEventSource
+  langs:
+  - csharp
+  - vb
+  name: Remote
+  nameWithType: NetEventSource.Remote
+  fullName: Foundry.NetEventSource.Remote
+  type: Field
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Remote
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 17
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: Remote = 1
+    return:
+      type: Foundry.NetEventSource
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: Foundry.NetEventSource
+  commentId: T:Foundry.NetEventSource
+  parent: Foundry
+  href: Foundry.NetEventSource.html
+  name: NetEventSource
+  nameWithType: NetEventSource
+  fullName: Foundry.NetEventSource

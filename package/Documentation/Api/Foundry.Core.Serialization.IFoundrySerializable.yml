@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.Core.Serialization.IFoundrySerializable
+  commentId: T:Foundry.Core.Serialization.IFoundrySerializable
+  id: IFoundrySerializable
+  parent: Foundry.Core.Serialization
+  children:
+  - Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  - Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  langs:
+  - csharp
+  - vb
+  name: IFoundrySerializable
+  nameWithType: IFoundrySerializable
+  fullName: Foundry.Core.Serialization.IFoundrySerializable
+  type: Interface
+  source:
+    remote:
+      path: package/Serialization/FoundrySerializer.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: IFoundrySerializable
+    path: ../Serialization/FoundrySerializer.cs
+    startLine: 7
+  assemblies:
+  - Foundry.Core.Serialization
+  namespace: Foundry.Core.Serialization
+  syntax:
+    content: public interface IFoundrySerializable
+    content.vb: Public Interface IFoundrySerializable
+- uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  commentId: M:Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  id: Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  parent: Foundry.Core.Serialization.IFoundrySerializable
+  langs:
+  - csharp
+  - vb
+  name: Serialize(FoundrySerializer)
+  nameWithType: IFoundrySerializable.Serialize(FoundrySerializer)
+  fullName: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  type: Method
+  source:
+    remote:
+      path: package/Serialization/FoundrySerializer.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Serialize
+    path: ../Serialization/FoundrySerializer.cs
+    startLine: 9
+  assemblies:
+  - Foundry.Core.Serialization
+  namespace: Foundry.Core.Serialization
+  syntax:
+    content: void Serialize(FoundrySerializer serializer)
+    parameters:
+    - id: serializer
+      type: Foundry.Core.Serialization.FoundrySerializer
+    content.vb: Sub Serialize(serializer As FoundrySerializer)
+  overload: Foundry.Core.Serialization.IFoundrySerializable.Serialize*
+- uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  commentId: M:Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  id: Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  parent: Foundry.Core.Serialization.IFoundrySerializable
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(FoundryDeserializer)
+  nameWithType: IFoundrySerializable.Deserialize(FoundryDeserializer)
+  fullName: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  type: Method
+  source:
+    remote:
+      path: package/Serialization/FoundrySerializer.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: Deserialize
+    path: ../Serialization/FoundrySerializer.cs
+    startLine: 10
+  assemblies:
+  - Foundry.Core.Serialization
+  namespace: Foundry.Core.Serialization
+  syntax:
+    content: void Deserialize(FoundryDeserializer deserializer)
+    parameters:
+    - id: deserializer
+      type: Foundry.Core.Serialization.FoundryDeserializer
+    content.vb: Sub Deserialize(deserializer As FoundryDeserializer)
+  overload: Foundry.Core.Serialization.IFoundrySerializable.Deserialize*
+references:
+- uid: Foundry.Core.Serialization
+  commentId: N:Foundry.Core.Serialization
+  href: Foundry.html
+  name: Foundry.Core.Serialization
+  nameWithType: Foundry.Core.Serialization
+  fullName: Foundry.Core.Serialization
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Core
+    name: Core
+    href: Foundry.Core.html
+  - name: .
+  - uid: Foundry.Core.Serialization
+    name: Serialization
+    href: Foundry.Core.Serialization.html
+- uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize*
+  commentId: Overload:Foundry.Core.Serialization.IFoundrySerializable.Serialize
+  href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
+  name: Serialize
+  nameWithType: IFoundrySerializable.Serialize
+  fullName: Foundry.Core.Serialization.IFoundrySerializable.Serialize
+- uid: Foundry.Core.Serialization.FoundrySerializer
+  commentId: T:Foundry.Core.Serialization.FoundrySerializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundrySerializer.html
+  name: FoundrySerializer
+  nameWithType: FoundrySerializer
+  fullName: Foundry.Core.Serialization.FoundrySerializer
+- uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize*
+  commentId: Overload:Foundry.Core.Serialization.IFoundrySerializable.Deserialize
+  href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
+  name: Deserialize
+  nameWithType: IFoundrySerializable.Deserialize
+  fullName: Foundry.Core.Serialization.IFoundrySerializable.Deserialize
+- uid: Foundry.Core.Serialization.FoundryDeserializer
+  commentId: T:Foundry.Core.Serialization.FoundryDeserializer
+  parent: Foundry.Core.Serialization
+  href: Foundry.Core.Serialization.FoundryDeserializer.html
+  name: FoundryDeserializer
+  nameWithType: FoundryDeserializer
+  fullName: Foundry.Core.Serialization.FoundryDeserializer

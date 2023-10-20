@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: Foundry.SpatialLook.CastWidth
+  commentId: T:Foundry.SpatialLook.CastWidth
+  id: SpatialLook.CastWidth
+  parent: Foundry
+  children:
+  - Foundry.SpatialLook.CastWidth.#ctor(System.Single,System.Single)
+  - Foundry.SpatialLook.CastWidth.distance
+  - Foundry.SpatialLook.CastWidth.radius
+  langs:
+  - csharp
+  - vb
+  name: SpatialLook.CastWidth
+  nameWithType: SpatialLook.CastWidth
+  fullName: Foundry.SpatialLook.CastWidth
+  type: Struct
+  source:
+    remote:
+      path: package/Interaction/Look/SpatialLook.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: CastWidth
+    path: ../Interaction/Look/SpatialLook.cs
+    startLine: 8
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct SpatialLook.CastWidth
+    content.vb: >-
+      <Serializable>
+
+      Public Structure SpatialLook.CastWidth
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Foundry.SpatialLook.CastWidth.distance
+  commentId: F:Foundry.SpatialLook.CastWidth.distance
+  id: distance
+  parent: Foundry.SpatialLook.CastWidth
+  langs:
+  - csharp
+  - vb
+  name: distance
+  nameWithType: SpatialLook.CastWidth.distance
+  fullName: Foundry.SpatialLook.CastWidth.distance
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Look/SpatialLook.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: distance
+    path: ../Interaction/Look/SpatialLook.cs
+    startLine: 11
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Tooltip("The distance from the player to the start of this spherecast.")]
+
+      public float distance
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("The distance from the player to the start of this spherecast.")>
+
+      Public distance As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The distance from the player to the start of this spherecast.
+- uid: Foundry.SpatialLook.CastWidth.radius
+  commentId: F:Foundry.SpatialLook.CastWidth.radius
+  id: radius
+  parent: Foundry.SpatialLook.CastWidth
+  langs:
+  - csharp
+  - vb
+  name: radius
+  nameWithType: SpatialLook.CastWidth.radius
+  fullName: Foundry.SpatialLook.CastWidth.radius
+  type: Field
+  source:
+    remote:
+      path: package/Interaction/Look/SpatialLook.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: radius
+    path: ../Interaction/Look/SpatialLook.cs
+    startLine: 13
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: >-
+      [Tooltip("The radius of the spherecast starting at this distance.")]
+
+      public float radius
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("The radius of the spherecast starting at this distance.")>
+
+      Public radius As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The radius of the spherecast starting at this distance.
+- uid: Foundry.SpatialLook.CastWidth.#ctor(System.Single,System.Single)
+  commentId: M:Foundry.SpatialLook.CastWidth.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: Foundry.SpatialLook.CastWidth
+  langs:
+  - csharp
+  - vb
+  name: CastWidth(float, float)
+  nameWithType: SpatialLook.CastWidth.CastWidth(float, float)
+  fullName: Foundry.SpatialLook.CastWidth.CastWidth(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: package/Interaction/Look/SpatialLook.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore
+    id: .ctor
+    path: ../Interaction/Look/SpatialLook.cs
+    startLine: 15
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  syntax:
+    content: public CastWidth(float distance, float radius)
+    parameters:
+    - id: distance
+      type: System.Single
+    - id: radius
+      type: System.Single
+    content.vb: Public Sub New(distance As Single, radius As Single)
+  overload: Foundry.SpatialLook.CastWidth.#ctor*
+  nameWithType.vb: SpatialLook.CastWidth.New(Single, Single)
+  fullName.vb: Foundry.SpatialLook.CastWidth.New(Single, Single)
+  name.vb: New(Single, Single)
+references:
+- uid: Foundry
+  commentId: N:Foundry
+  href: Foundry.html
+  name: Foundry
+  nameWithType: Foundry
+  fullName: Foundry
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Foundry.SpatialLook.CastWidth.#ctor*
+  commentId: Overload:Foundry.SpatialLook.CastWidth.#ctor
+  href: Foundry.SpatialLook.CastWidth.html#Foundry.SpatialLook.CastWidth.#ctor(System.Single,System.Single)
+  name: CastWidth
+  nameWithType: SpatialLook.CastWidth.CastWidth
+  fullName: Foundry.SpatialLook.CastWidth.CastWidth
+  nameWithType.vb: SpatialLook.CastWidth.New
+  fullName.vb: Foundry.SpatialLook.CastWidth.New
+  name.vb: New
