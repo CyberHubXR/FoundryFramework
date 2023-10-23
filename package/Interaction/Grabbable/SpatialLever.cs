@@ -118,19 +118,4 @@ namespace Foundry
             if (!positiveOnly) { return Mathf.Clamp(rawAngle * 2, -1, 1);  } else { return Mathf.Clamp(rawAngle * 2, 0, 1); }
         }
     }
-
-#if UNITY_EDITOR
-    [CustomEditor(typeof(SpatialLever))]
-    public class SpatialLeverEditor : Editor
-    {
-
-        public override void OnInspectorGUI()
-        {
-            GUI.DrawTexture(GUILayoutUtility.GetRect(100, 100, 60, 60), Resources.Load<Texture2D>("FoundryHeader"), ScaleMode.ScaleToFit);
-
-            DrawPropertiesExcluding(serializedObject, new string[] { "m_Script" });
-            serializedObject.ApplyModifiedProperties();
-        }
-    }
-#endif
 }

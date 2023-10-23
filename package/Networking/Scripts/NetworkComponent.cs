@@ -7,7 +7,7 @@ namespace Foundry.Networking
     /// <summary>
     /// Base class for components that are networked.
     /// </summary>
-    public abstract class NetworkComponent : MonoBehaviour
+    public abstract class NetworkComponent : FoundryScript
     {
         /// <summary>
         /// The network object that owns this component.

@@ -22,8 +22,13 @@ namespace Foundry.Core.Editor
 
         private static List<IServiceDefinition> _serviceDefinitions = new();
         private static List<IModuleDefinition> _moduleDefinitions = new();
+        
+        [InitializeOnLoadMethod]
+        private static void Initialize()
+        {
+            AssemblyReloadEvents.afterAssemblyReload += CheckIfProjectValid;
+        }
 
-        [InitializeOnLoadMethod] 
         private static void CheckIfProjectValid()
         {
             UpdateServiceDefinitions();
@@ -92,7 +97,6 @@ namespace Foundry.Core.Editor
                 FoundryAppConfig.GetAsset().modules = moduleConfigs;
                 EditorUtility.SetDirty(FoundryAppConfig.GetAsset());
             }
-
         }
 
         private void CreateGUI()
@@ -137,8 +141,6 @@ namespace Foundry.Core.Editor
             var modulesTitle = new Label("Modules:");
             modulesTitle.style.fontSize = fontSize + 1;
             root.Add(modulesTitle);
-
-            
             
             foreach (var moduleDefinition in _moduleDefinitions)
             {

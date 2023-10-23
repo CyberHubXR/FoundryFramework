@@ -1,7 +1,7 @@
 {
     "name": "com.cyberhub.foundry.core",
     "displayName": "Foundry Core",
-    "version": "0.1.4-preview",
+    "version": "0.2.1-preview",
     "unity": "2021.3",
     "description": "Provides all core types and interfaces for the Foundry platform.",
     "keywords": [
@@ -14,23 +14,23 @@
         "com.unity.textmeshpro": "3.0.6",
         "com.unity.xr.management": "4.3.1",
         "com.unity.xr.openxr": "1.6.0",
-        "com.cyberhub.foundry.spatialaudio.steamaudio": "0.1.4-preview"
+        "com.cyberhub.foundry.spatialaudio.steamaudio": "~0.1.6-preview"
     },
     "samples": [
         {
             "displayName": "Sample Prefabs",
             "description": "Some sample interaction and management prefabs",
-            "path": "Samples/Prefabs"
+            "path": "Samples~/Prefabs"
         },
         {
             "displayName": "Sample Scenes",
             "description": "Some starter scenes to allow you to test your foundry install",
-            "path": "Samples/Scenes"
+            "path": "Samples~/Scenes"
         },
         {
             "displayName": "Sample Materials",
             "description": "Some starter materials for constructing basic scenes",
-            "path": "Samples/Prototype"
+            "path": "Samples~/Prototype"
         }
     ]
 }

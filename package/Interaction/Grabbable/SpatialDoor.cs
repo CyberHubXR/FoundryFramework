@@ -1,9 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Foundry.Networking;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
 using Foundry.RotationExtensions;
 
 namespace Foundry
@@ -14,17 +11,27 @@ namespace Foundry
         BoxCollider doorCollider;
 
         [Header("Door Options")]
-        [Tooltip("A toggle to decide if the door closes by itself, almost like the door is weighted")] public bool closeDoorAutomatically = false;
-        [Tooltip("How much ìfrictionî is on the hinges, Higher numbers = bigger jumps in rotation when pushing")] public float doorHingeFriction = 10F;
-        [Tooltip("How fast the door will close if closeDoorAutomatically")] public float doorHingeCloseFriction = 1F;
+        [Tooltip("A toggle to decide if the door closes by itself, almost like the door is weighted")]
+        public bool closeDoorAutomatically = false;
+
+        [Tooltip("How much ‚Äúfriction‚Äù is on the hinges, Higher numbers = bigger jumps in rotation when pushing")]
+        public float doorHingeFriction = 10F;
+
+        [Tooltip("How fast the door will close if closeDoorAutomatically")]
+        public float doorHingeCloseFriction = 1F;
+
         [Tooltip("Is the door locked")] public bool doorIsLocked = false;
 
-        [Header("Door Limits")]
-        [Tooltip("Max angle the door can rotate too")] public float doorMaxAngle = 90F;
-        [Tooltip("Minimum rotation the door can rotate too")] public float doorMinAngle = -90F;
+        [Header("Door Limits")] [Tooltip("Max angle the door can rotate too")]
+        public float doorMaxAngle = 90F;
+
+        [Tooltip("Minimum rotation the door can rotate too")]
+        public float doorMinAngle = -90F;
 
         [Header("Setup")]
-        [Tooltip("The pivot / hinge position in local space relative to the door (gets converted to world space at runtime)")] public Vector3 doorPivot;
+        [Tooltip(
+            "The pivot / hinge position in local space relative to the door (gets converted to world space at runtime)")]
+        public Vector3 doorPivot;
 
         [HideInInspector] public bool doorIsOpen = false;
         [HideInInspector] public float doorOpenAmount;
@@ -35,6 +42,7 @@ namespace Foundry
         float doorPushDistance;
 
         bool touchingDoor;
+
         private void OnValidate()
         {
             doorCollider = GetComponent<BoxCollider>();
@@ -53,7 +61,7 @@ namespace Foundry
         {
             base.StartTouch(spatialTouch);
 
-            if (doorPusher == null) 
+            if (doorPusher == null)
             {
                 doorPushPoint.position = spatialTouch.transform.position;
                 doorPusher = spatialTouch;
@@ -74,7 +82,10 @@ namespace Foundry
         /// }
         /// </code>
         /// </summary>
-        public virtual void UnlockDoor() { doorIsLocked = false; }
+        public virtual void UnlockDoor()
+        {
+            doorIsLocked = false;
+        }
 
         /// <summary>
         ///  A simple public method to set the door to be unlocked (doorIsLocked = false)
@@ -90,11 +101,14 @@ namespace Foundry
         /// }
         /// </code>
         /// </summary>
-        public virtual void LockDoor() { doorIsLocked = true; }
-
-        void CalculateDoorAngle(SpatialTouch hand) 
+        public virtual void LockDoor()
         {
-            if(doorIsLocked) return;
+            doorIsLocked = true;
+        }
+
+        void CalculateDoorAngle(SpatialTouch hand)
+        {
+            if (doorIsLocked) return;
 
             //hands offset to pivot
             Vector3 angleOffset = hand.transform.position - doorPivot;
@@ -111,14 +125,15 @@ namespace Foundry
                 angleDifference = -angleDifference;
             }
 
-            if(doorOpenAmount < doorMaxAngle && doorOpenAmount > doorMinAngle)
-                RotationHelperExtensions.RotateAroundLerp(transform, doorPivot, Vector3.up, angleDifference, doorHingeFriction);
+            if (doorOpenAmount < doorMaxAngle && doorOpenAmount > doorMinAngle)
+                RotationHelperExtensions.RotateAroundLerp(transform, doorPivot, Vector3.up, angleDifference,
+                    doorHingeFriction);
 
         }
-        
+
         private void Update()
         {
-            if(doorPusher != null)
+            if (doorPusher != null)
             {
                 touchingDoor = true;
 
@@ -126,25 +141,25 @@ namespace Foundry
 
                 CalculateDoorAngle(doorPusher);
 
-                if(doorPushDistance > 0.2F)
+                if (doorPushDistance > 0.2F)
                 {
                     doorPusher = null;
                     touchingDoor = false;
                 }
             }
-            
+
             doorOpenAmount = RotationHelperExtensions.WrapAngle(transform.localEulerAngles.y);
 
             if (doorOpenAmount > -2 && doorOpenAmount < 2)
             {
                 doorIsOpen = false;
             }
-            else 
+            else
             {
                 doorIsOpen = true;
             }
 
-            if (!touchingDoor && doorIsOpen && closeDoorAutomatically) 
+            if (!touchingDoor && doorIsOpen && closeDoorAutomatically)
             {
                 float t = Time.deltaTime * (doorHingeCloseFriction * .1F);
                 float rotationAngle = Mathf.LerpAngle(0, -doorOpenAmount, t);
@@ -155,15 +170,16 @@ namespace Foundry
 
         private void OnDrawGizmosSelected()
         {
-            Gizmos.color = new Color(1,0,0, .9F);
+            Gizmos.color = new Color(1, 0, 0, .9F);
 
             if (Application.isPlaying)
             {
                 Gizmos.DrawCube(doorPivot, new Vector3(0.1F, doorCollider.size.y * 1.005F, 0.125F));
             }
-            else 
+            else
             {
-                Gizmos.DrawCube(transform.position + doorPivot, new Vector3(0.1F, doorCollider.size.y * 1.005F, 0.125F));
+                Gizmos.DrawCube(transform.position + doorPivot,
+                    new Vector3(0.1F, doorCollider.size.y * 1.005F, 0.125F));
             }
 
             Gizmos.color = new Color(0, 1, 0, 0.2F);
@@ -171,18 +187,4 @@ namespace Foundry
             Gizmos.DrawCube(doorCollider.center, doorCollider.size * 1.005F);
         }
     }
-
-#if UNITY_EDITOR
-    [CustomEditor(typeof(SpatialDoor))]
-    public class SpatialDoorEditor : Editor 
-    {
-        public override void OnInspectorGUI()
-        {
-            GUI.DrawTexture(GUILayoutUtility.GetRect(100, 100, 60, 60), Resources.Load<Texture2D>("FoundryHeader"), ScaleMode.ScaleToFit);
-
-            DrawPropertiesExcluding(serializedObject, new string[] { "m_Script" });
-            serializedObject.ApplyModifiedProperties();
-        }
-    }
-#endif
 }

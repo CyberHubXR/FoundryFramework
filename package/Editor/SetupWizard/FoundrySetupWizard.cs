@@ -125,7 +125,6 @@ namespace Foundry.Core.Setup
         /// <summary>
         /// Check if there are any required tasks, if so force this window to open.
         /// </summary>
-        [InitializeOnLoadMethod]
         private static void CheckForTasks()
         {
             var modulesTypes = ClassFinder.FindAllWithInterface<IModuleSetupTasks>();
@@ -153,7 +152,13 @@ namespace Foundry.Core.Setup
                 }
             }
         }
-    
+        
+        [InitializeOnLoadMethod]
+        private static void Initialize()
+        {
+            AssemblyReloadEvents.afterAssemblyReload += CheckForTasks;
+        }
+
         public void CreateGUI()
         {
             StyleLength headerFontSize = new StyleLength(16f);
