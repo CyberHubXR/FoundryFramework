@@ -258,9 +258,14 @@ namespace Foundry.Core.Editor
                     providerNames.Add("Missing!");
                 
                 var dropdown = new DropdownField(service.PrettyName(), providerNames, providerNames[selectedConfig]);
+
+                if (required && providerNames[selectedConfig] == "Missing!")
+                {
+                    EditorUIUtils.SetBorderColor(dropdown, Color.red);
+                    EditorUIUtils.SetBorderRadius(dropdown, 2);
+                    EditorUIUtils.SetBorderWidth(dropdown, 2);
+                }
                 root.Add(dropdown);
-                if(required && providerNames.Count == 0)
-                    dropdown.style.backgroundColor = Color.red;
                 if (providerLocations.Count > 0)
                 {
                     providerLocations[selectedConfig]?.EnableService(sysType);
