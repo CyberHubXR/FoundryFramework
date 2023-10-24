@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Foundry.Networking;
 using UnityEngine;
 
-using Fusion;
 using UnityEngine.Video;
 
 namespace Foundry
@@ -12,17 +12,13 @@ namespace Foundry
     /// <summary>
     /// Synchronizes a Unity <see cref="VideoPlayer"/> over the network.
     /// </summary>
-    public class VideoSync : NetworkBehaviour
+    public class VideoSync : NetworkComponent
     {
-        #region Member Variables
-        private double videoStartTime;
-        #endregion // Member Variables
+        private NetworkProperty<double> videoStartTime;
 
-        #region Unity Inspector Variables
         [SerializeField]
         [Tooltip("The video player to control. If not specified, the current GameObject will be searched.")]
         private VideoPlayer videoPlayer;
-        #endregion // Unity Inspector Variables
 
 
         #region Private Methods
@@ -63,19 +59,19 @@ namespace Foundry
         private bool TryNetworkToPlayer()
         {
             // Ignore if we are authority
-            if (this.HasStateAuthority) { return false; }
+            if (IsOwner) { return false; }
 
             // Make sure there's a clip
             if (videoPlayer.clip == null)
             {
-                Debug.LogError($"{nameof(VideoSync)} '{name}' has no video clip. Ignoring network update.");
+                Debug.LogWarning($"{nameof(VideoSync)} '{name}' has no video clip.");
                 return false;
             }
 
             // Make sure we can update the player
             if (!videoPlayer.canSetTime)
             {
-                Debug.LogError($"{nameof(VideoSync)} '{name}' is unable to set time of the video player. Ignoring network update.");
+                Debug.LogError($"{nameof(VideoSync)} '{name}' is unable to set time of the video player.");
                 return false;
             }
 
@@ -84,7 +80,7 @@ namespace Foundry
 
             // Get the current server time and subtract network start time
             // This tells us how long the video has been playing
-            double startTime = Runner.Simulation.LatestServerState.Time - VideoStartTime;
+            double startTime = DateTime.UtcNow.Second + DateTime.UtcNow.Millisecond / 1000f - VideoStartTime;
 
             // If local start time is longer than the video itself, we need to account for loops
             if (startTime > clipLength)
@@ -119,21 +115,19 @@ namespace Foundry
         private bool TryPlayerToNetwork(bool isLoop = false)
         {
             // Make sure we have authority
-            if (!this.HasStateAuthority) { return false; }
+            if (!IsOwner) { return false; }
 
             // Update network start time to be server time minus current video position
             // Essentially we're storing what NETWORK time the video would have been at zero
             if (isLoop)
             {
                 // Ignore clip time and assume 0
-                VideoStartTime = Runner.Simulation.LatestServerState.Time;
+                VideoStartTime =  DateTime.UtcNow.Second + DateTime.UtcNow.Millisecond / 1000f;
             }
             else
             {
-                Debug.Log("Video Player: " + videoPlayer);
-                Debug.Log("Runner Simulation: " + Runner.Simulation.LatestServerState);
                 // Include clip time
-                VideoStartTime = Runner.Simulation.LatestServerState.Time - videoPlayer.time;
+                VideoStartTime =  DateTime.UtcNow.Second + DateTime.UtcNow.Millisecond / 1000f - videoPlayer.time;
             }
             
             // Success
@@ -196,11 +190,16 @@ namespace Foundry
 
         #endregion // Unity Message Handlers
 
-        #region Photon Overrides
-        /// <inheritdoc/>
-        public override void Spawned()
+        #region Network Overrides
+
+        public override void RegisterProperties(List<INetworkProperty> props)
         {
-            if (HasStateAuthority)
+            props.Add(videoStartTime);
+        }
+
+        public override void OnConnected()
+        {
+            if (IsOwner)
             {
                 // We're  the authority. Update the network.
                 TryPlayerToNetwork();
@@ -211,21 +210,20 @@ namespace Foundry
                 TryNetworkToPlayer();
             }
         }
-        #endregion // Photon Overrides
+        #endregion // Network Overrides
 
         /// <summary>
-        /// Gets or sets the network conencted start time of the video.
+        /// Gets or sets the network connected start time of the video.
         /// </summary>
-        [Networked]
         public double VideoStartTime
         {
-            get => videoStartTime;
+            get => videoStartTime.Value;
             set
             {
                 // Store
-                videoStartTime = value;
+                videoStartTime.Value = value;
 
-                // Update from network (if not authroity)
+                // Update from network (if not authority)
                 TryNetworkToPlayer();
             }
         }

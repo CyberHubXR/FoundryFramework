@@ -1,9 +1,9 @@
-using Fusion;
-
+using System.Collections.Generic;
+using Foundry.Networking;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class PreloadedAvatarSystem : NetworkBehaviour
+public class PreloadedAvatarSystem : NetworkComponent
 {
     [Header("Preloaded Avatar Models")] 
     public GameObject[] avatars;
@@ -12,22 +12,27 @@ public class PreloadedAvatarSystem : NetworkBehaviour
     [Tooltip("Where your avatars get instanced too")] public Transform avatarHolder;
 
     //Networked
-    [Networked(OnChanged = nameof(InitializeAvatar))] private int selectedAvatar { get; set; }
+    private NetworkProperty<int> selectedAvatar = new(0);
 
-    public override void Spawned()
+    public override void RegisterProperties(List<INetworkProperty>  props)
+    {
+        props.Add(selectedAvatar);
+        selectedAvatar.OnValueChanged +=InitializeAvatar;
+    }
+    
+    public override void OnConnected()
     {
         if(PlayerPrefs.GetInt("lanMode") != 1) return;
         
         //Select A Random Avatar From The Saved List
-        selectedAvatar = Random.Range(0, avatars.Length - 1);
+        selectedAvatar.Value = Random.Range(0, avatars.Length - 1);
         
         Debug.Log("selected random avatar " + selectedAvatar);
     }
     
-    static void InitializeAvatar(Changed<PreloadedAvatarSystem> changed)
+    void InitializeAvatar(int changed)
     {
-        Debug.Log("changed " + changed.Behaviour);
-        changed.Behaviour.SpawnSelectedAvatar(changed.Behaviour.selectedAvatar);
+        SpawnSelectedAvatar(changed);
     }
 
     void SpawnSelectedAvatar(int selected)

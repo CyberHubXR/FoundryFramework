@@ -1,10 +1,9 @@
 using Foundry;
+using Foundry.Networking;
 using Foundry.Services;
 using UnityEngine;
-using Fusion;
-using System.Threading.Tasks;
 
-public class PortalSystem : MonoBehaviour
+public class PortalSystem : FoundryScript
 {
     [System.Serializable]
     public enum PortalType
@@ -24,18 +23,10 @@ public class PortalSystem : MonoBehaviour
 
     [Header("SceneChange")]
     public string sceneName;
-
-    private NetworkRunner runner;
-    
-
-    private void Awake()
-    {
-        if (runner == null) runner = FindObjectOfType<NetworkRunner>();
-    }
     
     private async void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Player player) && player.GetComponent<NetworkObject>().HasStateAuthority)
+        if (other.TryGetComponent(out Player player) && player.GetComponent<NetworkObject>().IsOwner)
         {
             if (portalType == PortalType.Teleport)
             {
@@ -50,8 +41,6 @@ public class PortalSystem : MonoBehaviour
 
                 if (portalType == PortalType.SceneChange)
                 {
-                    // Stop the net runner
-                    await runner.Shutdown(true);
 
                     // Go to new scene
                     Debug.Log("Loading new scene " + sceneName);
@@ -66,9 +55,6 @@ public class PortalSystem : MonoBehaviour
                         return;
                     }
 
-                    // Stop the net runner
-                    await runner.Shutdown(true);
-
                     // Go back
                     Debug.Log("Going back");
                     await navigator.GoBackAsync();
@@ -81,9 +67,6 @@ public class PortalSystem : MonoBehaviour
                         Debug.LogError("Cannot navigate forward. Ignoring teleport request.");
                         return;
                     }
-
-                    // Stop the net runner
-                    await runner.Shutdown(true);
 
                     // Go back
                     Debug.Log("Going forward");
