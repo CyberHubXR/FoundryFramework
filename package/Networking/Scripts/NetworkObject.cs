@@ -258,7 +258,19 @@ namespace Foundry.Networking
         internal void OnSceneReady()
         {
             foreach (var networkedComponent in NetworkComponents)
-                networkedComponent.OnConnected();
+            {
+                try
+                {
+                    networkedComponent.OnConnected();
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError("Error in OnConnected() call: " + e);
+                    #if DEBUG
+                    throw;
+                    #endif
+                }
+            }
         }
 
         void CompleteLoadStep(ref bool loadStep)

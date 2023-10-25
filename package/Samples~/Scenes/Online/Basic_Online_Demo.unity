@@ -529,8 +529,8 @@ MonoBehaviour:
   m_text: use this scene to test the connection, try sending a build to a friend
     to ensure multiplayer setup went smoothly
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a328755641b77794d96da9660b34d9bb, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: a328755641b77794d96da9660b34d9bb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1214,8 +1214,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Welcome to Foundry
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a328755641b77794d96da9660b34d9bb, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: a328755641b77794d96da9660b34d9bb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1695,7 +1695,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nativeScript: {fileID: 0}
   disconnectBehaviour: 0
+  allowOwnershipTransfer: 1
+  OnIDChanged:
+    m_PersistentCalls:
+      m_Calls: []
   children: []
+  Parent: {fileID: 917434121}
+  NetworkComponents:
+  - {fileID: 917434120}
+  - {fileID: 917434120}
+  - {fileID: 917434120}
   guid: e7270671-8bbe-4428-8a19-8b966e3306fa
 --- !u!114 &917434120
 MonoBehaviour:
@@ -1714,6 +1723,17 @@ MonoBehaviour:
   lerpObject: {fileID: 0}
   nativeScript: {fileID: 0}
   api: {fileID: 0}
+--- !u!114 &917434121 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7275869027066168979, guid: aff902337dc273c49b7e907e6e59a8ff, type: 3}
+  m_PrefabInstance: {fileID: 917434117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90285ab44f306144b86669b33bb6afc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &960891319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2979,28 +2999,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff3b4c88d1e29244bd02eeb3be4432a, type: 3}
---- !u!1 &1921593900 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3174963797306147206, guid: 6ff3b4c88d1e29244bd02eeb3be4432a, type: 3}
-  m_PrefabInstance: {fileID: 1921593899}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1921593901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921593900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  props:
-    serializedProperties: []
-  lerpObject: {fileID: 0}
-  nativeScript: {fileID: 0}
-  api: {fileID: 0}
 --- !u!1001 &2030092457
 PrefabInstance:
   m_ObjectHideFlags: 0
