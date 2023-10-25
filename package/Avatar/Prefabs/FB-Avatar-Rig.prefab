@@ -1518,7 +1518,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3427391676337592347}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d5e35ef2bd8910c4d8744436da1e4c63, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 09f9d6f060a27ba4b874934307bb65f6, type: 2}
   m_Controller: {fileID: 9100000, guid: 4efec1eccc1adce44b1dbe0f521bb76c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -1556,6 +1556,7 @@ MonoBehaviour:
     leftFoot: {fileID: 108073369}
     rightFoot: {fileID: 879077994}
   calibration:
+    calibrated: 0
     autoSetFootRests: 0
     leftFootRest:
       pos: {x: 0, y: 0, z: 0}
