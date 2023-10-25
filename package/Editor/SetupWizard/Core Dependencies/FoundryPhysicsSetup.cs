@@ -34,7 +34,7 @@ namespace Foundry.Core.Setup {
             };
             
             var configureLayersTaskList = new SetupTaskList("Settings");
-            configureLayersTaskList.tasks = new List<SetupTask>();
+            configureLayersTaskList.Add(configureLayersTask);
             
             return new List<SetupTaskList>{ configureLayersTaskList};
         }

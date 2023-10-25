@@ -1,14 +1,13 @@
 using System;
 using Foundry;
 
-using Fusion;
 using UnityEngine;
 
-public class Billboard : NetworkBehaviour
+public class Billboard : FoundryScript
 {
     private Transform mainCamera;
 
-    public override void Spawned()
+    public void Start()
     {
         var cameraManager = FoundryApp.GetService<IFoundryCameraManager>();
         mainCamera = cameraManager.MainCamera.transform;

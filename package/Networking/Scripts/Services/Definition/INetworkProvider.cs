@@ -21,11 +21,6 @@ namespace Foundry.Networking
     /// Delegate for handling network events to do with players
     /// </summary>
     public delegate void NetworkPlayerEventHandler(int player);
-    
-    /// <summary>
-    /// TODO delete this
-    /// </summary>
-    public delegate void FusionInputHandler(Fusion.NetworkRunner runner, Fusion.NetworkInput input);
 
     /// <summary>
     /// Interface for a networking provider
@@ -140,10 +135,5 @@ namespace Foundry.Networking
         /// Raised when a player has left the session
         /// </summary>
         event NetworkPlayerEventHandler PlayerLeft;
-        
-        /// <summary>
-        /// TODO delete this, temporary work-around for fusion input
-        /// </summary>
-        event FusionInputHandler FusionInputRequest;
     }
 }

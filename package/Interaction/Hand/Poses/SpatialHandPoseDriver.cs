@@ -1,9 +1,6 @@
-using ExitGames.Client.Photon.StructWrapping;
+
 using Foundry;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using Foundry.Networking;
 using UnityEngine;
 using UnityEngine.InputSystem;

@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -5,7 +6,7 @@ namespace Foundry
 {
     public class FoundryAppConfig : ScriptableObject
     {
-        public FoundryModuleConfig[] modules;
+        public FoundryModuleConfig[] modules = Array.Empty<FoundryModuleConfig>();
         public void RegisterServices(FoundryApp app)
         {
             foreach (var module in modules)
