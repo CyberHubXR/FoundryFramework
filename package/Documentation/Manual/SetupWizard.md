@@ -10,44 +10,75 @@ The most common implementation of setup tasks is checking if a needed dependency
 
 ```csharp
 using Foundry.Core.Editor;
-using Foundry.Core.Setup;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class MyDependencyInstaller
-{
-    /* Initialize on load will run this method when the editor is opened, 
-     * and when scripts are reloaded. If there is a task to be added 
-     * this is when we want to do it.
-     */
-    [InitializeOnLoadMethod]
-    static void RegisterTasks()
-    {
-        // PackageManagerUtil is a helper class provided by Foundry to make working with the package manager easier.
-        if (PackageManagerUtil.IsPackageInstalled("com.example.package"))
-            return;
 
-        SetupTask addPackageTask = new SetupTask();
-        addPackageTask.name = "Add Required Package";
-        addPackageTask.SetTextDescription("We need to add com.example.package to the project for it to work.");
-        addPackageTask.action = new SetupAction
-        {
-            name = "Install", // Text shown on button
-            callback = InstallPackage // callback to run when button is clicked
-        };
+namespace Foundry.Core.Setup { 
+    // Implement IModuleSetupTasks, the setup wizard will then be able to find this class and add it to the list of tasks.
+    public class FoundryPhysicsSetup: IModuleSetupTasks
+    {
+        // Cache state since this gets reloaded every time assemblies are reloaded
+        bool layersExist = false;
         
-        /* Add the task to the setup wizard. We don't need to worry about 
-         * removing it later since tasks need to be added every time the 
-         * editor reloads to persist.
-         */
-        FoundrySetupWizard.AddRequiredDependency(addPackageTask);
-    }
+        // Cache stuff in the constructor
+        public FoundryPhysicsSetup()
+        {
+            layersExist = FoundryPhysicsSetter.LayersExist();
+        }
+        
+        // Return the current state of all the tasks we register from this class, if you return UncompletedRequiredTasks the setup window will open.
+        public IModuleSetupTasks.State GetTaskState()
+        {
+            return layersExist ? IModuleSetupTasks.State.Completed : IModuleSetupTasks.State.UncompletedRequiredTasks;
+        }
 
-    static void InstallPackage()
-    {
-        Debug.Log("Installing my package.");
-        PackageManagerUtil.AddPackage("com.example.package", "https://github.com/mygithub/myrepo.git#v1.0.0");
-        PackageManagerUtil.Apply();
+        // Return a list of task lists, each task list will be a section in the setup window, all grouped under one module.
+        public List<SetupTaskList> GetTasks()
+        {
+            if (layersExist)
+                return new();
+            var configureLayersTask = new SetupTask();
+            configureLayersTask.name = "Required Physics Layers";
+            configureLayersTask.SetTextDescription("We require three custom physics layers:\nFoundryPlayer,\nFoundryHand,\nFoundryGrabbable.\nThese layers help with stability and performance");
+            
+            // Add an action to be completed when clicked.
+            configureLayersTask.action = new SetupAction
+            {
+                name = "Add Layers",
+                callback = AddLayers
+            };
+            
+            // Create a "settings" list and add our task to it.
+            var configureLayersTaskList = new SetupTaskList("Settings");
+            configureLayersTaskList.Add(configureLayersTask);
+            
+            // This is built to be able to return multiple task lists (for example if you wanted to have a "Dependencies" and "Settings" section) for now we just do one.
+            return new List<SetupTaskList>{ configureLayersTaskList};
+        }
+
+        // Return the name and source of the module that this task is for, this is only used for displaying in the setup wizard 
+        // so you could put anything here, but keeping to a pattern is nice.
+        public string ModuleName()
+        {
+            return "Foundry Core Physics";
+        }
+
+        public string ModuleSource()
+        {
+            return "foundry.core";
+        }
+
+        // In this example we add phsyics layers, but you could do anything here.
+        static void AddLayers() {
+            FoundryPhysicsSetter.CreateLayers();
+            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("FoundryPlayer"), LayerMask.NameToLayer("FoundryHand"), true);
+            Physics.IgnoreLayerCollision(LayerMask.NameToLayer("FoundryPlayer"), LayerMask.NameToLayer("FoundryGrabbable"), true);
+
+            AssetDatabase.Refresh(); 
+            EditorUtility.RequestScriptReload();
+        }
     }
 }
 ```
@@ -81,24 +112,3 @@ addPackageTask.description = descImage;
 ```
 
 You could even do something interactive, but that's beyond the scope of this example.
-
-### Custom Sections
-Due to the unpredictable call order of `[InitializeOnLoadMethod]` calls, custom sections do not have a `CreateSection` 
-api, instead any method that refers to a section that doesn't exist will create it for you. So feel free to call the 
-methods below in any order. Note that this makes it super important that you don't have any typos in your section names.
-
-If you want to add a task to a new section other than the default "Required Dependencies" section that 
-`AddRequiredDependency` appends too. It's as easy as using the generic `AddTask` method instead.
-
-```csharp
-FoundrySetupWizard.AddTask("My Custom Section", setupTask);
-```
-
-If you want to change the order of the sections, it can be done with the `Required Settings` method. 
-By default all sections are added with a priority of 0, so to ensure that your section is further towards the bottom of the list, 
-give it a higher priority. Or give it a negative priority to move it towards the top.
-
-```csharp
-FoundrySetupWizard.SetTaskListPlacement("Bottom of the list. Probbably.", 9000);
-FoundrySetupWizard.SetTaskListPlacement("Top of the list!!!", -9000);
-```
