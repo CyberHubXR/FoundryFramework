@@ -14,7 +14,7 @@ namespace Foundry
     /// </summary>
     public class VideoSync : NetworkComponent
     {
-        private NetworkProperty<double> videoStartTime;
+        private NetworkProperty<double> videoStartTime = new(0);
 
         [SerializeField]
         [Tooltip("The video player to control. If not specified, the current GameObject will be searched.")]

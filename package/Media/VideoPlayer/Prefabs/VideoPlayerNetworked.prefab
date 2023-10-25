@@ -89,6 +89,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bb5831d2976ff84a91ca98abbb34e51, type: 3}
+--- !u!328 &5232808035820286611 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 8224369586929890467, guid: 5bb5831d2976ff84a91ca98abbb34e51, type: 3}
+  m_PrefabInstance: {fileID: 4232398210462369328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5232808035820286616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8224369586929890472, guid: 5bb5831d2976ff84a91ca98abbb34e51, type: 3}
@@ -106,34 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae9b7a9c92f0b140a0a9141ca8cc8f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  videoPlayer: {fileID: 0}
-  _VideoStartTime: 0
---- !u!114 &-340839133086025990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5232808035820286616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectInterest: 1
-  DefaultInterestGroups: []
-  DestroyWhenStateAuthorityLeaves: 0
-  AllowStateAuthorityOverride: 1
-  AoiPositionSource: {fileID: 0}
-  Flags: 2305
-  NetworkGuid:
-    RawGuidValue: 10e2ba32bf2f703499d37b33f63505d9
-  NestedObjects: []
-  NetworkedBehaviours:
-  - {fileID: -8445538258817231196}
-  - {fileID: 1082182851076091522}
-  SimulationBehaviours: []
+  videoPlayer: {fileID: 5232808035820286611}
 --- !u!114 &1082182851076091522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,4 +124,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 248eb3a155a2ed344813dca43f835a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
+--- !u!114 &2293146030182255691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232808035820286616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90285ab44f306144b86669b33bb6afc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nativeScript: {fileID: 0}
+  disconnectBehaviour: 0
+  allowOwnershipTransfer: 1
+  OnIDChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  children: []
+  Parent: {fileID: 0}
+  NetworkComponents:
+  - {fileID: -8445538258817231196}
+  guid: 9924eb6f-d038-4a8b-8f69-1e7d15e75925
