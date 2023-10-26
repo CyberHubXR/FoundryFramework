@@ -132,7 +132,8 @@ MonoBehaviour:
         m_MethodName: set_sharedMaterial
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: c3c84ccf9d4302d43856d124ef51423e, type: 2}
+          m_ObjectArgument: {fileID: 2100000, guid: c3c84ccf9d4302d43856d124ef51423e,
+            type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -147,7 +148,8 @@ MonoBehaviour:
         m_MethodName: set_sharedMaterial
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 39337be07fb22084c93033ca76ee93dc, type: 2}
+          m_ObjectArgument: {fileID: 2100000, guid: 39337be07fb22084c93033ca76ee93dc,
+            type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -197,7 +199,7 @@ MonoBehaviour:
   AoiPositionSource: {fileID: 0}
   Flags: 2305
   NetworkGuid:
-    RawGuidValue: 2c9e4365c4917584586e9d12aa605fbd
+    RawGuidValue: c448a626fd597d343841a808f6b578d7
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 1616239282798372708}
