@@ -14,7 +14,7 @@ namespace Foundry
     public class SpatialSlider : SpatialTouchable
     {
         [System.Serializable]
-        public struct SliderIncrementEvent
+        public class SliderIncrementEvent
         {
             public NetworkEvent<int> onIncrementEnter;
             public NetworkEvent<int> onIncrementExit;
@@ -31,7 +31,7 @@ namespace Foundry
         public int amountOfIncrements = 10;
         
         [Space(50)]
-        public SliderIncrementEvent[] sliderIncrementEvents;
+        public List<SliderIncrementEvent> sliderIncrementEvents = new();
         public NetworkEvent<float> sliderSmoothEvent;
         
         //Internal
@@ -76,7 +76,7 @@ namespace Foundry
         {
             props.Add(sliderSmoothEvent);
             
-            for (int i = 0; i < sliderIncrementEvents.Length; i++)
+            for (int i = 0; i < sliderIncrementEvents.Count; i++)
             {
                 props.Add(sliderIncrementEvents[i].onIncrementEnter);
                 props.Add(sliderIncrementEvents[i].onIncrementExit);
@@ -85,7 +85,7 @@ namespace Foundry
 
         void ConfigureSliderIncrements() 
         {
-            for (int i = 1; i < sliderIncrementEvents.Length - 1; i++)
+            for (int i = 1; i < sliderIncrementEvents.Count - 1; i++)
             {
                 if (sliderIncrementEvents[i].incrementPointOnLine == null)
                 {
@@ -96,16 +96,25 @@ namespace Foundry
                 }
             }
 
-            sliderIncrementEvents[0].incrementPointOnLine = new GameObject().transform;
-            sliderIncrementEvents[0].incrementPointOnLine.position = sliderStartObjectSpace;
-            sliderIncrementEvents[0].incrementPointOnLine.parent = transform;
-            sliderIncrementEvents[0].incrementPointOnLine.name = "start increment";
-            sliderIncrementEvents[sliderIncrementEvents.Length - 1].incrementPointOnLine = new GameObject().transform;
-            sliderIncrementEvents[sliderIncrementEvents.Length - 1].incrementPointOnLine.position = sliderEndObjectSpace;
-            sliderIncrementEvents[sliderIncrementEvents.Length - 1].incrementPointOnLine.parent = transform;
-            sliderIncrementEvents[sliderIncrementEvents.Length - 1].incrementPointOnLine.name = "end increment";
+            var startIncrement = new SliderIncrementEvent
+            {
+                incrementPointOnLine = new GameObject().transform
+            };
+            
+            startIncrement.incrementPointOnLine.position = sliderStartObjectSpace;
+            startIncrement.incrementPointOnLine.parent = transform;
+            startIncrement.incrementPointOnLine.name = "start increment";
+            sliderIncrementEvents.Insert(0, startIncrement);
+            
+            var endIncrement = new SliderIncrementEvent
+            {
+                incrementPointOnLine = new GameObject().transform
+            };
 
-            sliderVisualObject.position = sliderIncrementEvents[0].incrementPointOnLine.position;
+            endIncrement.incrementPointOnLine.position = sliderEndObjectSpace;
+            endIncrement.incrementPointOnLine.parent = transform;
+            endIncrement.incrementPointOnLine.name = "end increment";
+            sliderIncrementEvents.Add(endIncrement);
         }
 
         public override void TouchUpdate(SpatialTouch spatialTouch)
@@ -133,7 +142,7 @@ namespace Foundry
                     } 
                     else 
                     {
-                        for (int i = 0; i < sliderIncrementEvents.Length; i++)
+                        for (int i = 0; i < sliderIncrementEvents.Count; i++)
                         {
                             Debug.Log(Vector3.Distance(sliderTargetPosition, sliderIncrementEvents[i].incrementPointOnLine.position) < incrementAmount);
                             
@@ -145,7 +154,7 @@ namespace Foundry
                                 if(currentIncrement > 0)
                                     sliderIncrementEvents[i - 1].onIncrementExit.Invoke(currentIncrement);
 
-                                if (currentIncrement < sliderIncrementEvents.Length && !right)
+                                if (currentIncrement < sliderIncrementEvents.Count && !right)
                                     sliderIncrementEvents[i + 1].onIncrementExit.Invoke(currentIncrement);
 
                                 sliderVisualObject.position = sliderIncrementEvents[i].incrementPointOnLine.position;
@@ -192,7 +201,7 @@ namespace Foundry
 
             SpatialSlider spatialSlider = (SpatialSlider)target;
 
-            if(spatialSlider.sliderIncrementEvents.Length != spatialSlider.amountOfIncrements + 1 && !spatialSlider.smoothSlider)
+            if(spatialSlider.sliderIncrementEvents.Count != spatialSlider.amountOfIncrements + 1 && !spatialSlider.smoothSlider)
             {
                 GUIStyle style = new GUIStyle();
                 style.normal.textColor = Color.yellow;
@@ -200,7 +209,7 @@ namespace Foundry
                 
                 if (GUILayout.Button("Add Events")) 
                 {
-                    spatialSlider.sliderIncrementEvents = new SpatialSlider.SliderIncrementEvent[spatialSlider.amountOfIncrements + 1];
+                    spatialSlider.sliderIncrementEvents = new List<SpatialSlider.SliderIncrementEvent>(spatialSlider.amountOfIncrements + 1);
                 }
             }
         }
