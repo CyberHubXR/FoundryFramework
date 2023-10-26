@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
@@ -40,6 +41,11 @@ namespace Foundry
             Debug.Assert(rightController, "Right controller object reference not set!");
             SpatialInputManager.ActivateActions(trackingMode);
             GetControllerOffsets();
+            
+            List<XRInputSubsystem> subsystems = new();
+            SubsystemManager.GetInstances(subsystems);
+            foreach (var s in subsystems)
+                s.TrySetTrackingOriginMode(TrackingOriginModeFlags.Floor);
         }
 
         public void Update()
@@ -86,6 +92,14 @@ namespace Foundry
         {
             if ((device.characteristics & InputDeviceCharacteristics.HeldInHand) > 0)
                 GetControllerOffsets();
+            
+            List<XRInputSubsystem> subsystems = new();
+            SubsystemManager.GetInstances(subsystems);
+            foreach (var s in subsystems)
+            {
+                s.TrySetTrackingOriginMode(TrackingOriginModeFlags.Floor);
+                s.TryRecenter();
+            }
         }
 
         public void UpdateTrackerPos(ref TrackerPos pos, Transform tracker, in PosRot offset)

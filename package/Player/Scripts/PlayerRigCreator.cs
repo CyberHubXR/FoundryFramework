@@ -5,6 +5,7 @@ using Foundry;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using UnityEngine.XR;
 using UnityEngine.XR.Management;
 
 namespace Foundry
@@ -48,6 +49,7 @@ namespace Foundry
             }
             if (targetMode == PlayerControlMode.Desktop)
                 initializedControlMode = PlayerControlMode.Desktop;
+            
 
             // Spawn the control rig for the selected mode
             GameObject selectedRig = (initializedControlMode == PlayerControlMode.Desktop) ? desktopRig : xrRig;
