@@ -9,6 +9,7 @@ namespace Foundry
         public void Authenticate(string scenename) 
         {
             FoundryApp.GetService<ISceneNavigator>().GoToAsync(scenename);
+            PlayerPrefs.SetString("usernameLAN", "user");
         }
     }
 }
