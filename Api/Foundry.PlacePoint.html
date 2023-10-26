@@ -1,0 +1,2107 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlacePoint
+ | Foundry Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlacePoint
+ | Foundry Core ">
+      
+      <link rel="icon" href="../Media/foundry_icon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/new/main/apiSpec/new?filename=Foundry_PlacePoint.md&amp;value=---%0Auid%3A%20Foundry.PlacePoint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../Media/foundry_icon.png" alt="Foundry Core">
+            Foundry Core
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Foundry.PlacePoint">
+
+
+
+  <h1 id="Foundry_PlacePoint" data-uid="Foundry.PlacePoint" class="text-break">
+    Class PlacePoint
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Foundry.html">Foundry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Foundry.Core.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlacePoint : NetworkComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="Foundry.Networking.NetworkComponent.html">NetworkComponent</a></div>
+      <div><span class="xref">PlacePoint</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_Object">NetworkComponent.Object</a>
+    </div>
+    <div>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_NetworkProvider">NetworkComponent.NetworkProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_IsOwner">NetworkComponent.IsOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnValidate">NetworkComponent.OnValidate()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Foundry_PlacePoint_OnHighlight" data-uid="Foundry.PlacePoint.OnHighlight">
+  OnHighlight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityPlacePointEvent OnHighlight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.UnityPlacePointEvent.html">UnityPlacePointEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_OnPlace" data-uid="Foundry.PlacePoint.OnPlace">
+  OnPlace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Space]
+public UnityPlacePointEvent OnPlace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.UnityPlacePointEvent.html">UnityPlacePointEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_OnPlaceNetworked" data-uid="Foundry.PlacePoint.OnPlaceNetworked">
+  OnPlaceNetworked
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Networked Events&quot;)]
+public NetworkEvent&lt;NetworkId&gt; OnPlaceNetworked</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.NetworkEvent-1.html">NetworkEvent</a>&lt;<a class="xref" href="Foundry.Networking.NetworkId.html">NetworkId</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_OnRemove" data-uid="Foundry.PlacePoint.OnRemove">
+  OnRemove
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityPlacePointEvent OnRemove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.UnityPlacePointEvent.html">UnityPlacePointEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_OnRemoveNetworked" data-uid="Foundry.PlacePoint.OnRemoveNetworked">
+  OnRemoveNetworked
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkEvent&lt;NetworkId&gt; OnRemoveNetworked</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.NetworkEvent-1.html">NetworkEvent</a>&lt;<a class="xref" href="Foundry.Networking.NetworkId.html">NetworkId</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_OnStopHighlight" data-uid="Foundry.PlacePoint.OnStopHighlight">
+  OnStopHighlight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityPlacePointEvent OnStopHighlight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.UnityPlacePointEvent.html">UnityPlacePointEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_blacklistNames" data-uid="Foundry.PlacePoint.blacklistNames">
+  blacklistNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Will prevent placement for any name containing this array of strings&quot;)]
+public string[] blacklistNames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_destroyObjectOnPlace" data-uid="Foundry.PlacePoint.destroyObjectOnPlace">
+  destroyObjectOnPlace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Space]
+[Tooltip(&quot;Whether or not the placed object should be disabled on placement (this will hide the placed object and leave the place point active for a new object)&quot;)]
+public bool destroyObjectOnPlace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_disableGrabOnPlace" data-uid="Foundry.PlacePoint.disableGrabOnPlace">
+  disableGrabOnPlace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Whether or not the SpatialGrabbable should be disabled on place&quot;)]
+public bool disableGrabOnPlace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_disablePlacePointOnPlace" data-uid="Foundry.PlacePoint.disablePlacePointOnPlace">
+  disablePlacePointOnPlace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Whether or not this place point should be disabled on placement. It will maintain its connection and can no longer accept new items. Causes less overhead if true&quot;)]
+public bool disablePlacePointOnPlace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_dontAllows" data-uid="Foundry.PlacePoint.dontAllows">
+  dontAllows
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Will NOT allow placement any object contained here&quot;)]
+public List&lt;SpatialGrabbable&gt; dontAllows</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_forcePlace" data-uid="Foundry.PlacePoint.forcePlace">
+  forcePlace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;This will make the point place the object as soon as it enters the radius, instead of on release&quot;)]
+public bool forcePlace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_heldPlaceOnly" data-uid="Foundry.PlacePoint.heldPlaceOnly">
+  heldPlaceOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Place Requirements&quot;)]
+[Tooltip(&quot;Whether or not to only allow placement of an object while it&#39;s being held (or released)&quot;)]
+public bool heldPlaceOnly</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_jointBreakForce" data-uid="Foundry.PlacePoint.jointBreakForce">
+  jointBreakForce
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jointBreakForce</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_lastPlacedTime" data-uid="Foundry.PlacePoint.lastPlacedTime">
+  lastPlacedTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float lastPlacedTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_makePlacedKinematic" data-uid="Foundry.PlacePoint.makePlacedKinematic">
+  makePlacedKinematic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Space]
+[Tooltip(&quot;If true and will force release on place&quot;)]
+public bool makePlacedKinematic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_nameCompareType" data-uid="Foundry.PlacePoint.nameCompareType">
+  nameCompareType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Whether the placeNames should compare names or tags&quot;)]
+public PlacePointNameType nameCompareType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.PlacePointNameType.html">PlacePointNameType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_onlyAllows" data-uid="Foundry.PlacePoint.onlyAllows">
+  onlyAllows
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;(Unless empty) Will only allow placement any object contained here&quot;)]
+public List&lt;SpatialGrabbable&gt; onlyAllows</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_originParent" data-uid="Foundry.PlacePoint.originParent">
+  originParent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Transform originParent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_parentOnPlace" data-uid="Foundry.PlacePoint.parentOnPlace">
+  parentOnPlace
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Space]
+[Tooltip(&quot;This will make the point place the object as soon as it enters the radius, instead of on release&quot;)]
+public bool parentOnPlace</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placeLayers" data-uid="Foundry.PlacePoint.placeLayers">
+  placeLayers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The layer that this place point will check for placeable objects, if none will default to SpatialGrabbable&quot;)]
+public LayerMask placeLayers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">LayerMask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placeNames" data-uid="Foundry.PlacePoint.placeNames">
+  placeNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Will allow placement for any SpatialGrabbable with a name containing this array of strings, leave blank for any SpatialGrabbable allowed&quot;)]
+public string[] placeNames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placePosition" data-uid="Foundry.PlacePoint.placePosition">
+  placePosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector3 placePosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placeRadius" data-uid="Foundry.PlacePoint.placeRadius">
+  placeRadius
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The radius of the place point (relative to scale)&quot;)]
+public float placeRadius</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placedJointLink" data-uid="Foundry.PlacePoint.placedJointLink">
+  placedJointLink
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The rigidbody to attach the placed grabbable to - leave empty means no joint&quot;)]
+public Rigidbody placedJointLink</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Rigidbody</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placedObjDetectionMode" data-uid="Foundry.PlacePoint.placedObjDetectionMode">
+  placedObjDetectionMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CollisionDetectionMode placedObjDetectionMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CollisionDetectionMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placedOffset" data-uid="Foundry.PlacePoint.placedOffset">
+  placedOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;This will make the point place the object as soon as it enters the radius, instead of on release&quot;)]
+public Transform placedOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_placingFrame" data-uid="Foundry.PlacePoint.placingFrame">
+  placingFrame
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool placingFrame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_radiusOffset" data-uid="Foundry.PlacePoint.radiusOffset">
+  radiusOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;The local offset of the enter radius of the place point (not the offset of the placement)&quot;)]
+public Vector3 radiusOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_removalDistance" data-uid="Foundry.PlacePoint.removalDistance">
+  removalDistance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float removalDistance</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_showPlaceSettings" data-uid="Foundry.PlacePoint.showPlaceSettings">
+  showPlaceSettings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Header(&quot;Place Settings&quot;)]
+public bool showPlaceSettings</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Foundry_PlacePoint_startPlaced" data-uid="Foundry.PlacePoint.startPlaced">
+  startPlaced
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Snaps an object to the point at start, leave empty for no target&quot;)]
+public SpatialGrabbable startPlaced</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Foundry_PlacePoint_highlightingObj_" data-uid="Foundry.PlacePoint.highlightingObj*"></a>
+
+  <h3 id="Foundry_PlacePoint_highlightingObj" data-uid="Foundry.PlacePoint.highlightingObj">
+  highlightingObj
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpatialGrabbable highlightingObj { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_lastPlacedObject_" data-uid="Foundry.PlacePoint.lastPlacedObject*"></a>
+
+  <h3 id="Foundry_PlacePoint_lastPlacedObject" data-uid="Foundry.PlacePoint.lastPlacedObject">
+  lastPlacedObject
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpatialGrabbable lastPlacedObject { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_placedObject_" data-uid="Foundry.PlacePoint.placedObject*"></a>
+
+  <h3 id="Foundry_PlacePoint_placedObject" data-uid="Foundry.PlacePoint.placedObject">
+  placedObject
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpatialGrabbable placedObject { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Foundry_PlacePoint_CanPlace_" data-uid="Foundry.PlacePoint.CanPlace*"></a>
+
+  <h3 id="Foundry_PlacePoint_CanPlace_Foundry_SpatialGrabbable_" data-uid="Foundry.PlacePoint.CanPlace(Foundry.SpatialGrabbable)">
+  CanPlace(SpatialGrabbable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanPlace(SpatialGrabbable placeObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeObj</code> <a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_CheckPlaceObjectLoop_" data-uid="Foundry.PlacePoint.CheckPlaceObjectLoop*"></a>
+
+  <h3 id="Foundry_PlacePoint_CheckPlaceObjectLoop" data-uid="Foundry.PlacePoint.CheckPlaceObjectLoop">
+  CheckPlaceObjectLoop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator CheckPlaceObjectLoop()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_GetPlacedObject_" data-uid="Foundry.PlacePoint.GetPlacedObject*"></a>
+
+  <h3 id="Foundry_PlacePoint_GetPlacedObject" data-uid="Foundry.PlacePoint.GetPlacedObject">
+  GetPlacedObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpatialGrabbable GetPlacedObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_IsStillOverlapping_" data-uid="Foundry.PlacePoint.IsStillOverlapping*"></a>
+
+  <h3 id="Foundry_PlacePoint_IsStillOverlapping_Foundry_SpatialGrabbable_System_Single_" data-uid="Foundry.PlacePoint.IsStillOverlapping(Foundry.SpatialGrabbable,System.Single)">
+  IsStillOverlapping(SpatialGrabbable, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsStillOverlapping(SpatialGrabbable from, float scale = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_OnConnected_" data-uid="Foundry.PlacePoint.OnConnected*"></a>
+
+  <h3 id="Foundry_PlacePoint_OnConnected" data-uid="Foundry.PlacePoint.OnConnected">
+  OnConnected()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called once we are connected to the network and all network objects are in a valid state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnConnected()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_OnDisable_" data-uid="Foundry.PlacePoint.OnDisable*"></a>
+
+  <h3 id="Foundry_PlacePoint_OnDisable" data-uid="Foundry.PlacePoint.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_OnEnable_" data-uid="Foundry.PlacePoint.OnEnable*"></a>
+
+  <h3 id="Foundry_PlacePoint_OnEnable" data-uid="Foundry.PlacePoint.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_OnJointBreak_" data-uid="Foundry.PlacePoint.OnJointBreak*"></a>
+
+  <h3 id="Foundry_PlacePoint_OnJointBreak_System_Single_" data-uid="Foundry.PlacePoint.OnJointBreak(System.Single)">
+  OnJointBreak(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnJointBreak(float breakForce)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>breakForce</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_OnRelativeGrabbed_" data-uid="Foundry.PlacePoint.OnRelativeGrabbed*"></a>
+
+  <h3 id="Foundry_PlacePoint_OnRelativeGrabbed_Foundry_SpatialHand_Foundry_SpatialGrabbable_" data-uid="Foundry.PlacePoint.OnRelativeGrabbed(Foundry.SpatialHand,Foundry.SpatialGrabbable)">
+  OnRelativeGrabbed(SpatialHand, SpatialGrabbable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnRelativeGrabbed(SpatialHand pSpatialHand, SpatialGrabbable pSpatialGrabbable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pSpatialHand</code> <a class="xref" href="Foundry.SpatialHand.html">SpatialHand</a></dt>
+    <dd></dd>
+    <dt><code>pSpatialGrabbable</code> <a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_Place_" data-uid="Foundry.PlacePoint.Place*"></a>
+
+  <h3 id="Foundry_PlacePoint_Place_Foundry_SpatialGrabbable_" data-uid="Foundry.PlacePoint.Place(Foundry.SpatialGrabbable)">
+  Place(SpatialGrabbable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Place(SpatialGrabbable placeObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeObj</code> <a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_PlaceFromNetwork_" data-uid="Foundry.PlacePoint.PlaceFromNetwork*"></a>
+
+  <h3 id="Foundry_PlacePoint_PlaceFromNetwork_Foundry_Networking_NetworkId_" data-uid="Foundry.PlacePoint.PlaceFromNetwork(Foundry.Networking.NetworkId)">
+  PlaceFromNetwork(NetworkId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PlaceFromNetwork(NetworkId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="Foundry.Networking.NetworkId.html">NetworkId</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_RegisterProperties_" data-uid="Foundry.PlacePoint.RegisterProperties*"></a>
+
+  <h3 id="Foundry_PlacePoint_RegisterProperties_System_Collections_Generic_List_Foundry_Networking_INetworkProperty__" data-uid="Foundry.PlacePoint.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})">
+  RegisterProperties(List&lt;INetworkProperty&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called once on startup to register properties for this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RegisterProperties(List&lt;INetworkProperty&gt; props)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>props</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Foundry.Networking.INetworkProperty.html">INetworkProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_Remove_" data-uid="Foundry.PlacePoint.Remove*"></a>
+
+  <h3 id="Foundry_PlacePoint_Remove" data-uid="Foundry.PlacePoint.Remove">
+  Remove()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_Remove_" data-uid="Foundry.PlacePoint.Remove*"></a>
+
+  <h3 id="Foundry_PlacePoint_Remove_Foundry_SpatialGrabbable_" data-uid="Foundry.PlacePoint.Remove(Foundry.SpatialGrabbable)">
+  Remove(SpatialGrabbable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Remove(SpatialGrabbable placeObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeObj</code> <a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_SetStartPlaced_" data-uid="Foundry.PlacePoint.SetStartPlaced*"></a>
+
+  <h3 id="Foundry_PlacePoint_SetStartPlaced" data-uid="Foundry.PlacePoint.SetStartPlaced">
+  SetStartPlaced()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetStartPlaced()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_Start_" data-uid="Foundry.PlacePoint.Start*"></a>
+
+  <h3 id="Foundry_PlacePoint_Start" data-uid="Foundry.PlacePoint.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_PlacePoint_TryPlace_" data-uid="Foundry.PlacePoint.TryPlace*"></a>
+
+  <h3 id="Foundry_PlacePoint_TryPlace_Foundry_SpatialGrabbable_" data-uid="Foundry.PlacePoint.TryPlace(Foundry.SpatialGrabbable)">
+  TryPlace(SpatialGrabbable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Interaction/PlacePoint/PlacePoint.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TryPlace(SpatialGrabbable placeObj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>placeObj</code> <a class="xref" href="Foundry.SpatialGrabbable.html">SpatialGrabbable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Foundry Core Docs
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

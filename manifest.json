@@ -1,0 +1,2550 @@
+{
+  "source_base_path": "/home/runner/work/FoundryCore/FoundryCore/package/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Account.AccountDisplay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Account.AccountDisplay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Account.CorePlayerAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Account.CorePlayerAccount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Account.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.AnimationTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.AnimationTarget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.AsyncExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.AsyncExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Avatar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Avatar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.AvatarHandScale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.AvatarHandScale.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.BodyColorRandomiser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.BodyColorRandomiser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.ConnectToPrefab.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.ConnectToPrefab.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.ControllerConfig.ControllerOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.ControllerConfig.ControllerOffset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.ControllerConfig.DeviceOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.ControllerConfig.DeviceOffset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.ControllerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.ControllerConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.ClassFinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.ClassFinder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.FoundryConfigWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.FoundryConfigWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.FoundryDevToolsWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.FoundryDevToolsWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.FoundryPackageRefState.PackageState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.FoundryPackageRefState.PackageState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.FoundryPackageRefState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.FoundryPackageRefState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.IModuleDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.IModuleDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.IServiceDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.IServiceDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.NetworkGraphDebugger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.NetworkGraphDebugger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.PackageManagerUtil.ScopedRegestry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.PackageManagerUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.PackageManagerUtil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.ProvidedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.ProvidedService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.UIUtils.EditorUIUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.UIUtils.EditorUIUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.UIUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.UIUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.UsedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.UsedService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Serialization.FoundryDeserializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Serialization.FoundryDeserializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Serialization.FoundrySerializedDataPlaceholder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Serialization.FoundrySerializedDataPlaceholder-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Serialization.FoundrySerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Serialization.FoundrySerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Serialization.IFoundrySerializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Serialization.IFoundrySerializable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Serialization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.FoundryPhysicsSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.FoundryPhysicsSetup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.FoundrySetupWizard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.FoundrySetupWizard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.IModuleSetupTasks.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.IModuleSetupTasks.State.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.IModuleSetupTasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.IModuleSetupTasks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.SetupAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.SetupAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.SetupTask.Urgency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.SetupTask.Urgency.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.SetupTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.SetupTask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.SetupTaskList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.SetupTaskList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Core.Setup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Core.Setup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.DesignTools.RenderDebugHUD.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.DesignTools.RenderDebugHUD.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.DesignTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.DesignTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.DesktopControlRig.CameraMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.DesktopControlRig.CameraMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.DesktopControlRig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.DesktopControlRig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Docgen.FoundryDocgenConfig.MetadataPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Docgen.FoundryDocgenConfig.MetadataPair.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Docgen.FoundryDocgenConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Docgen.FoundryDocgenConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Docgen.FoundryDocgenWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Docgen.FoundryDocgenWindow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Docgen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Docgen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Editor.PlayerRigManagerDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Editor.PlayerRigManagerDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FakePhysics.HingeJointSimulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FakePhysics.HingeJointSimulation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FakePhysics.SpringJointSimulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FakePhysics.SpringJointSimulation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FakePhysics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FakePhysics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryAppConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryAppConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryCameraManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryCameraManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryCoreConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryCoreConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryCoreModuleDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryCoreModuleDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryMainCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryMainCamera.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryModuleConfig.SerializedType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryModuleConfig.SerializedType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryModuleConfig.ServiceConstructor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryModuleConfig.ServiceConstructor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryModuleConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryModuleConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryNetworkButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryNetworkButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryUIInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryUIInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryUIRaycaster.InputSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryUIRaycaster.InputSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryUIRaycaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryUIRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FullBodyAvatar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FullBodyAvatar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FullBodyAvatarNetworking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FullBodyAvatarNetworking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.GenerateDemoShape.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.GenerateDemoShape.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.HandVelocityTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.HandVelocityTracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Haptics.FoundryHaptics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Haptics.FoundryHaptics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Haptics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Haptics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.HighlightData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.HighlightData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.HumanoidIK.Calibration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.HumanoidIK.Calibration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.HumanoidIK.Constraints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.HumanoidIK.Constraints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.HumanoidIK.References.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.HumanoidIK.References.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.HumanoidIK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.HumanoidIK.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IFoundryCameraManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IFoundryCameraManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKConstraint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKExecutor.ConstraintEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKExecutor.ConstraintEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKExecutor.ExecutionTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKExecutor.ExecutionTime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKExecutor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKStretchToTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKStretchToTarget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKTargetedConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKTargetedConstraint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKTransformConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKTransformConstraint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKTwoBoneConstraint.Calibration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKTwoBoneConstraint.Calibration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IKTwoBoneConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IKTwoBoneConstraint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IPlayerControlRig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IPlayerControlRig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IPlayerRigManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IPlayerRigManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IProgressChangedEvent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IProgressChangedEvent-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.IProgressChangedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.IProgressChangedEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.InteractionAnimations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.InteractionAnimations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.InteractionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.InteractionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.LineAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.LineAnimation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.LoadingScreenManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.LoadingScreenManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.MainCameraHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.MainCameraHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.MappedProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.MappedProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.MappedPropertyImpl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.MappedPropertyImpl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.MenuPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.MenuPlayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.MicrophoneControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.MicrophoneControl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetEventSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetEventSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetPosRot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetPosRot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetworkEvent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetworkEvent-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetworkEventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetworkEventBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetworkTRPredictor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetworkTRPredictor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networked3PInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networked3PInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networked6PInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networked6PInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetworkedCommonInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetworkedCommonInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetworkedDesktopInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetworkedDesktopInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetworkedTR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetworkedTR.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.DisconnectBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.DisconnectBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.Editor.NetworkSystemDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.Editor.NetworkSystemDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.FoundryPrefabs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.FoundryPrefabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.FusionInputHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.FusionInputHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.INetworkProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.INetworkProperty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.INetworkProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.INetworkProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.INetworkedGraphId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.INetworkedGraphId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.ISessionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.ISessionInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkArray-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkErrorEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkErrorEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkGraph.GetIDDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkGraph.GetIDDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkGraph.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkGraphDelta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkGraphDelta.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkGraphNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkGraphNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkObject.IDChangeRequestCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkObject.IDChangeRequestCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkPlayerEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkPlayerEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkProperty-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkProperty-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkTransformAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkTransformAPI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.NetworkTransformProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.NetworkTransformProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.SessionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.SessionInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.SessionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.SessionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.SpawnMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.SpawnMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.ObjectLifetime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.ObjectLifetime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.OrientationMatchAxis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.OrientationMatchAxis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.OrientationMatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.OrientationMatcher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlacePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlacePoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlacePointAnimations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlacePointAnimations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlacePointNameType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlacePointNameType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlacePointSoundEffects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlacePointSoundEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlacePointTextEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlacePointTextEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Player.MovementSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Player.MovementSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Player.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlayerControlMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlayerControlMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlayerMenuAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlayerMenuAnimator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlayerMenuSpawner.InputSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlayerMenuSpawner.InputSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlayerMenuSpawner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlayerMenuSpawner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlayerRigEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlayerRigEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlayerRigManagerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlayerRigManagerService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PosRot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PosRot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.ProgressReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.ProgressReport.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Rendering.Editor.MainCameraServiceDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Rendering.Editor.MainCameraServiceDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Rendering.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Rendering.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.RotationExtensions.RotationHelperExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.RotationExtensions.RotationHelperExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.RotationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.RotationExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.Editor.SceneNavigatorDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.Editor.SceneNavigatorDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.ISceneNavigationEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.ISceneNavigationEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.ISceneNavigator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.ISceneNavigator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.NavigationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.NavigationEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.SceneNavigationEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.SceneNavigationEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.SceneNavigationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.SceneNavigationExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.SceneNavigator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.SceneNavigator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialAudio.SpatialAudioSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialAudio.SpatialAudioSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialAudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialAudio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialDistanceGrabbable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialDistanceGrabbable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialDistanceGrabbableDebugger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialDistanceGrabbableDebugger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialDistanceGrabber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialDistanceGrabber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialDoor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialDoor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialGrabbable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialGrabbable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialGrabbableChild.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialGrabbableChild.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialGrabbableDebugEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialGrabbableDebugEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialGrabbableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialGrabbableExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialGrabbableOutlineEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialGrabbableOutlineEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialGrabbablePose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialGrabbablePose.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialGrabbableSoundEffects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialGrabbableSoundEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialHand.HandType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialHand.HandType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialHand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialHand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialHandDebugEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialHandDebugEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialHandExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialHandExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialHandGrabEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialHandGrabEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialHandPoseAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialHandPoseAnimator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialLever.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialLever.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialLook.CastWidth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialLook.CastWidth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialLook.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialLook.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialLookSoundEffects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialLookSoundEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialLookable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialLookable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialSlider.SliderIncrementEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialSlider.SliderIncrementEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialSlider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialTouch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialTouch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialTouchable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialTouchable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialTouchableAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialTouchableAnimation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.SpatialTouchableSoundEffects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.SpatialTouchableSoundEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TeleportPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TeleportPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TeleportPointAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TeleportPointAnimation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TeleportPointDebugger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TeleportPointDebugger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TeleportPointSoundEffects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TeleportPointSoundEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TeleportRaycaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TeleportRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TeleportRaycasterSounds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TeleportRaycasterSounds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TrackerPos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TrackerPos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TrackerRefs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TrackerRefs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TrackerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TrackerType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.TrackingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.TrackingMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.UnityPlacePointEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.UnityPlacePointEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.VelocityTimePair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.VelocityTimePair.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.VideoPlayerAudioSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.VideoPlayerAudioSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.VideoSync.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.VideoSync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.XRControlRig.Offsets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.XRControlRig.Offsets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.XRControlRig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.XRControlRig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/MiniJSON.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/MiniJSON.Json.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/MiniJSON.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/MiniJSON.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/UnityEngine.XR.OpenXR.Features.Interactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/toc.html"
+        },
+        ".json": {
+          "relative_path": "Api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/HowThePlayerWorks.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/HowThePlayerWorks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/MakingANewScene.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/MakingANewScene.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Networking/NetworkComponent.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Networking/NetworkComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Networking/Networking.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Networking/Networking.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/SetupWizard.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/SetupWizard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "Manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Networking.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Networking.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Networking/NetworkManager.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Networking/NetworkManager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Networking/NetworkManager.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Networking/NetworkManager.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/foundry_icon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "Media/foundry_icon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/foundry_icon.ico.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/foundry_icon.ico.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/foundry_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/foundry_icon.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/foundry_icon.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/foundry_icon.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/foundry_logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/foundry_logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/foundry_logo.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/foundry_logo.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
