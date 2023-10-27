@@ -106,7 +106,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoBackAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 233
+    startLine: 234
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -144,7 +144,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoForwardAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 243
+    startLine: 244
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -182,7 +182,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoToAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 253
+    startLine: 254
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -222,7 +222,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoToAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 264
+    startLine: 265
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -262,7 +262,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanGoBack
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 279
+    startLine: 280
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -296,7 +296,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanGoForward
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 288
+    startLine: 289
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -330,7 +330,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: CurrentScene
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 297
+    startLine: 298
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -363,7 +363,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: History
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 306
+    startLine: 307
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -396,7 +396,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsNavigating
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 309
+    startLine: 310
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -429,7 +429,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationTask
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 312
+    startLine: 313
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -462,7 +462,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationCompleted
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 319
+    startLine: 320
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -493,7 +493,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationStarted
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 322
+    startLine: 323
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -528,7 +528,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationStarting
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 325
+    startLine: 326
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services
@@ -563,7 +563,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: ProgressChanged
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-    startLine: 328
+    startLine: 329
   assemblies:
   - Foundry.Core
   namespace: Foundry.Services

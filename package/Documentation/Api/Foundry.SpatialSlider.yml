@@ -42,6 +42,7 @@ items:
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  - Foundry.FoundryScript
   - Foundry.Networking.NetworkComponent
   - Foundry.SpatialTouchable
   inheritedMembers:
@@ -60,6 +61,7 @@ items:
   - Foundry.Networking.NetworkComponent.NetworkProvider
   - Foundry.Networking.NetworkComponent.IsOwner
   - Foundry.Networking.NetworkComponent.OnConnected
+  - Foundry.Networking.NetworkComponent.OnDisconnected
   - Foundry.Networking.NetworkComponent.OnValidate
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
@@ -347,13 +349,13 @@ items:
     content: >-
       [Space(50)]
 
-      public SpatialSlider.SliderIncrementEvent[] sliderIncrementEvents
+      public List<SpatialSlider.SliderIncrementEvent> sliderIncrementEvents
     return:
-      type: Foundry.SpatialSlider.SliderIncrementEvent[]
+      type: System.Collections.Generic.List{Foundry.SpatialSlider.SliderIncrementEvent}
     content.vb: >-
       <Space(50)>
 
-      Public sliderIncrementEvents As SpatialSlider.SliderIncrementEvent()
+      Public sliderIncrementEvents As List(Of SpatialSlider.SliderIncrementEvent)
   attributes:
   - type: UnityEngine.SpaceAttribute
     ctor: UnityEngine.SpaceAttribute.#ctor(System.Single)
@@ -441,7 +443,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: TouchUpdate
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 110
+    startLine: 119
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -472,7 +474,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: FindNearestPointOnLine
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 158
+    startLine: 167
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -535,6 +537,13 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: Foundry.FoundryScript
+  commentId: T:Foundry.FoundryScript
+  parent: Foundry
+  href: Foundry.FoundryScript.html
+  name: FoundryScript
+  nameWithType: FoundryScript
+  fullName: Foundry.FoundryScript
 - uid: Foundry.Networking.NetworkComponent
   commentId: T:Foundry.Networking.NetworkComponent
   parent: Foundry.Networking
@@ -730,6 +739,25 @@ references:
   - uid: Foundry.Networking.NetworkComponent.OnConnected
     name: OnConnected
     href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnConnected
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkComponent.OnDisconnected
+  commentId: M:Foundry.Networking.NetworkComponent.OnDisconnected
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  name: OnDisconnected()
+  nameWithType: NetworkComponent.OnDisconnected()
+  fullName: Foundry.Networking.NetworkComponent.OnDisconnected()
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
   - name: (
   - name: )
 - uid: Foundry.Networking.NetworkComponent.OnValidate
@@ -5111,27 +5139,112 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Foundry.SpatialSlider.SliderIncrementEvent[]
-  isExternal: true
-  href: Foundry.SpatialSlider.SliderIncrementEvent.html
-  name: SliderIncrementEvent[]
-  nameWithType: SpatialSlider.SliderIncrementEvent[]
-  fullName: Foundry.SpatialSlider.SliderIncrementEvent[]
-  nameWithType.vb: SpatialSlider.SliderIncrementEvent()
-  fullName.vb: Foundry.SpatialSlider.SliderIncrementEvent()
-  name.vb: SliderIncrementEvent()
+- uid: System.Collections.Generic.List{Foundry.SpatialSlider.SliderIncrementEvent}
+  commentId: T:System.Collections.Generic.List{Foundry.SpatialSlider.SliderIncrementEvent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SpatialSlider.SliderIncrementEvent>
+  nameWithType: List<SpatialSlider.SliderIncrementEvent>
+  fullName: System.Collections.Generic.List<Foundry.SpatialSlider.SliderIncrementEvent>
+  nameWithType.vb: List(Of SpatialSlider.SliderIncrementEvent)
+  fullName.vb: System.Collections.Generic.List(Of Foundry.SpatialSlider.SliderIncrementEvent)
+  name.vb: List(Of SpatialSlider.SliderIncrementEvent)
   spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.SpatialSlider
+    name: SpatialSlider
+    href: Foundry.SpatialSlider.html
+  - name: .
   - uid: Foundry.SpatialSlider.SliderIncrementEvent
     name: SliderIncrementEvent
     href: Foundry.SpatialSlider.SliderIncrementEvent.html
-  - name: '['
-  - name: ']'
+  - name: '>'
   spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.SpatialSlider
+    name: SpatialSlider
+    href: Foundry.SpatialSlider.html
+  - name: .
   - uid: Foundry.SpatialSlider.SliderIncrementEvent
     name: SliderIncrementEvent
     href: Foundry.SpatialSlider.SliderIncrementEvent.html
-  - name: (
   - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Foundry.NetworkEvent{System.Single}
   commentId: T:Foundry.NetworkEvent{System.Single}
   parent: Foundry
@@ -5272,71 +5385,6 @@ references:
     name: INetworkProperty
     href: Foundry.Networking.INetworkProperty.html
   - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Foundry.SpatialTouchable.TouchUpdate(Foundry.SpatialTouch)
   commentId: M:Foundry.SpatialTouchable.TouchUpdate(Foundry.SpatialTouch)
   parent: Foundry.SpatialTouchable

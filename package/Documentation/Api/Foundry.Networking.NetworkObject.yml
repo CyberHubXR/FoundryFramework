@@ -591,7 +591,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetVerifyIDChangeCallback
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 368
+    startLine: 380
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -626,7 +626,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: VerifyIDChangeRequest
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 373
+    startLine: 385
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -662,7 +662,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RequestOwnership
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 383
+    startLine: 395
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

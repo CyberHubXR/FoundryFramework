@@ -20,25 +20,6 @@ items:
   assemblies:
   - Foundry.Core
 references:
-- uid: Foundry.Services.SceneNavigationExtensions
-  commentId: T:Foundry.Services.SceneNavigationExtensions
-  href: Foundry.Services.SceneNavigationExtensions.html
-  name: SceneNavigationExtensions
-  nameWithType: SceneNavigationExtensions
-  fullName: Foundry.Services.SceneNavigationExtensions
-- uid: Foundry.Services.SceneNavigationEntry
-  commentId: T:Foundry.Services.SceneNavigationEntry
-  parent: Foundry.Services
-  href: Foundry.Services.SceneNavigationEntry.html
-  name: SceneNavigationEntry
-  nameWithType: SceneNavigationEntry
-  fullName: Foundry.Services.SceneNavigationEntry
-- uid: Foundry.Services.SceneNavigator
-  commentId: T:Foundry.Services.SceneNavigator
-  href: Foundry.Services.SceneNavigator.html
-  name: SceneNavigator
-  nameWithType: SceneNavigator
-  fullName: Foundry.Services.SceneNavigator
 - uid: Foundry.Services.ISceneNavigationEntry
   commentId: T:Foundry.Services.ISceneNavigationEntry
   parent: Foundry.Services
@@ -60,6 +41,25 @@ references:
   name: ISceneNavigator
   nameWithType: ISceneNavigator
   fullName: Foundry.Services.ISceneNavigator
+- uid: Foundry.Services.SceneNavigationExtensions
+  commentId: T:Foundry.Services.SceneNavigationExtensions
+  href: Foundry.Services.SceneNavigationExtensions.html
+  name: SceneNavigationExtensions
+  nameWithType: SceneNavigationExtensions
+  fullName: Foundry.Services.SceneNavigationExtensions
+- uid: Foundry.Services.SceneNavigationEntry
+  commentId: T:Foundry.Services.SceneNavigationEntry
+  parent: Foundry.Services
+  href: Foundry.Services.SceneNavigationEntry.html
+  name: SceneNavigationEntry
+  nameWithType: SceneNavigationEntry
+  fullName: Foundry.Services.SceneNavigationEntry
+- uid: Foundry.Services.SceneNavigator
+  commentId: T:Foundry.Services.SceneNavigator
+  href: Foundry.Services.SceneNavigator.html
+  name: SceneNavigator
+  nameWithType: SceneNavigator
+  fullName: Foundry.Services.SceneNavigator
 - uid: Foundry.Services
   commentId: N:Foundry.Services
   href: Foundry.html

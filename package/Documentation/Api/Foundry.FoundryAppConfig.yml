@@ -21,7 +21,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryAppConfig
     path: ../Application/Scripts/FoundryAppConfig.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -105,7 +105,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: modules
     path: ../Application/Scripts/FoundryAppConfig.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -132,7 +132,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterServices
     path: ../Application/Scripts/FoundryAppConfig.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Foundry.Core
   namespace: Foundry

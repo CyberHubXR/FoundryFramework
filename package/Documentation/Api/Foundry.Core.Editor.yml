@@ -32,6 +32,31 @@ references:
   name: ClassFinder
   nameWithType: ClassFinder
   fullName: Foundry.Core.Editor.ClassFinder
+- uid: Foundry.Core.Editor.FoundryConfigWindow
+  commentId: T:Foundry.Core.Editor.FoundryConfigWindow
+  href: Foundry.Core.Editor.FoundryConfigWindow.html
+  name: FoundryConfigWindow
+  nameWithType: FoundryConfigWindow
+  fullName: Foundry.Core.Editor.FoundryConfigWindow
+- uid: Foundry.Core.Editor.ProvidedService
+  commentId: T:Foundry.Core.Editor.ProvidedService
+  href: Foundry.Core.Editor.ProvidedService.html
+  name: ProvidedService
+  nameWithType: ProvidedService
+  fullName: Foundry.Core.Editor.ProvidedService
+- uid: Foundry.Core.Editor.UsedService
+  commentId: T:Foundry.Core.Editor.UsedService
+  href: Foundry.Core.Editor.UsedService.html
+  name: UsedService
+  nameWithType: UsedService
+  fullName: Foundry.Core.Editor.UsedService
+- uid: Foundry.Core.Editor.IModuleDefinition
+  commentId: T:Foundry.Core.Editor.IModuleDefinition
+  parent: Foundry.Core.Editor
+  href: Foundry.Core.Editor.IModuleDefinition.html
+  name: IModuleDefinition
+  nameWithType: IModuleDefinition
+  fullName: Foundry.Core.Editor.IModuleDefinition
 - uid: Foundry.Core.Editor.IServiceDefinition
   commentId: T:Foundry.Core.Editor.IServiceDefinition
   parent: Foundry.Core.Editor
@@ -39,12 +64,6 @@ references:
   name: IServiceDefinition
   nameWithType: IServiceDefinition
   fullName: Foundry.Core.Editor.IServiceDefinition
-- uid: Foundry.Core.Editor.FoundryConfigWindow
-  commentId: T:Foundry.Core.Editor.FoundryConfigWindow
-  href: Foundry.Core.Editor.FoundryConfigWindow.html
-  name: FoundryConfigWindow
-  nameWithType: FoundryConfigWindow
-  fullName: Foundry.Core.Editor.FoundryConfigWindow
 - uid: Foundry.Core.Editor.FoundryPackageRefState
   commentId: T:Foundry.Core.Editor.FoundryPackageRefState
   href: Foundry.Core.Editor.FoundryPackageRefState.html
@@ -80,25 +99,6 @@ references:
   name: FoundryDevToolsWindow
   nameWithType: FoundryDevToolsWindow
   fullName: Foundry.Core.Editor.FoundryDevToolsWindow
-- uid: Foundry.Core.Editor.ProvidedService
-  commentId: T:Foundry.Core.Editor.ProvidedService
-  href: Foundry.Core.Editor.ProvidedService.html
-  name: ProvidedService
-  nameWithType: ProvidedService
-  fullName: Foundry.Core.Editor.ProvidedService
-- uid: Foundry.Core.Editor.UsedService
-  commentId: T:Foundry.Core.Editor.UsedService
-  href: Foundry.Core.Editor.UsedService.html
-  name: UsedService
-  nameWithType: UsedService
-  fullName: Foundry.Core.Editor.UsedService
-- uid: Foundry.Core.Editor.IModuleDefinition
-  commentId: T:Foundry.Core.Editor.IModuleDefinition
-  parent: Foundry.Core.Editor
-  href: Foundry.Core.Editor.IModuleDefinition.html
-  name: IModuleDefinition
-  nameWithType: IModuleDefinition
-  fullName: Foundry.Core.Editor.IModuleDefinition
 - uid: Foundry.Core.Editor.NetworkGraphDebugger
   commentId: T:Foundry.Core.Editor.NetworkGraphDebugger
   href: Foundry.Core.Editor.NetworkGraphDebugger.html

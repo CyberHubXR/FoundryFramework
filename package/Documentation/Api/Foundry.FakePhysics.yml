@@ -17,6 +17,12 @@ items:
   assemblies:
   - Foundry.Core
 references:
+- uid: Foundry.FakePhysics.HingeJointSimulation
+  commentId: T:Foundry.FakePhysics.HingeJointSimulation
+  href: Foundry.FakePhysics.HingeJointSimulation.html
+  name: HingeJointSimulation
+  nameWithType: HingeJointSimulation
+  fullName: Foundry.FakePhysics.HingeJointSimulation
 - uid: Foundry.FakePhysics.SpringJointSimulation
   commentId: T:Foundry.FakePhysics.SpringJointSimulation
   href: Foundry.FakePhysics.SpringJointSimulation.html
@@ -46,12 +52,6 @@ references:
   - uid: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions
     name: LinearSpringOptions
     href: Foundry.FakePhysics.SpringJointSimulation.LinearSpringOptions.html
-- uid: Foundry.FakePhysics.HingeJointSimulation
-  commentId: T:Foundry.FakePhysics.HingeJointSimulation
-  href: Foundry.FakePhysics.HingeJointSimulation.html
-  name: HingeJointSimulation
-  nameWithType: HingeJointSimulation
-  fullName: Foundry.FakePhysics.HingeJointSimulation
 - uid: Foundry.FakePhysics
   commentId: N:Foundry.FakePhysics
   href: Foundry.html

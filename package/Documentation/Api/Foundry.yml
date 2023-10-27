@@ -13,6 +13,7 @@ items:
   - Foundry.ControllerConfig
   - Foundry.ControllerConfig.ControllerOffset
   - Foundry.ControllerConfig.DeviceOffset
+  - Foundry.CoreAuthentication
   - Foundry.DesktopControlRig
   - Foundry.DesktopControlRig.CameraMode
   - Foundry.FoundryApp
@@ -24,13 +25,12 @@ items:
   - Foundry.FoundryModuleConfig
   - Foundry.FoundryModuleConfig.SerializedType
   - Foundry.FoundryModuleConfig.ServiceConstructor
-  - Foundry.FoundryNetworkButton
+  - Foundry.FoundryScript
   - Foundry.FoundryUI
   - Foundry.FoundryUIInput
   - Foundry.FoundryUIRaycaster
   - Foundry.FoundryUIRaycaster.InputSource
   - Foundry.FullBodyAvatar
-  - Foundry.FullBodyAvatarNetworking
   - Foundry.GenerateDemoShape
   - Foundry.HandVelocityTracker
   - Foundry.HighlightData
@@ -62,15 +62,8 @@ items:
   - Foundry.MenuPlayer
   - Foundry.MicrophoneControl
   - Foundry.NetEventSource
-  - Foundry.NetPosRot
   - Foundry.NetworkEventBase
   - Foundry.NetworkEvent`1
-  - Foundry.NetworkTRPredictor
-  - Foundry.Networked3PInput
-  - Foundry.Networked6PInput
-  - Foundry.NetworkedCommonInput
-  - Foundry.NetworkedDesktopInput
-  - Foundry.NetworkedTR
   - Foundry.ObjectLifetime
   - Foundry.OrientationMatchAxis
   - Foundry.OrientationMatcher
@@ -85,6 +78,7 @@ items:
   - Foundry.PlayerMenuAnimator
   - Foundry.PlayerMenuSpawner
   - Foundry.PlayerMenuSpawner.InputSource
+  - Foundry.PlayerRigCreator
   - Foundry.PlayerRigEvent
   - Foundry.PlayerRigManagerService
   - Foundry.PosRot
@@ -144,6 +138,46 @@ items:
   assemblies:
   - Foundry.Core
 references:
+- uid: Foundry.FullBodyAvatar
+  commentId: T:Foundry.FullBodyAvatar
+  href: Foundry.FullBodyAvatar.html
+  name: FullBodyAvatar
+  nameWithType: FullBodyAvatar
+  fullName: Foundry.FullBodyAvatar
+- uid: Foundry.FoundryCoreConfig
+  commentId: T:Foundry.FoundryCoreConfig
+  href: Foundry.FoundryCoreConfig.html
+  name: FoundryCoreConfig
+  nameWithType: FoundryCoreConfig
+  fullName: Foundry.FoundryCoreConfig
+- uid: Foundry.SpatialSlider
+  commentId: T:Foundry.SpatialSlider
+  href: Foundry.SpatialSlider.html
+  name: SpatialSlider
+  nameWithType: SpatialSlider
+  fullName: Foundry.SpatialSlider
+- uid: Foundry.SpatialSlider.SliderIncrementEvent
+  commentId: T:Foundry.SpatialSlider.SliderIncrementEvent
+  href: Foundry.SpatialSlider.html
+  name: SpatialSlider.SliderIncrementEvent
+  nameWithType: SpatialSlider.SliderIncrementEvent
+  fullName: Foundry.SpatialSlider.SliderIncrementEvent
+  spec.csharp:
+  - uid: Foundry.SpatialSlider
+    name: SpatialSlider
+    href: Foundry.SpatialSlider.html
+  - name: .
+  - uid: Foundry.SpatialSlider.SliderIncrementEvent
+    name: SliderIncrementEvent
+    href: Foundry.SpatialSlider.SliderIncrementEvent.html
+  spec.vb:
+  - uid: Foundry.SpatialSlider
+    name: SpatialSlider
+    href: Foundry.SpatialSlider.html
+  - name: .
+  - uid: Foundry.SpatialSlider.SliderIncrementEvent
+    name: SliderIncrementEvent
+    href: Foundry.SpatialSlider.SliderIncrementEvent.html
 - uid: Foundry.InteractionType
   commentId: T:Foundry.InteractionType
   parent: Foundry
@@ -158,114 +192,199 @@ references:
   name: SpatialGrabbable
   nameWithType: SpatialGrabbable
   fullName: Foundry.SpatialGrabbable
-- uid: Foundry.FoundryUIInput
-  commentId: T:Foundry.FoundryUIInput
+- uid: Foundry.SpatialGrabbableChild
+  commentId: T:Foundry.SpatialGrabbableChild
+  href: Foundry.SpatialGrabbableChild.html
+  name: SpatialGrabbableChild
+  nameWithType: SpatialGrabbableChild
+  fullName: Foundry.SpatialGrabbableChild
+- uid: Foundry.OrientationMatchAxis
+  commentId: T:Foundry.OrientationMatchAxis
   parent: Foundry
-  href: Foundry.FoundryUIInput.html
-  name: FoundryUIInput
-  nameWithType: FoundryUIInput
-  fullName: Foundry.FoundryUIInput
-- uid: Foundry.FoundryAppConfig
-  commentId: T:Foundry.FoundryAppConfig
-  href: Foundry.FoundryAppConfig.html
-  name: FoundryAppConfig
-  nameWithType: FoundryAppConfig
-  fullName: Foundry.FoundryAppConfig
-- uid: Foundry.FoundryCameraManager
-  commentId: T:Foundry.FoundryCameraManager
-  href: Foundry.FoundryCameraManager.html
-  name: FoundryCameraManager
-  nameWithType: FoundryCameraManager
-  fullName: Foundry.FoundryCameraManager
-- uid: Foundry.FoundryModuleConfig
-  commentId: T:Foundry.FoundryModuleConfig
+  href: Foundry.OrientationMatchAxis.html
+  name: OrientationMatchAxis
+  nameWithType: OrientationMatchAxis
+  fullName: Foundry.OrientationMatchAxis
+- uid: Foundry.OrientationMatcher
+  commentId: T:Foundry.OrientationMatcher
+  href: Foundry.OrientationMatcher.html
+  name: OrientationMatcher
+  nameWithType: OrientationMatcher
+  fullName: Foundry.OrientationMatcher
+- uid: Foundry.SpatialLever
+  commentId: T:Foundry.SpatialLever
+  href: Foundry.SpatialLever.html
+  name: SpatialLever
+  nameWithType: SpatialLever
+  fullName: Foundry.SpatialLever
+- uid: Foundry.GenerateDemoShape
+  commentId: T:Foundry.GenerateDemoShape
+  href: Foundry.GenerateDemoShape.html
+  name: GenerateDemoShape
+  nameWithType: GenerateDemoShape
+  fullName: Foundry.GenerateDemoShape
+- uid: Foundry.SpatialTouchableAnimation
+  commentId: T:Foundry.SpatialTouchableAnimation
+  href: Foundry.SpatialTouchableAnimation.html
+  name: SpatialTouchableAnimation
+  nameWithType: SpatialTouchableAnimation
+  fullName: Foundry.SpatialTouchableAnimation
+- uid: Foundry.TeleportRaycasterSounds
+  commentId: T:Foundry.TeleportRaycasterSounds
+  href: Foundry.TeleportRaycasterSounds.html
+  name: TeleportRaycasterSounds
+  nameWithType: TeleportRaycasterSounds
+  fullName: Foundry.TeleportRaycasterSounds
+- uid: Foundry.NetEventSource
+  commentId: T:Foundry.NetEventSource
   parent: Foundry
-  href: Foundry.FoundryModuleConfig.html
-  name: FoundryModuleConfig
-  nameWithType: FoundryModuleConfig
-  fullName: Foundry.FoundryModuleConfig
-- uid: Foundry.FoundryModuleConfig.ServiceConstructor
-  commentId: T:Foundry.FoundryModuleConfig.ServiceConstructor
-  href: Foundry.FoundryModuleConfig.html
-  name: FoundryModuleConfig.ServiceConstructor
-  nameWithType: FoundryModuleConfig.ServiceConstructor
-  fullName: Foundry.FoundryModuleConfig.ServiceConstructor
+  href: Foundry.NetEventSource.html
+  name: NetEventSource
+  nameWithType: NetEventSource
+  fullName: Foundry.NetEventSource
+- uid: Foundry.NetworkEventBase
+  commentId: T:Foundry.NetworkEventBase
+  parent: Foundry
+  href: Foundry.NetworkEventBase.html
+  name: NetworkEventBase
+  nameWithType: NetworkEventBase
+  fullName: Foundry.NetworkEventBase
+- uid: Foundry.NetworkEvent`1
+  commentId: T:Foundry.NetworkEvent`1
+  href: Foundry.NetworkEvent-1.html
+  name: NetworkEvent<T>
+  nameWithType: NetworkEvent<T>
+  fullName: Foundry.NetworkEvent<T>
+  nameWithType.vb: NetworkEvent(Of T)
+  fullName.vb: Foundry.NetworkEvent(Of T)
+  name.vb: NetworkEvent(Of T)
   spec.csharp:
-  - uid: Foundry.FoundryModuleConfig
-    name: FoundryModuleConfig
-    href: Foundry.FoundryModuleConfig.html
-  - name: .
-  - uid: Foundry.FoundryModuleConfig.ServiceConstructor
-    name: ServiceConstructor
-    href: Foundry.FoundryModuleConfig.ServiceConstructor.html
+  - uid: Foundry.NetworkEvent`1
+    name: NetworkEvent
+    href: Foundry.NetworkEvent-1.html
+  - name: <
+  - name: T
+  - name: '>'
   spec.vb:
-  - uid: Foundry.FoundryModuleConfig
-    name: FoundryModuleConfig
-    href: Foundry.FoundryModuleConfig.html
-  - name: .
-  - uid: Foundry.FoundryModuleConfig.ServiceConstructor
-    name: ServiceConstructor
-    href: Foundry.FoundryModuleConfig.ServiceConstructor.html
-- uid: Foundry.FoundryModuleConfig.SerializedType
-  commentId: T:Foundry.FoundryModuleConfig.SerializedType
+  - uid: Foundry.NetworkEvent`1
+    name: NetworkEvent
+    href: Foundry.NetworkEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Foundry.FoundryUIRaycaster
+  commentId: T:Foundry.FoundryUIRaycaster
   parent: Foundry
-  href: Foundry.FoundryModuleConfig.html
-  name: FoundryModuleConfig.SerializedType
-  nameWithType: FoundryModuleConfig.SerializedType
-  fullName: Foundry.FoundryModuleConfig.SerializedType
+  href: Foundry.FoundryUIRaycaster.html
+  name: FoundryUIRaycaster
+  nameWithType: FoundryUIRaycaster
+  fullName: Foundry.FoundryUIRaycaster
+- uid: Foundry.FoundryUIRaycaster.InputSource
+  commentId: T:Foundry.FoundryUIRaycaster.InputSource
+  parent: Foundry
+  href: Foundry.FoundryUIRaycaster.html
+  name: FoundryUIRaycaster.InputSource
+  nameWithType: FoundryUIRaycaster.InputSource
+  fullName: Foundry.FoundryUIRaycaster.InputSource
   spec.csharp:
-  - uid: Foundry.FoundryModuleConfig
-    name: FoundryModuleConfig
-    href: Foundry.FoundryModuleConfig.html
+  - uid: Foundry.FoundryUIRaycaster
+    name: FoundryUIRaycaster
+    href: Foundry.FoundryUIRaycaster.html
   - name: .
-  - uid: Foundry.FoundryModuleConfig.SerializedType
-    name: SerializedType
-    href: Foundry.FoundryModuleConfig.SerializedType.html
+  - uid: Foundry.FoundryUIRaycaster.InputSource
+    name: InputSource
+    href: Foundry.FoundryUIRaycaster.InputSource.html
   spec.vb:
-  - uid: Foundry.FoundryModuleConfig
-    name: FoundryModuleConfig
-    href: Foundry.FoundryModuleConfig.html
+  - uid: Foundry.FoundryUIRaycaster
+    name: FoundryUIRaycaster
+    href: Foundry.FoundryUIRaycaster.html
   - name: .
-  - uid: Foundry.FoundryModuleConfig.SerializedType
-    name: SerializedType
-    href: Foundry.FoundryModuleConfig.SerializedType.html
-- uid: Foundry.LineAnimation
-  commentId: T:Foundry.LineAnimation
-  href: Foundry.LineAnimation.html
-  name: LineAnimation
-  nameWithType: LineAnimation
-  fullName: Foundry.LineAnimation
-- uid: Foundry.SpatialTouch
-  commentId: T:Foundry.SpatialTouch
+  - uid: Foundry.FoundryUIRaycaster.InputSource
+    name: InputSource
+    href: Foundry.FoundryUIRaycaster.InputSource.html
+- uid: Foundry.SpatialHandExtensions
+  commentId: T:Foundry.SpatialHandExtensions
   parent: Foundry
-  href: Foundry.SpatialTouch.html
-  name: SpatialTouch
-  nameWithType: SpatialTouch
-  fullName: Foundry.SpatialTouch
-- uid: Foundry.SpatialDoor
-  commentId: T:Foundry.SpatialDoor
-  href: Foundry.SpatialDoor.html
-  name: SpatialDoor
-  nameWithType: SpatialDoor
-  fullName: Foundry.SpatialDoor
-- uid: Foundry.TeleportPointSoundEffects
-  commentId: T:Foundry.TeleportPointSoundEffects
-  href: Foundry.TeleportPointSoundEffects.html
-  name: TeleportPointSoundEffects
-  nameWithType: TeleportPointSoundEffects
-  fullName: Foundry.TeleportPointSoundEffects
+  href: Foundry.SpatialHandExtensions.html
+  name: SpatialHandExtensions
+  nameWithType: SpatialHandExtensions
+  fullName: Foundry.SpatialHandExtensions
+- uid: Foundry.SpatialTouchable
+  commentId: T:Foundry.SpatialTouchable
+  parent: Foundry
+  href: Foundry.SpatialTouchable.html
+  name: SpatialTouchable
+  nameWithType: SpatialTouchable
+  fullName: Foundry.SpatialTouchable
+- uid: Foundry.DesktopControlRig
+  commentId: T:Foundry.DesktopControlRig
+  href: Foundry.DesktopControlRig.html
+  name: DesktopControlRig
+  nameWithType: DesktopControlRig
+  fullName: Foundry.DesktopControlRig
+- uid: Foundry.DesktopControlRig.CameraMode
+  commentId: T:Foundry.DesktopControlRig.CameraMode
+  parent: Foundry
+  href: Foundry.DesktopControlRig.html
+  name: DesktopControlRig.CameraMode
+  nameWithType: DesktopControlRig.CameraMode
+  fullName: Foundry.DesktopControlRig.CameraMode
+  spec.csharp:
+  - uid: Foundry.DesktopControlRig
+    name: DesktopControlRig
+    href: Foundry.DesktopControlRig.html
+  - name: .
+  - uid: Foundry.DesktopControlRig.CameraMode
+    name: CameraMode
+    href: Foundry.DesktopControlRig.CameraMode.html
+  spec.vb:
+  - uid: Foundry.DesktopControlRig
+    name: DesktopControlRig
+    href: Foundry.DesktopControlRig.html
+  - name: .
+  - uid: Foundry.DesktopControlRig.CameraMode
+    name: CameraMode
+    href: Foundry.DesktopControlRig.CameraMode.html
+- uid: Foundry.SpatialDistanceGrabber
+  commentId: T:Foundry.SpatialDistanceGrabber
+  href: Foundry.SpatialDistanceGrabber.html
+  name: SpatialDistanceGrabber
+  nameWithType: SpatialDistanceGrabber
+  fullName: Foundry.SpatialDistanceGrabber
+- uid: Foundry.Avatar
+  commentId: T:Foundry.Avatar
+  parent: Foundry
+  href: Foundry.Avatar.html
+  name: Avatar
+  nameWithType: Avatar
+  fullName: Foundry.Avatar
+- uid: Foundry.SpatialButton
+  commentId: T:Foundry.SpatialButton
+  href: Foundry.SpatialButton.html
+  name: SpatialButton
+  nameWithType: SpatialButton
+  fullName: Foundry.SpatialButton
+- uid: Foundry.AvatarHandScale
+  commentId: T:Foundry.AvatarHandScale
+  href: Foundry.AvatarHandScale.html
+  name: AvatarHandScale
+  nameWithType: AvatarHandScale
+  fullName: Foundry.AvatarHandScale
+- uid: Foundry.PlayerMenuAnimator
+  commentId: T:Foundry.PlayerMenuAnimator
+  parent: Foundry
+  href: Foundry.PlayerMenuAnimator.html
+  name: PlayerMenuAnimator
+  nameWithType: PlayerMenuAnimator
+  fullName: Foundry.PlayerMenuAnimator
 - uid: Foundry.FoundryUI
   commentId: T:Foundry.FoundryUI
   href: Foundry.FoundryUI.html
   name: FoundryUI
   nameWithType: FoundryUI
   fullName: Foundry.FoundryUI
-- uid: Foundry.SpatialTouchableSoundEffects
-  commentId: T:Foundry.SpatialTouchableSoundEffects
-  href: Foundry.SpatialTouchableSoundEffects.html
-  name: SpatialTouchableSoundEffects
-  nameWithType: SpatialTouchableSoundEffects
-  fullName: Foundry.SpatialTouchableSoundEffects
 - uid: Foundry.IKTwoBoneConstraint
   commentId: T:Foundry.IKTwoBoneConstraint
   parent: Foundry
@@ -296,274 +415,12 @@ references:
   - uid: Foundry.IKTwoBoneConstraint.Calibration
     name: Calibration
     href: Foundry.IKTwoBoneConstraint.Calibration.html
-- uid: Foundry.SpatialHandExtensions
-  commentId: T:Foundry.SpatialHandExtensions
-  parent: Foundry
-  href: Foundry.SpatialHandExtensions.html
-  name: SpatialHandExtensions
-  nameWithType: SpatialHandExtensions
-  fullName: Foundry.SpatialHandExtensions
-- uid: Foundry.XRControlRig
-  commentId: T:Foundry.XRControlRig
-  href: Foundry.XRControlRig.html
-  name: XRControlRig
-  nameWithType: XRControlRig
-  fullName: Foundry.XRControlRig
-- uid: Foundry.XRControlRig.Offsets
-  commentId: T:Foundry.XRControlRig.Offsets
-  parent: Foundry
-  href: Foundry.XRControlRig.html
-  name: XRControlRig.Offsets
-  nameWithType: XRControlRig.Offsets
-  fullName: Foundry.XRControlRig.Offsets
-  spec.csharp:
-  - uid: Foundry.XRControlRig
-    name: XRControlRig
-    href: Foundry.XRControlRig.html
-  - name: .
-  - uid: Foundry.XRControlRig.Offsets
-    name: Offsets
-    href: Foundry.XRControlRig.Offsets.html
-  spec.vb:
-  - uid: Foundry.XRControlRig
-    name: XRControlRig
-    href: Foundry.XRControlRig.html
-  - name: .
-  - uid: Foundry.XRControlRig.Offsets
-    name: Offsets
-    href: Foundry.XRControlRig.Offsets.html
-- uid: Foundry.TeleportPointDebugger
-  commentId: T:Foundry.TeleportPointDebugger
-  href: Foundry.TeleportPointDebugger.html
-  name: TeleportPointDebugger
-  nameWithType: TeleportPointDebugger
-  fullName: Foundry.TeleportPointDebugger
-- uid: Foundry.FullBodyAvatar
-  commentId: T:Foundry.FullBodyAvatar
-  parent: Foundry
-  href: Foundry.FullBodyAvatar.html
-  name: FullBodyAvatar
-  nameWithType: FullBodyAvatar
-  fullName: Foundry.FullBodyAvatar
-- uid: Foundry.PlayerMenuSpawner
-  commentId: T:Foundry.PlayerMenuSpawner
-  href: Foundry.PlayerMenuSpawner.html
-  name: PlayerMenuSpawner
-  nameWithType: PlayerMenuSpawner
-  fullName: Foundry.PlayerMenuSpawner
-- uid: Foundry.PlayerMenuSpawner.InputSource
-  commentId: T:Foundry.PlayerMenuSpawner.InputSource
-  parent: Foundry
-  href: Foundry.PlayerMenuSpawner.html
-  name: PlayerMenuSpawner.InputSource
-  nameWithType: PlayerMenuSpawner.InputSource
-  fullName: Foundry.PlayerMenuSpawner.InputSource
-  spec.csharp:
-  - uid: Foundry.PlayerMenuSpawner
-    name: PlayerMenuSpawner
-    href: Foundry.PlayerMenuSpawner.html
-  - name: .
-  - uid: Foundry.PlayerMenuSpawner.InputSource
-    name: InputSource
-    href: Foundry.PlayerMenuSpawner.InputSource.html
-  spec.vb:
-  - uid: Foundry.PlayerMenuSpawner
-    name: PlayerMenuSpawner
-    href: Foundry.PlayerMenuSpawner.html
-  - name: .
-  - uid: Foundry.PlayerMenuSpawner.InputSource
-    name: InputSource
-    href: Foundry.PlayerMenuSpawner.InputSource.html
-- uid: Foundry.SpatialTouchable
-  commentId: T:Foundry.SpatialTouchable
-  parent: Foundry
-  href: Foundry.SpatialTouchable.html
-  name: SpatialTouchable
-  nameWithType: SpatialTouchable
-  fullName: Foundry.SpatialTouchable
-- uid: Foundry.SpatialGrabbableDebugEvents
-  commentId: T:Foundry.SpatialGrabbableDebugEvents
-  href: Foundry.SpatialGrabbableDebugEvents.html
-  name: SpatialGrabbableDebugEvents
-  nameWithType: SpatialGrabbableDebugEvents
-  fullName: Foundry.SpatialGrabbableDebugEvents
-- uid: Foundry.MainCameraHolder
-  commentId: T:Foundry.MainCameraHolder
-  href: Foundry.MainCameraHolder.html
-  name: MainCameraHolder
-  nameWithType: MainCameraHolder
-  fullName: Foundry.MainCameraHolder
-- uid: Foundry.FoundryMainCamera
-  commentId: T:Foundry.FoundryMainCamera
-  href: Foundry.FoundryMainCamera.html
-  name: FoundryMainCamera
-  nameWithType: FoundryMainCamera
-  fullName: Foundry.FoundryMainCamera
-- uid: Foundry.SpatialSlider
-  commentId: T:Foundry.SpatialSlider
-  href: Foundry.SpatialSlider.html
-  name: SpatialSlider
-  nameWithType: SpatialSlider
-  fullName: Foundry.SpatialSlider
-- uid: Foundry.SpatialSlider.SliderIncrementEvent
-  commentId: T:Foundry.SpatialSlider.SliderIncrementEvent
-  href: Foundry.SpatialSlider.html
-  name: SpatialSlider.SliderIncrementEvent
-  nameWithType: SpatialSlider.SliderIncrementEvent
-  fullName: Foundry.SpatialSlider.SliderIncrementEvent
-  spec.csharp:
-  - uid: Foundry.SpatialSlider
-    name: SpatialSlider
-    href: Foundry.SpatialSlider.html
-  - name: .
-  - uid: Foundry.SpatialSlider.SliderIncrementEvent
-    name: SliderIncrementEvent
-    href: Foundry.SpatialSlider.SliderIncrementEvent.html
-  spec.vb:
-  - uid: Foundry.SpatialSlider
-    name: SpatialSlider
-    href: Foundry.SpatialSlider.html
-  - name: .
-  - uid: Foundry.SpatialSlider.SliderIncrementEvent
-    name: SliderIncrementEvent
-    href: Foundry.SpatialSlider.SliderIncrementEvent.html
-- uid: Foundry.DesktopControlRig
-  commentId: T:Foundry.DesktopControlRig
-  href: Foundry.DesktopControlRig.html
-  name: DesktopControlRig
-  nameWithType: DesktopControlRig
-  fullName: Foundry.DesktopControlRig
-- uid: Foundry.DesktopControlRig.CameraMode
-  commentId: T:Foundry.DesktopControlRig.CameraMode
-  parent: Foundry
-  href: Foundry.DesktopControlRig.html
-  name: DesktopControlRig.CameraMode
-  nameWithType: DesktopControlRig.CameraMode
-  fullName: Foundry.DesktopControlRig.CameraMode
-  spec.csharp:
-  - uid: Foundry.DesktopControlRig
-    name: DesktopControlRig
-    href: Foundry.DesktopControlRig.html
-  - name: .
-  - uid: Foundry.DesktopControlRig.CameraMode
-    name: CameraMode
-    href: Foundry.DesktopControlRig.CameraMode.html
-  spec.vb:
-  - uid: Foundry.DesktopControlRig
-    name: DesktopControlRig
-    href: Foundry.DesktopControlRig.html
-  - name: .
-  - uid: Foundry.DesktopControlRig.CameraMode
-    name: CameraMode
-    href: Foundry.DesktopControlRig.CameraMode.html
-- uid: Foundry.SpatialTouchableAnimation
-  commentId: T:Foundry.SpatialTouchableAnimation
-  href: Foundry.SpatialTouchableAnimation.html
-  name: SpatialTouchableAnimation
-  nameWithType: SpatialTouchableAnimation
-  fullName: Foundry.SpatialTouchableAnimation
-- uid: Foundry.PlacePointTextEvents
-  commentId: T:Foundry.PlacePointTextEvents
-  href: Foundry.PlacePointTextEvents.html
-  name: PlacePointTextEvents
-  nameWithType: PlacePointTextEvents
-  fullName: Foundry.PlacePointTextEvents
-- uid: Foundry.IKTransformConstraint
-  commentId: T:Foundry.IKTransformConstraint
-  parent: Foundry
-  href: Foundry.IKTransformConstraint.html
-  name: IKTransformConstraint
-  nameWithType: IKTransformConstraint
-  fullName: Foundry.IKTransformConstraint
-- uid: Foundry.SpatialGrabbableSoundEffects
-  commentId: T:Foundry.SpatialGrabbableSoundEffects
-  href: Foundry.SpatialGrabbableSoundEffects.html
-  name: SpatialGrabbableSoundEffects
-  nameWithType: SpatialGrabbableSoundEffects
-  fullName: Foundry.SpatialGrabbableSoundEffects
-- uid: Foundry.ObjectLifetime
-  commentId: T:Foundry.ObjectLifetime
-  href: Foundry.ObjectLifetime.html
-  name: ObjectLifetime
-  nameWithType: ObjectLifetime
-  fullName: Foundry.ObjectLifetime
-- uid: Foundry.SpatialDistanceGrabber
-  commentId: T:Foundry.SpatialDistanceGrabber
-  href: Foundry.SpatialDistanceGrabber.html
-  name: SpatialDistanceGrabber
-  nameWithType: SpatialDistanceGrabber
-  fullName: Foundry.SpatialDistanceGrabber
 - uid: Foundry.AsyncExtensions
   commentId: T:Foundry.AsyncExtensions
   href: Foundry.AsyncExtensions.html
   name: AsyncExtensions
   nameWithType: AsyncExtensions
   fullName: Foundry.AsyncExtensions
-- uid: Foundry.VelocityTimePair
-  commentId: T:Foundry.VelocityTimePair
-  href: Foundry.VelocityTimePair.html
-  name: VelocityTimePair
-  nameWithType: VelocityTimePair
-  fullName: Foundry.VelocityTimePair
-- uid: Foundry.HandVelocityTracker
-  commentId: T:Foundry.HandVelocityTracker
-  href: Foundry.HandVelocityTracker.html
-  name: HandVelocityTracker
-  nameWithType: HandVelocityTracker
-  fullName: Foundry.HandVelocityTracker
-- uid: Foundry.TeleportPointAnimation
-  commentId: T:Foundry.TeleportPointAnimation
-  href: Foundry.TeleportPointAnimation.html
-  name: TeleportPointAnimation
-  nameWithType: TeleportPointAnimation
-  fullName: Foundry.TeleportPointAnimation
-- uid: Foundry.PlayerRigEvent
-  commentId: T:Foundry.PlayerRigEvent
-  parent: Foundry
-  href: Foundry.PlayerRigEvent.html
-  name: PlayerRigEvent
-  nameWithType: PlayerRigEvent
-  fullName: Foundry.PlayerRigEvent
-- uid: Foundry.IPlayerRigManager
-  commentId: T:Foundry.IPlayerRigManager
-  parent: Foundry
-  href: Foundry.IPlayerRigManager.html
-  name: IPlayerRigManager
-  nameWithType: IPlayerRigManager
-  fullName: Foundry.IPlayerRigManager
-- uid: Foundry.PlacePointNameType
-  commentId: T:Foundry.PlacePointNameType
-  parent: Foundry
-  href: Foundry.PlacePointNameType.html
-  name: PlacePointNameType
-  nameWithType: PlacePointNameType
-  fullName: Foundry.PlacePointNameType
-- uid: Foundry.UnityPlacePointEvent
-  commentId: T:Foundry.UnityPlacePointEvent
-  parent: Foundry
-  href: Foundry.UnityPlacePointEvent.html
-  name: UnityPlacePointEvent
-  nameWithType: UnityPlacePointEvent
-  fullName: Foundry.UnityPlacePointEvent
-- uid: Foundry.PlacePoint
-  commentId: T:Foundry.PlacePoint
-  parent: Foundry
-  href: Foundry.PlacePoint.html
-  name: PlacePoint
-  nameWithType: PlacePoint
-  fullName: Foundry.PlacePoint
-- uid: Foundry.VideoSync
-  commentId: T:Foundry.VideoSync
-  href: Foundry.VideoSync.html
-  name: VideoSync
-  nameWithType: VideoSync
-  fullName: Foundry.VideoSync
-- uid: Foundry.BodyColorRandomiser
-  commentId: T:Foundry.BodyColorRandomiser
-  href: Foundry.BodyColorRandomiser.html
-  name: BodyColorRandomiser
-  nameWithType: BodyColorRandomiser
-  fullName: Foundry.BodyColorRandomiser
 - uid: Foundry.SpatialDistanceGrabbable
   commentId: T:Foundry.SpatialDistanceGrabbable
   parent: Foundry
@@ -571,30 +428,68 @@ references:
   name: SpatialDistanceGrabbable
   nameWithType: SpatialDistanceGrabbable
   fullName: Foundry.SpatialDistanceGrabbable
-- uid: Foundry.PlacePointSoundEffects
-  commentId: T:Foundry.PlacePointSoundEffects
-  href: Foundry.PlacePointSoundEffects.html
-  name: PlacePointSoundEffects
-  nameWithType: PlacePointSoundEffects
-  fullName: Foundry.PlacePointSoundEffects
-- uid: Foundry.SpatialGrabbablePose
-  commentId: T:Foundry.SpatialGrabbablePose
-  href: Foundry.SpatialGrabbablePose.html
-  name: SpatialGrabbablePose
-  nameWithType: SpatialGrabbablePose
-  fullName: Foundry.SpatialGrabbablePose
-- uid: Foundry.ProgressReport
-  commentId: T:Foundry.ProgressReport
-  href: Foundry.ProgressReport.html
-  name: ProgressReport
-  nameWithType: ProgressReport
-  fullName: Foundry.ProgressReport
-- uid: Foundry.SpatialDistanceGrabbableDebugger
-  commentId: T:Foundry.SpatialDistanceGrabbableDebugger
-  href: Foundry.SpatialDistanceGrabbableDebugger.html
-  name: SpatialDistanceGrabbableDebugger
-  nameWithType: SpatialDistanceGrabbableDebugger
-  fullName: Foundry.SpatialDistanceGrabbableDebugger
+- uid: Foundry.FoundryApp
+  commentId: T:Foundry.FoundryApp
+  parent: Foundry
+  href: Foundry.FoundryApp.html
+  name: FoundryApp
+  nameWithType: FoundryApp
+  fullName: Foundry.FoundryApp
+- uid: Foundry.MicrophoneControl
+  commentId: T:Foundry.MicrophoneControl
+  href: Foundry.MicrophoneControl.html
+  name: MicrophoneControl
+  nameWithType: MicrophoneControl
+  fullName: Foundry.MicrophoneControl
+- uid: Foundry.TrackerRefs
+  commentId: T:Foundry.TrackerRefs
+  parent: Foundry
+  href: Foundry.TrackerRefs.html
+  name: TrackerRefs
+  nameWithType: TrackerRefs
+  fullName: Foundry.TrackerRefs
+- uid: Foundry.Player
+  commentId: T:Foundry.Player
+  parent: Foundry
+  href: Foundry.Player.html
+  name: Player
+  nameWithType: Player
+  fullName: Foundry.Player
+- uid: Foundry.Player.MovementSettings
+  commentId: T:Foundry.Player.MovementSettings
+  parent: Foundry
+  href: Foundry.Player.html
+  name: Player.MovementSettings
+  nameWithType: Player.MovementSettings
+  fullName: Foundry.Player.MovementSettings
+  spec.csharp:
+  - uid: Foundry.Player
+    name: Player
+    href: Foundry.Player.html
+  - name: .
+  - uid: Foundry.Player.MovementSettings
+    name: MovementSettings
+    href: Foundry.Player.MovementSettings.html
+  spec.vb:
+  - uid: Foundry.Player
+    name: Player
+    href: Foundry.Player.html
+  - name: .
+  - uid: Foundry.Player.MovementSettings
+    name: MovementSettings
+    href: Foundry.Player.MovementSettings.html
+- uid: Foundry.SpatialDoor
+  commentId: T:Foundry.SpatialDoor
+  href: Foundry.SpatialDoor.html
+  name: SpatialDoor
+  nameWithType: SpatialDoor
+  fullName: Foundry.SpatialDoor
+- uid: Foundry.BodyColorRandomiser
+  commentId: T:Foundry.BodyColorRandomiser
+  href: Foundry.BodyColorRandomiser.html
+  name: BodyColorRandomiser
+  nameWithType: BodyColorRandomiser
+  fullName: Foundry.BodyColorRandomiser
 - uid: Foundry.ControllerConfig
   commentId: T:Foundry.ControllerConfig
   parent: Foundry
@@ -648,18 +543,187 @@ references:
   - uid: Foundry.ControllerConfig.DeviceOffset
     name: DeviceOffset
     href: Foundry.ControllerConfig.DeviceOffset.html
-- uid: Foundry.ConnectToPrefab
-  commentId: T:Foundry.ConnectToPrefab
-  href: Foundry.ConnectToPrefab.html
-  name: ConnectToPrefab
-  nameWithType: ConnectToPrefab
-  fullName: Foundry.ConnectToPrefab
 - uid: Foundry.IKStretchToTarget
   commentId: T:Foundry.IKStretchToTarget
   href: Foundry.IKStretchToTarget.html
   name: IKStretchToTarget
   nameWithType: IKStretchToTarget
   fullName: Foundry.IKStretchToTarget
+- uid: Foundry.TeleportPoint
+  commentId: T:Foundry.TeleportPoint
+  parent: Foundry
+  href: Foundry.TeleportPoint.html
+  name: TeleportPoint
+  nameWithType: TeleportPoint
+  fullName: Foundry.TeleportPoint
+- uid: Foundry.FoundryUIInput
+  commentId: T:Foundry.FoundryUIInput
+  parent: Foundry
+  href: Foundry.FoundryUIInput.html
+  name: FoundryUIInput
+  nameWithType: FoundryUIInput
+  fullName: Foundry.FoundryUIInput
+- uid: Foundry.IFoundryCameraManager
+  commentId: T:Foundry.IFoundryCameraManager
+  parent: Foundry
+  href: Foundry.IFoundryCameraManager.html
+  name: IFoundryCameraManager
+  nameWithType: IFoundryCameraManager
+  fullName: Foundry.IFoundryCameraManager
+- uid: Foundry.FoundryModuleConfig
+  commentId: T:Foundry.FoundryModuleConfig
+  parent: Foundry
+  href: Foundry.FoundryModuleConfig.html
+  name: FoundryModuleConfig
+  nameWithType: FoundryModuleConfig
+  fullName: Foundry.FoundryModuleConfig
+- uid: Foundry.FoundryModuleConfig.ServiceConstructor
+  commentId: T:Foundry.FoundryModuleConfig.ServiceConstructor
+  href: Foundry.FoundryModuleConfig.html
+  name: FoundryModuleConfig.ServiceConstructor
+  nameWithType: FoundryModuleConfig.ServiceConstructor
+  fullName: Foundry.FoundryModuleConfig.ServiceConstructor
+  spec.csharp:
+  - uid: Foundry.FoundryModuleConfig
+    name: FoundryModuleConfig
+    href: Foundry.FoundryModuleConfig.html
+  - name: .
+  - uid: Foundry.FoundryModuleConfig.ServiceConstructor
+    name: ServiceConstructor
+    href: Foundry.FoundryModuleConfig.ServiceConstructor.html
+  spec.vb:
+  - uid: Foundry.FoundryModuleConfig
+    name: FoundryModuleConfig
+    href: Foundry.FoundryModuleConfig.html
+  - name: .
+  - uid: Foundry.FoundryModuleConfig.ServiceConstructor
+    name: ServiceConstructor
+    href: Foundry.FoundryModuleConfig.ServiceConstructor.html
+- uid: Foundry.FoundryModuleConfig.SerializedType
+  commentId: T:Foundry.FoundryModuleConfig.SerializedType
+  parent: Foundry
+  href: Foundry.FoundryModuleConfig.html
+  name: FoundryModuleConfig.SerializedType
+  nameWithType: FoundryModuleConfig.SerializedType
+  fullName: Foundry.FoundryModuleConfig.SerializedType
+  spec.csharp:
+  - uid: Foundry.FoundryModuleConfig
+    name: FoundryModuleConfig
+    href: Foundry.FoundryModuleConfig.html
+  - name: .
+  - uid: Foundry.FoundryModuleConfig.SerializedType
+    name: SerializedType
+    href: Foundry.FoundryModuleConfig.SerializedType.html
+  spec.vb:
+  - uid: Foundry.FoundryModuleConfig
+    name: FoundryModuleConfig
+    href: Foundry.FoundryModuleConfig.html
+  - name: .
+  - uid: Foundry.FoundryModuleConfig.SerializedType
+    name: SerializedType
+    href: Foundry.FoundryModuleConfig.SerializedType.html
+- uid: Foundry.SpatialTouch
+  commentId: T:Foundry.SpatialTouch
+  parent: Foundry
+  href: Foundry.SpatialTouch.html
+  name: SpatialTouch
+  nameWithType: SpatialTouch
+  fullName: Foundry.SpatialTouch
+- uid: Foundry.MainCameraHolder
+  commentId: T:Foundry.MainCameraHolder
+  href: Foundry.MainCameraHolder.html
+  name: MainCameraHolder
+  nameWithType: MainCameraHolder
+  fullName: Foundry.MainCameraHolder
+- uid: Foundry.PlacePointNameType
+  commentId: T:Foundry.PlacePointNameType
+  parent: Foundry
+  href: Foundry.PlacePointNameType.html
+  name: PlacePointNameType
+  nameWithType: PlacePointNameType
+  fullName: Foundry.PlacePointNameType
+- uid: Foundry.UnityPlacePointEvent
+  commentId: T:Foundry.UnityPlacePointEvent
+  parent: Foundry
+  href: Foundry.UnityPlacePointEvent.html
+  name: UnityPlacePointEvent
+  nameWithType: UnityPlacePointEvent
+  fullName: Foundry.UnityPlacePointEvent
+- uid: Foundry.PlacePoint
+  commentId: T:Foundry.PlacePoint
+  parent: Foundry
+  href: Foundry.PlacePoint.html
+  name: PlacePoint
+  nameWithType: PlacePoint
+  fullName: Foundry.PlacePoint
+- uid: Foundry.IProgressChangedEvent`1
+  commentId: T:Foundry.IProgressChangedEvent`1
+  href: Foundry.IProgressChangedEvent-1.html
+  name: IProgressChangedEvent<TProgress>
+  nameWithType: IProgressChangedEvent<TProgress>
+  fullName: Foundry.IProgressChangedEvent<TProgress>
+  nameWithType.vb: IProgressChangedEvent(Of TProgress)
+  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress)
+  name.vb: IProgressChangedEvent(Of TProgress)
+  spec.csharp:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: <
+  - name: TProgress
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.IProgressChangedEvent`1
+    name: IProgressChangedEvent
+    href: Foundry.IProgressChangedEvent-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProgress
+  - name: )
+- uid: Foundry.IProgressChangedEvent
+  commentId: T:Foundry.IProgressChangedEvent
+  parent: Foundry
+  href: Foundry.IProgressChangedEvent.html
+  name: IProgressChangedEvent
+  nameWithType: IProgressChangedEvent
+  fullName: Foundry.IProgressChangedEvent
+- uid: Foundry.XRControlRig
+  commentId: T:Foundry.XRControlRig
+  href: Foundry.XRControlRig.html
+  name: XRControlRig
+  nameWithType: XRControlRig
+  fullName: Foundry.XRControlRig
+- uid: Foundry.XRControlRig.Offsets
+  commentId: T:Foundry.XRControlRig.Offsets
+  parent: Foundry
+  href: Foundry.XRControlRig.html
+  name: XRControlRig.Offsets
+  nameWithType: XRControlRig.Offsets
+  fullName: Foundry.XRControlRig.Offsets
+  spec.csharp:
+  - uid: Foundry.XRControlRig
+    name: XRControlRig
+    href: Foundry.XRControlRig.html
+  - name: .
+  - uid: Foundry.XRControlRig.Offsets
+    name: Offsets
+    href: Foundry.XRControlRig.Offsets.html
+  spec.vb:
+  - uid: Foundry.XRControlRig
+    name: XRControlRig
+    href: Foundry.XRControlRig.html
+  - name: .
+  - uid: Foundry.XRControlRig.Offsets
+    name: Offsets
+    href: Foundry.XRControlRig.Offsets.html
+- uid: Foundry.FoundryScript
+  commentId: T:Foundry.FoundryScript
+  parent: Foundry
+  href: Foundry.FoundryScript.html
+  name: FoundryScript
+  nameWithType: FoundryScript
+  fullName: Foundry.FoundryScript
 - uid: Foundry.AnimationTarget
   commentId: T:Foundry.AnimationTarget
   href: Foundry.AnimationTarget.html
@@ -673,194 +737,132 @@ references:
   name: InteractionAnimations
   nameWithType: InteractionAnimations
   fullName: Foundry.InteractionAnimations
-- uid: Foundry.HighlightData
-  commentId: T:Foundry.HighlightData
+- uid: Foundry.PlayerRigManagerService
+  commentId: T:Foundry.PlayerRigManagerService
+  href: Foundry.PlayerRigManagerService.html
+  name: PlayerRigManagerService
+  nameWithType: PlayerRigManagerService
+  fullName: Foundry.PlayerRigManagerService
+- uid: Foundry.MenuPlayer
+  commentId: T:Foundry.MenuPlayer
+  href: Foundry.MenuPlayer.html
+  name: MenuPlayer
+  nameWithType: MenuPlayer
+  fullName: Foundry.MenuPlayer
+- uid: Foundry.IKExecutor
+  commentId: T:Foundry.IKExecutor
+  href: Foundry.IKExecutor.html
+  name: IKExecutor
+  nameWithType: IKExecutor
+  fullName: Foundry.IKExecutor
+- uid: Foundry.IKExecutor.ExecutionTime
+  commentId: T:Foundry.IKExecutor.ExecutionTime
   parent: Foundry
-  href: Foundry.HighlightData.html
-  name: HighlightData
-  nameWithType: HighlightData
-  fullName: Foundry.HighlightData
-- uid: Foundry.SpatialHandGrabEvent
-  commentId: T:Foundry.SpatialHandGrabEvent
-  parent: Foundry
-  href: Foundry.SpatialHandGrabEvent.html
-  name: SpatialHandGrabEvent
-  nameWithType: SpatialHandGrabEvent
-  fullName: Foundry.SpatialHandGrabEvent
-- uid: Foundry.SpatialHand
-  commentId: T:Foundry.SpatialHand
-  parent: Foundry
-  href: Foundry.SpatialHand.html
-  name: SpatialHand
-  nameWithType: SpatialHand
-  fullName: Foundry.SpatialHand
-- uid: Foundry.SpatialHand.HandType
-  commentId: T:Foundry.SpatialHand.HandType
-  parent: Foundry
-  href: Foundry.SpatialHand.html
-  name: SpatialHand.HandType
-  nameWithType: SpatialHand.HandType
-  fullName: Foundry.SpatialHand.HandType
+  href: Foundry.IKExecutor.html
+  name: IKExecutor.ExecutionTime
+  nameWithType: IKExecutor.ExecutionTime
+  fullName: Foundry.IKExecutor.ExecutionTime
   spec.csharp:
-  - uid: Foundry.SpatialHand
-    name: SpatialHand
-    href: Foundry.SpatialHand.html
+  - uid: Foundry.IKExecutor
+    name: IKExecutor
+    href: Foundry.IKExecutor.html
   - name: .
-  - uid: Foundry.SpatialHand.HandType
-    name: HandType
-    href: Foundry.SpatialHand.HandType.html
+  - uid: Foundry.IKExecutor.ExecutionTime
+    name: ExecutionTime
+    href: Foundry.IKExecutor.ExecutionTime.html
   spec.vb:
-  - uid: Foundry.SpatialHand
-    name: SpatialHand
-    href: Foundry.SpatialHand.html
+  - uid: Foundry.IKExecutor
+    name: IKExecutor
+    href: Foundry.IKExecutor.html
   - name: .
-  - uid: Foundry.SpatialHand.HandType
-    name: HandType
-    href: Foundry.SpatialHand.HandType.html
-- uid: Foundry.TeleportRaycaster
-  commentId: T:Foundry.TeleportRaycaster
+  - uid: Foundry.IKExecutor.ExecutionTime
+    name: ExecutionTime
+    href: Foundry.IKExecutor.ExecutionTime.html
+- uid: Foundry.IKExecutor.ConstraintEntry
+  commentId: T:Foundry.IKExecutor.ConstraintEntry
+  href: Foundry.IKExecutor.html
+  name: IKExecutor.ConstraintEntry
+  nameWithType: IKExecutor.ConstraintEntry
+  fullName: Foundry.IKExecutor.ConstraintEntry
+  spec.csharp:
+  - uid: Foundry.IKExecutor
+    name: IKExecutor
+    href: Foundry.IKExecutor.html
+  - name: .
+  - uid: Foundry.IKExecutor.ConstraintEntry
+    name: ConstraintEntry
+    href: Foundry.IKExecutor.ConstraintEntry.html
+  spec.vb:
+  - uid: Foundry.IKExecutor
+    name: IKExecutor
+    href: Foundry.IKExecutor.html
+  - name: .
+  - uid: Foundry.IKExecutor.ConstraintEntry
+    name: ConstraintEntry
+    href: Foundry.IKExecutor.ConstraintEntry.html
+- uid: Foundry.IKConstraint
+  commentId: T:Foundry.IKConstraint
   parent: Foundry
-  href: Foundry.TeleportRaycaster.html
-  name: TeleportRaycaster
-  nameWithType: TeleportRaycaster
-  fullName: Foundry.TeleportRaycaster
-- uid: Foundry.IFoundryCameraManager
-  commentId: T:Foundry.IFoundryCameraManager
+  href: Foundry.IKConstraint.html
+  name: IKConstraint
+  nameWithType: IKConstraint
+  fullName: Foundry.IKConstraint
+- uid: Foundry.IKTargetedConstraint
+  commentId: T:Foundry.IKTargetedConstraint
   parent: Foundry
-  href: Foundry.IFoundryCameraManager.html
-  name: IFoundryCameraManager
-  nameWithType: IFoundryCameraManager
-  fullName: Foundry.IFoundryCameraManager
-- uid: Foundry.Avatar
-  commentId: T:Foundry.Avatar
+  href: Foundry.IKTargetedConstraint.html
+  name: IKTargetedConstraint
+  nameWithType: IKTargetedConstraint
+  fullName: Foundry.IKTargetedConstraint
+- uid: Foundry.FoundryMainCamera
+  commentId: T:Foundry.FoundryMainCamera
+  href: Foundry.FoundryMainCamera.html
+  name: FoundryMainCamera
+  nameWithType: FoundryMainCamera
+  fullName: Foundry.FoundryMainCamera
+- uid: Foundry.PlacePointTextEvents
+  commentId: T:Foundry.PlacePointTextEvents
+  href: Foundry.PlacePointTextEvents.html
+  name: PlacePointTextEvents
+  nameWithType: PlacePointTextEvents
+  fullName: Foundry.PlacePointTextEvents
+- uid: Foundry.SpatialGrabbableSoundEffects
+  commentId: T:Foundry.SpatialGrabbableSoundEffects
+  href: Foundry.SpatialGrabbableSoundEffects.html
+  name: SpatialGrabbableSoundEffects
+  nameWithType: SpatialGrabbableSoundEffects
+  fullName: Foundry.SpatialGrabbableSoundEffects
+- uid: Foundry.SpatialLookable
+  commentId: T:Foundry.SpatialLookable
   parent: Foundry
-  href: Foundry.Avatar.html
-  name: Avatar
-  nameWithType: Avatar
-  fullName: Foundry.Avatar
-- uid: Foundry.SpatialGrabbableChild
-  commentId: T:Foundry.SpatialGrabbableChild
-  href: Foundry.SpatialGrabbableChild.html
-  name: SpatialGrabbableChild
-  nameWithType: SpatialGrabbableChild
-  fullName: Foundry.SpatialGrabbableChild
-- uid: Foundry.SpatialHandPoseAnimator
-  commentId: T:Foundry.SpatialHandPoseAnimator
-  parent: Foundry
-  href: Foundry.SpatialHandPoseAnimator.html
-  name: SpatialHandPoseAnimator
-  nameWithType: SpatialHandPoseAnimator
-  fullName: Foundry.SpatialHandPoseAnimator
-- uid: Foundry.TeleportPoint
-  commentId: T:Foundry.TeleportPoint
-  parent: Foundry
-  href: Foundry.TeleportPoint.html
-  name: TeleportPoint
-  nameWithType: TeleportPoint
-  fullName: Foundry.TeleportPoint
-- uid: Foundry.VideoPlayerAudioSource
-  commentId: T:Foundry.VideoPlayerAudioSource
-  href: Foundry.VideoPlayerAudioSource.html
-  name: VideoPlayerAudioSource
-  nameWithType: VideoPlayerAudioSource
-  fullName: Foundry.VideoPlayerAudioSource
-- uid: Foundry.NetworkedTR
-  commentId: T:Foundry.NetworkedTR
-  parent: Foundry
-  href: Foundry.NetworkedTR.html
-  name: NetworkedTR
-  nameWithType: NetworkedTR
-  fullName: Foundry.NetworkedTR
-- uid: Foundry.NetworkTRPredictor
-  commentId: T:Foundry.NetworkTRPredictor
-  href: Foundry.NetworkTRPredictor.html
-  name: NetworkTRPredictor
-  nameWithType: NetworkTRPredictor
-  fullName: Foundry.NetworkTRPredictor
-- uid: Foundry.TeleportRaycasterSounds
-  commentId: T:Foundry.TeleportRaycasterSounds
-  href: Foundry.TeleportRaycasterSounds.html
-  name: TeleportRaycasterSounds
-  nameWithType: TeleportRaycasterSounds
-  fullName: Foundry.TeleportRaycasterSounds
+  href: Foundry.SpatialLookable.html
+  name: SpatialLookable
+  nameWithType: SpatialLookable
+  fullName: Foundry.SpatialLookable
+- uid: Foundry.SpatialGrabbableDebugEvents
+  commentId: T:Foundry.SpatialGrabbableDebugEvents
+  href: Foundry.SpatialGrabbableDebugEvents.html
+  name: SpatialGrabbableDebugEvents
+  nameWithType: SpatialGrabbableDebugEvents
+  fullName: Foundry.SpatialGrabbableDebugEvents
+- uid: Foundry.SpatialGrabbablePose
+  commentId: T:Foundry.SpatialGrabbablePose
+  href: Foundry.SpatialGrabbablePose.html
+  name: SpatialGrabbablePose
+  nameWithType: SpatialGrabbablePose
+  fullName: Foundry.SpatialGrabbablePose
+- uid: Foundry.ProgressReport
+  commentId: T:Foundry.ProgressReport
+  href: Foundry.ProgressReport.html
+  name: ProgressReport
+  nameWithType: ProgressReport
+  fullName: Foundry.ProgressReport
 - uid: Foundry.SpatialGrabbableOutlineEffect
   commentId: T:Foundry.SpatialGrabbableOutlineEffect
   href: Foundry.SpatialGrabbableOutlineEffect.html
   name: SpatialGrabbableOutlineEffect
   nameWithType: SpatialGrabbableOutlineEffect
   fullName: Foundry.SpatialGrabbableOutlineEffect
-- uid: Foundry.SpatialLookSoundEffects
-  commentId: T:Foundry.SpatialLookSoundEffects
-  href: Foundry.SpatialLookSoundEffects.html
-  name: SpatialLookSoundEffects
-  nameWithType: SpatialLookSoundEffects
-  fullName: Foundry.SpatialLookSoundEffects
-- uid: Foundry.SpatialGrabbableExtensions
-  commentId: T:Foundry.SpatialGrabbableExtensions
-  parent: Foundry
-  href: Foundry.SpatialGrabbableExtensions.html
-  name: SpatialGrabbableExtensions
-  nameWithType: SpatialGrabbableExtensions
-  fullName: Foundry.SpatialGrabbableExtensions
-- uid: Foundry.OrientationMatchAxis
-  commentId: T:Foundry.OrientationMatchAxis
-  parent: Foundry
-  href: Foundry.OrientationMatchAxis.html
-  name: OrientationMatchAxis
-  nameWithType: OrientationMatchAxis
-  fullName: Foundry.OrientationMatchAxis
-- uid: Foundry.OrientationMatcher
-  commentId: T:Foundry.OrientationMatcher
-  href: Foundry.OrientationMatcher.html
-  name: OrientationMatcher
-  nameWithType: OrientationMatcher
-  fullName: Foundry.OrientationMatcher
-- uid: Foundry.PlayerControlMode
-  commentId: T:Foundry.PlayerControlMode
-  parent: Foundry
-  href: Foundry.PlayerControlMode.html
-  name: PlayerControlMode
-  nameWithType: PlayerControlMode
-  fullName: Foundry.PlayerControlMode
-- uid: Foundry.FoundryNetworkButton
-  commentId: T:Foundry.FoundryNetworkButton
-  parent: Foundry
-  href: Foundry.FoundryNetworkButton.html
-  name: FoundryNetworkButton
-  nameWithType: FoundryNetworkButton
-  fullName: Foundry.FoundryNetworkButton
-- uid: Foundry.NetPosRot
-  commentId: T:Foundry.NetPosRot
-  parent: Foundry
-  href: Foundry.NetPosRot.html
-  name: NetPosRot
-  nameWithType: NetPosRot
-  fullName: Foundry.NetPosRot
-- uid: Foundry.NetworkedCommonInput
-  commentId: T:Foundry.NetworkedCommonInput
-  parent: Foundry
-  href: Foundry.NetworkedCommonInput.html
-  name: NetworkedCommonInput
-  nameWithType: NetworkedCommonInput
-  fullName: Foundry.NetworkedCommonInput
-- uid: Foundry.NetworkedDesktopInput
-  commentId: T:Foundry.NetworkedDesktopInput
-  href: Foundry.NetworkedDesktopInput.html
-  name: NetworkedDesktopInput
-  nameWithType: NetworkedDesktopInput
-  fullName: Foundry.NetworkedDesktopInput
-- uid: Foundry.Networked3PInput
-  commentId: T:Foundry.Networked3PInput
-  href: Foundry.Networked3PInput.html
-  name: Networked3PInput
-  nameWithType: Networked3PInput
-  fullName: Foundry.Networked3PInput
-- uid: Foundry.Networked6PInput
-  commentId: T:Foundry.Networked6PInput
-  href: Foundry.Networked6PInput.html
-  name: Networked6PInput
-  nameWithType: Networked6PInput
-  fullName: Foundry.Networked6PInput
 - uid: Foundry.MappedPropertyImpl
   commentId: T:Foundry.MappedPropertyImpl
   href: Foundry.MappedPropertyImpl.html
@@ -874,114 +876,78 @@ references:
   name: MappedProperties
   nameWithType: MappedProperties
   fullName: Foundry.MappedProperties
-- uid: Foundry.IPlayerControlRig
-  commentId: T:Foundry.IPlayerControlRig
+- uid: Foundry.TeleportPointAnimation
+  commentId: T:Foundry.TeleportPointAnimation
+  href: Foundry.TeleportPointAnimation.html
+  name: TeleportPointAnimation
+  nameWithType: TeleportPointAnimation
+  fullName: Foundry.TeleportPointAnimation
+- uid: Foundry.CoreAuthentication
+  commentId: T:Foundry.CoreAuthentication
+  href: Foundry.CoreAuthentication.html
+  name: CoreAuthentication
+  nameWithType: CoreAuthentication
+  fullName: Foundry.CoreAuthentication
+- uid: Foundry.PlayerControlMode
+  commentId: T:Foundry.PlayerControlMode
   parent: Foundry
-  href: Foundry.IPlayerControlRig.html
-  name: IPlayerControlRig
-  nameWithType: IPlayerControlRig
-  fullName: Foundry.IPlayerControlRig
-- uid: Foundry.SpatialHandDebugEvents
-  commentId: T:Foundry.SpatialHandDebugEvents
-  href: Foundry.SpatialHandDebugEvents.html
-  name: SpatialHandDebugEvents
-  nameWithType: SpatialHandDebugEvents
-  fullName: Foundry.SpatialHandDebugEvents
-- uid: Foundry.NetEventSource
-  commentId: T:Foundry.NetEventSource
+  href: Foundry.PlayerControlMode.html
+  name: PlayerControlMode
+  nameWithType: PlayerControlMode
+  fullName: Foundry.PlayerControlMode
+- uid: Foundry.PlayerRigCreator
+  commentId: T:Foundry.PlayerRigCreator
+  href: Foundry.PlayerRigCreator.html
+  name: PlayerRigCreator
+  nameWithType: PlayerRigCreator
+  fullName: Foundry.PlayerRigCreator
+- uid: Foundry.FoundryAppConfig
+  commentId: T:Foundry.FoundryAppConfig
+  href: Foundry.FoundryAppConfig.html
+  name: FoundryAppConfig
+  nameWithType: FoundryAppConfig
+  fullName: Foundry.FoundryAppConfig
+- uid: Foundry.SpatialLook
+  commentId: T:Foundry.SpatialLook
   parent: Foundry
-  href: Foundry.NetEventSource.html
-  name: NetEventSource
-  nameWithType: NetEventSource
-  fullName: Foundry.NetEventSource
-- uid: Foundry.NetworkEventBase
-  commentId: T:Foundry.NetworkEventBase
-  parent: Foundry
-  href: Foundry.NetworkEventBase.html
-  name: NetworkEventBase
-  nameWithType: NetworkEventBase
-  fullName: Foundry.NetworkEventBase
-- uid: Foundry.NetworkEvent`1
-  commentId: T:Foundry.NetworkEvent`1
-  href: Foundry.NetworkEvent-1.html
-  name: NetworkEvent<T>
-  nameWithType: NetworkEvent<T>
-  fullName: Foundry.NetworkEvent<T>
-  nameWithType.vb: NetworkEvent(Of T)
-  fullName.vb: Foundry.NetworkEvent(Of T)
-  name.vb: NetworkEvent(Of T)
+  href: Foundry.SpatialLook.html
+  name: SpatialLook
+  nameWithType: SpatialLook
+  fullName: Foundry.SpatialLook
+- uid: Foundry.SpatialLook.CastWidth
+  commentId: T:Foundry.SpatialLook.CastWidth
+  href: Foundry.SpatialLook.html
+  name: SpatialLook.CastWidth
+  nameWithType: SpatialLook.CastWidth
+  fullName: Foundry.SpatialLook.CastWidth
   spec.csharp:
-  - uid: Foundry.NetworkEvent`1
-    name: NetworkEvent
-    href: Foundry.NetworkEvent-1.html
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: Foundry.NetworkEvent`1
-    name: NetworkEvent
-    href: Foundry.NetworkEvent-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: Foundry.SpatialLookable
-  commentId: T:Foundry.SpatialLookable
-  parent: Foundry
-  href: Foundry.SpatialLookable.html
-  name: SpatialLookable
-  nameWithType: SpatialLookable
-  fullName: Foundry.SpatialLookable
-- uid: Foundry.SpatialButton
-  commentId: T:Foundry.SpatialButton
-  href: Foundry.SpatialButton.html
-  name: SpatialButton
-  nameWithType: SpatialButton
-  fullName: Foundry.SpatialButton
-- uid: Foundry.FoundryApp
-  commentId: T:Foundry.FoundryApp
-  parent: Foundry
-  href: Foundry.FoundryApp.html
-  name: FoundryApp
-  nameWithType: FoundryApp
-  fullName: Foundry.FoundryApp
-- uid: Foundry.FoundryUIRaycaster
-  commentId: T:Foundry.FoundryUIRaycaster
-  parent: Foundry
-  href: Foundry.FoundryUIRaycaster.html
-  name: FoundryUIRaycaster
-  nameWithType: FoundryUIRaycaster
-  fullName: Foundry.FoundryUIRaycaster
-- uid: Foundry.FoundryUIRaycaster.InputSource
-  commentId: T:Foundry.FoundryUIRaycaster.InputSource
-  parent: Foundry
-  href: Foundry.FoundryUIRaycaster.html
-  name: FoundryUIRaycaster.InputSource
-  nameWithType: FoundryUIRaycaster.InputSource
-  fullName: Foundry.FoundryUIRaycaster.InputSource
-  spec.csharp:
-  - uid: Foundry.FoundryUIRaycaster
-    name: FoundryUIRaycaster
-    href: Foundry.FoundryUIRaycaster.html
+  - uid: Foundry.SpatialLook
+    name: SpatialLook
+    href: Foundry.SpatialLook.html
   - name: .
-  - uid: Foundry.FoundryUIRaycaster.InputSource
-    name: InputSource
-    href: Foundry.FoundryUIRaycaster.InputSource.html
+  - uid: Foundry.SpatialLook.CastWidth
+    name: CastWidth
+    href: Foundry.SpatialLook.CastWidth.html
   spec.vb:
-  - uid: Foundry.FoundryUIRaycaster
-    name: FoundryUIRaycaster
-    href: Foundry.FoundryUIRaycaster.html
+  - uid: Foundry.SpatialLook
+    name: SpatialLook
+    href: Foundry.SpatialLook.html
   - name: .
-  - uid: Foundry.FoundryUIRaycaster.InputSource
-    name: InputSource
-    href: Foundry.FoundryUIRaycaster.InputSource.html
-- uid: Foundry.AvatarHandScale
-  commentId: T:Foundry.AvatarHandScale
-  href: Foundry.AvatarHandScale.html
-  name: AvatarHandScale
-  nameWithType: AvatarHandScale
-  fullName: Foundry.AvatarHandScale
+  - uid: Foundry.SpatialLook.CastWidth
+    name: CastWidth
+    href: Foundry.SpatialLook.CastWidth.html
+- uid: Foundry.FoundryCameraManager
+  commentId: T:Foundry.FoundryCameraManager
+  href: Foundry.FoundryCameraManager.html
+  name: FoundryCameraManager
+  nameWithType: FoundryCameraManager
+  fullName: Foundry.FoundryCameraManager
+- uid: Foundry.SpatialTouchableSoundEffects
+  commentId: T:Foundry.SpatialTouchableSoundEffects
+  href: Foundry.SpatialTouchableSoundEffects.html
+  name: SpatialTouchableSoundEffects
+  nameWithType: SpatialTouchableSoundEffects
+  fullName: Foundry.SpatialTouchableSoundEffects
 - uid: Foundry.PosRot
   commentId: T:Foundry.PosRot
   parent: Foundry
@@ -1065,180 +1031,12 @@ references:
   - uid: Foundry.HumanoidIK.Calibration
     name: Calibration
     href: Foundry.HumanoidIK.Calibration.html
-- uid: Foundry.FullBodyAvatarNetworking
-  commentId: T:Foundry.FullBodyAvatarNetworking
-  href: Foundry.FullBodyAvatarNetworking.html
-  name: FullBodyAvatarNetworking
-  nameWithType: FullBodyAvatarNetworking
-  fullName: Foundry.FullBodyAvatarNetworking
-- uid: Foundry.MenuPlayer
-  commentId: T:Foundry.MenuPlayer
-  href: Foundry.MenuPlayer.html
-  name: MenuPlayer
-  nameWithType: MenuPlayer
-  fullName: Foundry.MenuPlayer
-- uid: Foundry.SpatialLever
-  commentId: T:Foundry.SpatialLever
-  href: Foundry.SpatialLever.html
-  name: SpatialLever
-  nameWithType: SpatialLever
-  fullName: Foundry.SpatialLever
-- uid: Foundry.MicrophoneControl
-  commentId: T:Foundry.MicrophoneControl
-  href: Foundry.MicrophoneControl.html
-  name: MicrophoneControl
-  nameWithType: MicrophoneControl
-  fullName: Foundry.MicrophoneControl
-- uid: Foundry.IKExecutor
-  commentId: T:Foundry.IKExecutor
-  href: Foundry.IKExecutor.html
-  name: IKExecutor
-  nameWithType: IKExecutor
-  fullName: Foundry.IKExecutor
-- uid: Foundry.IKExecutor.ExecutionTime
-  commentId: T:Foundry.IKExecutor.ExecutionTime
-  parent: Foundry
-  href: Foundry.IKExecutor.html
-  name: IKExecutor.ExecutionTime
-  nameWithType: IKExecutor.ExecutionTime
-  fullName: Foundry.IKExecutor.ExecutionTime
-  spec.csharp:
-  - uid: Foundry.IKExecutor
-    name: IKExecutor
-    href: Foundry.IKExecutor.html
-  - name: .
-  - uid: Foundry.IKExecutor.ExecutionTime
-    name: ExecutionTime
-    href: Foundry.IKExecutor.ExecutionTime.html
-  spec.vb:
-  - uid: Foundry.IKExecutor
-    name: IKExecutor
-    href: Foundry.IKExecutor.html
-  - name: .
-  - uid: Foundry.IKExecutor.ExecutionTime
-    name: ExecutionTime
-    href: Foundry.IKExecutor.ExecutionTime.html
-- uid: Foundry.IKExecutor.ConstraintEntry
-  commentId: T:Foundry.IKExecutor.ConstraintEntry
-  href: Foundry.IKExecutor.html
-  name: IKExecutor.ConstraintEntry
-  nameWithType: IKExecutor.ConstraintEntry
-  fullName: Foundry.IKExecutor.ConstraintEntry
-  spec.csharp:
-  - uid: Foundry.IKExecutor
-    name: IKExecutor
-    href: Foundry.IKExecutor.html
-  - name: .
-  - uid: Foundry.IKExecutor.ConstraintEntry
-    name: ConstraintEntry
-    href: Foundry.IKExecutor.ConstraintEntry.html
-  spec.vb:
-  - uid: Foundry.IKExecutor
-    name: IKExecutor
-    href: Foundry.IKExecutor.html
-  - name: .
-  - uid: Foundry.IKExecutor.ConstraintEntry
-    name: ConstraintEntry
-    href: Foundry.IKExecutor.ConstraintEntry.html
-- uid: Foundry.IKConstraint
-  commentId: T:Foundry.IKConstraint
-  parent: Foundry
-  href: Foundry.IKConstraint.html
-  name: IKConstraint
-  nameWithType: IKConstraint
-  fullName: Foundry.IKConstraint
-- uid: Foundry.IKTargetedConstraint
-  commentId: T:Foundry.IKTargetedConstraint
-  parent: Foundry
-  href: Foundry.IKTargetedConstraint.html
-  name: IKTargetedConstraint
-  nameWithType: IKTargetedConstraint
-  fullName: Foundry.IKTargetedConstraint
-- uid: Foundry.SpatialLook
-  commentId: T:Foundry.SpatialLook
-  parent: Foundry
-  href: Foundry.SpatialLook.html
-  name: SpatialLook
-  nameWithType: SpatialLook
-  fullName: Foundry.SpatialLook
-- uid: Foundry.SpatialLook.CastWidth
-  commentId: T:Foundry.SpatialLook.CastWidth
-  href: Foundry.SpatialLook.html
-  name: SpatialLook.CastWidth
-  nameWithType: SpatialLook.CastWidth
-  fullName: Foundry.SpatialLook.CastWidth
-  spec.csharp:
-  - uid: Foundry.SpatialLook
-    name: SpatialLook
-    href: Foundry.SpatialLook.html
-  - name: .
-  - uid: Foundry.SpatialLook.CastWidth
-    name: CastWidth
-    href: Foundry.SpatialLook.CastWidth.html
-  spec.vb:
-  - uid: Foundry.SpatialLook
-    name: SpatialLook
-    href: Foundry.SpatialLook.html
-  - name: .
-  - uid: Foundry.SpatialLook.CastWidth
-    name: CastWidth
-    href: Foundry.SpatialLook.CastWidth.html
 - uid: Foundry.PlacePointAnimations
   commentId: T:Foundry.PlacePointAnimations
   href: Foundry.PlacePointAnimations.html
   name: PlacePointAnimations
   nameWithType: PlacePointAnimations
   fullName: Foundry.PlacePointAnimations
-- uid: Foundry.GenerateDemoShape
-  commentId: T:Foundry.GenerateDemoShape
-  href: Foundry.GenerateDemoShape.html
-  name: GenerateDemoShape
-  nameWithType: GenerateDemoShape
-  fullName: Foundry.GenerateDemoShape
-- uid: Foundry.IProgressChangedEvent`1
-  commentId: T:Foundry.IProgressChangedEvent`1
-  href: Foundry.IProgressChangedEvent-1.html
-  name: IProgressChangedEvent<TProgress>
-  nameWithType: IProgressChangedEvent<TProgress>
-  fullName: Foundry.IProgressChangedEvent<TProgress>
-  nameWithType.vb: IProgressChangedEvent(Of TProgress)
-  fullName.vb: Foundry.IProgressChangedEvent(Of TProgress)
-  name.vb: IProgressChangedEvent(Of TProgress)
-  spec.csharp:
-  - uid: Foundry.IProgressChangedEvent`1
-    name: IProgressChangedEvent
-    href: Foundry.IProgressChangedEvent-1.html
-  - name: <
-  - name: TProgress
-  - name: '>'
-  spec.vb:
-  - uid: Foundry.IProgressChangedEvent`1
-    name: IProgressChangedEvent
-    href: Foundry.IProgressChangedEvent-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TProgress
-  - name: )
-- uid: Foundry.IProgressChangedEvent
-  commentId: T:Foundry.IProgressChangedEvent
-  parent: Foundry
-  href: Foundry.IProgressChangedEvent.html
-  name: IProgressChangedEvent
-  nameWithType: IProgressChangedEvent
-  fullName: Foundry.IProgressChangedEvent
-- uid: Foundry.FoundryCoreConfig
-  commentId: T:Foundry.FoundryCoreConfig
-  href: Foundry.FoundryCoreConfig.html
-  name: FoundryCoreConfig
-  nameWithType: FoundryCoreConfig
-  fullName: Foundry.FoundryCoreConfig
-- uid: Foundry.PlayerRigManagerService
-  commentId: T:Foundry.PlayerRigManagerService
-  href: Foundry.PlayerRigManagerService.html
-  name: PlayerRigManagerService
-  nameWithType: PlayerRigManagerService
-  fullName: Foundry.PlayerRigManagerService
 - uid: Foundry.TrackingMode
   commentId: T:Foundry.TrackingMode
   parent: Foundry
@@ -1260,56 +1058,212 @@ references:
   name: TrackerPos
   nameWithType: TrackerPos
   fullName: Foundry.TrackerPos
-- uid: Foundry.PlayerMenuAnimator
-  commentId: T:Foundry.PlayerMenuAnimator
+- uid: Foundry.TeleportPointSoundEffects
+  commentId: T:Foundry.TeleportPointSoundEffects
+  href: Foundry.TeleportPointSoundEffects.html
+  name: TeleportPointSoundEffects
+  nameWithType: TeleportPointSoundEffects
+  fullName: Foundry.TeleportPointSoundEffects
+- uid: Foundry.ObjectLifetime
+  commentId: T:Foundry.ObjectLifetime
+  href: Foundry.ObjectLifetime.html
+  name: ObjectLifetime
+  nameWithType: ObjectLifetime
+  fullName: Foundry.ObjectLifetime
+- uid: Foundry.VelocityTimePair
+  commentId: T:Foundry.VelocityTimePair
+  href: Foundry.VelocityTimePair.html
+  name: VelocityTimePair
+  nameWithType: VelocityTimePair
+  fullName: Foundry.VelocityTimePair
+- uid: Foundry.HandVelocityTracker
+  commentId: T:Foundry.HandVelocityTracker
+  href: Foundry.HandVelocityTracker.html
+  name: HandVelocityTracker
+  nameWithType: HandVelocityTracker
+  fullName: Foundry.HandVelocityTracker
+- uid: Foundry.VideoSync
+  commentId: T:Foundry.VideoSync
+  href: Foundry.VideoSync.html
+  name: VideoSync
+  nameWithType: VideoSync
+  fullName: Foundry.VideoSync
+- uid: Foundry.PlacePointSoundEffects
+  commentId: T:Foundry.PlacePointSoundEffects
+  href: Foundry.PlacePointSoundEffects.html
+  name: PlacePointSoundEffects
+  nameWithType: PlacePointSoundEffects
+  fullName: Foundry.PlacePointSoundEffects
+- uid: Foundry.ConnectToPrefab
+  commentId: T:Foundry.ConnectToPrefab
+  href: Foundry.ConnectToPrefab.html
+  name: ConnectToPrefab
+  nameWithType: ConnectToPrefab
+  fullName: Foundry.ConnectToPrefab
+- uid: Foundry.HighlightData
+  commentId: T:Foundry.HighlightData
   parent: Foundry
-  href: Foundry.PlayerMenuAnimator.html
-  name: PlayerMenuAnimator
-  nameWithType: PlayerMenuAnimator
-  fullName: Foundry.PlayerMenuAnimator
+  href: Foundry.HighlightData.html
+  name: HighlightData
+  nameWithType: HighlightData
+  fullName: Foundry.HighlightData
+- uid: Foundry.SpatialHandGrabEvent
+  commentId: T:Foundry.SpatialHandGrabEvent
+  parent: Foundry
+  href: Foundry.SpatialHandGrabEvent.html
+  name: SpatialHandGrabEvent
+  nameWithType: SpatialHandGrabEvent
+  fullName: Foundry.SpatialHandGrabEvent
+- uid: Foundry.SpatialHand
+  commentId: T:Foundry.SpatialHand
+  parent: Foundry
+  href: Foundry.SpatialHand.html
+  name: SpatialHand
+  nameWithType: SpatialHand
+  fullName: Foundry.SpatialHand
+- uid: Foundry.SpatialHand.HandType
+  commentId: T:Foundry.SpatialHand.HandType
+  parent: Foundry
+  href: Foundry.SpatialHand.html
+  name: SpatialHand.HandType
+  nameWithType: SpatialHand.HandType
+  fullName: Foundry.SpatialHand.HandType
+  spec.csharp:
+  - uid: Foundry.SpatialHand
+    name: SpatialHand
+    href: Foundry.SpatialHand.html
+  - name: .
+  - uid: Foundry.SpatialHand.HandType
+    name: HandType
+    href: Foundry.SpatialHand.HandType.html
+  spec.vb:
+  - uid: Foundry.SpatialHand
+    name: SpatialHand
+    href: Foundry.SpatialHand.html
+  - name: .
+  - uid: Foundry.SpatialHand.HandType
+    name: HandType
+    href: Foundry.SpatialHand.HandType.html
+- uid: Foundry.SpatialLookSoundEffects
+  commentId: T:Foundry.SpatialLookSoundEffects
+  href: Foundry.SpatialLookSoundEffects.html
+  name: SpatialLookSoundEffects
+  nameWithType: SpatialLookSoundEffects
+  fullName: Foundry.SpatialLookSoundEffects
+- uid: Foundry.LineAnimation
+  commentId: T:Foundry.LineAnimation
+  href: Foundry.LineAnimation.html
+  name: LineAnimation
+  nameWithType: LineAnimation
+  fullName: Foundry.LineAnimation
+- uid: Foundry.TeleportPointDebugger
+  commentId: T:Foundry.TeleportPointDebugger
+  href: Foundry.TeleportPointDebugger.html
+  name: TeleportPointDebugger
+  nameWithType: TeleportPointDebugger
+  fullName: Foundry.TeleportPointDebugger
+- uid: Foundry.PlayerMenuSpawner
+  commentId: T:Foundry.PlayerMenuSpawner
+  href: Foundry.PlayerMenuSpawner.html
+  name: PlayerMenuSpawner
+  nameWithType: PlayerMenuSpawner
+  fullName: Foundry.PlayerMenuSpawner
+- uid: Foundry.PlayerMenuSpawner.InputSource
+  commentId: T:Foundry.PlayerMenuSpawner.InputSource
+  parent: Foundry
+  href: Foundry.PlayerMenuSpawner.html
+  name: PlayerMenuSpawner.InputSource
+  nameWithType: PlayerMenuSpawner.InputSource
+  fullName: Foundry.PlayerMenuSpawner.InputSource
+  spec.csharp:
+  - uid: Foundry.PlayerMenuSpawner
+    name: PlayerMenuSpawner
+    href: Foundry.PlayerMenuSpawner.html
+  - name: .
+  - uid: Foundry.PlayerMenuSpawner.InputSource
+    name: InputSource
+    href: Foundry.PlayerMenuSpawner.InputSource.html
+  spec.vb:
+  - uid: Foundry.PlayerMenuSpawner
+    name: PlayerMenuSpawner
+    href: Foundry.PlayerMenuSpawner.html
+  - name: .
+  - uid: Foundry.PlayerMenuSpawner.InputSource
+    name: InputSource
+    href: Foundry.PlayerMenuSpawner.InputSource.html
+- uid: Foundry.IKTransformConstraint
+  commentId: T:Foundry.IKTransformConstraint
+  parent: Foundry
+  href: Foundry.IKTransformConstraint.html
+  name: IKTransformConstraint
+  nameWithType: IKTransformConstraint
+  fullName: Foundry.IKTransformConstraint
+- uid: Foundry.PlayerRigEvent
+  commentId: T:Foundry.PlayerRigEvent
+  parent: Foundry
+  href: Foundry.PlayerRigEvent.html
+  name: PlayerRigEvent
+  nameWithType: PlayerRigEvent
+  fullName: Foundry.PlayerRigEvent
+- uid: Foundry.IPlayerRigManager
+  commentId: T:Foundry.IPlayerRigManager
+  parent: Foundry
+  href: Foundry.IPlayerRigManager.html
+  name: IPlayerRigManager
+  nameWithType: IPlayerRigManager
+  fullName: Foundry.IPlayerRigManager
+- uid: Foundry.SpatialDistanceGrabbableDebugger
+  commentId: T:Foundry.SpatialDistanceGrabbableDebugger
+  href: Foundry.SpatialDistanceGrabbableDebugger.html
+  name: SpatialDistanceGrabbableDebugger
+  nameWithType: SpatialDistanceGrabbableDebugger
+  fullName: Foundry.SpatialDistanceGrabbableDebugger
+- uid: Foundry.TeleportRaycaster
+  commentId: T:Foundry.TeleportRaycaster
+  parent: Foundry
+  href: Foundry.TeleportRaycaster.html
+  name: TeleportRaycaster
+  nameWithType: TeleportRaycaster
+  fullName: Foundry.TeleportRaycaster
+- uid: Foundry.SpatialHandPoseAnimator
+  commentId: T:Foundry.SpatialHandPoseAnimator
+  parent: Foundry
+  href: Foundry.SpatialHandPoseAnimator.html
+  name: SpatialHandPoseAnimator
+  nameWithType: SpatialHandPoseAnimator
+  fullName: Foundry.SpatialHandPoseAnimator
+- uid: Foundry.VideoPlayerAudioSource
+  commentId: T:Foundry.VideoPlayerAudioSource
+  href: Foundry.VideoPlayerAudioSource.html
+  name: VideoPlayerAudioSource
+  nameWithType: VideoPlayerAudioSource
+  fullName: Foundry.VideoPlayerAudioSource
+- uid: Foundry.SpatialGrabbableExtensions
+  commentId: T:Foundry.SpatialGrabbableExtensions
+  parent: Foundry
+  href: Foundry.SpatialGrabbableExtensions.html
+  name: SpatialGrabbableExtensions
+  nameWithType: SpatialGrabbableExtensions
+  fullName: Foundry.SpatialGrabbableExtensions
+- uid: Foundry.IPlayerControlRig
+  commentId: T:Foundry.IPlayerControlRig
+  parent: Foundry
+  href: Foundry.IPlayerControlRig.html
+  name: IPlayerControlRig
+  nameWithType: IPlayerControlRig
+  fullName: Foundry.IPlayerControlRig
+- uid: Foundry.SpatialHandDebugEvents
+  commentId: T:Foundry.SpatialHandDebugEvents
+  href: Foundry.SpatialHandDebugEvents.html
+  name: SpatialHandDebugEvents
+  nameWithType: SpatialHandDebugEvents
+  fullName: Foundry.SpatialHandDebugEvents
 - uid: Foundry.LoadingScreenManager
   commentId: T:Foundry.LoadingScreenManager
   href: Foundry.LoadingScreenManager.html
   name: LoadingScreenManager
   nameWithType: LoadingScreenManager
   fullName: Foundry.LoadingScreenManager
-- uid: Foundry.TrackerRefs
-  commentId: T:Foundry.TrackerRefs
-  parent: Foundry
-  href: Foundry.TrackerRefs.html
-  name: TrackerRefs
-  nameWithType: TrackerRefs
-  fullName: Foundry.TrackerRefs
-- uid: Foundry.Player
-  commentId: T:Foundry.Player
-  parent: Foundry
-  href: Foundry.Player.html
-  name: Player
-  nameWithType: Player
-  fullName: Foundry.Player
-- uid: Foundry.Player.MovementSettings
-  commentId: T:Foundry.Player.MovementSettings
-  parent: Foundry
-  href: Foundry.Player.html
-  name: Player.MovementSettings
-  nameWithType: Player.MovementSettings
-  fullName: Foundry.Player.MovementSettings
-  spec.csharp:
-  - uid: Foundry.Player
-    name: Player
-    href: Foundry.Player.html
-  - name: .
-  - uid: Foundry.Player.MovementSettings
-    name: MovementSettings
-    href: Foundry.Player.MovementSettings.html
-  spec.vb:
-  - uid: Foundry.Player
-    name: Player
-    href: Foundry.Player.html
-  - name: .
-  - uid: Foundry.Player.MovementSettings
-    name: MovementSettings
-    href: Foundry.Player.MovementSettings.html
 - uid: Foundry.FoundryCoreModuleDefinition
   commentId: T:Foundry.FoundryCoreModuleDefinition
   href: Foundry.FoundryCoreModuleDefinition.html

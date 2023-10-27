@@ -21,6 +21,8 @@ items:
     name: ControllerConfig.ControllerOffset
   - uid: Foundry.ControllerConfig.DeviceOffset
     name: ControllerConfig.DeviceOffset
+  - uid: Foundry.CoreAuthentication
+    name: CoreAuthentication
   - uid: Foundry.DesktopControlRig
     name: DesktopControlRig
   - uid: Foundry.DesktopControlRig.CameraMode
@@ -43,8 +45,8 @@ items:
     name: FoundryModuleConfig.SerializedType
   - uid: Foundry.FoundryModuleConfig.ServiceConstructor
     name: FoundryModuleConfig.ServiceConstructor
-  - uid: Foundry.FoundryNetworkButton
-    name: FoundryNetworkButton
+  - uid: Foundry.FoundryScript
+    name: FoundryScript
   - uid: Foundry.FoundryUI
     name: FoundryUI
   - uid: Foundry.FoundryUIInput
@@ -55,8 +57,6 @@ items:
     name: FoundryUIRaycaster.InputSource
   - uid: Foundry.FullBodyAvatar
     name: FullBodyAvatar
-  - uid: Foundry.FullBodyAvatarNetworking
-    name: FullBodyAvatarNetworking
   - uid: Foundry.GenerateDemoShape
     name: GenerateDemoShape
   - uid: Foundry.HandVelocityTracker
@@ -119,24 +119,10 @@ items:
     name: MicrophoneControl
   - uid: Foundry.NetEventSource
     name: NetEventSource
-  - uid: Foundry.NetPosRot
-    name: NetPosRot
   - uid: Foundry.NetworkEventBase
     name: NetworkEventBase
   - uid: Foundry.NetworkEvent`1
     name: NetworkEvent<T>
-  - uid: Foundry.NetworkTRPredictor
-    name: NetworkTRPredictor
-  - uid: Foundry.Networked3PInput
-    name: Networked3PInput
-  - uid: Foundry.Networked6PInput
-    name: Networked6PInput
-  - uid: Foundry.NetworkedCommonInput
-    name: NetworkedCommonInput
-  - uid: Foundry.NetworkedDesktopInput
-    name: NetworkedDesktopInput
-  - uid: Foundry.NetworkedTR
-    name: NetworkedTR
   - uid: Foundry.ObjectLifetime
     name: ObjectLifetime
   - uid: Foundry.OrientationMatchAxis
@@ -165,6 +151,8 @@ items:
     name: PlayerMenuSpawner
   - uid: Foundry.PlayerMenuSpawner.InputSource
     name: PlayerMenuSpawner.InputSource
+  - uid: Foundry.PlayerRigCreator
+    name: PlayerRigCreator
   - uid: Foundry.PlayerRigEvent
     name: PlayerRigEvent
   - uid: Foundry.PlayerRigManagerService
@@ -363,8 +351,6 @@ items:
     name: DisconnectBehaviour
   - uid: Foundry.Networking.FoundryPrefabs
     name: FoundryPrefabs
-  - uid: Foundry.Networking.FusionInputHandler
-    name: FusionInputHandler
   - uid: Foundry.Networking.INetworkProperty
     name: INetworkProperty
   - uid: Foundry.Networking.INetworkProvider
@@ -458,19 +444,4 @@ items:
   items:
   - uid: MiniJSON.Json
     name: Json
-- uid: UnityEngine.XR.OpenXR.Features.Interactions
-  name: UnityEngine.XR.OpenXR.Features.Interactions
-  items:
-  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile
-    name: HTCViveTrackerProfile
-  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
-    name: HTCViveTrackerProfile.InputDeviceTrackerCharacteristics
-  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerComponentPaths
-    name: HTCViveTrackerProfile.TrackerComponentPaths
-  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.TrackerUserPaths
-    name: HTCViveTrackerProfile.TrackerUserPaths
-  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRTracker
-    name: HTCViveTrackerProfile.XRTracker
-  - uid: UnityEngine.XR.OpenXR.Features.Interactions.HTCViveTrackerProfile.XRViveTracker
-    name: HTCViveTrackerProfile.XRViveTracker
 memberLayout: SamePage

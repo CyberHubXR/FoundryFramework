@@ -32,7 +32,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: XRControlRig
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: controllerConfig
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -206,7 +206,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: head
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -245,7 +245,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftController
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -272,7 +272,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightController
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -299,7 +299,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: waistTracker
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -326,7 +326,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftFootTracker
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -353,7 +353,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightFootTracker
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -380,7 +380,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: offsets
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -419,7 +419,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Update
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 44
+    startLine: 50
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -445,7 +445,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTrackerPos
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 90
+    startLine: 104
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -481,7 +481,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerTransform
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 103
+    startLine: 117
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -515,7 +515,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTrackingMode
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 126
+    startLine: 140
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -546,7 +546,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTrackers
     path: ../Player/Scripts/XRControlRig.cs
-    startLine: 131
+    startLine: 145
   assemblies:
   - Foundry.Core
   namespace: Foundry

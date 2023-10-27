@@ -24,7 +24,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryPhysicsSetup
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -61,7 +61,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: .ctor
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -90,7 +90,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTaskState
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-    startLine: 17
+    startLine: 16
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -123,7 +123,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTasks
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-    startLine: 22
+    startLine: 21
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -155,7 +155,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: ModuleName
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-    startLine: 41
+    startLine: 40
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -187,7 +187,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: ModuleSource
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-    startLine: 46
+    startLine: 45
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup

@@ -787,22 +787,27 @@ references:
 - uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
   commentId: M:Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
   parent: Foundry.Core.Serialization.IFoundrySerializable
+  href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
   name: Serialize(FoundrySerializer)
   nameWithType: IFoundrySerializable.Serialize(FoundrySerializer)
   fullName: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
   spec.csharp:
   - uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
     name: Serialize
+    href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
   - name: (
   - uid: Foundry.Core.Serialization.FoundrySerializer
     name: FoundrySerializer
+    href: Foundry.Core.Serialization.FoundrySerializer.html
   - name: )
   spec.vb:
   - uid: Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
     name: Serialize
+    href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Serialize(Foundry.Core.Serialization.FoundrySerializer)
   - name: (
   - uid: Foundry.Core.Serialization.FoundrySerializer
     name: FoundrySerializer
+    href: Foundry.Core.Serialization.FoundrySerializer.html
   - name: )
 - uid: Foundry.Core.Serialization.FoundrySerializer
   commentId: T:Foundry.Core.Serialization.FoundrySerializer
@@ -820,22 +825,27 @@ references:
 - uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
   commentId: M:Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
   parent: Foundry.Core.Serialization.IFoundrySerializable
+  href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
   name: Deserialize(FoundryDeserializer)
   nameWithType: IFoundrySerializable.Deserialize(FoundryDeserializer)
   fullName: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
   spec.csharp:
   - uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
     name: Deserialize
+    href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
   - name: (
   - uid: Foundry.Core.Serialization.FoundryDeserializer
     name: FoundryDeserializer
+    href: Foundry.Core.Serialization.FoundryDeserializer.html
   - name: )
   spec.vb:
   - uid: Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
     name: Deserialize
+    href: Foundry.Core.Serialization.IFoundrySerializable.html#Foundry.Core.Serialization.IFoundrySerializable.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
   - name: (
   - uid: Foundry.Core.Serialization.FoundryDeserializer
     name: FoundryDeserializer
+    href: Foundry.Core.Serialization.FoundryDeserializer.html
   - name: )
 - uid: Foundry.Core.Serialization.FoundryDeserializer
   commentId: T:Foundry.Core.Serialization.FoundryDeserializer

@@ -45,6 +45,7 @@ items:
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  - Foundry.FoundryScript
   - Foundry.Networking.NetworkComponent
   - Foundry.SpatialTouchable
   inheritedMembers:
@@ -62,6 +63,7 @@ items:
   - Foundry.Networking.NetworkComponent.NetworkProvider
   - Foundry.Networking.NetworkComponent.IsOwner
   - Foundry.Networking.NetworkComponent.OnConnected
+  - Foundry.Networking.NetworkComponent.OnDisconnected
   - Foundry.Networking.NetworkComponent.OnValidate
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
@@ -661,6 +663,13 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: Foundry.FoundryScript
+  commentId: T:Foundry.FoundryScript
+  parent: Foundry
+  href: Foundry.FoundryScript.html
+  name: FoundryScript
+  nameWithType: FoundryScript
+  fullName: Foundry.FoundryScript
 - uid: Foundry.Networking.NetworkComponent
   commentId: T:Foundry.Networking.NetworkComponent
   parent: Foundry.Networking
@@ -849,6 +858,25 @@ references:
   - uid: Foundry.Networking.NetworkComponent.OnConnected
     name: OnConnected
     href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnConnected
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkComponent.OnDisconnected
+  commentId: M:Foundry.Networking.NetworkComponent.OnDisconnected
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  name: OnDisconnected()
+  nameWithType: NetworkComponent.OnDisconnected()
+  fullName: Foundry.Networking.NetworkComponent.OnDisconnected()
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
   - name: (
   - name: )
 - uid: Foundry.Networking.NetworkComponent.OnValidate

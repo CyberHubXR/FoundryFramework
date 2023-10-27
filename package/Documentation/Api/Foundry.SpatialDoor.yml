@@ -31,7 +31,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialDoor
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 10
+    startLine: 7
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -50,6 +50,7 @@ items:
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  - Foundry.FoundryScript
   - Foundry.Networking.NetworkComponent
   - Foundry.SpatialTouchable
   inheritedMembers:
@@ -69,6 +70,7 @@ items:
   - Foundry.Networking.NetworkComponent.NetworkProvider
   - Foundry.Networking.NetworkComponent.IsOwner
   - Foundry.Networking.NetworkComponent.OnConnected
+  - Foundry.Networking.NetworkComponent.OnDisconnected
   - Foundry.Networking.NetworkComponent.OnValidate
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
@@ -207,7 +209,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: closeDoorAutomatically
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 16
+    startLine: 14
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -294,7 +296,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorHingeCloseFriction
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -333,7 +335,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorIsLocked
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -372,7 +374,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorMaxAngle
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 22
+    startLine: 25
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -420,7 +422,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorMinAngle
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 23
+    startLine: 28
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -459,7 +461,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorPivot
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 26
+    startLine: 33
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -507,7 +509,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorIsOpen
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 28
+    startLine: 35
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -544,7 +546,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorOpenAmount
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 29
+    startLine: 36
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -581,7 +583,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartTouch
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 51
+    startLine: 59
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -612,7 +614,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: UnlockDoor
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 76
+    startLine: 84
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -640,7 +642,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: LockDoor
     path: ../Interaction/Grabbable/SpatialDoor.cs
-    startLine: 92
+    startLine: 103
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -696,6 +698,13 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: Foundry.FoundryScript
+  commentId: T:Foundry.FoundryScript
+  parent: Foundry
+  href: Foundry.FoundryScript.html
+  name: FoundryScript
+  nameWithType: FoundryScript
+  fullName: Foundry.FoundryScript
 - uid: Foundry.Networking.NetworkComponent
   commentId: T:Foundry.Networking.NetworkComponent
   parent: Foundry.Networking
@@ -934,6 +943,25 @@ references:
   - uid: Foundry.Networking.NetworkComponent.OnConnected
     name: OnConnected
     href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnConnected
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkComponent.OnDisconnected
+  commentId: M:Foundry.Networking.NetworkComponent.OnDisconnected
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  name: OnDisconnected()
+  nameWithType: NetworkComponent.OnDisconnected()
+  fullName: Foundry.Networking.NetworkComponent.OnDisconnected()
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
   - name: (
   - name: )
 - uid: Foundry.Networking.NetworkComponent.OnValidate

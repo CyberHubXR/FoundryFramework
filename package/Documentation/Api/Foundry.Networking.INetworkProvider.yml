@@ -7,7 +7,6 @@ items:
   children:
   - Foundry.Networking.INetworkProvider.BindNetworkObject(UnityEngine.GameObject,System.Boolean)
   - Foundry.Networking.INetworkProvider.Destroy(UnityEngine.GameObject)
-  - Foundry.Networking.INetworkProvider.FusionInputRequest
   - Foundry.Networking.INetworkProvider.Graph
   - Foundry.Networking.INetworkProvider.Instantiate(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion)
   - Foundry.Networking.INetworkProvider.IsClient
@@ -39,7 +38,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: INetworkProvider
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 32
+    startLine: 27
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -66,7 +65,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartSessionAsync
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 43
+    startLine: 38
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -106,7 +105,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopSessionAsync
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 50
+    startLine: 45
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -137,7 +136,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: BindNetworkObject
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 58
+    startLine: 53
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -178,7 +177,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterPrefab
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 65
+    startLine: 60
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -213,7 +212,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterSceneObjects
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 71
+    startLine: 66
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -248,7 +247,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Instantiate
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 80
+    startLine: 75
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -289,7 +288,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Destroy
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 86
+    startLine: 81
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -321,7 +320,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: sessionType
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 89
+    startLine: 84
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -350,7 +349,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsSessionConnected
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 91
+    startLine: 86
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -379,7 +378,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsServer
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 96
+    startLine: 91
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -410,7 +409,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsClient
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 101
+    startLine: 96
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -441,7 +440,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsGraphAuthority
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 106
+    startLine: 101
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -472,7 +471,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: LocalPlayerId
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 111
+    startLine: 106
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -503,7 +502,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Graph
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 116
+    startLine: 111
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -534,7 +533,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: SessionConnected
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 121
+    startLine: 116
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -563,7 +562,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartSessionFailed
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 126
+    startLine: 121
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -592,7 +591,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: SessionDisconnected
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 131
+    startLine: 126
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -621,7 +620,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerJoined
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 136
+    startLine: 131
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -650,7 +649,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerLeft
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 141
+    startLine: 136
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -661,35 +660,6 @@ items:
     return:
       type: Foundry.Networking.NetworkPlayerEventHandler
     content.vb: Event PlayerLeft As NetworkPlayerEventHandler
-- uid: Foundry.Networking.INetworkProvider.FusionInputRequest
-  commentId: E:Foundry.Networking.INetworkProvider.FusionInputRequest
-  id: FusionInputRequest
-  parent: Foundry.Networking.INetworkProvider
-  langs:
-  - csharp
-  - vb
-  name: FusionInputRequest
-  nameWithType: INetworkProvider.FusionInputRequest
-  fullName: Foundry.Networking.INetworkProvider.FusionInputRequest
-  type: Event
-  source:
-    remote:
-      path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
-      branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
-    id: FusionInputRequest
-    path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
-    startLine: 146
-  assemblies:
-  - Foundry.Core
-  namespace: Foundry.Networking
-  summary: TODO delete this, temporary work-around for fusion input
-  example: []
-  syntax:
-    content: event FusionInputHandler FusionInputRequest
-    return:
-      type: Foundry.Networking.FusionInputHandler
-    content.vb: Event FusionInputRequest As FusionInputHandler
 references:
 - uid: Foundry.Networking
   commentId: N:Foundry.Networking
@@ -1038,10 +1008,3 @@ references:
   name: NetworkPlayerEventHandler
   nameWithType: NetworkPlayerEventHandler
   fullName: Foundry.Networking.NetworkPlayerEventHandler
-- uid: Foundry.Networking.FusionInputHandler
-  commentId: T:Foundry.Networking.FusionInputHandler
-  parent: Foundry.Networking
-  href: Foundry.Networking.FusionInputHandler.html
-  name: FusionInputHandler
-  nameWithType: FusionInputHandler
-  fullName: Foundry.Networking.FusionInputHandler

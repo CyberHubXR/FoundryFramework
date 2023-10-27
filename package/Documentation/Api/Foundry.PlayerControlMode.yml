@@ -17,12 +17,12 @@ items:
   type: Enum
   source:
     remote:
-      path: package/Networking/Scripts/NetworkInputTypes.cs
+      path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerControlMode
-    path: ../Networking/Scripts/NetworkInputTypes.cs
-    startLine: 9
+    path: ../Player/Scripts/PlayerRigCreator.cs
+    startLine: 12
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -42,12 +42,12 @@ items:
   type: Field
   source:
     remote:
-      path: package/Networking/Scripts/NetworkInputTypes.cs
+      path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Auto
-    path: ../Networking/Scripts/NetworkInputTypes.cs
-    startLine: 11
+    path: ../Player/Scripts/PlayerRigCreator.cs
+    startLine: 14
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -68,12 +68,12 @@ items:
   type: Field
   source:
     remote:
-      path: package/Networking/Scripts/NetworkInputTypes.cs
+      path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Desktop
-    path: ../Networking/Scripts/NetworkInputTypes.cs
-    startLine: 12
+    path: ../Player/Scripts/PlayerRigCreator.cs
+    startLine: 15
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -94,12 +94,12 @@ items:
   type: Field
   source:
     remote:
-      path: package/Networking/Scripts/NetworkInputTypes.cs
+      path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: XR
-    path: ../Networking/Scripts/NetworkInputTypes.cs
-    startLine: 13
+    path: ../Player/Scripts/PlayerRigCreator.cs
+    startLine: 16
   assemblies:
   - Foundry.Core
   namespace: Foundry

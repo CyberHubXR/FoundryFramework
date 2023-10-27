@@ -71,12 +71,6 @@ references:
   name: FoundrySetupWizard
   nameWithType: FoundrySetupWizard
   fullName: Foundry.Core.Setup.FoundrySetupWizard
-- uid: Foundry.Core.Setup.FoundryPhysicsSetup
-  commentId: T:Foundry.Core.Setup.FoundryPhysicsSetup
-  href: Foundry.Core.Setup.FoundryPhysicsSetup.html
-  name: FoundryPhysicsSetup
-  nameWithType: FoundryPhysicsSetup
-  fullName: Foundry.Core.Setup.FoundryPhysicsSetup
 - uid: Foundry.Core.Setup.IModuleSetupTasks
   commentId: T:Foundry.Core.Setup.IModuleSetupTasks
   parent: Foundry.Core.Setup
@@ -107,6 +101,12 @@ references:
   - uid: Foundry.Core.Setup.IModuleSetupTasks.State
     name: State
     href: Foundry.Core.Setup.IModuleSetupTasks.State.html
+- uid: Foundry.Core.Setup.FoundryPhysicsSetup
+  commentId: T:Foundry.Core.Setup.FoundryPhysicsSetup
+  href: Foundry.Core.Setup.FoundryPhysicsSetup.html
+  name: FoundryPhysicsSetup
+  nameWithType: FoundryPhysicsSetup
+  fullName: Foundry.Core.Setup.FoundryPhysicsSetup
 - uid: Foundry.Core.Setup
   commentId: N:Foundry.Core.Setup
   href: Foundry.html

@@ -828,6 +828,7 @@ references:
   - name: (
   - uid: Foundry.Core.Serialization.FoundrySerializer
     name: FoundrySerializer
+    href: Foundry.Core.Serialization.FoundrySerializer.html
   - name: )
   spec.vb:
   - uid: Foundry.Networking.INetworkProperty.Serialize(Foundry.Core.Serialization.FoundrySerializer)
@@ -836,6 +837,7 @@ references:
   - name: (
   - uid: Foundry.Core.Serialization.FoundrySerializer
     name: FoundrySerializer
+    href: Foundry.Core.Serialization.FoundrySerializer.html
   - name: )
 - uid: Foundry.Core.Serialization.FoundrySerializer
   commentId: T:Foundry.Core.Serialization.FoundrySerializer
@@ -896,6 +898,7 @@ references:
   - name: (
   - uid: Foundry.Core.Serialization.FoundryDeserializer
     name: FoundryDeserializer
+    href: Foundry.Core.Serialization.FoundryDeserializer.html
   - name: )
   spec.vb:
   - uid: Foundry.Networking.INetworkProperty.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)
@@ -904,6 +907,7 @@ references:
   - name: (
   - uid: Foundry.Core.Serialization.FoundryDeserializer
     name: FoundryDeserializer
+    href: Foundry.Core.Serialization.FoundryDeserializer.html
   - name: )
 - uid: Foundry.Core.Serialization.FoundryDeserializer
   commentId: T:Foundry.Core.Serialization.FoundryDeserializer

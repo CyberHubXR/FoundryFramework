@@ -13,7 +13,7 @@ Head over to your project settings and find the package manager tab, Then add th
 
 ```
 Name: Foundry
-Url: https://34.125.193.7:4873/
+Url: http://34.125.193.7:4873/
 Scopes: com.cyberhub
 ```
 

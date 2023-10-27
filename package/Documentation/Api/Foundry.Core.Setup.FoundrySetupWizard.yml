@@ -215,7 +215,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: CreateGUI
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 156
+    startLine: 161
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup

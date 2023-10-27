@@ -6,7 +6,6 @@ items:
   children:
   - Foundry.Networking.DisconnectBehaviour
   - Foundry.Networking.FoundryPrefabs
-  - Foundry.Networking.FusionInputHandler
   - Foundry.Networking.INetworkProperty
   - Foundry.Networking.INetworkProvider
   - Foundry.Networking.INetworkedGraphId
@@ -41,50 +40,13 @@ items:
   assemblies:
   - Foundry.Core
 references:
-- uid: Foundry.Networking.INetworkedGraphId
-  commentId: T:Foundry.Networking.INetworkedGraphId
+- uid: Foundry.Networking.NetworkComponent
+  commentId: T:Foundry.Networking.NetworkComponent
   parent: Foundry.Networking
-  href: Foundry.Networking.INetworkedGraphId.html
-  name: INetworkedGraphId
-  nameWithType: INetworkedGraphId
-  fullName: Foundry.Networking.INetworkedGraphId
-- uid: Foundry.Networking.DisconnectBehaviour
-  commentId: T:Foundry.Networking.DisconnectBehaviour
-  parent: Foundry.Networking
-  href: Foundry.Networking.DisconnectBehaviour.html
-  name: DisconnectBehaviour
-  nameWithType: DisconnectBehaviour
-  fullName: Foundry.Networking.DisconnectBehaviour
-- uid: Foundry.Networking.NetworkObject
-  commentId: T:Foundry.Networking.NetworkObject
-  parent: Foundry.Networking
-  href: Foundry.Networking.NetworkObject.html
-  name: NetworkObject
-  nameWithType: NetworkObject
-  fullName: Foundry.Networking.NetworkObject
-- uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  commentId: T:Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  parent: Foundry.Networking
-  href: Foundry.Networking.NetworkObject.html
-  name: NetworkObject.IDChangeRequestCallback
-  nameWithType: NetworkObject.IDChangeRequestCallback
-  fullName: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  spec.csharp:
-  - uid: Foundry.Networking.NetworkObject
-    name: NetworkObject
-    href: Foundry.Networking.NetworkObject.html
-  - name: .
-  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-    name: IDChangeRequestCallback
-    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
-  spec.vb:
-  - uid: Foundry.Networking.NetworkObject
-    name: NetworkObject
-    href: Foundry.Networking.NetworkObject.html
-  - name: .
-  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-    name: IDChangeRequestCallback
-    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
+  href: Foundry.Networking.NetworkComponent.html
+  name: NetworkComponent
+  nameWithType: NetworkComponent
+  fullName: Foundry.Networking.NetworkComponent
 - uid: Foundry.Networking.NetworkTransformProperties
   commentId: T:Foundry.Networking.NetworkTransformProperties
   parent: Foundry.Networking
@@ -112,6 +74,34 @@ references:
   name: FoundryPrefabs
   nameWithType: FoundryPrefabs
   fullName: Foundry.Networking.FoundryPrefabs
+- uid: Foundry.Networking.NetworkEventHandler
+  commentId: T:Foundry.Networking.NetworkEventHandler
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkEventHandler.html
+  name: NetworkEventHandler
+  nameWithType: NetworkEventHandler
+  fullName: Foundry.Networking.NetworkEventHandler
+- uid: Foundry.Networking.NetworkErrorEventHandler
+  commentId: T:Foundry.Networking.NetworkErrorEventHandler
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkErrorEventHandler.html
+  name: NetworkErrorEventHandler
+  nameWithType: NetworkErrorEventHandler
+  fullName: Foundry.Networking.NetworkErrorEventHandler
+- uid: Foundry.Networking.NetworkPlayerEventHandler
+  commentId: T:Foundry.Networking.NetworkPlayerEventHandler
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkPlayerEventHandler.html
+  name: NetworkPlayerEventHandler
+  nameWithType: NetworkPlayerEventHandler
+  fullName: Foundry.Networking.NetworkPlayerEventHandler
+- uid: Foundry.Networking.INetworkProvider
+  commentId: T:Foundry.Networking.INetworkProvider
+  parent: Foundry.Networking
+  href: Foundry.Networking.INetworkProvider.html
+  name: INetworkProvider
+  nameWithType: INetworkProvider
+  fullName: Foundry.Networking.INetworkProvider
 - uid: Foundry.Networking.NetworkArray`1
   commentId: T:Foundry.Networking.NetworkArray`1
   href: Foundry.Networking.NetworkArray-1.html
@@ -137,87 +127,20 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Foundry.Networking.NetworkProperty`1
-  commentId: T:Foundry.Networking.NetworkProperty`1
-  href: Foundry.Networking.NetworkProperty-1.html
-  name: NetworkProperty<T>
-  nameWithType: NetworkProperty<T>
-  fullName: Foundry.Networking.NetworkProperty<T>
-  nameWithType.vb: NetworkProperty(Of T)
-  fullName.vb: Foundry.Networking.NetworkProperty(Of T)
-  name.vb: NetworkProperty(Of T)
-  spec.csharp:
-  - uid: Foundry.Networking.NetworkProperty`1
-    name: NetworkProperty
-    href: Foundry.Networking.NetworkProperty-1.html
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: Foundry.Networking.NetworkProperty`1
-    name: NetworkProperty
-    href: Foundry.Networking.NetworkProperty-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: Foundry.Networking.NetworkEventHandler
-  commentId: T:Foundry.Networking.NetworkEventHandler
+- uid: Foundry.Networking.SpawnMethod
+  commentId: T:Foundry.Networking.SpawnMethod
   parent: Foundry.Networking
-  href: Foundry.Networking.NetworkEventHandler.html
-  name: NetworkEventHandler
-  nameWithType: NetworkEventHandler
-  fullName: Foundry.Networking.NetworkEventHandler
-- uid: Foundry.Networking.NetworkErrorEventHandler
-  commentId: T:Foundry.Networking.NetworkErrorEventHandler
+  href: Foundry.Networking.SpawnMethod.html
+  name: SpawnMethod
+  nameWithType: SpawnMethod
+  fullName: Foundry.Networking.SpawnMethod
+- uid: Foundry.Networking.NetworkManager
+  commentId: T:Foundry.Networking.NetworkManager
   parent: Foundry.Networking
-  href: Foundry.Networking.NetworkErrorEventHandler.html
-  name: NetworkErrorEventHandler
-  nameWithType: NetworkErrorEventHandler
-  fullName: Foundry.Networking.NetworkErrorEventHandler
-- uid: Foundry.Networking.NetworkPlayerEventHandler
-  commentId: T:Foundry.Networking.NetworkPlayerEventHandler
-  parent: Foundry.Networking
-  href: Foundry.Networking.NetworkPlayerEventHandler.html
-  name: NetworkPlayerEventHandler
-  nameWithType: NetworkPlayerEventHandler
-  fullName: Foundry.Networking.NetworkPlayerEventHandler
-- uid: Foundry.Networking.FusionInputHandler
-  commentId: T:Foundry.Networking.FusionInputHandler
-  parent: Foundry.Networking
-  href: Foundry.Networking.FusionInputHandler.html
-  name: FusionInputHandler
-  nameWithType: FusionInputHandler
-  fullName: Foundry.Networking.FusionInputHandler
-- uid: Foundry.Networking.INetworkProvider
-  commentId: T:Foundry.Networking.INetworkProvider
-  parent: Foundry.Networking
-  href: Foundry.Networking.INetworkProvider.html
-  name: INetworkProvider
-  nameWithType: INetworkProvider
-  fullName: Foundry.Networking.INetworkProvider
-- uid: Foundry.Networking.SessionType
-  commentId: T:Foundry.Networking.SessionType
-  parent: Foundry.Networking
-  href: Foundry.Networking.SessionType.html
-  name: SessionType
-  nameWithType: SessionType
-  fullName: Foundry.Networking.SessionType
-- uid: Foundry.Networking.ISessionInfo
-  commentId: T:Foundry.Networking.ISessionInfo
-  parent: Foundry.Networking
-  href: Foundry.Networking.ISessionInfo.html
-  name: ISessionInfo
-  nameWithType: ISessionInfo
-  fullName: Foundry.Networking.ISessionInfo
-- uid: Foundry.Networking.SessionInfo
-  commentId: T:Foundry.Networking.SessionInfo
-  parent: Foundry.Networking
-  href: Foundry.Networking.SessionInfo.html
-  name: SessionInfo
-  nameWithType: SessionInfo
-  fullName: Foundry.Networking.SessionInfo
+  href: Foundry.Networking.NetworkManager.html
+  name: NetworkManager
+  nameWithType: NetworkManager
+  fullName: Foundry.Networking.NetworkManager
 - uid: Foundry.Networking.INetworkProperty
   commentId: T:Foundry.Networking.INetworkProperty
   parent: Foundry.Networking
@@ -276,27 +199,96 @@ references:
   name: NetworkGraphDelta
   nameWithType: NetworkGraphDelta
   fullName: Foundry.Networking.NetworkGraphDelta
-- uid: Foundry.Networking.SpawnMethod
-  commentId: T:Foundry.Networking.SpawnMethod
+- uid: Foundry.Networking.SessionType
+  commentId: T:Foundry.Networking.SessionType
   parent: Foundry.Networking
-  href: Foundry.Networking.SpawnMethod.html
-  name: SpawnMethod
-  nameWithType: SpawnMethod
-  fullName: Foundry.Networking.SpawnMethod
-- uid: Foundry.Networking.NetworkManager
-  commentId: T:Foundry.Networking.NetworkManager
+  href: Foundry.Networking.SessionType.html
+  name: SessionType
+  nameWithType: SessionType
+  fullName: Foundry.Networking.SessionType
+- uid: Foundry.Networking.ISessionInfo
+  commentId: T:Foundry.Networking.ISessionInfo
   parent: Foundry.Networking
-  href: Foundry.Networking.NetworkManager.html
-  name: NetworkManager
-  nameWithType: NetworkManager
-  fullName: Foundry.Networking.NetworkManager
-- uid: Foundry.Networking.NetworkComponent
-  commentId: T:Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.ISessionInfo.html
+  name: ISessionInfo
+  nameWithType: ISessionInfo
+  fullName: Foundry.Networking.ISessionInfo
+- uid: Foundry.Networking.SessionInfo
+  commentId: T:Foundry.Networking.SessionInfo
   parent: Foundry.Networking
-  href: Foundry.Networking.NetworkComponent.html
-  name: NetworkComponent
-  nameWithType: NetworkComponent
-  fullName: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.SessionInfo.html
+  name: SessionInfo
+  nameWithType: SessionInfo
+  fullName: Foundry.Networking.SessionInfo
+- uid: Foundry.Networking.NetworkProperty`1
+  commentId: T:Foundry.Networking.NetworkProperty`1
+  href: Foundry.Networking.NetworkProperty-1.html
+  name: NetworkProperty<T>
+  nameWithType: NetworkProperty<T>
+  fullName: Foundry.Networking.NetworkProperty<T>
+  nameWithType.vb: NetworkProperty(Of T)
+  fullName.vb: Foundry.Networking.NetworkProperty(Of T)
+  name.vb: NetworkProperty(Of T)
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkProperty`1
+    name: NetworkProperty
+    href: Foundry.Networking.NetworkProperty-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Foundry.Networking.NetworkProperty`1
+    name: NetworkProperty
+    href: Foundry.Networking.NetworkProperty-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Foundry.Networking.INetworkedGraphId
+  commentId: T:Foundry.Networking.INetworkedGraphId
+  parent: Foundry.Networking
+  href: Foundry.Networking.INetworkedGraphId.html
+  name: INetworkedGraphId
+  nameWithType: INetworkedGraphId
+  fullName: Foundry.Networking.INetworkedGraphId
+- uid: Foundry.Networking.DisconnectBehaviour
+  commentId: T:Foundry.Networking.DisconnectBehaviour
+  parent: Foundry.Networking
+  href: Foundry.Networking.DisconnectBehaviour.html
+  name: DisconnectBehaviour
+  nameWithType: DisconnectBehaviour
+  fullName: Foundry.Networking.DisconnectBehaviour
+- uid: Foundry.Networking.NetworkObject
+  commentId: T:Foundry.Networking.NetworkObject
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkObject.html
+  name: NetworkObject
+  nameWithType: NetworkObject
+  fullName: Foundry.Networking.NetworkObject
+- uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
+  commentId: T:Foundry.Networking.NetworkObject.IDChangeRequestCallback
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkObject.html
+  name: NetworkObject.IDChangeRequestCallback
+  nameWithType: NetworkObject.IDChangeRequestCallback
+  fullName: Foundry.Networking.NetworkObject.IDChangeRequestCallback
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkObject
+    name: NetworkObject
+    href: Foundry.Networking.NetworkObject.html
+  - name: .
+  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
+    name: IDChangeRequestCallback
+    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
+  spec.vb:
+  - uid: Foundry.Networking.NetworkObject
+    name: NetworkObject
+    href: Foundry.Networking.NetworkObject.html
+  - name: .
+  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
+    name: IDChangeRequestCallback
+    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
 - uid: Foundry.Networking
   commentId: N:Foundry.Networking
   href: Foundry.html
