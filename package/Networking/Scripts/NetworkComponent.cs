@@ -41,6 +41,10 @@ namespace Foundry.Networking
             
         }
 
+        public virtual void OnDisconnected()
+        {
+            
+        }
         
         protected virtual void OnValidate()
         {
