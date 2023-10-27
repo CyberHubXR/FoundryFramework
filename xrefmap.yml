@@ -1799,6 +1799,28 @@ references:
   commentId: F:Foundry.Core.Setup.SetupTaskList.tasks
   fullName: Foundry.Core.Setup.SetupTaskList.tasks
   nameWithType: SetupTaskList.tasks
+- uid: Foundry.CoreAuthentication
+  name: CoreAuthentication
+  href: Api/Foundry.CoreAuthentication.html
+  commentId: T:Foundry.CoreAuthentication
+  fullName: Foundry.CoreAuthentication
+  nameWithType: CoreAuthentication
+- uid: Foundry.CoreAuthentication.Authenticate(System.String)
+  name: Authenticate(string)
+  href: Api/Foundry.CoreAuthentication.html#Foundry_CoreAuthentication_Authenticate_System_String_
+  commentId: M:Foundry.CoreAuthentication.Authenticate(System.String)
+  name.vb: Authenticate(String)
+  fullName: Foundry.CoreAuthentication.Authenticate(string)
+  fullName.vb: Foundry.CoreAuthentication.Authenticate(String)
+  nameWithType: CoreAuthentication.Authenticate(string)
+  nameWithType.vb: CoreAuthentication.Authenticate(String)
+- uid: Foundry.CoreAuthentication.Authenticate*
+  name: Authenticate
+  href: Api/Foundry.CoreAuthentication.html#Foundry_CoreAuthentication_Authenticate_
+  commentId: Overload:Foundry.CoreAuthentication.Authenticate
+  isSpec: "True"
+  fullName: Foundry.CoreAuthentication.Authenticate
+  nameWithType: CoreAuthentication.Authenticate
 - uid: Foundry.DesignTools
   name: Foundry.DesignTools
   href: Api/Foundry.DesignTools.html
@@ -2735,6 +2757,12 @@ references:
   commentId: F:Foundry.FoundryNetworkButton.rightGrab
   fullName: Foundry.FoundryNetworkButton.rightGrab
   nameWithType: FoundryNetworkButton.rightGrab
+- uid: Foundry.FoundryScript
+  name: FoundryScript
+  href: Api/Foundry.FoundryScript.html
+  commentId: T:Foundry.FoundryScript
+  fullName: Foundry.FoundryScript
+  nameWithType: FoundryScript
 - uid: Foundry.FoundryUI
   name: FoundryUI
   href: Api/Foundry.FoundryUI.html
@@ -5761,12 +5789,6 @@ references:
   isSpec: "True"
   fullName: Foundry.Networking.INetworkProvider.Destroy
   nameWithType: INetworkProvider.Destroy
-- uid: Foundry.Networking.INetworkProvider.FusionInputRequest
-  name: FusionInputRequest
-  href: Api/Foundry.Networking.INetworkProvider.html#Foundry_Networking_INetworkProvider_FusionInputRequest
-  commentId: E:Foundry.Networking.INetworkProvider.FusionInputRequest
-  fullName: Foundry.Networking.INetworkProvider.FusionInputRequest
-  nameWithType: INetworkProvider.FusionInputRequest
 - uid: Foundry.Networking.INetworkProvider.Graph
   name: Graph
   href: Api/Foundry.Networking.INetworkProvider.html#Foundry_Networking_INetworkProvider_Graph
@@ -6379,6 +6401,19 @@ references:
   isSpec: "True"
   fullName: Foundry.Networking.NetworkComponent.OnConnected
   nameWithType: NetworkComponent.OnConnected
+- uid: Foundry.Networking.NetworkComponent.OnDisconnected
+  name: OnDisconnected()
+  href: Api/Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnDisconnected
+  commentId: M:Foundry.Networking.NetworkComponent.OnDisconnected
+  fullName: Foundry.Networking.NetworkComponent.OnDisconnected()
+  nameWithType: NetworkComponent.OnDisconnected()
+- uid: Foundry.Networking.NetworkComponent.OnDisconnected*
+  name: OnDisconnected
+  href: Api/Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnDisconnected_
+  commentId: Overload:Foundry.Networking.NetworkComponent.OnDisconnected
+  isSpec: "True"
+  fullName: Foundry.Networking.NetworkComponent.OnDisconnected
+  nameWithType: NetworkComponent.OnDisconnected
 - uid: Foundry.Networking.NetworkComponent.OnValidate
   name: OnValidate()
   href: Api/Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnValidate
@@ -8848,6 +8883,43 @@ references:
   commentId: F:Foundry.PlayerMenuSpawner.inputSource
   fullName: Foundry.PlayerMenuSpawner.inputSource
   nameWithType: PlayerMenuSpawner.inputSource
+- uid: Foundry.PlayerRigCreator
+  name: PlayerRigCreator
+  href: Api/Foundry.PlayerRigCreator.html
+  commentId: T:Foundry.PlayerRigCreator
+  fullName: Foundry.PlayerRigCreator
+  nameWithType: PlayerRigCreator
+- uid: Foundry.PlayerRigCreator.Start
+  name: Start()
+  href: Api/Foundry.PlayerRigCreator.html#Foundry_PlayerRigCreator_Start
+  commentId: M:Foundry.PlayerRigCreator.Start
+  fullName: Foundry.PlayerRigCreator.Start()
+  nameWithType: PlayerRigCreator.Start()
+- uid: Foundry.PlayerRigCreator.Start*
+  name: Start
+  href: Api/Foundry.PlayerRigCreator.html#Foundry_PlayerRigCreator_Start_
+  commentId: Overload:Foundry.PlayerRigCreator.Start
+  isSpec: "True"
+  fullName: Foundry.PlayerRigCreator.Start
+  nameWithType: PlayerRigCreator.Start
+- uid: Foundry.PlayerRigCreator.controlMode
+  name: controlMode
+  href: Api/Foundry.PlayerRigCreator.html#Foundry_PlayerRigCreator_controlMode
+  commentId: F:Foundry.PlayerRigCreator.controlMode
+  fullName: Foundry.PlayerRigCreator.controlMode
+  nameWithType: PlayerRigCreator.controlMode
+- uid: Foundry.PlayerRigCreator.desktopRig
+  name: desktopRig
+  href: Api/Foundry.PlayerRigCreator.html#Foundry_PlayerRigCreator_desktopRig
+  commentId: F:Foundry.PlayerRigCreator.desktopRig
+  fullName: Foundry.PlayerRigCreator.desktopRig
+  nameWithType: PlayerRigCreator.desktopRig
+- uid: Foundry.PlayerRigCreator.xrRig
+  name: xrRig
+  href: Api/Foundry.PlayerRigCreator.html#Foundry_PlayerRigCreator_xrRig
+  commentId: F:Foundry.PlayerRigCreator.xrRig
+  fullName: Foundry.PlayerRigCreator.xrRig
+  nameWithType: PlayerRigCreator.xrRig
 - uid: Foundry.PlayerRigEvent
   name: PlayerRigEvent
   href: Api/Foundry.PlayerRigEvent.html
@@ -12785,19 +12857,35 @@ references:
   commentId: T:Foundry.VideoSync
   fullName: Foundry.VideoSync
   nameWithType: VideoSync
-- uid: Foundry.VideoSync.Spawned
-  name: Spawned()
-  href: Api/Foundry.VideoSync.html#Foundry_VideoSync_Spawned
-  commentId: M:Foundry.VideoSync.Spawned
-  fullName: Foundry.VideoSync.Spawned()
-  nameWithType: VideoSync.Spawned()
-- uid: Foundry.VideoSync.Spawned*
-  name: Spawned
-  href: Api/Foundry.VideoSync.html#Foundry_VideoSync_Spawned_
-  commentId: Overload:Foundry.VideoSync.Spawned
+- uid: Foundry.VideoSync.OnConnected
+  name: OnConnected()
+  href: Api/Foundry.VideoSync.html#Foundry_VideoSync_OnConnected
+  commentId: M:Foundry.VideoSync.OnConnected
+  fullName: Foundry.VideoSync.OnConnected()
+  nameWithType: VideoSync.OnConnected()
+- uid: Foundry.VideoSync.OnConnected*
+  name: OnConnected
+  href: Api/Foundry.VideoSync.html#Foundry_VideoSync_OnConnected_
+  commentId: Overload:Foundry.VideoSync.OnConnected
   isSpec: "True"
-  fullName: Foundry.VideoSync.Spawned
-  nameWithType: VideoSync.Spawned
+  fullName: Foundry.VideoSync.OnConnected
+  nameWithType: VideoSync.OnConnected
+- uid: Foundry.VideoSync.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  name: RegisterProperties(List<INetworkProperty>)
+  href: Api/Foundry.VideoSync.html#Foundry_VideoSync_RegisterProperties_System_Collections_Generic_List_Foundry_Networking_INetworkProperty__
+  commentId: M:Foundry.VideoSync.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  name.vb: RegisterProperties(List(Of INetworkProperty))
+  fullName: Foundry.VideoSync.RegisterProperties(System.Collections.Generic.List<Foundry.Networking.INetworkProperty>)
+  fullName.vb: Foundry.VideoSync.RegisterProperties(System.Collections.Generic.List(Of Foundry.Networking.INetworkProperty))
+  nameWithType: VideoSync.RegisterProperties(List<INetworkProperty>)
+  nameWithType.vb: VideoSync.RegisterProperties(List(Of INetworkProperty))
+- uid: Foundry.VideoSync.RegisterProperties*
+  name: RegisterProperties
+  href: Api/Foundry.VideoSync.html#Foundry_VideoSync_RegisterProperties_
+  commentId: Overload:Foundry.VideoSync.RegisterProperties
+  isSpec: "True"
+  fullName: Foundry.VideoSync.RegisterProperties
+  nameWithType: VideoSync.RegisterProperties
 - uid: Foundry.VideoSync.VideoStartTime
   name: VideoStartTime
   href: Api/Foundry.VideoSync.html#Foundry_VideoSync_VideoStartTime

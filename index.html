@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Documentation | Foundry Core </title>
+      <title>Overview | Foundry Core </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Documentation | Foundry Core ">
+      <meta name="title" content="Overview | Foundry Core ">
       
       <link rel="icon" href="Media/foundry_icon.ico">
       <link rel="stylesheet" href="public/docfx.min.css">
@@ -79,28 +79,26 @@
         </div>
 
         <article data-uid="">
-<h1 id="documentation">Documentation</h1>
-
 <h2 id="overview">Overview</h2>
-<p>Provide a brief, high-level explanation of the package.</p>
-<h2 id="package-contents">Package Contents</h2>
-<p>Include the location of important files you want the user to know about. For example, if this is a sample package containing textures, models, and materials separated by sample group, you might want to provide the folder location of each group.</p>
-<h2 id="installation-instructions">Installation instructions</h2>
-<p>You can point to the official Package Manager installation instructions, but if you have any special installation requirements, such as installing samples, add them here.</p>
+
+<p>Foundry core is the glue that holds the foundry framework together, it contains interfaces for player interaction, scene navigation, and networking.</p>
+<h2 id="installation">Installation</h2>
+<p>The recommended way to install foundry packages is through our scoped registry, which can be added in Project Settings &gt; Package Manager &gt; Package Sources</p>
+<pre><code>Name: Foundry
+Url: http://34.125.193.7:4873/
+Scopes: com.cyberhub
+</code></pre>
+<p>Packages can also be manually cloned from our github repos using the docs provided in their readme files.</p>
 <h2 id="requirements">Requirements</h2>
-<p>This is a good place to add hardware or software requirements, including which versions of the Unity Editor this package is compatible with.</p>
+<p>Foundry is developed on Unity version 2021.3.18f1, though newer versions should work as well</p>
+<p>Core also requires a network provider to be installed, currently the only supported provider is Fusion Networking for
+Foundry, which can be installed from the package manager as well.</p>
 <h2 id="limitations">Limitations</h2>
-<p>If your package has any known limitations, you can list them here. If not, or if the limitations are trivial, exclude this section.</p>
-<h2 id="workflows">Workflows</h2>
-<p>Include a list of steps that the user can easily follow that demonstrates how to use the feature. You can include screenshots to help describe how to use the feature.</p>
-<h2 id="advanced-topics">Advanced topics</h2>
-<p>This is where you can provide detailed information about what you are providing to users. This is ideal if you don’t want to overwhelm the user with too much information up front.</p>
+<p>Foundry is still in beta and under active development, as such breaking changes will occur rather often until we reach a stable release.</p>
 <h2 id="reference">Reference</h2>
-<p>If you have a user interface with a lot of properties, you can provide the details in a reference section. Using tables is a good way to provide quick access to specific property descriptions.</p>
-<h2 id="samples">Samples</h2>
-<p>For packages that include sample files, you can include detailed information on how the user can use these sample files in their projects and scenes.</p>
-<h2 id="tutorials">Tutorials</h2>
-<p>If you want to provide walkthroughs for complicated procedures, you can also add them here. Use step-by-step instructions and include images if they can help the user understand.</p>
+<p><a href="Manual/GettingStarted.html">Getting Started</a><br>
+<a href="Manual/MakingANewScene.html">Making a New Scene</a><br>
+<a href="Manual/HowThePlayerWorks.html">How The Player Works</a></p>
 
 </article>
 

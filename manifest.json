@@ -414,6 +414,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.CoreAuthentication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.CoreAuthentication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Api/Foundry.DesignTools.RenderDebugHUD.yml",
       "output": {
         ".html": {
@@ -648,6 +658,16 @@
       "output": {
         ".html": {
           "relative_path": "Api/Foundry.FoundryNetworkButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.FoundryScript.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.FoundryScript.html"
         }
       },
       "version": ""
@@ -1568,6 +1588,16 @@
       "output": {
         ".html": {
           "relative_path": "Api/Foundry.PlayerMenuSpawner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.PlayerRigCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.PlayerRigCreator.html"
         }
       },
       "version": ""

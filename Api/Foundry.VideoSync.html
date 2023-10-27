@@ -99,7 +99,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VideoSync : NetworkBehaviour, ILogBuilder, ISpawned, IDespawned</code></pre>
+    <pre><code class="lang-csharp hljs">public class VideoSync : NetworkComponent</code></pre>
   </div>
 
 
@@ -113,166 +113,31 @@
       <div><span class="xref">Component</span></div>
       <div><span class="xref">Behaviour</span></div>
       <div><span class="xref">MonoBehaviour</span></div>
-      <div><span class="xref">Behaviour</span></div>
-      <div><span class="xref">SimulationBehaviour</span></div>
-      <div><span class="xref">NetworkBehaviour</span></div>
+      <div><a class="xref" href="Foundry.FoundryScript.html">FoundryScript</a></div>
+      <div><a class="xref" href="Foundry.Networking.NetworkComponent.html">NetworkComponent</a></div>
       <div><span class="xref">VideoSync</span></div>
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><span class="xref">ILogBuilder</span></div>
-      <div><span class="xref">ISpawned</span></div>
-      <div><span class="xref">IDespawned</span></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <span class="xref">NetworkBehaviour.Ptr</span>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_Object">NetworkComponent.Object</a>
     </div>
     <div>
-      <span class="xref">NetworkBehaviour.ObjectIndex</span>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_NetworkProvider">NetworkComponent.NetworkProvider</a>
     </div>
     <div>
-      <span class="xref">NetworkBehaviour.InvokeRpc</span>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_IsOwner">NetworkComponent.IsOwner</a>
     </div>
     <div>
-      <span class="xref">NetworkBehaviour.GetLocalAuthorityMask()</span>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnDisconnected">NetworkComponent.OnDisconnected()</a>
     </div>
     <div>
-      <span class="xref">NetworkBehaviour.CopyStateFrom(NetworkBehaviour)</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.FixedUpdateNetwork()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">NetworkBehaviour.CopyBackingFieldsToState(bool)</a>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.CopyStateToBackingFields()</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">NetworkBehaviour.Despawned(NetworkRunner, bool)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">NetworkBehaviour.GetInterpolationData(out InterpolationData, bool?)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">NetworkBehaviour.GetInterpolationData(out InterpolationData, out bool)</a>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.IsInterpolationDataPredicted()</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.OnChangeClearAll()</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.OnChangeRemove(NetworkBehaviourCallbackReference)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">NetworkBehaviour.OnChangeAdd&lt;T&gt;(int, int, ChangedDelegate&lt;T&gt;, OnChangedTargets)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">NetworkBehaviour.OnChangeAdd&lt;T&gt;(string, ChangedDelegate&lt;T&gt;, OnChangedTargets)</a>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.GetInput&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.GetInput&lt;T&gt;(out T)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">NetworkBehaviour.GetInterpolator(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">NetworkBehaviour.GetInterpolator&lt;T&gt;(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">NetworkBehaviour.NetworkSerialize(NetworkRunner, NetworkBehaviour, byte*)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">NetworkBehaviour.NetworkDeserialize(NetworkRunner, byte*, ref NetworkBehaviour)</a>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.NetworkWrap(NetworkRunner, NetworkBehaviour)</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.NetworkUnwrap(NetworkRunner, NetworkBehaviourId)</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.MakeRef&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.MakeRef&lt;T&gt;(T)</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.MakePtr&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.MakePtr&lt;T&gt;(T)</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.MakeInitializer&lt;T&gt;(T[])</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">NetworkBehaviour.MakeInitializer&lt;K, V&gt;(Dictionary&lt;K, V&gt;)</a>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.InvokeWeavedCode()</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.WordInfo</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.InterpolationDataSource</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.Id</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.DynamicWordCount</span>
-    </div>
-    <div>
-      <span class="xref">NetworkBehaviour.InvokeOnChangedForInitialNonZeroValues</span>
-    </div>
-    <div>
-      <span class="xref">SimulationBehaviour.Runner</span>
-    </div>
-    <div>
-      <span class="xref">SimulationBehaviour.Object</span>
-    </div>
-    <div>
-      <span class="xref">SimulationBehaviour.Render()</span>
-    </div>
-    <div>
-      <span class="xref">SimulationBehaviour.CanReceiveCallback</span>
-    </div>
-    <div>
-      <span class="xref">SimulationBehaviour.HasInputAuthority</span>
-    </div>
-    <div>
-      <span class="xref">SimulationBehaviour.HasStateAuthority</span>
-    </div>
-    <div>
-      <span class="xref">SimulationBehaviour.IsProxy</span>
-    </div>
-    <div>
-      <span class="xref">Behaviour.AddBehaviour&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">Behaviour.TryGetBehaviour&lt;T&gt;(out T)</span>
-    </div>
-    <div>
-      <span class="xref">Behaviour.GetBehaviour&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">Behaviour.DestroyBehaviour(Behaviour)</span>
+      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnValidate">NetworkComponent.OnValidate()</a>
     </div>
     <div>
       <span class="xref">MonoBehaviour.IsInvoking()</span>
@@ -628,16 +493,15 @@
 
   <h3 id="Foundry_VideoSync_VideoStartTime" data-uid="Foundry.VideoSync.VideoStartTime">
   VideoStartTime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Media/VideoPlayer/Scripts/VideoSync.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Media/VideoPlayer/Scripts/VideoSync.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets or sets the network conencted start time of the video.</p>
+  <div class="markdown level1 summary"><p>Gets or sets the network connected start time of the video.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Networked]
-public double VideoStartTime { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public double VideoStartTime { get; set; }</code></pre>
   </div>
 
 
@@ -661,21 +525,53 @@ public double VideoStartTime { get; set; }</code></pre>
 </h2>
 
 
-  <a id="Foundry_VideoSync_Spawned_" data-uid="Foundry.VideoSync.Spawned*"></a>
+  <a id="Foundry_VideoSync_OnConnected_" data-uid="Foundry.VideoSync.OnConnected*"></a>
 
-  <h3 id="Foundry_VideoSync_Spawned" data-uid="Foundry.VideoSync.Spawned">
-  Spawned()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Media/VideoPlayer/Scripts/VideoSync.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Foundry_VideoSync_OnConnected" data-uid="Foundry.VideoSync.OnConnected">
+  OnConnected()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Media/VideoPlayer/Scripts/VideoSync.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Post spawn callback.</p>
+  <div class="markdown level1 summary"><p>Called once we are connected to the network and all network objects are in a valid state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Spawned()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnConnected()</code></pre>
   </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Foundry_VideoSync_RegisterProperties_" data-uid="Foundry.VideoSync.RegisterProperties*"></a>
+
+  <h3 id="Foundry_VideoSync_RegisterProperties_System_Collections_Generic_List_Foundry_Networking_INetworkProperty__" data-uid="Foundry.VideoSync.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})">
+  RegisterProperties(List&lt;INetworkProperty&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Media/VideoPlayer/Scripts/VideoSync.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called once on startup to register properties for this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RegisterProperties(List&lt;INetworkProperty&gt; props)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>props</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Foundry.Networking.INetworkProperty.html">INetworkProperty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class BodyColorRandomiser
+      <title>Class FoundryScript
  | Foundry Core </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class BodyColorRandomiser
+      <meta name="title" content="Class FoundryScript
  | Foundry Core ">
       
       <link rel="icon" href="../Media/foundry_icon.ico">
@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/new/main/apiSpec/new?filename=Foundry_BodyColorRandomiser.md&amp;value=---%0Auid%3A%20Foundry.BodyColorRandomiser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/new/main/apiSpec/new?filename=Foundry_FoundryScript.md&amp;value=---%0Auid%3A%20Foundry.FoundryScript%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,13 +80,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Foundry.BodyColorRandomiser">
+        <article data-uid="Foundry.FoundryScript">
 
 
 
-  <h1 id="Foundry_BodyColorRandomiser" data-uid="Foundry.BodyColorRandomiser" class="text-break">
-    Class BodyColorRandomiser
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Avatar/Scripts/BodyColorRandomiser.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Foundry_FoundryScript" data-uid="Foundry.FoundryScript" class="text-break">
+    Class FoundryScript
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Scripts/FoundryScript.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,7 +98,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BodyColorRandomiser : NetworkComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class FoundryScript : MonoBehaviour</code></pre>
   </div>
 
 
@@ -112,32 +112,21 @@
       <div><span class="xref">Component</span></div>
       <div><span class="xref">Behaviour</span></div>
       <div><span class="xref">MonoBehaviour</span></div>
-      <div><a class="xref" href="Foundry.FoundryScript.html">FoundryScript</a></div>
-      <div><a class="xref" href="Foundry.Networking.NetworkComponent.html">NetworkComponent</a></div>
-      <div><span class="xref">BodyColorRandomiser</span></div>
+      <div><span class="xref">FoundryScript</span></div>
     </dd>
   </dl>
 
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Foundry.Networking.NetworkComponent.html">NetworkComponent</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_Object">NetworkComponent.Object</a>
-    </div>
-    <div>
-      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_NetworkProvider">NetworkComponent.NetworkProvider</a>
-    </div>
-    <div>
-      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_IsOwner">NetworkComponent.IsOwner</a>
-    </div>
-    <div>
-      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnDisconnected">NetworkComponent.OnDisconnected()</a>
-    </div>
-    <div>
-      <a class="xref" href="Foundry.Networking.NetworkComponent.html#Foundry_Networking_NetworkComponent_OnValidate">NetworkComponent.OnValidate()</a>
-    </div>
     <div>
       <span class="xref">MonoBehaviour.IsInvoking()</span>
     </div>
@@ -478,168 +467,6 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
   </dd></dl>
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Foundry_BodyColorRandomiser__bodyColor" data-uid="Foundry.BodyColorRandomiser._bodyColor">
-  _bodyColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Avatar/Scripts/BodyColorRandomiser.cs/#L11"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetworkProperty&lt;Color&gt; _bodyColor</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Foundry.Networking.NetworkProperty-1.html">NetworkProperty</a>&lt;<span class="xref">Color</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Foundry_BodyColorRandomiser_bodyColorRenderer" data-uid="Foundry.BodyColorRandomiser.bodyColorRenderer">
-  bodyColorRenderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Avatar/Scripts/BodyColorRandomiser.cs/#L9"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SkinnedMeshRenderer bodyColorRenderer</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">SkinnedMeshRenderer</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="Foundry_BodyColorRandomiser_bodyColor_" data-uid="Foundry.BodyColorRandomiser.bodyColor*"></a>
-
-  <h3 id="Foundry_BodyColorRandomiser_bodyColor" data-uid="Foundry.BodyColorRandomiser.bodyColor">
-  bodyColor
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Avatar/Scripts/BodyColorRandomiser.cs/#L13"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Color bodyColor { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">Color</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Foundry_BodyColorRandomiser_OnConnected_" data-uid="Foundry.BodyColorRandomiser.OnConnected*"></a>
-
-  <h3 id="Foundry_BodyColorRandomiser_OnConnected" data-uid="Foundry.BodyColorRandomiser.OnConnected">
-  OnConnected()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Avatar/Scripts/BodyColorRandomiser.cs/#L18"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Called once we are connected to the network and all network objects are in a valid state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnConnected()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Foundry_BodyColorRandomiser_RegisterProperties_" data-uid="Foundry.BodyColorRandomiser.RegisterProperties*"></a>
-
-  <h3 id="Foundry_BodyColorRandomiser_RegisterProperties_System_Collections_Generic_List_Foundry_Networking_INetworkProperty__" data-uid="Foundry.BodyColorRandomiser.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})">
-  RegisterProperties(List&lt;INetworkProperty&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Avatar/Scripts/BodyColorRandomiser.cs/#L28"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Called once on startup to register properties for this component.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void RegisterProperties(List&lt;INetworkProperty&gt; props)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>props</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Foundry.Networking.INetworkProperty.html">INetworkProperty</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
 
 
 
