@@ -199,16 +199,17 @@ namespace Foundry.Services
         {
             // Get the matching entry
             SceneNavigationEntry entry = history[targetIndex];
-
-            // Navigate to the previous entry
-            await LoadEntryAsync(entry);
-
-            // Update the current index?
+            
+            // Update index before switching so init scripts work correctly
             if (updateCurrentIndex)
             {
                 // Update the current index
                 currentIndex = targetIndex;
             }
+
+            // Navigate to the previous entry
+            await LoadEntryAsync(entry);
+            
         }
 
         /// <summary>
