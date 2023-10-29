@@ -103,7 +103,10 @@ namespace Foundry
         public void EnableService(Type systemType)
         {
             if (!IsServiceEnabled(systemType))
+            {
                 EnabledServices.Add(systemType);
+                EditorUtility.SetDirty(this);
+            }
         }
         
         /// <summary>
@@ -113,7 +116,10 @@ namespace Foundry
         public void DisableService(Type systemType)
         {
             if (IsServiceEnabled(systemType))
+            {
                 EnabledServices.Remove(systemType);
+                EditorUtility.SetDirty(this);
+            }
         }
         #endif
         
