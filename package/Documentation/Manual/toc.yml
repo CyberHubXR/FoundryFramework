@@ -5,6 +5,8 @@ items:
   items:
   - name: Getting Started
     href: GettingStarted.md
+  - name: Samples
+    href: Samples/Samples.md
   - name: Making A New Scene
     href: MakingANewScene.md
   - name: How the player works
