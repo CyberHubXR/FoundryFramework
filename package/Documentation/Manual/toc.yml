@@ -18,4 +18,6 @@ items:
     items:
       - name: Setup Wizard
         href: SetupWizard.md
+      - name: Modules
+        href: Modules.md
 memberLayout: SamePage

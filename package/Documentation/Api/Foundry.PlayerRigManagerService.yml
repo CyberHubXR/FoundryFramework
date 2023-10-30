@@ -191,7 +191,7 @@ items:
   assemblies:
   - Foundry.Core
   namespace: Foundry
-  summary: Return the current instantiated player rig.
+  summary: Register player rig after it's been created, along with the place to put it when it's not in use (Usually while loading)
   example: []
   syntax:
     content: public void RegisterRig(IPlayerControlRig rig, Transform unusedRigHolder)

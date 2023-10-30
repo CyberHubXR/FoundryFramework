@@ -173,7 +173,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterServices
     path: ../Application/Scripts/FoundryModuleConfig.cs
-    startLine: 124
+    startLine: 130
   assemblies:
   - Foundry.Core
   namespace: Foundry

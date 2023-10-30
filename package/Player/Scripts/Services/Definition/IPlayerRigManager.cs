@@ -17,7 +17,7 @@ namespace Foundry
         public IPlayerControlRig Rig { get; }
 
         /// <summary>
-        /// Return the current instantiated player rig.
+        /// Register player rig after it's been created, along with the place to put it when it's not in use (Usually while loading)
         /// </summary>
         public void RegisterRig(IPlayerControlRig rig, Transform unusedRigHolder);
 

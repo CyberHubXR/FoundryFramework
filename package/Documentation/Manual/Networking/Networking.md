@@ -18,7 +18,7 @@ Once that package is installed our backed will automatically detect it and use i
 
 Next, any scene that you wish to network must have a NetworkManager component on a game object anywhere in the scene. 
 If you wish for a networked session to persist over multiple scene loads, you can mark the NetworkManager object 
-as DontDestroyOnLoad. (However this is experimental)
+with `DontDestroyOnLoad()`. (However this is experimental)
 
 If you wish set a player prefab to spawn on load, you can set the PlayerPrefab property.
 
@@ -26,4 +26,4 @@ These are currently the most stable options:
 
 ![NetworkManager defaults](/Media/Manual/Networking/NetworkManager.png)
 
-After you have that in your scene, and the native networking solution installed and configured, you're ready to start networking!
+After you have that in your scene, refer to the specific network provider plugin you've installed on how to set up the native networking system, once you've done that you're ready to start networking!
