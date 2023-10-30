@@ -2427,6 +2427,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Manual/Samples/Samples.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Samples/Samples.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Manual/SetupWizard.md",
       "output": {
         ".html": {
