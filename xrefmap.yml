@@ -5377,6 +5377,18 @@ references:
   commentId: F:Foundry.NetworkTRPredictor.lerpSpeed
   fullName: Foundry.NetworkTRPredictor.lerpSpeed
   nameWithType: NetworkTRPredictor.lerpSpeed
+- uid: Foundry.NetworkVoiceOutput
+  name: NetworkVoiceOutput
+  href: Api/Foundry.NetworkVoiceOutput.html
+  commentId: T:Foundry.NetworkVoiceOutput
+  fullName: Foundry.NetworkVoiceOutput
+  nameWithType: NetworkVoiceOutput
+- uid: Foundry.NetworkVoiceOutput.nativeScript
+  name: nativeScript
+  href: Api/Foundry.NetworkVoiceOutput.html#Foundry_NetworkVoiceOutput_nativeScript
+  commentId: F:Foundry.NetworkVoiceOutput.nativeScript
+  fullName: Foundry.NetworkVoiceOutput.nativeScript
+  nameWithType: NetworkVoiceOutput.nativeScript
 - uid: Foundry.Networked3PInput
   name: Networked3PInput
   href: Api/Foundry.Networked3PInput.html

@@ -1104,6 +1104,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.NetworkVoiceOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.NetworkVoiceOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Api/Foundry.Networked3PInput.yml",
       "output": {
         ".html": {
@@ -2407,6 +2417,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Manual/Networking/MapedComponents.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Networking/MapedComponents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Manual/Networking/NetworkComponent.md",
       "output": {
         ".html": {
@@ -2456,6 +2476,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "Manual/toc.yml",
       "output": {
