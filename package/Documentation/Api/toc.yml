@@ -123,6 +123,8 @@ items:
     name: NetworkEventBase
   - uid: Foundry.NetworkEvent`1
     name: NetworkEvent<T>
+  - uid: Foundry.NetworkVoiceOutput
+    name: NetworkVoiceOutput
   - uid: Foundry.ObjectLifetime
     name: ObjectLifetime
   - uid: Foundry.OrientationMatchAxis

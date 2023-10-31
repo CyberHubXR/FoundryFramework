@@ -561,6 +561,8 @@
   "Foundry.NetworkEvent`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)": "Foundry.NetworkEvent-1.yml",
   "Foundry.NetworkEvent`1.SetClean": "Foundry.NetworkEvent-1.yml",
   "Foundry.NetworkEvent`1.SetDirty": "Foundry.NetworkEvent-1.yml",
+  "Foundry.NetworkVoiceOutput": "Foundry.NetworkVoiceOutput.yml",
+  "Foundry.NetworkVoiceOutput.nativeScript": "Foundry.NetworkVoiceOutput.yml",
   "Foundry.Networking": "Foundry.Networking.yml",
   "Foundry.Networking.DisconnectBehaviour": "Foundry.Networking.DisconnectBehaviour.yml",
   "Foundry.Networking.DisconnectBehaviour.Destroy": "Foundry.Networking.DisconnectBehaviour.yml",

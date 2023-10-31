@@ -7,7 +7,7 @@ items:
     href: GettingStarted.md
   - name: Samples
     href: Samples/Samples.md
-  - name: Making A New Scene
+  - name: Making a new scene
     href: MakingANewScene.md
   - name: How the player works
     href: HowThePlayerWorks.md
@@ -16,6 +16,8 @@ items:
     items:
       - name: Networked Components
         href: Networking/NetworkComponent.md
+      - name: Mapped Components
+        href: Networking/MappedComponents.md
   - name: Advanced
     items:
       - name: Setup Wizard

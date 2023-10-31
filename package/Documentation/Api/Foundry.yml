@@ -64,6 +64,7 @@ items:
   - Foundry.NetEventSource
   - Foundry.NetworkEventBase
   - Foundry.NetworkEvent`1
+  - Foundry.NetworkVoiceOutput
   - Foundry.ObjectLifetime
   - Foundry.OrientationMatchAxis
   - Foundry.OrientationMatcher
@@ -845,6 +846,12 @@ references:
   name: SpatialGrabbableDebugEvents
   nameWithType: SpatialGrabbableDebugEvents
   fullName: Foundry.SpatialGrabbableDebugEvents
+- uid: Foundry.NetworkVoiceOutput
+  commentId: T:Foundry.NetworkVoiceOutput
+  href: Foundry.NetworkVoiceOutput.html
+  name: NetworkVoiceOutput
+  nameWithType: NetworkVoiceOutput
+  fullName: Foundry.NetworkVoiceOutput
 - uid: Foundry.SpatialGrabbablePose
   commentId: T:Foundry.SpatialGrabbablePose
   href: Foundry.SpatialGrabbablePose.html
