@@ -33,7 +33,9 @@ namespace Foundry
             {
                 if(initializedControlMode != PlayerControlMode.XR)
                 {
-                    var manager = XRGeneralSettings.Instance.Manager;
+                    var instance = XRGeneralSettings.Instance;
+                    Debug.Assert(instance, "XR Settings not found, Make sure XR is installed and enabled!");
+                    var manager = instance.Manager;
                     if (!manager.activeLoader)
                     {
                         yield return manager.InitializeLoader();
