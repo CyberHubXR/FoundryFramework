@@ -198,18 +198,18 @@ namespace Foundry.Networking
                 return;
             }
             
-            var oldComponentsCount = NetworkComponents.Count;
-            var oldChildrenCount = children.Count;
-            NetworkComponents.Clear();
-            children.Clear();
             UpdateComponentsRecursive(transform);
-            
-            if(oldChildrenCount != children.Count || oldComponentsCount != NetworkComponents.Count)
-                EditorUtility.SetDirty(this);
         }
         
         private void UpdateComponentsRecursive(Transform t)
         {
+            var oldComponentsCount = NetworkComponents.Count;
+            var oldChildrenCount = children.Count;
+            if (t == transform)
+            {
+                NetworkComponents.Clear();
+                children.Clear();
+            }
             if (t.gameObject.TryGetComponent(out NetworkObject otherObj))
             {
                 if (otherObj != this)
@@ -225,6 +225,9 @@ namespace Foundry.Networking
             
             foreach (Transform child in t)
                 UpdateComponentsRecursive(child);
+            
+            if(t == transform && (oldChildrenCount != children.Count || oldComponentsCount != NetworkComponents.Count))
+                EditorUtility.SetDirty(this);
         }
 #endif
         void Awake()
