@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -241,12 +242,17 @@ namespace Foundry.Networking
         private int completedLoadSteps = 0;
         private readonly int totalLoadSteps = 2;
         private bool registeredUnloaded;
+
+        private float loadTimeout = 4f;
+        private Coroutine loadTimeoutRoutine;
+        
         void Start()
         {
             if (NetworkManager.instance)
             {
                 NetworkManager.RegisterUnloaded(this);
                 registeredUnloaded = true;
+                loadTimeoutRoutine = StartCoroutine(LoadTimeout());
                 
                 NetworkedGraphId.OnIdAssigned(id =>
                 {
@@ -260,6 +266,9 @@ namespace Foundry.Networking
 
         internal void OnSceneReady()
         {
+            if (completedLoadSteps != totalLoadSteps)
+                return;
+            
             foreach (var networkedComponent in NetworkComponents)
             {
                 try
@@ -288,7 +297,20 @@ namespace Foundry.Networking
                 return;
 
             NetworkManager.RegisterLoaded(this);
+            StopCoroutine(loadTimeoutRoutine);
             registeredUnloaded = false;
+        }
+
+        IEnumerator LoadTimeout()
+        {
+            yield return new WaitForSeconds(loadTimeout);
+            var reason = "";
+            if (!nodeAssigned)
+                reason = "Node not assigned. ";
+            else if (!idAssigned)
+                reason = "ID not assigned. ";
+            Debug.LogError("Network load timeout for " + gameObject.name + "Exceeded 5 seconds. This object will not work! " + reason);
+            NetworkManager.RegisterLoaded(this);
         }
 
         void OnDestroy()

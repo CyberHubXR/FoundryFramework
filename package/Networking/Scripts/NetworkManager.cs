@@ -46,7 +46,7 @@ namespace Foundry.Networking
         private HashSet<NetworkObject> sceneObjects = new ();
         private Dictionary<NetworkId, NetworkObject> idToObject = new ();
 
-        private uint unloadedObjects = 0;
+        private List<NetworkObject> unloadedObjects = new();
         private List<NetworkObject> objectsAwaitingLoad = new();
 
         void Awake()
@@ -114,7 +114,7 @@ namespace Foundry.Networking
 
         private void OnDestroy()
         {
-            unloadedObjects = 0;
+            StopSession();
         }
 
         public void OnPlayerJoined(int player)
@@ -217,8 +217,11 @@ namespace Foundry.Networking
 
         public void StopSession()
         {
-            networkProvider.Graph.OnGraphChanged -= OnGraphChanged;
-            networkProvider.StopSessionAsync();
+            if (networkProvider.IsSessionConnected)
+            {
+                networkProvider.Graph.OnGraphChanged -= OnGraphChanged;
+                networkProvider.StopSessionAsync();
+            }
         }
         
         public GameObject Instantiate(GameObject prefab, Vector3 position, Quaternion rotation)
@@ -285,15 +288,15 @@ namespace Foundry.Networking
 
         public static void RegisterUnloaded(NetworkObject netObj)
         {
-            instance.unloadedObjects++;
+            instance.unloadedObjects.Add(netObj);
             instance.objectsAwaitingLoad.Add(netObj);
         }
         
         public static void RegisterLoaded(NetworkObject netObj)
         {
-            Debug.Assert(instance.unloadedObjects != 0, $"RegisterLoaded was called too many times, offending call passed: {netObj.gameObject.name}");
-            instance.unloadedObjects--;
-            if (instance.unloadedObjects == 0)
+            Debug.Assert(instance.unloadedObjects.Contains(netObj), $"RegisterLoaded was called more than once for object {netObj.gameObject.name}");
+            instance.unloadedObjects.Remove(netObj);
+            if (instance.unloadedObjects.Count == 0)
             {
                 foreach(var o in instance.objectsAwaitingLoad)
                     o.OnSceneReady();
