@@ -2,15 +2,13 @@
 Foundry core is the glue that holds the foundry framework together, it contains interfaces for player interaction, scene navigation, and networking.
 
 ## Installation
-The recommended way to install foundry packages is through our scoped registry, which can be added in Project Settings > Package Manager > Package Sources
+The recommended way to install foundry packages is through importing [our GitHub repos](https://github.com/orgs/FoundryXR/repositories). 
 
-```
-Name: Foundry
-Url: http://34.125.193.7:4873/
-Scopes: com.cyberhub
-```
+To import foundry core, got to the Unity Package Manager, click the add button from the top left corner, and select "Add package from git URL", then paste in this:
 
-Packages can also be manually cloned from our github repos using the docs provided in their readme files.
+`https://github.com/FoundryXR/FoundryCore?path=package`
+
+This can be done for any foundry repo, just replace the url of the package and make sure to keep the `?path=package` at the end.
 
 ## Requirements
 Foundry is developed on Unity version 2021.3.18f1, though newer versions should work as well

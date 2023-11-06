@@ -7,22 +7,19 @@ Getting started with foundry is super simple, we install a compatible unity vers
 We'll install other dependencies later using the Foundry setup wizard.
 
 ## Installing Foundry
-There's a step before installing we need to do.
+The recommended way to install foundry packages is through importing [our GitHub repos](https://github.com/orgs/FoundryXR/repositories). 
 
-Head over to your project settings and find the package manager tab, Then add the following name, url and scope(s)  to the package sources
+To import foundry core, got to the Unity Package Manager, click the add button from the top left corner, and select "Add package from git URL", then paste in this:
 
-```
-Name: Foundry
-Url: http://34.125.193.7:4873/
-Scopes: com.cyberhub
-```
+`https://github.com/FoundryXR/FoundryCore?path=package`
 
-Then head over to the standard package manager, Change the dropdown 'in project' to 'my registries' and add the following packages
+This can be done for any foundry repo, just replace the url of the package and make sure to keep the `?path=package` at the end.
 
-* Foundry Core
-* Fusion networking for Foundry
+We also need to import a network provider, so repeat the above steps but with this url:
 
-After you have installed these packages, please follow the steps inside the setup wizard to finish the installation. This should pop up automatically but if it doesn't it can be opened from the menus at `Foundry -> Setup Wizard`
+`https://github.com/FoundryXR/FusionNetworkProvider?path=package`
+
+After you have both those installed, please follow the steps inside the setup wizard to finish the installation. This should pop up automatically but if it doesn't it can be opened from the menus at `Foundry -> Setup Wizard`
 
 # Networking
 Foundry is a a networked framework at heart, and thus requires a networking solution to be installed, currently our most stable 
