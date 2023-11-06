@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IKStretchToTarget
     path: ../Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: constraint
     path: ../Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: maxStretch
     path: ../Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
@@ -234,7 +234,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: copyTargetWeight
     path: ../Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
@@ -261,7 +261,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: overstrech
     path: ../Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
@@ -300,7 +300,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Calibrate
     path: ../Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
@@ -328,7 +328,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKStretchToTarget.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Execute
     path: ../Avatar/Scripts/IK Constraints/IKStretchToTarget.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryAppConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryAppConfig
     path: ../Application/Scripts/FoundryAppConfig.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryAppConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: modules
     path: ../Application/Scripts/FoundryAppConfig.cs
@@ -128,7 +128,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryAppConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterServices
     path: ../Application/Scripts/FoundryAppConfig.cs

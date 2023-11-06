@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Offsets
     path: ../Player/Scripts/XRControlRig.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: head
     path: ../Player/Scripts/XRControlRig.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftHand
     path: ../Player/Scripts/XRControlRig.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightHand
     path: ../Player/Scripts/XRControlRig.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: waist
     path: ../Player/Scripts/XRControlRig.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftFoot
     path: ../Player/Scripts/XRControlRig.cs
@@ -198,7 +198,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightFoot
     path: ../Player/Scripts/XRControlRig.cs

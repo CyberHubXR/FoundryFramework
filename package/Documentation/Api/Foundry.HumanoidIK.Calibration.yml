@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Calibration
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: calibrated
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: autoSetFootRests
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -132,7 +132,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftFootRest
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightFootRest
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: autoSetSpinePole
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -225,7 +225,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: spinePoleOffset
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: lowerSpineAxis
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: autoSetHeadHeight
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -306,7 +306,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: headHeight
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -333,7 +333,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: autoSetWaistDelta
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -360,7 +360,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: waistDelta
     path: ../Avatar/Scripts/HumanoidIK.cs

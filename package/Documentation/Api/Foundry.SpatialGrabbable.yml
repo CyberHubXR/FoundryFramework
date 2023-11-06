@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialGrabbable
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -187,7 +187,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: attachedRigidbody
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: handType
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: maxHeldCount
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -268,7 +268,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: isGrabbable
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -295,7 +295,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnReleaseEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -332,7 +332,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnGrabEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -359,7 +359,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnFirstHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -396,7 +396,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnFinalStopHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -423,7 +423,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnBeforeReleasedEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -460,7 +460,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnBeforeGrabbedEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -497,7 +497,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnAnyHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -534,7 +534,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnAnyStopHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -571,7 +571,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlacePointHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -608,7 +608,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlacePointUnhighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -645,7 +645,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlacePointAddEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -682,7 +682,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlacePointRemoveEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -719,7 +719,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rootTransform
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -748,7 +748,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: placePoint
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -777,7 +777,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: grabbableChildren
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -806,7 +806,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: grabbableParents
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -835,7 +835,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: heldByHands
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -864,7 +864,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsGrabbed
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -893,7 +893,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanGrab
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -924,7 +924,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: HeldCount
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -952,7 +952,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetHoldingHands
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -980,7 +980,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetHighlightingHands
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
@@ -1008,7 +1008,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ForceHandsRelease
     path: ../Interaction/Grabbable/SpatialGrabbable.cs

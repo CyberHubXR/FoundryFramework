@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IPlayerControlRig
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: transform
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: enabled
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerTransform
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTrackingMode
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTrackers
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs

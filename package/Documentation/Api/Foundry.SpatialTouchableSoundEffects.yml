@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialTouchableSoundEffects
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: spatialTouchable
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
@@ -192,7 +192,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: audioSource
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: touchStartSound
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
@@ -246,7 +246,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: touchStopSound
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
@@ -273,7 +273,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: touchStaySound
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs

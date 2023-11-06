@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: InputSource
     path: ../Input/Common/Scripts/FoundryUIRaycaster.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Desktop
     path: ../Input/Common/Scripts/FoundryUIRaycaster.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Left
     path: ../Input/Common/Scripts/FoundryUIRaycaster.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/FoundryUIRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Right
     path: ../Input/Common/Scripts/FoundryUIRaycaster.cs

@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportPointSoundEffects
     path: ../Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: teleportPoint
     path: ../Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
@@ -193,7 +193,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: randomPitchRange
     path: ../Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
@@ -220,7 +220,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: audioSource
     path: ../Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
@@ -247,7 +247,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: startHighlightSound
     path: ../Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: stopHighlightSound
     path: ../Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
@@ -301,7 +301,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: teleportSound
     path: ../Locomotion/Teleport/Scripts/TeleportPointSoundEffects.cs

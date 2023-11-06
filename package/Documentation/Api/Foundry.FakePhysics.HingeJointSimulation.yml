@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: HingeJointSimulation
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: anchor
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: connectedToWorld
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: bodyMass
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: bodyDrag
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -303,7 +303,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: bodyAngularDrag
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -330,7 +330,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: angularVelocitySolverIteractions
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: gravityConstant
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -396,7 +396,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: angularVelocityBuffer
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -435,7 +435,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: bufferIndex
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -462,7 +462,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: currentAngularVelocity
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs
@@ -489,7 +489,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/HingeJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: initialAngularVelocity
     path: ../FakePhysics/Scripts/HingeJointSimulation.cs

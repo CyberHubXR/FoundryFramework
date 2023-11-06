@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialLever
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -189,7 +189,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leverPivot
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -228,7 +228,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leverMaxAngle
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -267,7 +267,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leverMinAngle
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -294,7 +294,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leverHingeFriction
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -321,7 +321,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: positiveOnly
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leverEvent
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -387,7 +387,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leverTurnAmount
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -428,7 +428,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterProperties
     path: ../Interaction/Grabbable/SpatialLever.cs
@@ -464,7 +464,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialLever.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: TouchUpdate
     path: ../Interaction/Grabbable/SpatialLever.cs

@@ -30,7 +30,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkObject
     path: ../Networking/Scripts/NetworkObject.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: nativeScript
     path: ../Networking/Scripts/NetworkObject.cs
@@ -212,7 +212,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: disconnectBehaviour
     path: ../Networking/Scripts/NetworkObject.cs
@@ -251,7 +251,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: allowOwnershipTransfer
     path: ../Networking/Scripts/NetworkObject.cs
@@ -280,7 +280,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnIDChanged
     path: ../Networking/Scripts/NetworkObject.cs
@@ -309,7 +309,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkedGraphId
     path: ../Networking/Scripts/NetworkObject.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkProvider
     path: ../Networking/Scripts/NetworkObject.cs
@@ -371,7 +371,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsOwner
     path: ../Networking/Scripts/NetworkObject.cs
@@ -402,7 +402,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: children
     path: ../Networking/Scripts/NetworkObject.cs
@@ -441,7 +441,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Parent
     path: ../Networking/Scripts/NetworkObject.cs
@@ -480,7 +480,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkComponents
     path: ../Networking/Scripts/NetworkObject.cs
@@ -519,7 +519,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkProperties
     path: ../Networking/Scripts/NetworkObject.cs
@@ -548,7 +548,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: guid
     path: ../Networking/Scripts/NetworkObject.cs
@@ -587,7 +587,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetVerifyIDChangeCallback
     path: ../Networking/Scripts/NetworkObject.cs
@@ -622,7 +622,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: VerifyIDChangeRequest
     path: ../Networking/Scripts/NetworkObject.cs
@@ -658,7 +658,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RequestOwnership
     path: ../Networking/Scripts/NetworkObject.cs

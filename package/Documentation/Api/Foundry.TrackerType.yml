@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerType
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -46,7 +46,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: head
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftHand
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightHand
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: waist
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -150,7 +150,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftFoot
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightFoot
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs

@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IServiceDefinition
     path: ../Editor/FoundryConfig/ServiceDefinition.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Source
     path: ../Editor/FoundryConfig/ServiceDefinition.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: PrettyName
     path: ../Editor/FoundryConfig/ServiceDefinition.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ServiceInterface
     path: ../Editor/FoundryConfig/ServiceDefinition.cs

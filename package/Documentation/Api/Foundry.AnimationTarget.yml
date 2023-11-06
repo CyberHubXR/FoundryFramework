@@ -32,7 +32,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: AnimationTarget
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: renderer
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: spriteRenderer
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -128,7 +128,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ignoreColor
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -155,7 +155,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ignorePosition
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -182,7 +182,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ignoreScale
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -209,7 +209,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ignoreRotation
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -236,7 +236,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: colorDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -263,7 +263,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: positionDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -290,7 +290,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: scaleDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -317,7 +317,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rotationDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -344,7 +344,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: waveOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -371,7 +371,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartPosition
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -400,7 +400,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartRotation
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -429,7 +429,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartScale
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -458,7 +458,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Transform
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -487,7 +487,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetStartValues
     path: ../Interaction/Animations/InteractionAnimations.cs
@@ -513,7 +513,7 @@ items:
   source:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetColor
     path: ../Interaction/Animations/InteractionAnimations.cs

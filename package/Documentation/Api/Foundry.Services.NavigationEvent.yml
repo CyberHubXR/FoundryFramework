@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationEvent
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs

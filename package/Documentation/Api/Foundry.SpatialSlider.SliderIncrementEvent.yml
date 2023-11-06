@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SliderIncrementEvent
     path: ../Interaction/Grabbable/SpatialSlider.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: onIncrementEnter
     path: ../Interaction/Grabbable/SpatialSlider.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: onIncrementExit
     path: ../Interaction/Grabbable/SpatialSlider.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: incrementPointOnLine
     path: ../Interaction/Grabbable/SpatialSlider.cs

@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: XRControlRig
     path: ../Player/Scripts/XRControlRig.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: controllerConfig
     path: ../Player/Scripts/XRControlRig.cs
@@ -202,7 +202,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: head
     path: ../Player/Scripts/XRControlRig.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftController
     path: ../Player/Scripts/XRControlRig.cs
@@ -268,7 +268,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightController
     path: ../Player/Scripts/XRControlRig.cs
@@ -295,7 +295,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: waistTracker
     path: ../Player/Scripts/XRControlRig.cs
@@ -322,7 +322,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftFootTracker
     path: ../Player/Scripts/XRControlRig.cs
@@ -349,7 +349,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightFootTracker
     path: ../Player/Scripts/XRControlRig.cs
@@ -376,7 +376,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: offsets
     path: ../Player/Scripts/XRControlRig.cs
@@ -415,7 +415,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Update
     path: ../Player/Scripts/XRControlRig.cs
@@ -441,7 +441,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTrackerPos
     path: ../Player/Scripts/XRControlRig.cs
@@ -477,7 +477,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerTransform
     path: ../Player/Scripts/XRControlRig.cs
@@ -511,7 +511,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTrackingMode
     path: ../Player/Scripts/XRControlRig.cs
@@ -542,7 +542,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTrackers
     path: ../Player/Scripts/XRControlRig.cs

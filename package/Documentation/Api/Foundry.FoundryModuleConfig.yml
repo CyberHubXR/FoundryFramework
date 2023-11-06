@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryModuleConfig
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: EnabledServices
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsServiceEnabled
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterServices
     path: ../Application/Scripts/FoundryModuleConfig.cs

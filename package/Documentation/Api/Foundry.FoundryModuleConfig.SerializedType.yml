@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SerializedType
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Type
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: op_Implicit
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: op_Implicit
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: op_Equality
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: op_Inequality
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -236,7 +236,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: op_Equality
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: op_Inequality
     path: ../Application/Scripts/FoundryModuleConfig.cs
@@ -308,7 +308,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ToString
     path: ../Application/Scripts/FoundryModuleConfig.cs

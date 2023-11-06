@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: PackageManagerUtil
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ReadManifest
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Apply
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -120,7 +120,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsPackageInstalled
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetPackageSource
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -188,7 +188,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ArePackagesInstalled
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: AddScopedRegistry
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -251,7 +251,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: AddPackage
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
@@ -289,7 +289,7 @@ items:
   source:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsAssemblyDefined
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs

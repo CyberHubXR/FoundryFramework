@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: State
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UncompletedRequiredTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UncompletedOptionalTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Completed
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs

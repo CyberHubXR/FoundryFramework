@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialHandPoseAnimator
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: defaultCurve
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: currentPose
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -244,7 +244,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: maintainPose
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -273,7 +273,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetPose
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -317,7 +317,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ClearPose
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -343,7 +343,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: AddToQueue
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -383,7 +383,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTargetPose
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs
@@ -414,7 +414,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHandPoseAnimator.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsAnimating
     path: ../Interaction/Hand/SpatialHandPoseAnimator.cs

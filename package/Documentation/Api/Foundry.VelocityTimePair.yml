@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: VelocityTimePair
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: time
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: velocity
     path: ../Interaction/Hand/HandVelocityTracker.cs

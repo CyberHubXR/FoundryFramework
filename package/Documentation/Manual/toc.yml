@@ -18,12 +18,23 @@ items:
           items:
             - name: Button
               href: GettingStarted/Samples/Gadgets/Button.md
+            - name: Door
+              href: GettingStarted/Samples/Gadgets/Door.md
+            - name: Lever
+              href: GettingStarted/Samples/Gadgets/Lever.md
+            - name: Slider
+              href: GettingStarted/Samples/Gadgets/Slider.md
   - name: Interaction
     href: Interaction/Interaction.md
     items:
       - name: Spatial Button
         href: Interaction/SpatialButton.md
-      
+      - name: Spatial Door
+        href: Interaction/SpatialDoor.md
+      - name: Spatial Lever
+        href: Interaction/SpatialLever.md
+      - name: Spatial Slider
+        href: Interaction/SpatialSlider.md
   - name: Networking
     href: Networking/Networking.md
     items:

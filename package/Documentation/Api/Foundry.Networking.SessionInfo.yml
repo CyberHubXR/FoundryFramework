@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SessionInfo
     path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: sessionName
     path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: sessionType
     path: ../Networking/Scripts/Services/Definition/SessionInfo.cs

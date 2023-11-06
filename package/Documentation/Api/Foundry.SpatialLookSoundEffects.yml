@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialLookSoundEffects
     path: ../Interaction/Look/SpatialLookSoundEffects.cs
@@ -165,7 +165,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: spatialLookable
     path: ../Interaction/Look/SpatialLookSoundEffects.cs
@@ -192,7 +192,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: audioSource
     path: ../Interaction/Look/SpatialLookSoundEffects.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: lookStartSound
     path: ../Interaction/Look/SpatialLookSoundEffects.cs
@@ -246,7 +246,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: lookStopSound
     path: ../Interaction/Look/SpatialLookSoundEffects.cs
@@ -273,7 +273,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookSoundEffects.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: lookStaySound
     path: ../Interaction/Look/SpatialLookSoundEffects.cs

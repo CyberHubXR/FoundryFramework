@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlacePointNameType
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: name
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: tag
     path: ../Interaction/PlacePoint/PlacePoint.cs

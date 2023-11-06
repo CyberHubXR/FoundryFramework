@@ -32,7 +32,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialLookable
     path: ../Interaction/Look/SpatialLookable.cs
@@ -177,7 +177,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: activationDelay
     path: ../Interaction/Look/SpatialLookable.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: deactivationDelay
     path: ../Interaction/Look/SpatialLookable.cs
@@ -231,7 +231,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnActivate
     path: ../Interaction/Look/SpatialLookable.cs
@@ -270,7 +270,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnDeactivate
     path: ../Interaction/Look/SpatialLookable.cs
@@ -309,7 +309,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnStartLook
     path: ../Interaction/Look/SpatialLookable.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnStopLook
     path: ../Interaction/Look/SpatialLookable.cs
@@ -387,7 +387,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnLookStay
     path: ../Interaction/Look/SpatialLookable.cs
@@ -426,7 +426,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Lookers
     path: ../Interaction/Look/SpatialLookable.cs
@@ -455,7 +455,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: LookerCount
     path: ../Interaction/Look/SpatialLookable.cs
@@ -484,7 +484,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: lookTriggerPercent
     path: ../Interaction/Look/SpatialLookable.cs
@@ -513,7 +513,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: isLooking
     path: ../Interaction/Look/SpatialLookable.cs
@@ -542,7 +542,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: isLookStay
     path: ../Interaction/Look/SpatialLookable.cs
@@ -571,7 +571,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: isActivated
     path: ../Interaction/Look/SpatialLookable.cs
@@ -600,7 +600,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartLook
     path: ../Interaction/Look/SpatialLookable.cs
@@ -631,7 +631,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopLook
     path: ../Interaction/Look/SpatialLookable.cs
@@ -660,7 +660,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: LookStay
     path: ../Interaction/Look/SpatialLookable.cs
@@ -689,7 +689,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLookable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateLookState
     path: ../Interaction/Look/SpatialLookable.cs

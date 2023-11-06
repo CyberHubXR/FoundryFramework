@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Avatar
     path: ../Avatar/Scripts/Avatar.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: trackingMode
     path: ../Avatar/Scripts/Avatar.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: player
     path: ../Avatar/Scripts/Avatar.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Awake
     path: ../Avatar/Scripts/Avatar.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Avatar/Scripts/Avatar.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetTrackingMode
     path: ../Avatar/Scripts/Avatar.cs
@@ -303,7 +303,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetVirtualVelocity
     path: ../Avatar/Scripts/Avatar.cs

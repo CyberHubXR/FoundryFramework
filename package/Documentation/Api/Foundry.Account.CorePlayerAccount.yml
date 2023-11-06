@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: CorePlayerAccount
     path: ../Account/Scripts/CorePlayerAccount.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: spawnBaseAvatar
     path: ../Account/Scripts/CorePlayerAccount.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: username
     path: ../Account/Scripts/CorePlayerAccount.cs
@@ -230,7 +230,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: avatarIndex
     path: ../Account/Scripts/CorePlayerAccount.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: avatarHolder
     path: ../Account/Scripts/CorePlayerAccount.cs
@@ -298,7 +298,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterProperties
     path: ../Account/Scripts/CorePlayerAccount.cs
@@ -334,7 +334,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: InitializeAccount
     path: ../Account/Scripts/CorePlayerAccount.cs
@@ -362,7 +362,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Account/Scripts/CorePlayerAccount.cs

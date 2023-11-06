@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryDeserializer
     path: ../Serialization/FoundrySerializer.cs
@@ -59,7 +59,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: stream
     path: ../Serialization/FoundrySerializer.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: .ctor
     path: ../Serialization/FoundrySerializer.cs
@@ -122,7 +122,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartDebugDump
     path: ../Serialization/FoundrySerializer.cs
@@ -148,7 +148,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetDebugRegion
     path: ../Serialization/FoundrySerializer.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Dispose
     path: ../Serialization/FoundrySerializer.cs
@@ -209,7 +209,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Deserialize
     path: ../Serialization/FoundrySerializer.cs
@@ -243,7 +243,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: DeserializeBuffer
     path: ../Serialization/FoundrySerializer.cs

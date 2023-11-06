@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Threading/Scripts/AsyncExtensions.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: AsyncExtensions
     path: ../Threading/Scripts/AsyncExtensions.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: package/Threading/Scripts/AsyncExtensions.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: AsTask
     path: ../Threading/Scripts/AsyncExtensions.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: package/Threading/Scripts/AsyncExtensions.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: AsTaskWithProgress
     path: ../Threading/Scripts/AsyncExtensions.cs

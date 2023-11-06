@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/BodyColorRandomiser.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: BodyColorRandomiser
     path: ../Avatar/Scripts/BodyColorRandomiser.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/BodyColorRandomiser.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: bodyColorRenderer
     path: ../Avatar/Scripts/BodyColorRandomiser.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/BodyColorRandomiser.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: _bodyColor
     path: ../Avatar/Scripts/BodyColorRandomiser.cs
@@ -226,7 +226,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/BodyColorRandomiser.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: bodyColor
     path: ../Avatar/Scripts/BodyColorRandomiser.cs
@@ -255,7 +255,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/BodyColorRandomiser.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Avatar/Scripts/BodyColorRandomiser.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/BodyColorRandomiser.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterProperties
     path: ../Avatar/Scripts/BodyColorRandomiser.cs

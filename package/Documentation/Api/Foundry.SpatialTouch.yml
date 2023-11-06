@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialTouch
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -181,7 +181,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: currentTouchables
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -208,7 +208,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialHand
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -245,7 +245,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -271,7 +271,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnTriggerEnter
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -300,7 +300,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnTriggerExit
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -329,7 +329,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: FixedUpdate
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -355,7 +355,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartTouch
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -384,7 +384,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopTouch
     path: ../Interaction/Hand/SpatialTouch.cs
@@ -413,7 +413,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialTouch.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StayTouchUpdate
     path: ../Interaction/Hand/SpatialTouch.cs

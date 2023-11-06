@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableAnimation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialTouchableAnimation
     path: ../Interaction/Touch/SpatialTouchableAnimation.cs
@@ -230,7 +230,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableAnimation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: spatialTouchable
     path: ../Interaction/Touch/SpatialTouchableAnimation.cs
@@ -269,7 +269,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableAnimation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnEnable
     path: ../Interaction/Touch/SpatialTouchableAnimation.cs
@@ -297,7 +297,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableAnimation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnDisable
     path: ../Interaction/Touch/SpatialTouchableAnimation.cs
@@ -325,7 +325,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableAnimation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnTouchStart
     path: ../Interaction/Touch/SpatialTouchableAnimation.cs
@@ -359,7 +359,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableAnimation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnTouchStop
     path: ../Interaction/Touch/SpatialTouchableAnimation.cs
@@ -393,7 +393,7 @@ items:
   source:
     remote:
       path: package/Interaction/Touch/SpatialTouchableAnimation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnStay
     path: ../Interaction/Touch/SpatialTouchableAnimation.cs

@@ -38,7 +38,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkManager
     path: ../Networking/Scripts/NetworkManager.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: instance
     path: ../Networking/Scripts/NetworkManager.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: autoStart
     path: ../Networking/Scripts/NetworkManager.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: roomKey
     path: ../Networking/Scripts/NetworkManager.cs
@@ -264,7 +264,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: playerPrefab
     path: ../Networking/Scripts/NetworkManager.cs
@@ -291,7 +291,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: networkMode
     path: ../Networking/Scripts/NetworkManager.cs
@@ -318,7 +318,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpawnMethod
     path: ../Networking/Scripts/NetworkManager.cs
@@ -345,7 +345,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: spawnPoints
     path: ../Networking/Scripts/NetworkManager.cs
@@ -372,7 +372,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnSessionConnected
     path: ../Networking/Scripts/NetworkManager.cs
@@ -399,7 +399,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: localPlayer
     path: ../Networking/Scripts/NetworkManager.cs
@@ -436,7 +436,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpawnedPlayers
     path: ../Networking/Scripts/NetworkManager.cs
@@ -463,7 +463,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlayerJoined
     path: ../Networking/Scripts/NetworkManager.cs
@@ -495,7 +495,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlayerLeft
     path: ../Networking/Scripts/NetworkManager.cs
@@ -527,7 +527,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RoomName
     path: ../Networking/Scripts/NetworkManager.cs
@@ -555,7 +555,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartSession
     path: ../Networking/Scripts/NetworkManager.cs
@@ -584,7 +584,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopSession
     path: ../Networking/Scripts/NetworkManager.cs
@@ -610,7 +610,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Instantiate
     path: ../Networking/Scripts/NetworkManager.cs
@@ -645,7 +645,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Despawn
     path: ../Networking/Scripts/NetworkManager.cs
@@ -674,7 +674,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: BindSceneObject
     path: ../Networking/Scripts/NetworkManager.cs
@@ -703,7 +703,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterObject
     path: ../Networking/Scripts/NetworkManager.cs
@@ -735,7 +735,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UnregisterObject
     path: ../Networking/Scripts/NetworkManager.cs
@@ -767,7 +767,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterUnloaded
     path: ../Networking/Scripts/NetworkManager.cs
@@ -796,7 +796,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterLoaded
     path: ../Networking/Scripts/NetworkManager.cs
@@ -825,7 +825,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetObjectById
     path: ../Networking/Scripts/NetworkManager.cs

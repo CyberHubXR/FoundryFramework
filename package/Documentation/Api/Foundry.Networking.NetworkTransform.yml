@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkTransform
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
@@ -185,7 +185,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: props
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
@@ -212,7 +212,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: lerpObject
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
@@ -239,7 +239,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: nativeScript
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: api
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
@@ -341,7 +341,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Teleport
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
@@ -372,7 +372,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs

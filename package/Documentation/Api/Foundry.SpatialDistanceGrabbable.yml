@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialDistanceGrabbable
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
@@ -178,7 +178,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: triggerGrabbableHighlight
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPull
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
@@ -232,7 +232,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartTargeting
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopTargeting
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
@@ -286,7 +286,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetTarget
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbable.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: CancelTarget
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbable.cs

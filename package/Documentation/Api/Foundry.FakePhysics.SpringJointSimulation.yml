@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpringJointSimulation
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: CalculatePositionSpring
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs

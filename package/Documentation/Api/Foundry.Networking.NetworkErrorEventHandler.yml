@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkErrorEventHandler
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs

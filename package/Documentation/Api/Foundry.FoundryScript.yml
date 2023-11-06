@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Scripts/FoundryScript.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryScript
     path: ../Scripts/FoundryScript.cs

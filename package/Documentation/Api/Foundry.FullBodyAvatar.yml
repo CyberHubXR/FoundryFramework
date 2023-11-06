@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: FullBodyAvatar
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ik
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: avatarHeight
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -251,7 +251,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: avatarHolder
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -278,7 +278,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: animator
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -305,7 +305,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -333,7 +333,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetAnimatorAvatar
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -362,7 +362,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: CalibrateRig
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -391,7 +391,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetTrackingMode
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -422,7 +422,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateConstraint
     path: ../Avatar/Scripts/FullBodyAvatar.cs
@@ -456,7 +456,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetVirtualVelocity
     path: ../Avatar/Scripts/FullBodyAvatar.cs

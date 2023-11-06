@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: MovementSettings
     path: ../Player/Scripts/Player.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: speed
     path: ../Player/Scripts/Player.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: sprintSpeed
     path: ../Player/Scripts/Player.cs
@@ -115,7 +115,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: downforce
     path: ../Player/Scripts/Player.cs
@@ -154,7 +154,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: headPadding
     path: ../Player/Scripts/Player.cs

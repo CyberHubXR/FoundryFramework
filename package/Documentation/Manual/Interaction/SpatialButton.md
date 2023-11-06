@@ -17,7 +17,9 @@ Then when the button is pressed, the `StartButtonPressed` event will be called, 
 
 You can also directly query the `ButtonPressValue` property to see how much the button is currently pressed.
 
-This script becomes networked in the presence of a NetworkObject component on the same object or on a parent, events will also be sent over the network.
+## Networking 
+
+This script becomes networked in the presence of a @"Foundry.Networking.NetworkObject" component on the same object or on a parent, events will also be sent over the network.
 
 ## Examples
-[Button Gadget](/Manual/Samples/Gadgets/Button.md)
+[Button Gadget](/Manual/GettingStarted/Samples/Gadgets/Button.md)

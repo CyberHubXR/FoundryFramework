@@ -37,7 +37,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -182,7 +182,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: teleportPointOnly
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -221,7 +221,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: cancelTeleportLayers
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -260,7 +260,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: teleportLayers
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -299,7 +299,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: velocity
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -336,7 +336,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: gravity
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -363,7 +363,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: step
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -400,7 +400,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: maxRange
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -427,7 +427,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: maxAngle
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -454,7 +454,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: reticle
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -493,7 +493,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: line
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -520,7 +520,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: autoToggleLine
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -547,7 +547,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: validColor
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -574,7 +574,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: invalidColor
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -601,7 +601,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: queryTriggers
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -628,7 +628,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ShowTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -667,7 +667,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: HideTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -694,7 +694,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnValidTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -721,7 +721,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnInvalidTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -748,7 +748,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ActivateRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -776,7 +776,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: DeactivateRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -804,7 +804,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
@@ -832,7 +832,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: TryTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs

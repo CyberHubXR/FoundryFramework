@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkVoiceOutput.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkVoiceOutput
     path: ../Networking/Scripts/MappedComponents/NetworkVoiceOutput.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkVoiceOutput.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: nativeScript
     path: ../Networking/Scripts/MappedComponents/NetworkVoiceOutput.cs

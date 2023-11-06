@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: EditorUIUtils
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetBorderRadius
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetPadding
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetMargin
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
@@ -157,7 +157,7 @@ items:
   source:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetBorderWidth
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
@@ -191,7 +191,7 @@ items:
   source:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetBorderColor
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs

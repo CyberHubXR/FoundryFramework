@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: IModuleSetupTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
@@ -46,7 +46,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTaskState
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
@@ -77,7 +77,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ModuleName
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
@@ -137,7 +137,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: ModuleSource
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs

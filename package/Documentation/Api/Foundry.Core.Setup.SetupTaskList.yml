@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetupTaskList
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: name
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: description
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: tasks
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -142,7 +142,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: .ctor
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Add
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs

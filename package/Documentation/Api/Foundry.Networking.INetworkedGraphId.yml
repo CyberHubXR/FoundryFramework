@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: INetworkedGraphId
     path: ../Networking/Scripts/NetworkObject.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: Value
     path: ../Networking/Scripts/NetworkObject.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
-      branch: main
+      branch: docs/interaction-documentation
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnIdAssigned
     path: ../Networking/Scripts/NetworkObject.cs
