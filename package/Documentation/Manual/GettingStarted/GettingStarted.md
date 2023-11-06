@@ -7,7 +7,7 @@ Getting started with foundry is super simple, we install a compatible unity vers
 We'll install other dependencies later using the Foundry setup wizard.
 
 ## Installing Foundry
-Theres a step before installing we need to do.
+There's a step before installing we need to do.
 
 Head over to your project settings and find the package manager tab, Then add the following name, url and scope(s)  to the package sources
 

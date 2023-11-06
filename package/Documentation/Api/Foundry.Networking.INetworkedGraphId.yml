@@ -21,7 +21,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: INetworkedGraphId
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -51,7 +51,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Value
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -80,7 +80,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnIdAssigned
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

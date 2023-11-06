@@ -21,7 +21,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: DisconnectBehaviour
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -46,7 +46,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: TransferOwnership
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -74,7 +74,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Destroy
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

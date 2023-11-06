@@ -4,13 +4,26 @@ items:
   href: index.md
   items:
   - name: Getting Started
-    href: GettingStarted.md
-  - name: Samples
-    href: Samples/Samples.md
-  - name: Making a new scene
-    href: MakingANewScene.md
-  - name: How the player works
-    href: HowThePlayerWorks.md
+    href: GettingStarted/GettingStarted.md
+    items:
+    - name: Making a new scene
+      href: GettingStarted/MakingANewScene.md
+    - name: How the player works
+      href: GettingStarted/HowThePlayerWorks.md
+    - name: Samples
+      href: GettingStarted/Samples/Samples.md
+      items:
+        - name: Gadgets
+          href: GettingStarted/Samples/Gadgets/Gadgets.md
+          items:
+            - name: Button
+              href: GettingStarted/Samples/Gadgets/Button.md
+  - name: Interaction
+    href: Interaction/Interaction.md
+    items:
+      - name: Spatial Button
+        href: Interaction/SpatialButton.md
+      
   - name: Networking
     href: Networking/Networking.md
     items:

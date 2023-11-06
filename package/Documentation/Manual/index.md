@@ -1,3 +1,3 @@
 # Foundry Core Manual
 
-[Getting Started](GettingStarted.md)
+[Getting Started](GettingStarted/GettingStarted.md)

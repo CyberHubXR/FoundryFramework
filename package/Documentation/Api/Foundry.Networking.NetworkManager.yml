@@ -614,7 +614,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Instantiate
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 223
+    startLine: 226
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -649,7 +649,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Despawn
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 238
+    startLine: 241
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -678,7 +678,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: BindSceneObject
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 243
+    startLine: 246
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -707,7 +707,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterObject
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 255
+    startLine: 258
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -739,7 +739,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: UnregisterObject
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 271
+    startLine: 274
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -771,7 +771,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterUnloaded
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 285
+    startLine: 288
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -800,7 +800,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterLoaded
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 291
+    startLine: 294
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -829,7 +829,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetObjectById
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 308
+    startLine: 311
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

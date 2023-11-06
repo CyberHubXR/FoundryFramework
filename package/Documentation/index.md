@@ -22,6 +22,4 @@ Foundry, which can be installed from the package manager as well.
 Foundry is still in beta and under active development, as such breaking changes will occur rather often until we reach a stable release.
 
 ## Reference
-[Getting Started](Manual/GettingStarted.md)<br/>
-[Making a New Scene](Manual/MakingANewScene.md)<br/>
-[How The Player Works](Manual/HowThePlayerWorks.md)
+[Getting Started](Manual/GettingStarted/GettingStarted.md)<br/>

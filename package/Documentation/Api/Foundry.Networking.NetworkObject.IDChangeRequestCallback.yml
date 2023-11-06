@@ -19,7 +19,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: IDChangeRequestCallback
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 110
+    startLine: 111
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

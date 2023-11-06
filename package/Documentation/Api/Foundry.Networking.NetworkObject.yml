@@ -34,7 +34,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkObject
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: nativeScript
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -216,7 +216,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: disconnectBehaviour
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -255,7 +255,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: allowOwnershipTransfer
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 51
+    startLine: 52
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -284,7 +284,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnIDChanged
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -313,7 +313,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkedGraphId
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 61
+    startLine: 62
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -344,7 +344,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkProvider
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -375,7 +375,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsOwner
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 91
+    startLine: 92
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -406,7 +406,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: children
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 123
+    startLine: 124
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -445,7 +445,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Parent
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 129
+    startLine: 130
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -484,7 +484,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkComponents
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 135
+    startLine: 136
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -523,7 +523,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkProperties
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 138
+    startLine: 139
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -552,7 +552,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: guid
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 152
+    startLine: 153
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -591,7 +591,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetVerifyIDChangeCallback
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 380
+    startLine: 405
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -626,7 +626,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: VerifyIDChangeRequest
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 385
+    startLine: 410
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -662,7 +662,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: RequestOwnership
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 395
+    startLine: 420
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

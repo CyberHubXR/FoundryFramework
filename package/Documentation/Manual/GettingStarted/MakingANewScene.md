@@ -30,7 +30,7 @@ replace it with a FoundryUIEventSystem prefab
 
 2. Experience Scene
 
-For networked scenes refer to the [networking docs on setting up a network manager](Networking/Networking.md) for a non 
+For networked scenes refer to the [networking docs on setting up a network manager](../Networking/Networking.md) for a non 
 networked scene just add a OfflinePlayer prefab and you're set (we don't give offline enough love, so the prefab might 
 break between versions as we change stuff. Please tell us when it does! The eventual plan is to offer a "placeholder" 
 networking system that's actually just a localhost scene, but that's not ready yet.)

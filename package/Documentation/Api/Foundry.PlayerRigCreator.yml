@@ -282,7 +282,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Player/Scripts/PlayerRigCreator.cs
-    startLine: 59
+    startLine: 61
   assemblies:
   - Foundry.Core
   namespace: Foundry
