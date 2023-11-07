@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointSoundEffects.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlacePointSoundEffects
     path: ../Interaction/PlacePoint/PlacePointSoundEffects.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointSoundEffects.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placePoint
     path: ../Interaction/PlacePoint/PlacePointSoundEffects.cs
@@ -193,7 +193,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointSoundEffects.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: audioSource
     path: ../Interaction/PlacePoint/PlacePointSoundEffects.cs
@@ -220,7 +220,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointSoundEffects.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightSound
     path: ../Interaction/PlacePoint/PlacePointSoundEffects.cs
@@ -247,7 +247,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointSoundEffects.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: unhighlightSound
     path: ../Interaction/PlacePoint/PlacePointSoundEffects.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointSoundEffects.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placeSound
     path: ../Interaction/PlacePoint/PlacePointSoundEffects.cs
@@ -301,7 +301,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointSoundEffects.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: removeSound
     path: ../Interaction/PlacePoint/PlacePointSoundEffects.cs

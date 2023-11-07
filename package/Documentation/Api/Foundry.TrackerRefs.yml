@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerRefs
     path: ../Player/Scripts/Player.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: head
     path: ../Player/Scripts/Player.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftHand
     path: ../Player/Scripts/Player.cs
@@ -120,7 +120,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightHand
     path: ../Player/Scripts/Player.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: waist
     path: ../Player/Scripts/Player.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftFoot
     path: ../Player/Scripts/Player.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightFoot
     path: ../Player/Scripts/Player.cs

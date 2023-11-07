@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MenuPlayer.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: MenuPlayer
     path: ../Player/Scripts/MenuPlayer.cs
@@ -162,7 +162,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MenuPlayer.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftHand
     path: ../Player/Scripts/MenuPlayer.cs
@@ -189,7 +189,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MenuPlayer.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightHand
     path: ../Player/Scripts/MenuPlayer.cs

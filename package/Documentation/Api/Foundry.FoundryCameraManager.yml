@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/FoundryCameraManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryCameraManager
     path: ../Player/Scripts/Services/Implementation/FoundryCameraManager.cs
@@ -53,7 +53,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/FoundryCameraManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: MainCamera
     path: ../Player/Scripts/Services/Implementation/FoundryCameraManager.cs

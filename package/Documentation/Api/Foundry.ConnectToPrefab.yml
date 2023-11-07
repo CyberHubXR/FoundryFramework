@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ConnectToPrefab
     path: ../Scene/Materials/ConnectToPrefab.cs
@@ -163,7 +163,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Prefab
     path: ../Scene/Materials/ConnectToPrefab.cs
@@ -190,7 +190,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ConnectToList
     path: ../Scene/Materials/ConnectToPrefab.cs
@@ -217,7 +217,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Connect
     path: ../Scene/Materials/ConnectToPrefab.cs

@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportRaycasterSounds
     path: ../Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
@@ -166,7 +166,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: raycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
@@ -193,7 +193,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: audioSource
     path: ../Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
@@ -220,7 +220,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: validTeleportSound
     path: ../Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
@@ -247,7 +247,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: invalidTeleportSound
     path: ../Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: showTeleportSound
     path: ../Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
@@ -301,7 +301,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: hideTeleportSound
     path: ../Locomotion/Teleport/Scripts/TeleportRaycasterSounds.cs

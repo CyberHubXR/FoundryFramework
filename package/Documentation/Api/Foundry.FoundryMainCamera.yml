@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Rendering/Scripts/FoundryMainCamera.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryMainCamera
     path: ../Rendering/Scripts/FoundryMainCamera.cs

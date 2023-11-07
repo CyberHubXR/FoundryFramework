@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ModuleDefinition.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IModuleDefinition
     path: ../Editor/FoundryConfig/ModuleDefinition.cs
@@ -44,7 +44,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ModuleDefinition.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ModuleName
     path: ../Editor/FoundryConfig/ModuleDefinition.cs
@@ -74,7 +74,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ModuleDefinition.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetProvidedServices
     path: ../Editor/FoundryConfig/ModuleDefinition.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ModuleDefinition.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetUsedService
     path: ../Editor/FoundryConfig/ModuleDefinition.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: package/Editor/FoundryConfig/ModuleDefinition.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetModuleConfig
     path: ../Editor/FoundryConfig/ModuleDefinition.cs

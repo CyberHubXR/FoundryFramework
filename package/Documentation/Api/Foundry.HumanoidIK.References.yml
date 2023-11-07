@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: References
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: head
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftHand
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightHand
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: waist
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftFoot
     path: ../Avatar/Scripts/HumanoidIK.cs
@@ -198,7 +198,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightFoot
     path: ../Avatar/Scripts/HumanoidIK.cs

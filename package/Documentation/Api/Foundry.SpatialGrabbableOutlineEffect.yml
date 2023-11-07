@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialGrabbableOutlineEffect
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -191,7 +191,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: startHighlightColor
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: endHighlightColor
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -245,7 +245,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightColorCurve
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -272,7 +272,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightWidth
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -299,7 +299,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightWidthCurve
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -326,7 +326,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightTime
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -353,7 +353,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: unhighlightTime
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -380,7 +380,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -406,7 +406,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnEnable
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -434,7 +434,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Update
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -462,7 +462,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: DEBUG_HIGHLIGHT
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
@@ -500,7 +500,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: DEBUG_UNHIGHLIGHT
     path: ../Interaction/Grabbable/SpatialGrabbableOutlineEffect.cs

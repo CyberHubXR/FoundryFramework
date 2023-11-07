@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/FoundryUI.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryUI
     path: ../Input/Common/Scripts/FoundryUI.cs

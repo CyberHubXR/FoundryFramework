@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Urgency
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Required
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Suggested
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs

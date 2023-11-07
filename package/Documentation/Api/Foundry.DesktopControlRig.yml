@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: DesktopControlRig
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: neckPivot
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: cameraHolder
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -241,7 +241,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: reachTarget
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -268,7 +268,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: cameraMode
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -295,7 +295,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Update
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -321,7 +321,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetCameraMode
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -350,7 +350,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsReaching
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -378,7 +378,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsGrabbing
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -406,7 +406,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerTransform
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -440,7 +440,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTrackingMode
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -471,7 +471,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTrackers
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -508,7 +508,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerVelocity
     path: ../Player/Scripts/DesktopControlRig.cs
@@ -539,7 +539,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/DesktopControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerAngularVelocity
     path: ../Player/Scripts/DesktopControlRig.cs

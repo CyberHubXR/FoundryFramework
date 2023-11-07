@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Avatar/Scripts/AvatarHandScale.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: AvatarHandScale
     path: ../Avatar/Scripts/AvatarHandScale.cs

@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: AccountDisplay
     path: ../Account/Scripts/AccountDisplay.cs
@@ -174,7 +174,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: usernameDisplay
     path: ../Account/Scripts/AccountDisplay.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: head
     path: ../Account/Scripts/AccountDisplay.cs
@@ -228,7 +228,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: usernameCanvas
     path: ../Account/Scripts/AccountDisplay.cs
@@ -255,7 +255,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: billboardText
     path: ../Account/Scripts/AccountDisplay.cs
@@ -282,7 +282,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Account/Scripts/AccountDisplay.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetText
     path: ../Account/Scripts/AccountDisplay.cs

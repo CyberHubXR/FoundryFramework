@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackingMode
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnePoint
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ThreePoint
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SixPoint
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs

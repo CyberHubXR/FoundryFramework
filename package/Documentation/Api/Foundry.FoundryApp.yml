@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryApp
     path: ../Application/Scripts/FoundryApp.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: AddService
     path: ../Application/Scripts/FoundryApp.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetService
     path: ../Application/Scripts/FoundryApp.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TryGetService
     path: ../Application/Scripts/FoundryApp.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: AddService
     path: ../Application/Scripts/FoundryApp.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: AddService
     path: ../Application/Scripts/FoundryApp.cs
@@ -250,7 +250,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetService
     path: ../Application/Scripts/FoundryApp.cs
@@ -287,7 +287,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TryGetService
     path: ../Application/Scripts/FoundryApp.cs
@@ -327,7 +327,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetConfig
     path: ../Application/Scripts/FoundryApp.cs
@@ -364,7 +364,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Services
     path: ../Application/Scripts/FoundryApp.cs

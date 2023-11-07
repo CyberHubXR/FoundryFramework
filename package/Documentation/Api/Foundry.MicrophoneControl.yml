@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: MicrophoneControl
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -179,7 +179,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: speakerSource
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -206,7 +206,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: micIcon
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -233,7 +233,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: mutedIcon
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -260,7 +260,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: unmutedIcon
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -287,7 +287,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: muted
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -314,7 +314,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: mute
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -341,7 +341,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: unmute
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -368,7 +368,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -397,7 +397,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ClickButton
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -423,7 +423,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: MuteMicrophone
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -449,7 +449,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: UnmuteMicrophone
     path: ../Player/Scripts/MicrophoneControl.cs
@@ -475,7 +475,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterProperties
     path: ../Player/Scripts/MicrophoneControl.cs

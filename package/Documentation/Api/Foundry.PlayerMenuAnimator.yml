@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerMenuAnimator
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Instance
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -198,7 +198,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: width
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -225,7 +225,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: height
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: spawnTime
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: visualRoot
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -306,7 +306,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Weight
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -335,7 +335,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ToggleMenu
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -366,7 +366,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnEnable
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs
@@ -392,7 +392,7 @@ items:
   source:
     remote:
       path: package/Input/Common/Scripts/PlayerMenuAnimator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnDisable
     path: ../Input/Common/Scripts/PlayerMenuAnimator.cs

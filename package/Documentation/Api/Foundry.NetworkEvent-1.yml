@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkEvent
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Dirty
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -120,7 +120,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetDirty
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -152,7 +152,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetClean
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -184,7 +184,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Serialize
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -220,7 +220,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Deserialize
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -256,7 +256,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnChanged
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -291,7 +291,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: AddListener
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -326,7 +326,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RemoveListener
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -358,7 +358,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Invoke
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -392,7 +392,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: InvokeLocal
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -426,7 +426,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: InvokeRemote
     path: ../Networking/Scripts/NetworkEvent.cs

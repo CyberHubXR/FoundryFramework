@@ -41,7 +41,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Player
     path: ../Player/Scripts/Player.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: movementEnabled
     path: ../Player/Scripts/Player.cs
@@ -244,7 +244,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: movementSettings
     path: ../Player/Scripts/Player.cs
@@ -271,7 +271,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: leftHand
     path: ../Player/Scripts/Player.cs
@@ -310,7 +310,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: rightHand
     path: ../Player/Scripts/Player.cs
@@ -337,7 +337,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: trackers
     path: ../Player/Scripts/Player.cs
@@ -376,7 +376,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: avatar
     path: ../Player/Scripts/Player.cs
@@ -415,7 +415,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: enableEvents
     path: ../Player/Scripts/Player.cs
@@ -454,7 +454,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: onBeforeTeleport
     path: ../Player/Scripts/Player.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: onAfterTeleport
     path: ../Player/Scripts/Player.cs
@@ -508,7 +508,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterProperties
     path: ../Player/Scripts/Player.cs
@@ -543,7 +543,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Player/Scripts/Player.cs
@@ -572,7 +572,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: BorrowControlRig
     path: ../Player/Scripts/Player.cs
@@ -598,7 +598,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ControlRig
     path: ../Player/Scripts/Player.cs
@@ -632,7 +632,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTrackers
     path: ../Player/Scripts/Player.cs
@@ -658,7 +658,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateColliderSize
     path: ../Player/Scripts/Player.cs
@@ -684,7 +684,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetMovement
     path: ../Player/Scripts/Player.cs
@@ -712,7 +712,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Move
     path: ../Player/Scripts/Player.cs
@@ -746,7 +746,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportRaycaster
     path: ../Player/Scripts/Player.cs
@@ -774,7 +774,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateTeleportRaycaster
     path: ../Player/Scripts/Player.cs
@@ -800,7 +800,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Update
     path: ../Player/Scripts/Player.cs
@@ -826,7 +826,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: LateUpdate
     path: ../Player/Scripts/Player.cs
@@ -852,7 +852,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CancelTeleport
     path: ../Player/Scripts/Player.cs
@@ -883,7 +883,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Teleport
     path: ../Player/Scripts/Player.cs
@@ -915,7 +915,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportLook
     path: ../Player/Scripts/Player.cs
@@ -950,7 +950,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportLook
     path: ../Player/Scripts/Player.cs
@@ -988,7 +988,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Player.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportRaw
     path: ../Player/Scripts/Player.cs

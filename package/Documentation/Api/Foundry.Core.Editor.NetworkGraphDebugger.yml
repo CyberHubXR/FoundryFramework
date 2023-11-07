@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Editor/NetworkGraph/NetworkGraphDebugger.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkGraphDebugger
     path: ../Editor/NetworkGraph/NetworkGraphDebugger.cs

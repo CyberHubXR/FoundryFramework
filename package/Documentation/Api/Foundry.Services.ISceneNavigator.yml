@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ISceneNavigator
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoBackAsync
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoForwardAsync
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -129,7 +129,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoToAsync
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GoToAsync
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanGoBack
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanGoForward
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -269,7 +269,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CurrentScene
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -300,7 +300,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: History
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -331,7 +331,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsNavigating
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -362,7 +362,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationTask
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -393,7 +393,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationCompleted
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -422,7 +422,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationStarted
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs
@@ -455,7 +455,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NavigationStarting
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigator.cs

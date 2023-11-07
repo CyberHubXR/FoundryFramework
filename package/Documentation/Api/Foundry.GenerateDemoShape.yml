@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GenerateDemoShape
     path: ../Scene/Materials/GenerateDemoShape.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: shapes
     path: ../Scene/Materials/GenerateDemoShape.cs
@@ -194,7 +194,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: maxDistance
     path: ../Scene/Materials/GenerateDemoShape.cs
@@ -221,7 +221,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: startScale
     path: ../Scene/Materials/GenerateDemoShape.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: scaleDistanceCurve
     path: ../Scene/Materials/GenerateDemoShape.cs
@@ -275,7 +275,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: scaleHeightDistanceCurve
     path: ../Scene/Materials/GenerateDemoShape.cs
@@ -302,7 +302,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: relativeOffsetCurve
     path: ../Scene/Materials/GenerateDemoShape.cs
@@ -329,7 +329,7 @@ items:
   source:
     remote:
       path: package/Scene/Materials/GenerateDemoShape.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ChangeShape
     path: ../Scene/Materials/GenerateDemoShape.cs

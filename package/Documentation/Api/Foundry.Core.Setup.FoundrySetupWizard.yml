@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundrySetupWizard
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -169,7 +169,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OpenWindow
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CreateGUI
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs

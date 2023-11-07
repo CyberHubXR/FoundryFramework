@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpawnMethod
     path: ../Networking/Scripts/NetworkManager.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FixedPoint
     path: ../Networking/Scripts/NetworkManager.cs
@@ -78,7 +78,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Random
     path: ../Networking/Scripts/NetworkManager.cs

@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetIDDelegate
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs

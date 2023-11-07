@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlacePointTextEvents
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placePoint
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs
@@ -194,7 +194,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightText
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs
@@ -221,7 +221,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placementText
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placeText
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs
@@ -275,7 +275,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: removedText
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs
@@ -302,7 +302,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightingText
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs
@@ -329,7 +329,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePointTextEvents.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: stopHighlightText
     path: ../Interaction/PlacePoint/PlacePointTextEvents.cs

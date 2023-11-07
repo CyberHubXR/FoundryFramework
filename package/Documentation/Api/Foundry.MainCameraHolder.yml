@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Rendering/Scripts/MainCameraHolder.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: MainCameraHolder
     path: ../Rendering/Scripts/MainCameraHolder.cs

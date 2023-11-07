@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TrackerPos
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: translation
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: rotation
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: enabled
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Serialize
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Deserialize
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs

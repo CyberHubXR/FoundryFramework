@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/ControllerConfig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ControllerConfig
     path: ../Player/Scripts/ControllerConfig.cs
@@ -121,7 +121,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/ControllerConfig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: devices
     path: ../Player/Scripts/ControllerConfig.cs
@@ -160,7 +160,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/ControllerConfig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetCurrentDeviceOffsets
     path: ../Player/Scripts/ControllerConfig.cs

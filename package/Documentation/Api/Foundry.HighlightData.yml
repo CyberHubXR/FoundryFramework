@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: HighlightData
     path: ../Interaction/Hand/SpatialHand.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: currentTarget
     path: ../Interaction/Hand/SpatialHand.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: collider
     path: ../Interaction/Hand/SpatialHand.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: closestPoint
     path: ../Interaction/Hand/SpatialHand.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: distance
     path: ../Interaction/Hand/SpatialHand.cs

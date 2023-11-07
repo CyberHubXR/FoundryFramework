@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: package/Authentication/Scripts/CoreAuthentication.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CoreAuthentication
     path: ../Authentication/Scripts/CoreAuthentication.cs
@@ -161,7 +161,7 @@ items:
   source:
     remote:
       path: package/Authentication/Scripts/CoreAuthentication.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Authenticate
     path: ../Authentication/Scripts/CoreAuthentication.cs

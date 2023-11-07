@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerRigCreator
     path: ../Player/Scripts/PlayerRigCreator.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: desktopRig
     path: ../Player/Scripts/PlayerRigCreator.cs
@@ -203,7 +203,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: xrRig
     path: ../Player/Scripts/PlayerRigCreator.cs
@@ -251,7 +251,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: controlMode
     path: ../Player/Scripts/PlayerRigCreator.cs
@@ -278,7 +278,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Player/Scripts/PlayerRigCreator.cs

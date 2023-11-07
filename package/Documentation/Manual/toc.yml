@@ -4,7 +4,7 @@ items:
   href: index.md
   items:
   - name: Getting Started
-    href: GettingStarted/GettingStarted.md
+    href: GettingStarted.md
     items:
     - name: Making a new scene
       href: GettingStarted/MakingANewScene.md
@@ -25,7 +25,7 @@ items:
             - name: Slider
               href: GettingStarted/Samples/Gadgets/Slider.md
   - name: Interaction
-    href: Interaction/Interaction.md
+    href: Interaction.md
     items:
       - name: Spatial Button
         href: Interaction/SpatialButton.md

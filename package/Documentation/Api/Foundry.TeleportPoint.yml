@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TeleportPoint
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: teleportPoint
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -198,7 +198,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: alwaysShow
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -225,7 +225,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: matchPoint
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -252,7 +252,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: matchDirection
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -279,7 +279,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartHighlight
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -306,7 +306,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopHighlight
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -333,7 +333,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -360,7 +360,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Awake
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -386,7 +386,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartHighlighting
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -415,7 +415,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopHighlighting
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
@@ -444,7 +444,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Teleport
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs

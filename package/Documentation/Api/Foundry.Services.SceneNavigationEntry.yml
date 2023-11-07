@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SceneNavigationEntry
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
@@ -56,7 +56,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: BuildIndex
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Name
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs

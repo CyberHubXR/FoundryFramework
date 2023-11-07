@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ServiceConstructor
     path: ../Application/Scripts/FoundryModuleConfig.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/ComponentMapping/MappedProperties.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: MappedPropertyImpl
     path: ../ComponentMapping/MappedProperties.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: package/ComponentMapping/MappedProperties.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: implementationId
     path: ../ComponentMapping/MappedProperties.cs
@@ -94,7 +94,7 @@ items:
   source:
     remote:
       path: package/ComponentMapping/MappedProperties.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: data
     path: ../ComponentMapping/MappedProperties.cs

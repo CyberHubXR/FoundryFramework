@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: package/Config/FoundryCoreConfig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryCoreConfig
     path: ../Config/FoundryCoreConfig.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: package/Config/FoundryCoreConfig.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterServices
     path: ../Config/FoundryCoreConfig.cs

@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkComponent
     path: ../Networking/Scripts/NetworkComponent.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Object
     path: ../Networking/Scripts/NetworkComponent.cs
@@ -214,7 +214,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetworkProvider
     path: ../Networking/Scripts/NetworkComponent.cs
@@ -245,7 +245,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsOwner
     path: ../Networking/Scripts/NetworkComponent.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterProperties
     path: ../Networking/Scripts/NetworkComponent.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Networking/Scripts/NetworkComponent.cs
@@ -339,7 +339,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnDisconnected
     path: ../Networking/Scripts/NetworkComponent.cs
@@ -365,7 +365,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnValidate
     path: ../Networking/Scripts/NetworkComponent.cs

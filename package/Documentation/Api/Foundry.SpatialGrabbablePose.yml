@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbablePose.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialGrabbablePose
     path: ../Interaction/Grabbable/SpatialGrabbablePose.cs
@@ -162,7 +162,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbablePose.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: pose
     path: ../Interaction/Grabbable/SpatialGrabbablePose.cs
@@ -189,7 +189,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbablePose.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetPose
     path: ../Interaction/Grabbable/SpatialGrabbablePose.cs

@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialLook
     path: ../Interaction/Look/SpatialLook.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ViewWidth
     path: ../Interaction/Look/SpatialLook.cs
@@ -207,7 +207,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: maxDistance
     path: ../Interaction/Look/SpatialLook.cs
@@ -234,7 +234,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: layerMask
     path: ../Interaction/Look/SpatialLook.cs
@@ -261,7 +261,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: tickRate
     path: ../Interaction/Look/SpatialLook.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: currentLookable
     path: ../Interaction/Look/SpatialLook.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CheckLook
     path: ../Interaction/Look/SpatialLook.cs
@@ -368,7 +368,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartLook
     path: ../Interaction/Look/SpatialLook.cs
@@ -397,7 +397,7 @@ items:
   source:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: StopLook
     path: ../Interaction/Look/SpatialLook.cs

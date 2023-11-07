@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialDoor
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -205,7 +205,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: closeDoorAutomatically
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorHingeFriction
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -292,7 +292,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorHingeCloseFriction
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -331,7 +331,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorIsLocked
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -370,7 +370,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorMaxAngle
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -418,7 +418,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorMinAngle
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -457,7 +457,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorPivot
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -505,7 +505,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorIsOpen
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -542,7 +542,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: doorOpenAmount
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -579,7 +579,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: StartTouch
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -610,7 +610,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: UnlockDoor
     path: ../Interaction/Grabbable/SpatialDoor.cs
@@ -638,7 +638,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialDoor.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: LockDoor
     path: ../Interaction/Grabbable/SpatialDoor.cs

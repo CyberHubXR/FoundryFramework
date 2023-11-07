@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbableDebugger.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialDistanceGrabbableDebugger
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbableDebugger.cs
@@ -161,7 +161,7 @@ items:
   source:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabbableDebugger.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: grabbable
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabbableDebugger.cs

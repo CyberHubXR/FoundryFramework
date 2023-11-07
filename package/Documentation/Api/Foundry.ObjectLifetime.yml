@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: package/Behavior/Scripts/ObjectLifetime.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ObjectLifetime
     path: ../Behavior/Scripts/ObjectLifetime.cs

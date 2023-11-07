@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: LineAnimation
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs
@@ -167,7 +167,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: lineRenderer
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs
@@ -194,7 +194,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: lineReticle
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs
@@ -221,7 +221,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: activateTime
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: colorCurve
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs
@@ -275,7 +275,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: widthCurve
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs
@@ -302,7 +302,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Activate
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs
@@ -328,7 +328,7 @@ items:
   source:
     remote:
       path: package/Locomotion/Teleport/Scripts/LineAnimation.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Deactivate
     path: ../Locomotion/Teleport/Scripts/LineAnimation.cs

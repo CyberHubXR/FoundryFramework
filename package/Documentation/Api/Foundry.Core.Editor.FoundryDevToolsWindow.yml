@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Editor/DevTools/FoundryDevToolsWindow.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryDevToolsWindow
     path: ../Editor/DevTools/FoundryDevToolsWindow.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: package/Editor/DevTools/FoundryDevToolsWindow.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OpenWindow
     path: ../Editor/DevTools/FoundryDevToolsWindow.cs
@@ -197,7 +197,7 @@ items:
   source:
     remote:
       path: package/Editor/DevTools/FoundryDevToolsWindow.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CreateGUI
     path: ../Editor/DevTools/FoundryDevToolsWindow.cs

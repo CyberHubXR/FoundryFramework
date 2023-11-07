@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: NetEventSource
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Local
     path: ../Networking/Scripts/NetworkEvent.cs
@@ -68,7 +68,7 @@ items:
   source:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Remote
     path: ../Networking/Scripts/NetworkEvent.cs

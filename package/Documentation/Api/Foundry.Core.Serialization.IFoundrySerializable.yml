@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IFoundrySerializable
     path: ../Serialization/FoundrySerializer.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Serialize
     path: ../Serialization/FoundrySerializer.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: package/Serialization/FoundrySerializer.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Deserialize
     path: ../Serialization/FoundrySerializer.cs

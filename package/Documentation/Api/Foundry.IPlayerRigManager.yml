@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IPlayerRigManager
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Rig
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
@@ -80,7 +80,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterRig
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: BorrowPlayerRig
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ReturnPlayerRig
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
@@ -171,7 +171,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerRigCreated
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerRigBorrowed
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
@@ -227,7 +227,7 @@ items:
   source:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlayerRigReturned
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs

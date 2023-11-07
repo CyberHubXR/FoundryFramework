@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: package/DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RenderDebugHUD
     path: ../DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: package/DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: showDebugHUD
     path: ../DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
@@ -191,7 +191,7 @@ items:
   source:
     remote:
       path: package/DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: text
     path: ../DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: package/DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: toggleAction
     path: ../DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
@@ -245,7 +245,7 @@ items:
   source:
     remote:
       path: package/DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: updateRate
     path: ../DesignTools/Runtime/RenderDebugHUD/Scripts/RenderDebugHUD.cs

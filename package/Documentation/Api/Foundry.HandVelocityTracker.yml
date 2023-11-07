@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: HandVelocityTracker
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: m_ThrowVelocityList
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -87,7 +87,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: m_ThrowAngleVelocityList
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -114,7 +114,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ClearThrow
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Disable
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -172,7 +172,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: .ctor
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -204,7 +204,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: UpdateThrowing
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -230,7 +230,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ThrowVelocity
     path: ../Interaction/Hand/HandVelocityTracker.cs
@@ -260,7 +260,7 @@ items:
   source:
     remote:
       path: package/Interaction/Hand/HandVelocityTracker.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ThrowAngularVelocity
     path: ../Interaction/Hand/HandVelocityTracker.cs

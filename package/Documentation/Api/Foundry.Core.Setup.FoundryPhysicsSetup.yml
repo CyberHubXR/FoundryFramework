@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: FoundryPhysicsSetup
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: .ctor
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTaskState
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetTasks
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
@@ -151,7 +151,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ModuleName
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: ModuleSource
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs

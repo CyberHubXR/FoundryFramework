@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableExtensions.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SpatialGrabbableExtensions
     path: ../Interaction/Grabbable/SpatialGrabbableExtensions.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableExtensions.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: HasGrabbable
     path: ../Interaction/Grabbable/SpatialGrabbableExtensions.cs
@@ -96,7 +96,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableExtensions.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: HasGrabbable
     path: ../Interaction/Grabbable/SpatialGrabbableExtensions.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableExtensions.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanGetComponent
     path: ../Interaction/Grabbable/SpatialGrabbableExtensions.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableExtensions.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanGetComponent
     path: ../Interaction/Grabbable/SpatialGrabbableExtensions.cs

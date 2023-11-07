@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlacePoint
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: showPlaceSettings
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -258,7 +258,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: startPlaced
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -297,7 +297,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placedOffset
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -336,7 +336,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placeRadius
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -375,7 +375,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: radiusOffset
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -414,7 +414,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: parentOnPlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -460,7 +460,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: forcePlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -499,7 +499,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: destroyObjectOnPlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -545,7 +545,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: disableGrabOnPlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -584,7 +584,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: disablePlacePointOnPlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -623,7 +623,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: makePlacedKinematic
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -669,7 +669,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placedJointLink
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -708,7 +708,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: jointBreakForce
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -735,7 +735,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: heldPlaceOnly
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -783,7 +783,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: nameCompareType
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -822,7 +822,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placeNames
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -861,7 +861,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: blacklistNames
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -900,7 +900,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: onlyAllows
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -939,7 +939,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: dontAllows
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -978,7 +978,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placeLayers
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1017,7 +1017,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1054,7 +1054,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnRemove
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1081,7 +1081,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnHighlight
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1108,7 +1108,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnStopHighlight
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1135,7 +1135,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnPlaceNetworked
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1174,7 +1174,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnRemoveNetworked
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1201,7 +1201,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: highlightingObj
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1230,7 +1230,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placedObject
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1259,7 +1259,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: lastPlacedObject
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1288,7 +1288,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: removalDistance
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1315,7 +1315,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: lastPlacedTime
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1342,7 +1342,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placePosition
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1369,7 +1369,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: originParent
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1396,7 +1396,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placingFrame
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1423,7 +1423,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: placedObjDetectionMode
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1450,7 +1450,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: RegisterProperties
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1486,7 +1486,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnConnected
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1515,7 +1515,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: PlaceFromNetwork
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1544,7 +1544,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Start
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1570,7 +1570,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnEnable
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1596,7 +1596,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnDisable
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1622,7 +1622,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CheckPlaceObjectLoop
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1650,7 +1650,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: CanPlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1681,7 +1681,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: TryPlace
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1710,7 +1710,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Place
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1739,7 +1739,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Remove
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1768,7 +1768,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: Remove
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1794,7 +1794,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: IsStillOverlapping
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1830,7 +1830,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: SetStartPlaced
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1856,7 +1856,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: GetPlacedObject
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1884,7 +1884,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnRelativeGrabbed
     path: ../Interaction/PlacePoint/PlacePoint.cs
@@ -1915,7 +1915,7 @@ items:
   source:
     remote:
       path: package/Interaction/PlacePoint/PlacePoint.cs
-      branch: docs/interaction-documentation
+      branch: main
       repo: https://github.com/FoundryXR/FoundryCore
     id: OnJointBreak
     path: ../Interaction/PlacePoint/PlacePoint.cs
