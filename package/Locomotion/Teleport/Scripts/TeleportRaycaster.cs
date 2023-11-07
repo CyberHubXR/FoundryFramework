@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Foundry.Networking;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 namespace Foundry
 {
-    public class TeleportRaycaster : MonoBehaviour
+    public class TeleportRaycaster : NetworkComponent
     {
 
         [Header("Teleport settings")]
@@ -44,13 +45,27 @@ namespace Foundry
         Collider[] collidersNonAlloc = new Collider[64];
         TeleportPoint currentTeleportPoint;
         TeleportPoint[] teleportPoints;
+        
 
 
+        private void OnEnable()
+        {
+            if (!NetworkManager.instance)
+                Init();
+        }
 
+        public override void OnConnected()
+        {
+            Init();
+        }
 
-        private void OnEnable() {
-            teleportPoints = FindObjectsOfType<TeleportPoint>();
-            ToggleTeleportPoints(false);
+        private void Init()
+        {
+            if (IsOwner)
+            {
+                teleportPoints = FindObjectsOfType<TeleportPoint>();
+                ToggleTeleportPoints(false);
+            }
             line = GetComponent<LineRenderer>();
             line.enabled = false;
         }
