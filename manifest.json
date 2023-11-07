@@ -2377,10 +2377,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/GettingStarted/GettingStarted.md",
+      "source_relative_path": "Manual/GettingStarted.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/GettingStarted/GettingStarted.html"
+          "relative_path": "Manual/GettingStarted.html"
         }
       },
       "version": ""
@@ -2467,10 +2467,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/Interaction/Interaction.md",
+      "source_relative_path": "Manual/Interaction.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/Interaction/Interaction.html"
+          "relative_path": "Manual/Interaction.html"
         }
       },
       "version": ""
