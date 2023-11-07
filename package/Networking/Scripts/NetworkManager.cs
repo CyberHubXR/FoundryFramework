@@ -219,7 +219,8 @@ namespace Foundry.Networking
         {
             if (networkProvider.IsSessionConnected)
             {
-                networkProvider.Graph.OnGraphChanged -= OnGraphChanged;
+                if(networkProvider.Graph != null)
+                    networkProvider.Graph.OnGraphChanged -= OnGraphChanged;
                 networkProvider.StopSessionAsync();
             }
         }

@@ -7,6 +7,7 @@ using Foundry.Networking;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEngine.UIElements;
 # endif
 
 namespace Foundry
@@ -190,26 +191,36 @@ namespace Foundry
 
     #if UNITY_EDITOR
     [CustomEditor(typeof(SpatialSlider))]
-    public class SpatialSliderEditor : Editor
+    public class SpatialSliderEditor : FoundryScriptEditor
     {
+        public override VisualElement CreateInspectorGUI()
+        {
+            var element = base.CreateInspectorGUI();
+            element.Add(new IMGUIContainer(Draw));
+            return element;
+        }
+
         public override void OnInspectorGUI()
         {
-            GUI.DrawTexture(GUILayoutUtility.GetRect(100, 100, 60, 60), Resources.Load<Texture2D>("FoundryHeader"), ScaleMode.ScaleToFit);
+            base.OnInspectorGUI();
+            Draw();
+        }
 
-            DrawPropertiesExcluding(serializedObject, new string[] { "m_Script" });
-            serializedObject.ApplyModifiedProperties();
-
+        private void Draw()
+        {
             SpatialSlider spatialSlider = (SpatialSlider)target;
 
-            if(spatialSlider.sliderIncrementEvents.Count != spatialSlider.amountOfIncrements + 1 && !spatialSlider.smoothSlider)
+            if (spatialSlider.sliderIncrementEvents.Count != spatialSlider.amountOfIncrements + 1 &&
+                !spatialSlider.smoothSlider)
             {
                 GUIStyle style = new GUIStyle();
                 style.normal.textColor = Color.yellow;
                 GUILayout.Label("Not enough events for amount of increments please add events", style);
-                
-                if (GUILayout.Button("Add Events")) 
+
+                if (GUILayout.Button("Add Events"))
                 {
-                    spatialSlider.sliderIncrementEvents = new List<SpatialSlider.SliderIncrementEvent>(spatialSlider.amountOfIncrements + 1);
+                    spatialSlider.sliderIncrementEvents =
+                        new List<SpatialSlider.SliderIncrementEvent>(spatialSlider.amountOfIncrements + 1);
                 }
             }
         }

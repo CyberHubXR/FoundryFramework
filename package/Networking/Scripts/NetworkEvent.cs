@@ -32,9 +32,28 @@ namespace Foundry
     [Serializable]
     public class NetworkEvent<T> : NetworkEventBase, INetworkProperty
     {
+        private uint _maxQueueLength = 5;
+        
         private Queue<byte[]> _callArgs = new();
         [SerializeField]
         private UnityEvent<NetEventSource, T> _event = new();
+
+        
+        /// <summary>
+        /// The max amount of events that may be queued up between serializations. If this is exceeded, the oldest events will be removed.
+        /// </summary>
+        public uint MaxQueueLength
+        {
+            get => _maxQueueLength;
+            set
+            {
+                _maxQueueLength = value;
+                
+                // Remove the oldest events if we are over the max queue length
+                while (_callArgs.Count > _maxQueueLength)
+                    _callArgs.Dequeue();
+            }
+        }
         
         public bool Dirty =>  _callArgs.Count > 0;
         public void SetDirty()
@@ -87,6 +106,9 @@ namespace Foundry
             FoundrySerializer serializer = new FoundrySerializer(stream);
             serializer.Serialize(arg);
             _callArgs.Enqueue(stream.GetBuffer());
+
+            if (_callArgs.Count > _maxQueueLength)
+                _callArgs.Dequeue();
         }
         
         /// <summary>
