@@ -9,7 +9,7 @@ A networked button implementation, using the foundry touch point system.
 ## Usage
 Add this script to a game object with a collider, move the button top and points to set the how the button is pressed. 
 
-Then add a child object with a collider to represent the pressable part of the button, then set `Button Visual Object` to that object.
+Then add a child object with a collider to represent the depressible part of the button, then set `Button Visual Object` to that object.
 
 To determine which level of pressed counts as a press, set `Press Threshold` to the distance the button must be pressed to count as a press.
 
@@ -22,4 +22,4 @@ You can also directly query the `ButtonPressValue` property to see how much the 
 This script becomes networked in the presence of a @"Foundry.Networking.NetworkObject" component on the same object or on a parent, events will also be sent over the network.
 
 ## Examples
-[Button Gadget](/Manual/GettingStarted/Samples/Gadgets/Button.md)
+[Button Gadget](~/Manual/GettingStarted/Samples/Gadgets/Button.md)
