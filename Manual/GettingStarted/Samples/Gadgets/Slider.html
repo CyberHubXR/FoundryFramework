@@ -2,20 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Foundry Samples | Foundry Core </title>
+      <title>Slider Gadget | Foundry Core </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Foundry Samples | Foundry Core ">
+      <meta name="title" content="Slider Gadget | Foundry Core ">
       
-      <link rel="icon" href="../../Media/foundry_icon.ico">
-      <link rel="stylesheet" href="../../public/docfx.min.css">
-      <link rel="stylesheet" href="../../public/main.css">
-      <meta name="docfx:navrel" content="../../toc.html">
-      <meta name="docfx:tocrel" content="../toc.html">
-      
-      
+      <link rel="icon" href="../../../../Media/foundry_icon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../toc.html">
       
       
-      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/blob/main/package/Documentation/Manual/Samples/Samples.md/#L1">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/blob/main/package/Documentation/Manual/GettingStarted/Samples/Gadgets/Slider.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:downloadPdf" content="Download PDF">
   </head>
 
-  <script type="module" src="./../../public/docfx.min.js"></script>
+  <script type="module" src="./../../../../public/docfx.min.js"></script>
 
   <script>
     const theme = localStorage.getItem('theme') || 'auto'
@@ -42,8 +42,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../../index.html">
-            <img id="logo" class="svg" src="../../Media/foundry_icon.png" alt="Foundry Core">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../Media/foundry_icon.png" alt="Foundry Core">
             Foundry Core
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,32 +80,12 @@
         </div>
 
         <article data-uid="">
-<h1 id="foundry-samples">Foundry Samples</h1>
+<h1 id="slider-gadget">Slider Gadget</h1>
 
-<p>Foundry provides a lot of sample assets to help you get started.</p>
-<h2 id="sample-prefabs">Sample Prefabs</h2>
-<p>At the moment a lot of the core functionality is best accessed by copying and editing the prefabs from here.</p>
-<h3 id="scene-setup">Scene Setup</h3>
-<p>The most important prefabs are the ones in scene setup.</p>
-<p>The Foundry Persistent prefab is the most important, it has the default setup for all the core context needed to run Foundry.</p>
-<p>FoundryUIEventSystem is a UI Event System that works with the foundry input system.</p>
-<p>NetworkManager is an example network manager.</p>
-<h3 id="rigs-and-player">Rigs and Player</h3>
-<p>Rigs and player contain the two main default interaction rigs.</p>
-<p>The XR_MenuPlayer is a simple rig that is designed to be used for login scenes. Depending on the platform it will either use mouse input or provide raycasters in VR.</p>
-<p>The NetworkPlayer is the base rig for both networked and non-networked players. It provides a simple way to move around, interact with objects, and UI.
-It also contains a default player, though this is pending a refactor soon.</p>
-<h3 id="player-utls">Player Utls</h3>
-<p>Player/Utils contains a few prefabs for common player utilities, such as distance grabbing, Microphone Muting, Teleport raycasters, UI raycaster, wrist menus, and more.</p>
-<h2 id="interactables">Interactables</h2>
-<p>Interactables contains a bunch prefabs for common interactables, such as buttons, sliders, and toggles. As well as our touch and place point systems.</p>
-<h2 id="sample-scenes">Sample Scenes</h2>
-<p>Sample scenes provides an example offline and online scene.
-The offline scene is an empty scene with a play button that will load the online scene.
-The online scene is a simple scene with a player prefab and a network manager, and some example objects.</p>
-<p>If you have a network provider set up you should be able to try out the networked scene with a friend!</p>
-<h2 id="sample-materials">Sample Materials</h2>
-<p>The materials needed by the sample scenes</p>
+<p>path: <code>Sample Prefabs/Interactables/Gadgets/Slider</code></p>
+<p><img src="/Media/Manual/Gadgets/SliderGadgetScene.png" alt="Slider Prefab in scene"></p>
+<h2 id="description">Description</h2>
+<p>A prefab showing off how to implement the <a href="../../../Interaction/SpatialSlider.html">Spatial Slider</a> script.</p>
 
 </article>
 

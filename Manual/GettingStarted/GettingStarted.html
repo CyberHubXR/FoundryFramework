@@ -6,16 +6,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Getting Started | Foundry Core ">
       
-      <link rel="icon" href="../Media/foundry_icon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <link rel="icon" href="../../Media/foundry_icon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/blob/main/package/Documentation/Manual/GettingStarted.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/blob/main/package/Documentation/Manual/GettingStarted/GettingStarted.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -30,7 +30,7 @@
       <meta name="loc:downloadPdf" content="Download PDF">
   </head>
 
-  <script type="module" src="./../public/docfx.min.js"></script>
+  <script type="module" src="./../../public/docfx.min.js"></script>
 
   <script>
     const theme = localStorage.getItem('theme') || 'auto'
@@ -42,8 +42,8 @@
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../Media/foundry_icon.png" alt="Foundry Core">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../Media/foundry_icon.png" alt="Foundry Core">
             Foundry Core
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,18 +89,13 @@
 </ul>
 <p>We'll install other dependencies later using the Foundry setup wizard.</p>
 <h2 id="installing-foundry">Installing Foundry</h2>
-<p>Theres a step before installing we need to do.</p>
-<p>Head over to your project settings and find the package manager tab, Then add the following name, url and scope(s)  to the package sources</p>
-<pre><code>Name: Foundry
-Url: http://34.125.193.7:4873/
-Scopes: com.cyberhub
-</code></pre>
-<p>Then head over to the standard package manager, Change the dropdown 'in project' to 'my registries' and add the following packages</p>
-<ul>
-<li>Foundry Core</li>
-<li>Fusion networking for Foundry</li>
-</ul>
-<p>After you have installed these packages, please follow the steps inside the setup wizard to finish the installation. This should pop up automatically but if it doesn't it can be opened from the menus at <code>Foundry -&gt; Setup Wizard</code></p>
+<p>The recommended way to install foundry packages is through importing <a href="https://github.com/orgs/FoundryXR/repositories">our GitHub repos</a>.</p>
+<p>To import foundry core, got to the Unity Package Manager, click the add button from the top left corner, and select &quot;Add package from git URL&quot;, then paste in this:</p>
+<p><code>https://github.com/FoundryXR/FoundryCore?path=package</code></p>
+<p>This can be done for any foundry repo, just replace the url of the package and make sure to keep the <code>?path=package</code> at the end.</p>
+<p>We also need to import a network provider, so repeat the above steps but with this url:</p>
+<p><code>https://github.com/FoundryXR/FusionNetworkProvider?path=package</code></p>
+<p>After you have both those installed, please follow the steps inside the setup wizard to finish the installation. This should pop up automatically but if it doesn't it can be opened from the menus at <code>Foundry -&gt; Setup Wizard</code></p>
 <h1 id="networking">Networking</h1>
 <p>Foundry is a a networked framework at heart, and thus requires a networking solution to be installed, currently our most stable
 module for this is our Fusion Networking for Foundry package. This package is a wrapper around the Fusion networking framework,

@@ -2377,30 +2377,140 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/GettingStarted.md",
+      "source_relative_path": "Manual/GettingStarted/GettingStarted.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/GettingStarted.html"
+          "relative_path": "Manual/GettingStarted/GettingStarted.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/HowThePlayerWorks.md",
+      "source_relative_path": "Manual/GettingStarted/HowThePlayerWorks.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/HowThePlayerWorks.html"
+          "relative_path": "Manual/GettingStarted/HowThePlayerWorks.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/MakingANewScene.md",
+      "source_relative_path": "Manual/GettingStarted/MakingANewScene.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/MakingANewScene.html"
+          "relative_path": "Manual/GettingStarted/MakingANewScene.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Button.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Button.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Door.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Door.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Gadgets.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Gadgets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Lever.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Lever.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Slider.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Slider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted/Samples/Samples.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted/Samples/Samples.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/Interaction.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/Interaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/SpatialButton.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/SpatialButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/SpatialDoor.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/SpatialDoor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/SpatialLever.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/SpatialLever.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/SpatialSlider.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/SpatialSlider.html"
         }
       },
       "version": ""
@@ -2417,10 +2527,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/Networking/MapedComponents.md",
+      "source_relative_path": "Manual/Networking/MappedComponents.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/Networking/MapedComponents.html"
+          "relative_path": "Manual/Networking/MappedComponents.html"
         }
       },
       "version": ""
@@ -2447,16 +2557,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/Samples/Samples.md",
-      "output": {
-        ".html": {
-          "relative_path": "Manual/Samples/Samples.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "Manual/SetupWizard.md",
       "output": {
         ".html": {
@@ -2476,9 +2576,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "Manual/toc.yml",
       "output": {
@@ -2497,6 +2594,186 @@
       "output": {
         "resource": {
           "relative_path": "Media/Manual.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/ButtonGadgetScene.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/ButtonGadgetScene.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/ButtonGadgetScene.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/ButtonGadgetScene.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/DoorGadgetScene.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/DoorGadgetScene.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/DoorGadgetScene.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/DoorGadgetScene.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/LeverGadgetScene.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/LeverGadgetScene.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/LeverGadgetScene.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/LeverGadgetScene.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/SliderGadgetScene.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/SliderGadgetScene.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Gadgets/SliderGadgetScene.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Gadgets/SliderGadgetScene.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialButtonScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialButtonScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialButtonScript.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialButtonScript.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialDoorScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialDoorScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialDoorScript.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialDoorScript.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialLeverScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialLeverScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialLeverScript.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialLeverScript.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialSliderScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialSliderScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialSliderScript.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialSliderScript.png.meta"
         }
       },
       "version": ""

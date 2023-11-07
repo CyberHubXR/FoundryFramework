@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Mapped Components | Foundry Core </title>
+      <title>SpatialSlider | Foundry Core </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Mapped Components | Foundry Core ">
+      <meta name="title" content="SpatialSlider | Foundry Core ">
       
       <link rel="icon" href="../../Media/foundry_icon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
@@ -15,7 +15,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/blob/main/package/Documentation/Manual/Networking/MapedComponents.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/FoundryXR/FoundryCore/blob/main/package/Documentation/Manual/Interaction/SpatialSlider.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,19 @@
         </div>
 
         <article data-uid="">
-<h1 id="mapped-components">Mapped Components</h1>
+<h1 id="spatialslider">SpatialSlider</h1>
 
-<p>When supporting multiple network backends, there's going to be times when you want to use a commonly used component from the library we're using behind the scenes.</p>
-<p>For this we have &quot;mapped components&quot;. These are components that are mapped to the library we're using behind the scenes, at the moment there are just two. NetworkTransform and NetworkVoiceOutput.</p>
-<p>NetworkTransform gets mapped to the library's transform or physics transform component. We use a &quot;mapped properties&quot; system to allow different libraries to define properties specific to them, and store those settings even if we switch between network providers.</p>
-<p>Network Voice Output is a component that is used to output voice data to the network. It's mapped to whatever library's voice output component. Only tested with Photon Voice 2 at the moment, so it's probably going to get refactored at some point.</p>
+<p><a class="xref" href="../../Api/Foundry.SpatialSlider.html">SpatialSlider</a></p>
+<p><img src="/Media/Manual/Interaction/SpatialSliderScript.png" alt="SpatialSlider"></p>
+<h2 id="description">Description</h2>
+<p>A networked Slider implementation, using the foundry touch point system.</p>
+<h2 id="usage">Usage</h2>
+<p>Add to an empty game object, with a child object with a collider representing the grabbable portion of the slider, then set the slider start and end points to the points on the slider that it should slide between.</p>
+<p>If you wish you can set the slider to use increments instead of smooth motion.</p>
+<h2 id="networking">Networking</h2>
+<p>To network the object as well add a <a class="xref" href="../../Api/Foundry.Networking.NetworkObject.html">NetworkObject</a> to the root and a <a class="xref" href="../../Api/Foundry.Networking.NetworkTransform.html">NetworkTransform</a> to the slider's visual object.</p>
+<h2 id="examples">Examples</h2>
+<p><a href="../GettingStarted/Samples/Gadgets/Slider.html">Slider Gadget</a></p>
 
 </article>
 
