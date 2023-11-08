@@ -91,7 +91,15 @@ namespace Foundry
                 FoundryDeserializer argDeserializer = new(stream);
                 T argValue = default;
                 argDeserializer.Deserialize(ref argValue);
-                _event.Invoke(NetEventSource.Remote, argValue);
+
+                try
+                {
+                    _event.Invoke(NetEventSource.Remote, argValue);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogException(e);
+                }
             }
         }
 

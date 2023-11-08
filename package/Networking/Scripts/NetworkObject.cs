@@ -286,10 +286,7 @@ namespace Foundry.Networking
                 }
                 catch (Exception e)
                 {
-                    Debug.LogError("Error in OnConnected() call: " + e);
-                    #if DEBUG
-                    throw;
-                    #endif
+                    Debug.LogException(e);
                 }
             }
         }

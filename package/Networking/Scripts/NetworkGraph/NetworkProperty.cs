@@ -27,7 +27,14 @@ namespace Foundry.Networking
                 if(!Equals(this.value, value))
                     dirty = true;
                 this.value = value;
-                OnValueChanged?.Invoke(value);
+                try
+                {
+                    OnValueChanged?.Invoke(value);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogException(e);
+                }
             }
         }
         
@@ -59,7 +66,14 @@ namespace Foundry.Networking
         {
             deserializer.SetDebugRegion($"NetworkProperty<{typeof(T).Name}>");
             deserializer.Deserialize(ref value);
-            OnValueChanged?.Invoke(value);
+            try
+            {
+                OnValueChanged?.Invoke(value);
+            }
+            catch (Exception e)
+            {
+                Debug.LogException(e);
+            }
         }
 
         public override string ToString()
