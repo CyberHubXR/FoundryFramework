@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -38,6 +39,12 @@ namespace Foundry.Networking
         /// </summary>
         Destroy,
     }
+    
+    /// <summary>
+    /// Call signature for validating a network ID change request.
+    /// </summary>
+    public delegate bool IDChangeRequestCallback(int sender, NetworkId newId);
+    
     
     public class NetworkObject : MonoBehaviour
     {
@@ -105,11 +112,6 @@ namespace Foundry.Networking
 
             }
         }
-        
-        /// <summary>
-        /// Call signature for validating a network ID change request.
-        /// </summary>
-        public delegate bool IDChangeRequestCallback(int sender, NetworkId newId);
 
         private IDChangeRequestCallback IDChangeRequest;
 
@@ -170,6 +172,13 @@ namespace Foundry.Networking
                     // If this is a scene instance make sure we have a unique guid
                     if(!isPrefab)
                         shouldChangeGUI |= og.guid == guid;
+                }
+
+                foreach (var so in Object.FindObjectsByType<NetworkObject>(FindObjectsSortMode.None))
+                {
+                    if(so == this)
+                        continue;
+                    shouldChangeGUI |= so.guid == guid;
                 }
             } catch (Exception e)
             {
