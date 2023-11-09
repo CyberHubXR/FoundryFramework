@@ -84,6 +84,7 @@ namespace Foundry
         public Vector3 velocity;
         Vector3 lastPos;
 
+        private bool wasKinematic;
         private float velocityFrameTime = 10F;
 
         private HandVelocityTracker _handVelocityTracker;
@@ -224,7 +225,10 @@ namespace Foundry
         {
             _held = grabbable;
             if (grabbable.TryGetComponent(out Rigidbody body))
+            {
+                wasKinematic = body.isKinematic;
                 body.isKinematic = true;
+            }
 
             
             grabbable.TryGetComponent(out netTransform);
@@ -283,16 +287,20 @@ namespace Foundry
         {
             if (held != null)
             {
-                if (IsOwner)
+                if (grabbable.TryGetComponent(out Rigidbody body))
                 {
-                    if (grabbable.TryGetComponent(out Rigidbody body))
+                    body.isKinematic = wasKinematic;
+
+                    if (IsOwner)
                     {
-                        body.isKinematic = false;
-                    
                         //Throw the object
                         body.velocity = _handVelocityTracker.ThrowVelocity();
                         body.angularVelocity = _handVelocityTracker.ThrowAngularVelocity();
                     }
+                }
+
+                if (IsOwner)
+                {
 
                     OnReleaseNetworkEvent.InvokeRemote(NetworkHeld.Value);
                     NetworkHeld.Value = NetworkId.Invalid;
@@ -313,8 +321,16 @@ namespace Foundry
                 UpdateHighlight();
             if(_held)
             {
-                held.transform.position = transform.position + transform.rotation * offset.Value.pos;
-                held.transform.localRotation = transform.rotation * offset.Value.rot;
+                Vector3 targetPos = transform.position + transform.rotation * offset.Value.pos;
+                Quaternion targetRot = transform.rotation * offset.Value.rot;
+
+                var nt = netTransform.transform;
+                nt.position = targetPos;
+                nt.rotation = targetRot;
+
+                var lo = netTransform.lerpObject;
+                lo.position = targetPos;
+                lo.rotation = targetRot;
             }
         }
 
@@ -322,9 +338,16 @@ namespace Foundry
         {
             if (netTransform)
             {
+                Vector3 targetPos = transform.position + transform.rotation * offset.Value.pos;
+                Quaternion targetRot = transform.rotation * offset.Value.rot;
+
+                var nt = netTransform.transform;
+                nt.position = targetPos;
+                nt.rotation = targetRot;
+
                 var lo = netTransform.lerpObject;
-                lo.position = transform.position + transform.rotation * offset.Value.pos;
-                lo.rotation = transform.rotation * offset.Value.rot;
+                lo.position = targetPos;
+                lo.rotation = targetRot;
             }
         }
 
