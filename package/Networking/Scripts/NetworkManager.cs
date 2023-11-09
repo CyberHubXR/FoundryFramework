@@ -70,13 +70,15 @@ namespace Foundry.Networking
 
                 var prefabs = Resources.Load<FoundryPrefabs>("FoundryPrefabs");
                 boundPrefabs = new();
-                
-                foreach (var prefab in prefabs.networkedPrefabs)
+                if(prefabs)
                 {
-                    var boundInstance = Instantiate(prefab, prefabHolder.transform);
-                    networkProvider.BindNetworkObject(boundInstance, true);
-                    networkProvider.RegisterPrefab(boundInstance);
-                    boundPrefabs.Add(prefab, boundInstance);
+                    foreach (var prefab in prefabs.networkedPrefabs)
+                    {
+                        var boundInstance = Instantiate(prefab, prefabHolder.transform);
+                        networkProvider.BindNetworkObject(boundInstance, true);
+                        networkProvider.RegisterPrefab(boundInstance);
+                        boundPrefabs.Add(prefab, boundInstance);
+                    }
                 }
             }
             

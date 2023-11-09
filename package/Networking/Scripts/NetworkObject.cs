@@ -254,6 +254,8 @@ namespace Foundry.Networking
 
         private float loadTimeout = 4f;
         private Coroutine loadTimeoutRoutine;
+
+        private bool loadFailed;
         
         void Start()
         {
@@ -261,7 +263,19 @@ namespace Foundry.Networking
             {
                 NetworkManager.RegisterUnloaded(this);
                 registeredUnloaded = true;
-                loadTimeoutRoutine = StartCoroutine(LoadTimeout());
+
+                var networkProvider = FoundryApp.GetService<INetworkProvider>();
+                if (networkProvider.IsSessionConnected)
+                    loadTimeoutRoutine = StartCoroutine(LoadTimeout());
+                else
+                {
+                    networkProvider.SessionConnected += () =>
+                    {
+                        if(completedLoadSteps != totalLoadSteps)
+                            loadTimeoutRoutine = StartCoroutine(LoadTimeout());
+                    };
+                }
+                    
                 
                 NetworkedGraphId.OnIdAssigned(id =>
                 {
@@ -275,9 +289,8 @@ namespace Foundry.Networking
 
         internal void OnSceneReady()
         {
-            if (completedLoadSteps != totalLoadSteps)
+            if (loadFailed)
                 return;
-            
             foreach (var networkedComponent in NetworkComponents)
             {
                 try
@@ -293,6 +306,9 @@ namespace Foundry.Networking
 
         void CompleteLoadStep(ref bool loadStep)
         {
+            if (loadFailed)
+                return;
+
             // If we've already completed this step, don't do it again.
             if (loadStep)
                 return;
@@ -303,7 +319,8 @@ namespace Foundry.Networking
                 return;
 
             NetworkManager.RegisterLoaded(this);
-            StopCoroutine(loadTimeoutRoutine);
+            if(loadTimeoutRoutine != null)
+                StopCoroutine(loadTimeoutRoutine);
             registeredUnloaded = false;
         }
 
@@ -316,6 +333,7 @@ namespace Foundry.Networking
             else if (!idAssigned)
                 reason = "ID not assigned. ";
             Debug.LogError("Network load timeout for " + gameObject.name + "Exceeded 5 seconds. This object will not work! " + reason);
+            loadFailed = true;
             NetworkManager.RegisterLoaded(this);
         }
 
