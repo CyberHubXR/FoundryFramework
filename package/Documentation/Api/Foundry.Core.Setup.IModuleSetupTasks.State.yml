@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: State
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 12
@@ -44,7 +44,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UncompletedRequiredTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 14
@@ -70,7 +70,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UncompletedOptionalTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 15
@@ -96,7 +96,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Completed
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 16

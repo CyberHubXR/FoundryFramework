@@ -81,7 +81,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: InteractionAnimations
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 62
@@ -230,7 +230,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: animationTargets
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 63
@@ -257,7 +257,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onEnableTransition
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 66
@@ -296,7 +296,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onEnableTransitionTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 67
@@ -323,7 +323,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onEnableTransitionCurve
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 68
@@ -350,7 +350,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: updateColor
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 71
@@ -389,7 +389,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightAnimationColorTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 72
@@ -416,7 +416,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unhighlightAnimationColorTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 73
@@ -443,7 +443,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unhighlightColor
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 74
@@ -470,7 +470,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightColor
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 75
@@ -497,7 +497,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateColor
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 76
@@ -524,7 +524,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightColorCurve
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 77
@@ -551,7 +551,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: colorWaveFrequency
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 78
@@ -578,7 +578,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: colorWaveAmplitude
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 79
@@ -605,7 +605,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: colorWaveOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 80
@@ -632,7 +632,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: updatePosition
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 83
@@ -671,7 +671,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightAnimationPositionTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 84
@@ -698,7 +698,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unhighlightAnimationPositionTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 85
@@ -725,7 +725,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightPosition
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 86
@@ -752,7 +752,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activatePosition
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 87
@@ -779,7 +779,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: positionAnimationCurve
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 88
@@ -806,7 +806,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: positionWaveFrequency
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 89
@@ -833,7 +833,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: positionWaveAmplitude
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 90
@@ -860,7 +860,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: positionWaveOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 91
@@ -887,7 +887,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: updateScale
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 94
@@ -926,7 +926,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightAnimationScaleTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 95
@@ -953,7 +953,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unhighlightAnimationScaleTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 96
@@ -980,7 +980,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightScaleOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 97
@@ -1007,7 +1007,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateScaleOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 98
@@ -1034,7 +1034,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: scaleAnimationCurve
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 99
@@ -1061,7 +1061,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: scaleWaveFrequency
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 100
@@ -1088,7 +1088,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: scaleWaveAmplitude
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 101
@@ -1115,7 +1115,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: scaleWaveOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 102
@@ -1142,7 +1142,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: updateRotation
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 105
@@ -1181,7 +1181,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightAnimationRotationTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 106
@@ -1208,7 +1208,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unhighlightAnimationRotationTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 107
@@ -1235,7 +1235,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightRotationOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 108
@@ -1262,7 +1262,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateRotationOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 109
@@ -1289,7 +1289,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rotationAnimationCurve
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 110
@@ -1316,7 +1316,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rotationWaveFrequency
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 111
@@ -1343,7 +1343,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rotationWaveAmplitude
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 112
@@ -1370,7 +1370,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rotationWaveOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 113
@@ -1397,7 +1397,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: enableState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 115
@@ -1424,7 +1424,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlighting
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 117
@@ -1451,7 +1451,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightStartTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 118
@@ -1478,7 +1478,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightStopTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 119
@@ -1505,7 +1505,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightColorState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 120
@@ -1532,7 +1532,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightPositionState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 121
@@ -1559,7 +1559,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightRotationState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 122
@@ -1586,7 +1586,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightScaleState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 123
@@ -1613,7 +1613,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activating
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 125
@@ -1640,7 +1640,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateStartTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 126
@@ -1667,7 +1667,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateStopTime
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 127
@@ -1694,7 +1694,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateColorState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 128
@@ -1721,7 +1721,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activatePositionState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 129
@@ -1748,7 +1748,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateRotationState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 130
@@ -1775,7 +1775,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activateScaleState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 131
@@ -1802,7 +1802,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnEnable
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 142
@@ -1828,7 +1828,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnDisable
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 156
@@ -1854,7 +1854,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: LateUpdate
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 173
@@ -1880,7 +1880,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Highlight
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 197
@@ -1918,7 +1918,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Unhighlight
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 203
@@ -1956,7 +1956,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Activate
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 209
@@ -1994,7 +1994,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deactivate
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 215
@@ -2032,7 +2032,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateAnimationState
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 222
@@ -2058,7 +2058,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetAnimation
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 310

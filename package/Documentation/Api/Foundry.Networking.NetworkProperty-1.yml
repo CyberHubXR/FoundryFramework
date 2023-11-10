@@ -26,7 +26,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkProperty
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
     startLine: 6
@@ -77,7 +77,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnValueChanged
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
     startLine: 16
@@ -108,7 +108,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnChanged
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
     startLine: 19
@@ -143,7 +143,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Value
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
     startLine: 21
@@ -174,10 +174,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
-    startLine: 33
+    startLine: 40
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -206,10 +206,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Dirty
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
-    startLine: 39
+    startLine: 46
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -241,10 +241,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetDirty
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
-    startLine: 41
+    startLine: 48
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -273,10 +273,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetClean
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
-    startLine: 46
+    startLine: 53
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -305,10 +305,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Serialize
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
-    startLine: 51
+    startLine: 58
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -341,10 +341,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deserialize
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
-    startLine: 57
+    startLine: 64
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -377,10 +377,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/NetworkProperty.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ToString
     path: ../Networking/Scripts/NetworkGraph/NetworkProperty.cs
-    startLine: 64
+    startLine: 78
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

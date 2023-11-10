@@ -11,6 +11,7 @@ items:
   - Foundry.NetworkEvent`1.Invoke(`0)
   - Foundry.NetworkEvent`1.InvokeLocal(`0)
   - Foundry.NetworkEvent`1.InvokeRemote(`0)
+  - Foundry.NetworkEvent`1.MaxQueueLength
   - Foundry.NetworkEvent`1.OnChanged
   - Foundry.NetworkEvent`1.RemoveListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})
   - Foundry.NetworkEvent`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)
@@ -27,7 +28,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkEvent
     path: ../Networking/Scripts/NetworkEvent.cs
     startLine: 31
@@ -71,6 +72,39 @@ items:
   nameWithType.vb: NetworkEvent(Of T)
   fullName.vb: Foundry.NetworkEvent(Of T)
   name.vb: NetworkEvent(Of T)
+- uid: Foundry.NetworkEvent`1.MaxQueueLength
+  commentId: P:Foundry.NetworkEvent`1.MaxQueueLength
+  id: MaxQueueLength
+  parent: Foundry.NetworkEvent`1
+  langs:
+  - csharp
+  - vb
+  name: MaxQueueLength
+  nameWithType: NetworkEvent<T>.MaxQueueLength
+  fullName: Foundry.NetworkEvent<T>.MaxQueueLength
+  type: Property
+  source:
+    remote:
+      path: package/Networking/Scripts/NetworkEvent.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore.git
+    id: MaxQueueLength
+    path: ../Networking/Scripts/NetworkEvent.cs
+    startLine: 44
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: The max amount of events that may be queued up between serializations. If this is exceeded, the oldest events will be removed.
+  example: []
+  syntax:
+    content: public uint MaxQueueLength { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property MaxQueueLength As UInteger
+  overload: Foundry.NetworkEvent`1.MaxQueueLength*
+  nameWithType.vb: NetworkEvent(Of T).MaxQueueLength
+  fullName.vb: Foundry.NetworkEvent(Of T).MaxQueueLength
 - uid: Foundry.NetworkEvent`1.Dirty
   commentId: P:Foundry.NetworkEvent`1.Dirty
   id: Dirty
@@ -86,10 +120,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Dirty
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 38
+    startLine: 57
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -121,10 +155,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetDirty
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 39
+    startLine: 58
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -153,10 +187,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetClean
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 44
+    startLine: 63
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -185,10 +219,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Serialize
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 49
+    startLine: 68
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -221,10 +255,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deserialize
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 61
+    startLine: 80
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -257,10 +291,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnChanged
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 81
+    startLine: 108
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -292,10 +326,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AddListener
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 95
+    startLine: 125
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -327,10 +361,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RemoveListener
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 100
+    startLine: 130
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -359,10 +393,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Invoke
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 110
+    startLine: 140
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -393,10 +427,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: InvokeLocal
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 120
+    startLine: 150
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -427,10 +461,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkEvent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: InvokeRemote
     path: ../Networking/Scripts/NetworkEvent.cs
-    startLine: 129
+    startLine: 159
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -726,6 +760,25 @@ references:
   - uid: Foundry.Networking
     name: Networking
     href: Foundry.Networking.html
+- uid: Foundry.NetworkEvent`1.MaxQueueLength*
+  commentId: Overload:Foundry.NetworkEvent`1.MaxQueueLength
+  href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.MaxQueueLength
+  name: MaxQueueLength
+  nameWithType: NetworkEvent<T>.MaxQueueLength
+  fullName: Foundry.NetworkEvent<T>.MaxQueueLength
+  nameWithType.vb: NetworkEvent(Of T).MaxQueueLength
+  fullName.vb: Foundry.NetworkEvent(Of T).MaxQueueLength
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
 - uid: Foundry.NetworkEvent`1.Dirty*
   commentId: Overload:Foundry.NetworkEvent`1.Dirty
   href: Foundry.NetworkEvent-1.html#Foundry.NetworkEvent`1.Dirty

@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "..\\..\\..\\Fusion Gauntlet",
+          "src": "..\\..\\..\\Foundry",
           "files": [
             "Foundry.Core.csproj",
             "Foundry.Core.Editor.csproj",

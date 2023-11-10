@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Rendering/Scripts/OrientationMatcher.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OrientationMatchAxis
     path: ../Rendering/Scripts/OrientationMatcher.cs
     startLine: 8
@@ -56,7 +56,7 @@ items:
     remote:
       path: package/Rendering/Scripts/OrientationMatcher.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: X
     path: ../Rendering/Scripts/OrientationMatcher.cs
     startLine: 11
@@ -82,7 +82,7 @@ items:
     remote:
       path: package/Rendering/Scripts/OrientationMatcher.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Y
     path: ../Rendering/Scripts/OrientationMatcher.cs
     startLine: 12
@@ -108,7 +108,7 @@ items:
     remote:
       path: package/Rendering/Scripts/OrientationMatcher.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Z
     path: ../Rendering/Scripts/OrientationMatcher.cs
     startLine: 13

@@ -16,7 +16,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerRigEvent
     path: ../Player/Scripts/Services/Definition/IPlayerRigManager.cs
     startLine: 6

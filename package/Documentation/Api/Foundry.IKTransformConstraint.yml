@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IKTransformConstraint
     path: ../Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
     startLine: 6
@@ -169,7 +169,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: localTransform
     path: ../Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
     startLine: 8
@@ -196,7 +196,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onlyTrackActive
     path: ../Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
     startLine: 9
@@ -223,7 +223,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Execute
     path: ../Avatar/Scripts/IK Constraints/IKTransformConstraint.cs
     startLine: 10

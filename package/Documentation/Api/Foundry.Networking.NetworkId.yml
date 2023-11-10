@@ -27,7 +27,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkId
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 54
@@ -69,7 +69,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Owner
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 60
@@ -100,7 +100,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ID
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 66
@@ -131,7 +131,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 69
@@ -165,7 +165,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Invalid
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 75
@@ -194,7 +194,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsValid
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 77
@@ -222,7 +222,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetHashCode
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 83
@@ -254,7 +254,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ToString
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 88
@@ -284,7 +284,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Serialize
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 93
@@ -316,7 +316,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deserialize
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 99
@@ -348,7 +348,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Equality
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 105
@@ -384,7 +384,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Inequality
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 110

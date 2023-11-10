@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerControlMode
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 12
@@ -44,7 +44,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Auto
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 14
@@ -70,7 +70,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Desktop
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 15
@@ -96,7 +96,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: XR
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 16

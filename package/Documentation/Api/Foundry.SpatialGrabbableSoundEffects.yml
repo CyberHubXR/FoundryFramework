@@ -23,7 +23,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialGrabbableSoundEffects
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 6
@@ -168,7 +168,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: spatialGrabbable
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 9
@@ -195,7 +195,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: randomPitchRange
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 10
@@ -222,7 +222,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: audioSource
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 11
@@ -249,7 +249,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightSound
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 12
@@ -276,7 +276,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unhighlightSound
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 13
@@ -303,7 +303,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onGrabSound
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 14
@@ -330,7 +330,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onReleaseSound
     path: ../Interaction/Grabbable/SpatialGrabbableSoundEffects.cs
     startLine: 15

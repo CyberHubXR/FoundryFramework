@@ -18,7 +18,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundrySetupWizard
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 110
@@ -170,7 +170,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OpenWindow
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 112
@@ -212,7 +212,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CreateGUI
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 161

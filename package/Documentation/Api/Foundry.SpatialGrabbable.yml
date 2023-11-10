@@ -43,7 +43,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialGrabbable
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 16
@@ -51,14 +51,15 @@ items:
   - Foundry.Core
   namespace: Foundry
   syntax:
-    content: 'public class SpatialGrabbable : MonoBehaviour'
-    content.vb: Public Class SpatialGrabbable Inherits MonoBehaviour
+    content: 'public class SpatialGrabbable : FoundryScript'
+    content.vb: Public Class SpatialGrabbable Inherits FoundryScript
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  - Foundry.FoundryScript
   inheritedMembers:
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
@@ -188,7 +189,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: attachedRigidbody
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 18
@@ -215,7 +216,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: handType
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 19
@@ -242,7 +243,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: maxHeldCount
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 20
@@ -269,7 +270,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: isGrabbable
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 21
@@ -296,7 +297,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnReleaseEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 25
@@ -333,7 +334,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnGrabEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 26
@@ -360,7 +361,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnFirstHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 29
@@ -397,7 +398,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnFinalStopHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 30
@@ -424,7 +425,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnBeforeReleasedEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 34
@@ -461,7 +462,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnBeforeGrabbedEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 36
@@ -498,7 +499,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnAnyHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 39
@@ -535,7 +536,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnAnyStopHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 41
@@ -572,7 +573,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnPlacePointHighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 44
@@ -609,7 +610,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnPlacePointUnhighlightEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 46
@@ -646,7 +647,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnPlacePointAddEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 48
@@ -683,7 +684,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnPlacePointRemoveEvent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 50
@@ -720,7 +721,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rootTransform
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 53
@@ -749,7 +750,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: placePoint
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 55
@@ -778,7 +779,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: grabbableChildren
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 56
@@ -807,7 +808,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: grabbableParents
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 57
@@ -836,7 +837,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: heldByHands
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 58
@@ -865,7 +866,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsGrabbed
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 163
@@ -894,7 +895,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CanGrab
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 165
@@ -925,7 +926,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: HeldCount
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 172
@@ -953,7 +954,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetHoldingHands
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 177
@@ -981,7 +982,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetHighlightingHands
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 182
@@ -1009,7 +1010,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ForceHandsRelease
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 236
@@ -1066,6 +1067,13 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: Foundry.FoundryScript
+  commentId: T:Foundry.FoundryScript
+  parent: Foundry
+  href: Foundry.FoundryScript.html
+  name: FoundryScript
+  nameWithType: FoundryScript
+  fullName: Foundry.FoundryScript
 - uid: UnityEngine.MonoBehaviour.IsInvoking
   commentId: M:UnityEngine.MonoBehaviour.IsInvoking
   parent: UnityEngine.MonoBehaviour

@@ -18,7 +18,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ISceneNavigationEntry
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
     startLine: 9
@@ -45,7 +45,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Name
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
     startLine: 14
@@ -76,7 +76,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: BuildIndex
     path: ../Navigation/Scripts/Services/Definition/ISceneNavigationEntry.cs
     startLine: 24

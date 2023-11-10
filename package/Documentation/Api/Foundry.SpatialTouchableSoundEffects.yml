@@ -21,7 +21,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialTouchableSoundEffects
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
     startLine: 6
@@ -166,7 +166,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: spatialTouchable
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
     startLine: 8
@@ -193,7 +193,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: audioSource
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
     startLine: 9
@@ -220,7 +220,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: touchStartSound
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
     startLine: 10
@@ -247,7 +247,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: touchStopSound
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
     startLine: 11
@@ -274,7 +274,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchableSoundEffects.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: touchStaySound
     path: ../Interaction/Touch/SpatialTouchableSoundEffects.cs
     startLine: 12

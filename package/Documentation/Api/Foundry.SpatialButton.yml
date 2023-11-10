@@ -29,7 +29,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialButton
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 10
@@ -193,7 +193,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: buttonBottomPoint
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 15
@@ -246,7 +246,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: buttonTopPoint
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 16
@@ -273,7 +273,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: buttonVisualObject
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 18
@@ -310,7 +310,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: buttonActivationPoint
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 20
@@ -358,7 +358,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartButtonPressed
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 22
@@ -395,7 +395,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopButtonPressed
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 23
@@ -422,7 +422,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: buttonPressValue
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 25
@@ -449,7 +449,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Object
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 35
@@ -478,7 +478,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TouchUpdate
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 49
@@ -509,7 +509,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TestDepressButton
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 100
@@ -535,7 +535,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ResetButton
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 105
@@ -561,7 +561,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FindNearestPointOnLine
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 110
@@ -596,7 +596,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialButton.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Interaction/Grabbable/SpatialButton.cs
     startLine: 131

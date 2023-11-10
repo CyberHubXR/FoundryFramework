@@ -33,7 +33,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AnimationTarget
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 8
@@ -75,7 +75,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: renderer
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 10
@@ -102,7 +102,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: spriteRenderer
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 11
@@ -129,7 +129,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ignoreColor
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 13
@@ -156,7 +156,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ignorePosition
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 14
@@ -183,7 +183,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ignoreScale
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 15
@@ -210,7 +210,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ignoreRotation
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 16
@@ -237,7 +237,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: colorDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 18
@@ -264,7 +264,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: positionDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 19
@@ -291,7 +291,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: scaleDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 20
@@ -318,7 +318,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rotationDampener
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 21
@@ -345,7 +345,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waveOffset
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 22
@@ -372,7 +372,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartPosition
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 29
@@ -401,7 +401,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartRotation
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 30
@@ -430,7 +430,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartScale
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 31
@@ -459,7 +459,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Transform
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 32
@@ -488,7 +488,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetStartValues
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 34
@@ -514,7 +514,7 @@ items:
     remote:
       path: package/Interaction/Animations/InteractionAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetColor
     path: ../Interaction/Animations/InteractionAnimations.cs
     startLine: 50

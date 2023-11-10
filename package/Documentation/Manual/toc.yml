@@ -13,20 +13,30 @@ items:
     - name: Samples
       href: GettingStarted/Samples/Samples.md
       items:
-        - name: Gadgets
-          href: GettingStarted/Samples/Gadgets/Gadgets.md
+        - name: Interactables
           items:
-            - name: Button
-              href: GettingStarted/Samples/Gadgets/Button.md
-            - name: Door
-              href: GettingStarted/Samples/Gadgets/Door.md
-            - name: Lever
-              href: GettingStarted/Samples/Gadgets/Lever.md
-            - name: Slider
-              href: GettingStarted/Samples/Gadgets/Slider.md
+          - name: Grabbable Example
+            href: GettingStarted/Samples/Interactables/InteractableGrabbableExample.md
+          - name: Gadgets
+            href: GettingStarted/Samples/Interactables/Gadgets.md
+            items:
+              - name: Button
+                href: GettingStarted/Samples/Interactables/Gadgets/Button.md
+              - name: Door
+                href: GettingStarted/Samples/Interactables/Gadgets/Door.md
+              - name: Lever
+                href: GettingStarted/Samples/Interactables/Gadgets/Lever.md
+              - name: Slider
+                href: GettingStarted/Samples/Interactables/Gadgets/Slider.md
   - name: Interaction
     href: Interaction.md
     items:
+      - name: Spatial Grabbable
+        href: Interaction/SpatialGrabbable.md
+      - name: Spatial Touchable
+        href: Interaction/SpatialTouchable.md
+      - name: Place Point
+        href: Interaction/PlacePoint.md
       - name: Spatial Button
         href: Interaction/SpatialButton.md
       - name: Spatial Door

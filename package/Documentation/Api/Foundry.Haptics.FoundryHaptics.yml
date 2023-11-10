@@ -17,7 +17,7 @@ items:
     remote:
       path: package/FoundryHaptics/FoundryHaptics.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryHaptics
     path: ../FoundryHaptics/FoundryHaptics.cs
     startLine: 8
@@ -162,7 +162,7 @@ items:
     remote:
       path: package/FoundryHaptics/FoundryHaptics.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SendHapticToDevice
     path: ../FoundryHaptics/FoundryHaptics.cs
     startLine: 10

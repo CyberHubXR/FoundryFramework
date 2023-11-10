@@ -19,4 +19,4 @@ You can set the lever's `Lever Min Angle` and `Lever Max Angle` to the minimum a
 To network the object as well add a @"Foundry.Networking.NetworkObject" and @"Foundry.Networking.NetworkTransform".
 
 ## Examples
-[Lever Gadget](~/Manual/GettingStarted/Samples/Gadgets/Lever.md)
+[Lever Gadget](~/Manual/GettingStarted/Samples/Interactables/Gadgets/Lever.md)

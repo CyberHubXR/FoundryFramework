@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IFoundryCameraManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IFoundryCameraManager
     path: ../Player/Scripts/Services/Definition/IFoundryCameraManager.cs
     startLine: 4
@@ -42,7 +42,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IFoundryCameraManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: MainCamera
     path: ../Player/Scripts/Services/Definition/IFoundryCameraManager.cs
     startLine: 6

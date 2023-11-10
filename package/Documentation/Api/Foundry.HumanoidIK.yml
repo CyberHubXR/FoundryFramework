@@ -33,7 +33,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: HumanoidIK
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 27
@@ -190,7 +190,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ikRefs
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 103
@@ -217,7 +217,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: constraints
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 104
@@ -244,7 +244,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: calibration
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 105
@@ -271,7 +271,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: fbt
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 107
@@ -310,7 +310,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: maxFootDistance
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 108
@@ -337,7 +337,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: maxFootAngle
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 109
@@ -364,7 +364,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: lerpTime
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 110
@@ -391,7 +391,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: velocityPredictionSmoothing
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 111
@@ -418,7 +418,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rotationBuffer
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 112
@@ -445,7 +445,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: footLift
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 114
@@ -472,7 +472,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: footAngle
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 115
@@ -499,7 +499,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waistAngle
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 116
@@ -526,7 +526,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: animator
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 118
@@ -553,7 +553,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: virtualVelocity
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 122
@@ -582,7 +582,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Calibrate
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 161
@@ -616,7 +616,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateIK
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 420
@@ -642,7 +642,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RememberAnimFootPos
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 485

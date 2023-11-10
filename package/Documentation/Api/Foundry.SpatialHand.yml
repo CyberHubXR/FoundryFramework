@@ -66,7 +66,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialHand
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 21
@@ -233,7 +233,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialGrabbableLayerNameDefault
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 24
@@ -260,7 +260,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialHandLayerNameDefault
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 25
@@ -287,7 +287,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: handType
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 36
@@ -326,7 +326,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: palmCenterTransform
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 37
@@ -353,7 +353,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: index
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 38
@@ -380,7 +380,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: middle
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 39
@@ -407,7 +407,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ring
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 40
@@ -434,7 +434,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: pinky
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 41
@@ -461,7 +461,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: thumb
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 42
@@ -488,7 +488,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: trackContacts
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 43
@@ -515,7 +515,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: throwVelocityExpireTime
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 44
@@ -542,7 +542,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: throwAngularVelocityExpireTime
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 45
@@ -569,7 +569,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: throwStrength
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 46
@@ -596,7 +596,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: throwAngularStrength
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 47
@@ -623,7 +623,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlighterEnabled
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 51
@@ -669,7 +669,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: grabRadius
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 52
@@ -696,7 +696,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: grabMask
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 53
@@ -723,7 +723,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: enableEvents
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 57
@@ -769,7 +769,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnGrabEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 58
@@ -796,7 +796,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnReleaseEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 59
@@ -823,7 +823,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnHighlightEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 60
@@ -850,7 +850,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnStopHighlightEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 61
@@ -877,7 +877,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnBeforeGrabbedEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 63
@@ -914,7 +914,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnBeforeReleasedEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 64
@@ -951,7 +951,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkHeld
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 66
@@ -988,7 +988,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnGrabNetworkEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 70
@@ -1027,7 +1027,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnReleaseNetworkEvent
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 74
@@ -1066,7 +1066,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: poseAnimator
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 76
@@ -1103,7 +1103,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: offset
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 80
@@ -1130,7 +1130,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightInfo
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 81
@@ -1159,7 +1159,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: velocity
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 83
@@ -1186,10 +1186,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: held
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 90
+    startLine: 91
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1215,10 +1215,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: lastHeld
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 91
+    startLine: 92
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1242,10 +1242,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 138
+    startLine: 139
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1278,10 +1278,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 146
+    startLine: 147
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1307,10 +1307,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ForceGrab
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 171
+    startLine: 172
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1343,10 +1343,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CanGrab
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 201
+    startLine: 202
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1374,10 +1374,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Grab
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 207
+    startLine: 208
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1402,10 +1402,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CancelGrab
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 216
+    startLine: 217
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1430,10 +1430,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Release
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 250
+    startLine: 254
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1458,10 +1458,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CancelRelease
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 275
+    startLine: 279
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1486,10 +1486,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: EnableHighlighter
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 346
+    startLine: 369
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1512,10 +1512,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: DisableHighlighter
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 350
+    startLine: 373
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1538,10 +1538,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateHighlightInfo
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 355
+    startLine: 378
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1576,10 +1576,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateHighlight
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 364
+    startLine: 387
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1602,10 +1602,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Highlight
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 404
+    startLine: 427
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1631,10 +1631,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetPose
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 432
+    startLine: 455
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1660,10 +1660,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ClearPose
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 436
+    startLine: 459
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1686,10 +1686,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopHighlight
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 442
+    startLine: 465
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -1712,10 +1712,10 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsHighlighting
     path: ../Interaction/Hand/SpatialHand.cs
-    startLine: 452
+    startLine: 475
   assemblies:
   - Foundry.Core
   namespace: Foundry

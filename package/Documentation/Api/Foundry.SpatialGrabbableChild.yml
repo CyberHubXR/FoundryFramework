@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableChild.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialGrabbableChild
     path: ../Interaction/Grabbable/SpatialGrabbableChild.cs
     startLine: 9
@@ -176,7 +176,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableChild.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: grabParent
     path: ../Interaction/Grabbable/SpatialGrabbableChild.cs
     startLine: 11

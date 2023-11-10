@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SceneNavigationExtensions
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 11
@@ -55,7 +55,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AsNavigationEntry
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 24

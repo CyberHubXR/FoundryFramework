@@ -29,7 +29,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkGraphNode
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 116
@@ -64,7 +64,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ID
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 118
@@ -91,7 +91,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AssociatedObject
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 123
@@ -120,7 +120,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: allowOwnershipTransfer
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 128
@@ -149,7 +149,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Properties
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 133
@@ -178,7 +178,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: propsData
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 138
@@ -207,7 +207,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Parent
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 140
@@ -234,7 +234,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Children
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 141
@@ -261,7 +261,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsAlive
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 146
@@ -290,7 +290,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Implicit
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 148
@@ -324,7 +324,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deserialize
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 154
@@ -356,7 +356,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Skip
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 191
@@ -388,7 +388,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: DeserializeProps
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 206
@@ -420,7 +420,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ConsumeCachedProps
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 227

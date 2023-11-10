@@ -22,7 +22,7 @@ items:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Avatar
     path: ../Avatar/Scripts/Avatar.cs
     startLine: 6
@@ -169,7 +169,7 @@ items:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: trackingMode
     path: ../Avatar/Scripts/Avatar.cs
     startLine: 8
@@ -196,7 +196,7 @@ items:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: player
     path: ../Avatar/Scripts/Avatar.cs
     startLine: 9
@@ -223,7 +223,7 @@ items:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Awake
     path: ../Avatar/Scripts/Avatar.cs
     startLine: 11
@@ -249,7 +249,7 @@ items:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Start
     path: ../Avatar/Scripts/Avatar.cs
     startLine: 16
@@ -275,7 +275,7 @@ items:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetTrackingMode
     path: ../Avatar/Scripts/Avatar.cs
     startLine: 21
@@ -304,7 +304,7 @@ items:
     remote:
       path: package/Avatar/Scripts/Avatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetVirtualVelocity
     path: ../Avatar/Scripts/Avatar.cs
     startLine: 25

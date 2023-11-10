@@ -26,7 +26,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FullBodyAvatar
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 6
@@ -175,7 +175,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ik
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 8
@@ -202,7 +202,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: avatarHeight
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 12
@@ -252,7 +252,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: avatarHolder
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 13
@@ -279,7 +279,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: animator
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 15
@@ -306,7 +306,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Start
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 17
@@ -334,7 +334,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetAnimatorAvatar
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 23
@@ -363,7 +363,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CalibrateRig
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 28
@@ -392,7 +392,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetTrackingMode
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 45
@@ -423,7 +423,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateConstraint
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 71
@@ -457,7 +457,7 @@ items:
     remote:
       path: package/Avatar/Scripts/FullBodyAvatar.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetVirtualVelocity
     path: ../Avatar/Scripts/FullBodyAvatar.cs
     startLine: 76

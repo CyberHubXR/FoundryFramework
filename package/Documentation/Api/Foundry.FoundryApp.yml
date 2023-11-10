@@ -25,7 +25,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryApp
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 11
@@ -62,7 +62,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AddService
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 38
@@ -100,7 +100,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetService
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 49
@@ -135,7 +135,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TryGetService
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 62
@@ -176,7 +176,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AddService
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 73
@@ -212,7 +212,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AddService
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 82
@@ -251,7 +251,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetService
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 91
@@ -288,7 +288,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TryGetService
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 100
@@ -328,7 +328,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetConfig
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 118
@@ -365,7 +365,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryApp.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Services
     path: ../Application/Scripts/FoundryApp.cs
     startLine: 130

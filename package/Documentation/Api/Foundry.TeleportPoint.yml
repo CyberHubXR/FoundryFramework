@@ -27,7 +27,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TeleportPoint
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 8
@@ -172,7 +172,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: teleportPoint
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 9
@@ -199,7 +199,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: alwaysShow
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 10
@@ -226,7 +226,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: matchPoint
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 11
@@ -253,7 +253,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: matchDirection
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 12
@@ -280,7 +280,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartHighlight
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 14
@@ -307,7 +307,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopHighlight
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 15
@@ -334,7 +334,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 16
@@ -361,7 +361,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Awake
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 19
@@ -387,7 +387,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartHighlighting
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 25
@@ -416,7 +416,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopHighlighting
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 29
@@ -445,7 +445,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPoint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Teleport
     path: ../Locomotion/Teleport/Scripts/TeleportPoint.cs
     startLine: 33

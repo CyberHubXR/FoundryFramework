@@ -23,7 +23,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkComponent
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 9
@@ -54,6 +54,7 @@ items:
   - Foundry.SpatialDistanceGrabber
   - Foundry.SpatialHand
   - Foundry.SpatialTouchable
+  - Foundry.TeleportRaycaster
   - Foundry.VideoSync
   inheritedMembers:
   - UnityEngine.MonoBehaviour.IsInvoking
@@ -184,7 +185,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Object
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 14
@@ -215,7 +216,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkProvider
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 19
@@ -246,7 +247,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsOwner
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 24
@@ -277,7 +278,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 30
@@ -312,7 +313,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 38
@@ -340,7 +341,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnDisconnected
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 43
@@ -366,7 +367,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkComponent.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnValidate
     path: ../Networking/Scripts/NetworkComponent.cs
     startLine: 48

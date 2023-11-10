@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Progress/Scripts/ProgressReport.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ProgressReport
     path: ../Progress/Scripts/ProgressReport.cs
     startLine: 7
@@ -56,7 +56,7 @@ items:
     remote:
       path: package/Progress/Scripts/ProgressReport.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Progress/Scripts/ProgressReport.cs
     startLine: 20
@@ -94,7 +94,7 @@ items:
     remote:
       path: package/Progress/Scripts/ProgressReport.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Progress
     path: ../Progress/Scripts/ProgressReport.cs
     startLine: 33
@@ -125,7 +125,7 @@ items:
     remote:
       path: package/Progress/Scripts/ProgressReport.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Status
     path: ../Progress/Scripts/ProgressReport.cs
     startLine: 38

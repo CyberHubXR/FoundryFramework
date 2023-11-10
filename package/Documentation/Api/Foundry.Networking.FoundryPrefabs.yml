@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Networking/Scripts/FoundryPrefabs.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryPrefabs
     path: ../Networking/Scripts/FoundryPrefabs.cs
     startLine: 14
@@ -103,7 +103,7 @@ items:
     remote:
       path: package/Networking/Scripts/FoundryPrefabs.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: networkedPrefabs
     path: ../Networking/Scripts/FoundryPrefabs.cs
     startLine: 17

@@ -29,7 +29,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialTouchable
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 9
@@ -199,7 +199,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: touchStayDelay
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 12
@@ -226,7 +226,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnStartTouch
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 14
@@ -265,7 +265,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnStopTouch
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 15
@@ -292,7 +292,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnTouchStay
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 16
@@ -319,7 +319,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: touchTriggerPercent
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 18
@@ -348,7 +348,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: isTouching
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 19
@@ -377,7 +377,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: isTouchStay
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 20
@@ -406,7 +406,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Start
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 25
@@ -432,7 +432,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartTouch
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 30
@@ -461,7 +461,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopTouch
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 35
@@ -490,7 +490,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TouchStay
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 42
@@ -519,7 +519,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 47
@@ -555,7 +555,7 @@ items:
     remote:
       path: package/Interaction/Touch/SpatialTouchable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TouchUpdate
     path: ../Interaction/Touch/SpatialTouchable.cs
     startLine: 54

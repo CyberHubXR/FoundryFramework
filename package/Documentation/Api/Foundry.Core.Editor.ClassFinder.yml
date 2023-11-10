@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Editor/ClassFinder/ClassFinder.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ClassFinder
     path: ../Editor/ClassFinder/ClassFinder.cs
     startLine: 5
@@ -54,7 +54,7 @@ items:
     remote:
       path: package/Editor/ClassFinder/ClassFinder.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FindAllWithAttributes
     path: ../Editor/ClassFinder/ClassFinder.cs
     startLine: 12
@@ -92,7 +92,7 @@ items:
     remote:
       path: package/Editor/ClassFinder/ClassFinder.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FindAllWithParent
     path: ../Editor/ClassFinder/ClassFinder.cs
     startLine: 36
@@ -129,7 +129,7 @@ items:
     remote:
       path: package/Editor/ClassFinder/ClassFinder.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FindAllWithInterface
     path: ../Editor/ClassFinder/ClassFinder.cs
     startLine: 56

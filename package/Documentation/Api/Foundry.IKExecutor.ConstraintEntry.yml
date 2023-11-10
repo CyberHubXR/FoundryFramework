@@ -18,7 +18,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ConstraintEntry
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 20
@@ -63,7 +63,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: constraint
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 23
@@ -90,7 +90,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: astetic
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 25

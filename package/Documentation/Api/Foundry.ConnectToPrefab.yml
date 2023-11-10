@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ConnectToPrefab
     path: ../Scene/Materials/ConnectToPrefab.cs
     startLine: 7
@@ -164,7 +164,7 @@ items:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Prefab
     path: ../Scene/Materials/ConnectToPrefab.cs
     startLine: 9
@@ -191,7 +191,7 @@ items:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ConnectToList
     path: ../Scene/Materials/ConnectToPrefab.cs
     startLine: 11
@@ -218,7 +218,7 @@ items:
     remote:
       path: package/Scene/Materials/ConnectToPrefab.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Connect
     path: ../Scene/Materials/ConnectToPrefab.cs
     startLine: 13

@@ -29,7 +29,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: XRControlRig
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 6
@@ -176,7 +176,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: controllerConfig
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 8
@@ -203,7 +203,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: head
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 10
@@ -242,7 +242,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftController
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 11
@@ -269,7 +269,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightController
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 12
@@ -296,7 +296,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waistTracker
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 13
@@ -323,7 +323,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftFootTracker
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 14
@@ -350,7 +350,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightFootTracker
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 15
@@ -377,7 +377,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: offsets
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 34
@@ -416,7 +416,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Update
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 50
@@ -442,7 +442,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateTrackerPos
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 104
@@ -478,7 +478,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TrackerTransform
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 117
@@ -512,7 +512,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetTrackingMode
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 140
@@ -543,7 +543,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateTrackers
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 145

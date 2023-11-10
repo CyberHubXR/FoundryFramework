@@ -20,7 +20,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Calibration
     path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
     startLine: 16
@@ -52,7 +52,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: upperLength
     path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
     startLine: 18
@@ -79,7 +79,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: lowerLength
     path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
     startLine: 19
@@ -106,7 +106,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: upperOffset
     path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
     startLine: 20
@@ -133,7 +133,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: lowerOffset
     path: ../Avatar/Scripts/IK Constraints/IKTwoBoneConstraint.cs
     startLine: 21

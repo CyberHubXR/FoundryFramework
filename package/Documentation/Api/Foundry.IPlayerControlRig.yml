@@ -21,7 +21,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IPlayerControlRig
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
     startLine: 9
@@ -48,7 +48,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: transform
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
     startLine: 12
@@ -77,7 +77,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: enabled
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
     startLine: 13
@@ -106,7 +106,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TrackerTransform
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
     startLine: 15
@@ -137,7 +137,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetTrackingMode
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
     startLine: 18
@@ -165,7 +165,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Definition/IPlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateTrackers
     path: ../Player/Scripts/Services/Definition/IPlayerControlRig.cs
     startLine: 24

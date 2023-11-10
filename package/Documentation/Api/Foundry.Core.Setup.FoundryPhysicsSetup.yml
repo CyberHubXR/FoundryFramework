@@ -21,7 +21,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryPhysicsSetup
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
     startLine: 7
@@ -58,7 +58,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
     startLine: 11
@@ -87,7 +87,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetTaskState
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
     startLine: 16
@@ -120,7 +120,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetTasks
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
     startLine: 21
@@ -152,7 +152,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ModuleName
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
     startLine: 40
@@ -184,7 +184,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ModuleSource
     path: ../Editor/SetupWizard/Core Dependencies/FoundryPhysicsSetup.cs
     startLine: 45

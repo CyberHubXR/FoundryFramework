@@ -8,6 +8,7 @@ items:
   - Foundry.TeleportRaycaster.ActivateRaycaster
   - Foundry.TeleportRaycaster.DeactivateRaycaster
   - Foundry.TeleportRaycaster.HideTeleport
+  - Foundry.TeleportRaycaster.OnConnected
   - Foundry.TeleportRaycaster.OnInvalidTeleport
   - Foundry.TeleportRaycaster.OnValidTeleport
   - Foundry.TeleportRaycaster.ShowTeleport
@@ -38,23 +39,31 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TeleportRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Foundry.Core
   namespace: Foundry
   syntax:
-    content: 'public class TeleportRaycaster : MonoBehaviour'
-    content.vb: Public Class TeleportRaycaster Inherits MonoBehaviour
+    content: 'public class TeleportRaycaster : NetworkComponent'
+    content.vb: Public Class TeleportRaycaster Inherits NetworkComponent
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  - Foundry.FoundryScript
+  - Foundry.Networking.NetworkComponent
   inheritedMembers:
+  - Foundry.Networking.NetworkComponent.Object
+  - Foundry.Networking.NetworkComponent.NetworkProvider
+  - Foundry.Networking.NetworkComponent.IsOwner
+  - Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  - Foundry.Networking.NetworkComponent.OnDisconnected
+  - Foundry.Networking.NetworkComponent.OnValidate
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
   - UnityEngine.MonoBehaviour.Invoke(System.String,System.Single)
@@ -183,10 +192,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: teleportPointOnly
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -222,10 +231,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: cancelTeleportLayers
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -261,10 +270,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: teleportLayers
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -300,10 +309,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: velocity
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -337,10 +346,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: gravity
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -364,10 +373,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: step
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -401,10 +410,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: maxRange
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -428,10 +437,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: maxAngle
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -455,10 +464,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: reticle
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -494,10 +503,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: line
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -521,10 +530,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: autoToggleLine
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -548,10 +557,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: validColor
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -575,10 +584,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: invalidColor
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -602,10 +611,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: queryTriggers
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -629,10 +638,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ShowTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -668,10 +677,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: HideTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 35
+    startLine: 36
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -695,10 +704,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnValidTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -722,10 +731,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnInvalidTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -734,6 +743,35 @@ items:
     return:
       type: UnityEngine.Events.UnityEvent{Foundry.TeleportRaycaster}
     content.vb: Public OnInvalidTeleport As UnityEvent(Of TeleportRaycaster)
+- uid: Foundry.TeleportRaycaster.OnConnected
+  commentId: M:Foundry.TeleportRaycaster.OnConnected
+  id: OnConnected
+  parent: Foundry.TeleportRaycaster
+  langs:
+  - csharp
+  - vb
+  name: OnConnected()
+  nameWithType: TeleportRaycaster.OnConnected()
+  fullName: Foundry.TeleportRaycaster.OnConnected()
+  type: Method
+  source:
+    remote:
+      path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore.git
+    id: OnConnected
+    path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
+    startLine: 56
+  assemblies:
+  - Foundry.Core
+  namespace: Foundry
+  summary: Called once we are connected to the network and all network objects are in a valid state.
+  example: []
+  syntax:
+    content: public override void OnConnected()
+    content.vb: Public Overrides Sub OnConnected()
+  overridden: Foundry.Networking.NetworkComponent.OnConnected
+  overload: Foundry.TeleportRaycaster.OnConnected*
 - uid: Foundry.TeleportRaycaster.ActivateRaycaster
   commentId: M:Foundry.TeleportRaycaster.ActivateRaycaster
   id: ActivateRaycaster
@@ -749,10 +787,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ActivateRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 71
+    startLine: 86
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -777,10 +815,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: DeactivateRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 83
+    startLine: 98
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -805,10 +843,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateRaycaster
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 98
+    startLine: 113
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -833,10 +871,10 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportRaycaster.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TryTeleport
     path: ../Locomotion/Teleport/Scripts/TeleportRaycaster.cs
-    startLine: 187
+    startLine: 202
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -902,6 +940,122 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: Foundry.FoundryScript
+  commentId: T:Foundry.FoundryScript
+  parent: Foundry
+  href: Foundry.FoundryScript.html
+  name: FoundryScript
+  nameWithType: FoundryScript
+  fullName: Foundry.FoundryScript
+- uid: Foundry.Networking.NetworkComponent
+  commentId: T:Foundry.Networking.NetworkComponent
+  parent: Foundry.Networking
+  href: Foundry.Networking.NetworkComponent.html
+  name: NetworkComponent
+  nameWithType: NetworkComponent
+  fullName: Foundry.Networking.NetworkComponent
+- uid: Foundry.Networking.NetworkComponent.Object
+  commentId: P:Foundry.Networking.NetworkComponent.Object
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.Object
+  name: Object
+  nameWithType: NetworkComponent.Object
+  fullName: Foundry.Networking.NetworkComponent.Object
+- uid: Foundry.Networking.NetworkComponent.NetworkProvider
+  commentId: P:Foundry.Networking.NetworkComponent.NetworkProvider
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.NetworkProvider
+  name: NetworkProvider
+  nameWithType: NetworkComponent.NetworkProvider
+  fullName: Foundry.Networking.NetworkComponent.NetworkProvider
+- uid: Foundry.Networking.NetworkComponent.IsOwner
+  commentId: P:Foundry.Networking.NetworkComponent.IsOwner
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.IsOwner
+  name: IsOwner
+  nameWithType: NetworkComponent.IsOwner
+  fullName: Foundry.Networking.NetworkComponent.IsOwner
+- uid: Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  commentId: M:Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  parent: Foundry.Networking.NetworkComponent
+  isExternal: true
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  name: RegisterProperties(List<INetworkProperty>)
+  nameWithType: NetworkComponent.RegisterProperties(List<INetworkProperty>)
+  fullName: Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List<Foundry.Networking.INetworkProperty>)
+  nameWithType.vb: NetworkComponent.RegisterProperties(List(Of INetworkProperty))
+  fullName.vb: Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List(Of Foundry.Networking.INetworkProperty))
+  name.vb: RegisterProperties(List(Of INetworkProperty))
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+    name: RegisterProperties
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Foundry.Networking.INetworkProperty
+    name: INetworkProperty
+    href: Foundry.Networking.INetworkProperty.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+    name: RegisterProperties
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.RegisterProperties(System.Collections.Generic.List{Foundry.Networking.INetworkProperty})
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundry.Networking.INetworkProperty
+    name: INetworkProperty
+    href: Foundry.Networking.INetworkProperty.html
+  - name: )
+  - name: )
+- uid: Foundry.Networking.NetworkComponent.OnDisconnected
+  commentId: M:Foundry.Networking.NetworkComponent.OnDisconnected
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  name: OnDisconnected()
+  nameWithType: NetworkComponent.OnDisconnected()
+  fullName: Foundry.Networking.NetworkComponent.OnDisconnected()
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.NetworkComponent.OnDisconnected
+    name: OnDisconnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnDisconnected
+  - name: (
+  - name: )
+- uid: Foundry.Networking.NetworkComponent.OnValidate
+  commentId: M:Foundry.Networking.NetworkComponent.OnValidate
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnValidate
+  name: OnValidate()
+  nameWithType: NetworkComponent.OnValidate()
+  fullName: Foundry.Networking.NetworkComponent.OnValidate()
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkComponent.OnValidate
+    name: OnValidate
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnValidate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.NetworkComponent.OnValidate
+    name: OnValidate
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnValidate
+  - name: (
+  - name: )
 - uid: UnityEngine.MonoBehaviour.IsInvoking
   commentId: M:UnityEngine.MonoBehaviour.IsInvoking
   parent: UnityEngine.MonoBehaviour
@@ -4725,6 +4879,28 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: Foundry.Networking
+  commentId: N:Foundry.Networking
+  href: Foundry.html
+  name: Foundry.Networking
+  nameWithType: Foundry.Networking
+  fullName: Foundry.Networking
+  spec.csharp:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
+  spec.vb:
+  - uid: Foundry
+    name: Foundry
+    href: Foundry.html
+  - name: .
+  - uid: Foundry.Networking
+    name: Networking
+    href: Foundry.Networking.html
 - uid: UnityEngine.Component.TryGetComponent``1(``0@)
   commentId: M:UnityEngine.Component.TryGetComponent``1(``0@)
   isExternal: true
@@ -5346,6 +5522,31 @@ references:
   - uid: UnityEngine.Events
     name: Events
     isExternal: true
+- uid: Foundry.Networking.NetworkComponent.OnConnected
+  commentId: M:Foundry.Networking.NetworkComponent.OnConnected
+  parent: Foundry.Networking.NetworkComponent
+  href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnConnected
+  name: OnConnected()
+  nameWithType: NetworkComponent.OnConnected()
+  fullName: Foundry.Networking.NetworkComponent.OnConnected()
+  spec.csharp:
+  - uid: Foundry.Networking.NetworkComponent.OnConnected
+    name: OnConnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnConnected
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundry.Networking.NetworkComponent.OnConnected
+    name: OnConnected
+    href: Foundry.Networking.NetworkComponent.html#Foundry.Networking.NetworkComponent.OnConnected
+  - name: (
+  - name: )
+- uid: Foundry.TeleportRaycaster.OnConnected*
+  commentId: Overload:Foundry.TeleportRaycaster.OnConnected
+  href: Foundry.TeleportRaycaster.html#Foundry.TeleportRaycaster.OnConnected
+  name: OnConnected
+  nameWithType: TeleportRaycaster.OnConnected
+  fullName: Foundry.TeleportRaycaster.OnConnected
 - uid: Foundry.TeleportRaycaster.ActivateRaycaster*
   commentId: Overload:Foundry.TeleportRaycaster.ActivateRaycaster
   href: Foundry.TeleportRaycaster.html#Foundry.TeleportRaycaster.ActivateRaycaster

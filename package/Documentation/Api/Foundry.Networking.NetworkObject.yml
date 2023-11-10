@@ -13,7 +13,7 @@ items:
   - Foundry.Networking.NetworkObject.OnIDChanged
   - Foundry.Networking.NetworkObject.Parent
   - Foundry.Networking.NetworkObject.RequestOwnership
-  - Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
+  - Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
   - Foundry.Networking.NetworkObject.VerifyIDChangeRequest(System.Int32,Foundry.Networking.NetworkId)
   - Foundry.Networking.NetworkObject.allowOwnershipTransfer
   - Foundry.Networking.NetworkObject.children
@@ -31,10 +31,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkObject
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 41
+    startLine: 48
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -176,10 +176,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: nativeScript
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 44
+    startLine: 51
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -213,10 +213,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: disconnectBehaviour
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 47
+    startLine: 54
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -252,10 +252,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: allowOwnershipTransfer
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 52
+    startLine: 59
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -281,10 +281,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnIDChanged
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 57
+    startLine: 64
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -310,10 +310,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkedGraphId
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 62
+    startLine: 69
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -341,10 +341,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkProvider
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 77
+    startLine: 84
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -372,10 +372,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsOwner
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 92
+    startLine: 99
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -403,10 +403,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: children
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 124
+    startLine: 126
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -442,10 +442,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Parent
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 130
+    startLine: 132
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -481,10 +481,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkComponents
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 136
+    startLine: 138
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -520,10 +520,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkProperties
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 139
+    startLine: 141
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -549,10 +549,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: guid
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 153
+    startLine: 155
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -573,25 +573,25 @@ items:
   - type: UnityEngine.HideInInspector
     ctor: UnityEngine.HideInInspector.#ctor
     arguments: []
-- uid: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
-  commentId: M:Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
-  id: SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
+- uid: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
+  commentId: M:Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
+  id: SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
   parent: Foundry.Networking.NetworkObject
   langs:
   - csharp
   - vb
   name: SetVerifyIDChangeCallback(IDChangeRequestCallback)
-  nameWithType: NetworkObject.SetVerifyIDChangeCallback(NetworkObject.IDChangeRequestCallback)
-  fullName: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
+  nameWithType: NetworkObject.SetVerifyIDChangeCallback(IDChangeRequestCallback)
+  fullName: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
   type: Method
   source:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetVerifyIDChangeCallback
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 405
+    startLine: 393
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -601,12 +601,12 @@ items:
     be called on every remote client, not just the owner so make sure that it's consistent between clients.
   example: []
   syntax:
-    content: public void SetVerifyIDChangeCallback(NetworkObject.IDChangeRequestCallback callback)
+    content: public void SetVerifyIDChangeCallback(IDChangeRequestCallback callback)
     parameters:
     - id: callback
-      type: Foundry.Networking.NetworkObject.IDChangeRequestCallback
+      type: Foundry.Networking.IDChangeRequestCallback
       description: ''
-    content.vb: Public Sub SetVerifyIDChangeCallback(callback As NetworkObject.IDChangeRequestCallback)
+    content.vb: Public Sub SetVerifyIDChangeCallback(callback As IDChangeRequestCallback)
   overload: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback*
 - uid: Foundry.Networking.NetworkObject.VerifyIDChangeRequest(System.Int32,Foundry.Networking.NetworkId)
   commentId: M:Foundry.Networking.NetworkObject.VerifyIDChangeRequest(System.Int32,Foundry.Networking.NetworkId)
@@ -623,10 +623,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: VerifyIDChangeRequest
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 410
+    startLine: 398
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -659,10 +659,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RequestOwnership
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 420
+    startLine: 408
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -5370,33 +5370,17 @@ references:
   name.vb: String
 - uid: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback*
   commentId: Overload:Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback
-  href: Foundry.Networking.NetworkObject.html#Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
+  href: Foundry.Networking.NetworkObject.html#Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
   name: SetVerifyIDChangeCallback
   nameWithType: NetworkObject.SetVerifyIDChangeCallback
   fullName: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback
-- uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  commentId: T:Foundry.Networking.NetworkObject.IDChangeRequestCallback
+- uid: Foundry.Networking.IDChangeRequestCallback
+  commentId: T:Foundry.Networking.IDChangeRequestCallback
   parent: Foundry.Networking
-  href: Foundry.Networking.NetworkObject.html
-  name: NetworkObject.IDChangeRequestCallback
-  nameWithType: NetworkObject.IDChangeRequestCallback
-  fullName: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  spec.csharp:
-  - uid: Foundry.Networking.NetworkObject
-    name: NetworkObject
-    href: Foundry.Networking.NetworkObject.html
-  - name: .
-  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-    name: IDChangeRequestCallback
-    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
-  spec.vb:
-  - uid: Foundry.Networking.NetworkObject
-    name: NetworkObject
-    href: Foundry.Networking.NetworkObject.html
-  - name: .
-  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-    name: IDChangeRequestCallback
-    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
+  href: Foundry.Networking.IDChangeRequestCallback.html
+  name: IDChangeRequestCallback
+  nameWithType: IDChangeRequestCallback
+  fullName: Foundry.Networking.IDChangeRequestCallback
 - uid: Foundry.Networking.NetworkObject.VerifyIDChangeRequest*
   commentId: Overload:Foundry.Networking.NetworkObject.VerifyIDChangeRequest
   href: Foundry.Networking.NetworkObject.html#Foundry.Networking.NetworkObject.VerifyIDChangeRequest(System.Int32,Foundry.Networking.NetworkId)

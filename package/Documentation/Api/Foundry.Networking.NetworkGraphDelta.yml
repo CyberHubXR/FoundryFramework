@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkGraphDelta
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 777
@@ -61,7 +61,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: data
     path: ../Networking/Scripts/NetworkGraph/FoundryNetworkGraph.cs
     startLine: 780

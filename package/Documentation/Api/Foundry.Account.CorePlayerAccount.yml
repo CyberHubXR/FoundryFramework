@@ -23,7 +23,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CorePlayerAccount
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 8
@@ -175,7 +175,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: spawnBaseAvatar
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 14
@@ -202,7 +202,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: username
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 16
@@ -231,7 +231,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: avatarIndex
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 22
@@ -260,7 +260,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: avatarHolder
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 28
@@ -299,7 +299,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 40
@@ -335,7 +335,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: InitializeAccount
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 52
@@ -363,7 +363,7 @@ items:
     remote:
       path: package/Account/Scripts/CorePlayerAccount.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Account/Scripts/CorePlayerAccount.cs
     startLine: 77

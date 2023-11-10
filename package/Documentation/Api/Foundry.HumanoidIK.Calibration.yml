@@ -27,7 +27,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Calibration
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 52
@@ -69,7 +69,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: calibrated
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 56
@@ -106,7 +106,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: autoSetFootRests
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 58
@@ -133,7 +133,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftFootRest
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 59
@@ -160,7 +160,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightFootRest
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 60
@@ -187,7 +187,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: autoSetSpinePole
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 62
@@ -226,7 +226,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: spinePoleOffset
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 63
@@ -253,7 +253,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: lowerSpineAxis
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 64
@@ -280,7 +280,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: autoSetHeadHeight
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 66
@@ -307,7 +307,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: headHeight
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 67
@@ -334,7 +334,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: autoSetWaistDelta
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 68
@@ -361,7 +361,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waistDelta
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 69

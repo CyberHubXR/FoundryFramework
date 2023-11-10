@@ -23,7 +23,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryDeserializer
     path: ../Serialization/FoundrySerializer.cs
     startLine: 301
@@ -60,7 +60,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: stream
     path: ../Serialization/FoundrySerializer.cs
     startLine: 303
@@ -89,7 +89,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Serialization/FoundrySerializer.cs
     startLine: 312
@@ -123,7 +123,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartDebugDump
     path: ../Serialization/FoundrySerializer.cs
     startLine: 322
@@ -149,7 +149,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetDebugRegion
     path: ../Serialization/FoundrySerializer.cs
     startLine: 332
@@ -181,7 +181,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Dispose
     path: ../Serialization/FoundrySerializer.cs
     startLine: 341
@@ -210,7 +210,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deserialize
     path: ../Serialization/FoundrySerializer.cs
     startLine: 353
@@ -244,7 +244,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: DeserializeBuffer
     path: ../Serialization/FoundrySerializer.cs
     startLine: 525

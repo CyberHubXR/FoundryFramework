@@ -18,7 +18,7 @@ items:
     remote:
       path: package/Interaction/PlacePoint/PlacePointAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlacePointAnimations
     path: ../Interaction/PlacePoint/PlacePointAnimations.cs
     startLine: 6
@@ -239,7 +239,7 @@ items:
     remote:
       path: package/Interaction/PlacePoint/PlacePointAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnEnable
     path: ../Interaction/PlacePoint/PlacePointAnimations.cs
     startLine: 10
@@ -267,7 +267,7 @@ items:
     remote:
       path: package/Interaction/PlacePoint/PlacePointAnimations.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnDisable
     path: ../Interaction/PlacePoint/PlacePointAnimations.cs
     startLine: 19

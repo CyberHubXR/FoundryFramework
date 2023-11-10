@@ -39,7 +39,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkManager
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 19
@@ -184,7 +184,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: instance
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 21
@@ -211,7 +211,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: autoStart
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 23
@@ -238,7 +238,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: roomKey
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 24
@@ -265,7 +265,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: playerPrefab
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 25
@@ -292,7 +292,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: networkMode
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 30
@@ -319,7 +319,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpawnMethod
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 32
@@ -346,7 +346,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: spawnPoints
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 33
@@ -373,7 +373,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnSessionConnected
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 35
@@ -400,7 +400,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: localPlayer
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 37
@@ -437,7 +437,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpawnedPlayers
     path: ../Networking/Scripts/NetworkManager.cs
     startLine: 38
@@ -464,10 +464,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnPlayerJoined
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 119
+    startLine: 121
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -496,10 +496,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnPlayerLeft
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 129
+    startLine: 131
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -528,10 +528,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RoomName
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 155
+    startLine: 157
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -556,10 +556,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartSession
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 175
+    startLine: 177
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -585,10 +585,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopSession
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 217
+    startLine: 219
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -611,10 +611,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Instantiate
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 226
+    startLine: 229
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -646,10 +646,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Despawn
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 241
+    startLine: 244
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -675,10 +675,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: BindSceneObject
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 246
+    startLine: 249
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -704,10 +704,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterObject
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 258
+    startLine: 261
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -736,10 +736,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UnregisterObject
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 274
+    startLine: 277
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -768,10 +768,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterUnloaded
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 288
+    startLine: 291
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -797,10 +797,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterLoaded
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 294
+    startLine: 297
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -826,10 +826,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetObjectById
     path: ../Networking/Scripts/NetworkManager.cs
-    startLine: 311
+    startLine: 314
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

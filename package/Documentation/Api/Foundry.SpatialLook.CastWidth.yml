@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CastWidth
     path: ../Interaction/Look/SpatialLook.cs
     startLine: 8
@@ -61,7 +61,7 @@ items:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: distance
     path: ../Interaction/Look/SpatialLook.cs
     startLine: 11
@@ -100,7 +100,7 @@ items:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: radius
     path: ../Interaction/Look/SpatialLook.cs
     startLine: 13
@@ -139,7 +139,7 @@ items:
     remote:
       path: package/Interaction/Look/SpatialLook.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Interaction/Look/SpatialLook.cs
     startLine: 15

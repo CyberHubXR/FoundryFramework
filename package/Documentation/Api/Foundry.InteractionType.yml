@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: InteractionType
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 8
@@ -54,7 +54,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: parent
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 11
@@ -80,7 +80,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: velocitytracked
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 12
@@ -106,7 +106,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbable.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: kinematic
     path: ../Interaction/Grabbable/SpatialGrabbable.cs
     startLine: 13

@@ -18,7 +18,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointAnimation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TeleportPointAnimation
     path: ../Locomotion/Teleport/Scripts/TeleportPointAnimation.cs
     startLine: 6
@@ -239,7 +239,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointAnimation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnEnable
     path: ../Locomotion/Teleport/Scripts/TeleportPointAnimation.cs
     startLine: 11
@@ -267,7 +267,7 @@ items:
     remote:
       path: package/Locomotion/Teleport/Scripts/TeleportPointAnimation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnDisable
     path: ../Locomotion/Teleport/Scripts/TeleportPointAnimation.cs
     startLine: 18

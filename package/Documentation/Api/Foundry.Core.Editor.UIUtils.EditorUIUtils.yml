@@ -21,7 +21,7 @@ items:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: EditorUIUtils
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
     startLine: 5
@@ -56,7 +56,7 @@ items:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetBorderRadius
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
     startLine: 7
@@ -90,7 +90,7 @@ items:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetPadding
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
     startLine: 15
@@ -124,7 +124,7 @@ items:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetMargin
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
     startLine: 23
@@ -158,7 +158,7 @@ items:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetBorderWidth
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
     startLine: 31
@@ -192,7 +192,7 @@ items:
     remote:
       path: package/Editor/EditorUIUtils/FoundryEditorUIUtils.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetBorderColor
     path: ../Editor/EditorUIUtils/FoundryEditorUIUtils.cs
     startLine: 39

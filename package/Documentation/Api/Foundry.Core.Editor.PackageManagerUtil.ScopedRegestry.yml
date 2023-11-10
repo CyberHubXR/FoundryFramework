@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ScopedRegestry
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 69
@@ -54,7 +54,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: name
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 71
@@ -81,7 +81,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: url
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 72
@@ -108,7 +108,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: scopes
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 73

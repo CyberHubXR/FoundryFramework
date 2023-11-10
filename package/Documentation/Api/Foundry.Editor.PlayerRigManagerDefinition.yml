@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerRigManagerDefinition
     path: ../Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
     startLine: 5
@@ -56,7 +56,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Source
     path: ../Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
     startLine: 8
@@ -89,7 +89,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PrettyName
     path: ../Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
     startLine: 13
@@ -121,7 +121,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ServiceInterface
     path: ../Player/Scripts/Services/Editor/PlayerRigManagerDefinition.cs
     startLine: 18

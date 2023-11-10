@@ -20,7 +20,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerRigCreator
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 19
@@ -165,7 +165,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: desktopRig
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 21
@@ -204,7 +204,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: xrRig
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 22
@@ -252,7 +252,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: controlMode
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 24
@@ -279,7 +279,7 @@ items:
     remote:
       path: package/Player/Scripts/PlayerRigCreator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Start
     path: ../Player/Scripts/PlayerRigCreator.cs
     startLine: 61

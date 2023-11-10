@@ -20,7 +20,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryCoreModuleDefinition
     path: ../Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
     startLine: 9
@@ -57,7 +57,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ModuleName
     path: ../Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
     startLine: 11
@@ -89,7 +89,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetProvidedServices
     path: ../Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
     startLine: 16
@@ -122,7 +122,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetUsedService
     path: ../Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
     startLine: 38
@@ -154,7 +154,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetModuleConfig
     path: ../Editor/FoundryConfig/FoundryCoreModuleDefinition.cs
     startLine: 65

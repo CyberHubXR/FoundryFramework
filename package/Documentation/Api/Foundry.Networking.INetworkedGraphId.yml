@@ -18,10 +18,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: INetworkedGraphId
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -48,10 +48,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Value
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking
@@ -77,10 +77,10 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkObject.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnIdAssigned
     path: ../Networking/Scripts/NetworkObject.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Foundry.Core
   namespace: Foundry.Networking

@@ -24,7 +24,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SerializedType
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 16
@@ -68,7 +68,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Type
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 22
@@ -97,7 +97,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Implicit
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 28
@@ -131,7 +131,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Implicit
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 33
@@ -165,7 +165,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Equality
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 38
@@ -201,7 +201,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Inequality
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 43
@@ -237,7 +237,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Equality
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 48
@@ -273,7 +273,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: op_Inequality
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 53
@@ -309,7 +309,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ToString
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 58

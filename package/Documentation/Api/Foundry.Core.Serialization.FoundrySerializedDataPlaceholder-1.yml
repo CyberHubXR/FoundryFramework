@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundrySerializedDataPlaceholder
     path: ../Serialization/FoundrySerializer.cs
     startLine: 17
@@ -59,7 +59,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: streamPos
     path: ../Serialization/FoundrySerializer.cs
     startLine: 20
@@ -90,7 +90,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Serialization/FoundrySerializer.cs
     startLine: 25
@@ -124,7 +124,7 @@ items:
     remote:
       path: package/Serialization/FoundrySerializer.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: WriteValue
     path: ../Serialization/FoundrySerializer.cs
     startLine: 46

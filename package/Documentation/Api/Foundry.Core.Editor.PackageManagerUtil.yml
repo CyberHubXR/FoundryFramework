@@ -24,7 +24,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PackageManagerUtil
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 10
@@ -59,7 +59,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ReadManifest
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 16
@@ -95,7 +95,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Apply
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 26
@@ -121,7 +121,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsPackageInstalled
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 35
@@ -155,7 +155,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetPackageSource
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 46
@@ -189,7 +189,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ArePackagesInstalled
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 54
@@ -223,7 +223,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AddScopedRegistry
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 76
@@ -252,7 +252,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AddPackage
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 101
@@ -290,7 +290,7 @@ items:
     remote:
       path: package/Editor/PackageManagerUtil/PackageManagerUtil.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsAssemblyDefined
     path: ../Editor/PackageManagerUtil/PackageManagerUtil.cs
     startLine: 114

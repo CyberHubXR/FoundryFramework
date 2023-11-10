@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: HandType
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 27
@@ -44,7 +44,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Right
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 29
@@ -70,7 +70,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Left
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 30
@@ -96,7 +96,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHand.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Both
     path: ../Interaction/Hand/SpatialHand.cs
     startLine: 31

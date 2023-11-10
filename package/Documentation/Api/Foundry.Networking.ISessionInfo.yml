@@ -18,7 +18,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ISessionInfo
     path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
     startLine: 35
@@ -45,7 +45,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sessionName
     path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
     startLine: 40
@@ -76,7 +76,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/SessionInfo.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sessionType
     path: ../Networking/Scripts/Services/Definition/SessionInfo.cs
     startLine: 45

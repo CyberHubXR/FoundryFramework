@@ -21,7 +21,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetupTaskList
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 81
@@ -58,7 +58,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: name
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 83
@@ -85,7 +85,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: description
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 88
@@ -114,7 +114,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: tasks
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 93
@@ -143,7 +143,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 95
@@ -175,7 +175,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/FoundrySetupWizard.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Add
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
     startLine: 104

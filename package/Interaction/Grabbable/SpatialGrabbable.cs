@@ -14,7 +14,7 @@ namespace Foundry
         kinematic
     }
 
-    public class SpatialGrabbable : MonoBehaviour
+    public class SpatialGrabbable : FoundryScript
     {
         public Rigidbody attachedRigidbody;
         public SpatialHand.HandType handType = SpatialHand.HandType.Both;

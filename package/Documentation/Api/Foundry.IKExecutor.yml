@@ -23,7 +23,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IKExecutor
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 6
@@ -180,7 +180,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: mode
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 18
@@ -207,7 +207,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: constraints
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 27
@@ -234,7 +234,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AddConstraint
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 29
@@ -268,7 +268,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Start
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 38
@@ -294,7 +294,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Calibrate
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 43
@@ -320,7 +320,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Execute
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 51
@@ -352,7 +352,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnAnimatorMove
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 77

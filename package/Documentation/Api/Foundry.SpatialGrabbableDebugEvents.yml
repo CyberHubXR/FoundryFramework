@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableDebugEvents.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialGrabbableDebugEvents
     path: ../Interaction/Grabbable/SpatialGrabbableDebugEvents.cs
     startLine: 6
@@ -162,7 +162,7 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialGrabbableDebugEvents.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: grabbable
     path: ../Interaction/Grabbable/SpatialGrabbableDebugEvents.cs
     startLine: 8

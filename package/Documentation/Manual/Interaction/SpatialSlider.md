@@ -15,4 +15,4 @@ If you wish you can set the slider to use increments instead of smooth motion.
 To network the object as well add a @"Foundry.Networking.NetworkObject" to the root and a @"Foundry.Networking.NetworkTransform" to the slider's visual object.
 
 ## Examples
-[Slider Gadget](~/Manual/GettingStarted/Samples/Gadgets/Slider.md)
+[Slider Gadget](~/Manual/GettingStarted/Samples/Interactables/Gadgets/Slider.md)

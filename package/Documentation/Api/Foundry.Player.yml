@@ -42,7 +42,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Player
     path: ../Player/Scripts/Player.cs
     startLine: 26
@@ -206,7 +206,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: movementEnabled
     path: ../Player/Scripts/Player.cs
     startLine: 47
@@ -245,7 +245,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: movementSettings
     path: ../Player/Scripts/Player.cs
     startLine: 48
@@ -272,7 +272,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftHand
     path: ../Player/Scripts/Player.cs
     startLine: 51
@@ -311,7 +311,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightHand
     path: ../Player/Scripts/Player.cs
     startLine: 52
@@ -338,7 +338,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: trackers
     path: ../Player/Scripts/Player.cs
     startLine: 55
@@ -377,7 +377,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: avatar
     path: ../Player/Scripts/Player.cs
     startLine: 58
@@ -416,7 +416,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: enableEvents
     path: ../Player/Scripts/Player.cs
     startLine: 61
@@ -455,7 +455,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onBeforeTeleport
     path: ../Player/Scripts/Player.cs
     startLine: 62
@@ -482,7 +482,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onAfterTeleport
     path: ../Player/Scripts/Player.cs
     startLine: 63
@@ -509,7 +509,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Player/Scripts/Player.cs
     startLine: 83
@@ -544,7 +544,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Player/Scripts/Player.cs
     startLine: 117
@@ -573,7 +573,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: BorrowControlRig
     path: ../Player/Scripts/Player.cs
     startLine: 136
@@ -599,7 +599,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ControlRig
     path: ../Player/Scripts/Player.cs
     startLine: 168
@@ -633,7 +633,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateTrackers
     path: ../Player/Scripts/Player.cs
     startLine: 174
@@ -659,7 +659,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateColliderSize
     path: ../Player/Scripts/Player.cs
     startLine: 228
@@ -685,7 +685,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetMovement
     path: ../Player/Scripts/Player.cs
     startLine: 241
@@ -713,7 +713,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Move
     path: ../Player/Scripts/Player.cs
     startLine: 277
@@ -747,7 +747,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TeleportRaycaster
     path: ../Player/Scripts/Player.cs
     startLine: 283
@@ -775,7 +775,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UpdateTeleportRaycaster
     path: ../Player/Scripts/Player.cs
     startLine: 288
@@ -801,7 +801,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Update
     path: ../Player/Scripts/Player.cs
     startLine: 307
@@ -827,7 +827,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: LateUpdate
     path: ../Player/Scripts/Player.cs
     startLine: 340
@@ -853,7 +853,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CancelTeleport
     path: ../Player/Scripts/Player.cs
     startLine: 350
@@ -884,7 +884,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Teleport
     path: ../Player/Scripts/Player.cs
     startLine: 359
@@ -916,7 +916,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TeleportLook
     path: ../Player/Scripts/Player.cs
     startLine: 369
@@ -951,7 +951,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TeleportLook
     path: ../Player/Scripts/Player.cs
     startLine: 379
@@ -989,7 +989,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TeleportRaw
     path: ../Player/Scripts/Player.cs
     startLine: 403

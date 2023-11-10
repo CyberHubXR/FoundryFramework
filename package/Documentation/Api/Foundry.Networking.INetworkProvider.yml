@@ -35,7 +35,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: INetworkProvider
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 27
@@ -62,7 +62,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartSessionAsync
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 38
@@ -102,7 +102,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopSessionAsync
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 45
@@ -133,7 +133,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: BindNetworkObject
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 53
@@ -174,7 +174,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterPrefab
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 60
@@ -209,7 +209,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterSceneObjects
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 66
@@ -244,7 +244,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Instantiate
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 75
@@ -285,7 +285,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Destroy
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 81
@@ -317,7 +317,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sessionType
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 84
@@ -346,7 +346,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsSessionConnected
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 86
@@ -375,7 +375,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsServer
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 91
@@ -406,7 +406,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsClient
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 96
@@ -437,7 +437,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsGraphAuthority
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 101
@@ -468,7 +468,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: LocalPlayerId
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 106
@@ -499,7 +499,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Graph
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 111
@@ -530,7 +530,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SessionConnected
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 116
@@ -559,7 +559,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartSessionFailed
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 121
@@ -588,7 +588,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SessionDisconnected
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 126
@@ -617,7 +617,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerJoined
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 131
@@ -646,7 +646,7 @@ items:
     remote:
       path: package/Networking/Scripts/Services/Definition/INetworkProvider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerLeft
     path: ../Networking/Scripts/Services/Definition/INetworkProvider.cs
     startLine: 136

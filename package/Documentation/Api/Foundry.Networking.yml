@@ -6,6 +6,7 @@ items:
   children:
   - Foundry.Networking.DisconnectBehaviour
   - Foundry.Networking.FoundryPrefabs
+  - Foundry.Networking.IDChangeRequestCallback
   - Foundry.Networking.INetworkProperty
   - Foundry.Networking.INetworkProvider
   - Foundry.Networking.INetworkedGraphId
@@ -21,7 +22,6 @@ items:
   - Foundry.Networking.NetworkId
   - Foundry.Networking.NetworkManager
   - Foundry.Networking.NetworkObject
-  - Foundry.Networking.NetworkObject.IDChangeRequestCallback
   - Foundry.Networking.NetworkPlayerEventHandler
   - Foundry.Networking.NetworkProperty`1
   - Foundry.Networking.NetworkTransform
@@ -259,6 +259,13 @@ references:
   name: DisconnectBehaviour
   nameWithType: DisconnectBehaviour
   fullName: Foundry.Networking.DisconnectBehaviour
+- uid: Foundry.Networking.IDChangeRequestCallback
+  commentId: T:Foundry.Networking.IDChangeRequestCallback
+  parent: Foundry.Networking
+  href: Foundry.Networking.IDChangeRequestCallback.html
+  name: IDChangeRequestCallback
+  nameWithType: IDChangeRequestCallback
+  fullName: Foundry.Networking.IDChangeRequestCallback
 - uid: Foundry.Networking.NetworkObject
   commentId: T:Foundry.Networking.NetworkObject
   parent: Foundry.Networking
@@ -266,29 +273,6 @@ references:
   name: NetworkObject
   nameWithType: NetworkObject
   fullName: Foundry.Networking.NetworkObject
-- uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  commentId: T:Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  parent: Foundry.Networking
-  href: Foundry.Networking.NetworkObject.html
-  name: NetworkObject.IDChangeRequestCallback
-  nameWithType: NetworkObject.IDChangeRequestCallback
-  fullName: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-  spec.csharp:
-  - uid: Foundry.Networking.NetworkObject
-    name: NetworkObject
-    href: Foundry.Networking.NetworkObject.html
-  - name: .
-  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-    name: IDChangeRequestCallback
-    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
-  spec.vb:
-  - uid: Foundry.Networking.NetworkObject
-    name: NetworkObject
-    href: Foundry.Networking.NetworkObject.html
-  - name: .
-  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-    name: IDChangeRequestCallback
-    href: Foundry.Networking.NetworkObject.IDChangeRequestCallback.html
 - uid: Foundry.Networking
   commentId: N:Foundry.Networking
   href: Foundry.html

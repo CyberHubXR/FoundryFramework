@@ -22,7 +22,7 @@ items:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: AccountDisplay
     path: ../Account/Scripts/AccountDisplay.cs
     startLine: 6
@@ -175,7 +175,7 @@ items:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: usernameDisplay
     path: ../Account/Scripts/AccountDisplay.cs
     startLine: 8
@@ -202,7 +202,7 @@ items:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: head
     path: ../Account/Scripts/AccountDisplay.cs
     startLine: 9
@@ -229,7 +229,7 @@ items:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: usernameCanvas
     path: ../Account/Scripts/AccountDisplay.cs
     startLine: 10
@@ -256,7 +256,7 @@ items:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: billboardText
     path: ../Account/Scripts/AccountDisplay.cs
     startLine: 11
@@ -283,7 +283,7 @@ items:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Account/Scripts/AccountDisplay.cs
     startLine: 15
@@ -312,7 +312,7 @@ items:
     remote:
       path: package/Account/Scripts/AccountDisplay.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetText
     path: ../Account/Scripts/AccountDisplay.cs
     startLine: 36

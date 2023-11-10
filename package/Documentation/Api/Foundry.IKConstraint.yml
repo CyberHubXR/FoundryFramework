@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IKConstraint
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 85
@@ -167,7 +167,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: weight
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 88
@@ -208,7 +208,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Execute
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 89
@@ -234,7 +234,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Calibrate
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 91

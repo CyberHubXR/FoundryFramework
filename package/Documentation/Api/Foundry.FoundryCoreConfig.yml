@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Config/FoundryCoreConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryCoreConfig
     path: ../Config/FoundryCoreConfig.cs
     startLine: 11
@@ -106,7 +106,7 @@ items:
     remote:
       path: package/Config/FoundryCoreConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterServices
     path: ../Config/FoundryCoreConfig.cs
     startLine: 27

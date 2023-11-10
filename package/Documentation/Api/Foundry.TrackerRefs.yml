@@ -22,7 +22,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TrackerRefs
     path: ../Player/Scripts/Player.cs
     startLine: 15
@@ -67,7 +67,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: head
     path: ../Player/Scripts/Player.cs
     startLine: 18
@@ -94,7 +94,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftHand
     path: ../Player/Scripts/Player.cs
     startLine: 19
@@ -121,7 +121,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightHand
     path: ../Player/Scripts/Player.cs
     startLine: 20
@@ -148,7 +148,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waist
     path: ../Player/Scripts/Player.cs
     startLine: 21
@@ -175,7 +175,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftFoot
     path: ../Player/Scripts/Player.cs
     startLine: 22
@@ -202,7 +202,7 @@ items:
     remote:
       path: package/Player/Scripts/Player.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightFoot
     path: ../Player/Scripts/Player.cs
     startLine: 23

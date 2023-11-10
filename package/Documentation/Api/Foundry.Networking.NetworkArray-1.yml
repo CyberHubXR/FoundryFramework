@@ -34,7 +34,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkArray
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 7
@@ -85,7 +85,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnIndexSet
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 20
@@ -116,7 +116,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnChanged
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 22
@@ -154,7 +154,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 28
@@ -189,7 +189,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 42
@@ -227,7 +227,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 57
@@ -262,7 +262,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Dirty
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 66
@@ -297,7 +297,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Length
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 68
@@ -328,7 +328,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetDirty
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 70
@@ -360,7 +360,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetClean
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 77
@@ -392,7 +392,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetIndexDirty
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 85
@@ -424,7 +424,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsIndexDirty
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 96
@@ -458,7 +458,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Serialize
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 103
@@ -494,7 +494,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deserialize
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 120
@@ -530,7 +530,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Set
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 134
@@ -564,7 +564,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Get
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 142
@@ -598,7 +598,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: this[]
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 147
@@ -632,7 +632,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RawArray
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 158
@@ -670,7 +670,7 @@ items:
     remote:
       path: package/Networking/Scripts/NetworkArray.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ToString
     path: ../Networking/Scripts/NetworkArray.cs
     startLine: 161

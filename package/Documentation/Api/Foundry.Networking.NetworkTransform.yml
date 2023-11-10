@@ -23,7 +23,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NetworkTransform
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 26
@@ -186,7 +186,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: props
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 29
@@ -213,7 +213,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: lerpObject
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 30
@@ -240,7 +240,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: nativeScript
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 33
@@ -277,7 +277,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: api
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 39
@@ -316,7 +316,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Start
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 41
@@ -342,7 +342,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Teleport
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 47
@@ -373,7 +373,7 @@ items:
     remote:
       path: package/Networking/Scripts/MappedComponents/NetworkTransform.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Networking/Scripts/MappedComponents/NetworkTransform.cs
     startLine: 54

@@ -21,7 +21,7 @@ items:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: LinearSpringOptions
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs
     startLine: 10
@@ -63,7 +63,7 @@ items:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: springConstant
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs
     startLine: 13
@@ -90,7 +90,7 @@ items:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: dampingFactor
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs
     startLine: 14
@@ -117,7 +117,7 @@ items:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: targetPosition
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs
     startLine: 15
@@ -144,7 +144,7 @@ items:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: velocity
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs
     startLine: 17
@@ -171,7 +171,7 @@ items:
     remote:
       path: package/FakePhysics/Scripts/SpringJointSimulation.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: axisOfMovement
     path: ../FakePhysics/Scripts/SpringJointSimulation.cs
     startLine: 18

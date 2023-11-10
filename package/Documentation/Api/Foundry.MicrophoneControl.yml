@@ -28,7 +28,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: MicrophoneControl
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 13
@@ -180,7 +180,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: speakerSource
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 15
@@ -207,7 +207,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: micIcon
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 16
@@ -234,7 +234,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: mutedIcon
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 18
@@ -261,7 +261,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unmutedIcon
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 19
@@ -288,7 +288,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: muted
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 22
@@ -315,7 +315,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: mute
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 24
@@ -342,7 +342,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: unmute
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 25
@@ -369,7 +369,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 40
@@ -398,7 +398,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ClickButton
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 50
@@ -424,7 +424,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: MuteMicrophone
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 57
@@ -450,7 +450,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: UnmuteMicrophone
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 63
@@ -476,7 +476,7 @@ items:
     remote:
       path: package/Player/Scripts/MicrophoneControl.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Player/Scripts/MicrophoneControl.cs
     startLine: 69

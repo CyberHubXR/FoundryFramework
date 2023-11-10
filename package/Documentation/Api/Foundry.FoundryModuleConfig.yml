@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryModuleConfig
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 12
@@ -107,7 +107,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: EnabledServices
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 67
@@ -136,7 +136,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsServiceEnabled
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 87
@@ -170,7 +170,7 @@ items:
     remote:
       path: package/Application/Scripts/FoundryModuleConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterServices
     path: ../Application/Scripts/FoundryModuleConfig.cs
     startLine: 130

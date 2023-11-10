@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/FoundryConfigWindow.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryConfigWindow
     path: ../Editor/FoundryConfig/FoundryConfigWindow.cs
     startLine: 13
@@ -169,7 +169,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/FoundryConfigWindow.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OpenWindow
     path: ../Editor/FoundryConfig/FoundryConfigWindow.cs
     startLine: 15

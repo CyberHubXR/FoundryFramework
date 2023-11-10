@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Player/Scripts/ControllerConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: DeviceOffset
     path: ../Player/Scripts/ControllerConfig.cs
     startLine: 20
@@ -64,7 +64,7 @@ items:
     remote:
       path: package/Player/Scripts/ControllerConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: name
     path: ../Player/Scripts/ControllerConfig.cs
     startLine: 23
@@ -91,7 +91,7 @@ items:
     remote:
       path: package/Player/Scripts/ControllerConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: headOffset
     path: ../Player/Scripts/ControllerConfig.cs
     startLine: 24
@@ -118,7 +118,7 @@ items:
     remote:
       path: package/Player/Scripts/ControllerConfig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: controllerOffsets
     path: ../Player/Scripts/ControllerConfig.cs
     startLine: 29

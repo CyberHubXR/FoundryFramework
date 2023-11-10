@@ -19,10 +19,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SliderIncrementEvent
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -64,10 +64,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onIncrementEnter
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -91,10 +91,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: onIncrementExit
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -118,10 +118,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: incrementPointOnLine
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Foundry.Core
   namespace: Foundry

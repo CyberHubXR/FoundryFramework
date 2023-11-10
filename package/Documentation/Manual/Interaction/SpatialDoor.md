@@ -21,4 +21,4 @@ Don't worry, this is due for a refactor to make door motion smoother and more in
 To network the object as well add a @"Foundry.Networking.NetworkObject" and @"Foundry.Networking.NetworkTransform".
 
 ## Examples
-[Door Gadget](~/Manual/GettingStarted/Samples/Gadgets/Door.md)
+[Door Gadget](~/Manual/GettingStarted/Samples/Interactables/Gadgets/Door.md)

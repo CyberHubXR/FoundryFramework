@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IKTargetedConstraint
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 94
@@ -169,7 +169,7 @@ items:
     remote:
       path: package/Avatar/Scripts/IK Constraints/IKExecutor.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: target
     path: ../Avatar/Scripts/IK Constraints/IKExecutor.cs
     startLine: 96

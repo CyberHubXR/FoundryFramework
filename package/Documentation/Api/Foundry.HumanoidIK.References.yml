@@ -22,7 +22,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: References
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 30
@@ -64,7 +64,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: head
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 33
@@ -91,7 +91,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftHand
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 34
@@ -118,7 +118,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightHand
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 35
@@ -145,7 +145,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waist
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 36
@@ -172,7 +172,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftFoot
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 37
@@ -199,7 +199,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightFoot
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 38

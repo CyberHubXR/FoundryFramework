@@ -26,10 +26,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialSlider
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -191,10 +191,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sliderStart
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -218,10 +218,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sliderEnd
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -245,10 +245,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sliderVisualObject
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -272,10 +272,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: smoothSlider
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -311,10 +311,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: amountOfIncrements
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 30
+    startLine: 31
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -338,10 +338,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sliderIncrementEvents
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -377,10 +377,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: sliderSmoothEvent
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -404,10 +404,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterProperties
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 74
+    startLine: 75
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -440,10 +440,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TouchUpdate
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 119
+    startLine: 120
   assemblies:
   - Foundry.Core
   namespace: Foundry
@@ -471,10 +471,10 @@ items:
     remote:
       path: package/Interaction/Grabbable/SpatialSlider.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FindNearestPointOnLine
     path: ../Interaction/Grabbable/SpatialSlider.cs
-    startLine: 167
+    startLine: 168
   assemblies:
   - Foundry.Core
   namespace: Foundry

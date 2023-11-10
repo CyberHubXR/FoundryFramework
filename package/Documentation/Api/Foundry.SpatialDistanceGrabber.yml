@@ -39,7 +39,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialDistanceGrabber
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 5
@@ -204,7 +204,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: primaryHand
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 9
@@ -252,7 +252,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: overridePrimaryHighlight
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 11
@@ -291,7 +291,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: pointerPose
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 12
@@ -318,7 +318,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: pointerPoseTime
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 13
@@ -345,7 +345,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: forward
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 16
@@ -384,7 +384,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: maxRange
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 17
@@ -411,7 +411,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: layers
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 18
@@ -438,7 +438,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: line
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 19
@@ -465,7 +465,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: invalidColor
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 20
@@ -492,7 +492,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: highlightColor
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 21
@@ -519,7 +519,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartPoint
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 25
@@ -558,7 +558,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopPoint
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 26
@@ -585,7 +585,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartTarget
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 27
@@ -612,7 +612,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopTarget
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 28
@@ -639,7 +639,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnPull
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 29
@@ -666,7 +666,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: OnConnected
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 62
@@ -695,7 +695,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartPointing
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 161
@@ -721,7 +721,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopPointing
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 175
@@ -747,7 +747,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StartTargeting
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 190
@@ -776,7 +776,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: StopTargeting
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 210
@@ -802,7 +802,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SelectTarget
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 226
@@ -828,7 +828,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CancelSelect
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 244
@@ -854,7 +854,7 @@ items:
     remote:
       path: package/Interaction/DistanceGrab/SpatialDistanceGrabber.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ActivatePull
     path: ../Interaction/DistanceGrab/SpatialDistanceGrabber.cs
     startLine: 255

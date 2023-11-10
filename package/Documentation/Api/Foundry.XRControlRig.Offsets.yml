@@ -22,7 +22,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Offsets
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 23
@@ -64,7 +64,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: head
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 26
@@ -91,7 +91,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftHand
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 27
@@ -118,7 +118,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightHand
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 28
@@ -145,7 +145,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waist
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 29
@@ -172,7 +172,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftFoot
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 30
@@ -199,7 +199,7 @@ items:
     remote:
       path: package/Player/Scripts/XRControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightFoot
     path: ../Player/Scripts/XRControlRig.cs
     startLine: 31

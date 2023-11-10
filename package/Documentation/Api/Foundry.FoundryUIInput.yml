@@ -27,7 +27,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: FoundryUIInput
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 9
@@ -196,7 +196,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: current
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 11
@@ -223,7 +223,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: canvasCamera
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 16
@@ -262,7 +262,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: mousePresent
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 21
@@ -293,7 +293,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: touchSupported
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 26
@@ -324,7 +324,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetMouseButtonDown
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 31
@@ -360,7 +360,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetMouseButtonUp
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 41
@@ -397,7 +397,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetMouseButton
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 48
@@ -433,7 +433,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: mousePosition
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 55
@@ -464,7 +464,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetAxisRaw
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 65
@@ -500,7 +500,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetActiveRaycaster
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 71
@@ -529,7 +529,7 @@ items:
     remote:
       path: package/Input/Common/Scripts/FoundryUIInput.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: activeRaycaster
     path: ../Input/Common/Scripts/FoundryUIInput.cs
     startLine: 82

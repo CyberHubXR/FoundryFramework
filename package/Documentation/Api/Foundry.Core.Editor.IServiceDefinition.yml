@@ -19,7 +19,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IServiceDefinition
     path: ../Editor/FoundryConfig/ServiceDefinition.cs
     startLine: 4
@@ -44,7 +44,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Source
     path: ../Editor/FoundryConfig/ServiceDefinition.cs
     startLine: 10
@@ -75,7 +75,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PrettyName
     path: ../Editor/FoundryConfig/ServiceDefinition.cs
     startLine: 15
@@ -105,7 +105,7 @@ items:
     remote:
       path: package/Editor/FoundryConfig/ServiceDefinition.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ServiceInterface
     path: ../Editor/FoundryConfig/ServiceDefinition.cs
     startLine: 21

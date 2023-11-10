@@ -20,7 +20,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PosRot
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 9
@@ -64,7 +64,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: pos
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 12
@@ -91,7 +91,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rot
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 13
@@ -118,7 +118,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Serialize
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 14
@@ -150,7 +150,7 @@ items:
     remote:
       path: package/Avatar/Scripts/HumanoidIK.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Deserialize
     path: ../Avatar/Scripts/HumanoidIK.cs
     startLine: 20

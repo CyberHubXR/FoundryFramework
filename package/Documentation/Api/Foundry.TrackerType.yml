@@ -22,7 +22,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: TrackerType
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
     startLine: 14
@@ -47,7 +47,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: head
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
     startLine: 16
@@ -73,7 +73,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftHand
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
     startLine: 17
@@ -99,7 +99,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightHand
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
     startLine: 18
@@ -125,7 +125,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: waist
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
     startLine: 19
@@ -151,7 +151,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: leftFoot
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
     startLine: 20
@@ -177,7 +177,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerControlRig.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: rightFoot
     path: ../Player/Scripts/Services/Implementation/PlayerControlRig.cs
     startLine: 21

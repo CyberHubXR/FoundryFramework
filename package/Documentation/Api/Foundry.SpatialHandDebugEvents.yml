@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHandDebugEvents.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialHandDebugEvents
     path: ../Interaction/Hand/SpatialHandDebugEvents.cs
     startLine: 6
@@ -162,7 +162,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHandDebugEvents.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: hand
     path: ../Interaction/Hand/SpatialHandDebugEvents.cs
     startLine: 8

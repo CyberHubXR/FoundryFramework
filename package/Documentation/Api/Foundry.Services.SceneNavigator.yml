@@ -31,7 +31,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SceneNavigator
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 55
@@ -72,7 +72,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 70
@@ -103,7 +103,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GoBackAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 234
@@ -141,7 +141,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GoForwardAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 244
@@ -179,7 +179,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GoToAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 254
@@ -219,7 +219,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GoToAsync
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 265
@@ -259,7 +259,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CanGoBack
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 280
@@ -293,7 +293,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CanGoForward
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 289
@@ -327,7 +327,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: CurrentScene
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 298
@@ -360,7 +360,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: History
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 307
@@ -393,7 +393,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IsNavigating
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 310
@@ -426,7 +426,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NavigationTask
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 313
@@ -459,7 +459,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NavigationCompleted
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 320
@@ -490,7 +490,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NavigationStarted
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 323
@@ -525,7 +525,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: NavigationStarting
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 326
@@ -560,7 +560,7 @@ items:
     remote:
       path: package/Navigation/Scripts/Services/Implementation/SceneNavigator.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ProgressChanged
     path: ../Navigation/Scripts/Services/Implementation/SceneNavigator.cs
     startLine: 329

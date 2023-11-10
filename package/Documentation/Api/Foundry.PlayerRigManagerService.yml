@@ -23,7 +23,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerRigManagerService
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 6
@@ -60,7 +60,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: Rig
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 8
@@ -93,7 +93,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerRigCreated
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 9
@@ -124,7 +124,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerRigBorrowed
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 10
@@ -154,7 +154,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: PlayerRigReturned
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 11
@@ -184,7 +184,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: RegisterRig
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 18
@@ -219,7 +219,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: BorrowPlayerRig
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 26
@@ -251,7 +251,7 @@ items:
     remote:
       path: package/Player/Scripts/Services/Implementation/PlayerRigManager.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ReturnPlayerRig
     path: ../Player/Scripts/Services/Implementation/PlayerRigManager.cs
     startLine: 35

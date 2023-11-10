@@ -353,6 +353,8 @@ items:
     name: DisconnectBehaviour
   - uid: Foundry.Networking.FoundryPrefabs
     name: FoundryPrefabs
+  - uid: Foundry.Networking.IDChangeRequestCallback
+    name: IDChangeRequestCallback
   - uid: Foundry.Networking.INetworkProperty
     name: INetworkProperty
   - uid: Foundry.Networking.INetworkProvider
@@ -383,8 +385,6 @@ items:
     name: NetworkManager
   - uid: Foundry.Networking.NetworkObject
     name: NetworkObject
-  - uid: Foundry.Networking.NetworkObject.IDChangeRequestCallback
-    name: NetworkObject.IDChangeRequestCallback
   - uid: Foundry.Networking.NetworkPlayerEventHandler
     name: NetworkPlayerEventHandler
   - uid: Foundry.Networking.NetworkProperty`1

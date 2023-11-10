@@ -20,7 +20,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: IModuleSetupTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 10
@@ -47,7 +47,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetTaskState
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 23
@@ -78,7 +78,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetTasks
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 26
@@ -108,7 +108,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ModuleName
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 29
@@ -138,7 +138,7 @@ items:
     remote:
       path: package/Editor/SetupWizard/ModuleSetupTasks.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: ModuleSource
     path: ../Editor/SetupWizard/ModuleSetupTasks.cs
     startLine: 32

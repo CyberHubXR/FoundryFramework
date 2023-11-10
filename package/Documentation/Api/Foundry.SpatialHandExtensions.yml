@@ -17,7 +17,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHandExtensions.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: SpatialHandExtensions
     path: ../Interaction/Hand/SpatialHandExtensions.cs
     startLine: 6
@@ -53,7 +53,7 @@ items:
     remote:
       path: package/Interaction/Hand/SpatialHandExtensions.cs
       branch: main
-      repo: https://github.com/FoundryXR/FoundryCore
+      repo: https://github.com/FoundryXR/FoundryCore.git
     id: GetFinger
     path: ../Interaction/Hand/SpatialHandExtensions.cs
     startLine: 7
