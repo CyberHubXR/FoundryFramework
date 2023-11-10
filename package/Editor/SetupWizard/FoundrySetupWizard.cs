@@ -63,6 +63,11 @@ namespace Foundry.Core.Setup
         public SetupAction action;
 
         /// <summary>
+        /// If set to true, the action button will be deactivated after it's been pressed. (default true)
+        /// </summary>
+        public bool disableAfterAction = true;
+
+        /// <summary>
         /// Helper for creating a text description without needing to interact with the Unity UI interface
         /// </summary>
         /// <param name="text"></param>
@@ -273,7 +278,7 @@ namespace Foundry.Core.Setup
                             actionButton.clicked += ()=>
                             {
                                 // Disable the action after it's clicked so we don't double activate async actions
-                                actionButton.SetEnabled(false);
+                                actionButton.SetEnabled(!task.disableAfterAction);
                                 task.action.callback();
                             };
                             depContainer.Add(actionButton);
