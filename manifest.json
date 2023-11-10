@@ -1214,6 +1214,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "Api/Foundry.Networking.IDChangeRequestCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "Api/Foundry.Networking.IDChangeRequestCallback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "Api/Foundry.Networking.INetworkProperty.yml",
       "output": {
         ".html": {
@@ -2407,50 +2417,60 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Button.md",
+      "source_relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Button.html"
+          "relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Door.md",
+      "source_relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Button.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Door.html"
+          "relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Button.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Gadgets.md",
+      "source_relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Door.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Gadgets.html"
+          "relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Door.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Lever.md",
+      "source_relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Lever.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Lever.html"
+          "relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Lever.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Manual/GettingStarted/Samples/Gadgets/Slider.md",
+      "source_relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Slider.md",
       "output": {
         ".html": {
-          "relative_path": "Manual/GettingStarted/Samples/Gadgets/Slider.html"
+          "relative_path": "Manual/GettingStarted/Samples/Interactables/Gadgets/Slider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/GettingStarted/Samples/Interactables/InteractableGrabbableExample.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/GettingStarted/Samples/Interactables/InteractableGrabbableExample.html"
         }
       },
       "version": ""
@@ -2477,6 +2497,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/PlacePoint.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/PlacePoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Manual/Interaction/SpatialButton.md",
       "output": {
         ".html": {
@@ -2497,6 +2527,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/SpatialGrabbable.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/SpatialGrabbable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Manual/Interaction/SpatialLever.md",
       "output": {
         ".html": {
@@ -2511,6 +2551,16 @@
       "output": {
         ".html": {
           "relative_path": "Manual/Interaction/SpatialSlider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Manual/Interaction/SpatialTouchable.md",
+      "output": {
+        ".html": {
+          "relative_path": "Manual/Interaction/SpatialTouchable.html"
         }
       },
       "version": ""
@@ -2700,6 +2750,46 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/GrabbableInScene.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/GrabbableInScene.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/GrabbableInScene.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/GrabbableInScene.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/PlacePointScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/PlacePointScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/PlacePointScript.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/PlacePointScript.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Media/Manual/Interaction/SpatialButtonScript.png",
       "output": {
         "resource": {
@@ -2740,6 +2830,26 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialGrabbableScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialGrabbableScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialGrabbableScript.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialGrabbableScript.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "Media/Manual/Interaction/SpatialLeverScript.png",
       "output": {
         "resource": {
@@ -2774,6 +2884,26 @@
       "output": {
         "resource": {
           "relative_path": "Media/Manual/Interaction/SpatialSliderScript.png.meta"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialTouchableScript.png",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialTouchableScript.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "Media/Manual/Interaction/SpatialTouchableScript.png.meta",
+      "output": {
+        "resource": {
+          "relative_path": "Media/Manual/Interaction/SpatialTouchableScript.png.meta"
         }
       },
       "version": ""

@@ -170,7 +170,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_Dirty" data-uid="Foundry.NetworkEvent`1.Dirty">
   Dirty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>If dirty, this property will be synced across the network.</p>
@@ -198,11 +198,43 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
 
 
+  <a id="Foundry_NetworkEvent_1_MaxQueueLength_" data-uid="Foundry.NetworkEvent`1.MaxQueueLength*"></a>
+
+  <h3 id="Foundry_NetworkEvent_1_MaxQueueLength" data-uid="Foundry.NetworkEvent`1.MaxQueueLength">
+  MaxQueueLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The max amount of events that may be queued up between serializations. If this is exceeded, the oldest events will be removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint MaxQueueLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Foundry_NetworkEvent_1_OnChanged_" data-uid="Foundry.NetworkEvent`1.OnChanged*"></a>
 
   <h3 id="Foundry_NetworkEvent_1_OnChanged" data-uid="Foundry.NetworkEvent`1.OnChanged">
   OnChanged
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Never is called for NetworkEvent</p>
@@ -238,7 +270,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_AddListener_UnityEngine_Events_UnityAction_Foundry_NetEventSource__0__" data-uid="Foundry.NetworkEvent`1.AddListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})">
   AddListener(UnityAction&lt;NetEventSource, T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Add a listener to this event. This is called when the event is invoked. Use NetEventSource to filter between local and remote calls.</p>
@@ -270,7 +302,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_Deserialize_Foundry_Core_Serialization_FoundryDeserializer_" data-uid="Foundry.NetworkEvent`1.Deserialize(Foundry.Core.Serialization.FoundryDeserializer)">
   Deserialize(FoundryDeserializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Read data received from the network into this property.</p>
@@ -302,7 +334,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_Invoke__0_" data-uid="Foundry.NetworkEvent`1.Invoke(`0)">
   Invoke(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invoke this event. This will call all listeners on all clients.</p>
@@ -334,7 +366,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_InvokeLocal__0_" data-uid="Foundry.NetworkEvent`1.InvokeLocal(`0)">
   InvokeLocal(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invoke this event locally. This will only call listeners on the local client.</p>
@@ -366,7 +398,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_InvokeRemote__0_" data-uid="Foundry.NetworkEvent`1.InvokeRemote(`0)">
   InvokeRemote(T)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invoke this event remotely. This will only call listeners on remote clients.</p>
@@ -398,7 +430,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_RemoveListener_UnityEngine_Events_UnityAction_Foundry_NetEventSource__0__" data-uid="Foundry.NetworkEvent`1.RemoveListener(UnityEngine.Events.UnityAction{Foundry.NetEventSource,`0})">
   RemoveListener(UnityAction&lt;NetEventSource, T&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -429,7 +461,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_Serialize_Foundry_Core_Serialization_FoundrySerializer_" data-uid="Foundry.NetworkEvent`1.Serialize(Foundry.Core.Serialization.FoundrySerializer)">
   Serialize(FoundrySerializer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Write contained data out to the stream to be synced across the network.</p>
@@ -461,7 +493,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_SetClean" data-uid="Foundry.NetworkEvent`1.SetClean">
   SetClean()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Called after variable has been serialized and sent across the network to reset state.</p>
@@ -488,7 +520,7 @@ public class NetworkEvent&lt;T&gt; : NetworkEventBase, INetworkProperty</code></
 
   <h3 id="Foundry_NetworkEvent_1_SetDirty" data-uid="Foundry.NetworkEvent`1.SetDirty">
   SetDirty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/FoundryXR/FoundryCore/blob/main/package/Networking/Scripts/NetworkEvent.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Set this property dirty, useful for when a property is synced incrementally and we need to send the whole object.</p>

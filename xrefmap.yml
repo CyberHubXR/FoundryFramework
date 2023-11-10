@@ -5196,6 +5196,23 @@ references:
   fullName.vb: Foundry.NetworkEvent(Of T).InvokeRemote
   nameWithType: NetworkEvent<T>.InvokeRemote
   nameWithType.vb: NetworkEvent(Of T).InvokeRemote
+- uid: Foundry.NetworkEvent`1.MaxQueueLength
+  name: MaxQueueLength
+  href: Api/Foundry.NetworkEvent-1.html#Foundry_NetworkEvent_1_MaxQueueLength
+  commentId: P:Foundry.NetworkEvent`1.MaxQueueLength
+  fullName: Foundry.NetworkEvent<T>.MaxQueueLength
+  fullName.vb: Foundry.NetworkEvent(Of T).MaxQueueLength
+  nameWithType: NetworkEvent<T>.MaxQueueLength
+  nameWithType.vb: NetworkEvent(Of T).MaxQueueLength
+- uid: Foundry.NetworkEvent`1.MaxQueueLength*
+  name: MaxQueueLength
+  href: Api/Foundry.NetworkEvent-1.html#Foundry_NetworkEvent_1_MaxQueueLength_
+  commentId: Overload:Foundry.NetworkEvent`1.MaxQueueLength
+  isSpec: "True"
+  fullName: Foundry.NetworkEvent<T>.MaxQueueLength
+  fullName.vb: Foundry.NetworkEvent(Of T).MaxQueueLength
+  nameWithType: NetworkEvent<T>.MaxQueueLength
+  nameWithType.vb: NetworkEvent(Of T).MaxQueueLength
 - uid: Foundry.NetworkEvent`1.OnChanged
   name: OnChanged
   href: Api/Foundry.NetworkEvent-1.html#Foundry_NetworkEvent_1_OnChanged
@@ -5669,6 +5686,12 @@ references:
   commentId: T:Foundry.Networking.FusionInputHandler
   fullName: Foundry.Networking.FusionInputHandler
   nameWithType: FusionInputHandler
+- uid: Foundry.Networking.IDChangeRequestCallback
+  name: IDChangeRequestCallback
+  href: Api/Foundry.Networking.IDChangeRequestCallback.html
+  commentId: T:Foundry.Networking.IDChangeRequestCallback
+  fullName: Foundry.Networking.IDChangeRequestCallback
+  nameWithType: IDChangeRequestCallback
 - uid: Foundry.Networking.INetworkProperty
   name: INetworkProperty
   href: Api/Foundry.Networking.INetworkProperty.html
@@ -7357,12 +7380,12 @@ references:
   isSpec: "True"
   fullName: Foundry.Networking.NetworkObject.RequestOwnership
   nameWithType: NetworkObject.RequestOwnership
-- uid: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
+- uid: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
   name: SetVerifyIDChangeCallback(IDChangeRequestCallback)
-  href: Api/Foundry.Networking.NetworkObject.html#Foundry_Networking_NetworkObject_SetVerifyIDChangeCallback_Foundry_Networking_NetworkObject_IDChangeRequestCallback_
-  commentId: M:Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
-  fullName: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.NetworkObject.IDChangeRequestCallback)
-  nameWithType: NetworkObject.SetVerifyIDChangeCallback(NetworkObject.IDChangeRequestCallback)
+  href: Api/Foundry.Networking.NetworkObject.html#Foundry_Networking_NetworkObject_SetVerifyIDChangeCallback_Foundry_Networking_IDChangeRequestCallback_
+  commentId: M:Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
+  fullName: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback(Foundry.Networking.IDChangeRequestCallback)
+  nameWithType: NetworkObject.SetVerifyIDChangeCallback(IDChangeRequestCallback)
 - uid: Foundry.Networking.NetworkObject.SetVerifyIDChangeCallback*
   name: SetVerifyIDChangeCallback
   href: Api/Foundry.Networking.NetworkObject.html#Foundry_Networking_NetworkObject_SetVerifyIDChangeCallback_
@@ -12502,6 +12525,19 @@ references:
   commentId: F:Foundry.TeleportRaycaster.HideTeleport
   fullName: Foundry.TeleportRaycaster.HideTeleport
   nameWithType: TeleportRaycaster.HideTeleport
+- uid: Foundry.TeleportRaycaster.OnConnected
+  name: OnConnected()
+  href: Api/Foundry.TeleportRaycaster.html#Foundry_TeleportRaycaster_OnConnected
+  commentId: M:Foundry.TeleportRaycaster.OnConnected
+  fullName: Foundry.TeleportRaycaster.OnConnected()
+  nameWithType: TeleportRaycaster.OnConnected()
+- uid: Foundry.TeleportRaycaster.OnConnected*
+  name: OnConnected
+  href: Api/Foundry.TeleportRaycaster.html#Foundry_TeleportRaycaster_OnConnected_
+  commentId: Overload:Foundry.TeleportRaycaster.OnConnected
+  isSpec: "True"
+  fullName: Foundry.TeleportRaycaster.OnConnected
+  nameWithType: TeleportRaycaster.OnConnected
 - uid: Foundry.TeleportRaycaster.OnInvalidTeleport
   name: OnInvalidTeleport
   href: Api/Foundry.TeleportRaycaster.html#Foundry_TeleportRaycaster_OnInvalidTeleport
