@@ -1,7 +1,7 @@
 # Place Point
 @"Foundry.PlacePoint"
 
-![Spatial Touchable Script](/Media/Manual/Interaction/PlacePointScript.png)
+![Spatial Touchable Script](~/Media/Manual/Interaction/PlacePointScript.png)
 
 ## Description
 A multipurpose script for snap placement of grabbables. 

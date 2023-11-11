@@ -1,7 +1,7 @@
 # SpatialLever
 @"Foundry.SpatialLever"
 
-![SpatialLever](/Media/Manual/Interaction/SpatialLeverScript.png)
+![SpatialLever](~/Media/Manual/Interaction/SpatialLeverScript.png)
 
 ## Description
 A networked lever implementation, using the foundry touch point system. 

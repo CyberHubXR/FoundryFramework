@@ -171,6 +171,7 @@
   "Foundry.Core.Setup.SetupTask.Urgency.Suggested": "Foundry.Core.Setup.SetupTask.Urgency.yml",
   "Foundry.Core.Setup.SetupTask.action": "Foundry.Core.Setup.SetupTask.yml",
   "Foundry.Core.Setup.SetupTask.description": "Foundry.Core.Setup.SetupTask.yml",
+  "Foundry.Core.Setup.SetupTask.disableAfterAction": "Foundry.Core.Setup.SetupTask.yml",
   "Foundry.Core.Setup.SetupTask.name": "Foundry.Core.Setup.SetupTask.yml",
   "Foundry.Core.Setup.SetupTask.urgency": "Foundry.Core.Setup.SetupTask.yml",
   "Foundry.Core.Setup.SetupTaskList": "Foundry.Core.Setup.SetupTaskList.yml",

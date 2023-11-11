@@ -1,7 +1,7 @@
 # Spatial Grabbable 
 @"Foundry.SpatialGrabbable"
 
-![SpatialDoor](/Media/Manual/Interaction/SpatialGrabbableScript.png)
+![SpatialDoor](~/Media/Manual/Interaction/SpatialGrabbableScript.png)
 
 ## Description
 A script for making an object grabbable.

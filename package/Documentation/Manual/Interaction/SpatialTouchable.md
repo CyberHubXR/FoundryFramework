@@ -1,7 +1,7 @@
 # Spatial Touchable 
 @"Foundry.SpatialTouchable"
 
-![Spatial Touchable Script](/Media/Manual/Interaction/SpatialTouchableScript.png)
+![Spatial Touchable Script](~/Media/Manual/Interaction/SpatialTouchableScript.png)
 
 ## Description
 A script for making an object detect when it's touched. Also the basis for a lot of our gizmo scripts. 

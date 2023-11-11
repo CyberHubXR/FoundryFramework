@@ -1,7 +1,7 @@
 # SpatialButton
 @"Foundry.SpatialButton"
 
-![SpatialButton](/Media/Manual/Interaction/SpatialButtonScript.png)
+![SpatialButton](~/Media/Manual/Interaction/SpatialButtonScript.png)
 
 ## Description
 A networked button implementation, using the foundry touch point system. 

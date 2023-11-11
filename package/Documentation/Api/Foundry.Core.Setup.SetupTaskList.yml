@@ -24,7 +24,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetupTaskList
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 81
+    startLine: 86
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -61,7 +61,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore.git
     id: name
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 83
+    startLine: 88
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -88,7 +88,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore.git
     id: description
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 88
+    startLine: 93
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -117,7 +117,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore.git
     id: tasks
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 93
+    startLine: 98
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -146,7 +146,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore.git
     id: .ctor
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 95
+    startLine: 100
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -178,7 +178,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore.git
     id: Add
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 104
+    startLine: 109
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup

@@ -8,6 +8,7 @@ items:
   - Foundry.Core.Setup.SetupTask.SetTextDescription(System.String)
   - Foundry.Core.Setup.SetupTask.action
   - Foundry.Core.Setup.SetupTask.description
+  - Foundry.Core.Setup.SetupTask.disableAfterAction
   - Foundry.Core.Setup.SetupTask.name
   - Foundry.Core.Setup.SetupTask.urgency
   langs:
@@ -157,6 +158,35 @@ items:
     return:
       type: Foundry.Core.Setup.SetupAction
     content.vb: Public action As SetupAction
+- uid: Foundry.Core.Setup.SetupTask.disableAfterAction
+  commentId: F:Foundry.Core.Setup.SetupTask.disableAfterAction
+  id: disableAfterAction
+  parent: Foundry.Core.Setup.SetupTask
+  langs:
+  - csharp
+  - vb
+  name: disableAfterAction
+  nameWithType: SetupTask.disableAfterAction
+  fullName: Foundry.Core.Setup.SetupTask.disableAfterAction
+  type: Field
+  source:
+    remote:
+      path: package/Editor/SetupWizard/FoundrySetupWizard.cs
+      branch: main
+      repo: https://github.com/FoundryXR/FoundryCore.git
+    id: disableAfterAction
+    path: ../Editor/SetupWizard/FoundrySetupWizard.cs
+    startLine: 67
+  assemblies:
+  - Foundry.Core.Setup
+  namespace: Foundry.Core.Setup
+  summary: If set to true, the action button will be deactivated after it's been pressed. (default true)
+  example: []
+  syntax:
+    content: public bool disableAfterAction
+    return:
+      type: System.Boolean
+    content.vb: Public disableAfterAction As Boolean
 - uid: Foundry.Core.Setup.SetupTask.SetTextDescription(System.String)
   commentId: M:Foundry.Core.Setup.SetupTask.SetTextDescription(System.String)
   id: SetTextDescription(System.String)
@@ -175,7 +205,7 @@ items:
       repo: https://github.com/FoundryXR/FoundryCore.git
     id: SetTextDescription
     path: ../Editor/SetupWizard/FoundrySetupWizard.cs
-    startLine: 68
+    startLine: 73
   assemblies:
   - Foundry.Core.Setup
   namespace: Foundry.Core.Setup
@@ -530,6 +560,17 @@ references:
   name: SetupAction
   nameWithType: SetupAction
   fullName: Foundry.Core.Setup.SetupAction
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Foundry.Core.Setup.SetupTask.SetTextDescription*
   commentId: Overload:Foundry.Core.Setup.SetupTask.SetTextDescription
   href: Foundry.Core.Setup.SetupTask.html#Foundry.Core.Setup.SetupTask.SetTextDescription(System.String)

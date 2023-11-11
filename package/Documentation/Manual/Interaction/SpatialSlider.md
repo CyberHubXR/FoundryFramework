@@ -1,7 +1,7 @@
 # SpatialSlider
 @"Foundry.SpatialSlider"
 
-![SpatialSlider](/Media/Manual/Interaction/SpatialSliderScript.png)
+![SpatialSlider](~/Media/Manual/Interaction/SpatialSliderScript.png)
 
 ## Description
 A networked Slider implementation, using the foundry touch point system. 

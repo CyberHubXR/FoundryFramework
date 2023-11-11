@@ -1,7 +1,7 @@
 # SpatialDoor
 @"Foundry.SpatialDoor"
 
-![SpatialDoor](/Media/Manual/Interaction/SpatialDoorScript.png)
+![SpatialDoor](~/Media/Manual/Interaction/SpatialDoorScript.png)
 
 ## Description
 A networked door implementation, using the foundry touch point system. 
