@@ -1,4 +1,4 @@
-# Spatial Grabbable 
+# Spatial Touchable 
 @"Foundry.SpatialTouchable"
 
 ![Spatial Touchable Script](/Media/Manual/Interaction/SpatialTouchableScript.png)
