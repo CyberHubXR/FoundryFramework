@@ -24,6 +24,6 @@ If you wish set a player prefab to spawn on load, you can set the PlayerPrefab p
 
 These are currently the most stable options:
 
-![NetworkManager defaults](/Media/Manual/Networking/NetworkManager.png)
+![NetworkManager defaults](~/Media/Manual/Networking/NetworkManager.png)
 
 After you have that in your scene, refer to the specific network provider plugin you've installed on how to set up the native networking system, once you've done that you're ready to start networking!
