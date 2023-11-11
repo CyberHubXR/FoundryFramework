@@ -84,7 +84,6 @@ namespace Foundry
         public Vector3 velocity;
         Vector3 lastPos;
 
-        private bool wasKinematic;
         private float velocityFrameTime = 10F;
 
         private HandVelocityTracker _handVelocityTracker;
@@ -226,7 +225,6 @@ namespace Foundry
             _held = grabbable;
             if (grabbable.TryGetComponent(out Rigidbody body))
             {
-                wasKinematic = body.isKinematic;
                 body.isKinematic = true;
             }
 
@@ -289,7 +287,7 @@ namespace Foundry
             {
                 if (grabbable.TryGetComponent(out Rigidbody body))
                 {
-                    body.isKinematic = wasKinematic;
+                    body.isKinematic = false;
 
                     if (IsOwner)
                     {
