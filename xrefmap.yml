@@ -1731,6 +1731,12 @@ references:
   commentId: F:Foundry.Core.Setup.SetupTask.description
   fullName: Foundry.Core.Setup.SetupTask.description
   nameWithType: SetupTask.description
+- uid: Foundry.Core.Setup.SetupTask.disableAfterAction
+  name: disableAfterAction
+  href: Api/Foundry.Core.Setup.SetupTask.html#Foundry_Core_Setup_SetupTask_disableAfterAction
+  commentId: F:Foundry.Core.Setup.SetupTask.disableAfterAction
+  fullName: Foundry.Core.Setup.SetupTask.disableAfterAction
+  nameWithType: SetupTask.disableAfterAction
 - uid: Foundry.Core.Setup.SetupTask.name
   name: name
   href: Api/Foundry.Core.Setup.SetupTask.html#Foundry_Core_Setup_SetupTask_name
