@@ -19,7 +19,7 @@ using UnityEditor;
 public class ColorSync : NetworkComponent
 {
     // Create an instance of NetworkedProperty<Color> with a default value of Color.white.
-    private NetworkedProperty<Color> _color = new(Color.white);
+    private NetworkProperty<Color> _color = new(Color.white);
 
     public Color color
     {

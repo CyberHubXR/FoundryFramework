@@ -31,7 +31,7 @@ namespace Foundry
             PlayerControlMode targetMode = controlMode;
             if (targetMode != PlayerControlMode.Desktop)
             {
-                if(initializedControlMode != PlayerControlMode.XR)
+                if (initializedControlMode != PlayerControlMode.XR)
                 {
                     var instance = XRGeneralSettings.Instance;
                     Debug.Assert(instance, "XR Settings not found, Make sure XR is installed and enabled!");
@@ -49,6 +49,7 @@ namespace Foundry
                 }
                 initializedControlMode = PlayerControlMode.XR;
             }
+
             if (targetMode == PlayerControlMode.Desktop)
                 initializedControlMode = PlayerControlMode.Desktop;
             
