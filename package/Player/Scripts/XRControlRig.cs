@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.XR;
+using InputDevice = UnityEngine.XR.InputDevice;
 
 namespace Foundry
 {
@@ -14,6 +16,9 @@ namespace Foundry
         public Transform waistTracker;
         public Transform leftFootTracker;
         public Transform rightFootTracker;
+
+        [Header("Input")]
+        public InputAction headsetSensor;
 
         private TrackingMode trackingMode = TrackingMode.ThreePoint;
 
@@ -41,9 +46,24 @@ namespace Foundry
             Debug.Assert(rightController, "Right controller object reference not set!");
             SpatialInputManager.ActivateActions(trackingMode);
             GetControllerOffsets();
+            UpdateTrackingMode();
+
+            headsetSensor.Enable();
+            
+            // Tracking mode only seems to get set if the headset is currently active, so we need to set it again when the headset is turned on
+            headsetSensor.performed += ctx =>
+            {
+                UpdateTrackingMode();
+            };
+        }
+
+        void UpdateTrackingMode()
+        {
             
             List<XRInputSubsystem> subsystems = new();
             SubsystemManager.GetInstances(subsystems);
+            foreach (var s in subsystems)
+                s.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
             foreach (var s in subsystems)
                 s.TrySetTrackingOriginMode(TrackingOriginModeFlags.Floor);
         }
