@@ -1,9 +1,6 @@
 using Foundry.Services;
-using System;
-using PlasticGui.Help.Conditions;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem.HID;
 using UnityEngine.UI;
 
 namespace Foundry

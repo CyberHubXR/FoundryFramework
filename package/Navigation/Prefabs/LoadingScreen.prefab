@@ -299,7 +299,7 @@ MonoBehaviour:
     m_Bits: 0
   visuals: {fileID: 5788776871215443939}
   progressImage: {fileID: 1018469851530313732}
-  errorText: {fileID: 0}
+  errorText: {fileID: 5878092406330551889}
 --- !u!1 &1294442934218589355
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8159611261450279821
 Transform:
   m_ObjectHideFlags: 0
