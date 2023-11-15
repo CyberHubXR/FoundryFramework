@@ -1,5 +1,7 @@
 using Foundry.Services;
 using System;
+using PlasticGui.Help.Conditions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
 using UnityEngine.UI;
@@ -14,6 +16,7 @@ namespace Foundry
         private IPlayerRigManager playerRigManager;
         private ISceneNavigator sceneNavigator;
         private int uncompletedLoadingPhases = 0;
+        private static LoadingScreenManager instance;
 
         #endregion Private Fields
 
@@ -30,6 +33,12 @@ namespace Foundry
         [SerializeField]
         [Tooltip("The UI Image object that will be used to display progress.")]
         private Image progressImage;
+        
+        
+        [SerializeField]
+        [Tooltip("The UI Image object that will be used to display errors.")]
+        private TMP_Text errorText;
+        
         #endregion Unity Inspector Variables
 
         #region Private Methods
@@ -117,6 +126,9 @@ namespace Foundry
         /// <inheritdoc/>
         private void OnDisable()
         {
+            if(instance == this)
+                instance = null;
+            
             // Unsubscribe from events
             sceneNavigator.NavigationCompleted -= SceneNavigator_NavigationCompleted;
             sceneNavigator.NavigationStarting -= SceneNavigator_NavigationStarting;
@@ -128,6 +140,8 @@ namespace Foundry
         /// <inheritdoc/>
         private void OnEnable()
         {
+            instance = this;
+            
             // Get services
             sceneNavigator = FoundryApp.GetService<ISceneNavigator>();
             playerRigManager = FoundryApp.GetService<IPlayerRigManager>();
@@ -150,6 +164,15 @@ namespace Foundry
         }
 
         #endregion Unity Message Handlers
+
+        #region  Static Methods
+
+        public static void FailLoad(string reason)
+        {
+            instance.errorText.text = reason;
+        }
+
+        #endregion
 
         #region Event Handlers
 
