@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Foundry.Services;
 using UnityEngine;
 
 namespace Foundry.Networking
@@ -61,10 +62,10 @@ namespace Foundry.Networking
         void RegisterPrefab(GameObject prefab);
     
         /// <summary>
-        /// Register scene local network object instances. These objects will be bound over the network.
+        /// Tell a network provider that we're done loading and setting up a scene, so it may now do whatever it needs to with it.
         /// </summary>
-        /// <param name="networkObjects">List of objects to be registered, BindNetworkObject is expected to have already been called.</param>
-        void RegisterSceneObjects(IList<GameObject> networkObjects);
+        /// <param name="scene">Index and name of scene that was loaded.</param>
+        Task CompleteSceneSetup(ISceneNavigationEntry scene);
     
         /// <summary>
         /// Spawn a networked object instance over the network.

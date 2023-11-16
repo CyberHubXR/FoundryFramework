@@ -193,6 +193,8 @@ namespace Foundry.Networking
                 }
             }
 
+            await networkProvider.CompleteSceneSetup(FoundryApp.GetService<ISceneNavigator>().CurrentScene);
+
             if(mode == SessionType.Shared)
                 switch (SpawnMethod)
                 {
