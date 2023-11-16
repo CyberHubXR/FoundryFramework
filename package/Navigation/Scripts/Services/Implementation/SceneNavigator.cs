@@ -76,7 +76,8 @@ namespace Foundry.Services
             {
                 var scenePath = SceneUtility.GetScenePathByBuildIndex(i);
                 var sceneName = scenePath.Substring(scenePath.LastIndexOf('/') + 1).Replace(".unity", "");
-                sceneNameToBuildIndexMap.Add(sceneName, i);
+                if(!sceneNameToBuildIndexMap.TryAdd(sceneName, i))
+                    Debug.LogWarning($"Two scenes with duplicate names {sceneName} found in build settings! This will cause issues with navigation if you're using scene names instead of paths or build indices!");
             }
         }
 
