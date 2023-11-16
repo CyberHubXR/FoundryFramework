@@ -199,7 +199,8 @@ namespace Foundry.Networking
             if (!Parent)
             {
                 Parent = transform.parent?.GetComponent<NetworkObject>();
-                EditorUtility.SetDirty(this);
+                if(Parent)
+                    EditorUtility.SetDirty(this);
             }
                 
             if (Parent)
@@ -213,12 +214,12 @@ namespace Foundry.Networking
         
         private void UpdateComponentsRecursive(Transform t)
         {
-            var oldComponentsCount = NetworkComponents.Count;
-            var oldChildrenCount = children.Count;
+            var oldComponents = NetworkComponents;
+            var oldChildren = children;
             if (t == transform)
             {
-                NetworkComponents.Clear();
-                children.Clear();
+                NetworkComponents = new();
+                children = new();
             }
             if (t.gameObject.TryGetComponent(out NetworkObject otherObj))
             {
@@ -235,9 +236,37 @@ namespace Foundry.Networking
             
             foreach (Transform child in t)
                 UpdateComponentsRecursive(child);
+
+            if (t == transform)
+            {
+                bool componentsChanged = oldComponents.Count != NetworkComponents.Count;
+                if (!componentsChanged)
+                {
+                    for (int i = 0; i < oldComponents.Count; i++)
+                    {
+                        if (oldComponents[i] != NetworkComponents[i])
+                        {
+                            componentsChanged = true;
+                            break;
+                        }
+                    }
+                }
             
-            if(t == transform && (oldChildrenCount != children.Count || oldComponentsCount != NetworkComponents.Count))
-                EditorUtility.SetDirty(this);
+                bool childrenChanged = oldChildren.Count != children.Count;
+                if (!childrenChanged && !componentsChanged)
+                {
+                    for (int i = 0; i < oldChildren.Count; i++)
+                    {
+                        if (oldChildren[i] != children[i])
+                        {
+                            childrenChanged = true;
+                            break;
+                        }
+                    }
+                }
+                if(componentsChanged || childrenChanged)
+                    EditorUtility.SetDirty(this);
+            }
         }
 #endif
         void Awake()
