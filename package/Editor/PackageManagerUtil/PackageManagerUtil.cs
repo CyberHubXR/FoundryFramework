@@ -5,6 +5,7 @@ using UnityEngine;
 using System.IO;
 using MiniJSON;
 using UnityEditor.PackageManager;
+using UnityEngine.Networking;
 
 namespace Foundry.Core.Editor
 {
@@ -121,6 +122,28 @@ namespace Foundry.Core.Editor
             }
 
             return false;
+        }
+
+        public static void DownloadUnityAsset(string url)
+        {
+            UnityWebRequest request = UnityWebRequest.Get(url);
+            request.SendWebRequest().completed += ao =>
+            {
+                if (request.result == UnityWebRequest.Result.ConnectionError)
+                {
+                    Debug.LogError(request.error);
+                }
+                else
+                {
+                    string path = Application.dataPath.Replace("Assets", "Temp/Foundry/Donwloads/");
+                    Directory.CreateDirectory(path);
+                    path += Path.GetFileName(url);
+                    File.WriteAllBytes(path, request.downloadHandler.data);
+                    AssetDatabase.ImportPackage(path, true);
+                }
+
+                request.Dispose();
+            };
         }
     }
 }

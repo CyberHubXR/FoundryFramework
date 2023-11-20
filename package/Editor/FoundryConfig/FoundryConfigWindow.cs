@@ -23,12 +23,7 @@ namespace Foundry.Core.Editor
         private static List<IServiceDefinition> _serviceDefinitions = new();
         private static List<IModuleDefinition> _moduleDefinitions = new();
         
-        [InitializeOnLoadMethod]
-        private static void Initialize()
-        {
-            AssemblyReloadEvents.afterAssemblyReload += CheckIfProjectValid;
-        }
-
+        [UnityEditor.Callbacks.DidReloadScripts]
         private static void CheckIfProjectValid()
         {
             UpdateServiceDefinitions();
@@ -37,6 +32,8 @@ namespace Foundry.Core.Editor
             HashSet<Type> loadedServices = new();
             foreach (var loadedModule in config.modules)
             {
+                if(!loadedModule || loadedModule.EnabledServices == null)
+                    continue;
                 foreach (var providedService in loadedModule.EnabledServices)
                 {
                     Type serviceType = providedService;
@@ -44,6 +41,7 @@ namespace Foundry.Core.Editor
                     loadedServices.Add(serviceType);
                 }
             }
+            
 
             bool allServicesLoaded = true;
             foreach(var loadedModule in _moduleDefinitions)

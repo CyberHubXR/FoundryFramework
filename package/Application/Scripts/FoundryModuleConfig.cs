@@ -149,6 +149,23 @@ namespace Foundry
                 EditorGUI.EndDisabledGroup();
             }
             EditorGUILayout.EndFoldoutHeaderGroup();
+
+            var prop = serializedObject.GetIterator();
+            prop.Next(true);
+            
+            // Skip EnabledServices, and any other fields we don't want to show up in the inspector
+            for (int i = 0; i < 10; i++)
+                prop.Next(false);
+
+            serializedObject.UpdateIfRequiredOrScript();
+            
+            // Draw the rest of the inspector
+            while (prop.Next(false))
+            {
+                EditorGUILayout.PropertyField(prop);
+            }
+
+            serializedObject.ApplyModifiedProperties();
         }
     }
     #endif

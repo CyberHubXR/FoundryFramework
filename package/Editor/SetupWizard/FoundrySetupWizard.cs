@@ -130,6 +130,7 @@ namespace Foundry.Core.Setup
         /// <summary>
         /// Check if there are any required tasks, if so force this window to open.
         /// </summary>
+        [UnityEditor.Callbacks.DidReloadScripts]
         private static void CheckForTasks()
         {
             var modulesTypes = ClassFinder.FindAllWithInterface<IModuleSetupTasks>();
@@ -156,12 +157,6 @@ namespace Foundry.Core.Setup
                     return;
                 }
             }
-        }
-        
-        [InitializeOnLoadMethod]
-        private static void Initialize()
-        {
-            AssemblyReloadEvents.afterAssemblyReload += CheckForTasks;
         }
 
         public void CreateGUI()
@@ -222,7 +217,6 @@ namespace Foundry.Core.Setup
                 
                 moduleBox.Add(modSource);
                 root.Add(moduleBox);
-                
                 
                 var tasks = module.GetTasks();
                 foreach (var list in tasks)
