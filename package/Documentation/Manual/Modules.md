@@ -170,7 +170,7 @@ Now that we know how to define a module, let's look at how to define a service.
 
 A service is just a regular C# interface that defines a set of functionality. Lets take a the IPlayerRigManager service as an example. The way that the player rig works in foundry is that it's created once on startup, and then "borrowed" by interaction rigs like NetworkPlayer or MenuPlayer as an input source (this is how we handle things like async loading and whatnot)
 
-So the `IPlayerRigManager` interface defines all the needed interfaces, and then `PlayerRigManagerService` Is the class that actually defines the functionality. (If you look above in the module config you can see that we provide a callback that returns a new instance of `PlayerRigManagerService`)
+The `IPlayerRigManager` interface defines all the needed methods and events, and then `PlayerRigManagerService` Is the class that actually defines the functionality. (If you look above in the module config you can see that we provide a callback that returns a new instance of `PlayerRigManagerService`)
 
 ```cs
 public delegate void PlayerRigEvent(IPlayerControlRig rig);
@@ -209,6 +209,30 @@ public interface IPlayerRigManager
     public event PlayerRigEvent PlayerRigReturned;
 }
 ```
+
+The last thing we need to do is tell foundry that this service exists. We do this by creating another editor-only class that implements `Foundry.Core.Editor.IServiceDefinition`. The classes that inherit from this interface are how we tell foundry what interfaces your package provides, what type they are, what name to display for them, and what package they come from.
+
+```cs
+public class PlayerRigManagerDefinition : IServiceDefinition
+{
+
+    public string Source()
+    {
+        return "com.cyberhub.foundry.core";
+    }
+
+    public string PrettyName()
+    {
+        return "Player Rig Manager";
+    }
+
+    public Type ServiceInterface()
+    {
+        return typeof(IPlayerRigManager);
+    }
+}
+```
+
 
 All you would need to do for Foundry to use a new system for managing player rigs is:
 1. Create a new implementation of `IPlayerRigManager`
