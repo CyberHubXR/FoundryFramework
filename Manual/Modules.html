@@ -230,7 +230,7 @@ public class FoundryCoreConfig : FoundryModuleConfig
 <h2 id="service-definitions-and-implementations">Service Definitions and Implementations</h2>
 <p>Now that we know how to define a module, let's look at how to define a service.</p>
 <p>A service is just a regular C# interface that defines a set of functionality. Lets take a the IPlayerRigManager service as an example. The way that the player rig works in foundry is that it's created once on startup, and then &quot;borrowed&quot; by interaction rigs like NetworkPlayer or MenuPlayer as an input source (this is how we handle things like async loading and whatnot)</p>
-<p>So the <code>IPlayerRigManager</code> interface defines all the needed interfaces, and then <code>PlayerRigManagerService</code> Is the class that actually defines the functionality. (If you look above in the module config you can see that we provide a callback that returns a new instance of <code>PlayerRigManagerService</code>)</p>
+<p>The <code>IPlayerRigManager</code> interface defines all the needed methods and events, and then <code>PlayerRigManagerService</code> Is the class that actually defines the functionality. (If you look above in the module config you can see that we provide a callback that returns a new instance of <code>PlayerRigManagerService</code>)</p>
 <pre><code class="lang-cs">public delegate void PlayerRigEvent(IPlayerControlRig rig);
 
 /// &lt;summary&gt;
@@ -265,6 +265,26 @@ public interface IPlayerRigManager
 
     public event PlayerRigEvent PlayerRigBorrowed;
     public event PlayerRigEvent PlayerRigReturned;
+}
+</code></pre>
+<p>The last thing we need to do is tell foundry that this service exists. We do this by creating another editor-only class that implements <code>Foundry.Core.Editor.IServiceDefinition</code>. The classes that inherit from this interface are how we tell foundry what interfaces your package provides, what type they are, what name to display for them, and what package they come from.</p>
+<pre><code class="lang-cs">public class PlayerRigManagerDefinition : IServiceDefinition
+{
+
+    public string Source()
+    {
+        return &quot;com.cyberhub.foundry.core&quot;;
+    }
+
+    public string PrettyName()
+    {
+        return &quot;Player Rig Manager&quot;;
+    }
+
+    public Type ServiceInterface()
+    {
+        return typeof(IPlayerRigManager);
+    }
 }
 </code></pre>
 <p>All you would need to do for Foundry to use a new system for managing player rigs is:</p>
