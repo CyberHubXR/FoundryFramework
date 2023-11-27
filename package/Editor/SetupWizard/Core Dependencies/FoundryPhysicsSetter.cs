@@ -8,7 +8,8 @@ public class FoundryPhysicsSetter : Editor
     static string[] layerNames = new string[] { 
         "FoundryPlayer",
         "FoundryGrabbable",
-        "FoundryHand"
+        "FoundryHand",
+        "LoadingVisuals"
     };
 
 

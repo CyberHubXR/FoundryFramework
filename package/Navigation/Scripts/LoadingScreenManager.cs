@@ -18,11 +18,6 @@ namespace Foundry
         #endregion Private Fields
 
         #region Unity Inspector Variables
-
-        [SerializeField]
-        [Tooltip("The layers used for loading visuals. This ensures no other content is visible during loading.")]
-        private LayerMask visualLayers;
-
         [SerializeField]
         [Tooltip("The GameObject containing the visuals for the loading screen. These will be shown during loading and hidden when loaded.")]
         private GameObject visuals;
@@ -94,6 +89,13 @@ namespace Foundry
             {
                 Debug.LogWarning($"{nameof(LoadingScreenManager)}: {nameof(visuals)} have not been provided.");
                 return false;
+            }
+            
+            var visualsLayer = LayerMask.NameToLayer("LoadingVisuals");
+            
+            foreach(var t in visuals.GetComponentsInChildren<Transform>())
+            {
+                t.gameObject.layer = visualsLayer;
             }
 
             // Verified
@@ -201,7 +203,7 @@ namespace Foundry
             originalRenderMask = mainCamera.cullingMask;
 
             // Tell the camera to render ONLY loading visuals
-            mainCamera.cullingMask = visualLayers;
+            mainCamera.cullingMask = 1 << LayerMask.NameToLayer("LoadingVisuals");
 
             // Show the loading visuals
             ShowVisuals();
