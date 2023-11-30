@@ -110,7 +110,7 @@ namespace Foundry.Networking
         /// <summary>
         /// Obtain the current network graph, may be null if no session is active
         /// </summary>
-        public NetworkGraph Graph { get; }
+        public NetworkState State { get; }
 
         /// <summary>
         /// Raised when a session has connected

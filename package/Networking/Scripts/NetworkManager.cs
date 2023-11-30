@@ -140,14 +140,14 @@ namespace Foundry.Networking
 
         void OnSessionConnectedCallback()
         {
-            networkProvider.Graph.OnGraphChanged += OnGraphChanged;
+            networkProvider.State.OnStateChanged += OnGraphChanged;
             OnSessionConnected.Invoke();
         }
         
-        void OnGraphChanged(NetworkGraph graph)
+        void OnGraphChanged(NetworkState state)
         {
             foreach (var obj in sceneObjects)
-                obj.UpdateBoundNode(graph);
+                obj.UpdateBoundNode(state);
         }
 
         void OnNavigationStarting(ISceneNavigationEntry scene)
@@ -189,7 +189,7 @@ namespace Foundry.Networking
             {
                 foreach (var netObj in sceneObjects)
                 {
-                    netObj.BuildGraph(networkProvider.Graph);
+                    netObj.CreateState(networkProvider.State);
                 }
             }
 
@@ -223,8 +223,8 @@ namespace Foundry.Networking
         {
             if (networkProvider.IsSessionConnected)
             {
-                if(networkProvider.Graph != null)
-                    networkProvider.Graph.OnGraphChanged -= OnGraphChanged;
+                if(networkProvider.State != null)
+                    networkProvider.State.OnStateChanged -= OnGraphChanged;
                 networkProvider.StopSessionAsync();
             }
         }
@@ -238,7 +238,7 @@ namespace Foundry.Networking
             if (obj.TryGetComponent(out NetworkObject netObj))
             {
                 sceneObjects.Add(netObj);
-                netObj.BuildGraph(networkProvider.Graph);
+                netObj.CreateState(networkProvider.State);
             }
 
             return obj;
@@ -264,13 +264,13 @@ namespace Foundry.Networking
         public static void RegisterObject(NetworkObject networkObject)
         {
             Debug.Assert(instance, "NetworkManager instance not found! Either one does not exist or it has not been initialized yet.");
-            if(!instance.idToObject.ContainsKey(networkObject.NetworkedGraphId.Value))
-                instance.idToObject.Add(networkObject.NetworkedGraphId.Value, networkObject);
+            if(!instance.idToObject.ContainsKey(networkObject.Id))
+                instance.idToObject.Add(networkObject.Id, networkObject);
             if (instance.sceneObjects.Contains(networkObject))
                 return;
             
             instance.sceneObjects.Add(networkObject);
-            Debug.Assert(networkObject.NetworkedGraphId.Value.IsValid(), "Network object must have valid ID");
+            Debug.Assert(networkObject.Id.IsValid(), "Network object must have valid ID");
         }
         
         /// <summary>
@@ -280,15 +280,14 @@ namespace Foundry.Networking
         public static void UnregisterObject(NetworkObject networkObject)
         {
             instance.sceneObjects.Remove(networkObject);
-            var id = networkObject.NetworkedGraphId.Value;
+            var id = networkObject.Id;
             Debug.Assert(id.IsValid(), "Network object must have valid ID");
             instance.idToObject.Remove(id);
             if (instance.objectsAwaitingLoad.Contains(networkObject))
                 instance.objectsAwaitingLoad.Remove(networkObject);
             
-            // If this is a root object, remove it and it's children from the graph
-            if(networkObject.IsOwner && !networkObject.Parent)
-                instance.networkProvider.Graph.RemoveNode(id);
+            if(networkObject.IsOwner)
+                instance.networkProvider.State.RemoveNode(id);
         }
 
         public static void RegisterUnloaded(NetworkObject netObj)

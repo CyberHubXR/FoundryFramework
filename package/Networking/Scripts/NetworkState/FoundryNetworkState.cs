@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using ExitGames.Client.Photon.StructWrapping;
 using Foundry.Core.Serialization;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -56,26 +58,19 @@ namespace Foundry.Networking
     public struct NetworkId : IFoundrySerializable
     {
         /// <summary>
-        /// The player that owns this object
-        /// </summary>
-        public int Owner => owner;
-        private int owner;
-
-        /// <summary>
         /// Locally unique id of this object
         /// </summary>
         public uint ID => id;
         private uint id;
         
-        public NetworkId(int owner, uint id)
+        public NetworkId(uint id)
         {
-            this.owner = owner;
             this.id = id;
         }
         
-        public static NetworkId Invalid => new(-1, 0xffffffff);
+        public static NetworkId Invalid => new(0xffffffff);
         
-        public bool IsValid() => Owner != -1 && ID != 0xffffffff;
+        public bool IsValid() =>ID != 0xffffffff;
         
         /// <summary>
         /// Override of hashing function to allow for use in dictionaries
@@ -83,40 +78,38 @@ namespace Foundry.Networking
         /// <returns></returns>
         public override int GetHashCode()
         {
-            return HashCode.Combine(owner, id);
+            return id.GetHashCode();
         }
 
         public override string ToString()
         {
-            return "NetworkId(Owner = " + Owner + ", ID = " + ID + ")";
+            return "NetworkId(ID = " + ID + ")";
         }
 
         public void Serialize(FoundrySerializer serializer)
         {
-            serializer.Serialize(in owner);
             serializer.Serialize(in id);
         }
 
         public void Deserialize(FoundryDeserializer deserializer)
         {
-            deserializer.Deserialize(ref owner);
             deserializer.Deserialize(ref id);
         }
 
         public static bool operator ==(NetworkId a, NetworkId b)
         {
-            return a.owner == b.owner && a.id == b.id;
+            return a.id == b.id;
         }
         
         public static bool operator !=(NetworkId a, NetworkId b)
         {
-            return a.owner != b.owner || a.id != b.id;
+            return a.id != b.id;
         }
     }
     
-    public class NetworkGraphNode
+    public class NetworkObjectState
     {
-        public NetworkId ID = NetworkId.Invalid;
+        public NetworkId Id = NetworkId.Invalid;
 
         /// <summary>
         /// The object in the scene associated with this node. This may be null if this node does not represent a scene object.
@@ -138,15 +131,17 @@ namespace Foundry.Networking
         /// </summary>
         public MemoryStream propsData;
         
-        public NetworkGraphNode Parent;
-        public List<NetworkGraphNode> Children = new();
+        /// <summary>
+        /// The client with authority over this node. -1 if no one has authority.
+        /// </summary>
+        public int owner = -1;
 
         /// <summary>
         /// If this node is still alive in the graph
         /// </summary>
         public bool IsAlive = true;
         
-        public static implicit operator bool(NetworkGraphNode node) => node?.IsAlive ?? false;
+        public static implicit operator bool(NetworkObjectState node) => node?.IsAlive ?? false;
 
         /// <summary>
         /// Deserialize this node's data from a stream
@@ -175,7 +170,7 @@ namespace Foundry.Networking
             }
             catch (Exception e)
             {
-                Debug.LogError("Error deserializing properties for node " + ID + ": " + e);
+                Debug.LogError("Error deserializing properties for node " + Id + ": " + e);
                 // Attempt to recover by skipping the rest of the data
                 deserializer.stream.Position = streamPos + propsDataSize;
                 
@@ -237,168 +232,47 @@ namespace Foundry.Networking
         }
     }
 
-    public class NetworkGraph
+    public class NetworkState
     {
         /// <summary>
         /// Called when the graph has been rebuilt and references to nodes may have been broken.
         /// </summary>
-        public Action<NetworkGraph> OnGraphRebuilt;
+        public Action<NetworkState> OnStateRebuilt;
 
         /// <summary>
         /// Called when structure events such as adding or parenting nodes have occurred.
         /// </summary>
-        public Action<NetworkGraph> OnGraphChanged;
+        public Action<NetworkState> OnStateChanged;
 
         /// <summary>
         /// Called when a graph delta has been applied.
         /// </summary>
-        public Action<NetworkGraph> OnGraphUpdate;
+        public Action<NetworkState> OnStateUpdate;
         
-        public List<NetworkGraphNode> RootNodes = new();
+        public List<NetworkObjectState> Objects = new();
+        public Dictionary<NetworkId, NetworkObjectState> idToNode { get; } = new();
+        
+        
+        /// <summary>
+        /// Delegate type for ID getters
+        /// </summary>
+        public delegate int GetIDDelegate();
         
         /// <summary>
         /// Callback set by the network provider to get the current graph authority.
         /// </summary>
         public GetIDDelegate GetMasterID;
 
+        /// <summary>
+        /// Callback for getting the current player ID.
+        /// </summary>
         public GetIDDelegate GetLocalPlayerID;
-        public delegate int GetIDDelegate();
-
         private int localPlayerId => GetLocalPlayerID();
+
+        /// <summary>
+        /// Local counter for id generation
+        /// </summary>
         private uint nextId = 0;
-        public Dictionary<NetworkId, NetworkGraphNode> idToNode { get; } = new();
-
-        private struct StructureEvent : IFoundrySerializable
-        {
-            public enum Type : uint
-            { 
-                /// <summary>
-                /// Event when a node is added to the graph
-                /// </summary>
-                Add = 0, 
-                /// <summary>
-                /// Event when a node is removed from the graph
-                /// </summary>
-                Remove = 1,
-                /// <summary>
-                /// Event when a has changed parents
-                /// </summary>
-                Parent = 2,
-                /// <summary>
-                /// Event when a node's Id has changed, as the owner is part of the id, this may represent a change in ownership
-                /// Id changes are verified on a per case basis, as we may sometimes want to allow id changes from clients without ownership.
-                /// </summary>
-                ChangeId = 3
-            }
-            
-            public Type type;
-            public int sender;
-            public NetworkId id;
-            public NetworkId secondaryId;
-
-            public static StructureEvent Add(NetworkId nodeId)
-            {
-                return new StructureEvent
-                {
-                    type = Type.Add,
-                    sender = -1,
-                    id = nodeId,
-                    secondaryId = NetworkId.Invalid
-                };
-            }
-
-            public static StructureEvent Add(NetworkId nodeId, NetworkId parentId)
-            {
-                return new StructureEvent
-                {
-                    type = Type.Add,
-                    sender = -1,
-                    id = nodeId,
-                    secondaryId = parentId
-                };
-            }
-            
-            public static StructureEvent Remove(NetworkId nodeId)
-            {
-                return new StructureEvent
-                {
-                    type = Type.Remove,
-                    sender = -1,
-                    id = nodeId,
-                    secondaryId = NetworkId.Invalid
-                };
-            }
-            
-            public static StructureEvent Parent(NetworkId nodeId, NetworkId parentId)
-            {
-                return new StructureEvent
-                {
-                    type = Type.Parent,
-                    sender = -1,
-                    id = nodeId,
-                    secondaryId = parentId
-                };
-            }
-
-            public static StructureEvent ChangeId(NetworkId oldId, NetworkId newId)
-            {
-                return new StructureEvent
-                {
-                    type = Type.ChangeId,
-                    sender = -1,
-                    id = oldId,
-                    secondaryId = newId
-                };
-            }
-            
-            public void Serialize(FoundrySerializer serializer)
-            {
-                serializer.SetDebugRegion("StructureEvent");
-                uint typeIndex = (uint)type;
-                serializer.Serialize(in typeIndex);
-                serializer.Serialize(in id);
-                switch (type)
-                {
-                    case Type.Add:
-                        serializer.Serialize(in secondaryId);
-                        break;
-                    case Type.Remove:
-                        break;
-                    case Type.Parent:
-                        serializer.Serialize(in secondaryId);
-                        break;
-                    case Type.ChangeId:
-                        serializer.Serialize(in secondaryId);
-                        break;
-                }
-
-            }
-
-            public void Deserialize(FoundryDeserializer deserializer)
-            {
-                deserializer.SetDebugRegion("StructureEvent");
-                uint typeIndex = default;
-                deserializer.Deserialize(ref typeIndex);
-                type = (Type)typeIndex;
-                deserializer.Deserialize(ref id);
-                secondaryId = NetworkId.Invalid;
-                switch (type)
-                {
-                    case Type.Add:
-                        deserializer.Deserialize(ref secondaryId);
-                        break;
-                    case Type.Remove:
-                        secondaryId = NetworkId.Invalid;
-                        break;
-                    case Type.Parent:
-                        deserializer.Deserialize(ref secondaryId);
-                        break;
-                    case Type.ChangeId:
-                        deserializer.Deserialize(ref secondaryId);
-                        break;
-                }
-            }
-        }
         
         private Queue<StructureEvent> structureEvents = new();
         
@@ -407,42 +281,40 @@ namespace Foundry.Networking
             structureEvents.Enqueue(e);
         }
 
-        public NetworkId NewId(int owner)
+        public NetworkId NewId()
         {
-            return new NetworkId(owner, nextId++);
+            //Use the local player id as part of the id to ensure uniqueness across the network, this will work as long as you have less than 65536 players or objects. (Which at that point, you have bigger problems)
+            return new NetworkId((uint)localPlayerId << 16 | nextId++);
         }
 
-        public NetworkGraphNode CreateNode()
+        public NetworkObjectState CreateNode()
         {
-            return CreateNode(NetworkId.Invalid);
+            return AddNode(NewId());
+        }
+        
+        public NetworkObjectState AddNode(NetworkId id, bool recordEvent = true)
+        {
+            
+            return AddNode(id, localPlayerId, recordEvent);
         }
 
-        public NetworkGraphNode CreateNode(NetworkId parentId)
-        {
-            return AddNode(NewId(localPlayerId), parentId);
-        }
-
-        public NetworkGraphNode AddNode(NetworkId id, NetworkId parentId, bool recordEvent = true)
+        public NetworkObjectState AddNode(NetworkId id, int owner, bool recordEvent = true)
         {
             // If we receive a node with an id that already exists, this is most likely a duplicate message, so for now we will just ignore it.
             if (idToNode.TryGetValue(id, out var existing))
                 return existing;
             
-            NetworkGraphNode node = new NetworkGraphNode
+            NetworkObjectState node = new NetworkObjectState
             {
-                ID = id
+                Id = id,
+                owner = owner
             };
             
-            idToNode[node.ID] = node;
-            if (!parentId.IsValid())
-                RootNodes.Add(node);
-            else
-            {
-                node.Parent = idToNode[parentId];
-                node.Parent.Children.Add(node);
-            }
+            idToNode[node.Id] = node;
+            Objects.Add(node);
+            
             if(recordEvent)
-                RecordEvent(StructureEvent.Add(id, parentId));
+                RecordEvent(StructureEvent.Add(id, owner));
             return node;
         }
         
@@ -450,13 +322,7 @@ namespace Foundry.Networking
         {
             var node = idToNode[id];
             
-            while(node.Children.Count > 0)
-                RemoveNode(node.Children[0].ID, false);
-            
-            if (node.Parent != null)
-                node.Parent.Children.Remove(node);
-            else
-                RootNodes.Remove(node);
+            Objects.Remove(node);
             idToNode.Remove(id);
             node.IsAlive = false;
 
@@ -464,39 +330,19 @@ namespace Foundry.Networking
                 RecordEvent(StructureEvent.Remove(id));
         }
         
-        public void SetNodeParent(NetworkId id, NetworkId parentId, bool recordEvent = true)
+        /// <summary>
+        /// Change the owner of a node
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="newOwner"></param>
+        /// <param name="recordEvent"></param>
+        public void ChangeOwner(NetworkId id, int newOwner, bool recordEvent = true)
         {
             var node = idToNode[id];
-            var newParent = parentId.IsValid() ? idToNode[parentId] : null;
-            if (node.Parent == newParent)
-                return;
-            
-            if (node.Parent != null)
-                node.Parent.Children.Remove(node);
-            else
-                RootNodes.Remove(node);
-            
-            node.Parent = newParent;
-            if(newParent != null)
-                node.Parent.Children.Add(node);
-            else
-                RootNodes.Add(node);
-            if(recordEvent)
-                RecordEvent(StructureEvent.Parent(id, parentId));
-        }
-        
-        public void ChangeId(NetworkId oldId, NetworkId newId, bool recordEvent = true)
-        {
-            var node = idToNode[oldId];
-            node.ID = newId;
-            idToNode.Remove(oldId);
-            idToNode.Add(newId, node);
-
-            if(node.AssociatedObject)
-                node.AssociatedObject.NetworkedGraphId.Value = newId;
+            node.owner = newOwner;
             
             if(recordEvent)
-                RecordEvent(StructureEvent.ChangeId(oldId, newId));
+                RecordEvent(StructureEvent.ChangeOwner(id, newOwner));
         }
         
         /// <summary>
@@ -505,7 +351,7 @@ namespace Foundry.Networking
         /// <param name="id"></param>
         /// <param name="node"></param>
         /// <returns></returns>
-        public bool TryGetNode(NetworkId id, out NetworkGraphNode node)
+        public bool TryGetNode(NetworkId id, out NetworkObjectState node)
         {
             return idToNode.TryGetValue(id, out node);
         }
@@ -516,9 +362,9 @@ namespace Foundry.Networking
         /// <param name="client">Client to check</param>
         /// <param name="id">Id of the node in question</param>
         /// <returns></returns>
-        public bool ClientHasAuthority(int client, NetworkId id)
+        public bool ClientHasAuthority(int client, NetworkObjectState node)
         {
-            return client == id.Owner || client == GetMasterID();
+            return node.owner == client || client == GetMasterID();
         }
 
         /// <summary>
@@ -527,10 +373,10 @@ namespace Foundry.Networking
         /// <param name="node">Node to begin at</param>
         /// <param name="serializer"></param>
         /// <param name="serializeAll"></param>
-        public void SerializeNodeTree(NetworkGraphNode node, FoundrySerializer serializer, bool serializeAll = false)
+        public void SerializeNode(NetworkObjectState node, FoundrySerializer serializer, bool serializeAll = false)
         {
             serializer.SetDebugRegion("Serialize Node Tree");
-            if (node.Properties != null && (node.ID.Owner == localPlayerId || serializeAll))
+            if (node.Properties != null && (node.owner == localPlayerId || serializeAll))
             {
                 uint dirtyProps = 0;
                 foreach (var prop in node.Properties)
@@ -544,7 +390,7 @@ namespace Foundry.Networking
                 if (dirtyProps > 0 || serializeAll)
                 {
                     serializer.SetDebugRegion("node id");
-                    serializer.Serialize(in node.ID);
+                    serializer.Serialize(in node.Id);
                     serializer.SetDebugRegion("data size");
                     var dataSize = serializer.GetPlaceholder<uint>(0);
                     var writeStart = serializer.stream.Position;
@@ -574,9 +420,6 @@ namespace Foundry.Networking
                     dataSize.WriteValue((uint)(serializer.stream.Position - writeStart));
                 }
             }
-
-            foreach (var child in node.Children)
-                SerializeNodeTree(child, serializer, serializeAll);
         }
 
         /// <summary>
@@ -597,8 +440,8 @@ namespace Foundry.Networking
             while (structureEvents.Count > 0)
                 structureEvents.Dequeue().Serialize(serializer);
             
-            foreach (var node in RootNodes)
-                SerializeNodeTree(node, serializer);
+            foreach (var node in Objects)
+                SerializeNode(node, serializer);
 
             serializer.Dispose();
             return new NetworkGraphDelta()
@@ -625,7 +468,7 @@ namespace Foundry.Networking
             {
                 foreach(var node in idToNode.Values)
                     node.IsAlive = false;
-                RootNodes.Clear();
+                Objects.Clear();
                 idToNode.Clear();
                 
                 deserializer.StartDebugDump();
@@ -644,34 +487,36 @@ namespace Foundry.Networking
                 switch (structureEvent.type)
                 {
                     case StructureEvent.Type.Add:
-                        if(ClientHasAuthority(sender, structureEvent.id))
-                            AddNode(structureEvent.id, structureEvent.secondaryId, false);
-                        else
-                            Debug.LogWarning("Received event for node " + structureEvent.id + " but it was ignored as the sender did not own it.");
+                        if(sender == structureEvent.secondaryData || sender == GetMasterID())
+                            AddNode(structureEvent.id, structureEvent.secondaryData, false);
                         break;
                     case StructureEvent.Type.Remove:
-                        if(ClientHasAuthority(sender, structureEvent.id))
+                    {
+                        if (!idToNode.TryGetValue(structureEvent.id, out var node))
+                        {
+                            Debug.LogWarning("Node " + structureEvent.id + " Was not found!");
+                            continue;
+                        }
+                        if(ClientHasAuthority(sender, node))
                             RemoveNode(structureEvent.id, false);
                         else
                             Debug.LogWarning("Received event for node " + structureEvent.id + " but it was ignored as the sender did not own it.");
                         break;
-                    case StructureEvent.Type.Parent:
-                        if(ClientHasAuthority(sender, structureEvent.id))
-                            SetNodeParent(structureEvent.id, structureEvent.secondaryId, false);
-                        else
-                            Debug.LogWarning("Received event for node " + structureEvent.id + " but it was ignored as the sender did not own it.");
-                        break;
-                    case StructureEvent.Type.ChangeId:
-                        bool validEvent = ClientHasAuthority(sender, structureEvent.id);
-                        if (!validEvent && idToNode.TryGetValue(structureEvent.id, out var node))
-                            validEvent = node.AssociatedObject?.VerifyIDChangeRequest(sender, structureEvent.secondaryId) ?? false;
-                        Debug.Log($"Changed node {structureEvent.id} to {structureEvent.secondaryId} with validEvent {validEvent}");
+                    }
+                    case StructureEvent.Type.OwnerChange:
+                    {
+                        bool validEvent = false;
+                        if (idToNode.TryGetValue(structureEvent.id, out var node))
+                            validEvent =
+                                node.AssociatedObject?.VerifyIDChangeRequest(structureEvent.secondaryData) ??
+                                node.owner == sender;
                         
                         if(validEvent)
-                            ChangeId(structureEvent.id, structureEvent.secondaryId, false);
+                            ChangeOwner(structureEvent.id, structureEvent.secondaryData, false);
                         else
                             Debug.LogWarning("Received event for node " + structureEvent.id + " but it was ignored as the sender did not own it.");
                         break;
+                    }
                     default: // Should never happen
                         throw new ArgumentOutOfRangeException();
                 }
@@ -684,18 +529,18 @@ namespace Foundry.Networking
                 deserializer.SetDebugRegion("Deserialize node");
                 NetworkId nodeId = NetworkId.Invalid;
                 deserializer.Deserialize(ref nodeId);
-                bool nodeFound = idToNode.TryGetValue(nodeId, out NetworkGraphNode node);
+                bool nodeFound = idToNode.TryGetValue(nodeId, out NetworkObjectState node);
                 if (!nodeFound)
                 {
                     Debug.LogError("Unable to find node with id " + nodeId + " in graph! Skipping this node and attempting to recover.");
-                    NetworkGraphNode.Skip(deserializer);
+                    NetworkObjectState.Skip(deserializer);
                     continue;
                 }
-                if(ClientHasAuthority(sender, nodeId))
+                if(ClientHasAuthority(sender, node))
                     node.Deserialize(deserializer);
                 else
                 {
-                    NetworkGraphNode.Skip(deserializer);
+                    NetworkObjectState.Skip(deserializer);
                     Debug.LogError("Received delta for node " + nodeId + " but it was ignored as the sender did not own it.");
                 }
             }
@@ -704,11 +549,11 @@ namespace Foundry.Networking
             
             
             if (graphChanged)
-                OnGraphChanged?.Invoke(this);
+                OnStateChanged?.Invoke(this);
             
             if(isFullGraph)
-                OnGraphRebuilt?.Invoke(this);
-            OnGraphUpdate?.Invoke(this);
+                OnStateRebuilt?.Invoke(this);
+            OnStateUpdate?.Invoke(this);
             
         }
 
@@ -719,10 +564,10 @@ namespace Foundry.Networking
         /// <param name="serializer"></param>
         private void SerializeStructure(FoundrySerializer serializer)
         {
-            List<StructureEvent> constructionEvents = new();
+            List<StructureEvent> constructionEvents = new(Objects.Count);
             
-            foreach (var node in RootNodes)
-                GenerateConstructionEvents(constructionEvents, node);
+            foreach (var node in Objects)
+                constructionEvents.Add(StructureEvent.Add(node.Id, node.owner));
 
 
             int eventCount = constructionEvents.Count;
@@ -736,13 +581,6 @@ namespace Foundry.Networking
                 serializer.Serialize(in e);
             }
 
-        }
-        
-        private void GenerateConstructionEvents(List<StructureEvent> events, NetworkGraphNode node)
-        {
-            events.Add(StructureEvent.Add(node.ID, node.Parent?.ID ?? NetworkId.Invalid));
-            foreach (var child in node.Children)
-                GenerateConstructionEvents(events, child);
         }
 
         /// <summary>
@@ -761,8 +599,8 @@ namespace Foundry.Networking
 
             SerializeStructure(serializer);
 
-            foreach (var node in RootNodes)
-                SerializeNodeTree(node, serializer, true);
+            foreach (var node in Objects)
+                SerializeNode(node, serializer, true);
 
             serializer.Dispose();
             return new NetworkGraphDelta()

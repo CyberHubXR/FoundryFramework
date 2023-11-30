@@ -242,7 +242,7 @@ namespace Foundry
                 if (grabbable.TryGetComponent(out NetworkObject netObj))
                 {
                     netObj.RequestOwnership();
-                    NetworkHeld.Value = netObj.NetworkedGraphId.Value;
+                    NetworkHeld.Value = netObj.Id;
                     OnGrabNetworkEvent.InvokeRemote(NetworkHeld.Value);
                 }
             }

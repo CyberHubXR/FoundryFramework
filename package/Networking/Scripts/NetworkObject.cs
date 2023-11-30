@@ -3,31 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
+using System.Net;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif 
 
 namespace Foundry.Networking
 {
-    /// <summary>
-    /// Interface for associating graph nodes with networked objects.
-    /// This must be synced outside of the network graph, as it is required to construct it.
-    /// </summary>
-    public interface INetworkedGraphId
-    {
-        public NetworkId Value { get; set; }
-        
-        /// <summary>
-        /// Called when the graph id is assigned. This may happen multiple times during the lifetime of the object.
-        /// If the ID is already assigned, the callback will be called immediately once.
-        /// </summary>
-        /// <param name="callback"></param>
-        public void OnIdAssigned(Action<NetworkId> callback);
-    }
-    
     public enum DisconnectBehaviour
     {
         /// <summary>
@@ -41,10 +27,46 @@ namespace Foundry.Networking
     }
     
     /// <summary>
-    /// Call signature for validating a network ID change request.
+    /// Interface for foundry network objects to interact with the underlying network system.
     /// </summary>
-    public delegate bool IDChangeRequestCallback(int sender, NetworkId newId);
-    
+    public interface INetworkObjectAPI
+    {
+        /// <summary>
+        /// Get the network ID of this object. This will be invalid if the object is not in the graph.
+        /// Setting this will result in an error, as the network ID is managed by the network system and can only be set once.
+        /// </summary>
+        public NetworkId NetworkStateId { get; set; }
+        
+        /// <summary>
+        /// Get the player that owns this object. In rare cases (usually errors) this may not match the owner as represented by the foundry network state.
+        /// </summary>
+        public int Owner { get; }
+        
+        /// <summary>
+        /// Return true if the native network object is owned by the local player.
+        /// </summary>
+        public bool IsOwner { get; }
+        
+        /// <summary>
+        /// Callback for when the native network object is connected to the network.
+        /// </summary>
+        /// <param name="callback">Action to be performed when a connection is established</param>
+        public void OnConnected(Action callback);
+
+        /// <summary>
+        /// Set a callback to perform an action when the owner of this object changes. This will be called on all clients.
+        /// </summary>
+        /// <param name="callback">Action to be performed, the new owner of the object is passed in. If this object is the old owner, the returned Boolean can be used to allow or deny an ownership change (true to allow, false to deny)</param>
+        public void OnOwnershipChanged(Func<int, bool> callback);
+        
+        /// <summary>
+        /// Set the ownership of this object. This will only work if the object is owned by the local player, or if the object has transfer ownership enabled and the old owner allows it.
+        /// Until the callback is called, the object will still be owned by the old owner, but if setting ownership to the local player the object will be treated locally as owned by the local player while not sending updates until the callback is called.
+        /// </summary>
+        /// <param name="newOwner">The player to transfer ownership to</param>
+        /// <param name="callback">Callback to preform once an ownership change has succeeded or failed, with the passed bool representing the result</param>
+        public void SetOwnership(int newOwner, Action<bool> callback);
+    }
     
     public class NetworkObject : MonoBehaviour
     {
@@ -60,24 +82,35 @@ namespace Foundry.Networking
         public bool allowOwnershipTransfer = true;
         
         /// <summary>
-        /// When the ownership of this object changes, this event is invoked with a reference to this object and the new ID.
+        /// When the ownership of this object changes, this event is invoked with a reference to this object and the new owner.
         /// </summary>
-        public UnityEvent<NetworkObject, NetworkId> OnIDChanged;
+        public UnityEvent<NetworkObject, int> OnOwnerChanged;
+
+        /// <summary>
+        /// API component for interacting with the underlying network system.
+        /// </summary>
+        private INetworkObjectAPI api
+        {
+            get
+            {
+                if (_api != null)
+                    return _api;
+                _api = GetComponent<INetworkObjectAPI>();
+                return _api;
+            }
+        }
+
+        private INetworkObjectAPI _api;
 
         /// <summary>
         /// Returns the NetworkGraphId script attached to this object, or null if it doesn't exist.
         /// </summary>
-        public INetworkedGraphId NetworkedGraphId
-        {
-            get
-            {
-                if(networkedGraphId != null)
-                    return networkedGraphId;
-                networkedGraphId = GetComponent<INetworkedGraphId>();
-                return networkedGraphId;
-            }
-        }
-        private INetworkedGraphId networkedGraphId;
+        public NetworkId Id => api.NetworkStateId;
+        
+        /// <summary>
+        /// The player that owns this object. This will be -1 if the object is not in the graph.
+        /// </summary>
+        public int Owner => api.Owner;
 
         /// <summary>
         /// Returns the current network provider instance.
@@ -102,35 +135,26 @@ namespace Foundry.Networking
             get
             {
                 // This object has not been baked, so there is likely no network session running.
-                if (NetworkedGraphId == null)
+                if (api == null)
                     return true;
                 // Are we the owner of this object?
-                if (NetworkedGraphId.Value.Owner == NetworkProvider.LocalPlayerId)
+                if (Owner == NetworkProvider.LocalPlayerId)
                     return true;
                 // If the network ID is just invalid we are technically the local owner
-                return !NetworkedGraphId.Value.IsValid();
+                return !Id.IsValid();
 
             }
         }
 
-        private IDChangeRequestCallback IDChangeRequest;
+        /// <summary>
+        /// Callback for validating if an ownership change should be allowed. This will be called on only the client that currently owns the object.
+        /// </summary>
+        private Func<int, bool> ValidateOwnershipChange;
 
         /// <summary>
         /// The node this object is linked too. This is null if the object is not in the graph.
         /// </summary>
-        private NetworkGraphNode associatedNode;
-        
-        /// <summary>
-        /// Network object parented to this object. This is used to build the graph.
-        /// </summary>
-        [HideInInspector]
-        public List<NetworkObject> children = new();
-
-        /// <summary>
-        /// Parent of this object. Null if there is none.
-        /// </summary>
-        [HideInInspector]
-        public NetworkObject Parent;
+        private NetworkObjectState associatedNode;
         
         /// <summary>
         /// All the networked components owned by this object.
@@ -196,39 +220,18 @@ namespace Foundry.Networking
         
         internal void UpdateComponents()
         {
-            if (!Parent)
-            {
-                Parent = transform.parent?.GetComponent<NetworkObject>();
-                if(Parent)
-                    EditorUtility.SetDirty(this);
-            }
-                
-            if (Parent)
-            {
-                Parent.UpdateComponents();
-                return;
-            }
-            
             UpdateComponentsRecursive(transform);
         }
         
         private void UpdateComponentsRecursive(Transform t)
         {
             var oldComponents = NetworkComponents;
-            var oldChildren = children;
             if (t == transform)
-            {
                 NetworkComponents = new();
-                children = new();
-            }
             if (t.gameObject.TryGetComponent(out NetworkObject otherObj))
             {
                 if (otherObj != this)
-                {
-                    children.Add(otherObj);
-                    otherObj.UpdateComponentsRecursive(otherObj.transform);
                     return;
-                }
             }
             
             var networkComponents = t.GetComponents<NetworkComponent>();
@@ -251,20 +254,8 @@ namespace Foundry.Networking
                         }
                     }
                 }
-            
-                bool childrenChanged = oldChildren.Count != children.Count;
-                if (!childrenChanged && !componentsChanged)
-                {
-                    for (int i = 0; i < oldChildren.Count; i++)
-                    {
-                        if (oldChildren[i] != children[i])
-                        {
-                            childrenChanged = true;
-                            break;
-                        }
-                    }
-                }
-                if(componentsChanged || childrenChanged)
+                
+                if(componentsChanged)
                     EditorUtility.SetDirty(this);
             }
         }
@@ -287,14 +278,17 @@ namespace Foundry.Networking
             {
                 NetworkManager.RegisterUnloaded(this);
                 registeredUnloaded = true;
-                    
                 
-                NetworkedGraphId.OnIdAssigned(id =>
-                {
-                    UpdateBoundNode(NetworkProvider.Graph);
+                api.OnConnected(()=> {
+                    UpdateBoundNode(NetworkProvider.State);
                     NetworkManager.RegisterObject(this);
                     CompleteLoadStep(ref idAssigned);
-                    OnIDChanged.Invoke(this, id);
+                });
+                
+                api.OnOwnershipChanged(newOwner =>
+                {
+                    OnOwnerChanged.Invoke(this, newOwner);
+                    return true;
                 });
             }
         }
@@ -358,54 +352,50 @@ namespace Foundry.Networking
         }
 
         /// <summary>
-        /// Tells this object to create graph nodes associated with it and its children.
+        /// Tells this object to create a network state for itself.
         /// </summary>
-        /// <param name="graph"></param>
-        internal void BuildGraph(NetworkGraph graph)
+        /// <param name="state"></param>
+        internal void CreateState(NetworkState state)
         {
-            NetworkGraphNode newNode;
-            NetworkId parentId = Parent ? Parent.NetworkedGraphId.Value : NetworkId.Invalid;
-            if (!NetworkedGraphId.Value.IsValid())
+            NetworkObjectState newNode;
+            if (!Id.IsValid())
             {
-                newNode = graph.CreateNode(parentId);
-                NetworkedGraphId.Value = newNode.ID;
+                newNode = state.CreateNode();
+                api.NetworkStateId = newNode.Id;
             }
             else
-                newNode = graph.AddNode(NetworkedGraphId.Value, parentId);
+                newNode = state.AddNode(Id);
             
-            LinkGraphNode(newNode);
-            
-            foreach (var child in children)
-                child.BuildGraph(graph);
+            LinkState(newNode);
         }
 
         /// <summary>
         /// Attempts to connect to the graph node associated with this object using the NetworkedGraphId and register properties. Does nothing if the node is already connected.
         /// </summary>
-        /// <param name="graph"></param>
-        internal void UpdateBoundNode(NetworkGraph graph)
+        /// <param name="state"></param>
+        internal void UpdateBoundNode(NetworkState state)
         {
             // If we have a node already, we don't need to do anything.
             if(associatedNode)
                 return;
 
-            if (graph.TryGetNode(NetworkedGraphId.Value, out NetworkGraphNode node))
-               LinkGraphNode(node);
-            else if (IsOwner && !Parent && NetworkedGraphId.Value.IsValid())
-                BuildGraph(graph);
+            if (state.TryGetNode(Id, out NetworkObjectState node))
+               LinkState(node);
+            else if (IsOwner && Id.IsValid())
+                CreateState(state);
         }
 
         /// <summary>
         /// Set up a new node with the correct data
         /// </summary>
         /// <param name="node"></param>
-        private void LinkGraphNode(NetworkGraphNode node)
+        private void LinkState(NetworkObjectState node)
         {
             Debug.Assert(node);
             node.AssociatedObject = this;
             associatedNode = node;
             node.allowOwnershipTransfer = allowOwnershipTransfer;
-            Debug.Assert(node.ID == NetworkedGraphId.Value);
+            Debug.Assert(node.Id == Id);
 
             node.Properties = NetworkProperties;
             
@@ -419,17 +409,23 @@ namespace Foundry.Networking
         /// Set a callback to verify if a network ID change from a client without ownership should be allowed. This will
         /// be called on every remote client, not just the owner so make sure that it's consistent between clients.
         /// </summary>
-        /// <param name="callback"></param>
-        public void SetVerifyIDChangeCallback(IDChangeRequestCallback callback)
+        /// <param name="callback">Callback that performs the verification, it's passed an int representing the new requested owner, and should return a bool representing if the change should be allowed to continue</param>
+        public void SetOwnershipVerificationCallback(Func<int, bool> callback)
         {
-            IDChangeRequest = callback;
+            ValidateOwnershipChange = callback;
         }
         
-        public bool VerifyIDChangeRequest(int sender, NetworkId newId)
+        /// <summary>
+        /// Returns if an ownership change should be allowed. This is executed locally and is intended for internal use.
+        /// </summary>
+        /// <param name="newOwner"></param>
+        /// <param name="newId"></param>
+        /// <returns></returns>
+        public bool VerifyIDChangeRequest(int newOwner)
         {
-            if (IDChangeRequest == null)
+            if (ValidateOwnershipChange == null)
                 return allowOwnershipTransfer;
-            return IDChangeRequest(sender, newId);
+            return ValidateOwnershipChange(newOwner);
         }
         
         /// <summary>
@@ -437,6 +433,7 @@ namespace Foundry.Networking
         /// </summary>
         public void RequestOwnership()
         {
+            
             if (!allowOwnershipTransfer)
             {
                 Debug.LogError($"Attempted to take ownership of {gameObject.name} but allowOwnershipTransfer is false.");
@@ -449,10 +446,19 @@ namespace Foundry.Networking
                 return;
             }
             
-            if (associatedNode.ID.Owner == NetworkProvider.LocalPlayerId)
+            if (associatedNode.owner == NetworkProvider.LocalPlayerId && api.IsOwner)
                 return;
             
-            NetworkProvider.Graph.ChangeId(associatedNode.ID, NetworkProvider.Graph.NewId(NetworkProvider.LocalPlayerId));
+            api.SetOwnership(NetworkProvider.LocalPlayerId, (success) =>
+            {
+                if (!success)
+                {
+                    Debug.LogError($"Failed to take ownership of {gameObject.name}.");
+                    return;
+                }
+                Debug.Log($"Took ownership of {gameObject.name}.");
+                NetworkProvider.State.ChangeOwner(Id, NetworkProvider.LocalPlayerId);
+            });
         }
     }
     
@@ -466,21 +472,12 @@ namespace Foundry.Networking
             var networkObject = (NetworkObject)target;
             
             EditorGUI.BeginDisabledGroup(true);
-            EditorGUILayout.ObjectField("Parent", networkObject.Parent, typeof(NetworkObject), true);
             
             
             EditorGUILayout.LabelField("Network Components:");
             foreach (var property in networkObject.NetworkComponents)
                 EditorGUILayout.ObjectField(property, typeof(NetworkComponent), true);
             if(networkObject.NetworkComponents.Count == 0)
-                EditorGUILayout.LabelField("None");
-            EditorGUILayout.Space();
-            
-            EditorGUILayout.LabelField("Children:");
-            
-            foreach (var child in networkObject.children)
-                EditorGUILayout.ObjectField(child, typeof(NetworkObject), true);
-            if(networkObject.children.Count == 0)
                 EditorGUILayout.LabelField("None");
             EditorGUILayout.Space();
             
@@ -491,7 +488,8 @@ namespace Foundry.Networking
             if (Application.isPlaying && NetworkManager.instance != null)
             {
                 EditorGUILayout.LabelField("Is Owner: " + networkObject.IsOwner);
-                EditorGUILayout.LabelField("Networked Graph ID: " + (networkObject.NetworkedGraphId?.Value.ToString() ?? "Not set"));
+                EditorGUILayout.LabelField("Networkek ID: " + (networkObject.Id.ToString() ?? "Not set"));
+                EditorGUILayout.LabelField("Owner: " + (networkObject.Owner == -1 ? "None" : networkObject.Owner.ToString()));
                 EditorGUILayout.LabelField("Networked Properties: " + networkObject.NetworkComponents.Count);
                 
                 EditorGUI.BeginDisabledGroup(!networkObject.allowOwnershipTransfer);

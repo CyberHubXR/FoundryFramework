@@ -299,9 +299,9 @@ namespace Foundry {
                 // Make sure we own this object so we can change values
                 Object?.RequestOwnership();
             
-                var id = netObject.NetworkedGraphId.Value;
+                var id = netObject.Id;
                 networkedPlacedObject.Value = id;
-                OnPlaceNetworked.Invoke(netObject.NetworkedGraphId.Value);
+                OnPlaceNetworked.Invoke(netObject.Id);
             }
             
             if (placeObj.TryGetComponent(out NetworkTransform networkTransform) && networkTransform.IsOwner)

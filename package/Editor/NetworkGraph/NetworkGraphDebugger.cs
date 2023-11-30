@@ -25,17 +25,17 @@ namespace Foundry.Core.Editor
                 return;
             var networkProvider = FoundryApp.GetService<INetworkProvider>();
             if(networkProvider != null && scrollView != null)
-                ConstructGraph(scrollView, networkProvider.Graph);
+                ConstructGraph(scrollView, networkProvider.State);
             Repaint();
         }
 
-        void ConstructGraph(VisualElement root, NetworkGraph graph)
+        void ConstructGraph(VisualElement root, NetworkState state)
         {
-            if (graph == null)
+            if (state == null)
                 return;
             
             ++cacheVersion;
-            foreach (var node in graph.RootNodes)
+            foreach (var node in state.Objects)
                 ConstructGraphNode(root, node);
             
             var toRemove = nodeElementCache.Where(node=>node.Value.version != cacheVersion).ToList();
@@ -61,16 +61,16 @@ namespace Foundry.Core.Editor
         private ulong cacheVersion = 0;
         
         private Dictionary<NetworkId, NodeContext> nodeElementCache = new();
-        void ConstructGraphNode(VisualElement root, NetworkGraphNode node)
+        void ConstructGraphNode(VisualElement root, NetworkObjectState node)
         {
             NodeContext ctx;
 
-            if (nodeElementCache.TryGetValue(node.ID, out var value))
+            if (nodeElementCache.TryGetValue(node.Id, out var value))
                 ctx = value;
             else
             {
                 ctx = new();
-                ctx.node.text = node.ID.ToString();
+                ctx.node.text = node.Id.ToString();
                 
                 ctx.selectButton = new Button();
                 ctx.selectButton.text = "Select";
@@ -78,7 +78,7 @@ namespace Foundry.Core.Editor
                 ctx.selectButton.SetEnabled(false);
                 ctx.node.Add(ctx.selectButton);
                 
-                nodeElementCache.Add(node.ID, ctx);
+                nodeElementCache.Add(node.Id, ctx);
                 root.Add(ctx.node);
             }
             
@@ -89,16 +89,16 @@ namespace Foundry.Core.Editor
             EditorUIUtils.SetBorderWidth(ctx.node, 1f);
             EditorUIUtils.SetBorderColor(ctx.node, Color.black);
 
-            if (ctx.cachedId != node.ID)
+            if (ctx.cachedId != node.Id)
             {
-                ctx.node.text = (node.AssociatedObject?.gameObject.name ?? "") + node.ID;
-                ctx.cachedId = node.ID;
+                ctx.node.text = (node.AssociatedObject?.gameObject.name ?? "") + node.Id;
+                ctx.cachedId = node.Id;
             }
 
             if (!ctx.objectLinked && node.AssociatedObject != null)
             {
                 ctx.objectLinked = true;
-                ctx.node.text = node.AssociatedObject.gameObject.name + node.ID;
+                ctx.node.text = node.AssociatedObject.gameObject.name + node.Id;
                 ctx.selectButton.SetEnabled(true);
                 ctx.selectButton.clicked += () =>
                 {
@@ -127,10 +127,6 @@ namespace Foundry.Core.Editor
                 ctx.propPlaceholder = new Label("Properties not registered.");
                 ctx.node.Add(ctx.propPlaceholder);
             }
-            
-
-            foreach (var child in node.Children)
-                ConstructGraphNode(ctx.node, child);
         }
 
         private ScrollView scrollView;
@@ -176,7 +172,7 @@ namespace Foundry.Core.Editor
                 return;
             }
 
-            networkProvider.Graph.OnGraphChanged += graph =>
+            networkProvider.State.OnStateChanged += graph =>
             {
                 nodeElementCache.Clear();
                 scrollView ??= new ScrollView();
@@ -186,7 +182,7 @@ namespace Foundry.Core.Editor
             
             scrollView ??= new ScrollView();
             
-            ConstructGraph(scrollView, networkProvider.Graph);
+            ConstructGraph(scrollView, networkProvider.State);
             rootVisualElement.Add(scrollView);
         }
     }
