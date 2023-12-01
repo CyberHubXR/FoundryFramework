@@ -69,6 +69,9 @@ namespace Foundry.Networking
             serializer.Serialize(in id);
             switch (type)
             {
+                case Type.Add:
+                    serializer.Serialize(in secondaryData);
+                    break;
                 case Type.OwnerChange:
                     serializer.Serialize(in secondaryData);
                     break;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -46,6 +47,12 @@ namespace Foundry.Networking
         /// Return true if the native network object is owned by the local player.
         /// </summary>
         public bool IsOwner { get; }
+
+        /// <summary>
+        /// Get the network state id paired to this object once it is created. The callback will not be called until id is valid.
+        /// </summary>
+        /// <param name="callback">Action to preform once Id is set to a valid value. Will only be called once.</param>
+        public void GetNetworkStateIdAsync(Action<NetworkId> callback);
         
         /// <summary>
         /// Callback for when the native network object is connected to the network.
@@ -154,7 +161,19 @@ namespace Foundry.Networking
         /// <summary>
         /// The node this object is linked too. This is null if the object is not in the graph.
         /// </summary>
-        private NetworkObjectState associatedNode;
+        private NetworkObjectState associatedNode
+        {
+            set => _associatedNode = value;
+            get
+            {
+                if (_associatedNode)
+                    return _associatedNode;
+                if (Id.IsValid())
+                    UpdateBoundNode();
+                return _associatedNode;
+            }
+        }
+        private NetworkObjectState _associatedNode;
         
         /// <summary>
         /// All the networked components owned by this object.
@@ -280,9 +299,12 @@ namespace Foundry.Networking
                 registeredUnloaded = true;
                 
                 api.OnConnected(()=> {
-                    UpdateBoundNode(NetworkProvider.State);
-                    NetworkManager.RegisterObject(this);
-                    CompleteLoadStep(ref idAssigned);
+                    api.GetNetworkStateIdAsync(id =>
+                    {
+                        UpdateBoundNode();
+                        NetworkManager.RegisterObject(this);
+                        CompleteLoadStep(ref idAssigned);
+                    });
                 });
                 
                 api.OnOwnershipChanged(newOwner =>
@@ -355,16 +377,16 @@ namespace Foundry.Networking
         /// Tells this object to create a network state for itself.
         /// </summary>
         /// <param name="state"></param>
-        internal void CreateState(NetworkState state)
+        internal void CreateState()
         {
             NetworkObjectState newNode;
             if (!Id.IsValid())
             {
-                newNode = state.CreateNode();
+                newNode = NetworkProvider.State.CreateNode();
                 api.NetworkStateId = newNode.Id;
             }
             else
-                newNode = state.AddNode(Id);
+                newNode = NetworkProvider.State.AddNode(Id);
             
             LinkState(newNode);
         }
@@ -372,17 +394,16 @@ namespace Foundry.Networking
         /// <summary>
         /// Attempts to connect to the graph node associated with this object using the NetworkedGraphId and register properties. Does nothing if the node is already connected.
         /// </summary>
-        /// <param name="state"></param>
-        internal void UpdateBoundNode(NetworkState state)
+        internal void UpdateBoundNode()
         {
             // If we have a node already, we don't need to do anything.
-            if(associatedNode)
+            if(_associatedNode)
                 return;
-
-            if (state.TryGetNode(Id, out NetworkObjectState node))
+            
+            if (NetworkProvider.State.TryGetNode(Id, out NetworkObjectState node))
                LinkState(node);
             else if (IsOwner && Id.IsValid())
-                CreateState(state);
+                CreateState();
         }
 
         /// <summary>

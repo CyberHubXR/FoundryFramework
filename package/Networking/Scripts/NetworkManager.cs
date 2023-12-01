@@ -147,7 +147,7 @@ namespace Foundry.Networking
         void OnGraphChanged(NetworkState state)
         {
             foreach (var obj in sceneObjects)
-                obj.UpdateBoundNode(state);
+                obj.UpdateBoundNode();
         }
 
         void OnNavigationStarting(ISceneNavigationEntry scene)
@@ -188,9 +188,7 @@ namespace Foundry.Networking
             if (networkProvider.IsGraphAuthority)
             {
                 foreach (var netObj in sceneObjects)
-                {
-                    netObj.CreateState(networkProvider.State);
-                }
+                    netObj.CreateState();
             }
 
             await networkProvider.CompleteSceneSetup(FoundryApp.GetService<ISceneNavigator>().CurrentScene);
@@ -238,7 +236,7 @@ namespace Foundry.Networking
             if (obj.TryGetComponent(out NetworkObject netObj))
             {
                 sceneObjects.Add(netObj);
-                netObj.CreateState(networkProvider.State);
+                netObj.CreateState();
             }
 
             return obj;
@@ -264,13 +262,14 @@ namespace Foundry.Networking
         public static void RegisterObject(NetworkObject networkObject)
         {
             Debug.Assert(instance, "NetworkManager instance not found! Either one does not exist or it has not been initialized yet.");
+            Debug.Assert(networkObject.Id.IsValid(), "Network object must have valid ID");
+            
             if(!instance.idToObject.ContainsKey(networkObject.Id))
                 instance.idToObject.Add(networkObject.Id, networkObject);
             if (instance.sceneObjects.Contains(networkObject))
                 return;
             
             instance.sceneObjects.Add(networkObject);
-            Debug.Assert(networkObject.Id.IsValid(), "Network object must have valid ID");
         }
         
         /// <summary>
