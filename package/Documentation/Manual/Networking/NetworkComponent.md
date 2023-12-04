@@ -54,8 +54,8 @@ public class ColorSync : NetworkComponent
         props.Add(_color);
     }
     
-    // OnSpawned is called when all our networked properties have been set and we're connected to the network.
-    public override void OnSpawned()
+    // OnConnected is called when all our networked properties have been set and we're connected to the network.
+    public override void OnConnected()
     {
     
     }
