@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Foundry.Services;
 using UnityEngine.Events;
@@ -39,6 +41,7 @@ namespace Foundry.Networking
         public Dictionary<int, Player> SpawnedPlayers = new();
         
         private INetworkProvider networkProvider;
+        public static NetworkState State { get; private set; }
         
         /// <summary>
         /// network objects that are currently active in the scene
@@ -59,6 +62,7 @@ namespace Foundry.Networking
 
             instance = this;
             networkProvider = FoundryApp.GetService<INetworkProvider>();
+            State = null;
             
             // If we have not baked prefabs yet for this run, do so now.
             if (prefabHolder == null)
@@ -121,10 +125,9 @@ namespace Foundry.Networking
 
         public void OnPlayerJoined(int player)
         {
-            //TODO fix both of these to actually work
             if (networkProvider.IsServer)
             {
-                GameObject newPlayer = this.Instantiate(playerPrefab, new Vector3(), Quaternion.identity);
+                GameObject newPlayer = this.Spawn(playerPrefab, new Vector3(), Quaternion.identity);
                 SpawnedPlayers.Add(player, newPlayer.GetComponent<Player>());
             }
         }
@@ -136,11 +139,24 @@ namespace Foundry.Networking
                 Despawn(SpawnedPlayers[player].GetComponent<NetworkObject>());
                 SpawnedPlayers.Remove(player);
             }
+            
+            
+            if (!networkProvider.IsGraphAuthority)
+                return;
+
+            var id = player;
+            var orphanedNodes = State.idToNode.Select(pair => pair).Where(node => node.Value.owner == id).ToList();
+            foreach (var node in orphanedNodes)
+            {
+                if (node.Value.AssociatedObject && node.Value.AssociatedObject.disconnectBehaviour == DisconnectBehaviour.TransferOwnership)
+                    State.ChangeOwner(node.Key, networkProvider.LocalPlayerId);
+                else 
+                    State.RemoveNode(node.Key); // If the node is not associated with an object, we can just remove it, as it was probably orphaned.
+            }
         }
 
         void OnSessionConnectedCallback()
         {
-            networkProvider.State.OnStateChanged += OnGraphChanged;
             OnSessionConnected.Invoke();
         }
         
@@ -174,16 +190,41 @@ namespace Foundry.Networking
                     BindSceneObject(netObj);
             }
         }
+        
+        IEnumerator ReportGraphChanges()
+        {
+            while (networkProvider.IsSessionConnected)
+            {
+                //We yield at the beginning of the loop so that continue statements don't crash the editor.
+                yield return new WaitForSeconds(1f / 60f);
+                var graphDelta = State.GenerateDelta();
+                if (graphDelta.Length == 0)
+                    continue;
+                
+                if (graphDelta.Length > 6536)
+                {
+                    Debug.LogError($"Graph delta is too large to send over the network! (graphDelta was {graphDelta.Length}, max is 6536). This is a potential bug, please report it to the Foundry team.");
+                    continue;
+                }
+
+                networkProvider.SendStateDelta(graphDelta);
+            }
+        }
 
         public async void StartSession(SessionType mode)
         {
+            State = new NetworkState(networkProvider);
+            State.OnStateStructureChanged += OnGraphChanged;
             
             await networkProvider.StartSessionAsync(new Foundry.Networking.SessionInfo()
             {
                 sessionName = RoomName(),
                 sessionType = mode
             });
-
+            Debug.Log("Network Session started.");
+            
+            networkProvider.SetSubscriberInitialStateCallback(() => State.GenerateConstructionDelta());
+            
             // Instantiate scene graph if we're the authority
             if (networkProvider.IsGraphAuthority)
             {
@@ -192,14 +233,23 @@ namespace Foundry.Networking
             }
 
             await networkProvider.CompleteSceneSetup(FoundryApp.GetService<ISceneNavigator>().CurrentScene);
+            
+            await networkProvider.SubscribeToStateChangesAsync((sender, delta) =>
+            {
+                State.ApplyDelta(delta, sender);
+            });
+            
+            StartCoroutine(ReportGraphChanges());
 
-            if(mode == SessionType.Shared)
+            // Spawn a player if we're in shared mode
+            if (mode == SessionType.Shared)
+            {
                 switch (SpawnMethod)
                 {
                     case SpawnMethod.Random:
                         if (spawnPoints.Length > 1)
                         {
-                            this.Instantiate(playerPrefab, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].position,
+                            this.Spawn(playerPrefab, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].position,
                                 spawnPoints[Random.Range(0, spawnPoints.Length - 1)].rotation);
                         }
                         else
@@ -207,32 +257,29 @@ namespace Foundry.Networking
                             Debug.LogWarning("Please Define Two Or More Random Spawn Points Or This Method Will Not Function As Intended This Script Will Now Override To Fixed Point");
                             
                             //Peform Fixed Point Spawn
-                            this.Instantiate(playerPrefab, transform.position, transform.rotation);
+                            this.Spawn(playerPrefab, transform.position, transform.rotation);
                         }
 
                         break;
                     case SpawnMethod.FixedPoint:
-                        this.Instantiate(playerPrefab, transform.position, transform.rotation);
+                        this.Spawn(playerPrefab, transform.position, transform.rotation);
                         break;
                 }
+            }
         }
 
         public void StopSession()
         {
             if (networkProvider.IsSessionConnected)
-            {
-                if(networkProvider.State != null)
-                    networkProvider.State.OnStateChanged -= OnGraphChanged;
                 networkProvider.StopSessionAsync();
-            }
         }
         
-        public GameObject Instantiate(GameObject prefab, Vector3 position, Quaternion rotation)
+        public GameObject Spawn(GameObject prefab, Vector3 position, Quaternion rotation)
         {
             Debug.Assert(instance.networkProvider.IsSessionConnected, "Tried to instantiate a prefab without a network session!");
             if (boundPrefabs.ContainsKey(prefab))
                 prefab = boundPrefabs[prefab];
-            var obj = networkProvider.Instantiate(prefab, position, rotation);
+            var obj = networkProvider.Spawn(prefab, position, rotation);
             if (obj.TryGetComponent(out NetworkObject netObj))
             {
                 sceneObjects.Add(netObj);
@@ -242,9 +289,9 @@ namespace Foundry.Networking
             return obj;
         }
         
-        public void Despawn(NetworkObject gameObject)
+        public void Despawn(NetworkObject netObject)
         {
-            Despawn(gameObject);
+            networkProvider.Despawn(netObject.gameObject);
         }
         
         public static void BindSceneObject(NetworkObject sceneObject)
@@ -286,7 +333,7 @@ namespace Foundry.Networking
                 instance.objectsAwaitingLoad.Remove(networkObject);
             
             if(networkObject.IsOwner)
-                instance.networkProvider.State.RemoveNode(id);
+                State?.RemoveNode(id);
         }
 
         public static void RegisterUnloaded(NetworkObject netObj)

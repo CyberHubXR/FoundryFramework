@@ -59,12 +59,18 @@ namespace Foundry.Networking
         /// </summary>
         /// <param name="callback">Action to be performed when a connection is established</param>
         public void OnConnected(Action callback);
+        
+        /// <summary>
+        /// Set a callback to verify if a requested ownership change should be allowed. This will be called on only the client that currently owns the object.
+        /// </summary>
+        /// <param name="callback">Callback to perform validation, return true to allow the change</param>
+        public void OnValidateOwnershipChange(Func<int, bool> callback);
 
         /// <summary>
         /// Set a callback to perform an action when the owner of this object changes. This will be called on all clients.
         /// </summary>
-        /// <param name="callback">Action to be performed, the new owner of the object is passed in. If this object is the old owner, the returned Boolean can be used to allow or deny an ownership change (true to allow, false to deny)</param>
-        public void OnOwnershipChanged(Func<int, bool> callback);
+        /// <param name="callback">Action to be performed, the new owner of the object is passed in</param>
+        public void OnOwnershipChanged(Action<int> callback);
         
         /// <summary>
         /// Set the ownership of this object. This will only work if the object is owned by the local player, or if the object has transfer ownership enabled and the old owner allows it.
@@ -307,10 +313,14 @@ namespace Foundry.Networking
                     });
                 });
                 
+                api.OnValidateOwnershipChange(VerifyIDChangeRequest);
+                
                 api.OnOwnershipChanged(newOwner =>
                 {
+                    // If we detect that we are the old owner and the new owner is not us, we should change the owner.
+                    if (IsOwner && newOwner != NetworkProvider.LocalPlayerId)
+                        NetworkManager.State.ChangeOwner(Id, newOwner);
                     OnOwnerChanged.Invoke(this, newOwner);
-                    return true;
                 });
             }
         }
@@ -350,7 +360,8 @@ namespace Foundry.Networking
         {
             if (NetworkManager.instance)
             {
-                NetworkManager.UnregisterObject(this);
+                if(Id.IsValid())
+                    NetworkManager.UnregisterObject(this);
                 if(registeredUnloaded)
                     NetworkManager.RegisterLoaded(this);
             }
@@ -382,11 +393,11 @@ namespace Foundry.Networking
             NetworkObjectState newNode;
             if (!Id.IsValid())
             {
-                newNode = NetworkProvider.State.CreateNode();
+                newNode = NetworkManager.State.CreateNode();
                 api.NetworkStateId = newNode.Id;
             }
             else
-                newNode = NetworkProvider.State.AddNode(Id);
+                newNode = NetworkManager.State.AddNode(Id);
             
             LinkState(newNode);
         }
@@ -400,7 +411,7 @@ namespace Foundry.Networking
             if(_associatedNode)
                 return;
             
-            if (NetworkProvider.State.TryGetNode(Id, out NetworkObjectState node))
+            if (NetworkManager.State.TryGetNode(Id, out NetworkObjectState node))
                LinkState(node);
             else if (IsOwner && Id.IsValid())
                 CreateState();
@@ -478,7 +489,7 @@ namespace Foundry.Networking
                     return;
                 }
                 Debug.Log($"Took ownership of {gameObject.name}.");
-                NetworkProvider.State.ChangeOwner(Id, NetworkProvider.LocalPlayerId);
+                NetworkManager.State.ChangeOwner(Id, NetworkProvider.LocalPlayerId);
             });
         }
     }
@@ -509,7 +520,7 @@ namespace Foundry.Networking
             if (Application.isPlaying && NetworkManager.instance != null)
             {
                 EditorGUILayout.LabelField("Is Owner: " + networkObject.IsOwner);
-                EditorGUILayout.LabelField("Networkek ID: " + (networkObject.Id.ToString() ?? "Not set"));
+                EditorGUILayout.LabelField("Network ID: " + (networkObject.Id.ToString() ?? "Not set"));
                 EditorGUILayout.LabelField("Owner: " + (networkObject.Owner == -1 ? "None" : networkObject.Owner.ToString()));
                 EditorGUILayout.LabelField("Networked Properties: " + networkObject.NetworkComponents.Count);
                 

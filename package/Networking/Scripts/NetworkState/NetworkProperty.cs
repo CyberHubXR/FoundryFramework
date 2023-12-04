@@ -56,7 +56,7 @@ namespace Foundry.Networking
             dirty = false;
         }
         
-        public void Serialize(FoundrySerializer serializer)
+        public void Serialize(FoundrySerializer serializer, bool full)
         {
             serializer.SetDebugRegion($"NetworkProperty<{typeof(T).Name}>");
             serializer.Serialize(in value);

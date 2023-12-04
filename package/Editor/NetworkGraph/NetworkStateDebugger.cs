@@ -8,42 +8,37 @@ using UnityEngine.UIElements;
 
 namespace Foundry.Core.Editor
 {
-    public class NetworkGraphDebugger : EditorWindow
+    public class NetworkStateDebugger : EditorWindow
     {
-        [MenuItem("Foundry/Debugging/Network Graph Debugger")]
+        [MenuItem("Foundry/Debugging/Network State Debugger")]
         static void OpenDebugWindow()
         {
-            var window = GetWindow<NetworkGraphDebugger>("Network Graph Debugger");
+            var window = GetWindow<NetworkStateDebugger>("Network State Debugger");
+            window.Show();
             window.position = new Rect(100, 100, 0, 0);
             window.minSize = new Vector2(400, 200);
-            window.Show();
         }
 
         private void OnInspectorUpdate()
         {
-            if (!Application.isPlaying)
-                return;
-            var networkProvider = FoundryApp.GetService<INetworkProvider>();
-            if(networkProvider != null && scrollView != null)
-                ConstructGraph(scrollView, networkProvider.State);
+            CreateGUI();
             Repaint();
         }
 
-        void ConstructGraph(VisualElement root, NetworkState state)
+        void ConstructState(VisualElement root, NetworkState state)
         {
             if (state == null)
                 return;
             
             ++cacheVersion;
             foreach (var node in state.Objects)
-                ConstructGraphNode(root, node);
+                ConstructStateNode(root, node);
             
-            var toRemove = nodeElementCache.Where(node=>node.Value.version != cacheVersion).ToList();
+            var toRemove = nodeElementCache.Where(node=>!node.Key ||  node.Value.version != cacheVersion).ToList();
             foreach (var node in toRemove)
             {
-                Debug.Log("removing node " + node.Key + " from cache");
                 nodeElementCache.Remove(node.Key);
-                node.Value.node.parent?.Remove(node.Value.node);
+                root.Remove(node.Value.node);
             }
         }
 
@@ -52,6 +47,7 @@ namespace Foundry.Core.Editor
             public Foldout node = new();
             public bool objectLinked;
             public NetworkId cachedId;
+            public int cachedOwner = -1;
             public Button selectButton;
             public bool propertiesDrawn;
             public VisualElement propPlaceholder;
@@ -60,13 +56,15 @@ namespace Foundry.Core.Editor
         
         private ulong cacheVersion = 0;
         
-        private Dictionary<NetworkId, NodeContext> nodeElementCache = new();
-        void ConstructGraphNode(VisualElement root, NetworkObjectState node)
+        private Dictionary<NetworkObjectState, NodeContext> nodeElementCache = new();
+        void ConstructStateNode(VisualElement root, NetworkObjectState node)
         {
             NodeContext ctx;
 
-            if (nodeElementCache.TryGetValue(node.Id, out var value))
+            if (nodeElementCache.TryGetValue(node, out var value))
+            {
                 ctx = value;
+            }
             else
             {
                 ctx = new();
@@ -78,7 +76,7 @@ namespace Foundry.Core.Editor
                 ctx.selectButton.SetEnabled(false);
                 ctx.node.Add(ctx.selectButton);
                 
-                nodeElementCache.Add(node.Id, ctx);
+                nodeElementCache.Add(node, ctx);
                 root.Add(ctx.node);
             }
             
@@ -89,10 +87,11 @@ namespace Foundry.Core.Editor
             EditorUIUtils.SetBorderWidth(ctx.node, 1f);
             EditorUIUtils.SetBorderColor(ctx.node, Color.black);
 
-            if (ctx.cachedId != node.Id)
+            if (ctx.cachedId != node.Id || ctx.cachedOwner != node.owner)
             {
-                ctx.node.text = (node.AssociatedObject?.gameObject.name ?? "") + node.Id;
+                ctx.node.text = $"{node.AssociatedObject?.gameObject.name ?? ""}, id: {node.Id}, owner {node.owner}";
                 ctx.cachedId = node.Id;
+                ctx.cachedOwner = node.owner;
             }
 
             if (!ctx.objectLinked && node.AssociatedObject != null)
@@ -134,7 +133,7 @@ namespace Foundry.Core.Editor
         void CreateGUI()
         {
             rootVisualElement.Clear();
-            var title = new Label("Foundry Network Graph Debugger");
+            var title = new Label("Foundry Network State Debugger");
             title.style.fontSize = 20;
             rootVisualElement.Add(title);
             if (!Application.isPlaying)
@@ -155,34 +154,32 @@ namespace Foundry.Core.Editor
             
             networkProvider.SessionConnected += () =>
             {
-                rootVisualElement.Clear();
-                CreateGUI();
+                Repaint();
             };
             
             networkProvider.SessionDisconnected += (s) =>
             {
-                rootVisualElement.Clear();
-                CreateGUI();
+                Repaint();
             };
             
-            if (!networkProvider.IsSessionConnected)
+            if (!networkProvider.IsSessionConnected || NetworkManager.State == null)
             {
                 rootVisualElement.Add(new Label("No active network session. Waiting one to start..."));
                 nodeElementCache.Clear();
                 return;
             }
 
-            networkProvider.State.OnStateChanged += graph =>
+            NetworkManager.State.OnStateStructureChanged += graph =>
             {
                 nodeElementCache.Clear();
                 scrollView ??= new ScrollView();
-                ConstructGraph(scrollView, graph);
+                ConstructState(scrollView, graph);
             };
 
             
             scrollView ??= new ScrollView();
             
-            ConstructGraph(scrollView, networkProvider.State);
+            ConstructState(scrollView, NetworkManager.State);
             rootVisualElement.Add(scrollView);
         }
     }

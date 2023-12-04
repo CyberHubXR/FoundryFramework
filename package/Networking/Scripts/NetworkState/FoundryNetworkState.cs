@@ -33,7 +33,8 @@ namespace Foundry.Networking
         /// Write contained data out to the stream to be synced across the network.
         /// </summary>
         /// <param name="serializer"></param>
-        public void Serialize(FoundrySerializer serializer);
+        /// <param name="full">If true, serialize all data, otherwise only serialize dirty data.</param>
+        public void Serialize(FoundrySerializer serializer, bool full = false);
 
         /// <summary>
         /// Read data received from the network into this property.
@@ -60,17 +61,25 @@ namespace Foundry.Networking
         /// <summary>
         /// Locally unique id of this object
         /// </summary>
-        public uint ID => id;
+        public uint Id => id;
         private uint id;
         
-        public NetworkId(uint id)
+        public int Creator => (int) (id >> 16);
+        public uint Index => id & 0xffff;
+        
+        public NetworkId(uint rawId)
         {
-            this.id = id;
+            this.id = rawId;
+        }
+        
+        public NetworkId(int creator, uint index)
+        {
+            this.id = (uint)creator << 16 | index;
         }
         
         public static NetworkId Invalid => new(0xffffffff);
         
-        public bool IsValid() =>ID != 0xffffffff;
+        public bool IsValid() =>Id != 0xffffffff;
         
         /// <summary>
         /// Override of hashing function to allow for use in dictionaries
@@ -83,7 +92,9 @@ namespace Foundry.Networking
 
         public override string ToString()
         {
-            return "NetworkId(ID = " + ID + ")";
+            if(!IsValid())
+                return "NetworkId(Invalid)";
+            return $"NetworkId(Created By: {Creator} ID = {Index})";
         }
 
         public void Serialize(FoundrySerializer serializer)
@@ -235,14 +246,9 @@ namespace Foundry.Networking
     public class NetworkState
     {
         /// <summary>
-        /// Called when the graph has been rebuilt and references to nodes may have been broken.
-        /// </summary>
-        public Action<NetworkState> OnStateRebuilt;
-
-        /// <summary>
         /// Called when structure events such as adding or parenting nodes have occurred.
         /// </summary>
-        public Action<NetworkState> OnStateChanged;
+        public Action<NetworkState> OnStateStructureChanged;
 
         /// <summary>
         /// Called when a graph delta has been applied.
@@ -251,23 +257,12 @@ namespace Foundry.Networking
         
         public List<NetworkObjectState> Objects = new();
         public Dictionary<NetworkId, NetworkObjectState> idToNode { get; } = new();
-        
-        
-        /// <summary>
-        /// Delegate type for ID getters
-        /// </summary>
-        public delegate int GetIDDelegate();
-        
-        /// <summary>
-        /// Callback set by the network provider to get the current graph authority.
-        /// </summary>
-        public GetIDDelegate GetMasterID;
 
-        /// <summary>
-        /// Callback for getting the current player ID.
-        /// </summary>
-        public GetIDDelegate GetLocalPlayerID;
-        private int localPlayerId => GetLocalPlayerID();
+
+        private INetworkProvider provider;
+        
+        private int localPlayerId => provider.LocalPlayerId;
+        private int graphAuthorityId => provider.GraphAuthorityId;
 
         /// <summary>
         /// Local counter for id generation
@@ -275,6 +270,11 @@ namespace Foundry.Networking
         private uint nextId = 0;
         
         private Queue<StructureEvent> structureEvents = new();
+        
+        public NetworkState(INetworkProvider provider)
+        {
+            this.provider = provider;
+        }
         
         private void RecordEvent(StructureEvent e)
         {
@@ -284,7 +284,7 @@ namespace Foundry.Networking
         public NetworkId NewId()
         {
             //Use the local player id as part of the id to ensure uniqueness across the network, this will work as long as you have less than 65536 players or objects. (Which at that point, you have bigger problems)
-            return new NetworkId((uint)localPlayerId << 16 | nextId++);
+            return new NetworkId(localPlayerId, nextId++);
         }
 
         public NetworkObjectState CreateNode()
@@ -300,9 +300,18 @@ namespace Foundry.Networking
 
         public NetworkObjectState AddNode(NetworkId id, int owner, bool recordEvent = true)
         {
+            Debug.Log($"Adding node {id} with owner {owner}");
             // If we receive a node with an id that already exists, this is most likely a duplicate message, so for now we will just ignore it.
             if (idToNode.TryGetValue(id, out var existing))
+            {
+                Debug.LogWarning("Received creation event duplicate for node with id " + id + ", ignoring.");
                 return existing;
+            }
+            
+            // When we receive a node with an id greater than the next id that was created by a previous client with the same id, we need to update our next id to be greater than the received id to avoid id collisions.
+            if(id.Creator == localPlayerId && id.Index >= nextId)
+                nextId = id.Index + 1;
+                
             
             NetworkObjectState node = new NetworkObjectState
             {
@@ -320,6 +329,7 @@ namespace Foundry.Networking
         
         public void RemoveNode(NetworkId id, bool recordEvent = true)
         {
+            Debug.Assert(id.IsValid(), "Cannot remove node with invalid id!");
             var node = idToNode[id];
             
             Objects.Remove(node);
@@ -364,7 +374,7 @@ namespace Foundry.Networking
         /// <returns></returns>
         public bool ClientHasAuthority(int client, NetworkObjectState node)
         {
-            return node.owner == client || client == GetMasterID();
+            return node.owner == client || client == graphAuthorityId;
         }
 
         /// <summary>
@@ -376,14 +386,12 @@ namespace Foundry.Networking
         public void SerializeNode(NetworkObjectState node, FoundrySerializer serializer, bool serializeAll = false)
         {
             serializer.SetDebugRegion("Serialize Node Tree");
-            if (node.Properties != null && (node.owner == localPlayerId || serializeAll))
+            if (node.Properties != null && node.owner == localPlayerId)
             {
                 uint dirtyProps = 0;
                 foreach (var prop in node.Properties)
                 {
-                    if (serializeAll)
-                        prop.SetDirty();
-                    if (prop.Dirty)
+                    if (prop.Dirty || serializeAll)
                         ++dirtyProps;
                 }
 
@@ -399,16 +407,13 @@ namespace Foundry.Networking
                     uint propIndex = 0;
                     foreach (var prop in node.Properties)
                     {
-                        if (prop.Dirty)
+                        if (prop.Dirty || serializeAll)
                         {
                             serializer.SetDebugRegion("prop index");
                             serializer.Serialize(in propIndex);
                             serializer.SetDebugRegion("prop data");
-                            prop.Serialize(serializer);
+                            prop.Serialize(serializer, serializeAll);
                             
-                            // Possible this will cause a lag spike as everyone is sent the full graph possibly twice,
-                            // but when a new person joins we send only them a new graph and that would clear all dirty flags,
-                            // so it's better to send the full graph than miss a few updates. Definitely will revisit this later.
                             if(!serializeAll)
                                 prop.SetClean();
                         }
@@ -423,19 +428,34 @@ namespace Foundry.Networking
         }
 
         /// <summary>
-        /// Generates a serialized delta of the network graph for all reliable properties.
+        /// Create a delta containing the full state of all owned nodes in the state.
         /// </summary>
-        /// <returns>Delta of changed graph properties</returns>
-        public NetworkGraphDelta GenerateDelta()
+        public byte[] GenerateConstructionDelta()
         {
             MemoryStream stream = new();
             FoundrySerializer serializer = new(stream);
+
+            SerializeStructure(serializer);
             
-            // Serialize "false" to indicate that this is a delta and not a full graph
-            bool isFullGraph = false;
-            serializer.Serialize(in isFullGraph);
+            foreach (var node in Objects)
+                SerializeNode(node, serializer, true);
+
+            serializer.Dispose();
+            return stream.ToArray();
+        }
+
+        /// <summary>
+        /// Generates a serialized delta of the network graph for all reliable properties.
+        /// </summary>
+        /// <returns>Delta of changed graph properties</returns>
+        public byte[] GenerateDelta()
+        {
+            MemoryStream stream = new();
+            FoundrySerializer serializer = new(stream);
 
             int eventCount = structureEvents.Count;
+            if(eventCount > 0)
+                Debug.Log("Serializing " + eventCount + " structure events.");
             serializer.Serialize(in eventCount);
             while (structureEvents.Count > 0)
                 structureEvents.Dequeue().Serialize(serializer);
@@ -444,10 +464,7 @@ namespace Foundry.Networking
                 SerializeNode(node, serializer);
 
             serializer.Dispose();
-            return new NetworkGraphDelta()
-            {
-                data = stream.ToArray()
-            };
+            return stream.ToArray();
         }
 
         /// <summary>
@@ -457,22 +474,10 @@ namespace Foundry.Networking
         /// <param name="sender">the client that sent this delta, used for determining if the updates sent are authorized</param>
         /// <param name="clearOnFullGraph">If true, the graph will be cleared and rebuilt if a full graph is received</param>
         /// <returns>Returns true if the graph was applied successfully</returns>
-        public void ApplyDelta(ref NetworkGraphDelta delta, int sender, bool clearOnFullGraph = true)
+        public void ApplyDelta(byte[] delta, int sender)
         {
-            MemoryStream stream = new(delta.data);
+            MemoryStream stream = new(delta);
             FoundryDeserializer deserializer = new(stream);
-
-            bool isFullGraph = false;
-            deserializer.Deserialize(ref isFullGraph);
-            if (isFullGraph && clearOnFullGraph)
-            {
-                foreach(var node in idToNode.Values)
-                    node.IsAlive = false;
-                Objects.Clear();
-                idToNode.Clear();
-                
-                deserializer.StartDebugDump();
-            }
 
             int structureEventCount = 0;
             deserializer.SetDebugRegion("event count");
@@ -487,8 +492,10 @@ namespace Foundry.Networking
                 switch (structureEvent.type)
                 {
                     case StructureEvent.Type.Add:
-                        if(sender == structureEvent.secondaryData || sender == GetMasterID())
+                        if (sender == structureEvent.secondaryData || sender == graphAuthorityId)
                             AddNode(structureEvent.id, structureEvent.secondaryData, false);
+                        else
+                            Debug.LogError("Received add event for node " + structureEvent.id + " but it was ignored.");
                         break;
                     case StructureEvent.Type.Remove:
                     {
@@ -518,6 +525,7 @@ namespace Foundry.Networking
                         break;
                     }
                     default: // Should never happen
+                        Debug.LogError("Deserialized invalid structure event type! " + structureEvent.type);
                         throw new ArgumentOutOfRangeException();
                 }
                 graphChanged = true;
@@ -532,7 +540,7 @@ namespace Foundry.Networking
                 bool nodeFound = idToNode.TryGetValue(nodeId, out NetworkObjectState node);
                 if (!nodeFound)
                 {
-                    Debug.LogError("Unable to find node with id " + nodeId + " in graph! Skipping this node and attempting to recover.");
+                    Debug.LogError("Unable to find node with id " + nodeId + " in state! Skipping this node and attempting to recover.");
                     NetworkObjectState.Skip(deserializer);
                     continue;
                 }
@@ -549,10 +557,8 @@ namespace Foundry.Networking
             
             
             if (graphChanged)
-                OnStateChanged?.Invoke(this);
+                OnStateStructureChanged?.Invoke(this);
             
-            if(isFullGraph)
-                OnStateRebuilt?.Invoke(this);
             OnStateUpdate?.Invoke(this);
             
         }
@@ -565,9 +571,12 @@ namespace Foundry.Networking
         private void SerializeStructure(FoundrySerializer serializer)
         {
             List<StructureEvent> constructionEvents = new(Objects.Count);
-            
+
             foreach (var node in Objects)
-                constructionEvents.Add(StructureEvent.Add(node.Id, node.owner));
+            {
+                if(node.owner == localPlayerId)
+                    constructionEvents.Add(StructureEvent.Add(node.Id, node.owner));
+            }
 
 
             int eventCount = constructionEvents.Count;
@@ -581,32 +590,6 @@ namespace Foundry.Networking
                 serializer.Serialize(in e);
             }
 
-        }
-
-        /// <summary>
-        /// Serialize the full graph, including construction events.
-        /// </summary>
-        /// <returns></returns>
-        public NetworkGraphDelta SerializeFull()
-        {
-            MemoryStream stream = new();
-            FoundrySerializer serializer = new(stream);
-            
-            // Serialize "true" to indicate that this is a full graph
-            bool isFullGraph = true;
-            serializer.Serialize(in isFullGraph);
-            serializer.StartDebugDump();
-
-            SerializeStructure(serializer);
-
-            foreach (var node in Objects)
-                SerializeNode(node, serializer, true);
-
-            serializer.Dispose();
-            return new NetworkGraphDelta()
-            {
-                data = stream.ToArray()
-            };
         }
     }
 

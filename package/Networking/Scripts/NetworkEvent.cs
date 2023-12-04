@@ -66,7 +66,7 @@ namespace Foundry
             
         }
 
-        public void Serialize(FoundrySerializer serializer)
+        public void Serialize(FoundrySerializer serializer, bool full)
         {
             serializer.SetDebugRegion($"NetworkEvent<{typeof(T).Name}>");
             int count = _callArgs.Count;

@@ -39,7 +39,6 @@ namespace Foundry.Networking
         /// </remarks>
         Task StartSessionAsync(SessionInfo info);
         
-        
         /// <summary>
         /// Stops the current network session asynchronously
         /// </summary>
@@ -66,6 +65,33 @@ namespace Foundry.Networking
         /// </summary>
         /// <param name="scene">Index and name of scene that was loaded.</param>
         Task CompleteSceneSetup(ISceneNavigationEntry scene);
+        
+        /// <summary>
+        /// Delegate for handling network events to do with state changes, with the sender and and serialized sent delta
+        /// </summary>
+        delegate void StateDeltaCallback(int sender, byte[] delta);
+        
+        /// <summary>
+        /// Notify all other clients that you would like to start receiving state deltas from them.
+        /// They will then send you their current state in a full delta and any future changes.
+        ///
+        /// When new clients join, you will also subscribe to their state deltas.
+        /// </summary>
+        /// <param name="onStateDelta">Action to perform every time a delta is received</param>
+        /// <returns>Task that completes once you have received an initial delta from every other client on the network, this is so we can pause logic that requires initial data until that point</returns>
+        Task SubscribeToStateChangesAsync(StateDeltaCallback onStateDelta);
+
+        /// <summary>
+        /// Set a callback for grabbing an initial state to send to players when they subscribe to changes from this client.
+        /// </summary>
+        /// <param name="callback">This callback expects a byte array to be returned, with the full local network state</param>
+        void SetSubscriberInitialStateCallback(Func<byte[]> callback);
+        
+        /// <summary>
+        /// Send a delta of our local state to all other clients.
+        /// </summary>
+        /// <param name="delta">serialized delta data</param>
+        void SendStateDelta(byte[] delta);
     
         /// <summary>
         /// Spawn a networked object instance over the network.
@@ -74,13 +100,13 @@ namespace Foundry.Networking
         /// <param name="position">Position to spawn at</param>
         /// <param name="rotation">Rotation to spawn with</param>
         /// <returns>Returns the instantiated game object</returns>
-        GameObject Instantiate(GameObject prefab, Vector3 position, Quaternion rotation);
+        GameObject Spawn(GameObject prefab, Vector3 position, Quaternion rotation);
         
         /// <summary>
         /// Destroy a networked object over the network.
         /// </summary>
         /// <param name="gameObject">Object to be destroyed</param>
-        void Destroy(GameObject gameObject);
+        void Despawn(GameObject gameObject);
         
         
         SessionType sessionType { get; }
@@ -103,14 +129,14 @@ namespace Foundry.Networking
         bool IsGraphAuthority { get; }
         
         /// <summary>
+        /// Get the ID of the player or server that has authority over the scene graph
+        /// </summary>
+        int GraphAuthorityId { get; }
+        
+        /// <summary>
         /// Returns the ID of the local player
         /// </summary>
         int LocalPlayerId { get; }
-        
-        /// <summary>
-        /// Obtain the current network graph, may be null if no session is active
-        /// </summary>
-        public NetworkState State { get; }
 
         /// <summary>
         /// Raised when a session has connected
