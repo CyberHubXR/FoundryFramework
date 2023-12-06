@@ -150,12 +150,12 @@ namespace Foundry.Networking
                 // This object has not been baked, so there is likely no network session running.
                 if (api == null)
                     return true;
-                // Are we the owner of this object?
-                if (Owner == NetworkProvider.LocalPlayerId)
-                    return true;
-                // If the network ID is just invalid we are technically the local owner
-                return !Id.IsValid();
 
+                if (NetworkManager.instance == null)
+                    return true;
+                
+                // Are we the owner of this object?
+                return Owner == NetworkProvider.LocalPlayerId;
             }
         }
 
