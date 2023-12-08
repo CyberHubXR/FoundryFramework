@@ -79,6 +79,12 @@ namespace Foundry.Networking
         /// <param name="newOwner">The player to transfer ownership to</param>
         /// <param name="callback">Callback to preform once an ownership change has succeeded or failed, with the passed bool representing the result</param>
         public void SetOwnership(int newOwner, Action<bool> callback);
+        
+        /// <summary>
+        /// If we missed a delta containing the initial state of this object, request it from the owner.
+        /// </summary>
+        /// <param name="callback">Callback is performed once we've received the node and it has been added to the state graph</param>
+        public void RequestFullState(Action callback);
     }
     
     public class NetworkObject : MonoBehaviour
@@ -305,11 +311,25 @@ namespace Foundry.Networking
                 registeredUnloaded = true;
                 
                 api.OnConnected(()=> {
-                    api.GetNetworkStateIdAsync(id =>
+                    api.GetNetworkStateIdAsync(async id =>
                     {
                         UpdateBoundNode();
                         NetworkManager.RegisterObject(this);
                         CompleteLoadStep(ref idAssigned);
+                        
+                        // Hail Mary last ditch effort to get the node if we missed it.
+                        while (!associatedNode)
+                        {
+                            await Task.Delay(500);
+                            if (!associatedNode)
+                            {
+                                api.RequestFullState(() =>
+                                {
+                                    Debug.Log("Obtained full node for " + gameObject.name + " manually");
+                                    UpdateBoundNode();
+                                });
+                            }
+                        } 
                     });
                 });
                 

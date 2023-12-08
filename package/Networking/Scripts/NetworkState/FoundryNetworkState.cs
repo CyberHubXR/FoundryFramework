@@ -160,6 +160,9 @@ namespace Foundry.Networking
         /// <param name="deserializer"></param>
         public void Deserialize(FoundryDeserializer deserializer)
         {
+            deserializer.SetDebugRegion("Deserialize owner");
+            deserializer.Deserialize(ref owner);
+            
             if (Properties == null)
             {
                 
@@ -167,7 +170,6 @@ namespace Foundry.Networking
                 propsData = deserializer.DeserializeBuffer();
                 return;
             }
-
 
             deserializer.SetDebugRegion("data size");
             uint propsDataSize = 0;
@@ -385,8 +387,8 @@ namespace Foundry.Networking
         /// <param name="serializeAll"></param>
         public void SerializeNode(NetworkObjectState node, FoundrySerializer serializer, bool serializeAll = false)
         {
-            serializer.SetDebugRegion("Serialize Node Tree");
-            if (node.Properties != null && node.owner == localPlayerId)
+            serializer.SetDebugRegion("Serialize Node");
+            if (node.Properties != null)
             {
                 uint dirtyProps = 0;
                 foreach (var prop in node.Properties)
@@ -399,6 +401,9 @@ namespace Foundry.Networking
                 {
                     serializer.SetDebugRegion("node id");
                     serializer.Serialize(in node.Id);
+                    serializer.SetDebugRegion("node owner");
+                    serializer.Serialize(in node.owner);
+                    
                     serializer.SetDebugRegion("data size");
                     var dataSize = serializer.GetPlaceholder<uint>(0);
                     var writeStart = serializer.stream.Position;
@@ -436,9 +441,12 @@ namespace Foundry.Networking
             FoundrySerializer serializer = new(stream);
 
             SerializeStructure(serializer);
-            
+
             foreach (var node in Objects)
-                SerializeNode(node, serializer, true);
+            {
+                if(node.owner == localPlayerId)
+                    SerializeNode(node, serializer, true);
+            }
 
             serializer.Dispose();
             return stream.ToArray();
@@ -459,9 +467,12 @@ namespace Foundry.Networking
             serializer.Serialize(in eventCount);
             while (structureEvents.Count > 0)
                 structureEvents.Dequeue().Serialize(serializer);
-            
+
             foreach (var node in Objects)
-                SerializeNode(node, serializer);
+            {
+                if(node.owner == localPlayerId)
+                    SerializeNode(node, serializer);
+            }
 
             serializer.Dispose();
             return stream.ToArray();

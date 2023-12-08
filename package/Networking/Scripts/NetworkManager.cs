@@ -193,10 +193,12 @@ namespace Foundry.Networking
         
         IEnumerator ReportGraphChanges()
         {
-            while (networkProvider.IsSessionConnected)
+            while (true)
             {
                 //We yield at the beginning of the loop so that continue statements don't crash the editor.
                 yield return new WaitForSeconds(1f / 60f);
+                if (!networkProvider.IsSessionConnected)
+                    continue;
                 var graphDelta = State.GenerateDelta();
                 if (graphDelta.Length == 0)
                     continue;
@@ -207,7 +209,15 @@ namespace Foundry.Networking
                     continue;
                 }
 
-                networkProvider.SendStateDelta(graphDelta);
+                try
+                {
+                    networkProvider.SendStateDelta(graphDelta);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError(e);
+                    throw;
+                }
             }
         }
 
@@ -239,8 +249,9 @@ namespace Foundry.Networking
                 State.ApplyDelta(delta, sender);
             });
             
-            StartCoroutine(ReportGraphChanges());
 
+            StartCoroutine(ReportGraphChanges());
+            
             // Spawn a player if we're in shared mode
             if (mode == SessionType.Shared)
             {

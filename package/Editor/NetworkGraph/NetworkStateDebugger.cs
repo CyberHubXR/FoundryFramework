@@ -21,7 +21,8 @@ namespace Foundry.Core.Editor
 
         private void OnInspectorUpdate()
         {
-            CreateGUI();
+            scrollView ??= new ScrollView();
+            ConstructState(scrollView, NetworkManager.State);
             Repaint();
         }
 
@@ -38,7 +39,8 @@ namespace Foundry.Core.Editor
             foreach (var node in toRemove)
             {
                 nodeElementCache.Remove(node.Key);
-                root.Remove(node.Value.node);
+                if(node.Value.node.parent == root)
+                    root.Remove(node.Value.node);
             }
         }
 
@@ -89,7 +91,7 @@ namespace Foundry.Core.Editor
 
             if (ctx.cachedId != node.Id || ctx.cachedOwner != node.owner)
             {
-                ctx.node.text = $"{node.AssociatedObject?.gameObject.name ?? ""}, id: {node.Id}, owner {node.owner}";
+                ctx.node.text = $"{(node.AssociatedObject ? node.AssociatedObject.gameObject.name : "")}, id: {node.Id}, owner {node.owner}";
                 ctx.cachedId = node.Id;
                 ctx.cachedOwner = node.owner;
             }
@@ -97,7 +99,7 @@ namespace Foundry.Core.Editor
             if (!ctx.objectLinked && node.AssociatedObject != null)
             {
                 ctx.objectLinked = true;
-                ctx.node.text = node.AssociatedObject.gameObject.name + node.Id;
+                ctx.node.text =  $"{(node.AssociatedObject ? node.AssociatedObject.gameObject.name : "")}, id: {node.Id}, owner {node.owner}";
                 ctx.selectButton.SetEnabled(true);
                 ctx.selectButton.clicked += () =>
                 {
@@ -139,7 +141,6 @@ namespace Foundry.Core.Editor
             if (!Application.isPlaying)
             {
                 rootVisualElement.Add(new Label("No graph available. Start the game to see the graph."));
-                nodeElementCache.Clear();
                 return;
             }
             
@@ -148,32 +149,34 @@ namespace Foundry.Core.Editor
             if(networkProvider == null)
             {
                 rootVisualElement.Add(new Label("No network provider found. Waiting for it to start..."));
-                nodeElementCache.Clear();
                 return;
             }
             
             networkProvider.SessionConnected += () =>
             {
+                scrollView.Clear();
+                CreateGUI();
                 Repaint();
             };
             
             networkProvider.SessionDisconnected += (s) =>
             {
+                scrollView?.Clear();
+                CreateGUI();
                 Repaint();
             };
             
             if (!networkProvider.IsSessionConnected || NetworkManager.State == null)
             {
                 rootVisualElement.Add(new Label("No active network session. Waiting one to start..."));
-                nodeElementCache.Clear();
                 return;
             }
 
             NetworkManager.State.OnStateStructureChanged += graph =>
             {
-                nodeElementCache.Clear();
                 scrollView ??= new ScrollView();
                 ConstructState(scrollView, graph);
+                Repaint();
             };
 
             
