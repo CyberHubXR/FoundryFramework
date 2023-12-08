@@ -534,8 +534,8 @@ namespace Foundry.Networking
             EditorGUILayout.Space();
             
             EditorGUI.indentLevel = 0;
-            EditorGUILayout.TextField("Guid", networkObject.guid);
             EditorGUI.EndDisabledGroup();
+            EditorGUILayout.TextField("Guid", networkObject.guid);
             
             if (Application.isPlaying && NetworkManager.instance != null)
             {

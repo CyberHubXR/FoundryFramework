@@ -80,7 +80,7 @@ namespace Foundry
 
             // Get the current server time and subtract network start time
             // This tells us how long the video has been playing
-            double startTime = DateTime.UtcNow.Second + DateTime.UtcNow.Millisecond / 1000f - VideoStartTime;
+            double startTime = GetUtcTime() - VideoStartTime;
 
             // If local start time is longer than the video itself, we need to account for loops
             if (startTime > clipLength)
@@ -122,16 +122,21 @@ namespace Foundry
             if (isLoop)
             {
                 // Ignore clip time and assume 0
-                VideoStartTime =  DateTime.UtcNow.Second + DateTime.UtcNow.Millisecond / 1000f;
+                VideoStartTime =  GetUtcTime();
             }
             else
             {
                 // Include clip time
-                VideoStartTime =  DateTime.UtcNow.Second + DateTime.UtcNow.Millisecond / 1000f - videoPlayer.time;
+                VideoStartTime =  GetUtcTime() - videoPlayer.time;
             }
             
             // Success
             return true;
+        }
+
+        private double GetUtcTime()
+        {
+            return (DateTime.UtcNow - DateTime.UnixEpoch).TotalSeconds + DateTime.UtcNow.Millisecond / 1000f;
         }
 
         #endregion // Private Methods
