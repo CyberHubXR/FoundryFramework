@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using ExitGames.Client.Photon.StructWrapping;
 using Foundry.Core.Serialization;
 using UnityEditor;
 using UnityEngine;
