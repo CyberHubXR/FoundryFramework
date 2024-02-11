@@ -11,13 +11,13 @@ The recommended way to install foundry packages is through importing [our GitHub
 
 To import foundry core, got to the Unity Package Manager, click the add button from the top left corner, and select "Add package from git URL", then paste in this:
 
-`https://github.com/FoundryXR/FoundryCore.git?path=Assets/Package`
+`https://github.com/CyberHubXR/FoundryCore.git?path=Assets/Package`
 
 This can be done for any foundry repo, just replace the url of the package and make sure to keep the `?path=Assets/Package` at the end.
 
 We also need to import a network provider, so repeat the above steps but with this url:
 
-`https://github.com/FoundryXR/FusionNetworkProvider.git?path=Assets/Package`
+`https://github.com/CyberHubXR/FusionNetworkProvider.git?path=Assets/Package`
 
 After you have both those installed, please follow the steps inside the setup wizard to finish the installation. This should pop up automatically but if it doesn't it can be opened from the menus at `Foundry -> Setup Wizard`
 
