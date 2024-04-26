@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: FoundryCoreConfig
   m_EditorClassIdentifier: 
   EnabledServices:
-  - AssemblyQualifiedName: Foundry.IPlayerRigManager, Foundry.Core, Version=0.0.0.0,
+  - AssemblyQualifiedName: Foundry.Services.ISceneNavigator, Foundry.Core, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - AssemblyQualifiedName: Foundry.IFoundryCameraManager, Foundry.Core, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - AssemblyQualifiedName: Foundry.Services.ISceneNavigator, Foundry.Core, Version=0.0.0.0,
+  - AssemblyQualifiedName: Foundry.IPlayerRigManager, Foundry.Core, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
