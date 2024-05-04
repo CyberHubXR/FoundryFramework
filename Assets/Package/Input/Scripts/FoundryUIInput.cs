@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using CyberHub.Brane;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.UI;
@@ -92,7 +93,7 @@ namespace Foundry
         {
             if (currentRaycaster == null)
             {
-                var mainCamera = FoundryApp.GetService<IFoundryCameraManager>().MainCamera;
+                var mainCamera = BraneApp.GetService<IFoundryCameraManager>().MainCamera;
                 canvasCamera.transform.position = mainCamera.transform.position;
                 canvasCamera.transform.rotation = mainCamera.transform.rotation;
                 

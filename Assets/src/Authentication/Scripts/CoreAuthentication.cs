@@ -1,3 +1,4 @@
+using CyberHub.Brane;
 using Foundry;
 using Foundry.Services;
 using UnityEngine;
@@ -8,7 +9,7 @@ namespace Foundry
     {
         public void Authenticate(string scenename) 
         {
-            FoundryApp.GetService<ISceneNavigator>().GoToAsync(scenename);
+            BraneApp.GetService<ISceneNavigator>().GoToAsync(scenename);
             PlayerPrefs.SetString("usernameLAN", "user");
         }
     }

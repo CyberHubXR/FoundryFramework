@@ -1,5 +1,5 @@
 using System;
-using Foundry.Core.Editor;
+using CyberHub.Brane.Editor;
 
 namespace Foundry.Services.Editor
 {

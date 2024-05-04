@@ -1,4 +1,5 @@
 using System;
+using CyberHub.Brane;
 using UnityEngine;
 
 namespace Foundry
@@ -83,7 +84,7 @@ namespace Foundry
             // Attempt to get Foundry main camera
             
             Camera mainCamera;
-            if (FoundryApp.TryGetService(out IFoundryCameraManager manager))
+            if (BraneApp.TryGetService(out IFoundryCameraManager manager))
                 mainCamera = manager.MainCamera;
             else
                 mainCamera = Camera.main;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using CyberHub.Brane;
 using Foundry;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Foundry
         // Start is called before the first frame update
         void Start()
         {
-            FoundryApp.GetService<IFoundryCameraManager>().MainCamera = GetComponent<Camera>();
+            BraneApp.GetService<IFoundryCameraManager>().MainCamera = GetComponent<Camera>();
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using CyberHub.Brane;
 using UnityEngine;
 using Foundry.Services;
 using UnityEngine.Events;
@@ -61,7 +62,7 @@ namespace Foundry.Networking
             }
 
             instance = this;
-            networkProvider = FoundryApp.GetService<INetworkProvider>();
+            networkProvider = BraneApp.GetService<INetworkProvider>();
             State = null;
             
             // If we have not baked prefabs yet for this run, do so now.
@@ -98,12 +99,12 @@ namespace Foundry.Networking
         void OnEnable()
         {
             if(networkProvider == null)
-                networkProvider = FoundryApp.GetService<INetworkProvider>();
+                networkProvider = BraneApp.GetService<INetworkProvider>();
             networkProvider.SessionConnected += OnSessionConnectedCallback;
             networkProvider.PlayerJoined += OnPlayerJoined;
             networkProvider.PlayerLeft += OnPlayerLeft;
                 
-            var navigator = FoundryApp.GetService<ISceneNavigator>();
+            var navigator = BraneApp.GetService<ISceneNavigator>();
             navigator.NavigationStarting += OnNavigationStarting;
         }
 
@@ -113,7 +114,7 @@ namespace Foundry.Networking
             networkProvider.PlayerJoined -= OnPlayerJoined;
             networkProvider.PlayerLeft -= OnPlayerLeft;
             
-            var navigator = FoundryApp.GetService<ISceneNavigator>();
+            var navigator = BraneApp.GetService<ISceneNavigator>();
             navigator.NavigationStarting -= OnNavigationStarting;
             
         }
@@ -178,7 +179,7 @@ namespace Foundry.Networking
 
         private void BindSceneObjects()
         {
-            var currentSceneIndex = FoundryApp.GetService<ISceneNavigator>().CurrentScene.BuildIndex;
+            var currentSceneIndex = BraneApp.GetService<ISceneNavigator>().CurrentScene.BuildIndex;
             var scene = SceneManager.GetSceneByBuildIndex(currentSceneIndex);
             var sceneRoots = scene.GetRootGameObjects();
             var networkObjects = new List<NetworkObject>();
@@ -242,7 +243,7 @@ namespace Foundry.Networking
                     netObj.CreateState();
             }
 
-            await networkProvider.CompleteSceneSetup(FoundryApp.GetService<ISceneNavigator>().CurrentScene);
+            await networkProvider.CompleteSceneSetup(BraneApp.GetService<ISceneNavigator>().CurrentScene);
             
             await networkProvider.SubscribeToStateChangesAsync((sender, delta) =>
             {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Foundry.Core.Editor;
+using CyberHub.Brane.Editor;
 using UnityEngine;
 
 namespace Foundry.Networking.Editor

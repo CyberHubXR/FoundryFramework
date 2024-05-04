@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CyberHub.Brane;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -140,7 +141,7 @@ namespace Foundry.Networking
             {
                 if(networkProvider != null)
                     return networkProvider;
-                networkProvider = FoundryApp.GetService<INetworkProvider>();
+                networkProvider = BraneApp.GetService<INetworkProvider>();
                 return networkProvider;
             }
         }
