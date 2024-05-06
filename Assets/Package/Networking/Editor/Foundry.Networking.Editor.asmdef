@@ -2,9 +2,9 @@
     "name": "Foundry.Networking.Editor",
     "rootNamespace": "Foundry.Networking.Editor",
     "references": [
-        "GUID:4ea02e77b8d172e489137c8d6533d9eb",
         "GUID:450bfcf31e882cb4e8de897193635451",
-        "GUID:d5f3d7ff39685d34daeded8c4fb25728"
+        "GUID:d5f3d7ff39685d34daeded8c4fb25728",
+        "GUID:1b4ddcf47fcbee648bb6db4796d25a9e"
     ],
     "includePlatforms": [
         "Editor"

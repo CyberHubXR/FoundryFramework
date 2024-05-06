@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8602ddc11bda5643b32e6cb7a6d2f27, type: 3}
   m_Name: BraneAppConfig
   m_EditorClassIdentifier: 
-  modules: []
+  modules:
+  - {fileID: 11400000, guid: d7a9e2b40c464754db8665993e358b10, type: 2}
+  - {fileID: 11400000, guid: 7b71cf61bef98c4448d7516cbad1c6bf, type: 2}
+  - {fileID: 11400000, guid: 7b71cf61bef98c4448d7516cbad1c6bf, type: 2}

@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91184cde8b82330438f1d24aecb0b31f, type: 3}
   m_Name: BraneCoreConfig
   m_EditorClassIdentifier: 
-  EnabledServices: []
-  AppKey: 
+  EnabledServices:
+  - AssemblyQualifiedName: Foundry.IPlayerRigManager, Foundry.Core, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - AssemblyQualifiedName: Foundry.Services.ISceneNavigator, Foundry.Core, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - AssemblyQualifiedName: Foundry.IFoundryCameraManager, Foundry.Core, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  AppKey: yr mom
