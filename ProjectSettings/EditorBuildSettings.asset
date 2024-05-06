@@ -4,6 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Samples/Scenes/Offline/Basic_Offline.unity
+    guid: f3b1e08745366134e85f0bd32007deed
+  - enabled: 1
+    path: Assets/Samples/Scenes/Online/Basic_Online_Demo.unity
+    guid: d8859e604d2f01741b37071d29203b12
   m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 787428c5ec7e8ad4a9c8e7719fea8e3a, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a015a63d54533dc4782670c50c23505c, type: 2}

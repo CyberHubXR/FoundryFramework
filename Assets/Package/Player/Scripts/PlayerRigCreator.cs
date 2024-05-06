@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CyberHub.Brane;
 using Foundry;
 using UnityEngine;
 using UnityEngine.Events;
@@ -57,7 +58,7 @@ namespace Foundry
             // Spawn the control rig for the selected mode
             GameObject selectedRig = (initializedControlMode == PlayerControlMode.Desktop) ? desktopRig : xrRig;
             GameObject rig = Instantiate(selectedRig, transform.position, transform.rotation, transform);
-            FoundryApp.GetService<IPlayerRigManager>().RegisterRig(rig.GetComponent<IPlayerControlRig>(), transform);
+            BraneApp.GetService<IPlayerRigManager>().RegisterRig(rig.GetComponent<IPlayerControlRig>(), transform);
         }
         
         public void Start()

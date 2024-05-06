@@ -1,7 +1,7 @@
 {
   "name": "com.cyberhub.foundry.core",
   "displayName": "Foundry Core",
-  "version": "0.2.2-preview",
+  "version": "0.3.0-preview",
   "unity": "2021.3",
   "description": "Provides all core types and interfaces for the Foundry platform.",
   "keywords": [
@@ -10,26 +10,11 @@
   ],
   "category": "Foundation",
   "dependencies": {
+    "com.cyberhub.brane.core": "0.1.2-preview",
     "com.unity.inputsystem": "1.6.1",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.xr.management": "4.3.1",
-    "com.unity.xr.openxr": "1.8.2"
-  },
-  "samples": [
-    {
-      "displayName": "Sample Prefabs",
-      "description": "Some sample interaction and management prefabs",
-      "path": "Samples~/Prefabs"
-    },
-    {
-      "displayName": "Sample Scenes",
-      "description": "Some starter scenes to allow you to test your foundry install",
-      "path": "Samples~/Scenes"
-    },
-    {
-      "displayName": "Sample Materials",
-      "description": "Some starter materials for constructing basic scenes",
-      "path": "Samples~/Prototype"
-    }
-  ]
+    "com.unity.xr.openxr": "1.8.2",
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  }
 }

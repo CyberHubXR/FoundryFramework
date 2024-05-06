@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using CyberHub.Brane;
 using UnityEngine;
 
 namespace Foundry
@@ -29,7 +30,7 @@ namespace Foundry
         
         private void Start()
         {
-            var rigManager = FoundryApp.GetService<IPlayerRigManager>();
+            var rigManager = BraneApp.GetService<IPlayerRigManager>();
             if (rigManager.Rig != null)
             {
                 _controlRig = rigManager.BorrowPlayerRig();
@@ -50,7 +51,7 @@ namespace Foundry
         {
             if (_controlRig != null)
             {
-                var rigManager = FoundryApp.GetService<IPlayerRigManager>();
+                var rigManager = BraneApp.GetService<IPlayerRigManager>();
                 rigManager.ReturnPlayerRig();
             }
         }

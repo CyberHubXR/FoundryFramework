@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using CyberHub.Brane;
 using Foundry.Services;
 using UnityEngine;
 
@@ -9,7 +10,7 @@ namespace Foundry
     /// <summary>
     /// Contains all settings to do with the foundry core package, not to be confused with the foundry app config, which stores settings about the application as a whole.
     /// </summary>
-    public class FoundryCoreConfig : FoundryModuleConfig
+    public class FoundryCoreConfig : BraneModuleConfig
     {
 #if UNITY_EDITOR
         public static FoundryCoreConfig GetAsset()

@@ -1,0 +1,20 @@
+{
+    "name": "Foundry.Player.Editor",
+    "rootNamespace": "Foundry.Editor",
+    "references": [
+        "GUID:1b4ddcf47fcbee648bb6db4796d25a9e",
+        "GUID:d5f3d7ff39685d34daeded8c4fb25728",
+        "GUID:4ea02e77b8d172e489137c8d6533d9eb"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

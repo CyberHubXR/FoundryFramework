@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using CyberHub.Brane;
 using Foundry.Networking;
 using UnityEngine;
 using UnityEngine.Events;
@@ -136,7 +137,7 @@ namespace Foundry
 
         public void BorrowControlRig()
         {
-            var rigManager = FoundryApp.GetService<IPlayerRigManager>();
+            var rigManager = BraneApp.GetService<IPlayerRigManager>();
             if (rigManager.Rig != null)
             {
                 controlRig = rigManager.BorrowPlayerRig();
@@ -156,7 +157,7 @@ namespace Foundry
         {
             if (controlRig != null)
             {
-                var rigManager = FoundryApp.GetService<IPlayerRigManager>();
+                var rigManager = BraneApp.GetService<IPlayerRigManager>();
                 rigManager.ReturnPlayerRig();
             }
         }

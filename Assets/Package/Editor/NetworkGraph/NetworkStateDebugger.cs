@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
-using Foundry.Core.Editor.UIUtils;
+using CyberHub.Brane;
+using CyberHub.Brane.Editor.UIUtils;
 using Foundry.Networking;
 using UnityEditor;
 using UnityEngine;
@@ -144,7 +145,7 @@ namespace Foundry.Core.Editor
                 return;
             }
             
-            var networkProvider = FoundryApp.GetService<INetworkProvider>();
+            var networkProvider = BraneApp.GetService<INetworkProvider>();
             
             if(networkProvider == null)
             {

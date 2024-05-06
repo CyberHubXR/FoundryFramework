@@ -2,10 +2,10 @@
     "name": "Foundry.Core.Editor",
     "rootNamespace": "Foundry.Core.Editor",
     "references": [
-        "GUID:9e080be906bfc1c4bb2683d498c53669",
-        "GUID:695fc961570e58f4293948619467a6f4",
-        "GUID:0b611528461e48e48973c1472b20956f",
-        "GUID:20735550ecf96884bbf675ab446511d0"
+        "GUID:1b4ddcf47fcbee648bb6db4796d25a9e",
+        "GUID:d5f92cd0879d521428ef70aa2f30096c",
+        "GUID:4ea02e77b8d172e489137c8d6533d9eb",
+        "GUID:d5f3d7ff39685d34daeded8c4fb25728"
     ],
     "includePlatforms": [
         "Editor"
