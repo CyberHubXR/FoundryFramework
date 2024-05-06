@@ -2376,11 +2376,11 @@
       "type": "Toc",
       "source_relative_path": "Api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "Api/toc.html"
-        },
         ".json": {
           "relative_path": "Api/toc.json"
+        },
+        ".html": {
+          "relative_path": "Api/toc.html"
         }
       },
       "version": ""
@@ -2639,11 +2639,11 @@
       "type": "Toc",
       "source_relative_path": "Manual/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "Manual/toc.html"
-        },
         ".json": {
           "relative_path": "Manual/toc.json"
+        },
+        ".html": {
+          "relative_path": "Manual/toc.html"
         }
       },
       "version": ""
@@ -3022,11 +3022,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
