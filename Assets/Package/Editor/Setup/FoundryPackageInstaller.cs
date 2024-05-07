@@ -24,7 +24,7 @@ namespace Foundry.Core.Setup
             
             var packageJson = JsonConvert.DeserializeObject<JObject>(packageJsonFile.text);
             var packageVersion = packageJson["version"]?.ToString() ?? "-1.0.0";
-            installed = installedPackageVersion.version == packageVersion;
+            installed = installedPackageVersion && installedPackageVersion.version == packageVersion;
         }
 
         public IModuleSetupTasks.State GetTaskState() 
