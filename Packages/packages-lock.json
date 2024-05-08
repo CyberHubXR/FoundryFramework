@@ -6,14 +6,6 @@
       "source": "local",
       "dependencies": {}
     },
-    "com.cyberhub.foundry.avatar.readyplayerme": {
-      "version": "file:H:/Unity Projects/CyberHub/FoundryReadyPlayerMeAvatars/package",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.cyberhub.brane.core": "0.1.4-preview"
-      }
-    },
     "com.cyberhub.foundry.networking.fusion": {
       "version": "file:../../FusionNetworkProvider/Assets/Package",
       "depth": 0,
