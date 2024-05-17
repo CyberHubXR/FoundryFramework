@@ -6,12 +6,22 @@
       "source": "local",
       "dependencies": {}
     },
+    "com.cyberhub.brane.database": {
+      "version": "0.1.4-preview",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.cyberhub.brane.core": "0.1.4-preview",
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "url": "http://unity.cyberhubxr.com"
+    },
     "com.cyberhub.foundry.networking.fusion": {
       "version": "file:../../FusionNetworkProvider/Assets/Package",
       "depth": 0,
       "source": "local",
       "dependencies": {
-        "com.cyberhub.brane.core": "0.1.4-preview"
+        "com.cyberhub.brane.core": "0.1.5-preview"
       }
     },
     "com.unity.ai.navigation": {

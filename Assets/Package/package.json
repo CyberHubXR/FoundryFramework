@@ -10,7 +10,7 @@
   ],
   "category": "Foundation",
   "dependencies": {
-    "com.cyberhub.brane.core": "0.1.2-preview",
+    "com.cyberhub.brane.core": "0.1.5-preview",
     "com.unity.inputsystem": "1.6.1",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.xr.management": "4.3.1",

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BraneAppConfig
   m_EditorClassIdentifier: 
   modules:
-  - {fileID: 11400000, guid: d7a9e2b40c464754db8665993e358b10, type: 2}
-  - {fileID: 11400000, guid: 17f0b90a134cf23448a551f30d2c5e99, type: 2}
+  - {fileID: 11400000, guid: 3be310db8c2ebd1458c9e2c57d6b998e, type: 2}
+  - {fileID: 11400000, guid: dd321676a3bf04247ad8f017120b5657, type: 2}
   - {fileID: 11400000, guid: 7b71cf61bef98c4448d7516cbad1c6bf, type: 2}
+  - {fileID: 11400000, guid: ee2ab8df2fc1c154eab468e11303c0cf, type: 2}

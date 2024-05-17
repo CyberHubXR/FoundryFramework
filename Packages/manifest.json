@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.cyberhub.brane.core": "file:../../BraneCore/Assets/package",
+    "com.cyberhub.brane.database": "0.1.4-preview",
     "com.cyberhub.foundry.networking.fusion": "file:../../FusionNetworkProvider/Assets/Package",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.2.0",
