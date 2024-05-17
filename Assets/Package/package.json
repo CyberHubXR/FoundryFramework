@@ -1,7 +1,7 @@
 {
   "name": "com.cyberhub.foundry.core",
   "displayName": "Foundry Core",
-  "version": "0.3.4-preview",
+  "version": "0.3.5-preview",
   "unity": "2021.3",
   "description": "Provides all core types and interfaces for the Foundry platform.",
   "keywords": [
@@ -16,5 +16,22 @@
     "com.unity.xr.management": "4.3.1",
     "com.unity.xr.openxr": "1.8.2",
     "com.unity.nuget.newtonsoft-json": "3.2.1"
-  }
+  },
+  "samples": [
+    {
+      "displayName": "Foundry Core Prefab Samples",
+      "description": "A collection of prefabs that demonstrate the use of Foundry Core.",
+      "path": "Samples~/Prefabs"
+    },
+    {
+      "displayName": "Prototypes",
+      "description": "A collection of prototypes that demonstrate the use of Foundry Core.",
+      "path": "Samples~/Prototypes"
+    },
+    {
+      "displayName": "Foundry Core Scene Samples",
+      "description": "A collection of scenes that demonstrate the use of Foundry Core.",
+      "path": "Samples~/Scenes"
+    }
+  ]
 }
