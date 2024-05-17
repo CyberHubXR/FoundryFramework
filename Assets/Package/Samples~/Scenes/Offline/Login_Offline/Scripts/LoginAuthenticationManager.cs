@@ -76,7 +76,7 @@ public class LoginAuthenticationManager : MonoBehaviour
             return;
         }
         var db = DatabaseSession.GetActive().Result;
-        var signupResult = await db.CreateAccount(username, email, password);
+        var signupResult = await db.CreateAccount(username, password, email);
         if (signupResult.IsSuccess)
         {
             messageText.text = "Signup successful!";

@@ -5322,7 +5322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6025870809776546834, guid: 92016f5a8798bdd4a860add193c8d19a, type: 3}
       propertyPath: targets.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6025870809776546834, guid: 92016f5a8798bdd4a860add193c8d19a, type: 3}
       propertyPath: targets.Array.data[0]
@@ -5332,6 +5332,22 @@ PrefabInstance:
       propertyPath: targets.Array.data[1]
       value: 
       objectReference: {fileID: 1909123836}
+    - target: {fileID: 6025870809776546834, guid: 92016f5a8798bdd4a860add193c8d19a, type: 3}
+      propertyPath: targets.Array.data[2]
+      value: 
+      objectReference: {fileID: 747844388}
+    - target: {fileID: 6025870809776546834, guid: 92016f5a8798bdd4a860add193c8d19a, type: 3}
+      propertyPath: targets.Array.data[3]
+      value: 
+      objectReference: {fileID: 2021312358}
+    - target: {fileID: 6025870809776546834, guid: 92016f5a8798bdd4a860add193c8d19a, type: 3}
+      propertyPath: targets.Array.data[4]
+      value: 
+      objectReference: {fileID: 1758913663}
+    - target: {fileID: 6025870809776546834, guid: 92016f5a8798bdd4a860add193c8d19a, type: 3}
+      propertyPath: targets.Array.data[5]
+      value: 
+      objectReference: {fileID: 1357954065}
     - target: {fileID: 6027462787722654559, guid: 92016f5a8798bdd4a860add193c8d19a, type: 3}
       propertyPath: m_Name
       value: Keyboard
