@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f16e4d91005d74ca0fe82655da1bba, type: 3}
   m_Name: FoundryInstalledVersion
   m_EditorClassIdentifier: 
-  version: 0.3.2-preview
+  version: 0.3.4-preview

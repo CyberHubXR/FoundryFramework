@@ -33,7 +33,12 @@ public class LoginAuthenticationManager : MonoBehaviour
             return;
         var db = await DatabaseSession.GetActive();
         if (db.LoggedIn)
+        {
+            messageText.text = "Already logged in!";
+            
+            PlayerPrefs.SetString("usernameLAN", db.LocalUser.username);
             await BraneApp.GetService<ISceneNavigator>().GoToAsync(targetScene);
+        }
     }
     
     public void Login()
@@ -48,6 +53,7 @@ public class LoginAuthenticationManager : MonoBehaviour
         if (loginResult.IsSuccess)
         {
             messageText.text = "Login successful!";
+            PlayerPrefs.SetString("usernameLAN", db.LocalUser.username);
             await BraneApp.GetService<ISceneNavigator>().GoToAsync(targetScene);
         }
         else
