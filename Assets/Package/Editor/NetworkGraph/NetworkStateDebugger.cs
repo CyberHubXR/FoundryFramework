@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using CyberHub.Brane;
@@ -33,7 +34,7 @@ namespace Foundry.Core.Editor
                 return;
             
             ++cacheVersion;
-            foreach (var node in state.Objects)
+            foreach (var node in state.Entities)
                 ConstructStateNode(root, node);
             
             var toRemove = nodeElementCache.Where(node=>!node.Key ||  node.Value.version != cacheVersion).ToList();
@@ -50,7 +51,7 @@ namespace Foundry.Core.Editor
             public Foldout node = new();
             public bool objectLinked;
             public NetworkId cachedId;
-            public int cachedOwner = -1;
+            public UInt64 cachedOwner = UInt64.MaxValue;
             public Button selectButton;
             public bool propertiesDrawn;
             public VisualElement propPlaceholder;
@@ -59,8 +60,8 @@ namespace Foundry.Core.Editor
         
         private ulong cacheVersion = 0;
         
-        private Dictionary<NetworkObjectState, NodeContext> nodeElementCache = new();
-        void ConstructStateNode(VisualElement root, NetworkObjectState node)
+        private Dictionary<NetworkEntity, NodeContext> nodeElementCache = new();
+        void ConstructStateNode(VisualElement root, NetworkEntity node)
         {
             NodeContext ctx;
 
@@ -145,40 +146,40 @@ namespace Foundry.Core.Editor
                 return;
             }
             
-            var networkProvider = BraneApp.GetService<INetworkProvider>();
-            
-            if(networkProvider == null)
-            {
-                rootVisualElement.Add(new Label("No network provider found. Waiting for it to start..."));
-                return;
-            }
-            
-            networkProvider.SessionConnected += () =>
-            {
-                scrollView.Clear();
-                CreateGUI();
-                Repaint();
-            };
-            
-            networkProvider.SessionDisconnected += (s) =>
-            {
-                scrollView?.Clear();
-                CreateGUI();
-                Repaint();
-            };
-            
-            if (!networkProvider.IsSessionConnected || NetworkManager.State == null)
-            {
-                rootVisualElement.Add(new Label("No active network session. Waiting one to start..."));
-                return;
-            }
-
-            NetworkManager.State.OnStateStructureChanged += graph =>
-            {
-                scrollView ??= new ScrollView();
-                ConstructState(scrollView, graph);
-                Repaint();
-            };
+            // var networkProvider = BraneApp.GetService<INetworkProvider>();
+            //
+            // if(networkProvider == null)
+            // {
+            //     rootVisualElement.Add(new Label("No network provider found. Waiting for it to start..."));
+            //     return;
+            // }
+            //
+            // networkProvider.SessionConnected += () =>
+            // {
+            //     scrollView.Clear();
+            //     CreateGUI();
+            //     Repaint();
+            // };
+            //
+            // networkProvider.SessionDisconnected += (s) =>
+            // {
+            //     scrollView?.Clear();
+            //     CreateGUI();
+            //     Repaint();
+            // };
+            //
+            // if (!networkProvider.IsSessionConnected || NetworkManager.State == null)
+            // {
+            //     rootVisualElement.Add(new Label("No active network session. Waiting one to start..."));
+            //     return;
+            // }
+            //
+            // NetworkManager.State.OnStateStructureChanged += graph =>
+            // {
+            //     scrollView ??= new ScrollView();
+            //     ConstructState(scrollView, graph);
+            //     Repaint();
+            // };
 
             
             scrollView ??= new ScrollView();

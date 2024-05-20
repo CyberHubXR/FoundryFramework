@@ -45,11 +45,11 @@ namespace Foundry
             OnTouchStay.Invoke(isTouchStay);
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
-            props.Add(OnStartTouch);
-            props.Add(OnStopTouch);
-            props.Add(OnTouchStay);
+            events.Add(OnStartTouch);
+            events.Add(OnStopTouch);
+            events.Add(OnTouchStay);
         }
 
         public virtual void TouchUpdate(SpatialTouch spatialTouch)

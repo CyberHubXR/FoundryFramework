@@ -30,14 +30,13 @@ namespace Foundry
     /// </summary>
     /// <typeparam name="T">T must be a commonly serializable type or implement IFoundrySerializable</typeparam>
     [Serializable]
-    public class NetworkEvent<T> : NetworkEventBase, INetworkProperty
+    public class NetworkEvent<T> : NetworkEventBase, INetworkEvent
     {
         private uint _maxQueueLength = 5;
         
         private Queue<byte[]> _callArgs = new();
         [SerializeField]
         private UnityEvent<NetEventSource, T> _event = new();
-
         
         /// <summary>
         /// The max amount of events that may be queued up between serializations. If this is exceeded, the oldest events will be removed.
@@ -56,50 +55,28 @@ namespace Foundry
         }
         
         public bool Dirty =>  _callArgs.Count > 0;
-        public void SetDirty()
+        
+        public Queue<byte[]> SerializeEventQueue()
         {
-            
+            var o = _callArgs;
+            _callArgs = new Queue<byte[]>();
+            return o;
         }
-
-        public void SetClean()
+        
+        public void DeserializeEvent(byte[] arg)
         {
-            
-        }
+            using MemoryStream stream = new(arg);
+            using FoundryDeserializer argDeserializer = new(stream);
+            T argValue = default;
+            argDeserializer.Deserialize(ref argValue);
 
-        public void Serialize(FoundrySerializer serializer, bool full)
-        {
-            serializer.SetDebugRegion($"NetworkEvent<{typeof(T).Name}>");
-            int count = _callArgs.Count;
-            serializer.Serialize(in count);
-            while (_callArgs.Count > 0)
+            try
             {
-                var arg = _callArgs.Dequeue();
-                serializer.Serialize(in arg);
+                _event.Invoke(NetEventSource.Remote, argValue);
             }
-        }
-
-        public void Deserialize(FoundryDeserializer deserializer)
-        {
-            deserializer.SetDebugRegion($"NetworkEvent<{typeof(T).Name}>");
-            int count = 0;
-            deserializer.Deserialize(ref count);
-            for (int i = 0; i < count; i++)
+            catch (Exception e)
             {
-                byte[] arg = null;
-                deserializer.Deserialize(ref arg);
-                MemoryStream stream = new(arg);
-                FoundryDeserializer argDeserializer = new(stream);
-                T argValue = default;
-                argDeserializer.Deserialize(ref argValue);
-
-                try
-                {
-                    _event.Invoke(NetEventSource.Remote, argValue);
-                }
-                catch (Exception e)
-                {
-                    Debug.LogException(e);
-                }
+                Debug.LogException(e);
             }
         }
 

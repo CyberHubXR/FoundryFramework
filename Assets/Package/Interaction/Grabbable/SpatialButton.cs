@@ -129,10 +129,10 @@ namespace Foundry
             Gizmos.DrawSphere(buttonTopPointObjectSpace, 0.035F);
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
-            props.Add(StartButtonPressed);
-            props.Add(StopButtonPressed);
+            events.Add(StartButtonPressed);
+            events.Add(StopButtonPressed);
         }
     }
 

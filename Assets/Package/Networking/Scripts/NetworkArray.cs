@@ -101,39 +101,23 @@ namespace Foundry.Networking
             return dirtyFlags[vectorIndex][bitmask];
         }
 
-        public void Serialize(FoundrySerializer serializer, bool full)
+        public void Serialize(FoundrySerializer serializer)
         {
             serializer.SetDebugRegion($"NetworkArray<{typeof(T).Name}>");
-            if(!full)
-                serializer.Serialize(in dirtyItems);
-            else
-            {
-                uint items = (uint)data.Length;
-                serializer.Serialize(in items);
-            }
+            uint items = (uint)data.Length;
+            serializer.Serialize(in items);
             
             for (int i = 0; i < data.Length; i++)
-            {
-                if(full || IsIndexDirty(i))
-                {
-                    serializer.Serialize(in i);
-                    serializer.Serialize(in data[i]);
-                }
-            }
+                serializer.Serialize(in data[i]);
         }
 
         public void Deserialize(FoundryDeserializer deserializer)
         {
             deserializer.SetDebugRegion($"NetworkArray<{typeof(T).Name}>");
-            uint changedItems = 0;
-            deserializer.Deserialize<uint>(ref changedItems);
-            for (uint i = 0; i < changedItems; i++)
-            {
-                int index = 0;
-                deserializer.Deserialize(ref index);
-                deserializer.Deserialize(ref data[index]);
-                OnIndexSet?.Invoke(index, data[index]);
-            }
+            uint length = 0;
+            deserializer.Deserialize<uint>(ref length);
+            for (uint i = 0; i < length; i++)
+                deserializer.Deserialize(ref data[i]);
         }
         
         public void Set(int index, T value)

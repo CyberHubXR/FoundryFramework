@@ -136,12 +136,12 @@ namespace Foundry
 
         private NetworkTransform netTransform;
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
             props.Add(NetworkHeld);
             props.Add(offset);
-            props.Add(OnGrabNetworkEvent);
-            props.Add(OnReleaseNetworkEvent);
+            events.Add(OnGrabNetworkEvent);
+            events.Add(OnReleaseNetworkEvent);
         }
 
         public override void OnConnected()

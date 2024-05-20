@@ -73,14 +73,14 @@ namespace Foundry
             ConfigureSliderIncrements();
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
-            props.Add(sliderSmoothEvent);
+            events.Add(sliderSmoothEvent);
             
             for (int i = 0; i < sliderIncrementEvents.Count; i++)
             {
-                props.Add(sliderIncrementEvents[i].onIncrementEnter);
-                props.Add(sliderIncrementEvents[i].onIncrementExit);
+                events.Add(sliderIncrementEvents[i].onIncrementEnter);
+                events.Add(sliderIncrementEvents[i].onIncrementExit);
             }
         }
 

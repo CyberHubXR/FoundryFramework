@@ -14,7 +14,7 @@ public class PreloadedAvatarSystem : NetworkComponent
     //Networked
     private NetworkProperty<int> selectedAvatar = new(0);
 
-    public override void RegisterProperties(List<INetworkProperty>  props)
+    public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
     {
         props.Add(selectedAvatar);
         selectedAvatar.OnValueChanged +=InitializeAvatar;

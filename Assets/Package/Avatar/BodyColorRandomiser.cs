@@ -25,7 +25,7 @@ namespace Foundry
             }
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
             _bodyColor.OnValueChanged += c => { this.bodyColorRenderer.sharedMaterial.SetColor("_BodyColor", c); };
 

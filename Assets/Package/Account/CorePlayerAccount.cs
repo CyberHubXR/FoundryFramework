@@ -38,7 +38,7 @@ namespace Foundry.Account
             TryGetComponent(out accountDisplay);
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
             _username.OnValueChanged += n => { accountDisplay.SetText(n); };
             _avatarIndex.OnValueChanged += i => { SpawnSelectedAvatar(i); };

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Foundry.Core.Serialization;
@@ -24,16 +25,16 @@ namespace Foundry.Networking
         }
 
         public Type type;
-        public int sender;
+        public UInt32 sender;
         public NetworkId id;
-        public int secondaryData;
+        public UInt32 secondaryData;
 
-        public static StructureEvent Add(NetworkId nodeId, int owner)
+        public static StructureEvent Add(NetworkId nodeId, UInt32 owner)
         {
             return new StructureEvent
             {
                 type = Type.Add,
-                sender = -1,
+                sender = UInt32.MaxValue,
                 id = nodeId,
                 secondaryData = owner
             };
@@ -44,18 +45,18 @@ namespace Foundry.Networking
             return new StructureEvent
             {
                 type = Type.Remove,
-                sender = -1,
+                sender = UInt32.MaxValue,
                 id = nodeId,
-                secondaryData = -1
+                secondaryData = UInt32.MaxValue
             };
         }
 
-        public static StructureEvent ChangeOwner(NetworkId nodeId, int newOwner)
+        public static StructureEvent ChangeOwner(NetworkId nodeId, UInt32 newOwner)
         {
             return new StructureEvent
             {
                 type = Type.Remove,
-                sender = -1,
+                sender = UInt32.MaxValue,
                 id = nodeId,
                 secondaryData = newOwner
             };
@@ -86,7 +87,7 @@ namespace Foundry.Networking
             deserializer.Deserialize(ref typeIndex);
             type = (Type)typeIndex;
             deserializer.Deserialize(ref id);
-            secondaryData = -1;
+            secondaryData = UInt32.MaxValue;
             switch (type)
             {
                 case Type.Add:
