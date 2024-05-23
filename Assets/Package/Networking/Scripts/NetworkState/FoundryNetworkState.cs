@@ -226,7 +226,12 @@ namespace Foundry.Networking
                     var arg = new byte[eventArgSize];
                     for (UInt64 i = 0; i < eventArgSize; i++)
                         deserializer.Deserialize(ref arg[i]);
-                    
+
+                    if (Events.Count <= eventType)
+                    {
+                        Debug.LogError($"Event Index {eventType} out of range! Skipping event for {AssociatedObject.gameObject.name}.");
+                        continue;
+                    }
                     Events[(int)eventType].DeserializeEvent(arg);
                 }
             }
@@ -452,7 +457,6 @@ namespace Foundry.Networking
                 UInt64 serializedEvents = 0;
                 foreach(var ev in node.Events)
                 {
-                    ++eventIndex;
                     if(!ev.Dirty)
                         continue;
                     
@@ -470,6 +474,7 @@ namespace Foundry.Networking
                             serializer.Serialize(b);
                         ++serializedEvents;
                     }
+                    ++eventIndex;
                 }
                 eventCout.WriteValue(serializedEvents);
 

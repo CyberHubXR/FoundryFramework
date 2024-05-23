@@ -233,7 +233,6 @@ namespace Foundry.Networking
                 var netObjs = obj.GetComponentsInChildren<NetworkObject>(false);
                 foreach (var netObj in netObjs)
                 {
-                    netObj.BuildProperties();
                     sceneObjects.Add(netObj);
                 }
 
@@ -246,6 +245,8 @@ namespace Foundry.Networking
                 {
                     try
                     {
+                        
+                        obj.BuildProperties();
                         SpawnLocalObject(obj);
                     }
                     catch (Exception e)
@@ -419,13 +420,14 @@ namespace Foundry.Networking
             entity.Deserialize(deserializer);
             GameObject prefab = null;
             sceneObjects?.TryGetValue(entity.objectId, out prefab);
-            if (!prefab && !prefabs.TryGetValue(entity.objectId, out prefab))
+            if (!prefab && prefabs.TryGetValue(entity.objectId, out prefab))
+                prefab = Instantiate(prefab);
+            if (!prefab)
             {
                 Debug.LogError("Tried to spawn prefab with guid " + entity.objectId + " but it was not found in the prefab list.");
                 return null;
             }
-            var obj = Instantiate(prefab);
-            var netObj = obj.GetComponent<NetworkObject>();
+            var netObj = prefab.GetComponent<NetworkObject>();
             netObj.BuildProperties();
             idToObject.Add(entity.Id, netObj);
             netObj.LinkEntity(entity);

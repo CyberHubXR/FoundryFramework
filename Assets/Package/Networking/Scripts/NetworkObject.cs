@@ -366,6 +366,7 @@ namespace Foundry.Networking
                 EditorGUILayout.LabelField("Network ID: " + (networkObject.Id.ToString() ?? "Not set"));
                 EditorGUILayout.LabelField("Owner: " + (networkObject.Owner == UInt64.MaxValue ? "None" : networkObject.Owner.ToString()));
                 EditorGUILayout.LabelField("Networked Properties: " + networkObject.NetworkComponents.Count);
+                EditorGUILayout.LabelField("Networked Events: " + networkObject.NetworkComponents.Count);
                 
                 EditorGUI.BeginDisabledGroup(!networkObject.allowOwnershipTransfer);
                 if (GUILayout.Button("Request Ownership"))
