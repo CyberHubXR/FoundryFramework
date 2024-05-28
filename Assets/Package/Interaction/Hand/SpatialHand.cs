@@ -120,12 +120,14 @@ namespace Foundry
             {
                 OnGrabNetworkEvent.AddListener((s, id) =>
                 {
+                    Debug.Log("Grab event from source: " + s + " on " + handType);
                     if(s == NetEventSource.Remote)
                         GrabNetwork(id);
                 });
                 
                 OnReleaseNetworkEvent.AddListener((s, id) =>
                 {
+                    Debug.Log("Release event from source: " + s + " on " + handType);
                     if(s == NetEventSource.Remote)
                         ReleaseNetwork(id);
                 });
@@ -227,8 +229,8 @@ namespace Foundry
             {
                 body.isKinematic = true;
             }
-
             
+            Debug.Log("Grabbing " + grabbable.gameObject.name);
             grabbable.TryGetComponent(out netTransform);
             
             if (IsOwner)
@@ -241,6 +243,7 @@ namespace Foundry
                 
                 if (grabbable.TryGetComponent(out NetworkObject netObj))
                 {
+                    Debug.Log("Requesting ownership");
                     netObj.RequestOwnership();
                     NetworkHeld.Value = netObj.Id;
                     OnGrabNetworkEvent.InvokeRemote(NetworkHeld.Value);

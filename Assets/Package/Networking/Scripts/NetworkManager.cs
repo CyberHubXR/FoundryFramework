@@ -48,8 +48,6 @@ namespace Foundry.Networking
         /// </summary>
         private HashSet<NetworkObject> sceneObjects = new();
 
-        private Dictionary<NetworkId, NetworkObject> idToObject = new();
-
         public bool IsSessionConnected => connected && (socket?.IsOpen ?? false);
         private bool connected = false;
         public UInt64 LocalPlayerId => State.localPlayerId;
@@ -57,6 +55,8 @@ namespace Foundry.Networking
         private FoundryWebSocket socket;
 
         private Dictionary<string, GameObject> prefabs;
+        
+        private Dictionary<NetworkId, TaskCompletionSource<bool>> ownershipChangeRequests = new();
 
         void Awake()
         {
@@ -138,12 +138,9 @@ namespace Foundry.Networking
         IEnumerator PollConnection()
         {
             var lastFrameTime = Time.fixedUnscaledTimeAsDouble;
-            while (true)
+            while (IsSessionConnected)
             {
-                //We yield at the beginning of the loop so that continue statements don't crash the editor.
                 yield return new WaitUntil(() => Time.fixedUnscaledTimeAsDouble - lastFrameTime > 1f / 60f);
-                if (!IsSessionConnected)
-                    continue;
                 NetworkMessage incoming = socket.ReceiveMessage();
                 while (incoming != null)
                 {
@@ -163,6 +160,112 @@ namespace Foundry.Networking
                                 using var deserializer = new FoundryDeserializer(incoming.Stream);
                                 State.ApplyDelta(deserializer);
                                 deserializer.Dispose();
+                                break;
+                            }
+                            case "change-entity-owner":
+                            {
+                                using var deserializer = new FoundryDeserializer(incoming.Stream);
+                                NetworkId id = new();
+                                UInt64 newOwner = 0;
+                                deserializer.Deserialize(ref id);
+                                deserializer.Deserialize(ref newOwner);
+                                if (State.idToNode.TryGetValue(id, out var e))
+                                {
+                                    e.owner = newOwner;
+                                    var resetProps = true;
+                                    if (ownershipChangeRequests.TryGetValue(id, out var tcs))
+                                    {
+                                        var success = newOwner == State.localPlayerId;
+                                        resetProps = !success;
+                                        tcs.SetResult(success);
+                                        ownershipChangeRequests.Remove(id);
+                                    }
+                                    
+                                    if (resetProps)
+                                        e.DeserializeProperties(deserializer);
+                                }
+                                else
+                                {
+                                    Debug.LogWarning("Tried to change owner of object with ID " + id + " but it was not found.");
+                                }
+
+                                break;
+                            }
+                            case "request-entity-ownership":
+                            {
+                                using var deserializer = new FoundryDeserializer(incoming.Stream);
+                                NetworkId id = new();
+                                deserializer.Deserialize(ref id);
+                                if (!State.idToNode.TryGetValue(id, out var e))
+                                    continue;
+                                
+                                UInt64 newOwner = new();
+                                deserializer.Deserialize(ref newOwner);
+                                if (e.AssociatedObject && e.AssociatedObject.VerifyIDChangeRequest(newOwner))
+                                {
+                                    e.owner = newOwner;
+                                }
+                                else
+                                    newOwner = State.localPlayerId;
+                                
+                                var ostream = new MemoryStream();
+                                using var s = new FoundrySerializer(ostream);
+                                s.Serialize(in roomKey);
+                                s.Serialize(in id);
+                                s.Serialize(in newOwner);
+                                    
+                                socket.SendMessage(new NetworkMessage
+                                {
+                                    Header = "change-entity-owner",
+                                    BodyType = WebSocketMessageType.Binary,
+                                    Stream = ostream
+                                });
+
+                                break;
+                            }
+                            case "despawn-entity":
+                            {
+                                using var deserializer = new FoundryDeserializer(incoming.Stream);
+                                NetworkId id = new();
+                                deserializer.Deserialize(ref id);
+                                if (State.idToNode.TryGetValue(id, out var entity))
+                                {
+                                    if(entity.AssociatedObject)
+                                        Destroy(entity.AssociatedObject.gameObject);
+                                    State.RemoveNode(id);
+                                }
+                                else
+                                {
+                                    Debug.LogWarning("Tried to destroy object with ID " + id + " but it was not found.");
+                                }
+                                break;
+                            }
+                            case "user-entered-sector":
+                            {
+                                UInt64 userId = 0;
+                                using var deserializer = new FoundryDeserializer(incoming.Stream);
+                                deserializer.Deserialize(ref userId);
+                                string sectorName = "";
+                                deserializer.Deserialize(ref sectorName);
+                                Players.Add(userId);
+                                Debug.Assert(sectorName == roomKey, "Got event for user entered sector " + sectorName + " but we are in sector " + roomKey);
+                                break;
+                            }
+                            case "user-left-sector":
+                            {
+                                UInt64 userId = 0;
+                                using var deserializer = new FoundryDeserializer(incoming.Stream);
+                                deserializer.Deserialize(ref userId);
+                                string sectorName = "";
+                                deserializer.Deserialize(ref sectorName);
+                                Players.Remove(userId);
+                                Debug.Assert(sectorName == roomKey, "Got event for user left sector " + sectorName + " but we are in sector " + roomKey);
+                                break;
+                            }
+                            case "error":
+                            {
+                                using var reader = new StreamReader(incoming.Stream);
+                                Debug.LogError("Server error: " + reader.ReadToEnd());
                                 break;
                             }
                             default:
@@ -386,7 +489,6 @@ namespace Foundry.Networking
             var entity = obj.CreateEntity();
             entity.Id = State.NewId();
             Debug.Log("Spawning object with ID " + entity.Id);
-            idToObject.Add(entity.Id, obj);
             SpawnEntity(entity);
             obj.InvokeConnected();
         }
@@ -429,7 +531,6 @@ namespace Foundry.Networking
             }
             var netObj = prefab.GetComponent<NetworkObject>();
             netObj.BuildProperties();
-            idToObject.Add(entity.Id, netObj);
             netObj.LinkEntity(entity);
             entity.DeserializeProperties(deserializer);
             State.AddEntity(entity);
@@ -440,15 +541,35 @@ namespace Foundry.Networking
 
         public void Despawn(NetworkObject netObject)
         {
-            throw new NotImplementedException();
+            if (!IsSessionConnected)
+            {
+                Destroy(netObject.gameObject);
+            }
+            
+            var entity = netObject.Entity;
+            if (entity == null)
+            {
+                Debug.LogWarning("Tried to despawn object with no entity.");
+                return;
+            }
+            if (entity.owner != State.localPlayerId)
+            {
+                Debug.LogWarning("Tried to despawn object with ID " + entity.Id + " but we are not the owner.");
+                return;
+            }
+            
+            var stream = new MemoryStream();
+            using var serializer = new FoundrySerializer(stream);
+            serializer.Serialize(in entity.Id);
+            socket.SendMessage(new NetworkMessage
+            {
+                Header = "despawn-entity",
+                BodyType = WebSocketMessageType.Binary,
+                Stream = stream
+            });
+            State.RemoveNode(entity.Id);
+            Destroy(netObject);
         }
-        
-        /*public static void BindSceneObject(NetworkObject sceneObject)
-        {
-            Debug.Assert(instance, "NetworkManager instance not found! Either one does not exist or it has not been initialized yet.");
-            Debug.Assert(!instance.networkProvider.IsSessionConnected, "Tried to bind a scene object after the session has started!");
-            instance.sceneObjects.Add(sceneObject);
-        }*/
         
         /// <summary>
         /// Get a network object by its NetworkID 
@@ -457,9 +578,39 @@ namespace Foundry.Networking
         /// <returns></returns>
         public static NetworkObject GetObjectById(NetworkId id)
         {
-            if (instance.idToObject.TryGetValue(id, out var obj))
-                return obj;
+            if (State.idToNode.TryGetValue(id, out var obj))
+                return obj.AssociatedObject;
             return null;
+        }
+        
+        
+
+        internal static async Task<bool> RequestObjectOwnership(NetworkObject obj)
+        {
+            Debug.Assert(instance, "No network manager instance found!");
+            if (!instance.IsSessionConnected)
+                return true;
+            
+            var entity = obj.Entity;
+            if (entity.owner == State.localPlayerId)
+                return true;
+            
+            var stream = new MemoryStream();
+            using var serializer = new FoundrySerializer(stream);
+            serializer.Serialize(in instance.roomKey);
+            serializer.Serialize(in entity.Id);
+            instance.socket.SendMessage(new NetworkMessage
+            {
+                Header = "request-entity-ownership",
+                BodyType = WebSocketMessageType.Binary,
+                Stream = stream
+            });
+            entity.owner = State.localPlayerId;
+            
+            TaskCompletionSource<bool> listener = new();
+            instance.ownershipChangeRequests[entity.Id] = listener;
+            
+            return await listener.Task;
         }
     }
 }

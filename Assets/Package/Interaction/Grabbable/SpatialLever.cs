@@ -50,6 +50,7 @@ namespace Foundry
 
         public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
+            base.RegisterProperties(props, events);
             events.Add(leverEvent);
         }
 

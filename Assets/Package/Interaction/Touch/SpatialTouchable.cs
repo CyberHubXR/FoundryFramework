@@ -15,6 +15,8 @@ namespace Foundry
         public NetworkEvent<bool> OnStartTouch;
         public NetworkEvent<bool> OnStopTouch;
         public NetworkEvent<bool> OnTouchStay;
+        
+        public bool takeOwnershipOnTouch = true;
 
         public float touchTriggerPercent { get; set; }
         public bool isTouching { get { return touchTriggerPercent > 0; } }
@@ -30,11 +32,20 @@ namespace Foundry
 
         public virtual void StartTouch(SpatialTouch spatialTouch) 
         {
-            OnStartTouch.Invoke(isTouching);
+            if (takeOwnershipOnTouch && !Object.IsOwner)
+            {
+                var playerObject = spatialTouch.SpatialHand.Object;
+                if (playerObject.Owner == NetworkManager.State.localPlayerId)
+                    Object.RequestOwnership();
+            }
+            if (Object.IsOwner)
+                OnStartTouch.Invoke(isTouching);
         }
 
         public virtual void StopTouch(SpatialTouch spatialTouch)
         {
+            if (!Object.IsOwner)
+                return;
             touchTriggerPercent = 0;
             OnStopTouch.Invoke(isTouching);
             delayTimer = touchStayDelay;
@@ -42,6 +53,8 @@ namespace Foundry
 
         public virtual void TouchStay(SpatialTouch spatialTouch)
         {
+            if (!Object.IsOwner)
+                return;
             OnTouchStay.Invoke(isTouchStay);
         }
 
@@ -54,6 +67,8 @@ namespace Foundry
 
         public virtual void TouchUpdate(SpatialTouch spatialTouch)
         {
+            if (!IsOwner)
+                return;
             delayTimer -= Time.deltaTime;
             touchTriggerPercent = Mathf.Clamp((touchStayDelay - delayTimer) / touchStayDelay, 0, 1);
 

@@ -143,11 +143,6 @@ namespace Foundry.Networking
         /// What happens with this object is orphaned from it's owner.
         /// </summary>
         public DisconnectBehaviour disconnectBehaviour = DisconnectBehaviour.TransferOwnership;
-        
-        /// <summary>
-        /// Used to check if incoming ownership transfer requests are valid.
-        /// </summary>
-        public bool allowOwnershipTransfer = false;
 
         /// <summary>
         /// All the networked properties of this node. Is null if they have not been set yet.
@@ -457,6 +452,8 @@ namespace Foundry.Networking
                 UInt64 serializedEvents = 0;
                 foreach(var ev in node.Events)
                 {
+                    
+                    ++eventIndex;
                     if(!ev.Dirty)
                         continue;
                     
@@ -468,13 +465,12 @@ namespace Foundry.Networking
                     {
                         var eventArg = eventQueue.Dequeue();
                         serializer.SetDebugRegion("event");
-                        serializer.Serialize(eventIndex);
+                        serializer.Serialize(eventIndex - 1);
                         serializer.Serialize((UInt64)eventArg.Length);
                         foreach (var b in eventArg)
                             serializer.Serialize(b);
                         ++serializedEvents;
                     }
-                    ++eventIndex;
                 }
                 eventCout.WriteValue(serializedEvents);
 

@@ -1,15 +1,11 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using CyberHub.Brane;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
-using System.Net;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif 
@@ -49,12 +45,12 @@ namespace Foundry.Networking
         /// <summary>
         /// Returns the NetworkGraphId script attached to this object, or null if it doesn't exist.
         /// </summary>
-        public NetworkId Id => state?.Id ?? NetworkId.Invalid;
+        public NetworkId Id => entity?.Id ?? NetworkId.Invalid;
         
         /// <summary>
         /// The player that owns this object. This will be -1 if the object is not in the graph.
         /// </summary>
-        public UInt64 Owner => state?.owner ?? UInt64.MaxValue;
+        public UInt64 Owner => entity?.owner ?? UInt64.MaxValue;
 
         /// <summary>
         /// Returns if this object is owned by the local player. This will return true if there is no network session or OnConnected() has not been called yet.
@@ -75,12 +71,13 @@ namespace Foundry.Networking
         /// <summary>
         /// Callback for validating if an ownership change should be allowed. This will be called on only the client that currently owns the object.
         /// </summary>
-        private Func<UInt32, bool> ValidateOwnershipChange;
+        private Func<UInt64, bool> ValidateOwnershipChange;
 
         /// <summary>
         /// The node this object is linked too. This is null if the object is not in the graph.
         /// </summary>
-        private NetworkEntity state;
+        private NetworkEntity entity;
+        public NetworkEntity Entity => entity;
         
         /// <summary>
         /// All the networked components owned by this object.
@@ -234,6 +231,19 @@ namespace Foundry.Networking
             {
                 networkedComponent.Object = this;
                 networkedComponent.RegisterProperties(networkProperties, networkEvents);
+                #if DEBUG
+                foreach (var prop in networkProperties)
+                {
+                    if (prop == null)
+                        Debug.LogError("Null property was registered from " + networkedComponent.GetType().Name + " on " + networkedComponent.gameObject.name);
+                }
+                foreach (var ev in networkEvents)
+                {
+                    if (ev == null)
+                        Debug.LogError("Null event was registered from " + networkedComponent.GetType().Name + " on " +
+                                       networkedComponent.gameObject.name);
+                }
+                #endif
             }
         }
 
@@ -247,8 +257,7 @@ namespace Foundry.Networking
             entity.AssociatedObject = this;
             entity.objectId = guid;
             entity.disconnectBehaviour = disconnectBehaviour;
-            state = entity;
-            entity.allowOwnershipTransfer = allowOwnershipTransfer;
+            this.entity = entity;
 
             entity.Properties = networkProperties;
             entity.Events = networkEvents;
@@ -262,9 +271,8 @@ namespace Foundry.Networking
         internal void LinkEntity(NetworkEntity node)
         {
             Debug.Assert(node.objectId == guid, "Guids did not match!");
-            state = node;
+            entity = node;
             node.AssociatedObject = this;
-            allowOwnershipTransfer = node.allowOwnershipTransfer;
             node.Properties = networkProperties;
             node.Events = networkEvents;
         }
@@ -283,7 +291,7 @@ namespace Foundry.Networking
         /// be called on every remote client, not just the owner so make sure that it's consistent between clients.
         /// </summary>
         /// <param name="callback">Callback that performs the verification, it's passed an int representing the new requested owner, and should return a bool representing if the change should be allowed to continue</param>
-        public void SetOwnershipVerificationCallback(Func<UInt32, bool> callback)
+        public void SetOwnershipVerificationCallback(Func<UInt64, bool> callback)
         {
             ValidateOwnershipChange = callback;
         }
@@ -294,7 +302,7 @@ namespace Foundry.Networking
         /// <param name="newOwner"></param>
         /// <param name="newId"></param>
         /// <returns></returns>
-        public bool VerifyIDChangeRequest(UInt32 newOwner)
+        public bool VerifyIDChangeRequest(UInt64 newOwner)
         {
             if (ValidateOwnershipChange == null)
                 return allowOwnershipTransfer;
@@ -302,38 +310,26 @@ namespace Foundry.Networking
         }
         
         /// <summary>
-        /// Request ownership of an object with transfer ownership enabled. 
+        /// Request ownership of an object with transfer ownership enabled. When called we will pretend that we own the object
+        /// until the server confirms or denies the request.
         /// </summary>
-        public void RequestOwnership()
+        /// <returns>True if ownership was granted</returns>
+        public async Task<bool> RequestOwnership()
         {
             
             if (!allowOwnershipTransfer)
             {
                 Debug.LogError($"Attempted to take ownership of {gameObject.name} but allowOwnershipTransfer is false.");
-                return;
+                return false;
             }
 
-            if (!state)
+            if (!entity)
             {
                 Debug.LogError("Attempted to take ownership of an object that is not in the graph.");
-                return;
+                return false;
             }
-            
-            throw new NotImplementedException();
-            
-            /*if (State.owner == NetworkProvider.LocalPlayerId && api.IsOwner)
-                return;
-            
-            api.SetOwnership(NetworkProvider.LocalPlayerId, (success) =>
-            {
-                if (!success)
-                {
-                    Debug.LogError($"Failed to take ownership of {gameObject.name}.");
-                    return;
-                }
-                Debug.Log($"Took ownership of {gameObject.name}.");
-                NetworkManager.State.ChangeOwner(Id, NetworkProvider.LocalPlayerId);
-            });*/
+
+            return await NetworkManager.RequestObjectOwnership(this);
         }
     }
     
@@ -341,6 +337,8 @@ namespace Foundry.Networking
     [CustomEditor(typeof(NetworkObject))]
     public class NetworkObjectEditor : Editor
     {
+        bool showNetworkVariables = false;
+        private bool showNetworkEvents = false;
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
@@ -365,8 +363,31 @@ namespace Foundry.Networking
                 EditorGUILayout.LabelField("Is Owner: " + networkObject.IsOwner);
                 EditorGUILayout.LabelField("Network ID: " + (networkObject.Id.ToString() ?? "Not set"));
                 EditorGUILayout.LabelField("Owner: " + (networkObject.Owner == UInt64.MaxValue ? "None" : networkObject.Owner.ToString()));
-                EditorGUILayout.LabelField("Networked Properties: " + networkObject.NetworkComponents.Count);
-                EditorGUILayout.LabelField("Networked Events: " + networkObject.NetworkComponents.Count);
+
+                if (networkObject.Entity)
+                {
+                    showNetworkVariables = EditorGUILayout.Foldout(showNetworkVariables, "Network Variables");
+                    if (showNetworkVariables)
+                    {
+                        EditorGUI.indentLevel = 1;
+                        foreach(var o in networkObject.Entity.Properties)
+                        {
+                            EditorGUILayout.LabelField(o.GetType().AssemblyQualifiedName);
+                        }
+                        EditorGUI.indentLevel = 0;
+                    }
+                    showNetworkEvents = EditorGUILayout.Foldout(showNetworkEvents, "Network Events");
+                    if (showNetworkEvents)
+                    {
+                        EditorGUI.indentLevel = 1;
+                        foreach(var o in networkObject.Entity.Events)
+                        {
+                            EditorGUILayout.LabelField(o.GetType().AssemblyQualifiedName);
+                        }
+                        EditorGUI.indentLevel = 0;
+                    }
+                }
+                
                 
                 EditorGUI.BeginDisabledGroup(!networkObject.allowOwnershipTransfer);
                 if (GUILayout.Button("Request Ownership"))
