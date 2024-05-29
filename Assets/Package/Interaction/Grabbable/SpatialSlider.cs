@@ -17,8 +17,8 @@ namespace Foundry
         [System.Serializable]
         public class SliderIncrementEvent
         {
-            public NetworkEvent<int> onIncrementEnter;
-            public NetworkEvent<int> onIncrementExit;
+            public NetworkEvent<int> onIncrementEnter = new();
+            public NetworkEvent<int> onIncrementExit = new();
 
             public Transform incrementPointOnLine;
         }
@@ -43,15 +43,14 @@ namespace Foundry
         private Vector3 sliderEndObjectSpace;
 
         private Vector3 sliderTargetPosition;
+        private bool incrementsConfigured;
 
         bool right;
 
-        #if UNITY_EDITOR
-        private void OnValidate()
+        protected override void OnValidate()
         {
             ConvertToObjectSpace();
         }
-        #endif
         void ConvertToObjectSpace()
         {
             sliderEndObjectSpace = transform.TransformPoint(sliderEnd);
@@ -59,9 +58,12 @@ namespace Foundry
 
             incrementAmount = Vector3.Distance(sliderStartObjectSpace, sliderEndObjectSpace) / amountOfIncrements;
         }
+        
+        
 
-        new void Start()
+        protected override void Start()
         {
+            base.Start();
             ConvertToObjectSpace();
 
             //SliderVisualObject.position = sliderStartObjectSpace;
@@ -73,19 +75,23 @@ namespace Foundry
             ConfigureSliderIncrements();
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
-            props.Add(sliderSmoothEvent);
+            ConfigureSliderIncrements();
+            events.Add(sliderSmoothEvent);
             
             for (int i = 0; i < sliderIncrementEvents.Count; i++)
             {
-                props.Add(sliderIncrementEvents[i].onIncrementEnter);
-                props.Add(sliderIncrementEvents[i].onIncrementExit);
+                events.Add(sliderIncrementEvents[i].onIncrementEnter);
+                events.Add(sliderIncrementEvents[i].onIncrementExit);
             }
         }
 
-        void ConfigureSliderIncrements() 
+        void ConfigureSliderIncrements()
         {
+            if (incrementsConfigured)
+                return;
+            incrementsConfigured = true;
             for (int i = 1; i < sliderIncrementEvents.Count - 1; i++)
             {
                 if (sliderIncrementEvents[i].incrementPointOnLine == null)
@@ -171,7 +177,6 @@ namespace Foundry
             var heading = (end - origin);
             float magnitudeMax = heading.magnitude;
             heading.Normalize();
-
             var lhs = point - origin;
             float dotP = Vector3.Dot(lhs, heading);
             dotP = Mathf.Clamp(dotP, 0f, magnitudeMax);

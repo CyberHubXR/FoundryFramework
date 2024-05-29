@@ -33,7 +33,7 @@ namespace Foundry.Networking
         /// </summary>
         /// <param name="serializer"></param>
         /// <param name="full">If true, serialize all data, otherwise only serialize dirty data.</param>
-        public void Serialize(FoundrySerializer serializer, bool full = false);
+        public void Serialize(FoundrySerializer serializer);
 
         /// <summary>
         /// Read data received from the network into this property.
@@ -54,31 +54,39 @@ namespace Foundry.Networking
         public Action OnChanged { get; set; }
     }
 
+    public interface INetworkEvent
+    {
+        public bool Dirty { get; }
+        public Queue<byte[]> SerializeEventQueue();
+
+        public void DeserializeEvent(byte[] args);
+    }
+
     [Serializable]
     public struct NetworkId : IFoundrySerializable
     {
         /// <summary>
         /// Locally unique id of this object
         /// </summary>
-        public uint Id => id;
-        private uint id;
+        public UInt64 Id => id;
+        private UInt64 id;
         
-        public int Creator => (int) (id >> 16);
-        public uint Index => id & 0xffff;
+        public uint Creator => (uint) (id >> 32);
+        public uint Index => (uint)id;
         
-        public NetworkId(uint rawId)
+        public NetworkId(ulong rawId)
         {
             this.id = rawId;
         }
         
-        public NetworkId(int creator, uint index)
+        public NetworkId(UInt64 creator, uint index)
         {
-            this.id = (uint)creator << 16 | index;
+            this.id = creator << 32 | index;
         }
         
-        public static NetworkId Invalid => new(0xffffffff);
+        public static NetworkId Invalid => new(0xffffffffffffffff);
         
-        public bool IsValid() =>Id != 0xffffffff;
+        public bool IsValid() =>Id != 0xffffffffffffffff;
         
         /// <summary>
         /// Override of hashing function to allow for use in dictionaries
@@ -93,7 +101,7 @@ namespace Foundry.Networking
         {
             if(!IsValid())
                 return "NetworkId(Invalid)";
-            return $"NetworkId(Created By: {Creator} ID = {Index})";
+            return $"NetworkId(Created By: {Creator} ID = {Index}, Raw = {id})";
         }
 
         public void Serialize(FoundrySerializer serializer)
@@ -117,7 +125,7 @@ namespace Foundry.Networking
         }
     }
     
-    public class NetworkObjectState
+    public class NetworkEntity
     {
         public NetworkId Id = NetworkId.Invalid;
 
@@ -125,11 +133,16 @@ namespace Foundry.Networking
         /// The object in the scene associated with this node. This may be null if this node does not represent a scene object.
         /// </summary>
         public NetworkObject AssociatedObject;
+
+        /// <summary>
+        /// The prefab or scene object linked to this entity.
+        /// </summary>
+        public String objectId;
         
         /// <summary>
-        /// Used to check if incoming ownership transfer requests are valid.
+        /// What happens with this object is orphaned from it's owner.
         /// </summary>
-        public bool allowOwnershipTransfer = false;
+        public DisconnectBehaviour disconnectBehaviour = DisconnectBehaviour.TransferOwnership;
 
         /// <summary>
         /// All the networked properties of this node. Is null if they have not been set yet.
@@ -137,55 +150,90 @@ namespace Foundry.Networking
         public List<INetworkProperty> Properties;
         
         /// <summary>
-        /// If props have not been set up yet, we cache the data here to be applied later.
+        /// All the networked events of this node.
         /// </summary>
-        public MemoryStream propsData;
+        public List<INetworkEvent> Events;
         
         /// <summary>
-        /// The client with authority over this node. -1 if no one has authority.
+        /// The client with authority over this node. UInt32.MaxValue if no one has authority.
         /// </summary>
-        public int owner = -1;
+        public UInt64 owner = UInt64.MaxValue;
 
         /// <summary>
         /// If this node is still alive in the graph
         /// </summary>
         public bool IsAlive = true;
         
-        public static implicit operator bool(NetworkObjectState node) => node?.IsAlive ?? false;
+        public static implicit operator bool(NetworkEntity node) => node?.IsAlive ?? false;
 
         /// <summary>
         /// Deserialize this node's data from a stream
         /// </summary>
         /// <param name="deserializer"></param>
-        public void Deserialize(FoundryDeserializer deserializer)
+        public void DeserializeDelta(FoundryDeserializer deserializer)
         {
-            deserializer.SetDebugRegion("Deserialize owner");
-            deserializer.Deserialize(ref owner);
-            
-            if (Properties == null)
-            {
-                
-                deserializer.SetDebugRegion("Cache node Props");
-                propsData = deserializer.DeserializeBuffer();
-                return;
-            }
-
-            deserializer.SetDebugRegion("data size");
-            uint propsDataSize = 0;
-            deserializer.Deserialize(ref propsDataSize);
-            var streamPos = deserializer.stream.Position;
-            
+            Debug.Assert(Properties != null, "Properties must be set!");
             try
             {
-                DeserializeProps(deserializer);
+                deserializer.SetDebugRegion("prop count");
+                Debug.Assert(Properties != null, "props must be set to deserialize them!");
+                UInt64 serializedProps = 0;
+                deserializer.Deserialize(ref serializedProps);
+            
+                while (serializedProps > 0)
+                {
+                    UInt32 propIndex = 0;
+                    deserializer.SetDebugRegion("prop index");
+                    deserializer.Deserialize(ref propIndex);
+
+                    UInt64 propSize = 0;
+                    deserializer.SetDebugRegion("prop size");
+                    deserializer.Deserialize(ref propSize);
+                    
+                    deserializer.SetDebugRegion("prop data");
+                    Properties[(int) propIndex].Deserialize(deserializer);
+                    --serializedProps;
+                }
                 
             }
             catch (Exception e)
             {
                 Debug.LogError("Error deserializing properties for node " + Id + ": " + e);
                 // Attempt to recover by skipping the rest of the data
-                deserializer.stream.Position = streamPos + propsDataSize;
-                
+                #if UNITY_EDITOR
+                throw;
+                #endif
+            }
+            
+            try 
+            {
+                deserializer.SetDebugRegion("event count");
+                UInt64 eventCount = 0;
+                deserializer.Deserialize(ref eventCount);
+                while (eventCount > 0)
+                {
+                    --eventCount;
+                    deserializer.SetDebugRegion("event");
+                    UInt32 eventType = 0;
+                    deserializer.Deserialize(ref eventType);
+                    UInt64 eventArgSize = 0;
+                    deserializer.Deserialize(ref eventArgSize);
+                    var arg = new byte[eventArgSize];
+                    for (UInt64 i = 0; i < eventArgSize; i++)
+                        deserializer.Deserialize(ref arg[i]);
+
+                    if (Events.Count <= eventType)
+                    {
+                        Debug.LogError($"Event Index {eventType} out of range! Skipping event for {AssociatedObject.gameObject.name}.");
+                        continue;
+                    }
+                    Events[(int)eventType].DeserializeEvent(arg);
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Error deserializing events for node " + Id + ": " + e);
+                // Attempt to recover by skipping the rest of the data
                 #if UNITY_EDITOR
                 throw;
                 #endif
@@ -199,87 +247,77 @@ namespace Foundry.Networking
         public static void Skip(FoundryDeserializer deserializer)
         {
             deserializer.SetDebugRegion("Skip Node");
-            uint propsDataSize = 0;
+            UInt32 propsDataSize = 0;
             deserializer.Deserialize(ref propsDataSize);
             var streamPos = deserializer.stream.Position;
             deserializer.stream.Position = streamPos + propsDataSize;
         }
-        
-        
-        /// <summary>
-        /// Deserialize this node's properties from a stream
-        /// </summary>
-        /// <param name="node"></param>
-        /// <param name="deserializer"></param>
-        public void DeserializeProps(FoundryDeserializer deserializer)
+
+        public void Serialize(FoundrySerializer serializer)
         {
-            deserializer.SetDebugRegion("prop count");
-            Debug.Assert(Properties != null, "props must be set to deserialize them!");
-            uint serializedProps = 0;
-            deserializer.Deserialize(ref serializedProps);
-            
-            while (serializedProps > 0)
+            serializer.Serialize(in Id);
+            serializer.Serialize(in owner);
+            serializer.Serialize(in objectId);
+            byte db = (byte)disconnectBehaviour;
+            serializer.Serialize(in db);
+            UInt64 propCount = (UInt64)Properties.Count;
+            serializer.Serialize(in propCount);
+            foreach (var prop in Properties)
             {
-                uint propIndex = 0;
-                deserializer.SetDebugRegion("prop index");
-                deserializer.Deserialize(ref propIndex);
-                deserializer.SetDebugRegion("prop data");
-                Properties[(int) propIndex].Deserialize(deserializer);
-                --serializedProps;
+                var propSize = serializer.GetPlaceholder<UInt64>(0);
+                var propStart = (UInt64)serializer.stream.Position;
+                prop.Serialize(serializer);
+                var size = (UInt64)serializer.stream.Position - propStart;
+                propSize.WriteValue(size);
             }
         }
-
+        
         /// <summary>
-        /// Deserialized properties that have been cached on this node.
+        /// Deserialize this node's data from a stream, will stop before deserializing properties if properties are null.
         /// </summary>
-        public void ConsumeCachedProps()
+        /// <param name="deserializer"></param>
+        
+        public void Deserialize(FoundryDeserializer deserializer)
         {
-            Debug.Assert(Properties != null, "properties must be set before using cached property data!");
-            if (propsData == null)
-                return;
-            
-            FoundryDeserializer deserializer = new(propsData);
-            DeserializeProps(deserializer);
-            propsData = null;
+            deserializer.Deserialize(ref Id);
+            deserializer.Deserialize(ref owner);
+            deserializer.Deserialize(ref objectId);
+            byte db = 0;
+            deserializer.Deserialize(ref db);
+            disconnectBehaviour = (DisconnectBehaviour)db;
+            if(Properties != null)
+                DeserializeProperties(deserializer);
+        }
+        
+        public void DeserializeProperties(FoundryDeserializer deserializer)
+        {
+            Debug.Assert(Properties != null, "Properties must be set to deserialize an entity!");
+            UInt64 propCount = 0;
+            deserializer.Deserialize(ref propCount);
+            for (UInt64 i = 0; i < propCount; i++)
+            {
+                UInt64 propSize = 0;
+                deserializer.Deserialize(ref propSize);
+                Properties[(int)i].Deserialize(deserializer);
+            }
         }
     }
 
     public class NetworkState
     {
-        /// <summary>
-        /// Called when structure events such as adding or parenting nodes have occurred.
-        /// </summary>
-        public Action<NetworkState> OnStateStructureChanged;
-
-        /// <summary>
-        /// Called when a graph delta has been applied.
-        /// </summary>
-        public Action<NetworkState> OnStateUpdate;
+        public UInt64 localPlayerId;
         
-        public List<NetworkObjectState> Objects = new();
-        public Dictionary<NetworkId, NetworkObjectState> idToNode { get; } = new();
-
-
-        private INetworkProvider provider;
-        
-        private int localPlayerId => provider.LocalPlayerId;
-        private int graphAuthorityId => provider.GraphAuthorityId;
+        public List<NetworkEntity> Entities = new();
+        public Dictionary<NetworkId, NetworkEntity> idToNode { get; } = new();
 
         /// <summary>
         /// Local counter for id generation
         /// </summary>
-        private uint nextId = 0;
+        private UInt32 nextId = 0;
         
-        private Queue<StructureEvent> structureEvents = new();
-        
-        public NetworkState(INetworkProvider provider)
+        public NetworkState(UInt64 localPlayerId)
         {
-            this.provider = provider;
-        }
-        
-        private void RecordEvent(StructureEvent e)
-        {
-            structureEvents.Enqueue(e);
+            this.localPlayerId = localPlayerId;
         }
 
         public NetworkId NewId()
@@ -287,19 +325,14 @@ namespace Foundry.Networking
             //Use the local player id as part of the id to ensure uniqueness across the network, this will work as long as you have less than 65536 players or objects. (Which at that point, you have bigger problems)
             return new NetworkId(localPlayerId, nextId++);
         }
-
-        public NetworkObjectState CreateNode()
-        {
-            return AddNode(NewId());
-        }
         
-        public NetworkObjectState AddNode(NetworkId id, bool recordEvent = true)
+        public void AddEntity(NetworkEntity node)
         {
-            
-            return AddNode(id, localPlayerId, recordEvent);
+            idToNode[node.Id] = node;
+            Entities.Add(node);
         }
 
-        public NetworkObjectState AddNode(NetworkId id, int owner, bool recordEvent = true)
+        public NetworkEntity CreateEntity(NetworkId id, UInt32 owner)
         {
             Debug.Log($"Adding node {id} with owner {owner}");
             // If we receive a node with an id that already exists, this is most likely a duplicate message, so for now we will just ignore it.
@@ -309,36 +342,25 @@ namespace Foundry.Networking
                 return existing;
             }
             
-            // When we receive a node with an id greater than the next id that was created by a previous client with the same id, we need to update our next id to be greater than the received id to avoid id collisions.
-            if(id.Creator == localPlayerId && id.Index >= nextId)
-                nextId = id.Index + 1;
-                
-            
-            NetworkObjectState node = new NetworkObjectState
+            NetworkEntity node = new NetworkEntity
             {
                 Id = id,
                 owner = owner
             };
             
             idToNode[node.Id] = node;
-            Objects.Add(node);
-            
-            if(recordEvent)
-                RecordEvent(StructureEvent.Add(id, owner));
+            Entities.Add(node);
             return node;
         }
         
-        public void RemoveNode(NetworkId id, bool recordEvent = true)
+        public void RemoveNode(NetworkId id)
         {
             Debug.Assert(id.IsValid(), "Cannot remove node with invalid id!");
             var node = idToNode[id];
             
-            Objects.Remove(node);
+            Entities.Remove(node);
             idToNode.Remove(id);
             node.IsAlive = false;
-
-            if(recordEvent)
-                RecordEvent(StructureEvent.Remove(id));
         }
         
         /// <summary>
@@ -347,13 +369,10 @@ namespace Foundry.Networking
         /// <param name="id"></param>
         /// <param name="newOwner"></param>
         /// <param name="recordEvent"></param>
-        public void ChangeOwner(NetworkId id, int newOwner, bool recordEvent = true)
+        public void ChangeOwner(NetworkId id, UInt32 newOwner)
         {
             var node = idToNode[id];
             node.owner = newOwner;
-            
-            if(recordEvent)
-                RecordEvent(StructureEvent.ChangeOwner(id, newOwner));
         }
         
         /// <summary>
@@ -362,7 +381,7 @@ namespace Foundry.Networking
         /// <param name="id"></param>
         /// <param name="node"></param>
         /// <returns></returns>
-        public bool TryGetNode(NetworkId id, out NetworkObjectState node)
+        public bool TryGetNode(NetworkId id, out NetworkEntity node)
         {
             return idToNode.TryGetValue(id, out node);
         }
@@ -373,9 +392,9 @@ namespace Foundry.Networking
         /// <param name="client">Client to check</param>
         /// <param name="id">Id of the node in question</param>
         /// <returns></returns>
-        public bool ClientHasAuthority(int client, NetworkObjectState node)
+        public bool ClientHasAuthority(UInt64 client, NetworkEntity node)
         {
-            return node.owner == client || client == graphAuthorityId;
+            return node.owner == client || client == 0;
         }
 
         /// <summary>
@@ -384,97 +403,102 @@ namespace Foundry.Networking
         /// <param name="node">Node to begin at</param>
         /// <param name="serializer"></param>
         /// <param name="serializeAll"></param>
-        public void SerializeNode(NetworkObjectState node, FoundrySerializer serializer, bool serializeAll = false)
+        /// <returns>If this node was serialized</returns>
+        public bool SerializeEntityDelta(NetworkEntity node, FoundrySerializer serializer, bool serializeAll = false)
         {
             serializer.SetDebugRegion("Serialize Node");
-            if (node.Properties != null)
+            Debug.Assert(node.Properties != null, "Uncompleted entity was added to state!");
+            UInt64 dirtyProps = 0;
+            foreach (var prop in node.Properties)
             {
-                uint dirtyProps = 0;
+                if (prop.Dirty || serializeAll)
+                    ++dirtyProps;
+            }
+
+            if (dirtyProps > 0 || serializeAll)
+            {
+                serializer.SetDebugRegion("node id");
+                serializer.Serialize(in node.Id);
+                
+                serializer.SetDebugRegion("data size");
+                var dataSize = serializer.GetPlaceholder<UInt64>(0);
+                
+                var writeStart = serializer.stream.Position;
+                serializer.SetDebugRegion("prop count");
+                serializer.Serialize(in dirtyProps);
+                UInt32 propIndex = 0;
                 foreach (var prop in node.Properties)
                 {
                     if (prop.Dirty || serializeAll)
-                        ++dirtyProps;
-                }
-
-                if (dirtyProps > 0 || serializeAll)
-                {
-                    serializer.SetDebugRegion("node id");
-                    serializer.Serialize(in node.Id);
-                    serializer.SetDebugRegion("node owner");
-                    serializer.Serialize(in node.owner);
-                    
-                    serializer.SetDebugRegion("data size");
-                    var dataSize = serializer.GetPlaceholder<uint>(0);
-                    var writeStart = serializer.stream.Position;
-                    serializer.SetDebugRegion("prop count");
-                    serializer.Serialize(in dirtyProps);
-                    uint propIndex = 0;
-                    foreach (var prop in node.Properties)
                     {
-                        if (prop.Dirty || serializeAll)
-                        {
-                            serializer.SetDebugRegion("prop index");
-                            serializer.Serialize(in propIndex);
-                            serializer.SetDebugRegion("prop data");
-                            prop.Serialize(serializer, serializeAll);
-                            
-                            if(!serializeAll)
-                                prop.SetClean();
-                        }
+                        serializer.SetDebugRegion("prop index");
+                        serializer.Serialize(in propIndex);
 
-                        ++propIndex;
+                        var propSize = serializer.GetPlaceholder<UInt64>(0);
+                        UInt64 propStart = (UInt64)serializer.stream.Position;
+
+                        serializer.SetDebugRegion("prop data");
+                        prop.Serialize(serializer);
+                        propSize.WriteValue((UInt64)serializer.stream.Position - propStart);
+                        
+                        if(!serializeAll)
+                            prop.SetClean();
                     }
-
-                    serializer.SetDebugRegion("data size");
-                    dataSize.WriteValue((uint)(serializer.stream.Position - writeStart));
+                    ++propIndex;
                 }
+                
+                var eventCout = serializer.GetPlaceholder<UInt64>(0);
+                UInt32 eventIndex = 0;
+                UInt64 serializedEvents = 0;
+                foreach(var ev in node.Events)
+                {
+                    
+                    ++eventIndex;
+                    if(!ev.Dirty)
+                        continue;
+                    
+                    var eventQueue = ev.SerializeEventQueue();
+                    if (eventQueue.Count == 0)
+                        continue;
+                    
+                    while(eventQueue.Count > 0)
+                    {
+                        var eventArg = eventQueue.Dequeue();
+                        serializer.SetDebugRegion("event");
+                        serializer.Serialize(eventIndex - 1);
+                        serializer.Serialize((UInt64)eventArg.Length);
+                        foreach (var b in eventArg)
+                            serializer.Serialize(b);
+                        ++serializedEvents;
+                    }
+                }
+                eventCout.WriteValue(serializedEvents);
+
+                serializer.SetDebugRegion("data size");
+                dataSize.WriteValue((UInt64)(serializer.stream.Position - writeStart));
+                return true;
             }
-        }
 
-        /// <summary>
-        /// Create a delta containing the full state of all owned nodes in the state.
-        /// </summary>
-        public byte[] GenerateConstructionDelta()
-        {
-            MemoryStream stream = new();
-            FoundrySerializer serializer = new(stream);
-
-            SerializeStructure(serializer);
-
-            foreach (var node in Objects)
-            {
-                if(node.owner == localPlayerId)
-                    SerializeNode(node, serializer, true);
-            }
-
-            serializer.Dispose();
-            return stream.ToArray();
+            return false;
         }
 
         /// <summary>
         /// Generates a serialized delta of the network graph for all reliable properties.
         /// </summary>
         /// <returns>Delta of changed graph properties</returns>
-        public byte[] GenerateDelta()
+        public void GenerateEntitiesDelta(FoundrySerializer serializer)
         {
-            MemoryStream stream = new();
-            FoundrySerializer serializer = new(stream);
-
-            int eventCount = structureEvents.Count;
-            if(eventCount > 0)
-                Debug.Log("Serializing " + eventCount + " structure events.");
-            serializer.Serialize(in eventCount);
-            while (structureEvents.Count > 0)
-                structureEvents.Dequeue().Serialize(serializer);
-
-            foreach (var node in Objects)
+            UInt64 entitiesCount = 0;
+            var ecp = serializer.GetPlaceholder(entitiesCount);
+            foreach (var node in Entities)
             {
-                if(node.owner == localPlayerId)
-                    SerializeNode(node, serializer);
+                if (node.owner != localPlayerId)
+                    continue;
+            
+                if(SerializeEntityDelta(node, serializer))
+                    entitiesCount++;
             }
-
-            serializer.Dispose();
-            return stream.ToArray();
+            ecp.WriteValue(entitiesCount);
         }
 
         /// <summary>
@@ -484,122 +508,25 @@ namespace Foundry.Networking
         /// <param name="sender">the client that sent this delta, used for determining if the updates sent are authorized</param>
         /// <param name="clearOnFullGraph">If true, the graph will be cleared and rebuilt if a full graph is received</param>
         /// <returns>Returns true if the graph was applied successfully</returns>
-        public void ApplyDelta(byte[] delta, int sender)
+        public void ApplyDelta(FoundryDeserializer  deserializer)
         {
-            MemoryStream stream = new(delta);
-            FoundryDeserializer deserializer = new(stream);
-
-            int structureEventCount = 0;
-            deserializer.SetDebugRegion("event count");
-            deserializer.Deserialize(ref structureEventCount);
-
-            bool graphChanged = false;
-            while (structureEventCount > 0)
-            {
-                deserializer.SetDebugRegion("Deserialize event");
-                StructureEvent structureEvent = new();
-                deserializer.Deserialize(ref structureEvent);
-                switch (structureEvent.type)
-                {
-                    case StructureEvent.Type.Add:
-                        if (sender == structureEvent.secondaryData || sender == graphAuthorityId)
-                            AddNode(structureEvent.id, structureEvent.secondaryData, false);
-                        else
-                            Debug.LogError("Received add event for node " + structureEvent.id + " but it was ignored.");
-                        break;
-                    case StructureEvent.Type.Remove:
-                    {
-                        if (!idToNode.TryGetValue(structureEvent.id, out var node))
-                        {
-                            Debug.LogWarning("Node " + structureEvent.id + " Was not found!");
-                            continue;
-                        }
-                        if(ClientHasAuthority(sender, node))
-                            RemoveNode(structureEvent.id, false);
-                        else
-                            Debug.LogWarning("Received event for node " + structureEvent.id + " but it was ignored as the sender did not own it.");
-                        break;
-                    }
-                    case StructureEvent.Type.OwnerChange:
-                    {
-                        bool validEvent = false;
-                        if (idToNode.TryGetValue(structureEvent.id, out var node))
-                            validEvent =
-                                node.AssociatedObject?.VerifyIDChangeRequest(structureEvent.secondaryData) ??
-                                node.owner == sender;
-                        
-                        if(validEvent)
-                            ChangeOwner(structureEvent.id, structureEvent.secondaryData, false);
-                        else
-                            Debug.LogWarning("Received event for node " + structureEvent.id + " but it was ignored as the sender did not own it.");
-                        break;
-                    }
-                    default: // Should never happen
-                        Debug.LogError("Deserialized invalid structure event type! " + structureEvent.type);
-                        throw new ArgumentOutOfRangeException();
-                }
-                graphChanged = true;
-                --structureEventCount;
-            }
-
-            while (stream.Position < stream.Length)
+            deserializer.SetDebugRegion("Apply Delta Size");
+            UInt64 entitiesCount = 0;
+            deserializer.Deserialize(ref entitiesCount);
+            
+            for (UInt64 i = 0; i < entitiesCount; i++)
             {
                 deserializer.SetDebugRegion("Deserialize node");
                 NetworkId nodeId = NetworkId.Invalid;
                 deserializer.Deserialize(ref nodeId);
-                bool nodeFound = idToNode.TryGetValue(nodeId, out NetworkObjectState node);
+                bool nodeFound = idToNode.TryGetValue(nodeId, out NetworkEntity node);
                 if (!nodeFound)
                 {
-                    Debug.LogError("Unable to find node with id " + nodeId + " in state! Skipping this node and attempting to recover.");
-                    NetworkObjectState.Skip(deserializer);
-                    continue;
+                    Debug.LogError("Unable to find node with id " + nodeId + " in state! Skipping this update.");
+                    return;
                 }
-                if(ClientHasAuthority(sender, node))
-                    node.Deserialize(deserializer);
-                else
-                {
-                    NetworkObjectState.Skip(deserializer);
-                    Debug.LogError("Received delta for node " + nodeId + " but it was ignored as the sender did not own it.");
-                }
+                node.DeserializeDelta(deserializer);
             }
-            
-            deserializer.Dispose();
-            
-            
-            if (graphChanged)
-                OnStateStructureChanged?.Invoke(this);
-            
-            OnStateUpdate?.Invoke(this);
-            
-        }
-
-
-        /// <summary>
-        /// Serialize the structure of the graph as a sequence of node add events, so that if played back in order, the graph will be reconstructed.
-        /// </summary>
-        /// <param name="serializer"></param>
-        private void SerializeStructure(FoundrySerializer serializer)
-        {
-            List<StructureEvent> constructionEvents = new(Objects.Count);
-
-            foreach (var node in Objects)
-            {
-                if(node.owner == localPlayerId)
-                    constructionEvents.Add(StructureEvent.Add(node.Id, node.owner));
-            }
-
-
-            int eventCount = constructionEvents.Count;
-            serializer.SetDebugRegion("event count");
-            serializer.Serialize(in eventCount);
-
-            for (int i = 0; i < eventCount; i++)
-            {
-                serializer.SetDebugRegion("serialize event");
-                var e = constructionEvents[i];
-                serializer.Serialize(in e);
-            }
-
         }
     }
 

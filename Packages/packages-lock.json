@@ -16,14 +16,6 @@
       },
       "url": "http://unity.cyberhubxr.com"
     },
-    "com.cyberhub.foundry.networking.fusion": {
-      "version": "file:../../FusionNetworkProvider/Assets/Package",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.cyberhub.brane.core": "0.1.5-preview"
-      }
-    },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 0,

@@ -99,10 +99,10 @@ namespace Foundry {
         Collider[] collidersNonAlloc = new Collider[30];
 
         
-        public override void RegisterProperties(List<INetworkProperty> props) {
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events) {
             props.Add(networkedPlacedObject);
-            props.Add(OnPlaceNetworked);
-            props.Add(OnRemoveNetworked);
+            events.Add(OnPlaceNetworked);
+            events.Add(OnRemoveNetworked);
         }
         
         public override void OnConnected()

@@ -67,7 +67,7 @@ namespace Foundry
             speakerSource.volume = 1;
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
             props.Add(muted);
         }

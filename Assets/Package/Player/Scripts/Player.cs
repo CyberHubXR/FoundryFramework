@@ -82,7 +82,7 @@ namespace Foundry
 
         private NetworkProperty<Vector3> virtualVelocity = new(Vector3.zero);
         
-        public override void RegisterProperties(List<INetworkProperty> properties)
+        public override void RegisterProperties(List<INetworkProperty> properties, List<INetworkEvent> events)
         {
             properties.Add(trackingMode);
             properties.Add(enabledTrackers);

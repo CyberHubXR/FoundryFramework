@@ -12,6 +12,9 @@ namespace Foundry
     /// </summary>
     public class FoundryCoreConfig : BraneModuleConfig
     {
+        
+        public string runtimeNetworkingServerURI = "ws://localhost:3000";
+        
 #if UNITY_EDITOR
         public static FoundryCoreConfig GetAsset()
         {

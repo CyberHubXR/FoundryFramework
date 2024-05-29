@@ -48,9 +48,10 @@ namespace Foundry
             startObjectUp = transform.up;
         }
 
-        public override void RegisterProperties(List<INetworkProperty> props)
+        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
-            props.Add(leverEvent);
+            base.RegisterProperties(props, events);
+            events.Add(leverEvent);
         }
 
         public override void TouchUpdate(SpatialTouch spatialTouch)

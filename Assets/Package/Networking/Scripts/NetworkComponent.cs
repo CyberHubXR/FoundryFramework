@@ -15,11 +15,6 @@ namespace Foundry.Networking
         public NetworkObject Object { get; set; }
         
         /// <summary>
-        /// The active network provider.
-        /// </summary>
-        public INetworkProvider NetworkProvider => Object.NetworkProvider;
-        
-        /// <summary>
         /// If this component is owned by the local client, and thus can set properties.
         /// </summary>
         public bool IsOwner => !Object || Object.IsOwner;
@@ -28,7 +23,7 @@ namespace Foundry.Networking
         /// Called once on startup to register properties for this component.
         /// </summary>
         /// <param name="props"></param>
-        public virtual void RegisterProperties(List<INetworkProperty> props)
+        public virtual void RegisterProperties(List<INetworkProperty> props,  List<INetworkEvent> events)
         {
             
         }

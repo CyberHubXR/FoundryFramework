@@ -170,7 +170,13 @@ namespace Foundry.Core.Serialization
             else if (typeof(T) == typeof(ulong))
                 writer.Write((ulong)(object)value);
             else if (typeof(T) == typeof(string))
-                writer.Write((string)(object)value);
+            {
+                var str = ((string)(object)value);
+                UInt64 length = (UInt64)str.Length;
+                writer.Write(length);
+                for (int i = 0; i < str.Length; i++)
+                    writer.Write((byte)str[i]);
+            }
             else if (typeof(T).IsEnum)
                 writer.Write((int)(object)value);
             
@@ -390,7 +396,13 @@ namespace Foundry.Core.Serialization
             else if (typeof(T) == typeof(ulong))
                 value = (T)(object)reader.ReadUInt64();
             else if (typeof(T) == typeof(string))
-                value = (T)(object)reader.ReadString();
+            {
+                UInt64 length = reader.ReadUInt64();
+                StringBuilder sb = new StringBuilder();
+                for (UInt64 i = 0; i < length; i++)
+                    sb.Append((char)reader.ReadByte());
+                value = (T)(object)sb.ToString();
+            }
             else if (typeof(T).IsEnum)
                 value = (T)(object)reader.ReadInt32();
             

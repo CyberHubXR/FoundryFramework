@@ -56,11 +56,6 @@ namespace Foundry
                 {
                     optional = false,
                     ServiceInterface = typeof(IFoundryCameraManager)
-                },
-                new UsedService
-                {
-                    optional = false,
-                    ServiceInterface = typeof(INetworkProvider)
                 }
             };
         }

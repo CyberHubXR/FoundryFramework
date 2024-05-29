@@ -72,7 +72,7 @@ public class SpatialHandPoseDriver : NetworkComponent {
     bool wasHighlightPoseEnabled = true;
     int lastInputCount = 0;
 
-    public override void RegisterProperties(List<INetworkProperty> props)
+    public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
     {
         if(inputValues == null)
             inputValues = new NetworkArray<float>(inputPoses.Length);
