@@ -50,7 +50,10 @@ namespace Foundry
                 
                 // Remove the oldest events if we are over the max queue length
                 while (_callArgs.Count > _maxQueueLength)
+                {
+                    Debug.LogWarning("NetworkEvent queue exceeded max length, removing oldest event");
                     _callArgs.Dequeue();
+                }
             }
         }
         
@@ -92,8 +95,12 @@ namespace Foundry
             serializer.Serialize(arg);
             _callArgs.Enqueue(stream.GetBuffer());
 
-            if (_callArgs.Count > _maxQueueLength)
+            // Remove the oldest events if we are over the max queue length
+            while (_callArgs.Count > _maxQueueLength)
+            {
+                Debug.LogWarning("NetworkEvent queue exceeded max length, removing oldest event");
                 _callArgs.Dequeue();
+            }
         }
         
         /// <summary>

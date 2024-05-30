@@ -20,10 +20,7 @@ namespace Foundry
         public float leverMaxAngle = 90F;
         public float leverMinAngle = -90F;
         public float leverHingeFriction = 10F;
-        public bool positiveOnly;
-
-        [Header("Output")]
-        public NetworkEvent<float> leverEvent; 
+        public bool positiveOnly; 
 
         private Vector3 leverPivotWorld;
         private Vector3 startObjectUp;
@@ -46,12 +43,6 @@ namespace Foundry
 
             spatialInputManager = SpatialInputManager.instance;
             startObjectUp = transform.up;
-        }
-
-        public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
-        {
-            base.RegisterProperties(props, events);
-            events.Add(leverEvent);
         }
 
         public override void TouchUpdate(SpatialTouch spatialTouch)
@@ -100,7 +91,6 @@ namespace Foundry
             }
 
             leverTurnAmount = ComputeLeverAngle();
-            leverEvent.Invoke(leverTurnAmount);
         }
 
         private void OnDrawGizmosSelected()

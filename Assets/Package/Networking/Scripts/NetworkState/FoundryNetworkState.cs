@@ -414,8 +414,18 @@ namespace Foundry.Networking
                 if (prop.Dirty || serializeAll)
                     ++dirtyProps;
             }
+            
+            bool unsentEvents = false;
+            foreach (var ev in node.Events)
+            {
+                if (ev.Dirty)
+                {
+                    unsentEvents = true;
+                    break;
+                }
+            }
 
-            if (dirtyProps > 0 || serializeAll)
+            if (dirtyProps > 0 || serializeAll || unsentEvents)
             {
                 serializer.SetDebugRegion("node id");
                 serializer.Serialize(in node.Id);
