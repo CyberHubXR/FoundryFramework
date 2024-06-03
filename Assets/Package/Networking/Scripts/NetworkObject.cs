@@ -370,7 +370,7 @@ namespace Foundry.Networking
             
             EditorGUI.indentLevel = 0;
             EditorGUI.EndDisabledGroup();
-            EditorGUILayout.TextField("Guid", networkObject.guid);
+            networkObject.guid = EditorGUILayout.TextField("Guid", networkObject.guid);
             
             if (Application.isPlaying && NetworkManager.instance != null)
             {

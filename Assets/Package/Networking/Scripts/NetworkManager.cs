@@ -391,8 +391,8 @@ namespace Foundry.Networking
                     case SpawnMethod.Random:
                         if (spawnPoints.Length > 1)
                         {
-                            player = Spawn(playerPrefab, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].position,
-                                spawnPoints[Random.Range(0, spawnPoints.Length - 1)].rotation);
+                            var point = spawnPoints[Random.Range(0, spawnPoints.Length - 1)];
+                            player = Spawn(playerPrefab, point.position, point.rotation);
                         }
                         else
                         {
