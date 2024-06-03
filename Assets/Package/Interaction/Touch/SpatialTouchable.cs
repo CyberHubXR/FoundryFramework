@@ -32,7 +32,7 @@ namespace Foundry
 
         public virtual void StartTouch(SpatialTouch spatialTouch) 
         {
-            if (takeOwnershipOnTouch && !Object.IsOwner)
+            if (takeOwnershipOnTouch && !IsOwner)
             {
                 var playerObject = spatialTouch.SpatialHand.Object;
                 if (playerObject.Owner == NetworkManager.State.localPlayerId)
