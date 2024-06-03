@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using Foundry.Account;
 using Foundry.Networking;
 using System.Collections.Generic;
 
@@ -64,12 +62,16 @@ namespace Foundry.Account
             avatarIndex = avatarID;
         }
 
+        private GameObject avatarInstance;
         void SpawnSelectedAvatar(int selected)
         {
             if (spawnBaseAvatar) return;
 
+            if (avatarInstance)
+                Destroy(avatarInstance);
+            
             //Spawn That Avatar Under Our Holder
-            GameObject avatarInstance = Instantiate(avatars[selected], avatarHolder);
+            avatarInstance = Instantiate(avatars[selected], avatarHolder);
             avatarInstance.transform.localPosition = Vector3.zero;
             //Apply Needed Scripts To Configure Avatar
             avatarInstance.AddComponent<AvatarReskin>();
