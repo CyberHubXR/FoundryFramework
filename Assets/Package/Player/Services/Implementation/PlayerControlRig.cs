@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Foundry.Core.Serialization;
 using UnityEngine;
 
@@ -27,19 +28,38 @@ namespace Foundry
         public Vector3 translation;
         public Quaternion rotation;
         public bool enabled;
-        
-        public void Serialize(FoundrySerializer serializer)
-        {
-            serializer.Serialize(in translation);
-            serializer.Serialize(in rotation);
-            serializer.Serialize(in enabled);
-        }
 
-        public void Deserialize(FoundryDeserializer deserializer)
+        public IFoundrySerializer GetSerializer()
         {
-            deserializer.Deserialize(ref translation);
-            deserializer.Deserialize(ref rotation);
-            deserializer.Deserialize(ref enabled);
+            return new TrackerPosSerializer();
+        }
+        
+        private struct TrackerPosSerializer : IFoundrySerializer
+        {
+            public void Serialize(in object value, BinaryWriter writer)
+            {
+                var pos = (TrackerPos)value;
+                var v3s = new Vector3Serializer();
+                var qs = new QuaternionSerializer();
+                v3s.Serialize(pos.translation, writer);
+                qs.Serialize(pos.rotation, writer);
+                writer.Write(pos.enabled);
+            }
+
+            public void Deserialize(ref object value, BinaryReader reader)
+            {
+                var pos = (TrackerPos)value;
+                var v3s = new Vector3Serializer();
+                var qs = new QuaternionSerializer();
+                object v = pos.translation;
+                v3s.Deserialize(ref v, reader);
+                pos.translation = (Vector3)v;
+                object r = pos.rotation;
+                qs.Deserialize(ref r, reader);
+                pos.rotation = (Quaternion)r;
+                pos.enabled = reader.ReadBoolean();
+                value = pos;
+            }
         }
     }
 }

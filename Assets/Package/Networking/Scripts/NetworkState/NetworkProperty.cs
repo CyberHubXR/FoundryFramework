@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Foundry.Core.Serialization;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace Foundry.Networking
         [SerializeField]
         private T value;
         private bool dirty;
+        private IFoundrySerializer tSerializer;
         
         /// <summary>
         /// Invoked when the value of this property changes, either locally or remotely.
@@ -37,11 +39,25 @@ namespace Foundry.Networking
                 }
             }
         }
+
+        public NetworkProperty()
+        {
+            if (value is IFoundrySerializable serializable)
+                tSerializer = serializable.GetSerializer();
+            else
+                tSerializer =  FoundrySerializerFinder.GetSerializer(typeof(T));
+            Debug.Assert(tSerializer != null, $"Serializer for {typeof(T)} was null");
+        }
         
         public NetworkProperty(T defaultValue)
         {
             value = defaultValue;
-            OnValueChanged += (value) => OnChanged?.Invoke();
+            if (defaultValue is IFoundrySerializable serializable)
+                tSerializer = serializable.GetSerializer();
+            else
+                tSerializer =  FoundrySerializerFinder.GetSerializer(typeof(T));
+            Debug.Assert(tSerializer != null, $"Serializer for {typeof(T)} was null");
+            OnValueChanged += _ => OnChanged?.Invoke();
         }
 
         public bool Dirty => dirty;
@@ -55,25 +71,34 @@ namespace Foundry.Networking
         {
             dirty = false;
         }
-        
-        public void Serialize(FoundrySerializer serializer)
+        private struct Serializer : IFoundrySerializer
         {
-            serializer.SetDebugRegion($"NetworkProperty<{typeof(T).Name}>");
-            serializer.Serialize(in value);
+            public void Serialize(in object value, BinaryWriter writer)
+            {
+                var prop = (NetworkProperty<T>) value;
+                prop.tSerializer.Serialize(prop.value, writer);
+            }
+
+            public void Deserialize(ref object value, BinaryReader reader)
+            {
+                var prop = (NetworkProperty<T>) value;
+                object obj = prop.value;
+                prop.tSerializer.Deserialize(ref obj, reader);
+                prop.value = (T) obj;
+                try
+                {
+                    prop.OnValueChanged?.Invoke(prop.value);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogException(e);
+                }
+            }
         }
 
-        public void Deserialize(FoundryDeserializer deserializer)
+        public IFoundrySerializer GetSerializer()
         {
-            deserializer.SetDebugRegion($"NetworkProperty<{typeof(T).Name}>");
-            deserializer.Deserialize(ref value);
-            try
-            {
-                OnValueChanged?.Invoke(value);
-            }
-            catch (Exception e)
-            {
-                Debug.LogException(e);
-            }
+            return new Serializer();
         }
 
         public override string ToString()

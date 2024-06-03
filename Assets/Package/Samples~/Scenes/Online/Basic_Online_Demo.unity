@@ -1730,6 +1730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FoundryPersistent
       objectReference: {fileID: 0}
+    - target: {fileID: 2749485335710961735, guid: 60d7a93c17943204388265df9708976f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

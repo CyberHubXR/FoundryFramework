@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using Foundry.Core.Serialization;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -12,16 +13,35 @@ namespace Foundry
     {
         public Vector3 pos;
         public Quaternion rot;
-        public void Serialize(FoundrySerializer serializer)
+
+        public IFoundrySerializer GetSerializer()
         {
-            serializer.Serialize(in pos);
-            serializer.Serialize(in rot);
+            return new Serializer();
         }
 
-        public void Deserialize(FoundryDeserializer deserializer)
+        private struct Serializer : IFoundrySerializer
         {
-            deserializer.Deserialize(ref pos);
-            deserializer.Deserialize(ref rot);
+            public void Serialize(in object value, BinaryWriter writer)
+            {
+                var posRot = (PosRot)value;
+                var v3s = new Vector3Serializer();
+                var qs = new QuaternionSerializer();
+                v3s.Serialize(posRot.pos, writer);
+                qs.Serialize(posRot.rot, writer);
+            }
+
+            public void Deserialize(ref object value, BinaryReader reader)
+            {
+                var posRot = (PosRot)value;
+                var v3s = new Vector3Serializer();
+                var qs = new QuaternionSerializer();
+                object v = posRot.pos;
+                v3s.Deserialize(ref v, reader);
+                posRot.pos = (Vector3)v;
+                object r = posRot.rot;
+                qs.Deserialize(ref r, reader);
+                posRot.rot = (Quaternion)r;
+            }
         }
     }
 

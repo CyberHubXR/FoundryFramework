@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Specialized;
+using System.IO;
 using Foundry.Core.Serialization;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ namespace Foundry.Networking
         // Serializable only for debugging purposes
         [SerializeField]
         private T[] data;
+        
+        private IFoundrySerializer tSerializer;
         
         private uint dirtyItems;
         private BitVector32[] dirtyFlags;
@@ -28,7 +31,15 @@ namespace Foundry.Networking
         /// <param name="size"></param>
         public NetworkArray(int size)
         {
+            Debug.Assert(size > 0, "Cannot create a NetworkArray with a size of 0");
             data = new T[size];
+            
+            if (data[0] is IFoundrySerializable d)
+                tSerializer = d.GetSerializer();
+            else 
+                tSerializer = FoundrySerializerFinder.GetSerializer(typeof(T));
+            Debug.Assert(tSerializer != null, $"Serializer for {typeof(T)} was null");
+            
             dirtyFlags = new BitVector32[size / 32 + 1];
             Array.Fill(dirtyFlags, new BitVector32());
             dirtyItems = 0;
@@ -101,23 +112,34 @@ namespace Foundry.Networking
             return dirtyFlags[vectorIndex][bitmask];
         }
 
-        public void Serialize(FoundrySerializer serializer)
+        public IFoundrySerializer GetSerializer()
         {
-            serializer.SetDebugRegion($"NetworkArray<{typeof(T).Name}>");
-            uint items = (uint)data.Length;
-            serializer.Serialize(in items);
-            
-            for (int i = 0; i < data.Length; i++)
-                serializer.Serialize(in data[i]);
+            return new Serializer();
         }
 
-        public void Deserialize(FoundryDeserializer deserializer)
+        private struct Serializer: IFoundrySerializer
         {
-            deserializer.SetDebugRegion($"NetworkArray<{typeof(T).Name}>");
-            uint length = 0;
-            deserializer.Deserialize<uint>(ref length);
-            for (uint i = 0; i < length; i++)
-                deserializer.Deserialize(ref data[i]);
+            public void Serialize(in object obj, BinaryWriter writer)
+            {
+                var array = (NetworkArray<T>)obj;
+                uint items = (uint)array.data.Length;
+                writer.Write(items);
+            
+                for (int i = 0; i < array.data.Length; i++)
+                    array.tSerializer.Serialize(array.data[i], writer);
+            }
+
+            public void Deserialize(ref object obj, BinaryReader reader)
+            {
+                var array = (NetworkArray<T>)obj;
+                uint length = reader.ReadUInt32();
+                for (uint i = 0; i < length; i++)
+                {
+                    object v = array.data[i];
+                    array.tSerializer.Deserialize(ref v, reader);
+                    array.data[i] = (T)v;
+                }
+            }
         }
         
         public void Set(int index, T value)

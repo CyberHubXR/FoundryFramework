@@ -38,13 +38,13 @@ namespace Foundry
                 if (playerObject.Owner == NetworkManager.State.localPlayerId)
                     Object.RequestOwnership();
             }
-            if (Object.IsOwner)
+            if (IsOwner)
                 OnStartTouch.Invoke(isTouching);
         }
 
         public virtual void StopTouch(SpatialTouch spatialTouch)
         {
-            if (!Object.IsOwner)
+            if (!IsOwner)
                 return;
             touchTriggerPercent = 0;
             OnStopTouch.Invoke(isTouching);
@@ -53,7 +53,7 @@ namespace Foundry
 
         public virtual void TouchStay(SpatialTouch spatialTouch)
         {
-            if (!Object.IsOwner)
+            if (!IsOwner)
                 return;
             OnTouchStay.Invoke(isTouchStay);
         }

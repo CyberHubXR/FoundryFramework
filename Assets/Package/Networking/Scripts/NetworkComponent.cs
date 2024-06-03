@@ -12,7 +12,18 @@ namespace Foundry.Networking
         /// <summary>
         /// The network object that owns this component.
         /// </summary>
-        public NetworkObject Object { get; set; }
+        public NetworkObject Object {
+            get
+            {
+                if (!_object)
+                    _object = GetComponentInParent<NetworkObject>();
+                return _object;
+            }
+           
+            internal set => _object = value;
+        }
+        
+        private NetworkObject _object;
         
         /// <summary>
         /// If this component is owned by the local client, and thus can set properties.

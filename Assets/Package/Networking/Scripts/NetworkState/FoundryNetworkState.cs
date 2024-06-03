@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Foundry.Core.Serialization;
-using UnityEditor;
 using UnityEngine;
 
 
@@ -29,17 +28,10 @@ namespace Foundry.Networking
         public void SetClean();
 
         /// <summary>
-        /// Write contained data out to the stream to be synced across the network.
+        /// Get the serializer for this property. This is used to serialize and deserialize the property.
+        /// The serializer will be passed this property to serialize and deserialize.
         /// </summary>
-        /// <param name="serializer"></param>
-        /// <param name="full">If true, serialize all data, otherwise only serialize dirty data.</param>
-        public void Serialize(FoundrySerializer serializer);
-
-        /// <summary>
-        /// Read data received from the network into this property.
-        /// </summary>
-        /// <param name="deserializer"></param>
-        public void Deserialize(FoundryDeserializer deserializer);
+        public IFoundrySerializer GetSerializer();
 
         /// <summary>
         /// Should print a useful string representation of this property for debugging.
@@ -56,10 +48,11 @@ namespace Foundry.Networking
 
     public interface INetworkEvent
     {
-        public bool Dirty { get; }
-        public Queue<byte[]> SerializeEventQueue();
+        public int EventCount { get; }
+        public IFoundrySerializer ArgSerializer { get; }
+        public bool TryDequeue(out object eventArgs);
 
-        public void DeserializeEvent(byte[] args);
+        public void DeserializeEvent(BinaryReader reader);
     }
 
     [Serializable]
@@ -103,15 +96,23 @@ namespace Foundry.Networking
                 return "NetworkId(Invalid)";
             return $"NetworkId(Created By: {Creator} ID = {Index}, Raw = {id})";
         }
-
-        public void Serialize(FoundrySerializer serializer)
+        
+        private struct Serializer: IFoundrySerializer
         {
-            serializer.Serialize(in id);
+            public void Serialize(in object id, BinaryWriter writer)
+            {
+                writer.Write(((NetworkId)id).id);
+            }
+
+            public void Deserialize(ref object id, BinaryReader reader)
+            {
+                id = new NetworkId(reader.ReadUInt64());
+            }
         }
 
-        public void Deserialize(FoundryDeserializer deserializer)
+        public IFoundrySerializer GetSerializer()
         {
-            deserializer.Deserialize(ref id);
+            return new Serializer();
         }
 
         public static bool operator ==(NetworkId a, NetworkId b)
@@ -137,7 +138,7 @@ namespace Foundry.Networking
         /// <summary>
         /// The prefab or scene object linked to this entity.
         /// </summary>
-        public String objectId;
+        public string objectId;
         
         /// <summary>
         /// What happens with this object is orphaned from it's owner.
@@ -148,6 +149,7 @@ namespace Foundry.Networking
         /// All the networked properties of this node. Is null if they have not been set yet.
         /// </summary>
         public List<INetworkProperty> Properties;
+        public List<IFoundrySerializer> PropertySerializers;
         
         /// <summary>
         /// All the networked events of this node.
@@ -170,28 +172,21 @@ namespace Foundry.Networking
         /// Deserialize this node's data from a stream
         /// </summary>
         /// <param name="deserializer"></param>
-        public void DeserializeDelta(FoundryDeserializer deserializer)
+        public void DeserializeDelta(BinaryReader reader)
         {
             Debug.Assert(Properties != null, "Properties must be set!");
             try
             {
-                deserializer.SetDebugRegion("prop count");
                 Debug.Assert(Properties != null, "props must be set to deserialize them!");
-                UInt64 serializedProps = 0;
-                deserializer.Deserialize(ref serializedProps);
+                UInt64 serializedProps = reader.ReadUInt64();
             
                 while (serializedProps > 0)
                 {
-                    UInt32 propIndex = 0;
-                    deserializer.SetDebugRegion("prop index");
-                    deserializer.Deserialize(ref propIndex);
-
-                    UInt64 propSize = 0;
-                    deserializer.SetDebugRegion("prop size");
-                    deserializer.Deserialize(ref propSize);
-                    
-                    deserializer.SetDebugRegion("prop data");
-                    Properties[(int) propIndex].Deserialize(deserializer);
+                    UInt32 propIndex = reader.ReadUInt32();
+                    UInt64 propSize = reader.ReadUInt64(); // This is required for the backend, but we don't need it here.
+                    object prop = Properties[(int) propIndex];
+                    PropertySerializers[(int) propIndex].Deserialize(ref prop, reader);
+                    Properties[(int) propIndex] = (INetworkProperty)prop;
                     --serializedProps;
                 }
                 
@@ -207,27 +202,21 @@ namespace Foundry.Networking
             
             try 
             {
-                deserializer.SetDebugRegion("event count");
-                UInt64 eventCount = 0;
-                deserializer.Deserialize(ref eventCount);
+                UInt64 eventCount = reader.ReadUInt64();
                 while (eventCount > 0)
                 {
                     --eventCount;
-                    deserializer.SetDebugRegion("event");
-                    UInt32 eventType = 0;
-                    deserializer.Deserialize(ref eventType);
-                    UInt64 eventArgSize = 0;
-                    deserializer.Deserialize(ref eventArgSize);
-                    var arg = new byte[eventArgSize];
-                    for (UInt64 i = 0; i < eventArgSize; i++)
-                        deserializer.Deserialize(ref arg[i]);
+                    UInt32 eventType = reader.ReadUInt32();
+                    Int64 eventArgSize = reader.ReadInt64();
 
                     if (Events.Count <= eventType)
                     {
                         Debug.LogError($"Event Index {eventType} out of range! Skipping event for {AssociatedObject.gameObject.name}.");
+                        reader.BaseStream.Position += eventArgSize;
                         continue;
                     }
-                    Events[(int)eventType].DeserializeEvent(arg);
+                    
+                    Events[(int)eventType].DeserializeEvent(reader);
                 }
             }
             catch (Exception e)
@@ -240,34 +229,22 @@ namespace Foundry.Networking
             }
         }
 
-        /// <summary>
-        /// Skip deserializing this node's data from a stream, used when we want to ignore an update to this node.
-        /// </summary>
-        /// <param name="deserializer"></param>
-        public static void Skip(FoundryDeserializer deserializer)
+        public void Serialize(BinaryWriter writer)
         {
-            deserializer.SetDebugRegion("Skip Node");
-            UInt32 propsDataSize = 0;
-            deserializer.Deserialize(ref propsDataSize);
-            var streamPos = deserializer.stream.Position;
-            deserializer.stream.Position = streamPos + propsDataSize;
-        }
-
-        public void Serialize(FoundrySerializer serializer)
-        {
-            serializer.Serialize(in Id);
-            serializer.Serialize(in owner);
-            serializer.Serialize(in objectId);
+            writer.Write(Id.Id);
+            writer.Write(owner);
+            new StringSerializer().Serialize(objectId, writer);
             byte db = (byte)disconnectBehaviour;
-            serializer.Serialize(in db);
+            writer.Write(db);
             UInt64 propCount = (UInt64)Properties.Count;
-            serializer.Serialize(in propCount);
+            writer.Write(propCount);
+            int index = 0;
             foreach (var prop in Properties)
             {
-                var propSize = serializer.GetPlaceholder<UInt64>(0);
-                var propStart = (UInt64)serializer.stream.Position;
-                prop.Serialize(serializer);
-                var size = (UInt64)serializer.stream.Position - propStart;
+                var propSize = new UInt64Placehodler(writer);
+                var propStart = (UInt64)writer.BaseStream.Position;
+                PropertySerializers[index++].Serialize(prop, writer);
+                var size = (UInt64)writer.BaseStream.Position - propStart;
                 propSize.WriteValue(size);
             }
         }
@@ -277,28 +254,31 @@ namespace Foundry.Networking
         /// </summary>
         /// <param name="deserializer"></param>
         
-        public void Deserialize(FoundryDeserializer deserializer)
+        public void Deserialize(BinaryReader reader)
         {
-            deserializer.Deserialize(ref Id);
-            deserializer.Deserialize(ref owner);
-            deserializer.Deserialize(ref objectId);
-            byte db = 0;
-            deserializer.Deserialize(ref db);
+            Id = new NetworkId(reader.ReadUInt64());
+            owner = reader.ReadUInt64();
+            
+            object objectId = this.objectId;
+            new StringSerializer().Deserialize(ref objectId, reader);
+            this.objectId = (string)objectId;
+            
+            byte db = reader.ReadByte();
             disconnectBehaviour = (DisconnectBehaviour)db;
             if(Properties != null)
-                DeserializeProperties(deserializer);
+                DeserializeProperties(reader);
         }
         
-        public void DeserializeProperties(FoundryDeserializer deserializer)
+        public void DeserializeProperties(BinaryReader reader)
         {
             Debug.Assert(Properties != null, "Properties must be set to deserialize an entity!");
-            UInt64 propCount = 0;
-            deserializer.Deserialize(ref propCount);
+            UInt64 propCount = reader.ReadUInt64();
             for (UInt64 i = 0; i < propCount; i++)
             {
-                UInt64 propSize = 0;
-                deserializer.Deserialize(ref propSize);
-                Properties[(int)i].Deserialize(deserializer);
+                UInt64 propSize = reader.ReadUInt64();
+                object prop = Properties[(int)i];
+                PropertySerializers[(int)i].Deserialize(ref prop, reader);
+                Properties[(int)i] = (INetworkProperty)prop;
             }
         }
     }
@@ -404,9 +384,8 @@ namespace Foundry.Networking
         /// <param name="serializer"></param>
         /// <param name="serializeAll"></param>
         /// <returns>If this node was serialized</returns>
-        public bool SerializeEntityDelta(NetworkEntity node, FoundrySerializer serializer, bool serializeAll = false)
+        public bool SerializeEntityDelta(NetworkEntity node, BinaryWriter writer, bool serializeAll = false)
         {
-            serializer.SetDebugRegion("Serialize Node");
             Debug.Assert(node.Properties != null, "Uncompleted entity was added to state!");
             UInt64 dirtyProps = 0;
             foreach (var prop in node.Properties)
@@ -418,7 +397,7 @@ namespace Foundry.Networking
             bool unsentEvents = false;
             foreach (var ev in node.Events)
             {
-                if (ev.Dirty)
+                if (ev.EventCount > 0)
                 {
                     unsentEvents = true;
                     break;
@@ -427,29 +406,23 @@ namespace Foundry.Networking
 
             if (dirtyProps > 0 || serializeAll || unsentEvents)
             {
-                serializer.SetDebugRegion("node id");
-                serializer.Serialize(in node.Id);
+                writer.Write(node.Id.Id);
                 
-                serializer.SetDebugRegion("data size");
-                var dataSize = serializer.GetPlaceholder<UInt64>(0);
+                var dataSize = new UInt64Placehodler(writer);
                 
-                var writeStart = serializer.stream.Position;
-                serializer.SetDebugRegion("prop count");
-                serializer.Serialize(in dirtyProps);
+                var writeStart = writer.BaseStream.Position;
+                writer.Write(dirtyProps);
                 UInt32 propIndex = 0;
                 foreach (var prop in node.Properties)
                 {
                     if (prop.Dirty || serializeAll)
                     {
-                        serializer.SetDebugRegion("prop index");
-                        serializer.Serialize(in propIndex);
+                        writer.Write(propIndex);
 
-                        var propSize = serializer.GetPlaceholder<UInt64>(0);
-                        UInt64 propStart = (UInt64)serializer.stream.Position;
-
-                        serializer.SetDebugRegion("prop data");
-                        prop.Serialize(serializer);
-                        propSize.WriteValue((UInt64)serializer.stream.Position - propStart);
+                        var propSize = new UInt64Placehodler(writer);
+                        UInt64 propStart = (UInt64)writer.BaseStream.Position;
+                        node.PropertySerializers[(int)propIndex].Serialize(prop, writer);
+                        propSize.WriteValue((UInt64)writer.BaseStream.Position - propStart);
                         
                         if(!serializeAll)
                             prop.SetClean();
@@ -457,35 +430,29 @@ namespace Foundry.Networking
                     ++propIndex;
                 }
                 
-                var eventCout = serializer.GetPlaceholder<UInt64>(0);
+                var eventCout = new UInt64Placehodler(writer);
                 UInt32 eventIndex = 0;
                 UInt64 serializedEvents = 0;
                 foreach(var ev in node.Events)
                 {
                     
                     ++eventIndex;
-                    if(!ev.Dirty)
+                    if (ev.EventCount == 0)
                         continue;
                     
-                    var eventQueue = ev.SerializeEventQueue();
-                    if (eventQueue.Count == 0)
-                        continue;
-                    
-                    while(eventQueue.Count > 0)
+                    while(ev.TryDequeue(out object args))
                     {
-                        var eventArg = eventQueue.Dequeue();
-                        serializer.SetDebugRegion("event");
-                        serializer.Serialize(eventIndex - 1);
-                        serializer.Serialize((UInt64)eventArg.Length);
-                        foreach (var b in eventArg)
-                            serializer.Serialize(b);
+                        writer.Write(eventIndex - 1);
+                        var argSize = new UInt64Placehodler(writer);
+                        var argStart = (UInt64)writer.BaseStream.Position;
+                        ev.ArgSerializer.Serialize(args, writer);
+                        argSize.WriteValue((UInt64)writer.BaseStream.Position - argStart);
                         ++serializedEvents;
                     }
                 }
                 eventCout.WriteValue(serializedEvents);
 
-                serializer.SetDebugRegion("data size");
-                dataSize.WriteValue((UInt64)(serializer.stream.Position - writeStart));
+                dataSize.WriteValue((UInt64)(writer.BaseStream.Position - writeStart));
                 return true;
             }
 
@@ -496,16 +463,16 @@ namespace Foundry.Networking
         /// Generates a serialized delta of the network graph for all reliable properties.
         /// </summary>
         /// <returns>Delta of changed graph properties</returns>
-        public void GenerateEntitiesDelta(FoundrySerializer serializer)
+        public void GenerateEntitiesDelta(BinaryWriter writer)
         {
             UInt64 entitiesCount = 0;
-            var ecp = serializer.GetPlaceholder(entitiesCount);
+            var ecp = new UInt64Placehodler(writer);
             foreach (var node in Entities)
             {
                 if (node.owner != localPlayerId)
                     continue;
             
-                if(SerializeEntityDelta(node, serializer))
+                if(SerializeEntityDelta(node, writer))
                     entitiesCount++;
             }
             ecp.WriteValue(entitiesCount);
@@ -518,24 +485,20 @@ namespace Foundry.Networking
         /// <param name="sender">the client that sent this delta, used for determining if the updates sent are authorized</param>
         /// <param name="clearOnFullGraph">If true, the graph will be cleared and rebuilt if a full graph is received</param>
         /// <returns>Returns true if the graph was applied successfully</returns>
-        public void ApplyDelta(FoundryDeserializer  deserializer)
+        public void ApplyDelta(BinaryReader reader)
         {
-            deserializer.SetDebugRegion("Apply Delta Size");
-            UInt64 entitiesCount = 0;
-            deserializer.Deserialize(ref entitiesCount);
+            UInt64 entitiesCount = reader.ReadUInt64();
             
             for (UInt64 i = 0; i < entitiesCount; i++)
             {
-                deserializer.SetDebugRegion("Deserialize node");
-                NetworkId nodeId = NetworkId.Invalid;
-                deserializer.Deserialize(ref nodeId);
+                NetworkId nodeId = new NetworkId(reader.ReadUInt64());
                 bool nodeFound = idToNode.TryGetValue(nodeId, out NetworkEntity node);
                 if (!nodeFound)
                 {
                     Debug.LogError("Unable to find node with id " + nodeId + " in state! Skipping this update.");
                     return;
                 }
-                node.DeserializeDelta(deserializer);
+                node.DeserializeDelta(reader);
             }
         }
     }

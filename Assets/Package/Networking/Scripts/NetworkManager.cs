@@ -140,7 +140,7 @@ namespace Foundry.Networking
             var lastFrameTime = Time.fixedUnscaledTimeAsDouble;
             while (IsSessionConnected)
             {
-                yield return new WaitUntil(() => Time.fixedUnscaledTimeAsDouble - lastFrameTime > 1f / 60f);
+                yield return new WaitUntil(() => Time.fixedUnscaledTimeAsDouble - lastFrameTime > 1f / 30f);
                 NetworkMessage incoming = socket.ReceiveMessage();
                 while (incoming != null)
                 {
@@ -150,25 +150,21 @@ namespace Foundry.Networking
                         {
                             case "spawn-entity":
                             {
-                                using var deserializer = new FoundryDeserializer(incoming.Stream);
-                                SpawnRemoteObject(deserializer);
-                                deserializer.Dispose();
+                                using var reader = incoming.AsReader();
+                                SpawnRemoteObject(reader);
                                 break;
                             }
                             case "delta-update-entities":
                             {
-                                using var deserializer = new FoundryDeserializer(incoming.Stream);
-                                State.ApplyDelta(deserializer);
-                                deserializer.Dispose();
+                                using var reader = incoming.AsReader();
+                                State.ApplyDelta(reader);
                                 break;
                             }
                             case "change-entity-owner":
                             {
-                                using var deserializer = new FoundryDeserializer(incoming.Stream);
-                                NetworkId id = new();
-                                UInt64 newOwner = 0;
-                                deserializer.Deserialize(ref id);
-                                deserializer.Deserialize(ref newOwner);
+                                using var reader = incoming.AsReader();
+                                NetworkId id = new NetworkId(reader.ReadUInt64());
+                                UInt64 newOwner = reader.ReadUInt64();
                                 if (State.idToNode.TryGetValue(id, out var e))
                                 {
                                     e.owner = newOwner;
@@ -182,7 +178,7 @@ namespace Foundry.Networking
                                     }
                                     
                                     if (resetProps)
-                                        e.DeserializeProperties(deserializer);
+                                        e.DeserializeProperties(reader);
                                 }
                                 else
                                 {
@@ -193,14 +189,12 @@ namespace Foundry.Networking
                             }
                             case "request-entity-ownership":
                             {
-                                using var deserializer = new FoundryDeserializer(incoming.Stream);
-                                NetworkId id = new();
-                                deserializer.Deserialize(ref id);
+                                using var reader = incoming.AsReader();
+                                NetworkId id = new NetworkId(reader.ReadUInt64());
                                 if (!State.idToNode.TryGetValue(id, out var e))
                                     continue;
                                 
-                                UInt64 newOwner = new();
-                                deserializer.Deserialize(ref newOwner);
+                                UInt64 newOwner = reader.ReadUInt64();
                                 if (e.AssociatedObject && e.AssociatedObject.VerifyIDChangeRequest(newOwner))
                                 {
                                     e.owner = newOwner;
@@ -209,10 +203,10 @@ namespace Foundry.Networking
                                     newOwner = State.localPlayerId;
                                 
                                 var ostream = new MemoryStream();
-                                using var s = new FoundrySerializer(ostream);
-                                s.Serialize(in roomKey);
-                                s.Serialize(in id);
-                                s.Serialize(in newOwner);
+                                using var w = new BinaryWriter(ostream);
+                                new StringSerializer().Serialize(roomKey, w);
+                                w.Write(id.Id);
+                                w.Write(newOwner);
                                     
                                 socket.SendMessage(new NetworkMessage
                                 {
@@ -225,9 +219,8 @@ namespace Foundry.Networking
                             }
                             case "despawn-entity":
                             {
-                                using var deserializer = new FoundryDeserializer(incoming.Stream);
-                                NetworkId id = new();
-                                deserializer.Deserialize(ref id);
+                                using var reader = incoming.AsReader();
+                                NetworkId id = new NetworkId(reader.ReadUInt64());
                                 if (State.idToNode.TryGetValue(id, out var entity))
                                 {
                                     if(entity.AssociatedObject)
@@ -242,22 +235,24 @@ namespace Foundry.Networking
                             }
                             case "user-entered-sector":
                             {
-                                UInt64 userId = 0;
-                                using var deserializer = new FoundryDeserializer(incoming.Stream);
-                                deserializer.Deserialize(ref userId);
+                                using var reader = incoming.AsReader();
+                                UInt64 userId = reader.ReadUInt64();
                                 string sectorName = "";
-                                deserializer.Deserialize(ref sectorName);
+                                object sectorNameObj = sectorName;
+                                new StringSerializer().Deserialize(ref sectorNameObj, reader);
+                                sectorName = (string) sectorNameObj;
                                 Players.Add(userId);
                                 Debug.Assert(sectorName == roomKey, "Got event for user entered sector " + sectorName + " but we are in sector " + roomKey);
                                 break;
                             }
                             case "user-left-sector":
                             {
-                                UInt64 userId = 0;
-                                using var deserializer = new FoundryDeserializer(incoming.Stream);
-                                deserializer.Deserialize(ref userId);
+                                using var reader = incoming.AsReader();
+                                UInt64 userId = reader.ReadUInt64();
                                 string sectorName = "";
-                                deserializer.Deserialize(ref sectorName);
+                                object sectorNameObj = sectorName;
+                                new StringSerializer().Deserialize(ref sectorNameObj, reader);
+                                sectorName = (string) sectorNameObj;
                                 Players.Remove(userId);
                                 Debug.Assert(sectorName == roomKey, "Got event for user left sector " + sectorName + " but we are in sector " + roomKey);
                                 break;
@@ -283,9 +278,9 @@ namespace Foundry.Networking
                 }
                 
                 MemoryStream stream = new();
-                FoundrySerializer serializer = new(stream);
-                serializer.Serialize(in roomKey);
-                State.GenerateEntitiesDelta(serializer);
+                using var writer = new BinaryWriter(stream);
+                new StringSerializer().Serialize(roomKey, writer);
+                State.GenerateEntitiesDelta(writer);
 
                 socket.SendMessage(new NetworkMessage
                 {
@@ -293,7 +288,6 @@ namespace Foundry.Networking
                     BodyType = WebSocketMessageType.Binary,
                     Stream = stream
                 });
-                serializer.Dispose();
 
                 lastFrameTime = Time.fixedUnscaledTimeAsDouble;
             }
@@ -319,15 +313,13 @@ namespace Foundry.Networking
             if (enterSectorResponse.Header != "enter-sector-res")
                 throw new Exception("Expected enter-sector-res response, got " + enterSectorResponse.Header);
             
-            var deserializer = new FoundryDeserializer(enterSectorResponse.Stream);
+            using var reader = new BinaryReader(enterSectorResponse.Stream);
 
-            UInt64 assignedId = 0;
-            deserializer.Deserialize(ref assignedId);
+            UInt64 assignedId = reader.ReadUInt64();
             State = new NetworkState(assignedId);
             connected = true;
 
-            bool isNewSector = false;
-            deserializer.Deserialize(ref isNewSector);
+            bool isNewSector = reader.ReadBoolean();
             
             Players.Add(assignedId);
             
@@ -361,23 +353,20 @@ namespace Foundry.Networking
             else
             {
                 // Link up what we have locally with what the server has
-                UInt64 numUsers = 0;
-                deserializer.Deserialize(ref numUsers);
+                UInt64 numUsers = reader.ReadUInt64();
                 for (UInt64 i = 0; i < numUsers; i++)
                 {
-                    UInt64 userId = 0;
-                    deserializer.Deserialize(ref userId);
+                    UInt64 userId = reader.ReadUInt64();
                     Players.Add(userId);
                 }
                 
                 var unconnectedObjects = sceneObjects.ToDictionary(obj => obj.guid, obj => obj.gameObject);
-                UInt64 numEntities = 0;
-                deserializer.Deserialize(ref numEntities);
+                UInt64 numEntities = reader.ReadUInt64();
                 for (UInt64 i = 0; i < numEntities; i++)
                 {
                     try
                     {
-                        var linked = SpawnRemoteObject(deserializer, unconnectedObjects);
+                        var linked = SpawnRemoteObject(reader, unconnectedObjects);
                         unconnectedObjects.Remove(linked.guid);
                     }
                     catch (Exception e)
@@ -391,12 +380,33 @@ namespace Foundry.Networking
                     Destroy(obj.Value);
             }
 
-            deserializer.Dispose();
+            reader.Dispose();
             await enterSectorResponse.Stream.DisposeAsync();
             
             try
             {
-                var player = Spawn(playerPrefab, Vector3.zero, Quaternion.identity);
+                GameObject player = null;
+                switch (SpawnMethod)
+                {
+                    case SpawnMethod.Random:
+                        if (spawnPoints.Length > 1)
+                        {
+                            player = Spawn(playerPrefab, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].position,
+                                spawnPoints[Random.Range(0, spawnPoints.Length - 1)].rotation);
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Please Define Two Or More Random Spawn Points Or This Method Will Not Function As Intended This Script Will Now Override To Fixed Point");
+
+                            //Peform Fixed Point Spawn
+                            player = Spawn(playerPrefab, transform.position, transform.rotation);
+                        }
+
+                        break;
+                    case SpawnMethod.FixedPoint:
+                        player = Spawn(playerPrefab, transform.position, transform.rotation);
+                        break;
+                }
                 localPlayer = player.GetComponent<Player>();
             }
             catch (Exception e)
@@ -405,55 +415,6 @@ namespace Foundry.Networking
             }
             
             StartCoroutine(PollConnection());
-
-            // await networkProvider.StartSessionAsync(new Foundry.Networking.SessionInfo()
-            // {
-            //     sessionName = RoomName(),
-            //     sessionType = mode
-            // });
-            // Debug.Log("Network Session started.");
-            //
-            // networkProvider.SetSubscriberInitialStateCallback(() => State.GenerateConstructionDelta());
-            //
-            // // Instantiate scene graph if we're the authority
-            // if (networkProvider.IsGraphAuthority)
-            // {
-            //     foreach (var netObj in sceneObjects)
-            //         netObj.CreateState();
-            // }
-            //
-            // await networkProvider.CompleteSceneSetup(BraneApp.GetService<ISceneNavigator>().CurrentScene);
-            //
-            // await networkProvider.SubscribeToStateChangesAsync((sender, delta) =>
-            // {
-            //     State.ApplyDelta(delta, sender);
-            // });
-
-            // Spawn a player if we're in shared mode
-            /*if (mode == SessionType.Shared)
-            {
-                switch (SpawnMethod)
-                {
-                    case SpawnMethod.Random:
-                        if (spawnPoints.Length > 1)
-                        {
-                            this.Spawn(playerPrefab, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].position,
-                                spawnPoints[Random.Range(0, spawnPoints.Length - 1)].rotation);
-                        }
-                        else
-                        {
-                            Debug.LogWarning("Please Define Two Or More Random Spawn Points Or This Method Will Not Function As Intended This Script Will Now Override To Fixed Point");
-
-                            //Peform Fixed Point Spawn
-                            this.Spawn(playerPrefab, transform.position, transform.rotation);
-                        }
-
-                        break;
-                    case SpawnMethod.FixedPoint:
-                        this.Spawn(playerPrefab, transform.position, transform.rotation);
-                        break;
-                }
-            }*/
         }
 
         public async Task StopSession()
@@ -503,9 +464,10 @@ namespace Foundry.Networking
             entity.owner = State.localPlayerId;
             
             var stream = new MemoryStream();
-            using var serializer = new FoundrySerializer(stream);
-            serializer.Serialize(in roomKey);
-            entity.Serialize(serializer);
+            using var writer = new BinaryWriter(stream);
+            object roomKey = this.roomKey;
+            new StringSerializer().Serialize(roomKey, writer);
+            entity.Serialize(writer);
              
             socket.SendMessage(new NetworkMessage
             {
@@ -516,10 +478,10 @@ namespace Foundry.Networking
             State.AddEntity(entity);
         }
 
-        private NetworkObject SpawnRemoteObject(FoundryDeserializer deserializer, Dictionary<string, GameObject> sceneObjects = null)
+        private NetworkObject SpawnRemoteObject(BinaryReader reader, Dictionary<string, GameObject> sceneObjects = null)
         {
             var entity = new NetworkEntity();
-            entity.Deserialize(deserializer);
+            entity.Deserialize(reader);
             GameObject prefab = null;
             sceneObjects?.TryGetValue(entity.objectId, out prefab);
             if (!prefab && prefabs.TryGetValue(entity.objectId, out prefab))
@@ -532,7 +494,7 @@ namespace Foundry.Networking
             var netObj = prefab.GetComponent<NetworkObject>();
             netObj.BuildProperties();
             netObj.LinkEntity(entity);
-            entity.DeserializeProperties(deserializer);
+            entity.DeserializeProperties(reader);
             State.AddEntity(entity);
             netObj.InvokeConnected();
             return netObj;
@@ -559,8 +521,8 @@ namespace Foundry.Networking
             }
             
             var stream = new MemoryStream();
-            using var serializer = new FoundrySerializer(stream);
-            serializer.Serialize(in entity.Id);
+            using var writer = new BinaryWriter(stream);
+            writer.Write(entity.Id.Id);
             socket.SendMessage(new NetworkMessage
             {
                 Header = "despawn-entity",
@@ -596,9 +558,10 @@ namespace Foundry.Networking
                 return true;
             
             var stream = new MemoryStream();
-            using var serializer = new FoundrySerializer(stream);
-            serializer.Serialize(in instance.roomKey);
-            serializer.Serialize(in entity.Id);
+            await using var writer = new BinaryWriter(stream);
+            object roomKey = instance.roomKey;
+            new StringSerializer().Serialize(roomKey, writer);
+            writer.Write(entity.Id.Id);
             instance.socket.SendMessage(new NetworkMessage
             {
                 Header = "request-entity-ownership",

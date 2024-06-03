@@ -32,46 +32,63 @@ namespace Foundry
     [Serializable]
     public class NetworkEvent<T> : NetworkEventBase, INetworkEvent
     {
-        private uint _maxQueueLength = 5;
+        private uint maxQueueLength = 5;
         
-        private Queue<byte[]> _callArgs = new();
+        private Queue<T> callArgs = new();
         [SerializeField]
         private UnityEvent<NetEventSource, T> _event = new();
+        
+        private IFoundrySerializer tSerializer;
         
         /// <summary>
         /// The max amount of events that may be queued up between serializations. If this is exceeded, the oldest events will be removed.
         /// </summary>
         public uint MaxQueueLength
         {
-            get => _maxQueueLength;
+            get => maxQueueLength;
             set
             {
-                _maxQueueLength = value;
+                maxQueueLength = value;
                 
                 // Remove the oldest events if we are over the max queue length
-                while (_callArgs.Count > _maxQueueLength)
+                while (callArgs.Count > maxQueueLength)
                 {
                     Debug.LogWarning("NetworkEvent queue exceeded max length, removing oldest event");
-                    _callArgs.Dequeue();
+                    callArgs.Dequeue();
                 }
             }
         }
         
-        public bool Dirty =>  _callArgs.Count > 0;
+        public int EventCount => callArgs.Count;
         
-        public Queue<byte[]> SerializeEventQueue()
+        public IFoundrySerializer ArgSerializer => tSerializer;
+
+        public bool TryDequeue(out object callArgs)
         {
-            var o = _callArgs;
-            _callArgs = new Queue<byte[]>();
-            return o;
+            if (this.callArgs.Count > 0)
+            {
+                callArgs = this.callArgs.Dequeue();
+                return true;
+            }
+
+            callArgs = null;
+            return false;
         }
         
-        public void DeserializeEvent(byte[] arg)
+        public void DeserializeEvent(BinaryReader reader)
         {
-            using MemoryStream stream = new(arg);
-            using FoundryDeserializer argDeserializer = new(stream);
             T argValue = default;
-            argDeserializer.Deserialize(ref argValue);
+            try
+            {
+                tSerializer ??= SetSerializer(argValue);
+                object v = argValue;
+                tSerializer.Deserialize(ref v, reader);
+                argValue = (T)v;
+            }
+            catch (Exception e)
+            {
+                Debug.LogException(e);
+            }
 
             try
             {
@@ -83,24 +100,28 @@ namespace Foundry
             }
         }
 
-        /// <summary>
-        /// Never is called for NetworkEvent
-        /// </summary>
-        public Action OnChanged { get; set; }
-
         private void EnqueueNetCall(T arg)
         {
-            MemoryStream stream = new();
-            FoundrySerializer serializer = new FoundrySerializer(stream);
-            serializer.Serialize(arg);
-            _callArgs.Enqueue(stream.GetBuffer());
+            callArgs.Enqueue(arg);
+
+            tSerializer ??= SetSerializer(arg);
 
             // Remove the oldest events if we are over the max queue length
-            while (_callArgs.Count > _maxQueueLength)
+            while (callArgs.Count > maxQueueLength)
             {
                 Debug.LogWarning("NetworkEvent queue exceeded max length, removing oldest event");
-                _callArgs.Dequeue();
+                callArgs.Dequeue();
             }
+        }
+        
+        IFoundrySerializer SetSerializer(T value)
+        {
+            if (value is IFoundrySerializable serializable)
+                tSerializer = serializable.GetSerializer();
+            else
+                tSerializer = FoundrySerializerFinder.GetSerializer(typeof(T));
+            Debug.Assert(tSerializer != null, $"Serializer for {typeof(T)} was null");
+            return tSerializer;
         }
         
         /// <summary>

@@ -48,6 +48,7 @@ public class LoginAuthenticationManager : MonoBehaviour
     
     public async Task Login(string username, string password)
     {
+        messageText.text = "Logging in...";
         var db = await DatabaseSession.GetActive();
         var loginResult = await db.Login(username, password);
         if (loginResult.IsSuccess)

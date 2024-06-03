@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Runtime.InteropServices;
 using Foundry.Core.Serialization;
 using Foundry.Networking;
@@ -127,21 +128,31 @@ namespace Foundry
         private struct AudioBuffer : IFoundrySerializable
         {
             public float[] data;
-            public void Serialize(FoundrySerializer serializer)
+
+            public IFoundrySerializer GetSerializer()
             {
-                UInt32 length = (UInt32)data.Length;
-                serializer.Serialize(length);
-                for (int i = 0; i < data.Length; i++)
-                    serializer.Serialize(data[i]);
+                return new Serializer();
             }
             
-            public void Deserialize(FoundryDeserializer deserializer)
+            public struct Serializer : IFoundrySerializer
             {
-                UInt32 length = 0;
-                deserializer.Deserialize(ref length);
-                data = new float[length];
-                for (int i = 0; i < length; i++)
-                    deserializer.Deserialize(ref data[i]);
+                public void Serialize(in object obj, BinaryWriter writer)
+                {
+                    var buffer = (AudioBuffer)obj;
+                    writer.Write((UInt32)buffer.data.Length);
+                    for (int i = 0; i < buffer.data.Length; i++)
+                        writer.Write(buffer.data[i]);
+                }
+
+                public void Deserialize(ref object obj, BinaryReader reader)
+                {
+                    var buffer = (AudioBuffer)obj;
+                    UInt32 length = reader.ReadUInt32();
+                    buffer.data = new float[length];
+                    for (int i = 0; i < length; i++)
+                        buffer.data[i] = reader.ReadSingle();
+                    obj = buffer;
+                }
             }
         }
     }

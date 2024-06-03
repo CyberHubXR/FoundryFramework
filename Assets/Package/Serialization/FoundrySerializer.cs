@@ -1,17 +1,118 @@
 using System;
 using System.IO;
-using System.Text;
 using UnityEngine;
 
 namespace Foundry.Core.Serialization
 {
     public interface IFoundrySerializable
     {
-        void Serialize(FoundrySerializer serializer);
-        void Deserialize(FoundryDeserializer deserializer);
+        IFoundrySerializer GetSerializer();
     }
 
-    /// <summary>
+    public interface IFoundrySerializer
+    {
+        void Serialize(in object value, BinaryWriter writer);
+
+        void Deserialize(ref object value, BinaryReader reader);
+    }
+    
+    public static class FoundrySerializerFinder
+    {
+        public static IFoundrySerializer GetSerializer(Type type)
+        {
+            if (type == typeof(bool))
+                return new BoolSerializer();
+            if (type == typeof(byte))
+                return new ByteSerializer();
+            if (type == typeof(sbyte))
+                return new SByteSerializer();
+            if (type == typeof(char))
+                return new CharSerializer();
+            if (type == typeof(short))
+                return new ShortSerializer();
+            if (type == typeof(ushort))
+                return new UShortSerializer();
+            if (type == typeof(int))
+                return new IntSerializer();
+            if (type == typeof(uint))
+                return new UIntSerializer();
+            if (type == typeof(float))
+                return new FloatSerializer();
+            if (type == typeof(decimal))
+                return new DecimalSerializer();
+            if (type == typeof(double))
+                return new DoubleSerializer();
+            if (type == typeof(long))
+                return new LongSerializer();
+            if (type == typeof(ulong))
+                return new ULongSerializer();
+            if (type == typeof(string))
+                return new StringSerializer();
+            if (type == typeof(Vector2))
+                return new Vector2Serializer();
+            if (type == typeof(Vector3))
+                return new Vector3Serializer();
+            if (type == typeof(Vector4))
+                return new Vector4Serializer();
+            if (type == typeof(Quaternion))
+                return new QuaternionSerializer();
+            if (type == typeof(Matrix4x4))
+                return new Matrix4x4Serializer();
+            if (type == typeof(Vector2Int))
+                return new Vector2IntSerializer();
+            if (type == typeof(Vector3Int))
+                return new Vector3IntSerializer();
+            if (type == typeof(Color))
+                return new ColorSerializer();
+            if (type == typeof(Color32))
+                return new Color32Serializer();
+            if (type.IsEnum)
+                return new IntSerializer();
+            throw new NotSupportedException($"No serializer found for type {type}");
+        }
+    }
+
+    public class UInt32Placehodler
+    {
+        private BinaryWriter writer;
+        private long streamPos;
+        public UInt32Placehodler(BinaryWriter writer)
+        {
+            this.writer = writer;
+            streamPos = writer.BaseStream.Position;
+            writer.BaseStream.Seek(4, SeekOrigin.Current);
+        }
+        
+        public void WriteValue(uint value)
+        {
+            long currentStreamPos = writer.BaseStream.Position;
+            writer.BaseStream.Position = streamPos;
+            writer.Write(value);
+            writer.BaseStream.Position = currentStreamPos;
+        }
+    }
+    
+    public class UInt64Placehodler
+    {
+        private BinaryWriter writer;
+        private long streamPos;
+        public UInt64Placehodler(BinaryWriter writer)
+        {
+            this.writer = writer;
+            streamPos = writer.BaseStream.Position;
+            writer.BaseStream.Seek(8, SeekOrigin.Current);
+        }
+        
+        public void WriteValue(ulong value)
+        {
+            long currentStreamPos = writer.BaseStream.Position;
+            writer.BaseStream.Position = streamPos;
+            writer.Write(value);
+            writer.BaseStream.Position = currentStreamPos;
+        }
+    }
+
+    /*/// <summary>
     /// Struct for reserving a spot in a stream for data that will be written later.
     /// </summary>
     /// <typeparam name="T"></typeparam>
@@ -535,7 +636,7 @@ namespace Foundry.Core.Serialization
 #endif
         }
 
-        public MemoryStream DeserializeBuffer()
+        public MemoryStream DeserializeBuffer() 
         {
             var start = stream.Position;
             uint length = reader.ReadUInt32();
@@ -545,5 +646,5 @@ namespace Foundry.Core.Serialization
 #endif
             return new MemoryStream(reader.ReadBytes((int)length));
         }
-    }
+    }*/
 }

@@ -260,6 +260,13 @@ namespace Foundry.Networking
             this.entity = entity;
 
             entity.Properties = networkProperties;
+            entity.PropertySerializers = networkProperties.ConvertAll(p =>
+            {
+                var s = p.GetSerializer();
+                if (s == null)
+                    Debug.LogError($"Serializer was null for {gameObject.name} on {gameObject.name}");
+                return s;
+            });
             entity.Events = networkEvents;
             return entity;
         }
@@ -267,14 +274,21 @@ namespace Foundry.Networking
         /// <summary>
         /// Link this object to an existing entity
         /// </summary>
-        /// <param name="node"></param>
-        internal void LinkEntity(NetworkEntity node)
+        /// <param name="entity"></param>
+        internal void LinkEntity(NetworkEntity entity)
         {
-            Debug.Assert(node.objectId == guid, "Guids did not match!");
-            entity = node;
-            node.AssociatedObject = this;
-            node.Properties = networkProperties;
-            node.Events = networkEvents;
+            Debug.Assert(entity.objectId == guid, "Guids did not match!");
+            this.entity = entity;
+            entity.AssociatedObject = this;
+            entity.Properties = networkProperties;
+            entity.PropertySerializers = networkProperties.ConvertAll(p =>
+                {
+                    var s = p.GetSerializer();
+                    if (s == null)
+                        Debug.LogError($"Serializer was null for {gameObject.name} on {gameObject.name}");
+                    return s;
+                });
+            entity.Events = networkEvents;
         }
 
         /// <summary>

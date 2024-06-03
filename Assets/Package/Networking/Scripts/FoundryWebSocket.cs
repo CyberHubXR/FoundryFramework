@@ -61,11 +61,11 @@ namespace Foundry.Package.Networking.Scripts
             return reader.ReadToEnd();
         }
             
-        public FoundryDeserializer AsDeserializer()
+        public BinaryReader AsReader()
         {
             Debug.Assert(BodyType == WebSocketMessageType.Binary, "Cannot deserialize text message.");
             Stream.Seek(0, SeekOrigin.Begin);
-            return new FoundryDeserializer(Stream);
+            return new BinaryReader(Stream);
         }
     }
     
@@ -170,20 +170,6 @@ namespace Foundry.Package.Networking.Scripts
                 };
             }
             
-            public static Message FromSerializer(FoundrySerializer serializer)
-            {
-                var stream = new MemoryStream();
-                serializer.stream.Seek(0, SeekOrigin.Begin);
-                serializer.stream.CopyTo(stream);
-                
-                stream.Seek(0, SeekOrigin.Begin);
-                return new Message
-                {
-                    MessageType = WebSocketMessageType.Binary,
-                    Stream = stream
-                };
-            }
-            
             public static Message FromStream(MemoryStream stream, WebSocketMessageType type)
             {
                 return new Message
@@ -200,10 +186,10 @@ namespace Foundry.Package.Networking.Scripts
                 return reader.ReadToEnd();
             }
             
-            public FoundryDeserializer AsDeserializer()
+            public BinaryReader AsReader()
             {
                 Stream.Seek(0, SeekOrigin.Begin);
-                return new FoundryDeserializer(Stream);
+                return new BinaryReader(Stream);
             }
 
             public void Dispose()
@@ -222,22 +208,22 @@ namespace Foundry.Package.Networking.Scripts
             await socket.SendAsync(new ArraySegment<byte>(message.Stream.ToArray()), message.MessageType, true, CancellationToken.None);
         }
         
+        private byte[] inBuffer = new byte[1024];
         private async Task<Message> ReceiveMessageAsync()
         {
-            var buffer = new byte[1024];
 
             var memoryStream = new MemoryStream();
             WebSocketReceiveResult result;
             do
             {
-                result = await socket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+                result = await socket.ReceiveAsync(new ArraySegment<byte>(inBuffer), CancellationToken.None);
                 if (result.MessageType == WebSocketMessageType.Close)
                 {
                     await socket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closing", CancellationToken.None);
                     throw new WebSocketException("Server initiated close before message was fully received.");
                 }
 
-                memoryStream.Write(buffer, 0, result.Count);
+                memoryStream.Write(inBuffer, 0, result.Count);
             }
             while (!result.EndOfMessage);
 
