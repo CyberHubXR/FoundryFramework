@@ -19,4 +19,4 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   - AssemblyQualifiedName: Foundry.IFoundryCameraManager, Foundry.Core, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  runtimeNetworkingServerURI: ws://192.168.0.135:3000
+  runtimeNetworkingServerURI: ws://35.219.171.21:80

@@ -73,11 +73,13 @@ namespace Foundry.Package.Networking.Scripts
     {
         private ClientWebSocket socket;
 
-        private readonly Queue<NetworkMessage> oQueue = new();
-        private readonly Queue<NetworkMessage> iQueue = new();
+        private readonly Queue<NetworkMessage> sendQueue = new();
+        private readonly Queue<NetworkMessage> receiveQueue = new();
+        private readonly Mutex sendMutex = new();
+        private readonly Mutex receiveMutex = new();
         
         public bool IsOpen => socket.State == WebSocketState.Open;
-        public bool UnreadMessages => iQueue.Count > 0;
+        public bool UnreadMessages => receiveQueue.Count > 0;
 
         public static async Task<FoundryWebSocket> Connect(string uri)
         {
@@ -89,18 +91,20 @@ namespace Foundry.Package.Networking.Scripts
 
         public void Start()
         {
-            Task.Run(ReceiveMessages);
             Task.Run(SendMessages);
+            Task.Run(ReceiveMessages);
         }
 
         private async Task SendMessages()
         {
-            var lastSend = DateTime.Now;
+            DateTime lastSend = DateTime.Now;
             while (socket.State == WebSocketState.Open)
             {
-                if (oQueue.Count > 0)
+                if (sendQueue.Count > 0)
                 {
-                    var message = oQueue.Dequeue();
+                    sendMutex.WaitOne();
+                    var message = sendQueue.Dequeue();
+                    sendMutex.ReleaseMutex();
                     
                     await SendMessageAsync(Message.FromText(message.Header));
                     await SendMessageAsync(Message.FromStream(message.Stream, message.BodyType));
@@ -130,12 +134,14 @@ namespace Foundry.Package.Networking.Scripts
                         
                     var body = await ReceiveMessageAsync();
                         
-                    iQueue.Enqueue(new NetworkMessage
+                    receiveMutex.WaitOne();
+                    receiveQueue.Enqueue(new NetworkMessage
                     {
                         Header = headerText,
                         Stream = body.Stream,
                         BodyType = body.MessageType
                     });
+                    receiveMutex.ReleaseMutex();
                 }
                 catch(Exception e)
                 {
@@ -208,11 +214,11 @@ namespace Foundry.Package.Networking.Scripts
             await socket.SendAsync(new ArraySegment<byte>(message.Stream.ToArray()), message.MessageType, true, CancellationToken.None);
         }
         
-        private byte[] inBuffer = new byte[1024];
+        private byte[] inBuffer = new byte[1024 * 4];
         private async Task<Message> ReceiveMessageAsync()
         {
 
-            var memoryStream = new MemoryStream();
+            var memoryStream = new MemoryStream(1024 * 2);
             WebSocketReceiveResult result;
             do
             {
@@ -258,7 +264,9 @@ namespace Foundry.Package.Networking.Scripts
 
         public void SendMessage(NetworkMessage networkMessage)
         {
-            oQueue.Enqueue(networkMessage);
+            sendMutex.WaitOne();
+            sendQueue.Enqueue(networkMessage);
+            sendMutex.ReleaseMutex();
         }
         
         /// <summary>
@@ -267,9 +275,16 @@ namespace Foundry.Package.Networking.Scripts
         /// <returns>NetworkMessage or Null</returns>
         public NetworkMessage ReceiveMessage()
         {
-            if (iQueue.Count == 0)
+            
+            receiveMutex.WaitOne();
+            if (receiveQueue.Count == 0)
+            {
+                receiveMutex.ReleaseMutex();
                 return null;
-            return iQueue.Dequeue();
+            }
+            var value = receiveQueue.Dequeue();
+            receiveMutex.ReleaseMutex();
+            return value;
         }
     }
 }

@@ -15,13 +15,16 @@ namespace Foundry
     {
         Auto,
         Desktop,
-        XR
+        XR,
+        Bot
     }
 
     public class PlayerRigCreator : MonoBehaviour
     {
-        [FormerlySerializedAs("DesktopRig")] public GameObject desktopRig;
-        [FormerlySerializedAs("XrRig")] [FormerlySerializedAs("XRRig")] public GameObject xrRig;
+        public GameObject desktopRig;
+        public GameObject xrRig;
+        [Tooltip("The bot rig is used for testing purposes, it will be used if the selected control mode is XR and XR is not enabled.")]
+        public GameObject botRig;
 
         public PlayerControlMode controlMode;
         private static PlayerControlMode initializedControlMode;
@@ -30,6 +33,13 @@ namespace Foundry
         {
             // Start XR if we have that selected
             PlayerControlMode targetMode = controlMode;
+            if (targetMode == PlayerControlMode.Bot)
+            {
+                GameObject bot = Instantiate(botRig, transform.position, transform.rotation, transform);
+                BraneApp.GetService<IPlayerRigManager>().RegisterRig(bot.GetComponent<IPlayerControlRig>(), transform);
+                yield break;
+            }
+            
             if (targetMode != PlayerControlMode.Desktop)
             {
                 if (initializedControlMode != PlayerControlMode.XR)

@@ -70,8 +70,7 @@ namespace Foundry
 
             smoothPose.MoveTowardsAngleDistanceCurve(toPose, Time.deltaTime * 5f, Time.deltaTime*1200f, 0.18f, ref smoothPose);
             smoothPose.SetPose(hand);
-            currentPose.SavePose(hand);
-
+            //currentPose.SavePose(hand);
         }
 
 

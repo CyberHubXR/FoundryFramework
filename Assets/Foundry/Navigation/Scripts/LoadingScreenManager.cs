@@ -1,3 +1,4 @@
+using System;
 using CyberHub.Brane;
 using Foundry.Services;
 using TMPro;
@@ -140,6 +141,8 @@ namespace Foundry
         /// <inheritdoc/>
         private void OnEnable()
         {
+            if (instance != null && instance != this)
+                return;
             instance = this;
             
             // Get services
@@ -209,7 +212,7 @@ namespace Foundry
             // Show the loading visuals
             ShowVisuals();
             // Phase 1: Scene loading, Phase 2: Player instantiation (delayed by a fair bit on networked scenes)
-            uncompletedLoadingPhases = 2;
+            uncompletedLoadingPhases = Math.Max(2, uncompletedLoadingPhases + 2);
         }
 
         private void SceneNavigator_ProgressChanged(object sender, ProgressReport e)

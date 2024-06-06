@@ -329,7 +329,7 @@ namespace Foundry
                 nt.position = targetPos;
                 nt.rotation = targetRot;
 
-                var lo = netTransform.lerpObject;
+                var lo = netTransform.transform;
                 lo.position = targetPos;
                 lo.rotation = targetRot;
             }
@@ -346,7 +346,7 @@ namespace Foundry
                 nt.position = targetPos;
                 nt.rotation = targetRot;
 
-                var lo = netTransform.lerpObject;
+                var lo = netTransform.transform;
                 lo.position = targetPos;
                 lo.rotation = targetRot;
             }

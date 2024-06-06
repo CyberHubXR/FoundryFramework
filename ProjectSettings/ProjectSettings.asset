@@ -736,7 +736,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;USE_INPUT_SYSTEM_POSE_CONTROL
+    Android: RightHandRef
     EmbeddedLinux: 
     GameCoreScarlett: 
     GameCoreXboxOne: 
@@ -745,6 +745,7 @@ PlayerSettings:
     PS4: 
     PS5: 
     QNX: 
+    Server: RightHandRef
     Stadia: 
     Standalone: CROSS_PLATFORM_INPUT;FUSION_WEAVER;USE_INPUT_SYSTEM_POSE_CONTROL
     VisionOS: 

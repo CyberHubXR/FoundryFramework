@@ -384,14 +384,17 @@ namespace Foundry.Networking
         /// <param name="serializer"></param>
         /// <param name="serializeAll"></param>
         /// <returns>If this node was serialized</returns>
-        public bool SerializeEntityDelta(NetworkEntity node, BinaryWriter writer, bool serializeAll = false)
+        public bool SerializeEntityDelta(NetworkEntity node, BinaryWriter writer)
         {
             Debug.Assert(node.Properties != null, "Uncompleted entity was added to state!");
-            UInt64 dirtyProps = 0;
+            bool hasDirtyProps = false;
             foreach (var prop in node.Properties)
             {
-                if (prop.Dirty || serializeAll)
-                    ++dirtyProps;
+                if (prop.Dirty)
+                {
+                    hasDirtyProps = true;
+                    break;
+                }
             }
             
             bool unsentEvents = false;
@@ -404,52 +407,61 @@ namespace Foundry.Networking
                 }
             }
 
-            if (dirtyProps > 0 || serializeAll || unsentEvents)
+            if (hasDirtyProps || unsentEvents)
             {
                 writer.Write(node.Id.Id);
                 
                 var dataSize = new UInt64Placehodler(writer);
                 
                 var writeStart = writer.BaseStream.Position;
-                writer.Write(dirtyProps);
-                UInt32 propIndex = 0;
-                foreach (var prop in node.Properties)
+                var dirtyProps = new UInt64Placehodler(writer);
+                
+                UInt64 dirtyPropsCount = 0;
+                if (hasDirtyProps)
                 {
-                    if (prop.Dirty || serializeAll)
+                    UInt32 propIndex = 0;
+                    foreach (var prop in node.Properties)
                     {
-                        writer.Write(propIndex);
+                        if (prop.Dirty)
+                        {
+                            ++dirtyPropsCount;
+                            writer.Write(propIndex);
 
-                        var propSize = new UInt64Placehodler(writer);
-                        UInt64 propStart = (UInt64)writer.BaseStream.Position;
-                        node.PropertySerializers[(int)propIndex].Serialize(prop, writer);
-                        propSize.WriteValue((UInt64)writer.BaseStream.Position - propStart);
-                        
-                        if(!serializeAll)
+                            var propSize = new UInt64Placehodler(writer);
+                            UInt64 propStart = (UInt64)writer.BaseStream.Position;
+                            node.PropertySerializers[(int)propIndex].Serialize(prop, writer);
+                            propSize.WriteValue((UInt64)writer.BaseStream.Position - propStart);
                             prop.SetClean();
+                        }
+
+                        ++propIndex;
                     }
-                    ++propIndex;
                 }
+                dirtyProps.WriteValue(dirtyPropsCount);
                 
                 var eventCout = new UInt64Placehodler(writer);
-                UInt32 eventIndex = 0;
                 UInt64 serializedEvents = 0;
-                foreach(var ev in node.Events)
+                if (unsentEvents)
                 {
-                    
-                    ++eventIndex;
-                    if (ev.EventCount == 0)
-                        continue;
-                    
-                    while(ev.TryDequeue(out object args))
+                    UInt32 eventIndex = 0;
+                    foreach (var ev in node.Events)
                     {
-                        writer.Write(eventIndex - 1);
-                        var argSize = new UInt64Placehodler(writer);
-                        var argStart = (UInt64)writer.BaseStream.Position;
-                        ev.ArgSerializer.Serialize(args, writer);
-                        argSize.WriteValue((UInt64)writer.BaseStream.Position - argStart);
-                        ++serializedEvents;
+                        ++eventIndex;
+                        if (ev.EventCount == 0)
+                            continue;
+
+                        while (ev.TryDequeue(out object args))
+                        {
+                            writer.Write(eventIndex - 1);
+                            var argSize = new UInt64Placehodler(writer);
+                            var argStart = (UInt64)writer.BaseStream.Position;
+                            ev.ArgSerializer.Serialize(args, writer);
+                            argSize.WriteValue((UInt64)writer.BaseStream.Position - argStart);
+                            ++serializedEvents;
+                        }
                     }
                 }
+
                 eventCout.WriteValue(serializedEvents);
 
                 dataSize.WriteValue((UInt64)(writer.BaseStream.Position - writeStart));

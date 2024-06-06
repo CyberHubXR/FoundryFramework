@@ -51,6 +51,7 @@ namespace Foundry.Networking
         public bool IsSessionConnected => connected && (socket?.IsOpen ?? false);
         private bool connected = false;
         public UInt64 LocalPlayerId => State.localPlayerId;
+        public static int TickRate => 60;
 
         private FoundryWebSocket socket;
 
@@ -135,147 +136,22 @@ namespace Foundry.Networking
             StopSession();
         }
 
-        IEnumerator PollConnection()
+        IEnumerator SendDelta()
         {
-            var lastFrameTime = Time.fixedUnscaledTimeAsDouble;
+            var lastFrameTime = Time.unscaledTimeAsDouble;
+            var lastPrintTime = Time.unscaledTimeAsDouble;
+            int ticks_this_frame = 0;
             while (IsSessionConnected)
             {
-                yield return new WaitUntil(() => Time.fixedUnscaledTimeAsDouble - lastFrameTime > 1f / 30f);
-                NetworkMessage incoming = socket.ReceiveMessage();
-                while (incoming != null)
+                yield return new WaitUntil(() => Time.unscaledTimeAsDouble - lastFrameTime >= 1f / TickRate);
+                ticks_this_frame += 1;
+                if (Time.unscaledTimeAsDouble - lastPrintTime >= 1f)
                 {
-                    try
-                    {
-                        switch (incoming.Header)
-                        {
-                            case "spawn-entity":
-                            {
-                                using var reader = incoming.AsReader();
-                                SpawnRemoteObject(reader);
-                                break;
-                            }
-                            case "delta-update-entities":
-                            {
-                                using var reader = incoming.AsReader();
-                                State.ApplyDelta(reader);
-                                break;
-                            }
-                            case "change-entity-owner":
-                            {
-                                using var reader = incoming.AsReader();
-                                NetworkId id = new NetworkId(reader.ReadUInt64());
-                                UInt64 newOwner = reader.ReadUInt64();
-                                if (State.idToNode.TryGetValue(id, out var e))
-                                {
-                                    e.owner = newOwner;
-                                    var resetProps = true;
-                                    if (ownershipChangeRequests.TryGetValue(id, out var tcs))
-                                    {
-                                        var success = newOwner == State.localPlayerId;
-                                        resetProps = !success;
-                                        tcs.SetResult(success);
-                                        ownershipChangeRequests.Remove(id);
-                                    }
-                                    
-                                    if (resetProps)
-                                        e.DeserializeProperties(reader);
-                                }
-                                else
-                                {
-                                    Debug.LogWarning("Tried to change owner of object with ID " + id + " but it was not found.");
-                                }
-
-                                break;
-                            }
-                            case "request-entity-ownership":
-                            {
-                                using var reader = incoming.AsReader();
-                                NetworkId id = new NetworkId(reader.ReadUInt64());
-                                if (!State.idToNode.TryGetValue(id, out var e))
-                                    continue;
-                                
-                                UInt64 newOwner = reader.ReadUInt64();
-                                if (e.AssociatedObject && e.AssociatedObject.VerifyIDChangeRequest(newOwner))
-                                {
-                                    e.owner = newOwner;
-                                }
-                                else
-                                    newOwner = State.localPlayerId;
-                                
-                                var ostream = new MemoryStream();
-                                using var w = new BinaryWriter(ostream);
-                                new StringSerializer().Serialize(roomKey, w);
-                                w.Write(id.Id);
-                                w.Write(newOwner);
-                                    
-                                socket.SendMessage(new NetworkMessage
-                                {
-                                    Header = "change-entity-owner",
-                                    BodyType = WebSocketMessageType.Binary,
-                                    Stream = ostream
-                                });
-
-                                break;
-                            }
-                            case "despawn-entity":
-                            {
-                                using var reader = incoming.AsReader();
-                                NetworkId id = new NetworkId(reader.ReadUInt64());
-                                if (State.idToNode.TryGetValue(id, out var entity))
-                                {
-                                    if(entity.AssociatedObject)
-                                        Destroy(entity.AssociatedObject.gameObject);
-                                    State.RemoveNode(id);
-                                }
-                                else
-                                {
-                                    Debug.LogWarning("Tried to destroy object with ID " + id + " but it was not found.");
-                                }
-                                break;
-                            }
-                            case "user-entered-sector":
-                            {
-                                using var reader = incoming.AsReader();
-                                UInt64 userId = reader.ReadUInt64();
-                                string sectorName = "";
-                                object sectorNameObj = sectorName;
-                                new StringSerializer().Deserialize(ref sectorNameObj, reader);
-                                sectorName = (string) sectorNameObj;
-                                Players.Add(userId);
-                                Debug.Assert(sectorName == roomKey, "Got event for user entered sector " + sectorName + " but we are in sector " + roomKey);
-                                break;
-                            }
-                            case "user-left-sector":
-                            {
-                                using var reader = incoming.AsReader();
-                                UInt64 userId = reader.ReadUInt64();
-                                string sectorName = "";
-                                object sectorNameObj = sectorName;
-                                new StringSerializer().Deserialize(ref sectorNameObj, reader);
-                                sectorName = (string) sectorNameObj;
-                                Players.Remove(userId);
-                                Debug.Assert(sectorName == roomKey, "Got event for user left sector " + sectorName + " but we are in sector " + roomKey);
-                                break;
-                            }
-                            case "error":
-                            {
-                                using var reader = new StreamReader(incoming.Stream);
-                                Debug.LogError("Server error: " + reader.ReadToEnd());
-                                break;
-                            }
-                            default:
-                                Debug.LogWarning("Unhandled message: " + incoming.Header);
-                                break;
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        Debug.LogException(e);
-                    }
-                    
-                    incoming.Stream.Dispose();
-                    incoming = socket.ReceiveMessage();
+                    Debug.Log("NetworkManager is running at " + ticks_this_frame + " ticks per second.");
+                    ticks_this_frame = 0;
+                    lastPrintTime = Time.unscaledTimeAsDouble;
                 }
+                
                 
                 MemoryStream stream = new();
                 using var writer = new BinaryWriter(stream);
@@ -289,7 +165,7 @@ namespace Foundry.Networking
                     Stream = stream
                 });
 
-                lastFrameTime = Time.fixedUnscaledTimeAsDouble;
+                lastFrameTime = Time.unscaledTimeAsDouble;
             }
         }
 
@@ -413,8 +289,9 @@ namespace Foundry.Networking
             {
                 Debug.LogException(e);
             }
-            
-            StartCoroutine(PollConnection());
+
+            StartCoroutine(ProcessMessages());
+            StartCoroutine(SendDelta());
         }
 
         public async Task StopSession()
@@ -574,6 +451,149 @@ namespace Foundry.Networking
             instance.ownershipChangeRequests[entity.Id] = listener;
             
             return await listener.Task;
+        }
+
+        private IEnumerator ProcessMessages()
+        {
+            while (IsSessionConnected)
+            {
+                NetworkMessage incoming = socket.ReceiveMessage();
+                while (incoming != null)
+                {
+                    try
+                    {
+                        switch (incoming.Header)
+                        {
+                            case "spawn-entity":
+                            {
+                                using var reader = incoming.AsReader();
+                                SpawnRemoteObject(reader);
+                                break;
+                            }
+                            case "delta-update-entities":
+                            {
+                                using var reader = incoming.AsReader();
+                                State.ApplyDelta(reader);
+                                break;
+                            }
+                            case "change-entity-owner":
+                            {
+                                using var reader = incoming.AsReader();
+                                NetworkId id = new NetworkId(reader.ReadUInt64());
+                                UInt64 newOwner = reader.ReadUInt64();
+                                if (State.idToNode.TryGetValue(id, out var e))
+                                {
+                                    e.owner = newOwner;
+                                    var resetProps = true;
+                                    if (ownershipChangeRequests.TryGetValue(id, out var tcs))
+                                    {
+                                        var success = newOwner == State.localPlayerId;
+                                        resetProps = !success;
+                                        tcs.SetResult(success);
+                                        ownershipChangeRequests.Remove(id);
+                                    }
+                                    
+                                    if (resetProps)
+                                        e.DeserializeProperties(reader);
+                                }
+                                else
+                                {
+                                    Debug.LogWarning("Tried to change owner of object with ID " + id + " but it was not found.");
+                                }
+
+                                break;
+                            }
+                            case "request-entity-ownership":
+                            {
+                                using var reader = incoming.AsReader();
+                                NetworkId id = new NetworkId(reader.ReadUInt64());
+                                if (!State.idToNode.TryGetValue(id, out var e))
+                                    continue;
+                                
+                                UInt64 newOwner = reader.ReadUInt64();
+                                if (e.AssociatedObject && e.AssociatedObject.VerifyIDChangeRequest(newOwner))
+                                {
+                                    e.owner = newOwner;
+                                }
+                                else
+                                    newOwner = State.localPlayerId;
+                                
+                                var ostream = new MemoryStream();
+                                using var w = new BinaryWriter(ostream);
+                                new StringSerializer().Serialize(roomKey, w);
+                                w.Write(id.Id);
+                                w.Write(newOwner);
+                                    
+                                socket.SendMessage(new NetworkMessage
+                                {
+                                    Header = "change-entity-owner",
+                                    BodyType = WebSocketMessageType.Binary,
+                                    Stream = ostream
+                                });
+
+                                break;
+                            }
+                            case "despawn-entity":
+                            {
+                                using var reader = incoming.AsReader();
+                                NetworkId id = new NetworkId(reader.ReadUInt64());
+                                if (State.idToNode.TryGetValue(id, out var entity))
+                                {
+                                    if(entity.AssociatedObject)
+                                        Destroy(entity.AssociatedObject.gameObject);
+                                    State.RemoveNode(id);
+                                }
+                                else
+                                {
+                                    Debug.LogWarning("Tried to destroy object with ID " + id + " but it was not found.");
+                                }
+                                break;
+                            }
+                            case "user-entered-sector":
+                            {
+                                using var reader = incoming.AsReader();
+                                UInt64 userId = reader.ReadUInt64();
+                                string sectorName = "";
+                                object sectorNameObj = sectorName;
+                                new StringSerializer().Deserialize(ref sectorNameObj, reader);
+                                sectorName = (string) sectorNameObj;
+                                Players.Add(userId);
+                                Debug.Assert(sectorName == roomKey, "Got event for user entered sector " + sectorName + " but we are in sector " + roomKey);
+                                break;
+                            }
+                            case "user-left-sector":
+                            {
+                                using var reader = incoming.AsReader();
+                                UInt64 userId = reader.ReadUInt64();
+                                string sectorName = "";
+                                object sectorNameObj = sectorName;
+                                new StringSerializer().Deserialize(ref sectorNameObj, reader);
+                                sectorName = (string) sectorNameObj;
+                                Players.Remove(userId);
+                                Debug.Assert(sectorName == roomKey, "Got event for user left sector " + sectorName + " but we are in sector " + roomKey);
+                                break;
+                            }
+                            case "error":
+                            {
+                                using var reader = new StreamReader(incoming.Stream);
+                                Debug.LogError("Server error: " + reader.ReadToEnd());
+                                break;
+                            }
+                            default:
+                                Debug.LogWarning("Unhandled message: " + incoming.Header);
+                                break;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.LogException(e);
+                    }
+                    
+                    incoming.Stream.Dispose();
+                    incoming = socket.ReceiveMessage();
+                }
+                yield return null;
+            }
         }
     }
 }

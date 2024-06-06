@@ -255,13 +255,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 3938909165152487569}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &840002568480178095
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,13 +5548,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 7780616537626549367}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &2564527492419727981
 GameObject:
   m_ObjectHideFlags: 0
@@ -5644,13 +5648,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 2586112387844510274}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &3511274483321508231
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,7 +5852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f83c8ef0f30344faeb347043c89ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleRate: 44100
+  sampleRate:
+    value: 44100
   recordTime: 0.1
   bufferTime: 0.4
   microphoneDevice: 
@@ -6239,13 +6246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 7806631100358202828}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &5094179940247515033
 GameObject:
   m_ObjectHideFlags: 0
@@ -6631,13 +6640,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 3298546661812070289}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &7101803008745661025
 GameObject:
   m_ObjectHideFlags: 0
@@ -6715,13 +6726,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 7147965052378744320}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &7827527399137794546
 GameObject:
   m_ObjectHideFlags: 0
@@ -7014,13 +7027,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 7763465854201709667}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &8279761453518922694
 GameObject:
   m_ObjectHideFlags: 0
