@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Samples/Scenes/Offline/Basic_Offline.unity
     guid: f3b1e08745366134e85f0bd32007deed
   - enabled: 0
@@ -21,5 +21,6 @@ EditorBuildSettings:
     path: Assets/Samples/Scenes/Online/Basic_Online_Demo_Bots.unity
     guid: 966800e72ec69d84fb8fffe894699cdf
   m_configObjects:
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 28fee2b3f8844bd4eb2486d4edd5af9d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 787428c5ec7e8ad4a9c8e7719fea8e3a, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a015a63d54533dc4782670c50c23505c, type: 2}

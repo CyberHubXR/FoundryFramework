@@ -13,7 +13,7 @@ namespace Foundry.Networking
         public bool localTransform = true;
 
         public NetworkProperty<Vector3> netPosition;
-        private float lastUpdateTime;
+        private Vector3 lastUpdateTime;
         private float lerpDuration => 1f / NetworkManager.TickRate;
         private Vector3 posLerpStart;
         private Vector3 posLerpEnd;
@@ -64,21 +64,22 @@ namespace Foundry.Networking
 
         public override void OnConnected()
         {
-            lastUpdateTime = Time.time;
+            lastUpdateTime.x = Time.time;
+            lastUpdateTime.y = Time.time;
             netPosition.OnValueChanged += (v) =>
             {
-                if (lastUpdateTime != Time.time)
+                if (lastUpdateTime.x != Time.time)
                 {
-                    lastUpdateTime = Time.time;
+                    lastUpdateTime.x = Time.time;
                 }
                 posLerpStart = posLerpEnd;
                 posLerpEnd = v;
             };
             netRotation.OnValueChanged += (v) =>
             {
-                if (lastUpdateTime != Time.time)
+                if (lastUpdateTime.y != Time.time)
                 {
-                    lastUpdateTime = Time.time;
+                    lastUpdateTime.y = Time.time;
                 }
                 rotLerpStart = rotLerpEnd;
                 rotLerpEnd = v;
@@ -114,10 +115,11 @@ namespace Foundry.Networking
             }
             else
             {
-                var timeSinceLastUpdate = Time.time - lastUpdateTime;
+                var timeSinceLastUpdatePos = Time.time - lastUpdateTime.x;
+                var timeSinceLastUpdateRot = Time.time - lastUpdateTime.y;
                 
-                Vector3 targetPos = Vector3.Lerp(posLerpStart, posLerpEnd, timeSinceLastUpdate / lerpDuration);
-                Quaternion targetRot = Quaternion.Slerp(rotLerpStart, rotLerpEnd, timeSinceLastUpdate / lerpDuration);
+                Vector3 targetPos = Vector3.Lerp(posLerpStart, posLerpEnd, timeSinceLastUpdatePos / lerpDuration);
+                Quaternion targetRot = Quaternion.Slerp(rotLerpStart, rotLerpEnd, timeSinceLastUpdateRot / lerpDuration);
                 
                 position = Vector3.SmoothDamp(position, targetPos, ref currentVelocity, lerpDuration);
                 rotation = Quaternion.Euler(smoothDampAngle(rotation.eulerAngles, targetRot.eulerAngles, ref currentAngularVelocity, lerpDuration));

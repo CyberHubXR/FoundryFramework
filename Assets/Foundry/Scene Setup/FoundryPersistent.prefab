@@ -577,6 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desktopRig: {fileID: 3327413191395390036, guid: 6dfc4aaeec5e69f459dcec41ec3e7320, type: 3}
   xrRig: {fileID: 3765121807589758579, guid: d5ba40ae85bc71b4197eb0076e6dafbb, type: 3}
+  botRig: {fileID: 0}
   controlMode: 0
 --- !u!1 &2749485335710961730
 GameObject:

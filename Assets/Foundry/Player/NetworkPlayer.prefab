@@ -5854,8 +5854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sampleRate:
     value: 44100
-  recordTime: 0.1
-  bufferTime: 0.4
+  bufferTime: 0.1
   microphoneDevice: 
   debugMirror: 0
 --- !u!1 &3976151347936605129
@@ -6957,6 +6956,8 @@ MonoBehaviour:
   onAfterTeleport:
     m_PersistentCalls:
       m_Calls: []
+  playerId:
+    value: 18446744073709551615
   _teleportRaycaster: {fileID: 8818193811352093213}
 --- !u!143 &7228558669207510093
 CharacterController:

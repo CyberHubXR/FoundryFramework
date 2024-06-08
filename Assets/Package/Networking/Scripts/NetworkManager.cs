@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Net.WebSockets;
 using System.Threading.Tasks;
 using CyberHub.Brane;
@@ -51,13 +53,19 @@ namespace Foundry.Networking
         public bool IsSessionConnected => connected && (socket?.IsOpen ?? false);
         private bool connected = false;
         public UInt64 LocalPlayerId => State.localPlayerId;
-        public static int TickRate => 60;
+        public static int TickRate => 30;
 
         private FoundryWebSocket socket;
 
         private Dictionary<string, GameObject> prefabs;
         
         private Dictionary<NetworkId, TaskCompletionSource<bool>> ownershipChangeRequests = new();
+
+        private UInt16 voiceChatPort = 0;
+        private UInt32 voiceChannelId = UInt32.MaxValue;
+        private IPEndPoint voiceChatEndpoint;
+        private UdpClient voiceChatClient;
+        private Dictionary<UInt64, Action<UInt64, ArraySegment<byte>>> voiceChatListeners = new();
 
         void Awake()
         {
@@ -173,7 +181,7 @@ namespace Foundry.Networking
         {
             connected = false;
             var foundryConfig = BraneApp.GetConfig<FoundryCoreConfig>();
-            socket = await FoundryWebSocket.Connect(foundryConfig.runtimeNetworkingServerURI);
+            socket = await FoundryWebSocket.Connect(new Uri(foundryConfig.runtimeNetworkingServerURI));
 
             socket.Start();
             socket.SendMessage(NetworkMessage.FromText("enter-sector", roomKey));
@@ -289,7 +297,43 @@ namespace Foundry.Networking
             {
                 Debug.LogException(e);
             }
+            
+            var vcJoinStream = new MemoryStream();
+            using var vcJoinWriter = new BinaryWriter(vcJoinStream);
+            new StringSerializer().Serialize(roomKey, vcJoinWriter);
 
+            voiceChatEndpoint = new(socket.GetIP(), 9090);
+
+            // If two people are playing on the same router, it may confuse packets if they are on the same port
+            voiceChatPort = (ushort)Random.Range(49152, 65536);
+
+            int maxTries = 10;
+            while (voiceChatClient == null && maxTries-- > 0)
+            {
+                try
+                {
+                    voiceChatClient = new UdpClient(voiceChatPort);
+                    voiceChatClient.Connect(voiceChatEndpoint);
+                }
+                catch (SocketException e)
+                {
+                    Debug.LogException(e);
+                    voiceChatPort = (ushort)Random.Range(49152, 65536);
+                    voiceChatClient = null;
+                }
+            }
+            if(maxTries == 0 && voiceChatClient == null)
+                throw new Exception("Failed to bind to voice chat port after 10 tries.");
+            vcJoinWriter.Write(voiceChatPort);
+
+            socket.SendMessage(new NetworkMessage
+            {
+                BodyType = WebSocketMessageType.Binary,
+                Header = "join-sector-voice",
+                Stream = vcJoinStream
+            });
+
+            Task.Run(VoiceListenService);
             StartCoroutine(ProcessMessages());
             StartCoroutine(SendDelta());
         }
@@ -457,6 +501,26 @@ namespace Foundry.Networking
         {
             while (IsSessionConnected)
             {
+                while (voicePackets.TryDequeue(out byte[] voiceData))
+                {
+                    UInt32 channelId = BitConverter.ToUInt32(new ReadOnlySpan<byte>(voiceData, 0, 4));
+                    if (channelId != voiceChannelId)
+                        Debug.LogWarning("Received voice chat packet for channel " + channelId + " but we are listening on channel " + voiceChannelId);
+                    UInt64 userId = BitConverter.ToUInt64(new ReadOnlySpan<byte>(voiceData,  4,8));
+                    UInt64 index = BitConverter.ToUInt64(new ReadOnlySpan<byte>(voiceData, 12, 8));
+                    if (voiceChatListeners.TryGetValue(userId, out var listener))
+                    {
+                        try
+                        {
+                            listener(index, new ArraySegment<byte>(voiceData, 20, 1024));
+                        }
+                        catch (Exception e)
+                        {
+                            Debug.LogException(e);
+                        }
+                    }
+                }
+                
                 NetworkMessage incoming = socket.ReceiveMessage();
                 while (incoming != null)
                 {
@@ -573,6 +637,12 @@ namespace Foundry.Networking
                                 Debug.Assert(sectorName == roomKey, "Got event for user left sector " + sectorName + " but we are in sector " + roomKey);
                                 break;
                             }
+                            case "join-sector-voice":
+                            {
+                                using var reader = incoming.AsReader();
+                                voiceChannelId = reader.ReadUInt32();
+                                break;
+                            }
                             case "error":
                             {
                                 using var reader = new StreamReader(incoming.Stream);
@@ -594,6 +664,54 @@ namespace Foundry.Networking
                 }
                 yield return null;
             }
+        }
+        
+        private Queue<byte[]> voicePackets = new();
+        async Task VoiceListenService()
+        {
+            while (IsSessionConnected)
+            {
+                try
+                {
+                    var result = await voiceChatClient.ReceiveAsync();
+                    if (result.Buffer.Length > 0)
+                    {
+
+                        if (result.Buffer.Length != 1044)
+                        {
+                            Debug.LogWarning("Received voice chat packet of unexpected length: " + result.Buffer.Length);
+                            continue;
+                        }
+                        voicePackets.Enqueue(result.Buffer);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.LogException(e);
+                }
+            }
+        }
+        
+        public void RegisterVoiceChatListener(UInt64 userId, Action<UInt64, ArraySegment<byte>> listener)
+        {
+            voiceChatListeners[userId] = listener;
+        }
+        
+        public void UnregisterVoiceChatListener(UInt64 userId)
+        {
+            voiceChatListeners.Remove(userId);
+        }
+        
+        public async Task SendVoiceChatPacket(UInt64 index, byte[] data)
+        {
+            if (!IsSessionConnected || voiceChannelId == UInt32.MaxValue)
+                return;
+            var message = new byte[1044];
+            BitConverter.TryWriteBytes(new Span<byte>(message, 0, 4), voiceChannelId);
+            BitConverter.TryWriteBytes(new Span<byte>(message, 4, 8), State.localPlayerId);
+            BitConverter.TryWriteBytes(new Span<byte>(message, 12, 1032), index);
+            data.CopyTo(new Span<byte>(message, 20, 1024));
+            await voiceChatClient.SendAsync(message, 1044);
         }
     }
 }

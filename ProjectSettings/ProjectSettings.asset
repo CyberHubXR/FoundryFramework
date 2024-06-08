@@ -168,7 +168,7 @@ PlayerSettings:
   overrideDefaultApplicationIdentifier: 0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 22
-  AndroidTargetSdkVersion: 0
+  AndroidTargetSdkVersion: 30
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -736,7 +736,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: RightHandRef
+    Android: RightHandRef;USE_INPUT_SYSTEM_POSE_CONTROL
     EmbeddedLinux: 
     GameCoreScarlett: 
     GameCoreXboxOne: 
@@ -747,10 +747,10 @@ PlayerSettings:
     QNX: 
     Server: RightHandRef
     Stadia: 
-    Standalone: CROSS_PLATFORM_INPUT;FUSION_WEAVER;USE_INPUT_SYSTEM_POSE_CONTROL
+    Standalone: CROSS_PLATFORM_INPUT;FUSION_WEAVER;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
     VisionOS: 
     WebGL: 
-    Windows Store Apps: MOBILE_INPUT;USE_INPUT_SYSTEM_POSE_CONTROL
+    Windows Store Apps: MOBILE_INPUT;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
     XboxOne: 
     iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
     tvOS: 

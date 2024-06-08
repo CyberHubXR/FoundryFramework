@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Net.WebSockets;
 using System.Text;
 using System.Threading;
@@ -77,15 +79,30 @@ namespace Foundry.Package.Networking.Scripts
         private readonly Queue<NetworkMessage> receiveQueue = new();
         private readonly Mutex sendMutex = new();
         private readonly Mutex receiveMutex = new();
+        private IPAddress endpointIP;
         
         public bool IsOpen => socket.State == WebSocketState.Open;
         public bool UnreadMessages => receiveQueue.Count > 0;
 
-        public static async Task<FoundryWebSocket> Connect(string uri)
+        public static async Task<FoundryWebSocket> Connect(Uri uri)
         {
             var manager = new FoundryWebSocket();
             manager.socket = new ClientWebSocket();
-            await manager.socket.ConnectAsync(new Uri(uri), CancellationToken.None);
+            if (!IPAddress.TryParse(uri.Host, out manager.endpointIP))
+            {
+                IPHostEntry hostEntry = await Dns.GetHostEntryAsync(uri.Host);
+                if (hostEntry.AddressList.Length == 0)
+                    throw new Exception("Could not resolve address!");
+                foreach (var ip in hostEntry.AddressList)
+                {
+                    if (ip.AddressFamily != AddressFamily.InterNetwork)
+                        continue;
+                    manager.endpointIP = ip;
+                    break;
+                }
+            }
+            
+            await manager.socket.ConnectAsync(uri, CancellationToken.None);
             return manager;
         }
 
@@ -285,6 +302,11 @@ namespace Foundry.Package.Networking.Scripts
             var value = receiveQueue.Dequeue();
             receiveMutex.ReleaseMutex();
             return value;
+        }
+
+        public IPAddress GetIP()
+        {
+            return endpointIP;
         }
     }
 }

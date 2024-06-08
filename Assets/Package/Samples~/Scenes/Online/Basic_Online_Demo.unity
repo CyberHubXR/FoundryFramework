@@ -1646,6 +1646,14 @@ PrefabInstance:
       propertyPath: guid
       value: 62d54b6c-5259-42ec-84c3-f9d8f5513f05
       objectReference: {fileID: 0}
+    - target: {fileID: 7275869027066168979, guid: aff902337dc273c49b7e907e6e59a8ff, type: 3}
+      propertyPath: NetworkComponents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275869027066168979, guid: aff902337dc273c49b7e907e6e59a8ff, type: 3}
+      propertyPath: NetworkComponents.Array.data[1]
+      value: 
+      objectReference: {fileID: 917434120}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1671,13 +1679,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eecace942b74e41b5a79fb617b0e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpObject: {fileID: 0}
-  position:
+  localTransform: 1
+  netPosition:
     value: {x: 0, y: 0, z: 0}
-  rotation:
+  netRotation:
     value: {x: 0, y: 0, z: 0, w: 0}
-  scale:
+  netScale:
     value: {x: 0, y: 0, z: 0}
+  currentVelocity: {x: 0, y: 0, z: 0}
+  currentAngularVelocity: {x: 0, y: 0, z: 0}
 --- !u!1001 &946350299
 PrefabInstance:
   m_ObjectHideFlags: 0

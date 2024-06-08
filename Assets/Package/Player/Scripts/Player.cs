@@ -63,6 +63,9 @@ namespace Foundry
         public bool enableEvents = true;
         public UnityEvent<Player, Vector3, Quaternion> onBeforeTeleport;
         public UnityEvent<Player> onAfterTeleport;
+        
+        [FormerlySerializedAs("networkId")] [HideInInspector]
+        public NetworkProperty<UInt64> playerId = new(UInt64.MaxValue);
 
         private NetworkArray<bool> enabledTrackers = new(6);
         
@@ -84,6 +87,7 @@ namespace Foundry
         
         public override void RegisterProperties(List<INetworkProperty> properties, List<INetworkEvent> events)
         {
+            properties.Add(playerId);
             properties.Add(trackingMode);
             properties.Add(enabledTrackers);
             properties.Add(virtualVelocity);
@@ -118,8 +122,11 @@ namespace Foundry
 
         public override void OnConnected()
         {
-            if(IsOwner)
+            if (IsOwner)
+            {
+                playerId.Value = NetworkManager.instance.LocalPlayerId;
                 BorrowControlRig();
+            }
         }
 
         private void LoadControlRig()
