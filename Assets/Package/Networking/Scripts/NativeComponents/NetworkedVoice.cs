@@ -7,6 +7,7 @@ using Foundry.Core.Serialization;
 using Foundry.Networking;
 using UnityEngine;
 using UnityEngine.Audio;
+using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -47,6 +48,9 @@ namespace Foundry
 
         internal Coroutine recordingCoroutine;
 
+        internal int lastRealSamplesPerSecond;
+        internal int realSamplesPerSecond;
+
 
         public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
@@ -75,6 +79,7 @@ namespace Foundry
                 sampleRate.OnChanged += CreateBuffer;
                 StartCoroutine(MaintainBufferLength());
             }
+            StartCoroutine(UpdateSamplesLastSecond());
         }
 
         private void CreateBuffer()
@@ -140,6 +145,7 @@ namespace Foundry
                     }
                     
                     NetworkManager.instance.SendVoiceChatPacket(packetIndex++, quantized);
+                    realSamplesPerSecond += transportBuffer.Length;
                     readLength -= transportBuffer.Length;
                     lastReadPos = (lastReadPos + transportBuffer.Length) % readBuffer.samples;
                 }
@@ -159,6 +165,7 @@ namespace Foundry
             UInt64 packetWriteTime = (index * (UInt64)transportBuffer.Length) % (UInt64)audioBuffer.samples;
             
             audioBuffer.SetData(transportBuffer, (int)packetWriteTime);
+            realSamplesPerSecond += transportBuffer.Length;
             // If the packet is out of order, we ignore setting the write position
             if (latestPacketIndex > index)
                 writePos = (int)packetWriteTime;
@@ -175,12 +182,31 @@ namespace Foundry
                 
                 var bufferLength = sampleBufferLength / (float)sampleRate.Value;
                 var bufferDelta = bufferLength - bufferTime;
-                if (bufferLength < bufferTime)
+                if (bufferLength < 0)
                     audioOutput.Pause();
-                if (bufferDelta > 0.1f && !audioOutput.isPlaying)
+                if (bufferDelta > 0 && !audioOutput.isPlaying)
                     audioOutput.Play();
+                if (bufferDelta > 0.25f)
+                {
+                    var newPos = writePos - (int)(sampleRate.Value * bufferTime);
+                    if (newPos < 0)
+                        newPos += audioBuffer.samples;
+                    audioOutput.timeSamples = newPos;
+                    Debug.Log("Buffer underrun detected, resetting buffer position");
+                }
 
                 yield return null;
+            }
+        }
+        
+
+        private IEnumerator UpdateSamplesLastSecond()
+        {
+            while (true)
+            {
+                lastRealSamplesPerSecond = (int)Mathf.Lerp((float)lastRealSamplesPerSecond, (float)realSamplesPerSecond, 0.1f);
+                realSamplesPerSecond = 0;
+                yield return new WaitForSeconds(1);
             }
         }
 
@@ -202,14 +228,13 @@ public class NetworkedVoiceEditor : Editor
         var voice = (NetworkedVoice)target;
         if (Application.isPlaying)
         {
-            if (!voice.IsOwner)
+            if (!voice.IsOwner || voice.debugMirror)
             {
-                
                 var sampleBufferLength = voice.writePos - voice.audioOutput.timeSamples;
                 if (sampleBufferLength < 0)
                     sampleBufferLength = voice.writePos + voice.audioBuffer.samples - voice.audioOutput.timeSamples;
                 var bufferLength = sampleBufferLength / (float)voice.sampleRate.Value;
-                var bufferTime = bufferLength - voice.bufferTime;
+                var bufferDelta = bufferLength - voice.bufferTime;
                 EditorGUI.BeginDisabledGroup(true);
                 EditorGUILayout.LabelField("Write pos: " + voice.writePos);
                 EditorGUILayout.IntSlider("", voice.writePos, 0, voice.audioBuffer.samples);
@@ -217,10 +242,16 @@ public class NetworkedVoiceEditor : Editor
                 EditorGUILayout.IntSlider("", voice.audioOutput.timeSamples, 0, voice.audioBuffer.samples);
                 EditorGUILayout.LabelField("Current Buffer Samples " + sampleBufferLength);
                 EditorGUILayout.LabelField("Current Buffer Time " + bufferLength);
-                EditorGUILayout.Slider("", bufferLength / bufferTime, 0f, 2f);
-                EditorGUILayout.LabelField("Current Buffer Delta" + bufferTime);
+                EditorGUILayout.Slider("", bufferLength / voice.bufferTime, 0f, 2f);
+                EditorGUILayout.LabelField("Current Buffer Delta" + bufferDelta);
+                EditorGUILayout.LabelField("Real Samples Per Second " + voice.lastRealSamplesPerSecond);
                 EditorGUILayout.LabelField("Is Playing " + voice.audioOutput.isPlaying);
                 EditorGUI.EndDisabledGroup();
+            }
+            else
+            {
+                EditorGUILayout.LabelField("Read pos: " + voice.lastReadPos);
+                EditorGUILayout.LabelField("Real Samples Per Second " + voice.lastRealSamplesPerSecond);
             }
         }
     }

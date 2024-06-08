@@ -155,7 +155,6 @@ namespace Foundry.Networking
                 ticks_this_frame += 1;
                 if (Time.unscaledTimeAsDouble - lastPrintTime >= 1f)
                 {
-                    Debug.Log("NetworkManager is running at " + ticks_this_frame + " ticks per second.");
                     ticks_this_frame = 0;
                     lastPrintTime = Time.unscaledTimeAsDouble;
                 }

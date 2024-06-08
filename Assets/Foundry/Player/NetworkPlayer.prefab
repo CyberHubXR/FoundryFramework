@@ -5854,7 +5854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sampleRate:
     value: 44100
-  bufferTime: 0.1
+  bufferTime: 0.4
   microphoneDevice: 
   debugMirror: 0
 --- !u!1 &3976151347936605129
