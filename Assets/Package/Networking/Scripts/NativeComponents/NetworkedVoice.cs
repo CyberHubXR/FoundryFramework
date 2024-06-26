@@ -1,13 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
+using System.Reflection;
+using System.Threading.Tasks;
 using Foundry;
-using Foundry.Core.Serialization;
 using Foundry.Networking;
 using UnityEngine;
-using UnityEngine.Audio;
-using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -50,8 +48,14 @@ namespace Foundry
 
         internal int lastRealSamplesPerSecond;
         internal int realSamplesPerSecond;
+        internal int lastClearPos;
 
-
+        public bool createDebugTexture;
+        #if UNITY_EDITOR
+        internal Texture2D debugTexture;
+        Color[] textureColors = {Color.red, Color.green, Color.blue, Color.yellow, Color.cyan, Color.magenta};
+        #endif
+        
         public override void RegisterProperties(List<INetworkProperty> props, List<INetworkEvent> events)
         {
             props.Add(sampleRate);
@@ -84,12 +88,19 @@ namespace Foundry
 
         private void CreateBuffer()
         {
-            audioBuffer = AudioClip.Create("Voice", Mathf.CeilToInt(sampleRate.Value * (bufferTime + 2)), 1,
+            audioBuffer = AudioClip.Create("Voice", Mathf.CeilToInt(sampleRate.Value * (bufferTime + 0.5f)), 1,
                 sampleRate.Value, false);
             audioOutput.clip = audioBuffer;
             if (audioBuffer.frequency != sampleRate.Value)
                 Debug.LogError(
                     "Audio buffer sample rate does not match the desired sample rate. This will cause audio artifacts.");
+            
+#if UNITY_EDITOR
+            if (createDebugTexture)
+            {
+                debugTexture = new Texture2D(audioBuffer.samples / transportBuffer.Length, 10, TextureFormat.RGBA32, false);
+            }
+#endif
         }
 
         /// <summary>
@@ -108,11 +119,23 @@ namespace Foundry
             recordingCoroutine = StartCoroutine(SendVoice());
         }
 
-        readonly float[] transportBuffer = new float[1024 / sizeof(short)];
+        readonly float[] transportBuffer = new float[256 / sizeof(short)];
         private IEnumerator SendVoice()
         {
+            if (string.IsNullOrWhiteSpace(microphoneDevice))
+            {
+                int deviceIndex = (int)(typeof(Microphone).GetMethod("GetMicrophoneDeviceIDFromName", BindingFlags.NonPublic | BindingFlags.Static)?.Invoke(null, new object[]{""}) ?? -1);
+                if (deviceIndex == -1)
+                {
+                    Debug.LogError("No microphone device found, cannot start recording");
+                    yield break;
+                }
+                microphoneDevice = Microphone.devices[deviceIndex];
+            }
             Debug.Log("Starting recording");
+            
             var readBuffer = Microphone.Start(microphoneDevice, true, 5, sampleRate.Value);
+            
             yield return new WaitUntil(() => Microphone.GetPosition(microphoneDevice) > 0);
             isRecording = true;
 
@@ -135,16 +158,18 @@ namespace Foundry
                 {
                     readBuffer.GetData(transportBuffer, lastReadPos);
                     
-                    byte[] quantized = new byte[1024];
+                    byte[] quantized = new byte[256];
                     for (int i = 0; i < transportBuffer.Length; i++)
                     {
+                        var value = (short)(transportBuffer[i] * short.MaxValue);
                         BitConverter.TryWriteBytes(
                             new Span<byte>(quantized, i  * 2, 2), 
-                            (short)(transportBuffer[i] * short.MaxValue)
+                            value
                             );
                     }
-                    
-                    NetworkManager.instance.SendVoiceChatPacket(packetIndex++, quantized);
+
+                    var sentPacketIndex = packetIndex++;
+                    Task.Run(()=>NetworkManager.instance.SendVoiceChatPacket(sentPacketIndex, quantized));
                     realSamplesPerSecond += transportBuffer.Length;
                     readLength -= transportBuffer.Length;
                     lastReadPos = (lastReadPos + transportBuffer.Length) % readBuffer.samples;
@@ -159,17 +184,35 @@ namespace Foundry
         UInt64 latestPacketIndex;
         private void IngestVoice(UInt64 index, ArraySegment<byte> data)
         {
+            int packetWriteTime = (int)((index * (UInt64)transportBuffer.Length) % (UInt64)audioBuffer.samples);
+            var buffer_delta = (packetWriteTime - audioOutput.timeSamples + audioBuffer.samples) % audioBuffer.samples;
+            if (buffer_delta < 1024)
+                return;
+            
             for (int i = 0; i < transportBuffer.Length; i++)
                 transportBuffer[i] = BitConverter.ToInt16(data.Array, data.Offset + i * 2) / (float)short.MaxValue;
-            
-            UInt64 packetWriteTime = (index * (UInt64)transportBuffer.Length) % (UInt64)audioBuffer.samples;
             
             audioBuffer.SetData(transportBuffer, (int)packetWriteTime);
             realSamplesPerSecond += transportBuffer.Length;
             // If the packet is out of order, we ignore setting the write position
-            if (latestPacketIndex > index)
-                writePos = (int)packetWriteTime;
+            if (latestPacketIndex < index)
+                writePos = packetWriteTime;
             latestPacketIndex = index;
+            
+            
+#if UNITY_EDITOR
+            if (createDebugTexture)
+            {
+                Color c = textureColors[(index / (ulong)debugTexture.width) % (ulong)textureColors.Length];
+                var pixels = debugTexture.GetPixels();
+                int x = Mathf.Min(packetWriteTime / transportBuffer.Length, debugTexture.width -1);
+                for (int i = debugTexture.height-1; i >= 0; i--)
+                    (pixels[x + i * debugTexture.width], c) = (c, pixels[x + i * debugTexture.width]);
+                pixels[x] = c;
+                debugTexture.SetPixels(pixels);
+                debugTexture.Apply();
+            }
+#endif
         }
 
         private IEnumerator MaintainBufferLength()
@@ -179,6 +222,16 @@ namespace Foundry
                 var sampleBufferLength = writePos - audioOutput.timeSamples;
                 if (sampleBufferLength < 0)
                     sampleBufferLength = writePos + audioBuffer.samples - audioOutput.timeSamples;
+                
+                // Clear the audio data ahead of the write position*var clearCount = (audioOutput.timeSamples - lastClearPos + audioBuffer.samples) % audioBuffer.samples;
+                var clearCount = (audioOutput.timeSamples - lastClearPos + audioBuffer.samples) % audioBuffer.samples;
+                if (clearCount > 0)
+                {
+                    audioBuffer.SetData(new float[clearCount], lastClearPos);
+                    lastClearPos = (audioOutput.timeSamples - 1024 + audioBuffer.samples) % audioBuffer.samples;
+                }
+                
+                // Clear the audio data behind the write position
                 
                 var bufferLength = sampleBufferLength / (float)sampleRate.Value;
                 var bufferDelta = bufferLength - bufferTime;
@@ -194,6 +247,7 @@ namespace Foundry
                     audioOutput.timeSamples = newPos;
                     Debug.Log("Buffer underrun detected, resetting buffer position");
                 }
+                
 
                 yield return null;
             }
@@ -204,7 +258,7 @@ namespace Foundry
         {
             while (true)
             {
-                lastRealSamplesPerSecond = (int)Mathf.Lerp((float)lastRealSamplesPerSecond, (float)realSamplesPerSecond, 0.1f);
+                lastRealSamplesPerSecond = (int)Mathf.Lerp((float)lastRealSamplesPerSecond, (float)realSamplesPerSecond, 0.4f);
                 realSamplesPerSecond = 0;
                 yield return new WaitForSeconds(1);
             }
@@ -222,6 +276,7 @@ namespace Foundry
 [CustomEditor(typeof(NetworkedVoice))]
 public class NetworkedVoiceEditor : Editor
 {
+    private Rect debugRect = Rect.MinMaxRect(0,0, 100, 5);
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
@@ -247,6 +302,13 @@ public class NetworkedVoiceEditor : Editor
                 EditorGUILayout.LabelField("Real Samples Per Second " + voice.lastRealSamplesPerSecond);
                 EditorGUILayout.LabelField("Is Playing " + voice.audioOutput.isPlaying);
                 EditorGUI.EndDisabledGroup();
+                if (voice.debugTexture)
+                {
+                    debugRect =  EditorGUILayout.GetControlRect(false, 10);
+                    EditorGUI.DrawPreviewTexture(debugRect, voice.debugTexture, null, ScaleMode.ScaleToFit);
+                }
+
+                Repaint();
             }
             else
             {

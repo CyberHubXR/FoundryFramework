@@ -41,6 +41,7 @@ namespace Foundry
                 object r = posRot.rot;
                 qs.Deserialize(ref r, reader);
                 posRot.rot = (Quaternion)r;
+                value = posRot;
             }
         }
     }

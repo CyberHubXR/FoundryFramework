@@ -83,7 +83,8 @@ namespace Foundry.Package.Networking.Scripts
         
         public bool IsOpen => socket.State == WebSocketState.Open;
         public bool UnreadMessages => receiveQueue.Count > 0;
-
+        public bool closedGracefully = false;
+        
         public static async Task<FoundryWebSocket> Connect(Uri uri)
         {
             var manager = new FoundryWebSocket();
@@ -102,6 +103,7 @@ namespace Foundry.Package.Networking.Scripts
                 }
             }
             
+            manager.socket.Options.KeepAliveInterval = TimeSpan.FromSeconds(2);
             await manager.socket.ConnectAsync(uri, CancellationToken.None);
             return manager;
         }
@@ -114,7 +116,6 @@ namespace Foundry.Package.Networking.Scripts
 
         private async Task SendMessages()
         {
-            DateTime lastSend = DateTime.Now;
             while (socket.State == WebSocketState.Open)
             {
                 if (sendQueue.Count > 0)
@@ -122,19 +123,19 @@ namespace Foundry.Package.Networking.Scripts
                     sendMutex.WaitOne();
                     var message = sendQueue.Dequeue();
                     sendMutex.ReleaseMutex();
-                    
-                    await SendMessageAsync(Message.FromText(message.Header));
-                    await SendMessageAsync(Message.FromStream(message.Stream, message.BodyType));
-                    lastSend = DateTime.Now;
+
+                    try
+                    {
+                        await SendMessageAsync(Message.FromText(message.Header));
+                        await SendMessageAsync(Message.FromStream(message.Stream, message.BodyType));
+                    }
+                    catch (Exception e)
+                    {
+                        if (!closedGracefully)
+                            Debug.LogError("Socket error: " + e);
+                    }
                     await message.DisposeAsync();
                 }
-                else if ((DateTime.Now - lastSend).TotalSeconds > 2)
-                {
-                    await SendMessageAsync(Message.FromText("heartbeat"));
-                    lastSend = DateTime.Now;
-                }
-                else
-                    await Task.Delay(1);
             }
         }
         
@@ -148,9 +149,9 @@ namespace Foundry.Package.Networking.Scripts
                     if (header.MessageType != WebSocketMessageType.Text)
                         throw new Exception("Expected text header message, got binary.");
                     string headerText = header.AsText();
-                        
+
                     var body = await ReceiveMessageAsync();
-                        
+
                     receiveMutex.WaitOne();
                     receiveQueue.Enqueue(new NetworkMessage
                     {
@@ -162,13 +163,15 @@ namespace Foundry.Package.Networking.Scripts
                 }
                 catch(Exception e)
                 {
-                    Debug.LogError("Socket error: " + e);
+                    if(!closedGracefully)
+                        Debug.LogError("Socket error: " + e);
                 }
             }
         }
 
         public Task Stop()
         {
+            closedGracefully = true;
             if (socket.State == WebSocketState.Open)
                 return socket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closing", CancellationToken.None);
             return Task.CompletedTask;
@@ -263,6 +266,7 @@ namespace Foundry.Package.Networking.Scripts
         {
             if (socket != null)
             {
+                closedGracefully = true;
                 if(socket.State == WebSocketState.Open)
                     socket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closing", CancellationToken.None).Wait();
                 socket.Dispose();
@@ -273,8 +277,12 @@ namespace Foundry.Package.Networking.Scripts
         {
             if (socket != null)
             {
-                if(socket.State == WebSocketState.Open)
+                if (socket.State == WebSocketState.Open)
+                {
+                    Debug.Log("Closing socket.");
+                    closedGracefully = true;
                     await socket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closing", CancellationToken.None);
+                }
                 socket.Dispose();
             }
         }
@@ -284,6 +292,14 @@ namespace Foundry.Package.Networking.Scripts
             sendMutex.WaitOne();
             sendQueue.Enqueue(networkMessage);
             sendMutex.ReleaseMutex();
+        }
+
+        public async Task AwaitAllSent()
+        {
+            while (sendQueue.Count > 0)
+            {
+                await Task.Delay(100);
+            }
         }
         
         /// <summary>

@@ -5853,10 +5853,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sampleRate:
-    value: 44100
-  bufferTime: 0.4
+    value: 16000
+  bufferTime: 0.2
   microphoneDevice: 
   debugMirror: 0
+  createDebugTexture: 1
 --- !u!1 &3976151347936605129
 GameObject:
   m_ObjectHideFlags: 0

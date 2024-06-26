@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Net.WebSockets;
+using System.Threading;
 using System.Threading.Tasks;
 using CyberHub.Brane;
 using Foundry.Core.Serialization;
@@ -113,7 +114,9 @@ namespace Foundry.Networking
 
         private async void OnDestroy()
         {
-            await StopSession();
+            var rk = roomKey;
+            var sock = socket;
+            await StopSessionInternal(sock, rk);
         }
 
         public void OnPlayerLeft(int player)
@@ -188,9 +191,15 @@ namespace Foundry.Networking
             NetworkMessage enterSectorResponse = null;
             while (enterSectorResponse == null)
             {
+                await Task.Yield();
                 enterSectorResponse = socket.ReceiveMessage();
                 if (enterSectorResponse == null)
-                    await Task.Yield();
+                    continue;
+                if (enterSectorResponse.Header != "enter-sector-res")
+                {
+                    Debug.LogWarning("Received unexpected message: " + enterSectorResponse.Header);
+                    enterSectorResponse = null;
+                }
             }
 
             if (enterSectorResponse.Header != "enter-sector-res")
@@ -263,7 +272,6 @@ namespace Foundry.Networking
                     Destroy(obj.Value);
             }
 
-            reader.Dispose();
             await enterSectorResponse.Stream.DisposeAsync();
             
             try
@@ -342,10 +350,14 @@ namespace Foundry.Networking
             if (!IsSessionConnected)
                 return;
 
-            //TODO send disconnect message to server
-
+            await StopSessionInternal(socket, roomKey);
+        }
+        
+        public static async Task StopSessionInternal(FoundryWebSocket socket,  string roomKey)
+        {
+            socket.SendMessage(NetworkMessage.FromText("exit-sector", roomKey));
+            await socket.AwaitAllSent();
             await socket.DisposeAsync();
-            //networkProvider.StopSessionAsync();
         }
 
         public GameObject Spawn(GameObject prefab, Vector3 position, Quaternion rotation)
@@ -500,6 +512,7 @@ namespace Foundry.Networking
         {
             while (IsSessionConnected)
             {
+                voiceMutex.WaitOne();
                 while (voicePackets.TryDequeue(out byte[] voiceData))
                 {
                     UInt32 channelId = BitConverter.ToUInt32(new ReadOnlySpan<byte>(voiceData, 0, 4));
@@ -511,7 +524,7 @@ namespace Foundry.Networking
                     {
                         try
                         {
-                            listener(index, new ArraySegment<byte>(voiceData, 20, 1024));
+                            listener(index, new ArraySegment<byte>(voiceData, 20, 256));
                         }
                         catch (Exception e)
                         {
@@ -519,6 +532,7 @@ namespace Foundry.Networking
                         }
                     }
                 }
+                voiceMutex.ReleaseMutex();
                 
                 NetworkMessage incoming = socket.ReceiveMessage();
                 while (incoming != null)
@@ -542,6 +556,15 @@ namespace Foundry.Networking
                             case "change-entity-owner":
                             {
                                 using var reader = incoming.AsReader();
+                                string sectorKey = "";
+                                object sectorKeyObj = sectorKey;
+                                new StringSerializer().Deserialize(ref sectorKeyObj, reader);
+                                sectorKey = (string) sectorKeyObj;
+                                if (sectorKey != roomKey)
+                                {
+                                    Debug.LogWarning("Received ownership change for object in sector " + sectorKey + " but we are in sector " + roomKey);
+                                    continue;
+                                }
                                 NetworkId id = new NetworkId(reader.ReadUInt64());
                                 UInt64 newOwner = reader.ReadUInt64();
                                 if (State.idToNode.TryGetValue(id, out var e))
@@ -665,6 +688,7 @@ namespace Foundry.Networking
             }
         }
         
+        private Mutex voiceMutex = new();
         private Queue<byte[]> voicePackets = new();
         async Task VoiceListenService()
         {
@@ -676,12 +700,14 @@ namespace Foundry.Networking
                     if (result.Buffer.Length > 0)
                     {
 
-                        if (result.Buffer.Length != 1044)
+                        if (result.Buffer.Length != 276)
                         {
                             Debug.LogWarning("Received voice chat packet of unexpected length: " + result.Buffer.Length);
                             continue;
                         }
+                        voiceMutex.WaitOne();
                         voicePackets.Enqueue(result.Buffer);
+                        voiceMutex.ReleaseMutex();
                     }
                 }
                 catch (Exception e)
@@ -705,12 +731,12 @@ namespace Foundry.Networking
         {
             if (!IsSessionConnected || voiceChannelId == UInt32.MaxValue)
                 return;
-            var message = new byte[1044];
+            var message = new byte[276];
             BitConverter.TryWriteBytes(new Span<byte>(message, 0, 4), voiceChannelId);
             BitConverter.TryWriteBytes(new Span<byte>(message, 4, 8), State.localPlayerId);
-            BitConverter.TryWriteBytes(new Span<byte>(message, 12, 1032), index);
-            data.CopyTo(new Span<byte>(message, 20, 1024));
-            await voiceChatClient.SendAsync(message, 1044);
+            BitConverter.TryWriteBytes(new Span<byte>(message, 12, 8), index);
+            data.CopyTo(new Span<byte>(message, 20, 256));
+            await voiceChatClient.SendAsync(message, 276);
         }
     }
 }
