@@ -1,8 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using CyberHub.Brane;
-using CyberHub.Brane.Database;
+using CyberHub.Foundry;
+using CyberHub.Foundry.Database;
 using Foundry.Services;
 using UnityEngine;
 using UnityEngine.UI;
@@ -76,6 +76,6 @@ public class AvatarSelector : MonoBehaviour
         var session = await DatabaseSession.GetActive();
         await session.SetUserProperty("avatar", selectedAvatar);
         
-        await BraneApp.GetService<ISceneNavigator>().GoToAsync(nextScene);
+        await FoundryApp.GetService<ISceneNavigator>().GoToAsync(nextScene);
     }
 }

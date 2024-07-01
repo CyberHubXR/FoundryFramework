@@ -1,16 +1,18 @@
 {
-  "name": "com.cyberhub.foundry.core",
-  "displayName": "Foundry Core",
-  "version": "0.4.21-preview",
-  "unity": "2021.3",
-  "description": "Provides all core types and interfaces for the Foundry platform.",
+  "name": "com.cyberhub.foundry.framework",
+  "displayName": "Foundry Framework",
+  "version": "0.5.0-preview",
+  "unity": "2022.3",
+  "description": "Provides a toolkit based on top of Foundry Core.",
   "keywords": [
     "foundry",
-    "core"
+    "framework",
+    "tools",
+    "interaction"
   ],
   "category": "Foundation",
   "dependencies": {
-    "com.cyberhub.brane.core": "0.1.5-preview",
+    "com.cyberhub.foundry.core": "0.5.0-preview",
     "com.unity.inputsystem": "1.6.1",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.xr.management": "4.3.1",

@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using CyberHub.Brane;
-using CyberHub.Brane.Database;
+using CyberHub.Foundry;
+using CyberHub.Foundry.Database;
 using Foundry.Services;
 using TMPro;
 using UnityEngine;
@@ -37,7 +37,7 @@ public class LoginAuthenticationManager : MonoBehaviour
             messageText.text = "Already logged in!";
             
             PlayerPrefs.SetString("usernameLAN", db.LocalUser.username);
-            await BraneApp.GetService<ISceneNavigator>().GoToAsync(targetScene);
+            await FoundryApp.GetService<ISceneNavigator>().GoToAsync(targetScene);
         }
     }
     
@@ -55,7 +55,7 @@ public class LoginAuthenticationManager : MonoBehaviour
         {
             messageText.text = "Login successful!";
             PlayerPrefs.SetString("usernameLAN", db.LocalUser.username);
-            await BraneApp.GetService<ISceneNavigator>().GoToAsync(targetScene);
+            await FoundryApp.GetService<ISceneNavigator>().GoToAsync(targetScene);
         }
         else
         {

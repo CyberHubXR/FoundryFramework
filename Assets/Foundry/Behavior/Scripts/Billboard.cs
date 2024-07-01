@@ -1,5 +1,5 @@
 using System;
-using CyberHub.Brane;
+using CyberHub.Foundry;
 using Foundry;
 
 using UnityEngine;
@@ -10,7 +10,7 @@ public class Billboard : FoundryScript
 
     public void Start()
     {
-        var cameraManager = BraneApp.GetService<IFoundryCameraManager>();
+        var cameraManager = FoundryApp.GetService<IFoundryCameraManager>();
         mainCamera = cameraManager.MainCamera.transform;
     }
 

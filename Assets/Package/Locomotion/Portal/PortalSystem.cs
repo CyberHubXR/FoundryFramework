@@ -1,4 +1,4 @@
-using CyberHub.Brane;
+using CyberHub.Foundry;
 using Foundry;
 using Foundry.Networking;
 using Foundry.Services;
@@ -38,7 +38,7 @@ public class PortalSystem : FoundryScript
             else
             {
                 // Get the navigator service
-                var navigator = BraneApp.GetService<ISceneNavigator>();
+                var navigator = FoundryApp.GetService<ISceneNavigator>();
 
                 if (portalType == PortalType.SceneChange)
                 {

@@ -1,4 +1,4 @@
-using CyberHub.Brane;
+using CyberHub.Foundry;
 using Foundry.Services;
 using TMPro;
 using UnityEngine;
@@ -113,7 +113,7 @@ namespace Foundry
                 return;
             HideVisuals();
             // Get the main camera
-            var mainCamera = BraneApp.GetService<IFoundryCameraManager>().MainCamera;
+            var mainCamera = FoundryApp.GetService<IFoundryCameraManager>().MainCamera;
 
             // Set the camera back to the original render mask, showing all content
             mainCamera.cullingMask = originalRenderMask;
@@ -143,8 +143,8 @@ namespace Foundry
             instance = this;
             
             // Get services
-            sceneNavigator = BraneApp.GetService<ISceneNavigator>();
-            playerRigManager = BraneApp.GetService<IPlayerRigManager>();
+            sceneNavigator = FoundryApp.GetService<ISceneNavigator>();
+            playerRigManager = FoundryApp.GetService<IPlayerRigManager>();
 
             // Subscribe to events
             sceneNavigator.NavigationCompleted += SceneNavigator_NavigationCompleted;
@@ -198,7 +198,7 @@ namespace Foundry
         private void SceneNavigator_NavigationStarting(ISceneNavigationEntry scene)
         {
             // Get the main camera
-            var mainCamera = BraneApp.GetService<IFoundryCameraManager>().MainCamera;
+            var mainCamera = FoundryApp.GetService<IFoundryCameraManager>().MainCamera;
 
             // Store the original render mask
             originalRenderMask = mainCamera.cullingMask;

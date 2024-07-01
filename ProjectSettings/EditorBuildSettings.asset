@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Samples/Scenes/Offline/Basic_Offline.unity
     guid: f3b1e08745366134e85f0bd32007deed
-  - enabled: 0
+  - enabled: 1
     path: Assets/Samples/Scenes/Offline/Login_Offline.unity
     guid: 692491c520bb41142b46e3ae40eb8a03
-  - enabled: 0
+  - enabled: 1
     path: Assets/Samples/Scenes/Offline/Avatar_Selection.unity
     guid: 2b2b3e40f2320b44f80f16c53aebc306
   - enabled: 1

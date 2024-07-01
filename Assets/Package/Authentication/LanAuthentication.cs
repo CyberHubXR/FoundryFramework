@@ -1,4 +1,4 @@
-using CyberHub.Brane;
+using CyberHub.Foundry;
 using Foundry;
 using Foundry.Services;
 using UnityEngine;
@@ -29,7 +29,7 @@ public class LanAuthentication : MonoBehaviour
         PlayerPrefs.SetInt("lanMode", 1);
         
         // Get the navigator service
-        var navigator = BraneApp.GetService<ISceneNavigator>();
+        var navigator = FoundryApp.GetService<ISceneNavigator>();
         // Go To The Online Scene
         await navigator.GoToAsync(onlineIndex);
     }

@@ -1,4 +1,4 @@
-using CyberHub.Brane;
+using CyberHub.Foundry;
 using UnityEngine;
 using TMPro;
 using Foundry.Networking;
@@ -16,7 +16,7 @@ namespace Foundry.Account
 
         public override void OnConnected()
         {
-            var cameraManager = BraneApp.GetService<IFoundryCameraManager>();
+            var cameraManager = FoundryApp.GetService<IFoundryCameraManager>();
             mainCamera = cameraManager.MainCamera.transform;
             if (!IsOwner)
                 return;
