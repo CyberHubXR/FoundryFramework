@@ -1,7 +1,7 @@
 {
   "name": "com.cyberhub.foundry.framework",
   "displayName": "Foundry Framework",
-  "version": "0.5.0-preview",
+  "version": "0.5.1-preview",
   "unity": "2022.3",
   "description": "Provides a toolkit based on top of Foundry Core.",
   "keywords": [
@@ -12,12 +12,13 @@
   ],
   "category": "Foundation",
   "dependencies": {
-    "com.cyberhub.foundry.core": "0.5.0-preview",
+    "com.cyberhub.foundry.core": "0.5.1-preview",
     "com.unity.inputsystem": "1.6.1",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.xr.management": "4.3.1",
     "com.unity.xr.openxr": "1.8.2",
-    "com.unity.nuget.newtonsoft-json": "3.2.1"
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.addressables": "1.21.21"
   },
   "samples": [
     {

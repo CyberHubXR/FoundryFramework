@@ -3,6 +3,7 @@ using Foundry;
 using Foundry.Networking;
 using Foundry.Services;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 public class PortalSystem : FoundryScript
 {
@@ -14,6 +15,13 @@ public class PortalSystem : FoundryScript
         GoBack,
         GoForward
     }
+    
+    [System.Serializable]
+    public enum SceneAddressType
+    {
+        Name,
+        Addressable
+    }
 
     [Header("Portal Type")]
     public PortalType portalType;
@@ -23,7 +31,9 @@ public class PortalSystem : FoundryScript
     public PortalSystem linkedPortal;
 
     [Header("SceneChange")]
+    public SceneAddressType sceneAddressType;
     public string sceneName;
+    public AssetReference addressableScene;
     
     private async void OnTriggerEnter(Collider other)
     {
@@ -44,8 +54,17 @@ public class PortalSystem : FoundryScript
                 {
 
                     // Go to new scene
-                    Debug.Log("Loading new scene " + sceneName);
-                    await navigator.GoToAsync(sceneName);
+                    switch (sceneAddressType)
+                    {
+                        case SceneAddressType.Name:
+                            Debug.Log("Loading new scene " + sceneName);
+                            await navigator.GoToAsync(sceneName);
+                            break;
+                        case SceneAddressType.Addressable:
+                            Debug.Log("Loading new scene " + addressableScene);
+                            await navigator.GoToAsync(addressableScene);
+                            break;
+                    }
                 }
                 else if (portalType == PortalType.GoBack)
                 {

@@ -127,15 +127,17 @@ namespace Foundry
         /// <inheritdoc/>
         private void OnDisable()
         {
-            if(instance == this)
+            if (instance == this)
+            {
                 instance = null;
             
-            // Unsubscribe from events
-            sceneNavigator.NavigationCompleted -= SceneNavigator_NavigationCompleted;
-            sceneNavigator.NavigationStarting -= SceneNavigator_NavigationStarting;
-            sceneNavigator.ProgressChanged -= SceneNavigator_ProgressChanged;
-            playerRigManager.PlayerRigCreated -= PlayerRigManager_PlayerRigCreated;
-            playerRigManager.PlayerRigBorrowed -= PlayerRigManager_PlayerRigBorrowed;
+                // Unsubscribe from events
+                sceneNavigator.NavigationCompleted -= SceneNavigator_NavigationCompleted;
+                sceneNavigator.NavigationStarting -= SceneNavigator_NavigationStarting;
+                sceneNavigator.ProgressChanged -= SceneNavigator_ProgressChanged;
+                playerRigManager.PlayerRigCreated -= PlayerRigManager_PlayerRigCreated;
+                playerRigManager.PlayerRigBorrowed -= PlayerRigManager_PlayerRigBorrowed;
+            }
         }
 
         /// <inheritdoc/>

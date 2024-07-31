@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Billboard : FoundryScript
 {
+    
     private Transform mainCamera;
 
     public void Start()

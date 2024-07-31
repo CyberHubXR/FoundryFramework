@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UnityEngine.AddressableAssets;
 
 namespace Foundry.Services
 {
@@ -68,6 +69,14 @@ namespace Foundry.Services
         /// A <see cref="Task" /> that represents the operation.
         /// </returns>
         Task GoToAsync(int sceneBuildIndex);
+
+
+        /// <summary>
+        /// Navigates to the specified scene addressable in the background.
+        /// </summary>
+        /// <param name="sceneAsset">Addressable that must me a scene</param>
+        /// <returns></returns>
+        public Task GoToAsync(AssetReference sceneAsset);
 
         #endregion Public Methods
 

@@ -20,7 +20,7 @@ namespace Foundry.Core.Setup
 
             // In our local dev environment, the package.json file is not in the expected location
             if (!packageJsonFile)
-                packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/Package/package.json");
+                packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/Packages/manifest.json");
             
             var packageJson = JsonConvert.DeserializeObject<JObject>(packageJsonFile.text);
             var packageVersion = packageJson["version"]?.ToString() ?? "-1.0.0";

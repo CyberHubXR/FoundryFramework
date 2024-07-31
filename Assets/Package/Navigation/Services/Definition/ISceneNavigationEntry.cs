@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Foundry.Services
 {
@@ -23,5 +24,10 @@ namespace Foundry.Services
         /// and if the scene was loaded from an asset bundle this number will be -1.
         /// </remarks>
         int BuildIndex { get; }
+        
+        /// <summary>
+        /// Gets the asset reference to the scene, if this scene is an addressable asset.
+        /// </summary>>
+        public AssetReference SceneAsset { get; set; }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
 namespace Foundry.Services
@@ -46,6 +47,9 @@ namespace Foundry.Services
 
         /// <inheritdoc />
         public string Name { get; set; }
+        
+        /// <inheritdoc />
+        public AssetReference SceneAsset { get; set; }
 
         #endregion Public Properties
     }
@@ -102,10 +106,18 @@ namespace Foundry.Services
             }
 
             // Add it to the history, use entry from scene manager to fill empty fields
-            if(string.IsNullOrEmpty(entry.Name))
-                entry.Name = SceneUtility.GetScenePathByBuildIndex(entry.BuildIndex);
-            else if(sceneNameToBuildIndexMap.TryGetValue(entry.Name, out int buildIndex))
-                entry.BuildIndex = buildIndex;
+            if (entry.SceneAsset != null)
+            {
+                entry.Name = $"Addressable Scene {entry.SceneAsset.RuntimeKey}";
+                entry.BuildIndex = -1;
+            }
+            else
+            {
+                if(string.IsNullOrEmpty(entry.Name))
+                    entry.Name = SceneUtility.GetScenePathByBuildIndex(entry.BuildIndex);
+                else if(sceneNameToBuildIndexMap.TryGetValue(entry.Name, out int buildIndex))
+                    entry.BuildIndex = buildIndex;
+            }
 
             history.Add(entry);
             // Update the index to be at the end of the collection
@@ -136,16 +148,21 @@ namespace Foundry.Services
             string displayName = null;
 
             // Placeholder for load operation
-            AsyncOperation loadOp = null;
+            Task loadTask = null;
 
             // Start load
-            if (!string.IsNullOrEmpty(newEntry.Name))
+            if (newEntry.SceneAsset != null)
+            {
+                // Load the scene
+                loadTask = newEntry.SceneAsset.LoadSceneAsync().Task;
+            }
+            else if (!string.IsNullOrEmpty(newEntry.Name))
             {
                 // Display name is the scene name
                 displayName = newEntry.Name;
 
                 // Load the scene
-                loadOp = SceneManager.LoadSceneAsync(newEntry.Name);
+                loadTask = SceneManager.LoadSceneAsync(newEntry.Name).AsTaskWithProgress(progress, $"Loading '{displayName}'...");
             }
             else
             {
@@ -153,11 +170,11 @@ namespace Foundry.Services
                 displayName = $"Scene{newEntry.BuildIndex:00}";
 
                 // Load the scene
-                loadOp = SceneManager.LoadSceneAsync(newEntry.BuildIndex);
+                loadTask = SceneManager.LoadSceneAsync(newEntry.BuildIndex).AsTaskWithProgress(progress, $"Loading '{displayName}'...");
             }
 
             // Make sure we have an operation
-            if (loadOp == null)
+            if (loadTask == null)
             {
                 throw new InvalidOperationException("Could not load specified scene.");
             }
@@ -168,17 +185,11 @@ namespace Foundry.Services
             // Delay a few milliseconds for the loading visuals to appear before bogging things down with loading
             await Task.Delay(100);
 
-            // Convert the load operation to a task with status updates
-            // Because we're using the progress reporter, these will bubble up
-            // to our ProgressChanged event on this class and they will be
-            // emitted on the UI thread.
-            navigationTask = loadOp.AsTaskWithProgress(progress, $"Loading '{displayName}'...");
-
             // Notify subscribers of started
             NavigationStarted?.Invoke(newEntry);
 
             // Wait on the load task to complete
-            await navigationTask;
+            await loadTask;
 
             // Notify subscribers of complete
             NavigationCompleted?.Invoke(newEntry);
@@ -271,6 +282,16 @@ namespace Foundry.Services
             {
                 Name = null,
                 BuildIndex = sceneBuildIndex
+            });
+        }
+        
+        /// <inheritdoc />
+        public Task GoToAsync(AssetReference sceneAsset)
+        {
+            // Load it and add to history
+            return LoadEntryAndAddHistoryAsync(new SceneNavigationEntry()
+            {
+                SceneAsset = sceneAsset
             });
         }
 
