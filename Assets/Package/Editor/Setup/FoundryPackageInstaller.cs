@@ -16,11 +16,11 @@ namespace Foundry.Core.Setup
         public FoundryPackageInstaller()
         {
             var installedPackageVersion = Resources.Load<FoundryVersion>("Version/FoundryInstalledVersion");
-            var packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Packages/com.cyberhub.foundry.core/package.json");
+            var packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Packages/com.cyberhub.foundry.framework/package.json");
 
             // In our local dev environment, the package.json file is not in the expected location
             if (!packageJsonFile)
-                packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/Packages/manifest.json");
+                packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Assets/Package/package.json");
             
             var packageJson = JsonConvert.DeserializeObject<JObject>(packageJsonFile.text);
             var packageVersion = packageJson["version"]?.ToString() ?? "-1.0.0";
@@ -44,7 +44,7 @@ namespace Foundry.Core.Setup
                 name = "Install Package",
                 callback = () =>
                 {
-                    AssetDatabase.ImportPackage("Packages/com.cyberhub.foundry.core/FoundryAssets.unitypackage", true);
+                    AssetDatabase.ImportPackage("Packages/com.cyberhub.foundry.framework/FoundryAssets.unitypackage", true);
                 }
             };
 
@@ -61,7 +61,7 @@ namespace Foundry.Core.Setup
 
         public string ModuleSource()
         {
-            return "foundry.core";
+            return "foundry.framework";
         }
     }
 }

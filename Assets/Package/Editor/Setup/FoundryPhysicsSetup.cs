@@ -45,7 +45,7 @@ namespace Foundry.Core.Setup {
 
         public string ModuleSource()
         {
-            return "foundry.core";
+            return "foundry.framework";
         }
 
         static void InstallPackage() {

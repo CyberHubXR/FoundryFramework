@@ -14,7 +14,7 @@ public class UpdateFoundryPackage : MonoBehaviour
         Debug.Log("Updating Foundry Asset Package");
         
         var installedPackageVersion = Resources.Load<FoundryVersion>("Version/FoundryInstalledVersion");
-        var packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Packages/com.cyberhub.foundry.core/package.json");
+        var packageJsonFile = AssetDatabase.LoadAssetAtPath<TextAsset>("Packages/com.cyberhub.foundry.framework/package.json");
 
         // In our local dev environment, the package.json file is not in the expected location
         if (!packageJsonFile)

@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: FoundryCoreConfig
   m_EditorClassIdentifier: 
   EnabledServices: []
-  AppKey: 
-  OverrideDatabaseUrl: 
-  OverrideNetworkingUrl: 
+  AppKey: 719e500d-51d8-49d2-80a9-887d2f9e3f09
+  OverrideDatabaseUrl: http://localhost:8080
