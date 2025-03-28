@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Foundry
@@ -30,7 +28,8 @@ namespace Foundry
 
         public void ToggleMenu(Transform spawnTarget, Transform lookTarget)
         {
-            this.spawnTarget = spawnTarget;
+            // if we have sent a spawn target in the spawn use that, otherwise use the default
+            this.spawnTarget = spawnTarget != null ? spawnTarget : this.spawnTarget;
             this.lookTarget = lookTarget;
             
             if(animationRoutine != null)
@@ -75,7 +74,7 @@ namespace Foundry
             {
                 visualRoot.SetActive(true);
                 transform.position = spawnTarget.position;
-                transform.rotation = Quaternion.LookRotation(lookTarget.position - visualRoot.transform.position, Vector3.up);
+                //transform.rotation = Quaternion.LookRotation(lookTarget.position - visualRoot.transform.position, Vector3.up);
             }
             
             while (state != AnimationState.Idle)
@@ -105,7 +104,7 @@ namespace Foundry
 
                 float lerpWeight = state == AnimationState.Closing ? 1 - Weight : Weight; 
                 transform.position = Vector3.Lerp(transform.position, spawnTarget.position, lerpWeight);
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation( lookTarget.position - visualRoot.transform.position, Vector3.up), lerpWeight);
+                //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation( lookTarget.position - visualRoot.transform.position, Vector3.up), lerpWeight);
                 
                 transform.localScale = new Vector3(width.Evaluate(Weight), height.Evaluate(Weight), 1);
 

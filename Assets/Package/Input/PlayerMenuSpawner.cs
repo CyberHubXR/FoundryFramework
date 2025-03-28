@@ -15,6 +15,7 @@ namespace Foundry
 
         public InputSource inputSource;
         public Transform head;
+        public Transform spawnOffset;
 
         private InputAction action;
         void Start()
@@ -29,7 +30,12 @@ namespace Foundry
 
         void OnInputPerformed(InputAction.CallbackContext context)
         {
-            PlayerMenuAnimator.Instance?.ToggleMenu(transform, head);
+            SpawnMenu();
+        }
+
+        public void SpawnMenu ()
+        {
+            PlayerMenuAnimator.Instance?.ToggleMenu(spawnOffset, head);
         }
     }
 }
