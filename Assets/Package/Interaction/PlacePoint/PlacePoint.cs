@@ -329,7 +329,7 @@ namespace Foundry {
 
             if (placeObj.attachedRigidbody != null)
             {
-                placeObj.attachedRigidbody.velocity = Vector3.zero;
+                placeObj.attachedRigidbody.linearVelocity = Vector3.zero;
                 placeObj.attachedRigidbody.angularVelocity = Vector3.zero;
                 placedObjDetectionMode = placeObj.attachedRigidbody.collisionDetectionMode;
 

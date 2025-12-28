@@ -295,7 +295,7 @@ namespace Foundry
                     if (IsOwner)
                     {
                         //Throw the object
-                        body.velocity = _handVelocityTracker.ThrowVelocity();
+                        body.linearVelocity = _handVelocityTracker.ThrowVelocity();
                         body.angularVelocity = _handVelocityTracker.ThrowAngularVelocity();
                     }
                 }
