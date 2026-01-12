@@ -13,7 +13,7 @@ namespace Foundry.Account
         public Transform billboardText;
 
         private Transform mainCamera;
-
+        
         public override void OnConnected()
         {
             var cameraManager = FoundryApp.GetService<IFoundryCameraManager>();

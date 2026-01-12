@@ -139,6 +139,10 @@ namespace Foundry
             {
                 playerId.Value = NetworkManager.instance.LocalPlayerId;
                 BorrowControlRig();
+
+                var menuManager = FindFirstObjectByType<LocalPlayerMenuManager>();
+                if (menuManager)
+                    menuManager.Initialize(this);    
             }
         }
 
@@ -463,6 +467,7 @@ namespace Foundry
 
             onAfterTeleport.Invoke(this);
         }
+
         public void SetFlyingMode(bool isFlying)
         {
             movementMode = isFlying ? MovementMode.Flying : MovementMode.Grounded;
