@@ -15,13 +15,20 @@ namespace Foundry
         }
         public InputSource inputSource;
         public bool alwaysShow = false;
-        public float smoothing = 0.3f;
         
         private InputAction inputAction;
         private LineRenderer _renderer;
-        private LayerMask _uiLayers;
         private Quaternion localOffset;
-        private Quaternion lastRotation;
+
+        [SerializeField]
+        float minRayLength = 0.05f;
+
+        [SerializeField]
+        float maxRayLength = 5f;
+
+        [SerializeField]
+        float rayStartOffset = 0.02f;
+
 
         public override void OnConnected()
         {
@@ -31,7 +38,6 @@ namespace Foundry
         
         void Start()
         {
-            _uiLayers = LayerMask.GetMask("UI");
             switch(inputSource)
             {
                 case InputSource.Desktop:
@@ -46,7 +52,6 @@ namespace Foundry
             }
             _renderer = GetComponent<LineRenderer>();
             localOffset = transform.localRotation;
-            lastRotation = transform.rotation;
         }
 
         public bool IsClicked()
@@ -63,27 +68,23 @@ namespace Foundry
         {
             if(IsClicked() && !IsActive())
                 FoundryUIInput.SetActiveRaycaster(this);
-            transform.rotation = Quaternion.Slerp(transform.parent.rotation * localOffset, lastRotation, smoothing);
-            lastRotation = transform.rotation;
-
+            transform.rotation = transform.parent.rotation * localOffset;
         }
 
         private void LateUpdate()
         {
-            if (_renderer)
-            {
-                bool uiHit = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, 10, _uiLayers);
-                _renderer.enabled = IsActive() && (uiHit || alwaysShow);
-                if (!uiHit && alwaysShow)
-                    hit.point = transform.position + transform.forward * 10;
-                _renderer.SetPosition(0, transform.position);
-                _renderer.SetPosition(1, hit.point);
-            }
+            if (!_renderer) return;
+
+            float rayLength = maxRayLength;
+
+            // Always render at least a small ray
+            float clampedLength = Mathf.Max(minRayLength, rayLength);
+            Vector3 start = transform.position + transform.forward * rayStartOffset;
+
+            _renderer.enabled = IsActive() || alwaysShow;
+            _renderer.SetPosition(0, start);
+            _renderer.SetPosition(1, start + transform.forward * clampedLength);
         }
 
-        private void OnDrawGizmosSelected()
-        {
-            Debug.DrawRay(transform.position, transform.forward * 10, Color.red);
-        }
     }
 }

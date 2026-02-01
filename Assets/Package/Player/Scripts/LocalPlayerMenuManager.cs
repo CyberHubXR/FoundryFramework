@@ -14,8 +14,8 @@ namespace Foundry
         [SerializeField] private GameObject playerMenuPrefab;
         
         [Header("Positioning")] 
-        [SerializeField] private float forwardOffset = 0.7f;
-        [SerializeField] private float verticalOffset = -0.15f;
+        [SerializeField] private float forwardOffset = 1.5f;
+        [SerializeField] private float verticalOffset = 0.1f;
 
         [SerializeField] private Camera uiCamera;
 
