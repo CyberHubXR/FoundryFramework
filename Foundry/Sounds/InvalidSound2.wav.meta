@@ -1,0 +1,21 @@
+AudioImporter:
+  3D: 1
+  ambisonic: 0
+  defaultSettings:
+    compressionFormat: 1
+    conversionMode: 0
+    loadType: 0
+    preloadAudioData: 1
+    quality: 1
+    sampleRateOverride: 44100
+    sampleRateSetting: 0
+    serializedVersion: 2
+  externalObjects: {}
+  forceToMono: 0
+  loadInBackground: 0
+  normalize: 1
+  platformSettingOverrides: {}
+  serializedVersion: 7
+  userData: null
+fileFormatVersion: 2
+guid: 9b362e6efab7bbc49bcfff87505f911f

@@ -1,0 +1,109 @@
+ModelImporter:
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  animationType: 2
+  animations:
+    animationCompression: 1
+    animationDoRetargetingWarnings: 0
+    animationImportErrors: null
+    animationImportWarnings: null
+    animationPositionError: 0.5
+    animationRetargetingWarnings: null
+    animationRotationError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    bakeSimulation: 0
+    clipAnimations: []
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    isReadable: 0
+    legacyGenerateAnimations: 4
+    motionNodeName: null
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    resampleCurves: 1
+    rigImportErrors: "Avatar creation failed:\n\tCannot find root motion transform\
+      \ 'null'.\n"
+    rigImportWarnings: null
+  autoGenerateAvatarMappingIfUnspecified: 1
+  avatarSetup: 0
+  externalObjects: {}
+  humanDescription:
+    armStretch: 0.05
+    armTwist: 0.5
+    feetSpacing: 0
+    foreArmTwist: 0.5
+    globalScale: 1
+    hasExtraRoot: 0
+    hasTranslationDoF: 0
+    human: []
+    legStretch: 0.05
+    legTwist: 0.5
+    rootMotionBoneName: null
+    serializedVersion: 3
+    skeleton: []
+    skeletonHasParents: 1
+    upperLegTwist: 0.5
+  humanoidOversampling: 1
+  importAnimation: 1
+  importBlendShapeDeformPercent: 1
+  internalIDToNameTable: []
+  lastHumanDescriptionAvatarSource:
+    instanceID: 0
+  materials:
+    materialImportMode: 2
+    materialLocation: 1
+    materialName: 0
+    materialSearch: 1
+  meshes:
+    addColliders: 0
+    bakeAxisConversion: 0
+    fileIdsGeneration: 2
+    generateSecondaryUV: 0
+    globalScale: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    indexFormat: 0
+    keepQuads: 0
+    lODScreenPercentages: []
+    maxBonesPerVertex: 4
+    meshCompression: 0
+    meshOptimizationFlags: -1
+    minBoneWeight: 0.001
+    nodeNameCollisionStrategy: 1
+    optimizeBones: 1
+    preserveHierarchy: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    skinWeightsMode: 0
+    sortHierarchyByName: 1
+    strictVertexDataChecks: 0
+    swapUVChannels: 0
+    useFileScale: 1
+    useFileUnits: 1
+    useSRGBMaterialColor: 1
+    weldVertices: 1
+  referencedClips: []
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  serializedVersion: 22200
+  tangentSpace:
+    blendShapeNormalImportMode: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    normalCalculationMode: 4
+    normalImportMode: 0
+    normalSmoothAngle: 60
+    normalSmoothingSource: 0
+    tangentImportMode: 3
+  userData: null
+fileFormatVersion: 2
+guid: 5a60fc9af0b32244b8f278e9793481df
