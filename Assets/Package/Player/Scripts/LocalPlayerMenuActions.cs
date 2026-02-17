@@ -17,6 +17,7 @@ namespace Foundry
         public TMP_InputField usernameField;
         
         private Foundry.Player player;
+        private SimpleAvatarVisualController visualController;
 
         /// <summary>
         /// Called immediately after instantiating the menu
@@ -34,6 +35,12 @@ namespace Foundry
 
                 flightToggle.onValueChanged.AddListener(OnFlightToggleChanged);
             }
+
+            // Find avatar visual controller
+            visualController = localPlayer.GetComponentInChildren<SimpleAvatarVisualController>();
+
+            if (!visualController)
+                Debug.LogWarning("[Menu] No SimpleAvatarVisualController found on player");
         }
 
         void OnDestroy()
@@ -114,6 +121,27 @@ namespace Foundry
         public void LeaveExperience ()
         {
             Application.Quit();
+        }
+
+        // Avatar Customization Module
+
+        public void OnNextHairPressed()
+        {
+            visualController?.NextHair();
+        }
+
+        public void OnPreviousHairPressed()
+        {
+            visualController?.PreviousHair();
+        }
+
+        public void OnNextColorPressed()
+        {
+            visualController?.NextColor();
+        }
+        public void OnPreviousColorPressed()
+        {
+            visualController?.PreviousColor();
         }
 
     }
