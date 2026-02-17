@@ -24,7 +24,7 @@ namespace Foundry
         public Transform leftFoot;
         public Transform rightFoot;
     }
-    
+
     [RequireComponent(typeof(CharacterController))]
     public class Player : NetworkComponent
     {
@@ -44,47 +44,60 @@ namespace Foundry
 
         // Adjust the value for sprinting as needed ** currently set to 1.5f 
         [SerializeField] private float sprintSpeedMultiplier = 1.5f;
-        
+
         [Header("Movement")]
         public bool movementEnabled = true;
         public MovementSettings movementSettings;
 
+        [System.Serializable]
+        public enum MovementMode
+        {
+            Grounded,
+            Flying
+        }
+
+        [Header("Movement Mode")]
+        public MovementMode movementMode = MovementMode.Grounded;
+
         [Header("Hands")]
         public SpatialHand leftHand;
         public SpatialHand rightHand;
-        
+
         [Header("Trackers")]
         public TrackerRefs trackers;
 
         [Header("Avatar")]
         public Avatar avatar;
 
-        [Header("Events")] 
+        [Header("Events")]
         public bool enableEvents = true;
         public UnityEvent<Player, Vector3, Quaternion> onBeforeTeleport;
         public UnityEvent<Player> onAfterTeleport;
-        
-        [FormerlySerializedAs("networkId")] [HideInInspector]
+
+        [FormerlySerializedAs("networkId")]
+        [HideInInspector]
         public NetworkProperty<UInt64> playerId = new(UInt64.MaxValue);
 
         private NetworkArray<bool> enabledTrackers = new(6);
-        
+
         private CharacterController controller;
         private IPlayerControlRig controlRig;
-        
+
         private NetworkProperty<TrackingMode> trackingMode = new NetworkProperty<TrackingMode>(TrackingMode.OnePoint);
 
         [SerializeField] private TeleportRaycaster _teleportRaycaster;
         private bool _teleportPreview = false;
-        
+
         //Used within the before teleport event to cancel the teleport
         private bool cancelTeleport = false;
-        
+
         // Keep track of whether the player is currently sprinting
         private bool isSprinting = false;
 
+
+
         private NetworkProperty<Vector3> virtualVelocity = new(Vector3.zero);
-        
+
         public override void RegisterProperties(List<INetworkProperty> properties, List<INetworkEvent> events)
         {
             properties.Add(playerId);
@@ -98,7 +111,7 @@ namespace Foundry
             controller = GetComponent<CharacterController>();
 
             gameObject.layer = LayerMask.NameToLayer("FoundryPlayer");
-            
+
             // We'll set all of these active later depending on the tracking mode
             trackers.leftHand.gameObject.SetActive(false);
             trackers.rightHand.gameObject.SetActive(false);
@@ -108,7 +121,7 @@ namespace Foundry
 
             trackingMode.OnValueChanged += tm =>
             {
-                if(avatar)
+                if (avatar)
                     avatar.SetTrackingMode(tm);
             };
         }
@@ -126,6 +139,10 @@ namespace Foundry
             {
                 playerId.Value = NetworkManager.instance.LocalPlayerId;
                 BorrowControlRig();
+
+                var menuManager = FindFirstObjectByType<LocalPlayerMenuManager>();
+                if (menuManager)
+                    menuManager.Initialize(this);    
             }
         }
 
@@ -134,11 +151,11 @@ namespace Foundry
             controlRig.transform.SetParent(transform, false);
             controlRig.transform.localPosition = Vector3.zero;
             controlRig.transform.localRotation = Quaternion.identity;
-            
+
             //If this is a desktop rig, change the camera mode
-            if(controlRig is DesktopControlRig)
+            if (controlRig is DesktopControlRig)
                 ((DesktopControlRig)controlRig).SetCameraMode(DesktopControlRig.CameraMode.Look);
-            
+
             trackingMode.Value = controlRig.GetTrackingMode();
         }
 
@@ -218,7 +235,7 @@ namespace Foundry
                     trackers.leftFoot.localRotation = targetPoses[4].rotation;
                 }
 
-                if(targetPoses[5].enabled)
+                if (targetPoses[5].enabled)
                 {
                     trackers.rightFoot.localPosition = targetPoses[5].translation;
                     trackers.rightFoot.localRotation = targetPoses[5].rotation;
@@ -230,7 +247,7 @@ namespace Foundry
             trackers.waist.gameObject.SetActive(enabledTrackers[3]);
             trackers.leftFoot.gameObject.SetActive(enabledTrackers[4]);
             trackers.rightFoot.gameObject.SetActive(enabledTrackers[5]);
-            
+
             UpdateColliderSize();
         }
 
@@ -251,44 +268,63 @@ namespace Foundry
         {
             if (controlRig == null)
                 return Vector3.zero;
+
             var input = SpatialInputManager.instance;
             Vector2 movementInput = SpatialInputManager.movementInput;
-            Vector3 movement = new Vector3(movementInput.x, 0, movementInput.y);
+
+            // Get the reference rotation
             Quaternion movementReferenceRot = Quaternion.identity;
-            if (controlRig.GetTrackingMode() == TrackingMode.OnePoint) 
+            if (controlRig.GetTrackingMode() == TrackingMode.OnePoint)
                 movementReferenceRot = trackers.head.rotation;
             else switch (input.movementReference)
-            {
-                case SpatialInputManager.MovementReference.Head:
-                    movementReferenceRot = trackers.head.rotation;
-                    break;
-                case SpatialInputManager.MovementReference.LeftHand:
-                    movementReferenceRot = trackers.leftHand.rotation;
-                    break;
-                case SpatialInputManager.MovementReference.RightHand:
-                    movementReferenceRot = trackers.rightHand.rotation;
-                    break;
-            }
-            
-            // Read sprint input values for desktop and VR modes
+                {
+                    case SpatialInputManager.MovementReference.Head:
+                        movementReferenceRot = trackers.head.rotation;
+                        break;
+                    case SpatialInputManager.MovementReference.LeftHand:
+                        movementReferenceRot = trackers.leftHand.rotation;
+                        break;
+                    case SpatialInputManager.MovementReference.RightHand:
+                        movementReferenceRot = trackers.rightHand.rotation;
+                        break;
+                }
+
+            float currentSpeed = movementSettings.speed;
             bool isSprintingDesktop = input.sprintDesktop.action.ReadValue<float>() > 0;
             bool isSprintingXR = input.sprintXR.action.ReadValue<float>() > 0;
-            
-            // Calculate the current speed based on sprinting status
-            float currentSpeed = movementSettings.speed;
             if (isSprintingDesktop || isSprintingXR)
                 currentSpeed *= sprintSpeedMultiplier;
 
-            movement = Quaternion.AngleAxis(movementReferenceRot.eulerAngles.y, Vector3.up) * movement;
-            return movement * currentSpeed;
+            if (movementMode == MovementMode.Flying)
+            {
+                // Move in the direction the reference is facing, including up/down
+                Vector3 moveDirection = movementReferenceRot * Vector3.forward;
+                Vector3 movement = moveDirection * movementInput.y * currentSpeed
+                                + movementReferenceRot * Vector3.right * movementInput.x * currentSpeed;
+                return movement;
+            }
+            else
+            {
+                // Grounded: ignore vertical, move on XZ plane
+                Vector3 localMovement = new Vector3(movementInput.x, 0, movementInput.y);
+                Vector3 movement = movementReferenceRot * localMovement * currentSpeed;
+                return movement;
+            }
         }
 
         public void Move(Vector3 movement, float deltaTime)
         {
-            controller.Move(movement * deltaTime + Vector3.down * movementSettings.downforce);
+            if (movementMode == MovementMode.Flying)
+            {
+                controller.Move(movement * deltaTime); // No downforce in flying mode
+            }
+            else
+            {
+                controller.Move(movement * deltaTime + Vector3.down * movementSettings.downforce);
+            }
             virtualVelocity.Value = movement;
         }
-        
+
         public TeleportRaycaster TeleportRaycaster()
         {
             return _teleportRaycaster;
@@ -307,7 +343,7 @@ namespace Foundry
             }
             _teleportPreview = input > 0.5f;
 
-            if(input >= 0.5f)
+            if (input >= 0.5f)
                 _teleportRaycaster.ActivateRaycaster();
             else
                 _teleportRaycaster.DeactivateRaycaster();
@@ -328,21 +364,21 @@ namespace Foundry
 
                 if (rightHand)
                 {
-                    if (SpatialInputManager.instance.grabRightXR.action.WasPressedThisFrame() || 
+                    if (SpatialInputManager.instance.grabRightXR.action.WasPressedThisFrame() ||
                         SpatialInputManager.instance.grabDesktop.action.WasPressedThisFrame())
                         rightHand.Grab();
                     else if (SpatialInputManager.instance.grabRightXR.action.WasReleasedThisFrame() ||
                              SpatialInputManager.instance.grabDesktop.action.WasReleasedThisFrame())
                         rightHand.Release();
                 }
-                
+
             }
 
-            if(IsOwner && movementEnabled)
+            if (IsOwner && movementEnabled)
                 Move(GetMovement(), Time.deltaTime);
             if (avatar)
                 avatar.SetVirtualVelocity(virtualVelocity.Value);
-            if(IsOwner)
+            if (IsOwner)
                 UpdateTeleportRaycaster();
         }
 
@@ -360,12 +396,13 @@ namespace Foundry
         {
             cancelTeleport = true;
         }
-        
+
         /// <summary>
         /// Move player to a position
         /// </summary>
         /// <param name="position"></param>
-        public void Teleport(Vector3 position) {
+        public void Teleport(Vector3 position)
+        {
 
             TeleportLook(position, trackers.head.forward);
         }
@@ -375,18 +412,21 @@ namespace Foundry
         /// </summary>
         /// <param name="position">position avatar should be standing at</param>
         /// <param name="forward">direction player should be looking</param>
-        public void TeleportLook(Vector3 position, Vector3 forward) {
+        public void TeleportLook(Vector3 position, Vector3 forward)
+        {
             TeleportLook(position, forward, transform.up);
         }
-        
+
         /// <summary>
         /// Move player to a position and face a direction
         /// </summary>
         /// <param name="position">position avatar should be standing at</param>
         /// <param name="forward">direction player should be looking</param>
         /// <param name="up">up direction of the avatar</param>
-        public void TeleportLook(Vector3 position, Vector3 forward, Vector3 up) {
-            if(forward == Vector3.zero) {
+        public void TeleportLook(Vector3 position, Vector3 forward, Vector3 up)
+        {
+            if (forward == Vector3.zero)
+            {
                 Teleport(position);
                 return;
             }
@@ -395,12 +435,12 @@ namespace Foundry
 
             Quaternion headRotOffset = Quaternion.Euler(0, -trackers.head.localRotation.eulerAngles.y, 0);
             targetRotation *= headRotOffset;
-            
+
             Vector3 headPosOffset = trackers.head.localPosition;
             headPosOffset.y = 0;
-            
+
             Vector3 targetPos = position - targetRotation * headPosOffset;
-            
+
             TeleportRaw(targetPos, targetRotation);
         }
 
@@ -412,11 +452,11 @@ namespace Foundry
         public void TeleportRaw(Vector3 position, Quaternion rotation)
         {
             cancelTeleport = false;
-            if(enableEvents)
+            if (enableEvents)
                 onBeforeTeleport.Invoke(this, position, rotation);
             if (cancelTeleport)
                 return;
-            
+
             transform.position = position;
             transform.rotation = rotation;
 
@@ -426,6 +466,25 @@ namespace Foundry
             }
 
             onAfterTeleport.Invoke(this);
+        }
+
+        public void SetFlyingMode(bool isFlying)
+        {
+            movementMode = isFlying ? MovementMode.Flying : MovementMode.Grounded;
+        }
+
+        // method for storing the player's current location and rotation in a scene to player prefs, to be used for respawning at current location
+        public void StorePlayerLocation()
+        {
+            var pos = transform.position;
+            var rot = transform.rotation;
+            PlayerPrefs.SetFloat("PlayerPosX", pos.x);
+            PlayerPrefs.SetFloat("PlayerPosY", pos.y);
+            PlayerPrefs.SetFloat("PlayerPosZ", pos.z);
+            PlayerPrefs.SetFloat("PlayerRotX", rot.eulerAngles.x);
+            PlayerPrefs.SetFloat("PlayerRotY", rot.eulerAngles.y);
+            PlayerPrefs.SetFloat("PlayerRotZ", rot.eulerAngles.z);
+            Debug.Log("Stored Player pos and rot to Player Prefs"); 
         }
     }
 }

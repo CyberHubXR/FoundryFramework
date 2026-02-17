@@ -46,8 +46,12 @@ namespace Foundry.Account
         }
 
         /// <summary>
-        /// Simple overrideable method to initialize account contains username and avatar
+        /// The CorePlayerAccount class is responsible for managing player account information 
+        /// such as username and avatar selection in a networked environment. 
+        /// It provides functionality to initialize account data, synchronize properties across 
+        /// the network, and spawn avatars in the game hierarchy.
         /// </summary>
+        
         public virtual void InitializeAccount() 
         {
             int avatarID = PlayerPrefs.GetInt("AvatarSelected");
@@ -58,7 +62,7 @@ namespace Foundry.Account
                 avatarID = 0;
             }
 
-            username = PlayerPrefs.GetString("usernameLAN");
+            username = PlayerPrefs.GetString("customDisplayName", PlayerPrefs.GetString("usernameLAN", "guest"));
             avatarIndex = avatarID;
         }
 

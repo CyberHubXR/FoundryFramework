@@ -61,7 +61,7 @@ namespace Foundry
         {
             
             List<XRInputSubsystem> subsystems = new();
-            SubsystemManager.GetInstances(subsystems);
+            SubsystemManager.GetSubsystems(subsystems);
             foreach (var s in subsystems)
                 s.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
             foreach (var s in subsystems)
@@ -114,7 +114,7 @@ namespace Foundry
                 GetControllerOffsets();
             
             List<XRInputSubsystem> subsystems = new();
-            SubsystemManager.GetInstances(subsystems);
+            SubsystemManager.GetSubsystems(subsystems);
             foreach (var s in subsystems)
             {
                 s.TrySetTrackingOriginMode(TrackingOriginModeFlags.Floor);
