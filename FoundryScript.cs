@@ -7,6 +7,12 @@ using UnityEngine.UIElements;
 
 namespace Foundry
 {
+    /// <summary>
+    /// Base class for most runtime Framework components.
+    ///
+    /// Keeping a shared base type gives us a single target for custom editor
+    /// tooling and future cross-cutting behavior (debug helpers, analytics hooks, etc.).
+    /// </summary>
     public abstract class FoundryScript : MonoBehaviour
     {
         
@@ -16,6 +22,7 @@ namespace Foundry
     [CustomEditor(typeof(FoundryScript), true)]
     public class FoundryScriptEditor : Editor
     {
+        // Shared editor header shown for all components that derive from FoundryScript.
         Texture2D header;
         float headerScale = 0.1f;
         float bottomPadding = 7f;
@@ -28,6 +35,7 @@ namespace Foundry
 
         public override VisualElement CreateInspectorGUI()
         {
+            // Build a custom inspector root so every Foundry component has a consistent look.
             var root = new VisualElement();
 
             var headerImage = new Image();
@@ -38,6 +46,7 @@ namespace Foundry
             
             string name = target.GetType().Name;
             bool lastWasLower = false;
+            // Convert PascalCase type names into friendlier labels.
             for (int i = 1; i < name.Length; i++)
             {
                 if (lastWasLower && 'A' <= name[i] && name[i] <= 'B')
@@ -45,6 +54,7 @@ namespace Foundry
                 lastWasLower = 'a' <= name[i] && name[i] <= 'z';
             }
 
+            // Clicking the title pings the backing script asset, which is useful for new contributors.
             var scriptTitle = new Button();
             scriptTitle.Add(new Label(name));
             scriptTitle.clicked += () =>
@@ -57,6 +67,7 @@ namespace Foundry
             
             root.Add(new IMGUIContainer(() =>
             {
+                // Render default serialized fields while hiding Unity's m_Script slot.
                 DrawPropertiesExcluding(serializedObject, new string[] { "m_Script" });
                 serializedObject.ApplyModifiedProperties();
             }));

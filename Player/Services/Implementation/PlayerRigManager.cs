@@ -4,6 +4,12 @@ using UnityEngine;
 
 namespace Foundry
 {
+    /// <summary>
+    /// Central owner for the single local control rig instance.
+    ///
+    /// Player objects borrow/return the rig as they spawn/despawn so input state
+    /// is preserved instead of creating duplicate rigs.
+    /// </summary>
     public class PlayerRigManagerService : IPlayerRigManager
     {
         public IPlayerControlRig Rig => _rig;
@@ -20,6 +26,7 @@ namespace Foundry
         {
             Debug.Assert(_rig == null, "Cannot register more than one player rig!");
             _rig = rig;
+            // Holder used when no player currently owns the rig in-scene.
             _unusedRigHolder = unusedRigHolder;
             PlayerRigCreated?.Invoke(rig);
         }
@@ -29,6 +36,7 @@ namespace Foundry
             Debug.Assert(_rig != null, "Player rig was borrowed before it was created!");
             Debug.Assert(!_rigBorrowed, "There can only be one player rig at a time!");
             _rigBorrowed = true;
+            // Consumers should parent/position the rig after borrowing.
             PlayerRigBorrowed?.Invoke(_rig);
             return _rig;
         }
@@ -41,6 +49,7 @@ namespace Foundry
             //Just in-case this got caught in a parent's deactivation
             _rig.transform.gameObject.SetActive(true);
             _rig.enabled = true;
+            // Park rig out of the active player hierarchy until next borrow.
             _rig.transform.SetParent(_unusedRigHolder, false);
             PlayerRigReturned?.Invoke(_rig);
         }

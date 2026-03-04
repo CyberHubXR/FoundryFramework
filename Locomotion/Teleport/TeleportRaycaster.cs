@@ -7,6 +7,10 @@ using UnityEngine.Serialization;
 
 namespace Foundry
 {
+    /// <summary>
+    /// Handles teleport target preview/validation by simulating a projectile arc,
+    /// then exposes a TryTeleport API that the player controller can call on release.
+    /// </summary>
     public class TeleportRaycaster : NetworkComponent
     {
 
@@ -63,6 +67,7 @@ namespace Foundry
         {
             if (IsOwner)
             {
+                // Teleport points are scene-authored anchors that can override free-form landings.
                 teleportPoints = FindObjectsOfType<TeleportPoint>();
                 ToggleTeleportPoints(false);
             }
@@ -77,6 +82,7 @@ namespace Foundry
 
 
         void ToggleTeleportPoints(bool enabled) {
+            // Keep alwaysShow points visible unless we're explicitly turning everything on.
             foreach(var teleportPoint in teleportPoints) {
                 if(!teleportPoint.alwaysShow || enabled)
                     teleportPoint.gameObject.SetActive(enabled);
@@ -127,6 +133,7 @@ namespace Foundry
 
             while (sqDistance < sqMaxRange){
                 delta = vel * step;
+                // Raycast each arc segment instead of the whole curve to collect the first valid hit.
                 validTeleport = Physics.Raycast(pos, delta, out RaycastHit hit, delta.magnitude, cancelTeleportLayers | teleportLayers, queryTriggers);
                 if(validTeleport){
                     teleportPos = hit.point;
@@ -136,6 +143,7 @@ namespace Foundry
                         validTeleport = 0 < (teleportLayers &  (1 << hit.collider.gameObject.layer)) && Vector3.Angle(hit.normal, Vector3.up) < maxAngle;
 
                     bool foundTeleportPoint = false;
+                    // Detect tiny TeleportPoint triggers around hit point without per-frame allocations.
                     int hitColliderCount = Physics.OverlapSphereNonAlloc(hit.point, 0.001f, collidersNonAlloc, teleportLayers, QueryTriggerInteraction.Collide);
                     if(hitColliderCount > 0) {
                         for(int i = 0; i < hitColliderCount; i++) {
@@ -163,6 +171,7 @@ namespace Foundry
                     }
 
                     if (reticle != null){
+                        // Slight offset avoids z-fighting with the floor mesh.
                         reticle.transform.position = hit.point + hit.normal*0.005f;
                         reticle.transform.up = hit.normal;
                     }
@@ -186,6 +195,7 @@ namespace Foundry
             }
 
             if (line){
+                // Color communicates validity before input is released.
                 line.colorGradient = validTeleport ? validColor : invalidColor;
                 line.positionCount = segments.Count;
                 line.SetPositions(segments.ToArray());
@@ -205,6 +215,7 @@ namespace Foundry
             pos = teleportPos;
             forward = Vector3.zero;
             if(currentTeleportPoint != null) {
+                // Teleport points can override destination and/or facing direction.
                 currentTeleportPoint.StopHighlighting(this);
                 currentTeleportPoint.Teleport(this);
 
@@ -228,4 +239,3 @@ namespace Foundry
         }
     }
 }
-

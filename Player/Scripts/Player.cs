@@ -17,6 +17,8 @@ namespace Foundry
     [Serializable]
     public class TrackerRefs
     {
+        // These transforms are updated each frame from the active control rig.
+        // They represent the player's tracked body points in local player space.
         public Transform head;
         public Transform leftHand;
         public Transform rightHand;
@@ -52,7 +54,9 @@ namespace Foundry
         [System.Serializable]
         public enum MovementMode
         {
+            // CharacterController movement constrained to ground plane.
             Grounded,
+            // Fully directional movement that includes vertical motion.
             Flying
         }
 
@@ -100,6 +104,7 @@ namespace Foundry
 
         public override void RegisterProperties(List<INetworkProperty> properties, List<INetworkEvent> events)
         {
+            // Core replicated state for remote avatars.
             properties.Add(playerId);
             properties.Add(trackingMode);
             properties.Add(enabledTrackers);
@@ -148,6 +153,7 @@ namespace Foundry
 
         private void LoadControlRig()
         {
+            // Attach borrowed rig to the player root so tracker poses become local offsets.
             controlRig.transform.SetParent(transform, false);
             controlRig.transform.localPosition = Vector3.zero;
             controlRig.transform.localRotation = Quaternion.identity;
@@ -248,6 +254,7 @@ namespace Foundry
             trackers.leftFoot.gameObject.SetActive(enabledTrackers[4]);
             trackers.rightFoot.gameObject.SetActive(enabledTrackers[5]);
 
+            // Collider follows head height so body collisions stay aligned with the user's rig.
             UpdateColliderSize();
         }
 
@@ -272,7 +279,7 @@ namespace Foundry
             var input = SpatialInputManager.instance;
             Vector2 movementInput = SpatialInputManager.movementInput;
 
-            // Get the reference rotation
+            // Pick the frame of reference for movement (head/hand), then move relative to that.
             Quaternion movementReferenceRot = Quaternion.identity;
             if (controlRig.GetTrackingMode() == TrackingMode.OnePoint)
                 movementReferenceRot = trackers.head.rotation;
@@ -297,7 +304,7 @@ namespace Foundry
 
             if (movementMode == MovementMode.Flying)
             {
-                // Move in the direction the reference is facing, including up/down
+                // Flying mode follows the full reference orientation, including pitch.
                 Vector3 moveDirection = movementReferenceRot * Vector3.forward;
                 Vector3 movement = moveDirection * movementInput.y * currentSpeed
                                 + movementReferenceRot * Vector3.right * movementInput.x * currentSpeed;
@@ -305,7 +312,7 @@ namespace Foundry
             }
             else
             {
-                // Grounded: ignore vertical, move on XZ plane
+                // Grounded mode drops Y to keep locomotion on the play surface.
                 Vector3 localMovement = new Vector3(movementInput.x, 0, movementInput.y);
                 Vector3 movement = movementReferenceRot * localMovement * currentSpeed;
                 return movement;
@@ -320,6 +327,7 @@ namespace Foundry
             }
             else
             {
+                // Downforce helps keep capsule grounded when moving over uneven geometry.
                 controller.Move(movement * deltaTime + Vector3.down * movementSettings.downforce);
             }
             virtualVelocity.Value = movement;
@@ -336,6 +344,7 @@ namespace Foundry
                 return;
             float input = SpatialInputManager.instance.turnXR.action.ReadValue<Vector2>().y;
 
+            // Press-and-hold style flow: show preview while held, commit teleport on release.
             if (_teleportPreview && input <= 0.5f)
             {
                 if (_teleportRaycaster.TryTeleport(out Vector3 point, out Vector3 forward))
@@ -354,6 +363,7 @@ namespace Foundry
             UpdateTrackers();
             if (IsOwner)
             {
+                // Only the owner consumes input and drives local hand state.
                 if (leftHand)
                 {
                     if (SpatialInputManager.instance.grabLeftXR.action.WasPressedThisFrame())
@@ -377,6 +387,7 @@ namespace Foundry
             if (IsOwner && movementEnabled)
                 Move(GetMovement(), Time.deltaTime);
             if (avatar)
+                // Avatar animation uses virtual velocity even when the player root is externally moved.
                 avatar.SetVirtualVelocity(virtualVelocity.Value);
             if (IsOwner)
                 UpdateTeleportRaycaster();
@@ -457,11 +468,13 @@ namespace Foundry
             if (cancelTeleport)
                 return;
 
+            // Apply transform locally first.
             transform.position = position;
             transform.rotation = rotation;
 
             if (gameObject.TryGetComponent(out NetworkTransform t))
             {
+                // Mirror teleport through network transform so remotes snap consistently.
                 t.Teleport(position, rotation);
             }
 
