@@ -16,8 +16,11 @@ namespace Foundry
 
     public class SpatialGrabbable : FoundryScript
     {
+        // Rigidbody that receives grab-driven movement.
         public Rigidbody attachedRigidbody;
+        // Restricts which hand can interact with this object.
         public SpatialHand.HandType handType = SpatialHand.HandType.Both;
+        // Allows two-handed interactions when > 1.
         public int maxHeldCount = 1;
         public bool isGrabbable = true;
 
@@ -67,6 +70,7 @@ namespace Foundry
             if (attachedRigidbody == null)
                 TryGetComponent(out attachedRigidbody);
 
+            // Ensure all colliders in this hierarchy use the grabbable interaction layer.
             foreach(var collider in GetComponentsInChildren<Collider>()) {
                 collider.gameObject.layer = LayerMask.NameToLayer("FoundryGrabbable");
             }
@@ -101,6 +105,7 @@ namespace Foundry
             if (hand.enableEvents && OnGrabEvent != null)
                 OnGrabEvent.Invoke(hand, this);
 
+            // Detach from place point while held.
             placePoint?.Remove(this);
             heldByHands.Add(hand);
         }
@@ -122,6 +127,7 @@ namespace Foundry
                 OnReleaseEvent.Invoke(hand, this);
 
             if(placePoint != null && canPlace)
+                // If we released inside a valid place point, snap back into it.
                 placePoint.Place(this);
 
             heldByHands.Remove(hand);
@@ -165,6 +171,7 @@ namespace Foundry
 
         public bool CanGrab(SpatialHand spatialHand)
         {
+            // Valid when hand side is compatible and we are under hold-capacity.
             bool properHandType = handType == SpatialHand.HandType.Both || spatialHand.handType == SpatialHand.HandType.Both || spatialHand.handType == handType;
             bool maxHoldReached = heldByHands.Count >= maxHeldCount;
             return isGrabbable && properHandType && !maxHoldReached;
@@ -194,6 +201,7 @@ namespace Foundry
 
         internal void SetGrabbableChild(SpatialGrabbableChild child) {
             if(!grabChildren.Contains(child)) {
+                // SpatialGrabbableChild forwards child-collider grabs back to this root grabbable.
                 grabChildren.Add(child);
                 child.grabParent = this;
             }
@@ -235,6 +243,7 @@ namespace Foundry
         }
 
         public void ForceHandsRelease() {
+            // Iterate backwards because Release mutates heldByHands.
             for(int i = heldByHands.Count - 1; i >= 0; i--) {
                 heldByHands[i].Release();
             }
